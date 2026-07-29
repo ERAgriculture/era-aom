@@ -1,4 +1,4 @@
-# Migration
+# AOM migration
 
 Normalized sources are not canonical yet. Workbook remains authoritative during
 transition.
@@ -6,13 +6,17 @@ transition.
 ## Phases
 
 1. Freeze and profile all 33 workbook sheets.
-2. Pilot normalized `prac` and `out`.
-3. Migrate every approved public concept scheme, code list, crosswalk, and
+2. Pilot normalized crop `prac` and `out`.
+3. Inventory published livestock AOM and reconcile it with AOM-family workbook
+   sheets without merging crop/livestock hierarchies.
+4. Propose shared `aom-core` concepts only where comparison proves common
+   identity.
+5. Migrate every approved public concept scheme, code list, crosswalk, and
    data-model table.
-4. Generate standards-based and analyst-ready distributions.
-5. Replace ingestion and package readers.
-6. Validate clean-build reproducibility and consumer parity.
-7. Obtain canonical-cutover approval.
+6. Generate standards-based and analyst-ready distributions.
+7. Replace ingestion and package readers.
+8. Validate clean-build reproducibility and consumer parity.
+9. Obtain canonical-cutover approval.
 
 ## Cutover rule
 

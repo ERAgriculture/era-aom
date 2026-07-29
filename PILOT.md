@@ -1,10 +1,11 @@
-# Practice and outcome normalization pilot
+# AOM crop practice and outcome normalization pilot
 
 ## Purpose
 
-This pilot tests architecture selected by ADR-0008. It does not change
-canonical source: workbook remains authoritative until full migration and
-consumer cutover.
+This pilot tests AOM crop-module architecture selected by ADR-0008. It does not
+change canonical source: workbook remains authoritative until full migration
+and consumer cutover. Existing AOM livestock work remains separate and
+preserved pending module comparison.
 
 ## Model
 
@@ -32,6 +33,7 @@ Outcome hierarchy: pillar → subpillar → indicator → subindicator.
   `id_registry.csv`.
 - Registry entries persist when concepts disappear; identifiers are never
   reused.
+- Existing crop-lineage `era:*` IDs remain stable.
 - Semantic pilot files express IDs as `urn:era:*`.
 - Public resolvable HTTPS namespace remains deferred. Pilot URNs must not be
   advertised as permanent public concept URLs.
@@ -93,6 +95,7 @@ Rscript scripts/build_semantic.R data/pilot dist/pilot
 
 ## Approval meaning
 
-Pilot approval confirms normalized architecture, ID rules, generated formats,
-and migration method. It does not approve canonical cutover. Every approved
-public resource and live consumer still requires migration and parity testing.
+Pilot approval confirms AOM crop-module normalized architecture, ID rules,
+generated formats, and migration method. It does not approve livestock
+integration, shared-core design, or canonical cutover. Every approved public
+resource and live consumer still requires migration and parity testing.

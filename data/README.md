@@ -9,5 +9,6 @@ tables.
 Current workbook remains outside Git. Never add closed or unreviewed workbook
 content directly.
 
-`pilot/` contains normalized `prac` and `out` sources for architecture
-validation. Workbook remains canonical.
+`pilot/` contains normalized AOM crop `prac` and `out` sources for architecture
+validation. Existing livestock AOM remains a separate module pending inventory
+and comparison. Workbook remains canonical.

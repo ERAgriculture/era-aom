@@ -433,7 +433,7 @@ tables <- list(
 tables$schemes <- data.frame(
   scheme_id = c("era:scheme:practice", "era:scheme:outcome"),
   notation = c("prac", "out"),
-  preferred_label_en = c("ERA agricultural practices", "ERA outcomes"),
+  preferred_label_en = c("AOM crop agricultural practices", "AOM crop outcomes"),
   status = c("pilot", "pilot"),
   stringsAsFactors = FALSE
 )

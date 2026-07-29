@@ -1,4 +1,4 @@
-# Pilot semantic distributions
+# AOM crop pilot semantic distributions
 
 Generated SKOS JSON-LD and Turtle for architecture validation only.
 

@@ -10,3 +10,6 @@ All notable vocabulary changes will be recorded here.
 - Generate pilot SKOS JSON-LD/Turtle, CSVW, JSON Schema, and SHACL.
 - Add deterministic regeneration, legacy round-trip, semantic, and CI
   validation.
+- Rename repository/product to Agriculture Ontology for Meta-analysis (AOM);
+  frame current pilot as crop module and preserve existing livestock AOM
+  lineage as separate module.

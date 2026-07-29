@@ -7,7 +7,7 @@ if (length(args) != 1L) {
 
 workbook <- normalizePath(args[[1]], mustWork = TRUE)
 data_dir <- "data/pilot"
-temp_dir <- tempfile("era-vocab-roundtrip-")
+temp_dir <- tempfile("era-aom-roundtrip-")
 dir.create(temp_dir)
 
 clean <- function(data) {

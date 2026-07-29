@@ -1,7 +1,12 @@
-# ERA Vocabulary
+# Agriculture Ontology for Meta-analysis
 
-Controlled vocabularies and data-model definitions for
-[Evidence for Resilient Agriculture](https://github.com/ERAgriculture).
+Agriculture Ontology for Meta-analysis (AOM): shared semantic framework and
+controlled vocabularies for integrating agricultural research evidence.
+
+AOM began as a livestock prototype built from Evidence for Resilient
+Agriculture data. This repository preserves that lineage while extending AOM
+with crop modules. Livestock and crop work remain distinct modules until
+reviewed mappings justify shared concepts.
 
 ## Status
 
@@ -12,21 +17,24 @@ cutover.
 
 Current work:
 
-1. freeze and profile the authoritative workbook;
-2. pilot normalized `prac` and `out` sources;
-3. migrate every approved public resource;
-4. regenerate and validate downstream artifacts;
-5. cut over only after pipeline and package parity.
+1. freeze and profile authoritative ERA workbook;
+2. pilot normalized crop `prac` and `out` sources;
+3. inventory and preserve existing AOM livestock assets;
+4. design shared core from evidence, not forced merging;
+5. migrate every approved public resource;
+6. regenerate and validate downstream artifacts;
+7. cut over only after pipeline and package parity.
 
-`prac` and `out` pilot design and validation:
+Crop `prac` and `out` pilot design and validation:
 [`PILOT.md`](PILOT.md).
+Module boundaries and existing AOM lineage: [`MODULES.md`](MODULES.md).
 
 No workbook content is published during inventory. This protects closed and
 unreviewed sheets while recording reproducible structural metadata.
 
 ## Licensing
 
-- Vocabulary sources, releases, and documentation: CC BY 4.0.
+- Ontology/vocabulary sources, releases, and documentation: CC BY 4.0.
 - Build and validation tooling: Apache-2.0.
 
 See [`LICENSE.md`](LICENSE.md), [`LICENSE-CODE`](LICENSE-CODE), and
@@ -34,7 +42,7 @@ See [`LICENSE.md`](LICENSE.md), [`LICENSE-CODE`](LICENSE-CODE), and
 
 ## Attribution
 
-ERA Vocabulary is maintained and published by the Alliance of Bioversity
-International and CIAT as part of the collaborative Evidence for Resilient
-Agriculture initiative. Development has benefited from contributions across
-CGIAR centres and partner institutions.
+AOM is maintained and published by the Alliance of Bioversity International
+and CIAT. Existing livestock AOM authorship and DOI provenance remain explicit.
+Crop-module development builds on collaborative Evidence for Resilient
+Agriculture work across CGIAR centres and partner institutions.
