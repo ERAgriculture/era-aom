@@ -14,3 +14,17 @@ Rscript scripts/inventory_workbook.R /path/to/era_master_sheet.xlsx inventory/ge
 
 `sheet_disposition.csv` contains proposed classifications. Review required
 before any sheet export.
+
+Livestock release reconciliation:
+
+- [`AOM_LIVESTOCK_RECONCILIATION.md`](AOM_LIVESTOCK_RECONCILIATION.md)
+- `livestock_release_manifest.csv`
+- `livestock_reconciliation.json`
+
+Regenerate reconciliation from separately downloaded public AOM v2 CSV and
+private workbook:
+
+```sh
+Rscript scripts/reconcile_livestock_release.R \
+  /path/to/AOM-v2.csv /path/to/era_master_sheet.xlsx
+```
