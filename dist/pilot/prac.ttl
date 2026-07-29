@@ -1,0 +1,2333 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix era: <urn:era:property:> .
+
+<urn:era:scheme:practice> a skos:ConceptScheme ;
+  skos:prefLabel "AOM crop agricultural practices"@en ;
+  era:status "pilot" .
+<urn:era:practice:theme:001> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agroforestry"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Agroforestry" .
+<urn:era:practice:theme:002> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Animals"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Animals" .
+<urn:era:practice:theme:003> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Blue Water Management"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Blue Water Management" .
+<urn:era:practice:theme:004> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Management"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Crop Management" .
+<urn:era:practice:theme:005> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Energy"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Energy" .
+<urn:era:practice:theme:006> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Genetic improvement"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Genetic improvement" .
+<urn:era:practice:theme:007> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Green Water Management"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Green Water Management" .
+<urn:era:practice:theme:008> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Non-CSA"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Non-CSA" .
+<urn:era:practice:theme:009> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Nutrient Management"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Nutrient Management" .
+<urn:era:practice:theme:010> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Postharvest"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Postharvest" .
+<urn:era:practice:theme:011> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Soil Management"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Soil Management" .
+<urn:era:practice:theme:012> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Water Management"@en ;
+  era:conceptType "theme" ;
+  era:status "active" ;
+  skos:notation "Water Management" .
+<urn:era:practice:practice:001> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "FMNR"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "FMNR" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:002> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Alleycropping"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "Al" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:003> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Parklands"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "Pa" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:004> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Boundary Planting"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "BP" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:005> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Silvopasture"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "Si" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:006> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Multistrata Agroforestry"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "MA" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:007> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agroforestry Pruning"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "AP" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:008> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agroforestry Fallow"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "AF" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:009> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Other Agroforestry"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "OA" ;
+  skos:broader <urn:era:practice:theme:001> .
+<urn:era:practice:practice:010> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Feed Addition"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "FA" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:011> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Feed Substitution"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "FS" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:012> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Feed Processing"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "FP" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:013> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Genetic Improvement"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "GI" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:014> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Manure Management"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "MM" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:015> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Pasture Management"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "PM" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:016> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Aquasilviculture"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "AqS" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:017> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Feed Addition; Feed Substitution"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:018> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Manure Management"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:019> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Pasture Management"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:020> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Genetic Improvement"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:002> .
+<urn:era:practice:practice:021> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Irrigation"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "Ir" ;
+  skos:broader <urn:era:practice:theme:003> .
+<urn:era:practice:practice:022> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Deficit Irrigation"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "DIr" ;
+  skos:broader <urn:era:practice:theme:003> .
+<urn:era:practice:practice:023> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Supplemental Irrigation"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "SIr" ;
+  skos:broader <urn:era:practice:theme:003> .
+<urn:era:practice:practice:024> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Rice Management"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "IRM" ;
+  skos:broader <urn:era:practice:theme:003> .
+<urn:era:practice:practice:025> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Rotation"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "CRo" ;
+  skos:broader <urn:era:practice:theme:004> .
+<urn:era:practice:practice:026> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Rotation"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:004> .
+<urn:era:practice:practice:027> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Double Cropping"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:004> .
+<urn:era:practice:practice:028> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercropping"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:004> .
+<urn:era:practice:practice:029> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Green Manure"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:004> .
+<urn:era:practice:practice:030> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercropping"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "In" ;
+  skos:broader <urn:era:practice:theme:004> .
+<urn:era:practice:practice:031> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercropping or Rotation"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "In/CRo" ;
+  skos:broader <urn:era:practice:theme:004> .
+<urn:era:practice:practice:032> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biogas"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "BG" ;
+  skos:broader <urn:era:practice:theme:005> .
+<urn:era:practice:practice:033> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biogas"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:005> .
+<urn:era:practice:practice:034> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Cookstove"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "CS" ;
+  skos:broader <urn:era:practice:theme:005> .
+<urn:era:practice:practice:035> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Cookstove"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:005> .
+<urn:era:practice:practice:036> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biogas/cookstove"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:005> .
+<urn:era:practice:practice:037> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Varieties"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "IV" ;
+  skos:broader <urn:era:practice:theme:006> .
+<urn:era:practice:practice:038> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Unimproved Variety"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:006> .
+<urn:era:practice:practice:039> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Water Harvesting"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "WH" ;
+  skos:broader <urn:era:practice:theme:007> .
+<urn:era:practice:practice:040> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Non-CSA"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:008> .
+<urn:era:practice:practice:041> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agronomy;Agroforestry"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:008> .
+<urn:era:practice:practice:042> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agronomy"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:008> .
+<urn:era:practice:practice:043> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic Fertilizer"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "IF" ;
+  skos:broader <urn:era:practice:theme:009> .
+<urn:era:practice:practice:044> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic Fertilizer Reduction"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "IF-R" ;
+  skos:broader <urn:era:practice:theme:009> .
+<urn:era:practice:practice:045> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Organic Fertilizer"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "OF" ;
+  skos:broader <urn:era:practice:theme:009> .
+<urn:era:practice:practice:046> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Organic Fertilizer Substitution"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "OF-S" ;
+  skos:broader <urn:era:practice:theme:009> .
+<urn:era:practice:practice:047> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Fertilizer Control"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:009> .
+<urn:era:practice:practice:048> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Harvest Method"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "HM" ;
+  skos:broader <urn:era:practice:theme:010> .
+<urn:era:practice:practice:049> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Storage"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "St" ;
+  skos:broader <urn:era:practice:theme:010> .
+<urn:era:practice:practice:050> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Harvest Method"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:010> .
+<urn:era:practice:practice:051> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Storage"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:010> .
+<urn:era:practice:practice:052> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Reduced Tillage"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "RT" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:053> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Mulch"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "Mu" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:054> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Green Manure"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "GM" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:055> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biochar"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "Bi" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:056> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "pH Control"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "pH" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:057> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "CR" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:058> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue Incorporation"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "CRI" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:059> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Fallow"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:notation "IFa" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:060> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Fallow"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:061> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional Tillage"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:062> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:063> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "No-Till (Off-season)"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:064> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Reduced Tillage (Off-season)"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:011> .
+<urn:era:practice:practice:065> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Irrigation"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:012> .
+<urn:era:practice:practice:066> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Planting"@en ;
+  era:conceptType "practice" ;
+  era:status "active" ;
+  skos:broader <urn:era:practice:theme:012> .
+<urn:era:practice:a1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Farmer Managed Natural Regeneration"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a1" ;
+  skos:altLabel "FMNR"@en ;
+  skos:definition "Systematic regrowth of trees or shrubs on agricultural, forest or pasture land. FMNR is used in areas where there are stumps that can coppice or seeds that can germinate. Sometimes called farmer assisted regeneration."@en ;
+  skos:scopeNote "Typically defined as FMNR or farmer assisted regeneration by author in text."@en ;
+  skos:broader <urn:era:practice:practice:001> .
+<urn:era:practice:a3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Alleycropping (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a3" ;
+  skos:altLabel "AgFor Alley (Nfix)"@en ;
+  skos:definition "Intercropping with rows or alleys of nitrogen fixing trees or woody shrubs."@en ;
+  skos:broader <urn:era:practice:practice:002> .
+<urn:era:practice:a4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Alleycropping (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a4" ;
+  skos:altLabel "AgFor Alley (nonNfix)"@en ;
+  skos:definition "Intercropping with rows or alleys of trees or woody shrubs that do not fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:002> .
+<urn:era:practice:a4.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Alleycropping (Mixed)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a4.1" ;
+  skos:altLabel "AgFor Alley (Mixed)"@en ;
+  skos:definition "Intercropping with rows or alleys of a mixture of trees or woody shrubs of which some but not all fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:002> .
+<urn:era:practice:a14> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Alleycropping (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a14" ;
+  skos:altLabel "AgFor Alley (noID)"@en ;
+  skos:definition "Intercropping with rows or alleys of trees or woody shrubs where no information about the type of plant is given."@en ;
+  skos:broader <urn:era:practice:practice:002> .
+<urn:era:practice:a8> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Parklands"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a8" ;
+  skos:definition "Intercropping under scattered or regularly planted trees."@en ;
+  skos:scopeNote "Typically named parklands in the document text. Difference with scattered trees is unclear."@en ;
+  skos:broader <urn:era:practice:practice:003> .
+<urn:era:practice:a8.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Scattered Trees"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a8.1" ;
+  skos:definition "Unspecified sparse or scattered trees incorporated into croplands, pastures or rangelands."@en ;
+  skos:scopeNote "Difference with Parklands is unclear, other than parklands is not mentioned in the definition."@en ;
+  skos:broader <urn:era:practice:practice:003> .
+<urn:era:practice:a9> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Windbreak"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a9" ;
+  skos:altLabel "Windbreak"@en ;
+  skos:definition "Barriers of trees or shrubs planted along field boundaries to protect plants against wind."@en ;
+  skos:broader <urn:era:practice:practice:004> .
+<urn:era:practice:a10> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Living Fences or Hedgerows"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a10" ;
+  skos:altLabel "Hedge"@en ;
+  skos:definition "Living fence and hedges are planted in rows around the edge of the field to reduce the effect of wind or runoff on crops."@en ;
+  skos:scopeNote "Note some early agroforestry papers named alleycropping 'hedgerows', but any form of hedge intercropped within a field should be categorized as alleycropping."@en ;
+  skos:broader <urn:era:practice:practice:004> .
+<urn:era:practice:a11> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Silvopasture"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a11" ;
+  skos:altLabel "Silvopastoral"@en ;
+  skos:definition "Combination of trees or shrubs with pasture (forage grasses) and livestock"@en ;
+  skos:broader <urn:era:practice:practice:005> .
+<urn:era:practice:a22> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agrosilvopastoral System"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a22" ;
+  skos:altLabel "Agrosilvopastoral"@en ;
+  skos:definition "Combination of livestock production systems (pastures) with trees or shrubs and crops."@en ;
+  skos:broader <urn:era:practice:practice:005> .
+<urn:era:practice:a12> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Multistrata Agroforestry"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a12" ;
+  skos:altLabel "AgFor Multistrata"@en ;
+  skos:definition "Multistorey systems agroforestry systems have several spatial strata occupied by different tree (i.e. woody) crops (coffee, tea, cacao, banana etc)."@en ;
+  skos:scopeNote "Typically identified as multistrata in the document text.\n- include two or more vegetation layers and more than one tree species\n- multiple tree crop species and crops (N-fixing legume cover crops)"@en ;
+  skos:broader <urn:era:practice:practice:006> .
+<urn:era:practice:a15> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Applied (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a15" ;
+  skos:altLabel "AgFor Prune (noID)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of an unidentified woody plant were retained/returned to the cropping area, but it is unknown if they were mulched or incorporated."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field. It does not include situations where crop processing byproducts such as a oil palm bunch residues or walnut shells are applied to a field, these should be recorded using a regular mulch code."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a15.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Mulched (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a15.1" ;
+  skos:altLabel "AgFor Prune Mulch (noID)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of an unidentified woody plant were applied to the cropping area as mulch (prunings on the surface)."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a15.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Incorporated (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a15.2" ;
+  skos:altLabel "AgFor Prune Incorp (noID)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of an unidentified woody plant were applied to the cropping area and incorporated into the soil (e.g., by ploughing)."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a16> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Applied (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a16" ;
+  skos:altLabel "AgFor Prune (Nfix)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of a nitrogen fixing (leguminous) woody plant residues were retained/returned to the cropping area, but it is unknown if they were mulched or incorporated."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a16.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Mulched (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a16.1" ;
+  skos:altLabel "AgFor Prune Mulch (Nfix)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of a nitrogen fixing (leguminous) woody plant applied were applied to the cropping area as mulch (prunings on the surface)."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a16.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Incorporated (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a16.2" ;
+  skos:altLabel "AgrFor Prune Incorp (Nfix)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of a nitrogen fixing (leguminous) woody plant applied were applied to the cropping area and incorporated into the soil (e.g., by ploughing)."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a17> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Applied (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a17" ;
+  skos:altLabel "AgrFor Prune (nonNfix)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of a non-nitrogen fixing (not leguminous) woody plant were retained/returned to the cropping area, but it is unknown if they were mulched or incorporated."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a17.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Mulched (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a17.1" ;
+  skos:altLabel "AgFor Prune Mulch (nonNfix)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of a non-nitrogen fixing (not leguminous) woody plant applied were applied to the cropping area as mulch (prunings on the surface)."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a17.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Prunings Incorporated (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a17.2" ;
+  skos:altLabel "AgFor Prune Incorp (nonNfix)"@en ;
+  skos:definition "Prunings (leaves, branches, etc.) of a non-nitrogen fixing (not leguminous) woody plant applied were applied to the cropping area and incorporated into the soil (e.g., by ploughing)."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a18> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tree Pruning (Fate Unknown)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a18" ;
+  skos:altLabel "AgFor Prune (Unknown)"@en ;
+  skos:definition "The cutting or coppicing of woody agroforestry species, generally to reduce competition or shading with intercrops, but the fate of the residues is unknown (it is unclear if was applied or removed)."@en ;
+  skos:scopeNote "This could be from alleycropping, biomass transfer models or cut-and-carry where prunings come from off the field."@en ;
+  skos:broader <urn:era:practice:practice:007> .
+<urn:era:practice:a19.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agroforestry Fallow (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a19.1" ;
+  skos:altLabel "AgFor Fallow (Nfix)"@en ;
+  skos:definition "Planting fallows with short-rotation woody or perennial species that fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:008> .
+<urn:era:practice:a19.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agroforestry Fallow (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a19.2" ;
+  skos:altLabel "AgFor Fallow (nonNfix)"@en ;
+  skos:definition "Planting fallows with short-rotation woody or perennial species that do not fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:008> .
+<urn:era:practice:a19.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agroforestry Fallow (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a19.3" ;
+  skos:altLabel "AgFor Fallow (NoID)"@en ;
+  skos:definition "Planting fallows with short-rotation woody or perennial species of an unknown type."@en ;
+  skos:broader <urn:era:practice:practice:008> .
+<urn:era:practice:a99> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Other Agroforestry"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "a99" ;
+  skos:altLabel "AgFor Other"@en ;
+  skos:definition "Agroforestry practice that does not meet definitions in Agroforestry practice theme."@en ;
+  skos:scopeNote "Please notify ERA team if you use this code."@en ;
+  skos:broader <urn:era:practice:practice:009> .
+<urn:era:practice:d17.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Fodders (Added)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d17.1" ;
+  skos:altLabel "Feed Crop (Add)"@en ;
+  skos:definition "Feeds added to animal diets that come from non-woody crops not usually grown for fodder, but for another purpose (e.g. consumption). These can be crop grain. field residues (for example maize stalks left over once the grain component has been harvested) and or processing residues (for example the maize bran produced as a byproduct of milling flour). Soyabeans fit in this category as they are grown for human consumption and livestock feed."@en ;
+  skos:scopeNote "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."@en ;
+  skos:broader <urn:era:practice:practice:010> .
+<urn:era:practice:d17.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Non Crop Fodders (Added)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d17.2" ;
+  skos:altLabel "Feed NonCrop (Add)"@en ;
+  skos:definition "Feeds added to animal diets that are non-woody crops grown primarily for fodder (e.g., alfafa or clover grown to feed to cattle) or non-woody plants harvested from non-cropped areas (e.g., forage grasses such as napier grass grown to stabilize terraces, cactus harvested from boundary fences, wild growing plants in wayside or fallows, algae, etc.)."@en ;
+  skos:scopeNote "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."@en ;
+  skos:broader <urn:era:practice:practice:010> .
+<urn:era:practice:d17.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agroforestry Fodders (Added)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d17.3" ;
+  skos:altLabel "Feed AgFor (Add)"@en ;
+  skos:definition "Feeds added to animal diets that are from agroforestry shrub or tree fodders or other woody plants."@en ;
+  skos:scopeNote "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."@en ;
+  skos:broader <urn:era:practice:practice:010> .
+<urn:era:practice:d17.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Animal Manures (Added)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d17.4" ;
+  skos:altLabel "Feed Manure (Add)"@en ;
+  skos:definition "Feeds added to animal diets that are animal manures."@en ;
+  skos:scopeNote "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."@en ;
+  skos:broader <urn:era:practice:practice:010> .
+<urn:era:practice:d17.5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Other Feed (Added)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d17.5" ;
+  skos:altLabel "Feed Other (Add)"@en ;
+  skos:definition "Feeds added to animal diets that are non-plant or non-manure based materials. These typically include materials that are the by-product of animal processing (e.g., bone meal or fish meal)."@en ;
+  skos:scopeNote "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."@en ;
+  skos:broader <urn:era:practice:practice:010> .
+<urn:era:practice:d18.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Fodders (Substituted)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d18.1" ;
+  skos:altLabel "Feed Crop (Sub)"@en ;
+  skos:definition "Components of a basal diet fully or partially substituted for residues from crops not primarily grown for fodder, but for another purpose (e.g. consumption). These can be field residues (for example maize stalks left over once the grain component has been harvested) and or processing residues (for example the maize bran produced as a byproduct of milling flour)."@en ;
+  skos:scopeNote "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."@en ;
+  skos:broader <urn:era:practice:practice:011> .
+<urn:era:practice:d18.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Non Crop Fodders (Substituted)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d18.2" ;
+  skos:altLabel "Feed NonCrop (Sub)"@en ;
+  skos:definition "Components of a basal diet fully or partially substituted for non-woody crops grown primarily for fodder (e.g., alfafa or clover grown to feed to cattle) or non-woody plants harvested from non-cropped areas (e.g., forage grasses such as napier grass grown to stabilize terraces, cactus harvested from boundary fences, wild growing plants in wayside or fallows, algae, etc.). Feeds are added compared to a base practice control such as hay ad libitum only."@en ;
+  skos:scopeNote "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."@en ;
+  skos:broader <urn:era:practice:practice:011> .
+<urn:era:practice:d18.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Agroforestry Fodders (Substituted)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d18.3" ;
+  skos:altLabel "Feed AgFor (Sub)"@en ;
+  skos:definition "Components of a basal diet fully or partially substituted for agroforestry shrub or tree fodders (woody plants)."@en ;
+  skos:scopeNote "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."@en ;
+  skos:broader <urn:era:practice:practice:011> .
+<urn:era:practice:d18.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Animal Manures (Substituted)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d18.4" ;
+  skos:altLabel "Feed Manure (Sub)"@en ;
+  skos:definition "Components of a basal diet fully or partially substituted for animal manures."@en ;
+  skos:scopeNote "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."@en ;
+  skos:broader <urn:era:practice:practice:011> .
+<urn:era:practice:d18.5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Other Feed (Substituted)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d18.5" ;
+  skos:altLabel "Feed Byproducts (Sub)"@en ;
+  skos:definition "Components of a basal diet fully or partially substituted with non-plant and non-manure based materials. These typically include materials for the by-product of animal processing (e.g., bone meal or fish meal)."@en ;
+  skos:scopeNote "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."@en ;
+  skos:broader <urn:era:practice:practice:011> .
+<urn:era:practice:d22.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Chemically Processed Feed"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d22.1" ;
+  skos:altLabel "Feed Chem Process"@en ;
+  skos:definition "Fodders that have been chemically processed, for example urea-treated stover or fermented fodders. Silage is a type of fodder made from green foliage crops which have been preserved by acidification, achieved through fermentation."@en ;
+  skos:broader <urn:era:practice:practice:012> .
+<urn:era:practice:d22.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Mechanically Processed Feed"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d22.2" ;
+  skos:altLabel "Feed Mech Process"@en ;
+  skos:definition "Fodders or plant wastes that have been mechanically processed, for example chopped or pelletted grasses or ground orange peel."@en ;
+  skos:broader <urn:era:practice:practice:012> .
+<urn:era:practice:d22.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Concentrated Feed"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d22.3" ;
+  skos:altLabel "Feed Concentrates"@en ;
+  skos:definition "Non-forage feeds rich in energy and protein. Concentrates include feeds such as maize bran, cotton seed cake, molasses, fish meal and bean cake. Non-forage feeds may use energy or protein rich part plants such as seeds, whereas forage feeds are mainly plant leaves and stems."@en ;
+  skos:broader <urn:era:practice:practice:012> .
+<urn:era:practice:d9> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Breeds"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d9" ;
+  skos:altLabel "Breed Impr"@en ;
+  skos:definition "The use of improved animal breeds, these are animals bred for specific traits usually productivity (typically breeds exotic to Africa like Friesen, Holstein or Jersey cows)."@en ;
+  skos:broader <urn:era:practice:practice:013> .
+<urn:era:practice:d10> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Hybridization or Cross Breeding"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d10" ;
+  skos:altLabel "Breed Hybrid"@en ;
+  skos:definition "The use of animal cross breeds produced by the mating (hybridization) of individuals of different breeds, varieties, or species."@en ;
+  skos:broader <urn:era:practice:practice:013> .
+<urn:era:practice:d13> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Manure Collection"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d13" ;
+  skos:definition "Techniques to collect manure, e.g, increased frequency of collection and removal from the kraal."@en ;
+  skos:broader <urn:era:practice:practice:014> .
+<urn:era:practice:d14> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Manure Storage"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d14" ;
+  skos:definition "Manure storage techniques such as heaps, pits or dry lots."@en ;
+  skos:broader <urn:era:practice:practice:014> .
+<urn:era:practice:d15> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Manure Treatment"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d15" ;
+  skos:altLabel "Manure Treat"@en ;
+  skos:definition "Techniques for treatment of manure."@en ;
+  skos:broader <urn:era:practice:practice:014> .
+<urn:era:practice:d16> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Rotational Grazing"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d16" ;
+  skos:altLabel "Grazing Rotation"@en ;
+  skos:definition "The movement of animals between different paddocks at intervals."@en ;
+  skos:broader <urn:era:practice:practice:015> .
+<urn:era:practice:d11> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Pasture (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d11" ;
+  skos:altLabel "Pasture Impr (Nfix)"@en ;
+  skos:definition "The planting of pastures with leguminous forages."@en ;
+  skos:broader <urn:era:practice:practice:015> .
+<urn:era:practice:d12> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Pasture (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d12" ;
+  skos:altLabel "Pasture Impr (nonNfix)"@en ;
+  skos:definition "The planting of pastures with non-leguminous forages."@en ;
+  skos:broader <urn:era:practice:practice:015> .
+<urn:era:practice:d19> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Controlled Grazing"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d19" ;
+  skos:altLabel "Grazing Controlled"@en ;
+  skos:definition "The restriction of animal movement within pastures. Controlled grazing is known by many names, such as rotational grazing, rotational stocking, intensive grazing and strip grazing. Typically a large pasture is subdivided into several smaller pastures (paddocks) by cross fencing and animals stocked in one of the paddocks. When the forage has been removed, cattle are rotated to the next paddock."@en ;
+  skos:broader <urn:era:practice:practice:015> .
+<urn:era:practice:d20> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Cut & Carry"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d20" ;
+  skos:altLabel "Grazing Cut & Carry"@en ;
+  skos:definition "A system where animals are confined and feed is brought to them, also known as zero grazing."@en ;
+  skos:broader <urn:era:practice:practice:015> .
+<urn:era:practice:d1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Aquasilviculture"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "d1" ;
+  skos:definition "An aquaculture practice in combination with a sylviculture practice in close spatial proximity. The classic example of this practice is fish or crustacean farming in mangroves, to conserve or restore mangrove trees and produce food."@en ;
+  skos:broader <urn:era:practice:practice:016> .
+<urn:era:practice:h60> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Basal or Conventional Diet"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h60" ;
+  skos:altLabel "Diet Control"@en ;
+  skos:definition "A diet fed to animals without additional of anything."@en ;
+  skos:scopeNote "A control for addition (supplementation) of feeds."@en ;
+  skos:broader <urn:era:practice:practice:017> .
+<urn:era:practice:h61> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional Supplement Use"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h61" ;
+  skos:altLabel "Diet Control"@en ;
+  skos:definition "Supplement given to animals by the farmer or deemed control by author and is"@en ;
+  skos:scopeNote "A control for addition (supplementation) or substitution of feeds."@en ;
+  skos:broader <urn:era:practice:practice:017> .
+<urn:era:practice:h10.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional Manure Handling"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h10.3" ;
+  skos:altLabel "Manure Hand Conv"@en ;
+  skos:definition "Conventional Manure handling (farmer practice)."@en ;
+  skos:broader <urn:era:practice:practice:018> .
+<urn:era:practice:h11> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional Pasture Management"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h11" ;
+  skos:altLabel "Pasture Man Conv"@en ;
+  skos:definition "Conventional pasture management. This could be the traditional or farmer practice or a practice the authors state as an unimproved control practice."@en ;
+  skos:broader <urn:era:practice:practice:019> .
+<urn:era:practice:h55.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Unspecified"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h55.2" ;
+  skos:definition "The breed breed practice is not specified as being improved or unimproved"@en ;
+  skos:broader <urn:era:practice:practice:020> .
+<urn:era:practice:h55.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Unimproved Breed"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h55.1" ;
+  skos:altLabel "Breed Unimpr"@en ;
+  skos:definition "A local or otherwise unimproved animal breed."@en ;
+  skos:scopeNote "A control for improved breeds/hybrid and cross breeds."@en ;
+  skos:broader <urn:era:practice:practice:020> .
+<urn:era:practice:b34> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Drip Irrigation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b34" ;
+  skos:altLabel "Irrigation Drip"@en ;
+  skos:definition "The use of plastic pipes to drip water into the soil at low pressure."@en ;
+  skos:broader <urn:era:practice:practice:021> .
+<urn:era:practice:b37> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Deficit Irrigation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b37" ;
+  skos:altLabel "Irrigation Deficit"@en ;
+  skos:definition "Application of water below full crop requirements compared to a control of conventional irrigation."@en ;
+  skos:broader <urn:era:practice:practice:022> .
+<urn:era:practice:b72> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Sprinkler Irrigation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b72" ;
+  skos:altLabel "Irrigation Sprinkers"@en ;
+  skos:definition "Application of irrigation through sprinkler technology."@en ;
+  skos:broader <urn:era:practice:practice:021> .
+<urn:era:practice:b36> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Alternate Partial Rootzone Irrigation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b36" ;
+  skos:altLabel "Irrigation APRI"@en ;
+  skos:definition "Part of the root is exposed to drying soil and the remaining is irrigated in accordance with crop requirements and soil drying rate. This practice is also called partial root zone drying (PRD)."@en ;
+  skos:broader <urn:era:practice:practice:021> .
+<urn:era:practice:b54> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Supplemental Irrigation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b54" ;
+  skos:altLabel "Irrigation Supp"@en ;
+  skos:definition "The addition of irrigation to typically rainfed crops."@en ;
+  skos:broader <urn:era:practice:practice:023> .
+<urn:era:practice:b53> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Irrigation (Other)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b53" ;
+  skos:altLabel "Irrigation Other"@en ;
+  skos:definition "The use of improved irrigation that isn't more specifically defined."@en ;
+  skos:broader <urn:era:practice:practice:021> .
+<urn:era:practice:b13> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Alternate Wetting & Drying (AWD)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b13" ;
+  skos:altLabel "AWD"@en ;
+  skos:definition "Repeated flooding and draining of paddy rice fields, managed responsively in relation to soil moisture levels."@en ;
+  skos:broader <urn:era:practice:practice:024> .
+<urn:era:practice:b14.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Midseason Drainage"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b14.1" ;
+  skos:definition "The paddy rice field is drained during the season, but usually only once."@en ;
+  skos:broader <urn:era:practice:practice:024> .
+<urn:era:practice:b14.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Reduced Water Use in Rice"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b14.2" ;
+  skos:altLabel "Reduced Water Use"@en ;
+  skos:definition "Practices that reduce water use in rice that are not alternate wetting & drying (AWD) or midseason drainage. Consider creating a new practice rather than using this code."@en ;
+  skos:broader <urn:era:practice:practice:024> .
+<urn:era:practice:b15> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "System of Rice Intensification (SRI)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "b15" ;
+  skos:altLabel "SRI"@en ;
+  skos:definition "If possible it is best to unpack SRI into its component practices rather than using this practice code. If impossible to disaggregate the SRI practice then use this code.\nSRI is a system package which can include early transplanting (8-12 days), 25cm spacing and alternate wet and dry. Identified by authors."@en ;
+  skos:broader <urn:era:practice:practice:024> ;
+  owl:deprecated true .
+<urn:era:practice:b3.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Rotation (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b3.1" ;
+  skos:altLabel "Rotation (Nfix)"@en ;
+  skos:definition "A crop rotation sequence of two or more legumes.\nA general definition of rotation is that more than one crop is grown in the same location, but across different growing season (diversification in time). Different varieties of the same crop do not count as rotation. A crop is not counted in a rotation sequence when it is obviously a minor intercrop to a main crop which is invariant over time (typically there is standard planting of the main crop from year to year and the intercrop is squeezed in-between the rows of the main crop, for example cowpea planted at a low density inbetween maize rows)."@en ;
+  skos:scopeNote "Crops should be grown for harvest and not as cover crop or green manure."@en ;
+  skos:broader <urn:era:practice:practice:025> .
+<urn:era:practice:b3.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Rotation (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b3.2" ;
+  skos:altLabel "Rotation (nonNfix)"@en ;
+  skos:definition "A crop rotation sequence with two or more non-legumes.\nA general definition of rotation is that more than one crop is grown in the same location, but across different growing season (diversification in time). Different varieties of the same crop do not count as rotation."@en ;
+  skos:scopeNote "Crops should be grown for harvest and not as cover crop or green manure."@en ;
+  skos:broader <urn:era:practice:practice:025> .
+<urn:era:practice:b43> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Rotation (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b43" ;
+  skos:altLabel "Rotation (Mixed)"@en ;
+  skos:definition "A crop rotation sequence containing non-leguminous and leguminous crops (e.g. a maize/bean rotation a maize-bean intercrop followed by cassava).\nA general definition of rotation is that more than one crop is grown in the same location, but across different growing season (diversification in time). Different varieties of the same crop do not count as rotation. A crop is not counted in a rotation sequence when it is obviously a minor intercrop to a main crop which is invariant over time (typically there is standard planting of the main crop from year to year and the intercrop is squeezed in-between the rows of the main crop, for example cowpea planted at a low density inbetween maize rows)."@en ;
+  skos:scopeNote "Crops should be grown for harvest and not as cover crop or green manure."@en ;
+  skos:broader <urn:era:practice:practice:025> .
+<urn:era:practice:b44> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Complex Rotation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "b44" ;
+  skos:altLabel "Rotation (Complex)"@en ;
+  skos:definition "A crop rotation sequence with three or more species or rotations with different annual cycles. If intercropping is present in a complex rotation then this should also be captured with an intercropping code. A species is not counted towards a rotation sequence species count when it is obviously a minor intercrop to a main crop which remains invariant (typically there is standard planting of the main crop from year to year and the intercrop is squeezed in-between the rows of the main crop, for example cowpea planted at a low density inbetween maize rows). If it is not clear which crops are main or minor or not then count them all towards a complex rotation total (so an experiement might have maize one year, then the next year some maize rows are replaced with beans, in this case the beans are counted as a rotation crop and the number of species is two).\nA general definition of rotation is that more than one crop is grown in the same location, but across different growing season (diversification in time). Different varieties of the same crop do not count as rotation. Crops should be grown for harvest and not as cover crop or green manure."@en ;
+  skos:broader <urn:era:practice:practice:026> ;
+  owl:deprecated true .
+<urn:era:practice:b31> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercrop Rotation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "b31" ;
+  skos:altLabel "Rotation (Int Only)"@en ;
+  skos:definition "Rotation where a main crop remains the same between seasons (no change in spatial location or crop identity), but the minor intercrop is not always present. If the same crop is intercropped throughout the sequence (e.g. Maize-Beans/Maize/Maize-Beans) then this requires a Partial Intercropping code (b50.1, b50.2 or b50.3) or if the intercrop changes throughout the sequence (e.g. Maize-Beans/Maize-Millet/Maize-Beans) this requires a Complex Intercrop Rotation code (b57). If the intercrop is mostly one crop for a long sequence, but rarely something else is planted, we still consider this to be relevant to the Partial Intercropping code.\nA general definition of rotation is that more than one crop is grown in the same location, but across different growing season (diversification in time). Different varieties of the same crop do not count as rotation. A crop is not counted in a rotation sequence when it is obviously a minor intercrop to a main crop which is invariant over time (typically there is standard planting of the main crop from year to year and the intercrop is squeezed in-between the rows of the main crop, for example cowpea planted at a low density inbetween maize rows). Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:broader <urn:era:practice:practice:026> ;
+  owl:deprecated true .
+<urn:era:practice:b48.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Double Cropping (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b48.1" ;
+  skos:definition "A double cropping system where two different crops are planting sequentially within the same growing season. Some crops fix nitrogen others do not."@en ;
+  skos:broader <urn:era:practice:practice:027> .
+<urn:era:practice:b48.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Double Cropping (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b48.2" ;
+  skos:definition "A double cropping system where two different crops are planting sequentially within the same growing season. No crops fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:027> .
+<urn:era:practice:b48.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Double Cropping (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b48.3" ;
+  skos:definition "A double cropping system where two different crops are planting sequentially within the same growing season. All crops fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:027> .
+<urn:era:practice:b48.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Double Cropping (Monocrop)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b48.4" ;
+  skos:definition "A double cropping system where the same crop is planted more than once and sequentially within the same growing season."@en ;
+  skos:broader <urn:era:practice:practice:027> .
+<urn:era:practice:b49.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Sequential Intercropping (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b49.1" ;
+  skos:definition "An intercropping and double cropping  system where two crops are planted together at the start of the season, then one is harvested and another crop planted whilst the non-harvested crop is growing (all within the same season). Some crops fix nitrogen others does not."@en ;
+  skos:broader <urn:era:practice:practice:028> .
+<urn:era:practice:b49.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Sequential Intercropping (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b49.2" ;
+  skos:definition "An intercropping and double cropping intercropping system where two crops are planted together at the start of the season, then one is harvested and another crop planted whilst the non-harvested crop is growing (all within the same season). No crops fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:028> .
+<urn:era:practice:b49.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Sequential Intercropping (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b49.3" ;
+  skos:definition "An intercropping and double cropping system where two crops are planted together at the start of the season, then one is harvested and another crop planted whilst the non-harvested crop is growing (all within the same season). All crops fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:028> .
+<urn:era:practice:b61.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Relay Intercropping (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b61.1" ;
+  skos:definition "A crop is planted and then another is planted with that crop, but at a later date within the same season. Some crops fixes nitrogen the others does not."@en ;
+  skos:broader <urn:era:practice:practice:028> .
+<urn:era:practice:b61.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Relay Intercropping (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b61.2" ;
+  skos:definition "A crop is planted and then another is planted with that crop, but at a later date within the same season.  No crops fixes nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:028> .
+<urn:era:practice:b61.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Relay Intercropping (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b61.3" ;
+  skos:definition "A crop is planted and then another is planted with that crop, but at a later date within the same season. All crop fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:028> .
+<urn:era:practice:b13.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Relay Green Manure (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b13.3" ;
+  skos:definition "A crop is planted and then a green manure is planted with that crop, but at a later date within the same season. Some crops fixes nitrogen the others does not. A green manure is usually planted to improve soil quality and it should not be harvested crop."@en ;
+  skos:broader <urn:era:practice:practice:029> .
+<urn:era:practice:b12.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Relay Green Manure (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b12.3" ;
+  skos:definition "A crop is planted and then a green manure is planted with that crop, but at a later date within the same season. No crops fixes nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:029> .
+<urn:era:practice:b11.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Relay Green Manure (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b11.3" ;
+  skos:definition "A crop is planted and then a green manure is planted with that crop, but at a later date within the same season. All crop fix nitrogen."@en ;
+  skos:broader <urn:era:practice:practice:029> .
+<urn:era:practice:b25> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercrop (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b25" ;
+  skos:altLabel "Intercrop (Mixed)"@en ;
+  skos:definition "An intercropping system with a legume and non-legume.\nIntercropping is where more than one crop is grown at the same time in the same area of management (typically a single field), this is diversification in space rather than diversification in time. Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:broader <urn:era:practice:practice:030> .
+<urn:era:practice:b50.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercrop (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b50.1" ;
+  skos:altLabel "Intercrop (nonNfix)"@en ;
+  skos:definition "An intercropping system with two non-legumes.\nIntercropping is where more than one crop is grown at the same time in the same area of management (typically a single field), this is diversification in space rather than diversification in time. Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:broader <urn:era:practice:practice:030> .
+<urn:era:practice:b50.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercrop (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b50.2" ;
+  skos:altLabel "Intercrop (Nfix)"@en ;
+  skos:definition "An intercropping system with two or more legumes (edible or marketable).\nIntercropping is where more than one crop is grown at the same time in the same area of management (typically a single field), this is diversification in space rather than diversification in time. Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:broader <urn:era:practice:practice:030> .
+<urn:era:practice:b50.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Complex Intercrop"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "unknown" ;
+  skos:notation "b50.3" ;
+  skos:altLabel "Intercrop (Complex)"@en ;
+  skos:definition "An intercropping system that is too complex to descirbe using existing ERA definitions. Typically involving multiple intercropping practices at the same time. Please use the notes to descirbe this practice."@en ;
+  skos:broader <urn:era:practice:practice:028> .
+<urn:era:practice:b50.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercrop (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b50.4" ;
+  skos:altLabel "Intercrop (Unsp.)"@en ;
+  skos:definition "An intercropping system is present, but no details on composition are available.\nIntercropping is where more than one crop is grown at the same time in the same area of management (typically a single field), this is diversification in space rather than diversification in time. Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:scopeNote "Only use this practice where there are no details presented about an intercropping paper. All we know is that intercropping was present."@en ;
+  skos:broader <urn:era:practice:practice:030> .
+<urn:era:practice:b55.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Partial Intercrop (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "b55.1" ;
+  skos:altLabel "Intercrop (Part; Mixed)"@en ;
+  skos:definition "An intercropping system with a legume and non-legume where intercropping is not present every season (spatial diversification that is variable over time). For example a repeating sequence of Maize followed by a Maize-Cowpea intercrop, this would also get an intercrop rotation code.\nIntercropping is where more than one crop is grown at the same time in the same area of management (typically a single field), this is diversification in space rather than diversification in time. Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:broader <urn:era:practice:practice:028> ;
+  owl:deprecated true .
+<urn:era:practice:b55.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Partial Intercrop (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "b55.2" ;
+  skos:altLabel "Intercrop (Part; nonNfix)"@en ;
+  skos:definition "An intercropping system with two non-legume crops where intercropping is not present every season (spatial diversification that is variable over time). For example a repeating sequence of Maize followed by a Maize-Cowpea intercrop, this would also get an intercrop rotation code.\nIntercropping is where more than one crop is grown at the same time in the same area of management (typically a single field), this is diversification in space rather than diversification in time. Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:broader <urn:era:practice:practice:028> ;
+  owl:deprecated true .
+<urn:era:practice:b55.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Partial Intercrop (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "b55.3" ;
+  skos:altLabel "Intercrop (Part; Nfix)"@en ;
+  skos:definition "An intercropping system with two legume crops where intercropping is not present every season (spatial diversification that is variable over time). For example a repeating sequence of Maize followed by a Maize-Cowpea intercrop, this would also get an intercrop rotation code.\nIntercropping is where more than one crop is grown at the same time in the same area of management (typically a single field), this is diversification in space rather than diversification in time. Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:broader <urn:era:practice:practice:028> ;
+  owl:deprecated true .
+<urn:era:practice:b57> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Complex Intercrop Rotation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "b57" ;
+  skos:altLabel "Intercrop (Rot; Complex)"@en ;
+  skos:definition "There is a main crop (there is no change in spatial location or crop identity) and intercrop (minor) crop sequence , but the nature of the main-intercrop pairing changes between seasons (e.g. Maize-Beans/Maize-Millet/Maize-Beans) , this can be thought of as rotation in the intercrop (minor crop). If the intercrop is mostly one crop for a long sequence, but rarely something else is planted, we still consider this to be relevant to the Partial Intercropping code.\nIntercropping is where more than one crop is grown at the same time in the same area of management (typically a single field), this is diversification in space rather than diversification in time. Crops should be grown for harvest and not as cover crop or green manure (if the latter see the green manure practices)."@en ;
+  skos:broader <urn:era:practice:practice:028> ;
+  owl:deprecated true .
+<urn:era:practice:b59> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Intercropping or Rotation (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b59" ;
+  skos:altLabel "Int or Rot (Mixed)"@en ;
+  skos:definition "Only use this practices where a paper states that legume intercropping or rotation was used, but the outcomes do not distinguish between the two."@en ;
+  skos:scopeNote "This outcome will typically relate to farmer trials or surveys."@en ;
+  skos:broader <urn:era:practice:practice:031> .
+<urn:era:practice:c1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biogas"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "c1" ;
+  skos:altLabel "Biogas Prod"@en ;
+  skos:definition "Biogas production from from anaerobic biodigesters."@en ;
+  skos:scopeNote "The comparison for this practice can be wood fuel or charcoal production as traditional energy sources (the outcomes would be cost, labor, fuel use, cooking time, etc.)."@en ;
+  skos:broader <urn:era:practice:practice:032> .
+<urn:era:practice:c4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biofertilizer"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "c4" ;
+  skos:definition "Fertilizer (biofertilizer) produced using a biodigestor slurry."@en ;
+  skos:scopeNote "USE COMPOST CODE b29"@en ;
+  skos:broader <urn:era:practice:practice:033> ;
+  owl:deprecated true .
+<urn:era:practice:c3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biogas Switching"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "c3" ;
+  skos:altLabel "Biogas Switch"@en ;
+  skos:definition "Switching of biodigestors biomass feedstocks."@en ;
+  skos:scopeNote "Biodigestor papers only."@en ;
+  skos:broader <urn:era:practice:practice:032> .
+<urn:era:practice:c2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Cookstoves"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "c2" ;
+  skos:altLabel "Cookstove Improv"@en ;
+  skos:definition "Improved cookstove designed to burn biomass fuels in a cleaner and more efficient manner than conventional practice (e.g., traditional three-stone fires)."@en ;
+  skos:broader <urn:era:practice:practice:034> .
+<urn:era:practice:c5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Cookstove Switching"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "c5" ;
+  skos:altLabel "Cookstove Switch"@en ;
+  skos:definition "Switching cookstove biomass feedstocks."@en ;
+  skos:scopeNote "Cooking fuel studies only. Changing the source of fuel doesn't count (e.g. unsustainable wood from source A vs sustianable fuel from source B)."@en ;
+  skos:broader <urn:era:practice:practice:034> .
+<urn:era:practice:h14> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Unimproved Stove Technology"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h14" ;
+  skos:altLabel "Cookstove Unimpr"@en ;
+  skos:definition "Use of traditional stoves for burning biomass fuels lile traditional three-stone; a control for improved cookstoves"@en ;
+  skos:scopeNote "A control for an improved cookstove."@en ;
+  skos:broader <urn:era:practice:practice:035> .
+<urn:era:practice:h15> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional Biomass Feedstocks"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h15" ;
+  skos:altLabel "Biomass Feed Conv"@en ;
+  skos:definition "Use of normal/usual feedstocks in a biomass digestor."@en ;
+  skos:broader <urn:era:practice:practice:036> .
+<urn:era:practice:h16> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Predominant Biodigestor Model"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "h16" ;
+  skos:broader <urn:era:practice:practice:033> ;
+  owl:deprecated true .
+<urn:era:practice:h26> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional Energy Sources"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h26" ;
+  skos:altLabel "Cookstove Conv Fuel"@en ;
+  skos:definition "A conventional or normal source of fuel."@en ;
+  skos:scopeNote "A control for cookstove fuel switching."@en ;
+  skos:broader <urn:era:practice:practice:035> .
+<urn:era:practice:b4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Drought Tolerance"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b4" ;
+  skos:altLabel "Seed Drought"@en ;
+  skos:definition "An improved crop variety bred for potential resistance to drought."@en ;
+  skos:broader <urn:era:practice:practice:037> .
+<urn:era:practice:b5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Heat Tolerance"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b5" ;
+  skos:altLabel "Seed Heat"@en ;
+  skos:definition "An improved crop variety bred for potential resistance to heat."@en ;
+  skos:broader <urn:era:practice:practice:037> .
+<urn:era:practice:b6> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Salinity Tolerance"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b6" ;
+  skos:altLabel "Seed Salt"@en ;
+  skos:definition "An improved crop variety bred for potential resistance to salinity."@en ;
+  skos:broader <urn:era:practice:practice:037> .
+<urn:era:practice:b69> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Seeds"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b69" ;
+  skos:altLabel "Seed Improv"@en ;
+  skos:definition "An improved crop variety bred for a specific quality other than drought, heat or salinity resistance (e.g. early maturity/short season or improved yields)."@en ;
+  skos:broader <urn:era:practice:practice:037> .
+<urn:era:practice:h55> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Unimproved Variety"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h55" ;
+  skos:altLabel "Unimpr Variety"@en ;
+  skos:definition "A crop variety that has not been improved through intensive crop breeding, for example a farmer's or local variety, or a landrace."@en ;
+  skos:broader <urn:era:practice:practice:038> .
+<urn:era:practice:b35> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Cisterns and Tanks"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b35" ;
+  skos:altLabel "Water Tanks"@en ;
+  skos:definition "The active collection and storage of water runoff for irrigation purposes."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b33> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Zai Pits"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b33" ;
+  skos:definition "Small pits to capture water. Pits are filled with manure, compost or other nutrient sources before the rainy season. Crops are planted directly into the pits."@en ;
+  skos:scopeNote "Usually associated with a mulch, compost or manure practice.\nTypically identified by the author."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b45> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Stone Rows"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b45" ;
+  skos:definition "Stones piled in rows within a field, typically along contour lines, for the purpose of rainwater harvesting or soil water conservation."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b46> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Grass Strips"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b46" ;
+  skos:definition "Strips of grass within a field or farm created for erosion control, typically they are placed along contour lines."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b47> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Planting Basins"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b47" ;
+  skos:definition "Small planting pits dug to capture water, crops are planted directly into the pits."@en ;
+  skos:scopeNote "Typically identified by the author.\nIf pits are dug one year and then kept across many seasons, after season one this can be considered a form of reduced tillage."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b68> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Dam"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b68" ;
+  skos:definition "Construction or enhancement of water capture and storage using small dams (e.g. Chaco dams)."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b70> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Terraces"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b70" ;
+  skos:definition "The soil of steeply sloping fields is dug into large steps."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b71.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Bunds"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b71.1" ;
+  skos:definition "A permanent or semi-permanent ridge of soil or stone typically constructed along a contour that slows water from moving off-site, names include contour bunds, stone bunds, semicircular bunds."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b71.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Ridge & Furrow"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b71.2" ;
+  skos:definition "The mounding of soil to allow movement and storage of water in a furrow next to the ridge. Ridges are usually remade each season."@en ;
+  skos:scopeNote "This practices is also a tillage practice, but it's nature depends on the comparison. Sometimes it reduced tillage (e.g., if compared to deep mechanical tillage), sometimes it's conventional practice (e.g. if compared to no-tillage)."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b71.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Tied Ridges"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b71.3" ;
+  skos:definition "Basins are made by digging out shallow furrows along the contour lines of a slope and making ridges on the downside of the furrows. These are “tied” together by slightly lower ridges which are made at regular intervals along the furrows."@en ;
+  skos:scopeNote "If tied ridges are dug one year and then kept across many seasons, after season one this can be considered a form of reduced tillage, this will typically be identified by the author."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b52> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Microcatchments"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b52" ;
+  skos:definition "Microcatchment is a term for infield water catchment. Negarim microcatchments, for example, are diamond-shaped basins surrounded by small earth bunds with an infiltration pit in the lowest corner of each. Runoff is collected from within the basin and stored in the infiltration pit. Microcatchments are mainly used for growing trees or bushes."@en ;
+  skos:scopeNote "Typically identified by the author."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b56> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Fanya Juu or Fanya Chini"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b56" ;
+  skos:altLabel "Fanya Juu or Chini"@en ;
+  skos:definition "A local method used in Tanzania of ditches dug on steep slopes. Fanya juu are terraces constructed by digging ditches and heaping the soil, forming bunds in the upper sides of the ditches. Fanya chini are similar to fanya juus except that the soil is put on the lower side of the contour trench."@en ;
+  skos:scopeNote "Typically identified by the author."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:b58> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Trench"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b58" ;
+  skos:definition "A trench dug along the contour lines of a field to capture water. This practice should have no associated bunds or banks with the trench."@en ;
+  skos:broader <urn:era:practice:practice:039> .
+<urn:era:practice:h1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Non CSA"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "h1" ;
+  skos:definition "general, other, typically should not be used"@en ;
+  skos:broader <urn:era:practice:practice:040> ;
+  owl:deprecated true .
+<urn:era:practice:h2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Monoculture"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h2" ;
+  skos:definition "A single crop is grown in the experimental plot and is invariant over time."@en ;
+  skos:scopeNote "This is the control for an intercropping experiment. Crop varieties may change."@en ;
+  skos:broader <urn:era:practice:practice:041> .
+<urn:era:practice:h38> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Continuous Cropping"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "h38" ;
+  skos:definition "A single crop is grown in the experimental plot, this is invariant over the course of the experiment."@en ;
+  skos:scopeNote "This is the control for an intercropping experiment."@en ;
+  skos:broader <urn:era:practice:practice:042> ;
+  owl:deprecated true .
+<urn:era:practice:h18> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Simple Intercrop"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "h18" ;
+  skos:definition "Control for improved intercropping."@en ;
+  skos:broader <urn:era:practice:practice:041> ;
+  owl:deprecated true .
+<urn:era:practice:h50> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Simple Crop Rotation"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "h50" ;
+  skos:definition "Control for improved rotations."@en ;
+  skos:broader <urn:era:practice:practice:041> ;
+  owl:deprecated true .
+<urn:era:practice:h48> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional rice management"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "h48" ;
+  skos:definition "A control for SRI, alternate wetting $drying, midseason drainage and reduced water use in Rice"@en ;
+  skos:broader <urn:era:practice:practice:042> ;
+  owl:deprecated true .
+<urn:era:practice:h66.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Chemical Weeding (Herbicides)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h66.1" ;
+  skos:altLabel "Weed Chem"@en ;
+  skos:definition "Suppression of weed growth or killing weeds using chemicals"@en ;
+  skos:broader <urn:era:practice:practice:041> .
+<urn:era:practice:h66.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Hand Weeding"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h66.2" ;
+  skos:altLabel "Weed Hand"@en ;
+  skos:definition "Extraction of weeds by hands through pulling or use of tools like panga, hoe etc."@en ;
+  skos:broader <urn:era:practice:practice:041> .
+<urn:era:practice:b16> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic K Inputs"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b16" ;
+  skos:altLabel "Inputs K"@en ;
+  skos:definition "The addition of potassium (K) inorganic inputs to fields, typically to test application timing or amount."@en ;
+  skos:broader <urn:era:practice:practice:043> .
+<urn:era:practice:b17> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic N Inputs"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b17" ;
+  skos:altLabel "Inputs N"@en ;
+  skos:definition "The addition of nitrogen (N) inorganic inputs to fields, typically to test application timing or amount."@en ;
+  skos:broader <urn:era:practice:practice:043> .
+<urn:era:practice:b21> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic P Inputs"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b21" ;
+  skos:altLabel "Inputs P"@en ;
+  skos:definition "The addition of phosphorous (P) inorganic inputs to fields, typically to test application timing or amount."@en ;
+  skos:broader <urn:era:practice:practice:043> .
+<urn:era:practice:b16.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic K Reduction"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b16.1" ;
+  skos:altLabel "Reduce K"@en ;
+  skos:definition "The reduction of potassium (K) inorganic inputs relative to a control practice."@en ;
+  skos:scopeNote "This practice is not available in the ERA data entry process, it added by comparison logic."@en ;
+  skos:broader <urn:era:practice:practice:044> .
+<urn:era:practice:b17.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic N Reduction"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b17.1" ;
+  skos:altLabel "Reduce N"@en ;
+  skos:definition "The reduction of nitrogen (N) inorganic inputs relative to a control practice."@en ;
+  skos:scopeNote "This practice is not available in the ERA data entry process, it added by comparison logic."@en ;
+  skos:broader <urn:era:practice:practice:044> .
+<urn:era:practice:b21.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic P Reduction"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b21.1" ;
+  skos:altLabel "Reduce P"@en ;
+  skos:definition "The reduction of phosphorous (P) inorganic inputs relative to a control practice."@en ;
+  skos:scopeNote "This practice is not available in the ERA data entry process, it added by comparison logic."@en ;
+  skos:broader <urn:era:practice:practice:044> .
+<urn:era:practice:b64> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Inorganic Micronutrients Inputs"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b64" ;
+  skos:altLabel "Inputs Micro"@en ;
+  skos:definition "The addition of micronutrients such as Fe, B, Cu, Mo, Zn, Mn, Cl, Ni, or Si typically to test application timing or amount."@en ;
+  skos:broader <urn:era:practice:practice:043> .
+<urn:era:practice:b23> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Urea"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b23" ;
+  skos:altLabel "Inputs Urea"@en ;
+  skos:definition "The addition of urea (a source of nitrogen) to fields, typically to test application timing or amount."@en ;
+  skos:broader <urn:era:practice:practice:043> .
+<urn:era:practice:b29> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Compost"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b29" ;
+  skos:altLabel "Inputs Compost"@en ;
+  skos:definition "Application of composted plant material to the field, typically to test application timing or amount. Composts are organic materials which have been piled, moistened, and allowed to undergo biological decomposition"@en ;
+  skos:scopeNote "Typically identified by author. Include composted manures under the Manure practice, not here."@en ;
+  skos:broader <urn:era:practice:practice:045> .
+<urn:era:practice:b30> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Manure"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b30" ;
+  skos:altLabel "Inputs Manure"@en ;
+  skos:definition "Application of animal manure to the field, typically to test application timing or amount. This does not include biosolids such as sewage which have their own practice codes."@en ;
+  skos:scopeNote "Include composted manures here."@en ;
+  skos:broader <urn:era:practice:practice:045> .
+<urn:era:practice:b75> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Kraaling or Parcage"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b75" ;
+  skos:altLabel "Inputs Kraaling"@en ;
+  skos:definition "A south and west African method of housing animals at night in crop fields to produce manure."@en ;
+  skos:broader <urn:era:practice:practice:045> .
+<urn:era:practice:b73> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Organic (Other)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b73" ;
+  skos:altLabel "Inputs Other Organic"@en ;
+  skos:definition "An organic input that does not match any other category in ERA."@en ;
+  skos:scopeNote "Please notify ERA team if you use this code."@en ;
+  skos:broader <urn:era:practice:practice:045> .
+<urn:era:practice:b74> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Ash"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b74" ;
+  skos:altLabel "Inputs Ash"@en ;
+  skos:definition "Application of plant ash to fields."@en ;
+  skos:broader <urn:era:practice:practice:045> .
+<urn:era:practice:b67> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biosolids"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b67" ;
+  skos:altLabel "Inputs Biosolids"@en ;
+  skos:definition "Biosolids are treated and processed sewage sludge applied to fields as a fertilizer. Biosolids do not include industrial waste products, e.g. sugar production waste, ethanol production waste."@en ;
+  skos:broader <urn:era:practice:practice:045> .
+<urn:era:practice:b29.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Compost Substitution"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b29.1" ;
+  skos:altLabel "Sub Compost"@en ;
+  skos:definition "Compared to a control practice that does not apply compost and does apply inorganic fertilizers, this practice shows reduced, but not eliminated, inorganic fertilizer use (N, P, and/or K)  and application of composted plant material to the field. This represents partial substitution of inorganic inputs with organic inputs. Composts are organic materials which have been piled, moistened, and allowed to undergo biological decomposition."@en ;
+  skos:scopeNote "This practice is not available in the ERA data entry process, it added by comparison logic."@en ;
+  skos:broader <urn:era:practice:practice:046> .
+<urn:era:practice:b30.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Manure Substitution"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b30.1" ;
+  skos:altLabel "Sub Manure"@en ;
+  skos:definition "Compared to a control practice that does not apply animal manures and does apply inorganic fertilizers, this practice shows reduced, but not eliminated, inorganic fertilizer use (N, P, and/or K)  and application of animal manures to the field. This represents partial substitution of inorganic inputs with organic inputs. This does not include biosolids such as sewage which have their own practice codes."@en ;
+  skos:scopeNote "This practice is not available in the ERA data entry process, it added by comparison logic."@en ;
+  skos:broader <urn:era:practice:practice:046> .
+<urn:era:practice:b75.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Kraaling or Parcage Substitution"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b75.1" ;
+  skos:altLabel "Sub Kraaling"@en ;
+  skos:definition "Compared to a control practice that does not use kraaling and does apply inorganic fertilizers, this practice shows reduced, but not eliminated, inorganic fertilizer use (N, P, and/or K)  and use of kraaling. This represents partial substitution of inorganic inputs with organic inputs. Kraaling is a south and west African method of housing animals at night in crop fields to produce manure."@en ;
+  skos:scopeNote "This practice is not available in the ERA data entry process, it added by comparison logic."@en ;
+  skos:broader <urn:era:practice:practice:046> .
+<urn:era:practice:b73.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Organic (Other) Substitution"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b73.1" ;
+  skos:altLabel "Sub Other Organic"@en ;
+  skos:definition "An organic input that does not match any other category in ERA. Compared to a control practice that does not use this other organic input and does apply inorganic fertilizers, this practice shows reduced, but not eliminated, inorganic fertilizer use (N, P, and/or K)  and use of this other organic input. This represents partial substitution of inorganic inputs with organic inputs."@en ;
+  skos:scopeNote "This practice is not available in the ERA data entry process, it added by comparison logic."@en ;
+  skos:broader <urn:era:practice:practice:046> .
+<urn:era:practice:b67.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biosolids Substitution"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b67.1" ;
+  skos:altLabel "Sub Biosolids"@en ;
+  skos:definition "Compared to a control practice that does not apply biosolids and does apply inorganic fertilizers, this practice shows reduced, but not eliminated, inorganic fertilizer use (N, P, and/or K)  and application of biosolids to the field. This represents partial substitution of inorganic inputs with organic inputs. Biosolids are treated and processed sewage sludge applied to fields as a fertilizer. Biosolids do not include industrial waste products, e.g. sugar production waste, ethanol production waste."@en ;
+  skos:scopeNote "This practice is not available in the ERA data entry process, it added by comparison logic."@en ;
+  skos:broader <urn:era:practice:practice:046> .
+<urn:era:practice:h10> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional input (fertilizer) use"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h10" ;
+  skos:definition "Addition of fertilizer without any specific measurement"@en ;
+  skos:broader <urn:era:practice:practice:047> .
+<urn:era:practice:h10.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "No fertilizers added"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h10.1" ;
+  skos:altLabel "No Fert"@en ;
+  skos:definition "No inputs of inorganic or organic fertilizer."@en ;
+  skos:scopeNote "A control for fertilizers addition treatments."@en ;
+  skos:broader <urn:era:practice:practice:047> .
+<urn:era:practice:h10.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Recommend rate of fertilizer"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h10.2" ;
+  skos:definition "Addition of recommended amount of fertilizer following soil tests. This is to be used when the papers specifically says the recommended rates."@en ;
+  skos:broader <urn:era:practice:practice:047> .
+<urn:era:practice:f1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Harvest Technique"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "f1" ;
+  skos:definition "Changing the manner in which crops are harvested, for example using a new tool."@en ;
+  skos:broader <urn:era:practice:practice:048> .
+<urn:era:practice:f2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Harvesting Timing"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "f2" ;
+  skos:altLabel "Harvest Timing"@en ;
+  skos:definition "Changing the time when crops are harvested, for example moving to piecemeal harvesting from all-at-once or havesting in the morning compared to the heat of the day."@en ;
+  skos:broader <urn:era:practice:practice:048> .
+<urn:era:practice:f3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Drying"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "f3" ;
+  skos:altLabel "Drying Improv"@en ;
+  skos:definition "Changing the manner in which crops are dried."@en ;
+  skos:broader <urn:era:practice:practice:049> .
+<urn:era:practice:f4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Chemical Storage"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "f4" ;
+  skos:altLabel "Storage Impr Chem"@en ;
+  skos:definition "Using naturally derived or manufactured chemicals such as pesticides or preservatives improve storage. This could include adding actellic dust or fungicide to maize bags or fumigation of stores."@en ;
+  skos:broader <urn:era:practice:practice:049> .
+<urn:era:practice:f5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Physical Storage"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "f5" ;
+  skos:altLabel "Storage Impr Phys"@en ;
+  skos:definition "Improving the way food stuffs are stored such as Purdue improved crop storage (PICS) bags, use of granaries or improvements to granaries."@en ;
+  skos:broader <urn:era:practice:practice:049> .
+<urn:era:practice:h17> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Traditional harvesting method"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h17" ;
+  skos:altLabel "Harvest Trad"@en ;
+  skos:definition "Harvesting at usual times or with usual tools."@en ;
+  skos:scopeNote "Control for improved/changed harvesting technique and/or timing."@en ;
+  skos:broader <urn:era:practice:practice:050> .
+<urn:era:practice:h21> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Unimproved Storage Structure"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h21" ;
+  skos:altLabel "Storage Unimpr Phys"@en ;
+  skos:definition "Storing feeds/seeds in an unimproved manner, such as a traditional granary or storeroom."@en ;
+  skos:scopeNote "Control for Improved Physical Storage."@en ;
+  skos:broader <urn:era:practice:practice:051> .
+<urn:era:practice:h22> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Unimprove or No Preservation Technique"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h22" ;
+  skos:altLabel "Storage Unimpr Chem"@en ;
+  skos:definition "Typically no method is used to preserve stored foods or the method is considered to be unimproved."@en ;
+  skos:scopeNote "Control for Improved Chemical Storage."@en ;
+  skos:broader <urn:era:practice:practice:051> .
+<urn:era:practice:h30> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Uimproved Drying Technique"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h30" ;
+  skos:altLabel "Drying Unimpr"@en ;
+  skos:definition "No or an unimproved drying technique is used to preserve food for storage."@en ;
+  skos:scopeNote "Control for Improved Improved Drying."@en ;
+  skos:broader <urn:era:practice:practice:051> .
+<urn:era:practice:b38> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "No or Zero Tillage"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b38" ;
+  skos:altLabel "NoTill"@en ;
+  skos:definition "No or zero tillage. Planted may use a dibble stick or other direct seeding methods."@en ;
+  skos:scopeNote "As defined by the author. Zero tillage can be compared to to reduced or conventional tillage."@en ;
+  skos:broader <urn:era:practice:practice:052> .
+<urn:era:practice:b39> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Reduced or Minimum Tillage"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b39" ;
+  skos:altLabel "MinTill"@en ;
+  skos:definition "Any tillage practice which reduces, but does not eliminate (no or zero tillage), soil disturbance. Examples include strip tillage, ripping, subsoiling or reducing the number of tillage passes or depth of tillage."@en ;
+  skos:scopeNote "Typically defined by the author. Reduced tillage can be compared to conventional tillage."@en ;
+  skos:broader <urn:era:practice:practice:052> .
+<urn:era:practice:b26> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Plastic Mulch"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b26" ;
+  skos:definition "Mulching with plastic materials on the soil surface."@en ;
+  skos:broader <urn:era:practice:practice:053> .
+<urn:era:practice:b27> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Mulch (Unspecified Plants)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b27" ;
+  skos:altLabel "Mulch (noID)"@en ;
+  skos:definition "Mulching with plant residues from an unspecified plant type, residues remain on soil surface and are not incorporated or burnt (for example)."@en ;
+  skos:scopeNote "Residues can be from the field or brought to the field from outside field boundaries. Residues should not be from agroforestry (see the Tree Pruning Practice under the Agroforestry Theme)."@en ;
+  skos:broader <urn:era:practice:practice:053> .
+<urn:era:practice:b27.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Mulch (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b27.1" ;
+  skos:altLabel "Mulch (Nfix)"@en ;
+  skos:definition "Mulching with herbaceous plant residues from a nitrogen fixing (leguminous) plant, residues remain on soil surface and are not incorporated or burnt (for example)."@en ;
+  skos:scopeNote "Residues can be from the field or brought to the field from outside field boundaries. Residues should not be from agroforestry (see the Tree Pruning Practice under the Agroforestry Theme)."@en ;
+  skos:broader <urn:era:practice:practice:053> .
+<urn:era:practice:b27.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Mulch (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b27.2" ;
+  skos:altLabel "Mulch (nonNfix)"@en ;
+  skos:definition "Mulching with herbaceous plant residues from a non-nitrogen fixing (not leguminous) plant, residues remain on soil surface and are not incorporated or burnt (for example)."@en ;
+  skos:scopeNote "Residues can be from the field or brought to the field from outside field boundaries. Residues should not be from agroforestry (see the Tree Pruning Practice under the Agroforestry Theme)."@en ;
+  skos:broader <urn:era:practice:practice:053> .
+<urn:era:practice:b27.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Mulch (N fixing & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b27.3" ;
+  skos:altLabel "Mulch (Mixed)"@en ;
+  skos:definition "Mulching with a mixture of herbaceous plant residues from both nitrogen-fixing (leguminous) and non-nitrogen fixing plant, residues remain on soil surface and are not incorporated or burnt (for example)."@en ;
+  skos:scopeNote "Residues can be from the field or brought to the field from outside field boundaries. Residues should not be from agroforestry (see the Tree Pruning Practice under the Agroforestry Theme)."@en ;
+  skos:broader <urn:era:practice:practice:053> .
+<urn:era:practice:b51> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Mulch (Other Materials)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b51" ;
+  skos:altLabel "Mulch (Other)"@en ;
+  skos:definition "Mulching on the soil surface with organic materials that are not herbaceous plants or plastic. This includes materials like wood shavings."@en ;
+  skos:broader <urn:era:practice:practice:053> .
+<urn:era:practice:b11.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Green Manure (N fixing In Time)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b11.1" ;
+  skos:altLabel "Green Manure (Nfix; Time)"@en ;
+  skos:definition "Non-harvested nitrogen fixing (leguminous) plants grown at a different time to harvested crops in system. For example a rotation where in season one a maize main crop is planted (from which grain is harvested) then the next season (or in-between seasons) a green manure is planted (from which no components were harvested for consumption, fibre or sale)."@en ;
+  skos:scopeNote "Green manures may be associated with Mulch codes in the Soil Management theme if their residues remain on the surface of the field or residue incorporation subpractices when ploughed into the field."@en ;
+  skos:broader <urn:era:practice:practice:054> .
+<urn:era:practice:b11.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Green Manure (N fixing In Space)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b11.2" ;
+  skos:altLabel "Green Manure (Nfix; Space)"@en ;
+  skos:definition "Non-harvested nitrogen fixing (leguminous) plants grown at the same time as harvested crops. For example a rotation where in season one a maize main crop is planted (from which grain is harvested) then the next season (or in-between seasons) a green manure is planted (from which no components were harvested for consumption, fibre or sale)."@en ;
+  skos:scopeNote "Green manures may be associated with Mulch codes in the Soil Management theme if their residues remain on the surface of the field or residue incorporation subpractices when ploughed into the field."@en ;
+  skos:broader <urn:era:practice:practice:054> .
+<urn:era:practice:b13.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Green Manure (Mixed In Space)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b13.2" ;
+  skos:altLabel "Green Manure (Mixed; Space)"@en ;
+  skos:definition "Non-harvested mixed nitrogen fixing (leguminous) and non-nitrogen fixing plants grown at the same time as harvested crops. For example a rotation where in season one a maize main crop is planted (from which grain is harvested) then the next season (or in-between seasons) a green manure is planted (from which no components were harvested for consumption, fibre or sale)."@en ;
+  skos:scopeNote "Green manures may be associated with Mulch codes in the Soil Management theme if their residues remain on the surface of the field or residue incorporation subpractices when ploughed into the field."@en ;
+  skos:broader <urn:era:practice:practice:054> .
+<urn:era:practice:b12.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Green Manure (Non N fixing In Time)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b12.1" ;
+  skos:altLabel "Green Manure (nonNfix; Time)"@en ;
+  skos:definition "Non-harvested non-nitrogen fixing (not leguminous) plants grown at a different time to harvested crops in system.For example a rotation where in season one a maize main crop is planted (from which grain is harvested) then the next season (or in-between seasons) a green manure is planted (from which no components were harvested for consumption, fibre or sale)."@en ;
+  skos:scopeNote "Green manures may be associated with Mulch codes in the Soil Management theme if their residues remain on the surface of the field or residue incorporation subpractices when ploughed into the field."@en ;
+  skos:broader <urn:era:practice:practice:054> .
+<urn:era:practice:b12.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Green Manure (Non N fixing In Space)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b12.2" ;
+  skos:altLabel "Green Manure (nonNfix; Space)"@en ;
+  skos:definition "Non-harvested non-nitrogen fixing (not leguminous) plants grown at the same time as harvested crops.For example a rotation where in season one a maize main crop is planted (from which grain is harvested) then the next season (or in-between seasons) a green manure is planted (from which no components were harvested for consumption, fibre or sale)."@en ;
+  skos:scopeNote "Green manures may be associated with Mulch codes in the Soil Management theme if their residues remain on the surface of the field or residue incorporation subpractices when ploughed into the field."@en ;
+  skos:broader <urn:era:practice:practice:054> .
+<urn:era:practice:b28> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Biochar"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b28" ;
+  skos:definition "Application of biochar."@en ;
+  skos:broader <urn:era:practice:practice:055> .
+<urn:era:practice:b32> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Liming or Calcium Addition"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b32" ;
+  skos:altLabel "pH"@en ;
+  skos:definition "Application of lime (e.g., dolomite) or forms of calcium (e.g. oyster shells) to the field to raise the pH."@en ;
+  skos:broader <urn:era:practice:practice:056> .
+<urn:era:practice:b40> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue Unresolved (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b40" ;
+  skos:altLabel "Residue Unkn (NoID; NoFate)"@en ;
+  skos:definition "Crop residues from an unspecified type of plant are retained in the field, but it is unknown if the residues are mulched or incorporated"@en ;
+  skos:scopeNote "This practice should not be used for Agroforestry residues (use the agroforestry theme)."@en ;
+  skos:broader <urn:era:practice:practice:057> .
+<urn:era:practice:b40.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue Unresolved (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b40.1" ;
+  skos:altLabel "Residue Unkn (Nfix; NoFate)"@en ;
+  skos:definition "Crop residues from a nitrogen-fixing (leguminous) plant are retained in the field, but it is unknown if the residues are mulched or incorporated"@en ;
+  skos:scopeNote "This practice should not be used for Agroforestry residues (use the agroforestry theme)."@en ;
+  skos:broader <urn:era:practice:practice:057> .
+<urn:era:practice:b40.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue Unresolved (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b40.2" ;
+  skos:altLabel "Residue Unkn (nonNfix; NoFate)"@en ;
+  skos:definition "Crop residues from a non nitrogen-fixing (not leguminous) plant are retained in the field, but it is unknown if the residues are mulched or incorporated"@en ;
+  skos:scopeNote "This practice should not be used for Agroforestry residues (use the agroforestry theme)."@en ;
+  skos:broader <urn:era:practice:practice:057> .
+<urn:era:practice:b41> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue Incorporation (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b41" ;
+  skos:altLabel "Residue Incorp (noID)"@en ;
+  skos:definition "The incorporation of crop residues from an unspecified type of plant. Residues may be brought to the field as biomass transfer."@en ;
+  skos:scopeNote "This practice should not be used for Agroforestry residues (use the agroforestry theme)."@en ;
+  skos:broader <urn:era:practice:practice:058> .
+<urn:era:practice:b41.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue Incorporation (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b41.1" ;
+  skos:altLabel "Residue Incorp (Nfix)"@en ;
+  skos:definition "The incorporation of crop residues from a nitrogen-fixing (leguminous) plant. Residues may be brought to the field as biomass transfer."@en ;
+  skos:scopeNote "This practice should not be used for Agroforestry residues (use the agroforestry theme)."@en ;
+  skos:broader <urn:era:practice:practice:058> .
+<urn:era:practice:b41.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue Incorporation (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b41.2" ;
+  skos:altLabel "Residue Incorp (nonNfix)"@en ;
+  skos:definition "The incorporation of crop residues from a non nitrogen-fixing (not leguminous) plant. Residues may be brought to the field as biomass transfer."@en ;
+  skos:scopeNote "This practice should not be used for Agroforestry residues (use the agroforestry theme)."@en ;
+  skos:broader <urn:era:practice:practice:058> .
+<urn:era:practice:b60> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Fallow (Unspecified)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b60" ;
+  skos:altLabel "Imp Fallow (noID)"@en ;
+  skos:definition "Planting fallows with unspecified plant species to improve soil health, typically lasting more than one season."@en ;
+  skos:broader <urn:era:practice:practice:059> .
+<urn:era:practice:b60.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Fallow (N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b60.1" ;
+  skos:altLabel "Imp Fallow (Nfix)"@en ;
+  skos:definition "Planting fallows with nitrogen-fixing (leguminous) plant species to improve soil health, often lasting more than one season."@en ;
+  skos:broader <urn:era:practice:practice:059> .
+<urn:era:practice:b60.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Fallow (Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b60.2" ;
+  skos:altLabel "Imp Fallow (nonNfix)"@en ;
+  skos:definition "Planting fallows with non nitrogen-fixing (not leguminous) plant species to improve soil health, often lasting more than one season."@en ;
+  skos:broader <urn:era:practice:practice:059> .
+<urn:era:practice:b60.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Improved Fallow (N & Non N fixing)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "b60.3" ;
+  skos:altLabel "Imp Fallow (Mixed)"@en ;
+  skos:definition "Planting fallows with nitrogen-fixing (leguminous) and non nitrogen-fixing plant species to improve soil health, often lasting more than one season."@en ;
+  skos:broader <urn:era:practice:practice:059> .
+<urn:era:practice:h24> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Natural or Bare Fallow"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h24" ;
+  skos:altLabel "Fallow Unimpr"@en ;
+  skos:definition "A fallowing practice where the land is left unmanaged between production periods."@en ;
+  skos:scopeNote "This is the control practice for improved fallows."@en ;
+  skos:broader <urn:era:practice:practice:060> .
+<urn:era:practice:h6> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Conventional Tillage"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h6" ;
+  skos:altLabel "Conv Till"@en ;
+  skos:definition "Tillage that is not considered to be reduced, typically includes methods such as moldboard plough which invert the upper layers of the soil."@en ;
+  skos:scopeNote "The definition depends on the context, for example ridge and furrow may be reduced in some instances, but conventional in others."@en ;
+  skos:broader <urn:era:practice:practice:061> .
+<urn:era:practice:h35> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residues Removed"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h35" ;
+  skos:altLabel "Residue Removed"@en ;
+  skos:definition "Crop residues are removed from the field."@en ;
+  skos:broader <urn:era:practice:practice:062> .
+<urn:era:practice:h36> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residues Burnt"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h36" ;
+  skos:altLabel "Residue Burnt"@en ;
+  skos:definition "Crop residues are burnt (in the field)."@en ;
+  skos:broader <urn:era:practice:practice:062> .
+<urn:era:practice:h39> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residues Grazed"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h39" ;
+  skos:altLabel "Residue Grazed"@en ;
+  skos:definition "Crop residues are grazed by livestock (in the field)."@en ;
+  skos:broader <urn:era:practice:practice:062> .
+<urn:era:practice:h37> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Crop Residue Incorporated"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h37" ;
+  skos:altLabel "Residue Incorp"@en ;
+  skos:definition "Crop residues are incorporated into the field."@en ;
+  skos:broader <urn:era:practice:practice:062> .
+<urn:era:practice:h6.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "No-Till (Off-season)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "h6.1" ;
+  skos:definition "Used in the unusal situation where off-season tillage erroneously adds a no-tillage ERA practice to a rotation sequence (add example from HK0314)"@en ;
+  skos:broader <urn:era:practice:practice:063> ;
+  owl:deprecated true .
+<urn:era:practice:h6.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Reduced Tillage (Off-season)"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "deprecated" ;
+  skos:notation "h6.2" ;
+  skos:definition "Used in the unusal situation where off-season tillage erroneously adds a reduced tillage ERA practice to a rotation sequence (add example from HK0314)"@en ;
+  skos:broader <urn:era:practice:practice:064> ;
+  owl:deprecated true .
+<urn:era:practice:h7> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Fully Irrigated Control or Experiment"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h7" ;
+  skos:altLabel "Full Irrig"@en ;
+  skos:definition "The crop is fully irrigated."@en ;
+  skos:scopeNote "A control that can be compared to experimental treatments that apply less water (e.g. deficit irrigation) or this code can be giving to control and treatment where both are irrigated (e.g. rice grown in paddies)."@en ;
+  skos:broader <urn:era:practice:practice:065> .
+<urn:era:practice:h23> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "No Irrigation Control or Rainfed Agriculture"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h23" ;
+  skos:altLabel "No Irrig"@en ;
+  skos:definition "No irrigation used, rainfed agriculture."@en ;
+  skos:scopeNote "A control practice that can be compared to the practice of supplemental irrigation."@en ;
+  skos:broader <urn:era:practice:practice:065> .
+<urn:era:practice:h3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:practice> ;
+  skos:prefLabel "Transplanting Seedlings. This practice code has only been applied to the 2018 dataset"@en ;
+  era:conceptType "leaf_practice" ;
+  era:status "active" ;
+  skos:notation "h3" ;
+  skos:definition "Transplanting young seedlings, a practice commonly used to improve rice management in irrigated systems."@en ;
+  skos:broader <urn:era:practice:practice:066> .

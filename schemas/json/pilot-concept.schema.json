@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:era:schema:pilot-concept",
+  "title": "ERA pilot concept source row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "concept_id",
+    "scheme_id",
+    "concept_type",
+    "notation",
+    "status",
+    "source_sheet",
+    "source_row"
+  ],
+  "properties": {
+    "concept_id": {
+      "type": "string",
+      "pattern": "^era:[A-Za-z0-9._:-]+$"
+    },
+    "scheme_id": {
+      "enum": ["era:scheme:practice", "era:scheme:outcome"]
+    },
+    "concept_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notation": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "enum": ["active", "deprecated", "unknown"]
+    },
+    "source_sheet": {
+      "enum": ["prac", "out"]
+    },
+    "source_row": {
+      "type": "integer",
+      "minimum": 2
+    }
+  }
+}

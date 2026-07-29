@@ -2,3 +2,8 @@
 
 Automated source-schema, referential-integrity, semantic, SHACL, and
 round-trip tests will be added with normalized pilot data.
+
+- `validate_pilot.R`: self-contained normalized-table integrity checks.
+- `check_roundtrip.R`: private-workbook comparison; runs locally because
+  workbook is not published.
+- GitHub Actions parses JSON-LD/Turtle and executes SHACL against both schemes.

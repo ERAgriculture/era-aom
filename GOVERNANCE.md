@@ -4,7 +4,8 @@
 
 - Institutional custodian and publisher: Alliance of Bioversity International
   and CIAT.
-- Product: collaborative Evidence for Resilient Agriculture output.
+- Product: Agriculture Ontology for Meta-analysis, preserving published
+  livestock AOM and collaborative ERA crop lineage.
 - Pilot and canonical-cutover approver: Pete Steward.
 - Permanent vocabulary reviewer: TBD.
 - Creators, contributors, reviewers, rights holders, and funders: recorded as
