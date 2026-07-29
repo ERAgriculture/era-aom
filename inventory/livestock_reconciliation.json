@@ -1,0 +1,175 @@
+{
+  "report_schema_version": "1.0.0",
+  "public_release": {
+    "doi": "10.7910/DVN/75E7HV",
+    "version": "2.0",
+    "release_date": "2026-01-21",
+    "file_id": 13249309,
+    "filename": "02a_AOM_v2.0.0.csv",
+    "bytes": 1489881,
+    "md5": "9dd9b11879805f22c18ec7e0173f80ba",
+    "sha256": "a5c6a4873c0ee1aa41a2975ebb2fb74ca3beb867ea3702e227118e5ecce6c17c",
+    "rows": 2503,
+    "raw_columns": 134,
+    "meaningful_columns": 38,
+    "empty_trailing_columns": 96
+  },
+  "workbook_aom": {
+    "rows": 2503,
+    "columns": 38,
+    "fingerprint_published": false
+  },
+  "alignment": {
+    "row_order_aligned": true,
+    "column_names_aligned": true,
+    "aom_id_mismatches": 0,
+    "hierarchy_level_mismatches": 0,
+    "normalized_cell_mismatches": 203,
+    "mismatch_by_column": [
+      {
+        "column": "Path",
+        "public_nonblank": 2502,
+        "workbook_nonblank": 2502,
+        "mismatches": 197
+      },
+      {
+        "column": "Edge_Value",
+        "public_nonblank": 2502,
+        "workbook_nonblank": 2501,
+        "mismatches": 1
+      },
+      {
+        "column": "Synonym",
+        "public_nonblank": 819,
+        "workbook_nonblank": 817,
+        "mismatches": 3
+      },
+      {
+        "column": "Scientific Name",
+        "public_nonblank": 1386,
+        "workbook_nonblank": 1387,
+        "mismatches": 1
+      },
+      {
+        "column": "NCBI",
+        "public_nonblank": 1410,
+        "workbook_nonblank": 1411,
+        "mismatches": 1
+      }
+    ]
+  },
+  "path_integrity": {
+    "public_path_mismatches_derived_levels": 250,
+    "workbook_path_mismatches_derived_levels": 54,
+    "rule": "Path is derived, never canonical."
+  },
+  "identity_integrity": {
+    "duplicate_aom_ids": "AOM_006275",
+    "duplicate_workbook_paths": "Management/Livestock Management/Feed Characteristic/Feed Composition/Feed Ingredient/Crop Byproduct/Cereal ByProducts/Brewers Grain",
+    "stable_ids_never_reused": true
+  },
+  "related_workbook_sheets": [
+    {
+      "sheet": "AOM_diets",
+      "rows": 1193,
+      "columns": 25
+    },
+    {
+      "sheet": "ani_diet",
+      "rows": 1806,
+      "columns": 21
+    },
+    {
+      "sheet": "ani_process",
+      "rows": 175,
+      "columns": 13
+    },
+    {
+      "sheet": "vars_animals",
+      "rows": 445,
+      "columns": 17
+    },
+    {
+      "sheet": "ssa_feedsdb",
+      "rows": 771,
+      "columns": 32
+    }
+  ],
+  "related_links": {
+    "aom_diets_distinct_ids": 849,
+    "aom_diets_ids_missing_from_aom": 0,
+    "ani_diet_distinct_mapped_ids": 1569,
+    "ani_diet_ids_missing_from_aom": 0,
+    "ani_diet_no_match_rows": 22
+  },
+  "external_mapping_fields": [
+    {
+      "field": "Ontology",
+      "nonblank": 307,
+      "distinct": 263,
+      "http_uri": 207,
+      "malformed_http": 79
+    },
+    {
+      "field": "Agrovoc",
+      "nonblank": 320,
+      "distinct": 89,
+      "http_uri": 319,
+      "malformed_http": 0
+    },
+    {
+      "field": "NCBI",
+      "nonblank": 1337,
+      "distinct": 380,
+      "http_uri": 1335,
+      "malformed_http": 0
+    },
+    {
+      "field": "WFO",
+      "nonblank": 1280,
+      "distinct": 362,
+      "http_uri": 0,
+      "malformed_http": 0
+    },
+    {
+      "field": "Feedipedia",
+      "nonblank": 1673,
+      "distinct": 339,
+      "http_uri": 619,
+      "malformed_http": 0
+    },
+    {
+      "field": "ilri_code",
+      "nonblank": 1642,
+      "distinct": 248,
+      "http_uri": 0,
+      "malformed_http": 0
+    },
+    {
+      "field": "CPC_Code_Product",
+      "nonblank": 1629,
+      "distinct": 108,
+      "http_uri": 0,
+      "malformed_http": 0
+    },
+    {
+      "field": "CPC_Code_Component",
+      "nonblank": 1633,
+      "distinct": 15,
+      "http_uri": 0,
+      "malformed_http": 0
+    },
+    {
+      "field": "ERA_Code",
+      "nonblank": 332,
+      "distinct": 169,
+      "http_uri": 0,
+      "malformed_http": 0
+    }
+  ],
+  "privacy": {
+    "workbook_path_published": false,
+    "workbook_fingerprint_published": false,
+    "ssa_feedsdb_values_published": false
+  }
+}

@@ -13,3 +13,5 @@ All notable vocabulary changes will be recorded here.
 - Rename repository/product to Agriculture Ontology for Meta-analysis (AOM);
   frame current pilot as crop module and preserve existing livestock AOM
   lineage as separate module.
+- Inventory AOM Livestock v2 public release and reconcile against workbook
+  AOM-family sheets without publishing restricted linkage data.

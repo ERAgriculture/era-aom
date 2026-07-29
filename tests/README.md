@@ -7,3 +7,5 @@ round-trip tests will be added with normalized pilot data.
 - `check_roundtrip.R`: private-workbook comparison; runs locally because
   workbook is not published.
 - GitHub Actions parses JSON-LD/Turtle and executes SHACL against both schemes.
+- `validate_livestock_inventory.R`: pins public AOM v2 identity and verifies
+  private/restricted data remain excluded.

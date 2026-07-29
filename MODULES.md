@@ -15,7 +15,7 @@ domain review.
 |---|---|---|
 | `aom-core` | cross-domain study, intervention, observation, unit, provenance, and context concepts | design deferred until crop/livestock comparison |
 | `aom-crop` | ERA practices, outcomes, crop products, inputs, sites, and field model | `prac` + `out` normalization pilot |
-| `aom-livestock` | diets, feed ingredients, animals, physiology, husbandry practices, livestock outcomes | existing prototype; asset inventory next |
+| `aom-livestock` | diets, feed ingredients, animals, physiology, husbandry practices, livestock outcomes | v2 release inventoried; normalization next |
 | `mappings` | reviewed links among modules and external resources | model placeholders now; mapping work later |
 
 ## Existing livestock AOM
@@ -49,10 +49,13 @@ Feedipedia and SSA Feeds. Those assets must be inventoried against workbook
 - Record every external mapping source, relation, evidence, reviewer, and
   status.
 
+Reconciliation report:
+[`inventory/AOM_LIVESTOCK_RECONCILIATION.md`](inventory/AOM_LIVESTOCK_RECONCILIATION.md).
+
 ## Next analysis
 
-1. Obtain exact published AOM livestock release files.
-2. Compare release with workbook AOM-family sheets.
-3. Build code/label/definition/mapping provenance report.
+1. Normalize published v2 without changing published IDs.
+2. Quarantine duplicate identity/path cases for human review.
+3. Normalize mapping assertions with release provenance and review state.
 4. Identify true shared concepts across crop and livestock.
 5. Propose `aom-core`; do not create it from naming similarity alone.
