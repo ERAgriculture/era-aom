@@ -18,6 +18,9 @@ Current work:
 4. regenerate and validate downstream artifacts;
 5. cut over only after pipeline and package parity.
 
+`prac` and `out` pilot design and validation:
+[`PILOT.md`](PILOT.md).
+
 No workbook content is published during inventory. This protects closed and
 unreviewed sheets while recording reproducible structural metadata.
 

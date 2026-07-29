@@ -1,0 +1,1314 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix era: <urn:era:property:> .
+
+<urn:era:scheme:outcome> a skos:ConceptScheme ;
+  skos:prefLabel "ERA outcomes"@en ;
+  era:status "pilot" .
+<urn:era:outcome:pillar:001> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Productivity"@en ;
+  era:conceptType "pillar" ;
+  era:status "active" ;
+  skos:notation "Productivity" .
+<urn:era:outcome:pillar:002> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Other"@en ;
+  era:conceptType "pillar" ;
+  era:status "active" ;
+  skos:notation "Other" .
+<urn:era:outcome:pillar:003> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Resilience"@en ;
+  era:conceptType "pillar" ;
+  era:status "active" ;
+  skos:notation "Resilience" .
+<urn:era:outcome:pillar:004> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Mitigation"@en ;
+  era:conceptType "pillar" ;
+  era:status "active" ;
+  skos:notation "Mitigation" .
+<urn:era:outcome:subpillar:001> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Yield"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "Yi" ;
+  skos:broader <urn:era:outcome:pillar:001> .
+<urn:era:outcome:subpillar:002> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Livestock Diet"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "Li" ;
+  skos:broader <urn:era:outcome:pillar:002> .
+<urn:era:outcome:subpillar:003> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Economics"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "Ec" ;
+  skos:broader <urn:era:outcome:pillar:001> .
+<urn:era:outcome:subpillar:004> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Physical"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "Ph" ;
+  skos:broader <urn:era:outcome:pillar:003> .
+<urn:era:outcome:subpillar:005> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Efficiency"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "Ef" ;
+  skos:broader <urn:era:outcome:pillar:003> .
+<urn:era:outcome:subpillar:006> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Social"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "So" ;
+  skos:broader <urn:era:outcome:pillar:003> .
+<urn:era:outcome:subpillar:007> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Emissions"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "Em" ;
+  skos:broader <urn:era:outcome:pillar:004> .
+<urn:era:outcome:subpillar:008> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Carbon Stocks"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "CS" ;
+  skos:broader <urn:era:outcome:pillar:004> .
+<urn:era:outcome:subpillar:009> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Cookstove"@en ;
+  era:conceptType "subpillar" ;
+  era:status "active" ;
+  skos:notation "Ck" ;
+  skos:broader <urn:era:outcome:pillar:004> .
+<urn:era:outcome:indicator:001> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Product Yield"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "PY" ;
+  skos:broader <urn:era:outcome:subpillar:001> .
+<urn:era:outcome:indicator:002> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Feed Intake"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "FI" ;
+  skos:broader <urn:era:outcome:subpillar:002> .
+<urn:era:outcome:indicator:003> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Non-Product Yield"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "NPY" ;
+  skos:broader <urn:era:outcome:subpillar:001> .
+<urn:era:outcome:indicator:004> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Income"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "In" ;
+  skos:broader <urn:era:outcome:subpillar:003> .
+<urn:era:outcome:indicator:005> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Costs"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "Co" ;
+  skos:broader <urn:era:outcome:subpillar:003> .
+<urn:era:outcome:indicator:006> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Economic Performance"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "EP" ;
+  skos:broader <urn:era:outcome:subpillar:003> .
+<urn:era:outcome:indicator:007> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Biodiversity"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "Bd" ;
+  skos:broader <urn:era:outcome:subpillar:004> .
+<urn:era:outcome:indicator:008> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Pest & Pathogen"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "PP" ;
+  skos:broader <urn:era:outcome:subpillar:004> .
+<urn:era:outcome:indicator:009> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Quality"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "SQ" ;
+  skos:broader <urn:era:outcome:subpillar:004> .
+<urn:era:outcome:indicator:010> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Yield Stability"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "YS" ;
+  skos:broader <urn:era:outcome:subpillar:004> .
+<urn:era:outcome:indicator:011> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Animal Survival"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "AS" ;
+  skos:broader <urn:era:outcome:subpillar:004> .
+<urn:era:outcome:indicator:012> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Efficiency"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "Ef" ;
+  skos:broader <urn:era:outcome:subpillar:005> .
+<urn:era:outcome:indicator:013> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Gender Equity"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "GE" ;
+  skos:broader <urn:era:outcome:subpillar:006> .
+<urn:era:outcome:indicator:014> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Labour"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "La" ;
+  skos:broader <urn:era:outcome:subpillar:006> .
+<urn:era:outcome:indicator:015> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Emissions"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "Em" ;
+  skos:broader <urn:era:outcome:subpillar:007> .
+<urn:era:outcome:indicator:016> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Carbon Stocks"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "CS" ;
+  skos:broader <urn:era:outcome:subpillar:008> .
+<urn:era:outcome:indicator:017> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Costs"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "CkCo" ;
+  skos:broader <urn:era:outcome:subpillar:009> .
+<urn:era:outcome:indicator:018> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Fuel Efficiency"@en ;
+  era:conceptType "indicator" ;
+  era:status "active" ;
+  skos:notation "FE" ;
+  skos:broader <urn:era:outcome:subpillar:009> .
+<urn:era:outcome:101.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Crop Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "101.0" ;
+  skos:definition "Amount of crop plant product produced (e.g., grain or fruit yield) per unit area land."@en ;
+  skos:scopeNote "When product and non-product components are not separated, for example measures of total, above-ground or below-ground crop biomass, the outcome sould be recorded using the Biomass Yield Outcome. Non-product component outcomes (e.g. maize stover or wheat stalks) should be recorded using the Crop Residue Yield outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:101.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Biomass Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "101.1" ;
+  skos:definition "Plant biomass yield. This can be used to describe pasture biomass yields or when total, above ground, or below ground biomass yields are given for crops that are usually split into product and non-product parts on harvest."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:101.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Extraction Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "101.2" ;
+  skos:definition "Extraction yield of oil from oil seeds or similar. For example 300kg oil extracted from 1000kg oil seeds = 0.3 or 30% oil yield per kg oil seeds."@en ;
+  skos:scopeNote "This outcome should be a percentage or ratio."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:103.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Land Equivalent Ratio"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "103.0" ;
+  skos:altLabel "LER"@en ;
+  skos:definition "The land equivalent ratio describes the relative land area required under sole cropping (monoculture) to produce the same yield as under intercropping (polyculture)."@en ;
+  skos:scopeNote "We do not accept LER for practice A vs practice B (e.g. mulch vs no-mulch as this yield A/yield B, which we calculated as the response ratio)."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:104.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Area Time Equivalent Ratio"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "104.0" ;
+  skos:altLabel "ATER"@en ;
+  skos:definition "The Area Time Equivalent Ratio (ATER) is a measure of the productivity of an intercropping system. It is calculated by dividing the total yield of the intercrop by the yield of a sole crop grown for the same duration. The ATER is calculated as follows: ATER = (Total yield of intercrop) / (Yield of sole crop grown for the same duration). The ATER is particularly useful in intercropping systems where the crops have different growth durations. For example, if a farmer intercrops a fast-growing crop with a slow-growing crop, the faster-growing crop will produce a yield before the slower-growing crop. The ATER will take into account the different growth durations of the crops and will give a more accurate measure of the overall productivity of the intercropping system."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:118.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Weight Gain"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "118.0" ;
+  skos:definition "Change in animal weight relative to a baseline (usually weight at the start of an experiment) over a specified time period."@en ;
+  skos:scopeNote "Please try to standardise to g per animal per day (g/individual/day). Default unit is unit/individual (e.g kg/cow) unless otherwise stated. Values for this outcome can be negative (the animal loses weight) or positive."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:119.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Meat Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "119.1" ;
+  skos:definition "The total weight of the animal or meat parts of it."@en ;
+  skos:scopeNote "This should not be an increase from a baseline weight (this is recorded under the Weight Gain outcome). Please try and standardise units kg/individual, you may specify the type of meat or weight measurement though (e.g. carcass weight kg/individual).' Specify if carcass is hot or cold, take both if given;Default unit is unit/individual (e.g kg/cow) unless otherwise statement"@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:119.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Milk Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "119.2" ;
+  skos:definition "Milk yields. Please specify absolute values and not change in yield relative to a base value."@en ;
+  skos:scopeNote "Please try and standardise to litres per animal per day (l/individual/day)."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:119.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Egg Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "119.3" ;
+  skos:definition "Egg yields, such as number of eggs per hen(s) per day(s)."@en ;
+  skos:scopeNote "Please try and standardise units to eggs per one individual per day. (eggs/individual/day)."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:119.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Other Animal Product Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "119.4" ;
+  skos:altLabel "Animal Yield (Other)"@en ;
+  skos:definition "Animal products that are not meat, egg, milk or offsping, for example wool, hides and honey."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:119.5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Reproductive Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "119.5" ;
+  skos:altLabel "Repro Yield"@en ;
+  skos:definition "Number of offpsring produced. This also includes % calving rate or similar."@en ;
+  skos:broader <urn:era:outcome:indicator:001> .
+<urn:era:outcome:400.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Feed Intake"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "400.0" ;
+  skos:definition "The amount of a diet consumed per unit time."@en ;
+  skos:broader <urn:era:outcome:indicator:002> .
+<urn:era:outcome:102.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Crop Residue Yield"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "102.0" ;
+  skos:altLabel "Residue Yield"@en ;
+  skos:definition "Crop residue yield is the amount of crop biomass left over once the crop products has been harvested. For example maize grain is a crop product, the stover and cobs leftover after harvesting the maize grain are crop residues."@en ;
+  skos:scopeNote "Entire plant biomass can also be recorded under this outcome if product or biomass yields are not available ( make sure the unit reflects this)."@en ;
+  skos:broader <urn:era:outcome:indicator:003> .
+<urn:era:outcome:120.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Gross Return"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "120.0" ;
+  skos:definition "Total income, revenue or returns without consideration of costs."@en ;
+  skos:scopeNote "Please standardize area denominators to ha where possible. Convert currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units."@en ;
+  skos:broader <urn:era:outcome:indicator:004> .
+<urn:era:outcome:124.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Net Return"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "124.0" ;
+  skos:definition "Net returns = income - total costs. Values for this outcome can be negative or positive."@en ;
+  skos:scopeNote "Please standardize area denominators to ha where possible. Convert currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units."@en ;
+  skos:broader <urn:era:outcome:indicator:004> .
+<urn:era:outcome:124.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Gross Margin"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "124.1" ;
+  skos:definition "Gross margin = revenue - variable costs. Values for this outcome can be negative or positive."@en ;
+  skos:scopeNote "Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units."@en ;
+  skos:broader <urn:era:outcome:indicator:004> .
+<urn:era:outcome:150.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Total Cost"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "150.0" ;
+  skos:definition "Total production costs."@en ;
+  skos:scopeNote "Only use this outcome if it is unclear whether total cost is per asset (e.g. cost per ha of land or animal) or per unit of production (e.g. cost per kg of meat or grain produced). Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit production please use the variable cost per unit product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:150.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Total Cost per Unit Product"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "150.1" ;
+  skos:altLabel "Total Cost/Unit"@en ;
+  skos:definition "Total production costs per unit of commodity produced. For example USD per kg maize produced or USD per kg of animal weight gained."@en ;
+  skos:scopeNote "Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit area, animal or some other asset please use the total cost per asset product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:150.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Total Cost per Asset"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "150.2" ;
+  skos:altLabel "Total Cost/Asset"@en ;
+  skos:definition "Total production costs per asset. For example USD per ha of farmland or USD per animal."@en ;
+  skos:scopeNote "Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit production please use the variable cost per unit product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:150.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Total Cost (Unconfirmed)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "150.3" ;
+  skos:altLabel "Total Cost (Unc)"@en ;
+  skos:definition "Total costs are stated in a publication, but there is insufficient methodological detail about the included costs to confirm this."@en ;
+  skos:scopeNote "Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit production please use the variable cost per unit product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:151.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Fixed Cost"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "151.0" ;
+  skos:definition "Cost that are constant whatever the amount of goods produced, for example land rental costs."@en ;
+  skos:scopeNote "Only use this outcome if it is unclear whether total cost is per asset (e.g. cost per ha of land or animal) or per unit of production (e.g. cost per kg of meat or grain produced). Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper record values in the local currency using the ISO 4217 country currency code in the units."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:151.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Fixed Cost per Unit Product"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "151.1" ;
+  skos:altLabel "Fixed Cost/Unit"@en ;
+  skos:definition "Fixed production costs per unit of commodity produced. For example USD per kg maize produced or USD per kg of animal weight gained."@en ;
+  skos:scopeNote "Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit area, animal or some other asset please use the fixed cost per asset product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:151.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Fixed Cost per Asset"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "151.2" ;
+  skos:altLabel "Fixed Cost/Asset"@en ;
+  skos:definition "Fixed production costs per asset. For example USD per ha of farmland or USD per animal."@en ;
+  skos:scopeNote "Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit production please use the fixed cost per unit product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:152.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Variable Cost"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "152.0" ;
+  skos:altLabel "Var Cost"@en ;
+  skos:definition "Costs of inputs (labour, seeds, fertilizers, herbicides, tilling, etc.) that vary with the level of output. The total variable cost can include labour, but record the individual cost of labour using the \"Labour Cost\" subindicator."@en ;
+  skos:scopeNote "Only use this outcome if it is unclear whether variable costs are per asset (e.g. cost per ha of land or animal) or per unit of production (e.g. cost per kg of meat or grain produced).Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper record values in the local currency using the ISO 4217 country currency code in the units. If costs are given per unit production please use the variable cost per unit product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:152.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Variable Cost per Unit Product"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "152.2" ;
+  skos:altLabel "Var Cost/Unit"@en ;
+  skos:definition "Variable production costs per unit of commodity produced. For example USD per kg maize produced or USD per kg of animal weight gained."@en ;
+  skos:scopeNote "Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit area, animal or some other asset please use the variable cost per asset product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:152.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Variable Cost per Asset"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "152.3" ;
+  skos:altLabel "Var Cost/Asset"@en ;
+  skos:definition "Variable production costs per asset. For example USD per ha of farmland or USD per animal."@en ;
+  skos:scopeNote "Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit production please use the variable cost per unit product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:152.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Labour Cost"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "152.1" ;
+  skos:altLabel "Lab Cost"@en ;
+  skos:definition "Labour costs only."@en ;
+  skos:scopeNote "Only use this outcome if it is unclear whether labour costs are per asset (e.g. cost per ha of land or animal) or per unit of production (e.g. cost per kg of meat or grain produced). Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper record values in the local currency using the ISO 4217 country currency code in the units. If costs are given per unit production please use the labour cost per unit product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:152.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Labour Cost per Unit Product"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "152.4" ;
+  skos:altLabel "Lab Cost/Unit"@en ;
+  skos:definition "Labour costs per unit of commodity produced. For example USD per kg maize produced or USD per kg of animal weight gained."@en ;
+  skos:scopeNote "Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units. If costs are given per unit area, animal or some other asset please use the labourcost per asset product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:152.5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Labour Cost per Asset"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "152.5" ;
+  skos:altLabel "Lab Cost/Asset"@en ;
+  skos:definition "Labour costs per asset. For example USD per ha of farmland or USD per animal."@en ;
+  skos:scopeNote "Please standardize area denominators to ha where possible. Convert local currences to USD (present $ in units) if exchange rates are presented in the paper record values in the local currency using the ISO 4217 country currency code in the units. If costs are given per unit production please use the labour cost per unit product outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:005> .
+<urn:era:outcome:125.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Benefit Cost Ratio (GRTC)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "125.0" ;
+  skos:altLabel "BC Ratio (GRTC)"@en ;
+  skos:definition "The ratio of gross return to total costs (gross returns/total costs)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:125.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Benefit Cost Ratio (GRVC)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "125.1" ;
+  skos:altLabel "BC Ratio (GRVC)"@en ;
+  skos:definition "The ratio of gross returns to variable costs (gross returns/variable costs)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:125.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Benefit Cost Ratio (GMVC)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "125.2" ;
+  skos:altLabel "BC Ratio (GMVC)"@en ;
+  skos:definition "The ratio of gross margin to variable costs (gross margin/variable costs)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:125.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Benefit Cost Ratio (NRVC)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "125.3" ;
+  skos:altLabel "BC Ratio (NRVC)"@en ;
+  skos:definition "The ratio of net returns to variable costs (net returns/variable costs)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:125.5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Benefit Cost Ratio (NRTC)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "125.5" ;
+  skos:altLabel "BC Ratio (NRTC)"@en ;
+  skos:definition "The ratio of net returns to variable costs (net returns/total costs)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:125.6> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Benefit Cost Ratio (GMTC)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "125.6" ;
+  skos:altLabel "BC Ratio (GMTC)"@en ;
+  skos:definition "The ratio of gross margin to variable costs (gross margin/total costs)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:125.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Benefit Cost Ratio (Unspecified)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "125.4" ;
+  skos:altLabel "BC Ratio (Unsp.)"@en ;
+  skos:definition "The ratio of benefits to costs when the exact formulation is not specified."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:126.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Cost Benefit Ratio (TCGR)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "126.0" ;
+  skos:altLabel "CB Ratio (TCGR)"@en ;
+  skos:definition "The ratio of total costs to gross returns (total costs/gross returns)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:126.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Cost Benefit Ratio (VCGR)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "126.1" ;
+  skos:altLabel "CB Ratio (VCGR)"@en ;
+  skos:definition "The ratio of variable costs to gross returns (variablecosts/gross returns)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:126.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Cost Benefit Ratio (TCNR)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "126.2" ;
+  skos:altLabel "CB Ratio (TCNR)"@en ;
+  skos:definition "The ratio of variable costs to net returns (variable costs/net returns)."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:130.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Net Present Value"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "130.0" ;
+  skos:altLabel "NPV"@en ;
+  skos:definition "Net Present Value = the value in the present of a sum of money, in contrast to some future value it will have when it has been invested at compound interest."@en ;
+  skos:scopeNote "Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:131.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Payback Period"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "131.0" ;
+  skos:definition "The period of time required to recoup the funds expended in investment."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:134.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Return on Investment"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "134.0" ;
+  skos:altLabel "ROI"@en ;
+  skos:definition "Return on investment is the gain or loss relative to the amount invested."@en ;
+  skos:scopeNote "This is usually presented as a ratio, please convert any % values to proportions."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:137.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Internal Rate of Return"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "137.0" ;
+  skos:altLabel "IRR"@en ;
+  skos:definition "Internal Rate of Return is the interest rate at which the net present value of all cash flows equal zero."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:137.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Marginal Rate of Return"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "137.1" ;
+  skos:altLabel "MRR"@en ;
+  skos:definition "Marginal Rate of Return is the amount of revenue per additional item, divided by marginal costs."@en ;
+  skos:broader <urn:era:outcome:indicator:006> .
+<urn:era:outcome:203.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Biodiversity"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "203.0" ;
+  skos:definition "The species richness or diversity (such as the Shannon or Simpsons index) of a community of organisms within the experimental field. Whether the group of organsims is beneficial, neutral or detrimental to production should be unclear or mixed. One typically reported measure of biodiversity is microbial biomass."@en ;
+  skos:broader <urn:era:outcome:indicator:007> .
+<urn:era:outcome:268.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Beneficial Organisms"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "268.0" ;
+  skos:altLabel "Beneficial Org"@en ;
+  skos:definition "Species that provide benefits to crop production (i.e., species provide postive regulating ecosystem services). These can include pollinators (e.g., bees), arbuscular mycorrhizal fungi (AMF) colonisation of crop roots, earthworms or microrganisms involved in nutrient cycling or decomposition. Measures can include their abundance, taxonomic or functional diversity (include details in the Units column)."@en ;
+  skos:broader <urn:era:outcome:indicator:007> .
+<urn:era:outcome:209.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Pest & Pathogen (Losses)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "209.0" ;
+  skos:altLabel "Pest Path (Loss)"@en ;
+  skos:definition "Amount of stored crop lost or degraded due to pest/disease."@en ;
+  skos:scopeNote "This outcome is for post-harvest storage of products where pests or diseases are damaging the product. It is helpful to record date of storage and sampling date/days after storage for this outcome.\nNote if absolute numbers are given then the amount of crop should be standardized between treatments."@en ;
+  skos:broader <urn:era:outcome:indicator:008> .
+<urn:era:outcome:209.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Pest & Pathogen (Product Weight)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "209.1" ;
+  skos:altLabel "Pest Path (Prod)"@en ;
+  skos:definition "Amount of stored crop left after being stored for a period of time."@en ;
+  skos:scopeNote "This outcome is for post-harvest storage of products where pests or diseases are damaging the product. For this outcome it is helpful to record the date of storage and sampling date/days after this.\nNote if absolute numbers are given then the amount of crop stored should be standardized between treatments."@en ;
+  skos:broader <urn:era:outcome:indicator:008> .
+<urn:era:outcome:212.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Pest & Pathogen (Numbers)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "212.0" ;
+  skos:altLabel "Pest Path (Num)"@en ;
+  skos:definition "The number or amount of pest or pathogen present in a stored product.\n"@en ;
+  skos:scopeNote "This outcome is for post-harvest storage of products where pests or diseases are damaging the product. It is helpful to record date of storage and sampling date/days after storage for this outcome.\nDo not use this outcome with change from baseline data, it should be the amount of pest or pathogen on the sampling date."@en ;
+  skos:broader <urn:era:outcome:indicator:008> .
+<urn:era:outcome:217.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Erosion"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "217.0" ;
+  skos:definition "Quantity or extent of soil movement due to water or wind."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:218.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Runoff"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "218.0" ;
+  skos:definition "Quantity of water moving off site"@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:223.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Organic Matter"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "223.0" ;
+  skos:altLabel "SOM"@en ;
+  skos:definition "Concentration or stock of organic matter in soil (SOM)."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:224.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Organic Carbon"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "224.0" ;
+  skos:altLabel "SOC"@en ;
+  skos:definition "Concentration or stock of organic carbon in soil (SOC)."@en ;
+  skos:scopeNote "Please record sampling depth(s) for this outcome"@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:224.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Organic Carbon (Change)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "224.1" ;
+  skos:altLabel "SOC (Change)"@en ;
+  skos:definition "Change in soil organic carbon (SOC) over time compared to a baseline condition at the beginning of the experiment."@en ;
+  skos:scopeNote "All treatments should have the same baseline conditions, if the baseline is more complex than this then contact Pete. Please record sampling depth(s) for this outcome"@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:226.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Nitrogen"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "226.0" ;
+  skos:altLabel "Soil N"@en ;
+  skos:definition "Stock or concentration of soil nitrogen exact nature of the nitrogen is not clear (i.e. it is unknown if it is total, available, nitrate or ammonium) or is some other measure of nitrogen."@en ;
+  skos:scopeNote "Do not include % change data as compared to a baseline."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:226.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Total Nitrogen"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "226.1" ;
+  skos:altLabel "Soil TN"@en ;
+  skos:definition "Stock or concentration of nitrogen in the soil reported as total nitrogen (TN)."@en ;
+  skos:scopeNote "Do not include % change data as compared to a baseline."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:226.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Available Nitrogen"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "226.2" ;
+  skos:altLabel "Soil AN"@en ;
+  skos:definition "Stock or concentration of nitrogen in the soil reported as available nitrogen (NO3 + NH4)."@en ;
+  skos:scopeNote "Do not include % change data as compared to a baseline."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:226.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil NO3"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "226.3" ;
+  skos:definition "Stock or concentration of nitrogen in the soil reported as nitrate (NO3)."@en ;
+  skos:scopeNote "Do not include % change data as compared to a baseline."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:226.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil NH4"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "226.4" ;
+  skos:definition "Stock or concentration of nitrogen in the soil reported as ammonium (NH4)."@en ;
+  skos:scopeNote "Do not include % change data as compared to a baseline."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:231.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Moisture"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "231.0" ;
+  skos:definition "Amount of water in the soil."@en ;
+  skos:scopeNote "Do not include: water holding capacity, available water capacity, osmotic potential.\nInclude pressure details in parenthesis after units if presented , e.g. % (0.3 bar). Do not include % change data as compared to a baseline."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:221.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Infiltration Rate"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "221.0" ;
+  skos:altLabel "Infiltration"@en ;
+  skos:definition "The rate of water movement into the soil."@en ;
+  skos:scopeNote "Units should be volume/time."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:228.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Cation Exchange Capacity"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "228.0" ;
+  skos:altLabel "CEC"@en ;
+  skos:definition "Soil cation exchange capacity."@en ;
+  skos:scopeNote "Do not include % change data as compared to a baseline. Do not confuse with ECEC (effective CEC) or base saturation."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:228.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Effective Cation Exchange Capacity"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "228.1" ;
+  skos:altLabel "ECEC"@en ;
+  skos:definition "Soil effective cation exchange capacity."@en ;
+  skos:scopeNote "Do not include % change data as compared to a baseline. Do not confuse with CEC or base saturation."@en ;
+  skos:broader <urn:era:outcome:indicator:009> .
+<urn:era:outcome:270.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Yield Stability"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "270.0" ;
+  skos:definition "The variability in yields between seasons or between years."@en ;
+  skos:scopeNote "Antilog any logged outcomes, ln(yield stablity) is often reported."@en ;
+  skos:broader <urn:era:outcome:indicator:010> .
+<urn:era:outcome:236.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Animal Survival"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "236.1" ;
+  skos:definition "Animal offspring that survive to production."@en ;
+  skos:scopeNote "Do not use for plant survival."@en ;
+  skos:broader <urn:era:outcome:indicator:011> .
+<urn:era:outcome:236.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Animal Mortality"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "236.2" ;
+  skos:definition "Animals that do not survive."@en ;
+  skos:broader <urn:era:outcome:indicator:011> .
+<urn:era:outcome:232.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Water Use"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "232.1" ;
+  skos:altLabel "WU"@en ;
+  skos:definition "Water used per area to produce crops."@en ;
+  skos:scopeNote "Use the units to note any complexities, in particular if the water use is only referring to irrigation water being used in irrgation experiments."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:232.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Water Use Efficiency"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "232.2" ;
+  skos:altLabel "WUE"@en ;
+  skos:definition "Product produced or economic yield per unit water (includes rainfall)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:232.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Depreciated -Water Use (Rain & Irrigation)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "deprecated" ;
+  skos:notation "232.3" ;
+  skos:definition "Total water used to produce crops from irrigation & rainfall."@en ;
+  skos:broader <urn:era:outcome:indicator:012> ;
+  owl:deprecated true .
+<urn:era:outcome:232.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Depreciated - Water Use (Irrigation)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "deprecated" ;
+  skos:notation "232.4" ;
+  skos:definition "Water used to produce crops from irrigation only."@en ;
+  skos:broader <urn:era:outcome:indicator:012> ;
+  owl:deprecated true .
+<urn:era:outcome:232.5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Depreciated - Water Use (Unspecified)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "deprecated" ;
+  skos:notation "232.5" ;
+  skos:definition "Water used to produce crops, irrigation is present but it is unclear if water use includes rainfall or not."@en ;
+  skos:broader <urn:era:outcome:indicator:012> ;
+  owl:deprecated true .
+<urn:era:outcome:233.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Use Efficiency (ARE Unspecificed)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "233.0" ;
+  skos:altLabel "NUE (ARE Unsp.)"@en ;
+  skos:definition "Apparent N recovery efficiency. Use this code if it is unclear whether above-ground biomass or a sub-component (e.g. grain) was used in calculations. Formula for a zero N control = (N.trt - N.cont)/N input, otherwise Formula = (N.Out.trt - N.Out.cont)/(N.Input.trt - N.Input.Cont)."@en ;
+  skos:scopeNote "Outcome is a ratio. The control is often a zero N treatment where no nitrogen fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:233.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Use Efficiency (ARE Product)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "233.1" ;
+  skos:altLabel "NUE (ARE Prod)"@en ;
+  skos:definition "Apparent N recovery efficiency in crop product component (e.g. grain). Formula for a zero N control = (N.treatment - N.control)/N input, otherwise Formula = (N.Out.trt - N.Out.cont)/(N.In.trt - N.In.Cont).\n"@en ;
+  skos:scopeNote "Outcome is a ratio. The control is often a zero N treatment where no nitrogen fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:233.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Use Efficiency (ARE AGB)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "233.2" ;
+  skos:altLabel "NUE (ARE AGB)"@en ;
+  skos:definition "Apparent N recovery efficiency in crop above ground biomass (the whole plant, grain + biomass). Formula for a zero N control = (N.treatment - N.control)/N input, otherwise Formula = (N.Out.trt - N.Out.cont)/(N.In.trt - N.In.Cont)."@en ;
+  skos:scopeNote "Outcome is a ratio. The control is often a zero N treatment where no nitrogen fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:233.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Use Efficiency (Isotopic Product)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "233.3" ;
+  skos:altLabel "NUE (Iso Prod)"@en ;
+  skos:definition "Nitrogen use efficiency of a crop product component (e.g., grain) measured using nitrogen-15 stable isotope methods. Formula =15N/N.input. The product component of the crop is used (e.g., grain)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:233.4> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Use Efficiency (Isotopic AGB)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "233.4" ;
+  skos:altLabel "NUE (Iso AGB)"@en ;
+  skos:definition "Nitrogen use efficiency of aboveground biomass (the whole plant, grain + biomass) measured using nitrogen-15 stable isotope methods. Formula =15N/N.input."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:233.5> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Use Efficiency (PNB Product)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "233.5" ;
+  skos:altLabel "NUE (PNB Prod)"@en ;
+  skos:definition "Partial nitrogen balance of a crop product component (e.g., grain). Formula = N.product/N.input."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:233.6> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Use Efficiency (PNB AGB)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "233.6" ;
+  skos:altLabel "NUE (PNB AGB)"@en ;
+  skos:definition "Partial nitrogen balance for crop aboveground biomass (the whole plant, grain + biomass). Formula = N.AGB/N.input."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:257.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Agronomic Efficiency"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "257.1" ;
+  skos:altLabel "N AE (Prod)"@en ;
+  skos:definition "The yield change in the crop product component (e.g. grain) of the treatment compared to the control, per unit of nitrogen input. Formula = (Yt -Yc)/N. Also called Agronomic Effectiveness."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:257.3> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Agronomic Efficiency (AGB)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "257.3" ;
+  skos:altLabel "N AE (AGB)"@en ;
+  skos:definition "The yield change in aboveground biomass (the whole plant, grain + biomass) of the treatment compared to the control, per unit of nitrogen input. Formula = (Yt -Yc)/N. Also called Agronomic Effectiveness."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:257.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen Factor Productivity"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "257.2" ;
+  skos:altLabel "N TFP"@en ;
+  skos:definition "Crop yield divided by amount of nitrogen applied (Yield/N)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:238.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrogen (Apparent Efficiency Animals Feed)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "238.0" ;
+  skos:altLabel "Nitrogen (AE Animals)"@en ;
+  skos:altLabel "Nitrogen (Apparent Efficiency)"@en ;
+  skos:definition "Animal Products Only. Integration of N into production. Formula = N.retained/N.supplied."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:234.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Phosphorus Use Efficiency (ARE Unspecified)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "234.0" ;
+  skos:altLabel "PUE (ARE Unsp.)"@en ;
+  skos:definition "Apparent P recovery efficiency. Use this code if it is unclear whether above-ground biomass or a sub-component (e.g. grain) was used in calculations. Formula for a zero P control = (P.trt - P.cont)/P input, otherwise Formula = (P.Out.trt - P.Out.cont)/(P.Input.trt - P.Input.Cont)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. The control is often a zero P treatment where no P fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:234.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Phosphorus Use Efficiency (ARE Product)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "234.1" ;
+  skos:altLabel "PUE (ARE Prod)"@en ;
+  skos:definition "Apparent P recovery efficiency in crop product component (e.g. grain). Formula = (P.treatment - P.control)/P input. Formula for a zero P control = (P.trt - P.cont)/P input, otherwise Formula = (P.Out.trt - P.Out.cont)/(P.Input.trt - P.Input.Cont)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. The control is often a zero P treatment where no P fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:234.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Phosphorus Use Efficiency (ARE AGB)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "234.2" ;
+  skos:altLabel "PUE (ARE AGB)"@en ;
+  skos:definition "Apparent P recovery efficiency in crop above ground biomass (the whole plant, grain + biomass). Formula for a zero P control = (P.trt - P.cont)/P input, otherwise Formula = (P.Out.trt - P.Out.cont)/(P.Input.trt - P.Input.Cont)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. The control is often a zero P treatment where no P fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:258.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Phosphorus Agronomic Efficiency"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "258.0" ;
+  skos:altLabel "P AE (Prod)"@en ;
+  skos:definition "The yield change in the crop product component (e.g. grain) of the treatment compared to the control, per unit of phosphorous input. Formula = (Yt -Yc)/P. Also called Agronomic Effectiveness."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:258.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Phosphorus Factor Productivity"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "258.2" ;
+  skos:altLabel "P TFP"@en ;
+  skos:definition "Crop yield divided by amount of phosphorous applied (Yield/P input)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:235.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Potassium Use Efficiency (ARE Unspecified)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "235.0" ;
+  skos:altLabel "KUE (ARE Unsp.)"@en ;
+  skos:definition "Apparent K recovery efficiency. Use this code if it is unclear whether above-ground biomass or a sub-component (e.g. grain) was used in calculations. Formula for a zero K control = (K.trt - K.cont)/K input, otherwise Formula = (K.Out.trt - K.Out.cont)/(K.Input.trt - K.Input.Cont)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. The control is often a zero K treatment where no K fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:235.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Potassium Use Efficiency (ARE Product)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "235.1" ;
+  skos:altLabel "KUE (ARE Prod)"@en ;
+  skos:definition "Apparent K recovery efficiency in crop product component (e.g. grain). Formula for a zero K control = (K.trt - K.cont)/K input, otherwise Formula = (K.Out.trt - K.Out.cont)/(K.Input.trt - K.Input.Cont).\n"@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. The control is often a zero K treatment where no K fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:235.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Potassium Use Efficiency (ARE AGB)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "235.2" ;
+  skos:altLabel "KUE (ARE AGB)"@en ;
+  skos:definition "Apparent K recovery efficiency in crop above ground biomass (the whole plant, grain + biomass). Formula for a zero K control = (K.trt - K.cont)/K input, otherwise Formula = (K.Out.trt - K.Out.cont)/(K.Input.trt - K.Input.Cont)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. The control is often a zero K treatment where no K fertilizer was added. Note that to compare two the ARE of two different treatments then they must share the same control."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:259.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Potassium Agronomic Efficiency"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "259.0" ;
+  skos:altLabel "K AE (Prod)"@en ;
+  skos:definition "The yield change in the crop product component (e.g. grain) of the treatment compared to the control, per unit of potassium input. Formula = (Yt -Yc)/K. Also called Agronomic Effectiveness."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:259.2> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Potassium Factor Productivity"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "259.2" ;
+  skos:altLabel "K TFP"@en ;
+  skos:definition "Crop yield divided by amount of potassium applied (Yield/K input)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:257.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Total Factor Productivity"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "257.0" ;
+  skos:altLabel "TFP"@en ;
+  skos:definition "Weight of output (kg) per quantity of input (kg). Can be any input (other than N, P or K individually) and any output."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:267.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Feed Conversion Ratio (Out In)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "267.0" ;
+  skos:altLabel "FCR (Out In)"@en ;
+  skos:definition "Ratio of Weight Gained to Feed Given."@en ;
+  skos:scopeNote "This outcome relates to animal feed experiments. This is a ratio whose value should be less than 1 (although some aquatic experiment may yield slightly >1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:267.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Feed Conversion Ratio (In Out)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "267.1" ;
+  skos:altLabel "FCR (In Out)"@en ;
+  skos:definition "Ratio of Feed Given to Weight Gained."@en ;
+  skos:scopeNote "This outcome relates to animal feed experiments. It is a ratio whose value should be greater than 1 (although some aquatic experiment may yield slightly <1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:265.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Protein Conversion Ratio (Out In)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "265.0" ;
+  skos:altLabel "PCR (Out In)"@en ;
+  skos:definition "Ratio of Weight Gained to Protein Given, this is a ratio whose value should be less than 1 (although some aquatic experiment may yield slightly >1 if there are other food resources available in the water, like algae)."@en ;
+  skos:scopeNote "This outcome relates to animal feed experiments. It is a ratio whose value should be less than 1 (although some aquatic experiment may yield slightly >1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:265.1> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Protein Conversion Ratio (In Out)"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "265.1" ;
+  skos:altLabel "PCR (In Out)"@en ;
+  skos:definition "Ratio of Protein Given to Weight Gained, this is a ratio whose value should be greater than 1 (although some aquatic experiment may yield slightly <1 if there are other food resources available in the water, like algae)."@en ;
+  skos:scopeNote "This outcome relates to animal feed experiments. It is a ratio whose value should be greater than 1 (although some aquatic experiment may yield slightly <1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio."@en ;
+  skos:broader <urn:era:outcome:indicator:012> .
+<urn:era:outcome:239.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Labour Female"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "239.0" ;
+  skos:altLabel "Labour (Female)"@en ;
+  skos:definition "Female labour time per task, season, or unit land."@en ;
+  skos:broader <urn:era:outcome:indicator:013> .
+<urn:era:outcome:240.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Labour Male"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "240.0" ;
+  skos:altLabel "Labour (Male)"@en ;
+  skos:definition "Male labour time per task, season, or unit land."@en ;
+  skos:broader <urn:era:outcome:indicator:013> .
+<urn:era:outcome:242.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Income Female"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "242.0" ;
+  skos:altLabel "Income (Female)"@en ;
+  skos:definition "Female income from practice(s)."@en ;
+  skos:broader <urn:era:outcome:indicator:013> .
+<urn:era:outcome:243.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Income Male"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "243.0" ;
+  skos:altLabel "Income (Male)"@en ;
+  skos:definition "Male income from practice(s)."@en ;
+  skos:broader <urn:era:outcome:indicator:013> .
+<urn:era:outcome:132.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Labour Person Hours"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "132.0" ;
+  skos:altLabel "Labour (Person Hours)"@en ;
+  skos:definition "Labour time per task, season, or unit land (gender is not specified)."@en ;
+  skos:broader <urn:era:outcome:indicator:014> .
+<urn:era:outcome:133.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Return to Labour"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "133.0" ;
+  skos:altLabel "Returns to Labour"@en ;
+  skos:definition "Return to Labour or Labour Productivity. This may be expressed as income/day labour, income/area or production/day labour."@en ;
+  skos:scopeNote "Make sure units are carefully recorded and this is not the cost of labour, which should be recorded under Economics: Cost of Labour outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:014> .
+<urn:era:outcome:304.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "CO2 Equivalent Emissions"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "304.0" ;
+  skos:altLabel "CO2 Equivalent"@en ;
+  skos:definition "Emissions over time expressed as CO2 equivalent (e.g. CO2e, CO2eq or CO2-e), often expressed as emissions per area."@en ;
+  skos:scopeNote "Note emissions per unit production should be recorded under Emissions Intensity."@en ;
+  skos:broader <urn:era:outcome:indicator:015> .
+<urn:era:outcome:305.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Methane Emissions"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "305.0" ;
+  skos:altLabel "CH4"@en ;
+  skos:definition "Flux (emissions or consumption) of methane (CH4) over time."@en ;
+  skos:broader <urn:era:outcome:indicator:015> .
+<urn:era:outcome:306.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Nitrous Oxide Emissions"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "306.0" ;
+  skos:altLabel "NOx"@en ;
+  skos:definition "Flux (emissions or consumption) of nitrous oxides (NOx, NO or NO2) over time."@en ;
+  skos:broader <urn:era:outcome:indicator:015> .
+<urn:era:outcome:307.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Carbon Dioxide Emissions"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "307.0" ;
+  skos:altLabel "CO2"@en ;
+  skos:altLabel "Carbon dioxide emissions"@en ;
+  skos:definition "Flux (emissions or consumption)of carbon dioxide (CO2) over time."@en ;
+  skos:broader <urn:era:outcome:indicator:015> .
+<urn:era:outcome:311.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Emissions Intensity"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "311.0" ;
+  skos:definition "Emissions per unit of output (e.g. kg CO2 per kg grain). Cumulative emissions relative to production."@en ;
+  skos:scopeNote "Emissions intensity is typically standardized radiative forcing over 100 yr time (CO2eq) for 1 or more gases added together per unit product (kg)."@en ;
+  skos:broader <urn:era:outcome:indicator:015> .
+<urn:era:outcome:308.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Soil Carbon Stocks"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "308.0" ;
+  skos:definition "Quantity in carbon pool or stock as total carbon and reported on soil profiles of at least 30cm or more."@en ;
+  skos:scopeNote "Note soil organic carbon or soil organic matter are reported in outcomes under the resilience pillar. Do not record change from baseline here, outcomes should be the value on the sampling date. If change from baseline data are presented consider converting to the values on the sampling date if the baseline line values are available too."@en ;
+  skos:broader <urn:era:outcome:indicator:016> .
+<urn:era:outcome:309.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Aboveground Carbon Biomass"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "309.0" ;
+  skos:altLabel "C Stock (Above)"@en ;
+  skos:altLabel "Aboveground Biomass"@en ;
+  skos:definition "Stock or amount of carbon in above ground biomass."@en ;
+  skos:scopeNote "Do not record change from baseline here, outcomes should be the value on the sampling date. If change from baseline data are presented consider converting to the values on the sampling date if the baseline line values are available too."@en ;
+  skos:broader <urn:era:outcome:indicator:016> .
+<urn:era:outcome:310.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Belowground Carbon Biomass"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "310.0" ;
+  skos:altLabel "C Stock (Below)"@en ;
+  skos:definition "Stock or amount of carbon in below ground biomass."@en ;
+  skos:scopeNote "Do not record change from baseline here, outcomes should be the value on the sampling date. If change from baseline data are presented consider converting to the values on the sampling date if the baseline line values are available too.\nThis is the amount carbon in soil biomass, if total carbon is presented use the Soil Carbon Stocks outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:016> .
+<urn:era:outcome:323.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Fuel Use"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "323.0" ;
+  skos:definition "Amount of fuel used in a cookstove."@en ;
+  skos:broader <urn:era:outcome:indicator:017> .
+<urn:era:outcome:320.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Fuel Savings"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "320.0" ;
+  skos:definition "Amount of fuel saved by using a cookstove."@en ;
+  skos:scopeNote "Note directionality is important here and it should be positive.\nPercentages or proportions should indicate fuel saved, so higher values indicate a better outcome."@en ;
+  skos:broader <urn:era:outcome:indicator:018> .
+<urn:era:outcome:321.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Cooking Time"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "321.0" ;
+  skos:definition "Time taken to cook a particular food."@en ;
+  skos:broader <urn:era:outcome:indicator:018> .
+<urn:era:outcome:322.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Specific Fuel Use"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "322.0" ;
+  skos:definition "Ratio of fuel consumed to food cooked (e.g. kg fuel used/kg food cooked)."@en ;
+  skos:scopeNote "Units can be absent as the outcome is a ratio."@en ;
+  skos:broader <urn:era:outcome:indicator:018> .
+<urn:era:outcome:324.0> a skos:Concept ;
+  skos:inScheme <urn:era:scheme:outcome> ;
+  skos:prefLabel "Cookstove Emissions"@en ;
+  era:conceptType "leaf_outcome" ;
+  era:status "active" ;
+  skos:notation "324.0" ;
+  skos:definition "Emissions of gases (e.g CO) or particulate matter (e.g PM2.5) other than those in the Emissions outcome subpillar (not CO2, Methane, NOx, CO2e)."@en ;
+  skos:broader <urn:era:outcome:indicator:018> .

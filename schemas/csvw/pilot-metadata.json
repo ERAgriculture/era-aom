@@ -1,0 +1,89 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "dc:title": "ERA practice and outcome normalized pilot tables",
+  "tables": [
+    {
+      "url": "../../data/pilot/schemes.csv",
+      "tableSchema": {
+        "columns": [
+          {"name": "scheme_id", "required": true},
+          {"name": "notation", "required": true},
+          {"name": "preferred_label_en", "lang": "en", "required": true},
+          {"name": "status", "required": true}
+        ],
+        "primaryKey": "scheme_id"
+      }
+    },
+    {
+      "url": "../../data/pilot/concepts.csv",
+      "tableSchema": {
+        "columns": [
+          {"name": "concept_id", "required": true},
+          {"name": "scheme_id", "required": true},
+          {"name": "concept_type", "required": true},
+          {"name": "notation"},
+          {"name": "status", "required": true},
+          {"name": "source_sheet", "required": true},
+          {"name": "source_row", "datatype": "integer", "required": true}
+        ],
+        "primaryKey": "concept_id",
+        "foreignKeys": [
+          {
+            "columnReference": "scheme_id",
+            "reference": {
+              "resource": "../../data/pilot/schemes.csv",
+              "columnReference": "scheme_id"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "url": "../../data/pilot/labels.csv",
+      "tableSchema": {
+        "columns": [
+          {"name": "concept_id", "required": true},
+          {"name": "language", "required": true},
+          {"name": "label_type", "required": true},
+          {"name": "label", "required": true},
+          {"name": "source_column", "required": true}
+        ],
+        "foreignKeys": [
+          {
+            "columnReference": "concept_id",
+            "reference": {
+              "resource": "../../data/pilot/concepts.csv",
+              "columnReference": "concept_id"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "url": "../../data/pilot/relations.csv",
+      "tableSchema": {
+        "columns": [
+          {"name": "subject_id", "required": true},
+          {"name": "relation_type", "required": true},
+          {"name": "object_id", "required": true}
+        ],
+        "foreignKeys": [
+          {
+            "columnReference": "subject_id",
+            "reference": {
+              "resource": "../../data/pilot/concepts.csv",
+              "columnReference": "concept_id"
+            }
+          },
+          {
+            "columnReference": "object_id",
+            "reference": {
+              "resource": "../../data/pilot/concepts.csv",
+              "columnReference": "concept_id"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

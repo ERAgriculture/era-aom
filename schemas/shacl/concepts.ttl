@@ -1,0 +1,33 @@
+@prefix era: <urn:era:property:> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+era:ConceptShape
+  a sh:NodeShape ;
+  sh:targetClass skos:Concept ;
+  sh:property [
+    sh:path skos:inScheme ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:class skos:ConceptScheme
+  ] ;
+  sh:property [
+    sh:path skos:prefLabel ;
+    sh:minCount 1 ;
+    sh:uniqueLang true
+  ] ;
+  sh:property [
+    sh:path era:conceptType ;
+    sh:minCount 1 ;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path era:status ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:in ( "active" "deprecated" "unknown" )
+  ] ;
+  sh:property [
+    sh:path skos:broader ;
+    sh:class skos:Concept
+  ] .
