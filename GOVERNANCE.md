@@ -13,6 +13,9 @@
 
 ## Change control
 
+- Structured proposals cover new concepts, corrections, synonyms/translations,
+  hierarchy changes, mappings, duplicates, and deprecations.
+- Proposal evidence and reviewer rationale remain public.
 - Pull requests expose every canonical source change.
 - Stable identifiers are never reused.
 - Released versions are immutable.

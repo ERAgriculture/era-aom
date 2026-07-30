@@ -1,0 +1,71 @@
+name: Request new AOM concept
+description: Propose one concept missing from AOM.
+title: "[New concept]: "
+labels: ["proposal", "new-concept", "needs-triage"]
+body:
+  - type: input
+    id: label
+    attributes:
+      label: Preferred label
+      description: Short unambiguous English label.
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Definition
+      description: State necessary meaning and boundaries, not an example alone.
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Proposed module
+      options:
+        - aom-crop
+        - aom-livestock
+        - uncertain
+    validations:
+      required: true
+  - type: input
+    id: parent
+    attributes:
+      label: Proposed parent
+      description: Existing AOM ID and label, or explain why none fits.
+    validations:
+      required: true
+  - type: textarea
+    id: synonyms
+    attributes:
+      label: Synonyms and languages
+      description: One per line; include BCP-47 language code when not English.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: DOI, standard, dataset documentation, or stable institutional URL.
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Intended use
+      description: Explain data or analysis requiring this concept.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Contributor affiliation
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched existing AOM labels and synonyms.
+          required: true
+        - label: Submission contains no restricted data or copyrighted full text.
+          required: true
+

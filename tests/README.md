@@ -9,3 +9,5 @@ round-trip tests will be added with normalized pilot data.
 - GitHub Actions parses JSON-LD/Turtle and executes SHACL against both schemes.
 - `validate_livestock_inventory.py`: pins public AOM v2 identity and verifies
   private/restricted data remain excluded.
+- `validate_livestock_staging.py`: validates normalized public-v2 staging,
+  identity quarantine, hierarchy review queue, mappings, and manifest.

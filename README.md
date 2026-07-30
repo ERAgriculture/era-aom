@@ -30,6 +30,9 @@ Crop `prac` and `out` pilot design and validation:
 Module boundaries and existing AOM lineage: [`MODULES.md`](MODULES.md).
 Published livestock v2 reconciliation:
 [`inventory/AOM_LIVESTOCK_RECONCILIATION.md`](inventory/AOM_LIVESTOCK_RECONCILIATION.md).
+Normalized livestock review staging:
+[`data/livestock-staging/README.md`](data/livestock-staging/README.md).
+Contribution and review workflow: [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 No workbook content is published during inventory. This protects closed and
 unreviewed sheets while recording reproducible structural metadata.

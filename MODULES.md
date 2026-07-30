@@ -15,7 +15,7 @@ domain review.
 |---|---|---|
 | `aom-core` | cross-domain study, intervention, observation, unit, provenance, and context concepts | design deferred until crop/livestock comparison |
 | `aom-crop` | ERA practices, outcomes, crop products, inputs, sites, and field model | `prac` + `out` normalization pilot |
-| `aom-livestock` | diets, feed ingredients, animals, physiology, husbandry practices, livestock outcomes | v2 release inventoried; normalization next |
+| `aom-livestock` | diets, feed ingredients, animals, physiology, husbandry practices, livestock outcomes | v2 release inventoried; normalized review staging generated |
 | `mappings` | reviewed links among modules and external resources | model placeholders now; mapping work later |
 
 ## Existing livestock AOM
@@ -54,8 +54,8 @@ Reconciliation report:
 
 ## Next analysis
 
-1. Normalize published v2 without changing published IDs.
-2. Quarantine duplicate identity/path cases for human review.
-3. Normalize mapping assertions with release provenance and review state.
+1. Resolve duplicate identity/path cases through domain review.
+2. Review missing explicit hierarchy parents and mint/map only after approval.
+3. Review legacy mapping assertions.
 4. Identify true shared concepts across crop and livestock.
 5. Propose `aom-core`; do not create it from naming similarity alone.

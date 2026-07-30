@@ -15,3 +15,6 @@ All notable vocabulary changes will be recorded here.
   lineage as separate module.
 - Inventory AOM Livestock v2 public release and reconcile against workbook
   AOM-family sheets without publishing restricted linkage data.
+- Add normalized AOM Livestock v2 review staging, explicit identity
+  quarantine, hierarchy-gap queue, mapping assertions, SKOS distributions,
+  OWL schema, and visualization node/edge exports.

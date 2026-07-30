@@ -1,0 +1,69 @@
+name: Correct existing AOM concept
+description: Propose label, definition, synonym, hierarchy, status, or provenance correction.
+title: "[Correction]: "
+labels: ["proposal", "correction", "needs-triage"]
+body:
+  - type: input
+    id: concept
+    attributes:
+      label: AOM concept
+      description: Concept ID and current preferred label.
+    validations:
+      required: true
+  - type: input
+    id: release
+    attributes:
+      label: Affected release
+      description: Release version or public source used.
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: Change type
+      options:
+        - preferred label
+        - definition
+        - synonym or translation
+        - hierarchy
+        - duplicate or merge
+        - deprecation or replacement
+        - provenance or metadata
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current content or problem
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: DOI, standard, dataset documentation, or stable institutional URL.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Contributor affiliation
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I have not requested reuse or reassignment of published ID.
+          required: true
+        - label: Submission contains no restricted data or copyrighted full text.
+          required: true
+
