@@ -1,0 +1,53 @@
+name: Propose external mapping
+description: Relate one AOM concept to another controlled vocabulary.
+title: "[Mapping]: "
+labels: ["proposal", "mapping", "needs-triage"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: AOM concept
+      description: AOM ID and preferred label.
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Target concept
+      description: Stable URI or identifier plus target label and vocabulary.
+    validations:
+      required: true
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Proposed mapping relation
+      options:
+        - exactMatch
+        - closeMatch
+        - broadMatch
+        - narrowMatch
+        - relatedMatch
+        - uncertain
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale and semantic comparison
+      description: Explain why meanings and scopes support selected relation.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Target vocabulary page, DOI, standard, or documentation.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Contributor affiliation
+    validations:
+      required: true
+
