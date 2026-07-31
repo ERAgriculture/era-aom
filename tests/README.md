@@ -11,3 +11,5 @@ round-trip tests will be added with normalized pilot data.
   private/restricted data remain excluded.
 - `validate_livestock_staging.py`: validates normalized public-v2 staging,
   identity quarantine, hierarchy review queue, mappings, and manifest.
+- `validate_livestock_review_pack.py`: verifies complete review coverage and
+  confirms no decisions, IDs, or hierarchy changes were pre-applied.

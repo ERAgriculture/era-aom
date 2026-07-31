@@ -33,6 +33,8 @@ Published livestock v2 reconciliation:
 Normalized livestock review staging:
 [`data/livestock-staging/README.md`](data/livestock-staging/README.md).
 Contribution and review workflow: [`CONTRIBUTING.md`](CONTRIBUTING.md).
+Livestock domain-review pack:
+[`review/livestock-v2/README.md`](review/livestock-v2/README.md).
 
 No workbook content is published during inventory. This protects closed and
 unreviewed sheets while recording reproducible structural metadata.
