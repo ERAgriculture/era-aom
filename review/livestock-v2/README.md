@@ -11,6 +11,10 @@ directory changes AOM.
 3. Record signed decisions in `03_review_decisions.csv`.
 4. Apply approved decisions through separate validated pull request.
 
+Evidence-backed recommendations for eight priority cases:
+[`PRIORITY_RECOMMENDATIONS.md`](PRIORITY_RECOMMENDATIONS.md). Structured copy:
+`04_priority_recommendations.csv`.
+
 ## Missing-parent batches
 
 | Batch | Candidate parents |

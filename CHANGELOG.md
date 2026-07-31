@@ -20,3 +20,5 @@ All notable vocabulary changes will be recorded here.
   OWL schema, and visualization node/edge exports.
 - Correct hierarchy derivation for labels containing `/`; add domain-review
   pack for identity collisions and missing explicit parents.
+- Add evidence-backed recommendations for two identity blockers and six
+  high-impact missing-parent cases; apply no semantic decisions.
