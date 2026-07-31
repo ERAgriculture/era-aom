@@ -53,12 +53,13 @@ for row in quarantine:
         else "PATH-BREWERS-GRAIN"
     )
     question = (
-        "Which concept retains AOM_006275; what new ID and crosswalk should represent other concept?"
+        "Should AOM_006275 remain with Panicum antidotale Dried and the "
+        "Panicum maximum Dried row resolve to existing AOM_001676?"
         if row["reason"] == "duplicate_concept_id"
         else "Are concepts identical, distinct despite same path, or should one be deprecated?"
     )
     observation = (
-        "Two rows have different labels/scientific names but reuse same AOM, NCBI, and WFO identifiers."
+        "Two rows have different labels/scientific names but reuse same AOM, NCBI, and WFO identifiers; existing AOM_001676 represents Megathyrsus maximus Dried."
         if row["reason"] == "duplicate_concept_id"
         else "Two IDs share same label, path, and Feedipedia target."
     )

@@ -32,6 +32,17 @@ assert len({row["case_id"] for row in decisions}) == len(decisions)
 assert all(row["decision"] == "" for row in decisions)
 assert all(row["approved_id"] == "" for row in decisions)
 assert all(row["reviewer"] == "" for row in decisions)
+collision_recommendation = next(
+    row for row in read(REVIEW / "04_priority_recommendations.csv")
+    if row["case_id"] == "ID-AOM-006275"
+)
+assert "existing AOM_001676" in collision_recommendation["recommended_disposition"]
+assert "do not mint another concept" in collision_recommendation["recommended_disposition"]
+collision_questions = {
+    row["review_question"] for row in collisions
+    if row["case_id"] == "ID-AOM-006275"
+}
+assert all("AOM_001676" in question for question in collision_questions)
 assert summary["safety"] == {
     "semantic_decisions_applied": 0,
     "identifiers_minted": 0,

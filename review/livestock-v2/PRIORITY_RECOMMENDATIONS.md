@@ -8,7 +8,7 @@ label change has been applied.
 
 | Case | Recommendation | Confidence |
 |---|---|---|
-| `ID-AOM-006275` | Split two species concepts; choose ID survivor only after provenance review; correct species mappings | high |
+| `ID-AOM-006275` | Retain for *Panicum antidotale* dried; resolve *Panicum maximum* dried to existing `AOM_001676`; correct species mappings | high |
 | `PATH-BREWERS-GRAIN` | Merge; provisionally retain `AOM_000564`, deprecate `AOM_001884` | high |
 | `PARENT-006` | Mint `Mineral content` intermediate concept | high |
 | `PARENT-007` | Mint `Feed ingredient` intermediate concept | high |
@@ -46,20 +46,30 @@ Sources: [NCBI *Janochloa antidotale*](https://www.ncbi.nlm.nih.gov/Taxonomy/Bro
 [Feedipedia Blue panic](https://www.feedipedia.org/node/413), and
 [Feedipedia Guinea grass](https://www.feedipedia.org/node/416).
 
+Internal duplicate evidence changes the disposition. Existing `AOM_001676`,
+*Megathyrsus maximus Dried*, already represents the second row's biological
+species and dried/hay state. It carries `NCBITaxon:59788`, WFO
+`wfo-0000885123`, and Feedipedia `11522`; its synonyms include `Guinea Grass
+Hay` and `Megathyrsus maximus Hay`. No equivalent existing dried concept was
+found for *Panicum antidotale*.
+
 Recommendation:
 
 1. Preserve both meanings as distinct AOM concepts.
-2. Retain `AOM_006275` for one concept only after reviewer checks original
-   assignment provenance; row order is insufficient evidence.
-3. Mint one replacement ID for other concept.
-4. Add explicit legacy crosswalk documenting collision.
-5. Replace shared genus mappings with species-level mappings above.
-6. Normalize preferred label for *Panicum maximum* concept to current accepted
-   name only if livestock reviewer accepts nomenclature policy; otherwise keep
-   legacy preferred label and add current name as synonym.
+2. Retain `AOM_006275` for *Panicum antidotale* dried.
+3. Resolve legacy row 1052, *Panicum maximum* dried, to existing `AOM_001676`;
+   do not mint another concept.
+4. Add explicit legacy crosswalk documenting the collision and row-level
+   resolution.
+5. Replace `AOM_006275`'s shared genus mappings with the *Panicum antidotale*
+   species mappings above.
+6. Keep `AOM_001676`'s accepted-name preferred label and treat *Panicum
+   maximum* dried/hay forms as synonyms under the nomenclature policy.
 
 Downstream structural audit found two `ani_diet` references: one corresponds to
-each species. No survivor can be selected from usage frequency.
+each species. Usage frequency cannot resolve the collision, but unique existing
+concept evidence supports this disposition. Reviewer must confirm before source
+or downstream identifiers change.
 
 ## Identity blocker: Brewers Grain
 
@@ -160,4 +170,3 @@ Reviewer must record decision, evidence, rationale, identity, and date in
 `03_review_decisions.csv`. Approved changes belong in separate implementation
 PR with minted-ID registry update, deprecation crosswalk, regenerated graph,
 and downstream parity checks.
-
