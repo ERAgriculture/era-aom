@@ -13,3 +13,5 @@ round-trip tests will be added with normalized pilot data.
   identity quarantine, hierarchy review queue, mappings, and manifest.
 - `validate_livestock_review_pack.py`: verifies complete review coverage and
   confirms no decisions, IDs, or hierarchy changes were pre-applied.
+- `validate_priority_recommendations.py`: pins eight evidence-backed priority
+  proposals and confirms reviewer approval fields remain empty.

@@ -53,12 +53,13 @@ for row in quarantine:
         else "PATH-BREWERS-GRAIN"
     )
     question = (
-        "Which concept retains AOM_006275; what new ID and crosswalk should represent other concept?"
+        "Should AOM_006275 remain with Panicum antidotale Dried and the "
+        "Panicum maximum Dried row resolve to existing AOM_001676?"
         if row["reason"] == "duplicate_concept_id"
         else "Are concepts identical, distinct despite same path, or should one be deprecated?"
     )
     observation = (
-        "Two rows have different labels/scientific names but reuse same AOM, NCBI, and WFO identifiers."
+        "Two rows have different labels/scientific names but reuse same AOM, NCBI, and WFO identifiers; existing AOM_001676 represents Megathyrsus maximus Dried."
         if row["reason"] == "duplicate_concept_id"
         else "Two IDs share same label, path, and Feedipedia target."
     )
@@ -201,6 +202,10 @@ directory changes AOM.
    `02_missing_parent_candidates.csv`, grouped into batches below.
 3. Record signed decisions in `03_review_decisions.csv`.
 4. Apply approved decisions through separate validated pull request.
+
+Evidence-backed recommendations for eight priority cases:
+[`PRIORITY_RECOMMENDATIONS.md`](PRIORITY_RECOMMENDATIONS.md). Structured copy:
+`04_priority_recommendations.csv`.
 
 ## Missing-parent batches
 
