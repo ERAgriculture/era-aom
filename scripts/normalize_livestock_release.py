@@ -74,12 +74,14 @@ def main():
     for number, record in enumerate(records, 2):
         levels = [record[level] for level in LEVELS if record[level]]
         record["_source_row"] = str(number)
+        record["_path_key"] = tuple(levels)
         record["_path"] = "/".join(levels)
+        record["_parent_path"] = "/".join(levels[:-1])
         record["_label"] = levels[-1] if levels else ""
         record["_level"] = str(len(levels))
 
     id_counts = Counter(row["AOM"] for row in records if row["AOM"])
-    path_counts = Counter(row["_path"] for row in records if row["_path"])
+    path_counts = Counter(row["_path_key"] for row in records if row["_path_key"])
     duplicate_ids = {key for key, count in id_counts.items() if count > 1}
     duplicate_paths = {key for key, count in path_counts.items() if count > 1}
     excluded = {row["_source_row"] for row in records if row["AOM"] in duplicate_ids}
@@ -89,7 +91,7 @@ def main():
         reasons = []
         if row["AOM"] in duplicate_ids:
             reasons.append("duplicate_concept_id")
-        if row["_path"] in duplicate_paths:
+        if row["_path_key"] in duplicate_paths:
             reasons.append("duplicate_derived_path")
         for reason in reasons:
             quarantine.append({
@@ -104,7 +106,7 @@ def main():
     ]
     by_path = defaultdict(list)
     for row in eligible:
-        by_path[row["_path"]].append(row)
+        by_path[row["_path_key"]].append(row)
 
     concepts, labels, definitions, notes = [], [], [], []
     relations, gaps, mappings, properties, sources = [], [], [], [], []
@@ -142,10 +144,10 @@ def main():
                 "note_type": "scope_note", "note": row["Notes"],
                 "source_column": "Notes",
             })
-        segments = row["_path"].split("/")
-        if len(segments) > 1:
-            parent_path = "/".join(segments[:-1])
-            parents = by_path.get(parent_path, [])
+        if int(row["_level"]) > 1:
+            parent_key = row["_path_key"][:-1]
+            parent_path = row["_parent_path"]
+            parents = by_path.get(parent_key, [])
             if len(parents) == 1:
                 relations.append({
                     "subject_id": concept_id, "relation_type": "broader",

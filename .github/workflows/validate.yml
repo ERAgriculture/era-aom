@@ -25,6 +25,8 @@ jobs:
         run: python tests/validate_livestock_inventory.py
       - name: Validate livestock staging
         run: python tests/validate_livestock_staging.py
+      - name: Validate livestock review pack
+        run: python tests/validate_livestock_review_pack.py
       - name: Parse semantic distributions
         run: |
           python -c 'from rdflib import Graph; [Graph().parse(path) for path in ["dist/pilot/prac.jsonld", "dist/pilot/prac.ttl", "dist/pilot/out.jsonld", "dist/pilot/out.ttl", "dist/livestock-staging/aom-livestock.jsonld", "dist/livestock-staging/aom-livestock.ttl", "dist/livestock-staging/aom-schema.ttl"]]'

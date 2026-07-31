@@ -18,3 +18,5 @@ All notable vocabulary changes will be recorded here.
 - Add normalized AOM Livestock v2 review staging, explicit identity
   quarantine, hierarchy-gap queue, mapping assertions, SKOS distributions,
   OWL schema, and visualization node/edge exports.
+- Correct hierarchy derivation for labels containing `/`; add domain-review
+  pack for identity collisions and missing explicit parents.
