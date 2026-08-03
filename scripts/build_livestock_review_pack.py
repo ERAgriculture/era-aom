@@ -31,6 +31,9 @@ gaps = read("hierarchy_gaps")
 quarantine = read("quarantine")
 labels = read("labels")
 identity_resolutions = read("approved_identity_resolutions")
+deprecations = read("approved_deprecations")
+deprecation_by_id = {row["deprecated_id"]: row for row in deprecations}
+retained_deprecation_by_id = {row["replacement_id"]: row for row in deprecations}
 
 legacy_by_source = {row["source_row"]: row for row in legacy}
 legacy_by_id = {
@@ -67,6 +70,10 @@ for row in quarantine:
         if row["reason"] == "duplicate_concept_id"
         else "Two IDs share same label, path, and Feedipedia target."
     )
+    deprecation = (
+        deprecation_by_id.get(row["concept_id"])
+        or retained_deprecation_by_id.get(row["concept_id"])
+    )
     collision_rows.append({
         "case_id": case,
         "priority": "blocker",
@@ -84,12 +91,12 @@ for row in quarantine:
         "feedipedia": source["Feedipedia"],
         "evidence_observation": observation,
         "review_question": question,
-        "decision": "",
-        "retained_id": "",
-        "replacement_id": "",
-        "reviewer": "",
-        "review_date": "",
-        "rationale": "",
+        "decision": "deprecate" if deprecation else "",
+        "retained_id": deprecation["replacement_id"] if deprecation else "",
+        "replacement_id": deprecation["replacement_id"] if deprecation else "",
+        "reviewer": deprecation["reviewer"] if deprecation else "",
+        "review_date": deprecation["review_date"] if deprecation else "",
+        "rationale": deprecation["rationale"] if deprecation else "",
     })
 
 if not any(row["case_id"] == "ID-AOM-006275" for row in collision_rows):
@@ -242,6 +249,20 @@ if "ID-AOM-006275" not in existing_decisions and identity_resolutions:
             f"map legacy row {mapped['source_row']} to existing "
             f"{mapped['resolved_concept_id']} Megathyrsus maximus Dried; correct species mappings."
         ),
+    }
+if "PATH-BREWERS-GRAIN" not in existing_decisions and deprecations:
+    deprecation = deprecations[0]
+    existing_decisions["PATH-BREWERS-GRAIN"] = {
+        "case_id": "PATH-BREWERS-GRAIN",
+        "case_type": "duplicate_derived_path",
+        "priority": "blocker",
+        "review_question": "Decide identity, distinction, merge, or deprecation.",
+        "decision": "deprecate_with_replacement",
+        "approved_id": deprecation["replacement_id"],
+        "reviewer": deprecation["reviewer"],
+        "review_date": deprecation["review_date"],
+        "evidence": deprecation["evidence"],
+        "rationale": deprecation["rationale"],
     }
 for row in decision_rows:
     if row["case_id"] in existing_decisions:

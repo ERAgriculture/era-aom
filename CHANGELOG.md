@@ -25,3 +25,6 @@ All notable vocabulary changes will be recorded here.
 - Resolve `AOM_006275` collision: retain it for *Panicum antidotale Dried*, map
   *Panicum maximum Dried* to existing `AOM_001676`, correct three species
   mappings, preserve legacy labels as synonyms, and record signed provenance.
+- Merge duplicate Brewers Grain concepts: retain `AOM_000564`, deprecate
+  `AOM_001884` with replacement link, normalize label to `Brewers grains,
+  dehydrated`, and preserve legacy synonyms.

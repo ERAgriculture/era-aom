@@ -66,5 +66,5 @@ fields are intentional. AI may summarize evidence but cannot approve.
 
 - identifiers minted: 0;
 - hierarchy changes applied: 0;
-- semantic decisions applied: 1;
+- semantic decisions applied: 2;
 - private workbook content used: 0.
