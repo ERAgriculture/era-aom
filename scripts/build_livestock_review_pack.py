@@ -32,6 +32,7 @@ quarantine = read("quarantine")
 labels = read("labels")
 identity_resolutions = read("approved_identity_resolutions")
 deprecations = read("approved_deprecations")
+new_concepts = read("approved_new_concepts")
 deprecation_by_id = {row["deprecated_id"]: row for row in deprecations}
 retained_deprecation_by_id = {row["replacement_id"]: row for row in deprecations}
 
@@ -43,6 +44,15 @@ legacy_by_id = {
 for resolution in identity_resolutions:
     if resolution["action"] == "retain":
         legacy_by_id[resolution["resolved_concept_id"]] = legacy_by_source[resolution["source_row"]]
+for new_concept in new_concepts:
+    levels = new_concept["derived_path"].split("/")
+    legacy_by_id[new_concept["concept_id"]] = {
+        "AOM": new_concept["concept_id"],
+        **{
+            level: levels[index] if index < len(levels) else ""
+            for index, level in enumerate(LEVELS)
+        },
+    }
 pref = {row["concept_id"]: row["label"] for row in labels if row["label_type"] == "pref"}
 concept_path_to_id = {}
 label_to_ids = defaultdict(list)
@@ -142,12 +152,16 @@ for child_id in sorted(gap_ids):
 parent_rows = []
 batch_counts = Counter()
 existing_parent_ids = {}
+existing_parent_rows = {}
 parent_path = OUT / "02_missing_parent_candidates.csv"
 if parent_path.exists():
     with parent_path.open(encoding="utf-8", newline="") as handle:
+        existing_parent_rows = {
+            row["case_id"]: row for row in csv.DictReader(handle)
+        }
         existing_parent_ids = {
             row["candidate_parent_path"]: row["case_id"]
-            for row in csv.DictReader(handle)
+            for row in existing_parent_rows.values()
         }
 next_parent_number = max(
     [int(case_id.removeprefix("PARENT-")) for case_id in existing_parent_ids.values()],
@@ -201,6 +215,23 @@ for parent_key in sorted(groups):
         "evidence": "",
         "rationale": "",
     })
+
+current_parent_cases = {row["case_id"] for row in parent_rows}
+for new_concept in new_concepts:
+    case_id = new_concept["case_id"]
+    if case_id in current_parent_cases:
+        continue
+    historical = dict(existing_parent_rows[case_id])
+    historical.update({
+        "priority": "resolved",
+        "decision": "mint",
+        "approved_parent_id": new_concept["concept_id"],
+        "reviewer": new_concept["reviewer"],
+        "review_date": new_concept["review_date"],
+        "evidence": new_concept["evidence"],
+        "rationale": new_concept["rationale"],
+    })
+    parent_rows.append(historical)
 
 decision_rows = []
 for case_id, issue_type, question in [
@@ -264,6 +295,23 @@ if "PATH-BREWERS-GRAIN" not in existing_decisions and deprecations:
         "evidence": deprecation["evidence"],
         "rationale": deprecation["rationale"],
     }
+for new_concept in new_concepts:
+    if new_concept["case_id"] not in existing_decisions:
+        existing_decisions[new_concept["case_id"]] = {
+            "case_id": new_concept["case_id"],
+            "case_type": "missing_explicit_parent",
+            "priority": "high",
+            "review_question": (
+                "Mint explicit intermediate concept, map to existing concept, "
+                "reparent children, or reject hierarchy?"
+            ),
+            "decision": "mint",
+            "approved_id": new_concept["concept_id"],
+            "reviewer": new_concept["reviewer"],
+            "review_date": new_concept["review_date"],
+            "evidence": new_concept["evidence"],
+            "rationale": new_concept["rationale"],
+        }
 for row in decision_rows:
     if row["case_id"] in existing_decisions:
         row.update(existing_decisions[row["case_id"]])
@@ -283,8 +331,11 @@ summary = {
     "review_batches": dict(sorted(batch_counts.items())),
     "safety": {
         "semantic_decisions_applied": sum(bool(row["decision"]) for row in decision_rows),
-        "identifiers_minted": 0,
-        "hierarchy_changes_applied": 0,
+        "identifiers_minted": len(new_concepts),
+        "hierarchy_changes_applied": sum(
+            1 + len(list(filter(None, row["child_ids"].split(";"))))
+            for row in new_concepts
+        ),
     },
 }
 (OUT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
@@ -352,8 +403,8 @@ fields are intentional. AI may summarize evidence but cannot approve.
 
 ## Safety
 
-- identifiers minted: 0;
-- hierarchy changes applied: 0;
+- identifiers minted: {len(new_concepts)};
+- hierarchy changes applied: {sum(1 + len(list(filter(None, row['child_ids'].split(';')))) for row in new_concepts)};
 - semantic decisions applied: {sum(bool(row['decision']) for row in decision_rows)};
 - private workbook content used: 0.
 """, encoding="utf-8")

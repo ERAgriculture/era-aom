@@ -20,14 +20,14 @@ Evidence-backed recommendations for eight priority cases:
 | Batch | Candidate parents |
 |---|---:|
 | Farming System / livestock system | 4 |
-| Management / Livestock Management | 208 |
+| Management / Livestock Management | 207 |
 | Management / Livestock Practices | 2 |
 | Outcomes / Efficiency | 1 |
 | Outcomes / Productivity | 16 |
 | Outcomes / Social | 1 |
 | Species / Animal | 2 |
 
-497 child relations depend on these 234 candidate
+484 child relations depend on these 234 candidate
 parents. High priority means at least 10 affected children; medium means 3–9.
 Priority measures impact, not semantic confidence.
 
@@ -35,7 +35,6 @@ Priority measures impact, not semantic confidence.
 
 | Case | Children | Candidate path | Same-label existing ID |
 |---|---:|---|---|
-| PARENT-006 | 13 | Management/Livestock Management/Feed Characteristic/Feed Chemical Composition/Minerals | — |
 | PARENT-007 | 18 | Management/Livestock Management/Feed Characteristic/Feed Composition/Feed Ingredient | — |
 | PARENT-036 | 12 | Management/Livestock Management/Feed Characteristic/Feed Composition/Feed Ingredient/Crop Byproduct/Cereal ByProducts/Maize | AOM_000648 |
 | PARENT-078 | 12 | Management/Livestock Management/Feed Characteristic/Feed Composition/Feed Ingredient/Crop Byproduct/Legume ByProducts/Soybean | AOM_001582 |
@@ -64,7 +63,7 @@ fields are intentional. AI may summarize evidence but cannot approve.
 
 ## Safety
 
-- identifiers minted: 0;
-- hierarchy changes applied: 0;
-- semantic decisions applied: 2;
+- identifiers minted: 1;
+- hierarchy changes applied: 14;
+- semantic decisions applied: 3;
 - private workbook content used: 0.

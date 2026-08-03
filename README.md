@@ -33,6 +33,7 @@ Published livestock v2 reconciliation:
 Normalized livestock review staging:
 [`data/livestock-staging/README.md`](data/livestock-staging/README.md).
 Contribution and review workflow: [`CONTRIBUTING.md`](CONTRIBUTING.md).
+Persistent identifier allocation policy: [`IDENTIFIERS.md`](IDENTIFIERS.md).
 Livestock domain-review pack:
 [`review/livestock-v2/README.md`](review/livestock-v2/README.md).
 

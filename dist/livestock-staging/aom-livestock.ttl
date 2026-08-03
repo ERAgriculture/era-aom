@@ -2365,6 +2365,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "Any measurable characteristic related to the concentration of calcium in feed. Source: EOL"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000162> ;
   skos:relatedMatch <https://agrovoc.fao.org/browse/agrovoc/en/page/c_4848> .
 
@@ -2434,6 +2435,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of cobalt (CHEBI:27638) in feed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000153> .
 
 <urn:era-aom:livestock:AOM_000235> a skos:Concept ;
@@ -2453,6 +2455,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of copper (CHEBI:28694) in food"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000158> .
 
 <urn:era-aom:livestock:AOM_000237> a skos:Concept ;
@@ -2602,6 +2605,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of iodine (CHEBI:24859) in fee"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000155> .
 
 <urn:era-aom:livestock:AOM_000251> a skos:Concept ;
@@ -2611,6 +2615,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of iron (CHEBI:18248) in feed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000157> .
 
 <urn:era-aom:livestock:AOM_000252> a skos:Concept ;
@@ -2629,6 +2634,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of magnesium (CHEBI:33974) in feeds"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_000169> .
 
 <urn:era-aom:livestock:AOM_000254> a skos:Concept ;
@@ -2638,6 +2644,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of manganese (CHEBI:18291) in feed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000154> .
 
 <urn:era-aom:livestock:AOM_000255> a skos:Concept ;
@@ -2739,6 +2746,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "Any measurable characteristic related to the concentration of phosphorus in feed. Source: EOL"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000161> ;
   skos:relatedMatch <https://agrovoc.fao.org/browse/agrovoc/en/page/c_4848> .
 
@@ -2749,6 +2757,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of potassium (CHEBI:26216) in feed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001693> .
 
 <urn:era-aom:livestock:AOM_000266> a skos:Concept ;
@@ -2758,6 +2767,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of selenium (CHEBI:27568) in feed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000159> .
 
 <urn:era-aom:livestock:AOM_000267> a skos:Concept ;
@@ -2935,6 +2945,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "any measurable characteristic related to the concentration of zinc (CHEBI:27363) in feed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000156> .
 
 <urn:era-aom:livestock:AOM_000285> a skos:Concept ;
@@ -18584,7 +18595,8 @@
   skos:notation "AOM_002210" ;
   skos:prefLabel "Lead"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> .
 
 <urn:era-aom:livestock:AOM_002211> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -18922,7 +18934,8 @@
   skos:prefLabel "Sodium"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "any measurable characteristic related to the concentration of sodium  in feed"@en .
+  skos:definition "any measurable characteristic related to the concentration of sodium  in feed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100849> .
 
 <urn:era-aom:livestock:AOM_002305> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -24368,3 +24381,11 @@
   era:status "unknown" ;
   skos:definition "Urea treatment is a form of alkali processing in which urea is applied to low-quality fibrous feeds—such as straw or crop residues—to improve digestibility. Through enzymatic hydrolysis by urease, urea is converted into ammonia, which breaks lignocellulosic bonds and increases the nitrogen content of the feed. This method is commonly used in smallholder and mixed crop-livestock systems due to its low cost, ease of application, and dual benefit of improving both physical structure and crude protein value of the treated material."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000819> .
+
+<urn:era-aom:livestock:AOM_100849> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100849" ;
+  skos:prefLabel "Mineral content"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000196> .

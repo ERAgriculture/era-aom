@@ -78,6 +78,8 @@ def main():
     identity_resolutions = read_governance("approved_identity_resolutions.csv")
     mapping_replacements = read_governance("approved_mapping_replacements.csv")
     deprecations = read_governance("approved_deprecations.csv")
+    new_concepts = read_governance("approved_new_concepts.csv")
+    id_registry = read_governance("livestock_id_registry.csv")
     resolution_by_row = {row["source_row"]: row for row in identity_resolutions}
     replacement_by_key = {
         (row["source_row"], row["source_column"]): row
@@ -126,6 +128,12 @@ def main():
     source_ids = {row["AOM"] for row in records}
     if not (set(deprecation_by_id) | set(retained_by_id)) <= source_ids:
         raise ValueError("Approved deprecation references unknown concept ID")
+    registered_ids = {row["concept_id"] for row in id_registry}
+    new_ids = {row["concept_id"] for row in new_concepts}
+    if len(new_ids) != len(new_concepts) or not new_ids <= registered_ids:
+        raise ValueError("Every new concept must have one registered unique identifier")
+    if new_ids & source_ids:
+        raise ValueError("New concept identifier collides with legacy source")
 
     resolved_to_existing = {
         source_row for source_row, resolution in resolution_by_row.items()
@@ -300,6 +308,54 @@ def main():
                     "source_column": "approved_identity_resolution",
                 })
 
+    concept_ids = {row["concept_id"] for row in concepts}
+    for new_concept in new_concepts:
+        concept_id = new_concept["concept_id"]
+        parent_id = new_concept["broader_id"]
+        if parent_id not in concept_ids:
+            raise ValueError(f"New concept parent is unknown: {parent_id}")
+        concepts.append({
+            "concept_id": concept_id, "scheme_id": SCHEME_ID,
+            "module": "aom-livestock", "concept_type": "aom_concept",
+            "notation": concept_id, "status": "staging",
+            "hierarchy_level": new_concept["hierarchy_level"],
+            "derived_path": new_concept["derived_path"], "source_row": "",
+        })
+        labels.append({
+            "concept_id": concept_id, "language": "en", "label_type": "pref",
+            "label": new_concept["preferred_label"],
+            "source_column": "approved_new_concept",
+        })
+        if new_concept["scope_note"]:
+            notes.append({
+                "concept_id": concept_id, "language": "en",
+                "note_type": "scope_note", "note": new_concept["scope_note"],
+                "source_column": "approved_new_concept",
+            })
+        relations.append({
+            "subject_id": concept_id, "relation_type": "broader",
+            "object_id": parent_id, "status": "reviewed",
+        })
+        child_ids = set(filter(None, new_concept["child_ids"].split(";")))
+        unknown_children = child_ids - concept_ids
+        if unknown_children:
+            raise ValueError(f"New concept has unknown children: {sorted(unknown_children)}")
+        gaps = [
+            gap for gap in gaps
+            if not (gap["child_id"] in child_ids and
+                    gap["missing_parent_path"] == new_concept["derived_path"])
+        ]
+        for child_id in sorted(child_ids):
+            relations.append({
+                "subject_id": child_id, "relation_type": "broader",
+                "object_id": concept_id, "status": "reviewed",
+            })
+        sources.append({
+            "concept_id": concept_id, "source_release": "AOM curation",
+            "source_row": "", "source_doi": new_concept["evidence"],
+        })
+        concept_ids.add(concept_id)
+
     for deprecation in deprecations:
         deprecated_id = deprecation["deprecated_id"]
         replacement_id = deprecation["replacement_id"]
@@ -349,6 +405,7 @@ def main():
         row["concept_id"]: "deprecated" if row["status"] == "deprecated" else "unknown"
         for row in concepts
     }
+    concept_type = {row["concept_id"]: row["concept_type"] for row in concepts}
     mapped = defaultdict(list)
     for row in mappings:
         if row["target_uri"]:
@@ -364,7 +421,7 @@ def main():
             "@id": URI_PREFIX + concept_id, "@type": "skos:Concept",
             "skos:inScheme": {"@id": SCHEME_URI}, "skos:notation": concept_id,
             "skos:prefLabel": {"@value": pref[concept_id], "@language": "en"},
-            "era:conceptType": "legacy_aom_concept",
+            "era:conceptType": concept_type[concept_id],
             "era:status": concept_status[concept_id],
         }
         if alt[concept_id]:
@@ -402,7 +459,7 @@ def main():
             "a skos:Concept", f"skos:inScheme <{SCHEME_URI}>",
             f"skos:notation {json.dumps(concept_id)}",
             f"skos:prefLabel {json.dumps(pref[concept_id], ensure_ascii=False)}@en",
-            'era:conceptType "legacy_aom_concept"',
+            f'era:conceptType {json.dumps(concept_type[concept_id])}',
             f'era:status {json.dumps(concept_status[concept_id])}',
         ]
         terms += [f"skos:altLabel {json.dumps(x, ensure_ascii=False)}@en" for x in alt[concept_id]]
@@ -471,6 +528,8 @@ aom:releasedIn a owl:ObjectProperty ; rdfs:range aom:Release .
             "approved_identity_resolutions": len(identity_resolutions),
             "approved_mapping_replacements": len(mapping_replacements),
             "approved_deprecations": len(deprecations),
+            "approved_new_concepts": len(new_concepts),
+            "registered_livestock_ids": len(id_registry),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,
