@@ -4717,6 +4717,9 @@
       "skos:definition": {
         "@value": "A diet or ingredient produced on-farm refers to feed materials that are cultivated, harvested, or otherwise obtained within the same agricultural system where the livestock consuming them are raised.",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100992"
       }
     },
     {
@@ -4735,6 +4738,9 @@
       "skos:definition": {
         "@value": "Purchased feeds refer to diets or ingredients that are obtained from external sources rather than being produced on-farm. These feed materials are typically bought from suppliers or manufacturers and are used to supplement or provide nutrition to livestock in the absence of sufficient on-farm feed resources.",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100992"
       }
     },
     {
@@ -13084,6 +13090,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/11876"
@@ -13191,6 +13200,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100985"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7898"
@@ -13505,6 +13517,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/736"
@@ -17431,6 +17446,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000811"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_99037"
@@ -17743,7 +17761,10 @@
           "@value": "Salt Lick",
           "@language": "en"
         }
-      ]
+      ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000779"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000774",
@@ -18309,6 +18330,9 @@
       "skos:definition": {
         "@value": "Acid treatment is a feed processing technique that involves the application of acidic substances to raw feed materials, aiming to improve nutrient availability, digestibility, and preservation properties. This process typically uses organic or inorganic acids, such as phosphoric, sulfuric, or citric acid, which can break down complex molecules, lower pH, and inhibit microbial growth. (HV GPT4)",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100991"
       }
     },
     {
@@ -18327,6 +18351,9 @@
       "skos:definition": {
         "@value": "Alkali treatment is an feed processing technique that involves the application of alkaline substances to raw feed materials, primarily to enhance the digestibility of fibrous components. This process typically uses alkaline agents, such as sodium hydroxide, potassium hydroxide, or ammonia, which can solubilize hemicellulose, lignin, and other complex carbohydrates, improving the overall nutritional value of fibrous feedstuffs. (HV GPT4)",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100991"
       }
     },
     {
@@ -18345,6 +18372,9 @@
       "skos:definition": {
         "@value": "Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100990"
       }
     },
     {
@@ -18568,6 +18598,9 @@
       "skos:definition": {
         "@value": "Feed fermentation is a process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT).",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100990"
       }
     },
     {
@@ -24921,6 +24954,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000561"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/11953"
@@ -24950,6 +24986,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100983"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9031"
@@ -24974,7 +25013,10 @@
           "@value": "Pig Litter",
           "@language": "en"
         }
-      ]
+      ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000561"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_001098",
@@ -25030,6 +25072,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100984"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/11704"
@@ -25175,6 +25220,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/12323"
@@ -25236,6 +25284,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100982"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_72550"
@@ -25353,6 +25404,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100977"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/11585"
@@ -26145,7 +26199,10 @@
           "@value": "Poultry Excreta",
           "@language": "en"
         }
-      ]
+      ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000561"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_001147",
@@ -40740,6 +40797,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/12538"
@@ -41116,7 +41176,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100987"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_001829",
@@ -41184,7 +41247,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100987"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_001832",
@@ -41323,7 +41389,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100987"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_001839",
@@ -42094,6 +42163,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000811"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3501"
@@ -42883,6 +42955,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000811"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4210"
@@ -43268,6 +43343,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100977"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/11582"
@@ -43356,6 +43434,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100980"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_55119"
@@ -43403,6 +43484,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_001927"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8022"
@@ -43514,6 +43598,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100981"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7370"
@@ -43686,6 +43773,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100983"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9031"
@@ -45301,7 +45391,10 @@
           "@value": "Danish Fish Milled",
           "@language": "en"
         }
-      ]
+      ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100979"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_002006",
@@ -45411,7 +45504,10 @@
           "@value": "Feather Boiled Dried Milled",
           "@language": "en"
         }
-      ]
+      ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100984"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_002011",
@@ -47055,7 +47151,10 @@
           "@value": "Hatchery Eggs",
           "@language": "en"
         }
-      ]
+      ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_002079",
@@ -47096,7 +47195,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_002081",
@@ -47110,7 +47212,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100986"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_002082",
@@ -47125,6 +47230,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100986"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_397977"
@@ -48722,7 +48830,10 @@
           "@value": "Fossil Shell Flour",
           "@language": "en"
         }
-      ]
+      ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000781"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_002192",
@@ -48737,6 +48848,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100985"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7898"
@@ -48756,6 +48870,9 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100989"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3077"
@@ -49562,6 +49679,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100978"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/11685"
@@ -51752,6 +51872,9 @@
       "skos:definition": {
         "@value": "A process in which grains or seeds are soaked and germinated under controlled moisture and temperature conditions to initiate sprouting. This enhances enzymatic activity, reduces anti-nutritional factors, and increases the bioavailability of certain nutrients, making the feed more digestible and nutritionally beneficial for livestock.",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100990"
       }
     },
     {
@@ -51983,6 +52106,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000781"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/614"
@@ -52039,6 +52165,9 @@
       "skos:definition": {
         "@value": "Molasses treatment involves applying molasses to fibrous feeds such as straw, stover, or hay to enhance palatability, increase energy content, and reduce dustiness. While it does not chemically alter fiber structure like alkali treatments, molasses provides readily fermentable carbohydrates that improve feed intake and support rumen microbial activity. It is often used as a carrier for urea or minerals in treated feeds and is widely adopted in both smallholder and commercial livestock systems for its ease of use and positive impact on voluntary intake.",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100991"
       }
     },
     {
@@ -52109,6 +52238,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/12911"
@@ -53054,7 +53186,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100987"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_003853",
@@ -54701,6 +54836,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000811"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_39350"
@@ -54738,6 +54876,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000811"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_204144"
@@ -55033,6 +55174,9 @@
       "skos:definition": {
         "@value": "A biological treatment in which specific microorganisms (e.g., lactic acid bacteria, fungi, or enzymes) are intentionally introduced to feed materials to improve fermentation, preservation, or nutrient availability. Commonly used in silage production, composting, or enhancing digestibility of fibrous feeds.",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100990"
       }
     },
     {
@@ -55263,6 +55407,9 @@
           "@language": "en"
         }
       ],
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000561"
+      },
       "skos:relatedMatch": [
         {
           "@id": "https://www.feedipedia.org/node/12473"
@@ -60568,7 +60715,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100988"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_006240",
@@ -60582,7 +60732,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100988"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_006241",
@@ -66115,6 +66268,295 @@
       "era:status": "unknown",
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000701"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100976",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100976",
+      "skos:prefLabel": {
+        "@value": "Animal by-products",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100850"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100977",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100977",
+      "skos:prefLabel": {
+        "@value": "Shrimp feed materials",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000542"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100978",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100978",
+      "skos:prefLabel": {
+        "@value": "Brown fish feed materials",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000549"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100979",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100979",
+      "skos:prefLabel": {
+        "@value": "Danish fish feed materials",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000549"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100980",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100980",
+      "skos:prefLabel": {
+        "@value": "Menhaden feed materials",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000549"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100981",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100981",
+      "skos:prefLabel": {
+        "@value": "Housefly maggot feed materials",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000554"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100982",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100982",
+      "skos:prefLabel": {
+        "@value": "Oryctes rhinoceros feed materials",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000554"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100983",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100983",
+      "skos:prefLabel": {
+        "@value": "Chicken feed materials",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000559"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100984",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100984",
+      "skos:prefLabel": {
+        "@value": "Feather by-products",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100985",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100985",
+      "skos:prefLabel": {
+        "@value": "Fish by-products",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100986",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100986",
+      "skos:prefLabel": {
+        "@value": "Marine hydrolysates",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100976"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100987",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100987",
+      "skos:prefLabel": {
+        "@value": "Processed food by-products",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000781"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100988",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100988",
+      "skos:prefLabel": {
+        "@value": "Untreated organic-waste feed materials",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000781"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100989",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100989",
+      "skos:prefLabel": {
+        "@value": "Microalgae supplements",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000736"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100990",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100990",
+      "skos:prefLabel": {
+        "@value": "Biological feed processes",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000845"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100991",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100991",
+      "skos:prefLabel": {
+        "@value": "Chemical feed processes",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000845"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100992",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100992",
+      "skos:prefLabel": {
+        "@value": "Diet source",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000108"
       }
     }
   ]

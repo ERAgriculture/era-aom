@@ -1665,7 +1665,8 @@
   skos:prefLabel "On-farm"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A diet or ingredient produced on-farm refers to feed materials that are cultivated, harvested, or otherwise obtained within the same agricultural system where the livestock consuming them are raised."@en .
+  skos:definition "A diet or ingredient produced on-farm refers to feed materials that are cultivated, harvested, or otherwise obtained within the same agricultural system where the livestock consuming them are raised."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100992> .
 
 <urn:era-aom:livestock:AOM_000142> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -1673,7 +1674,8 @@
   skos:prefLabel "Purchased"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Purchased feeds refer to diets or ingredients that are obtained from external sources rather than being produced on-farm. These feed materials are typically bought from suppliers or manufacturers and are used to supplement or provide nutrition to livestock in the absence of sufficient on-farm feed resources."@en .
+  skos:definition "Purchased feeds refer to diets or ingredients that are obtained from external sources rather than being produced on-farm. These feed materials are typically bought from suppliers or manufacturers and are used to supplement or provide nutrition to livestock in the absence of sufficient on-farm feed resources."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100992> .
 
 <urn:era-aom:livestock:AOM_000143> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -5135,6 +5137,7 @@
   skos:prefLabel "Bone"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11876> .
 
 <urn:era-aom:livestock:AOM_000542> a skos:Concept ;
@@ -5175,6 +5178,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Fish Waste"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100985> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_7898> .
 
 <urn:era-aom:livestock:AOM_000547> a skos:Concept ;
@@ -5291,6 +5295,7 @@
   skos:prefLabel "Shell"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> ;
   skos:relatedMatch <https://www.feedipedia.org/node/736> .
 
 <urn:era-aom:livestock:AOM_000559> a skos:Concept ;
@@ -6748,6 +6753,7 @@
   skos:prefLabel "Chamomile Flower"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000811> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_99037> .
 
 <urn:era-aom:livestock:AOM_000753> a skos:Concept ;
@@ -6879,7 +6885,8 @@
   skos:altLabel "Salt Dried Ground"@en ;
   skos:altLabel "Salt Block"@en ;
   skos:altLabel "Salt Course"@en ;
-  skos:altLabel "Salt Lick"@en .
+  skos:altLabel "Salt Lick"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000774> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7129,7 +7136,8 @@
   skos:prefLabel "Acid Treatment"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Acid treatment is a feed processing technique that involves the application of acidic substances to raw feed materials, aiming to improve nutrient availability, digestibility, and preservation properties. This process typically uses organic or inorganic acids, such as phosphoric, sulfuric, or citric acid, which can break down complex molecules, lower pH, and inhibit microbial growth. (HV GPT4)"@en .
+  skos:definition "Acid treatment is a feed processing technique that involves the application of acidic substances to raw feed materials, aiming to improve nutrient availability, digestibility, and preservation properties. This process typically uses organic or inorganic acids, such as phosphoric, sulfuric, or citric acid, which can break down complex molecules, lower pH, and inhibit microbial growth. (HV GPT4)"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100991> .
 
 <urn:era-aom:livestock:AOM_000819> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7137,7 +7145,8 @@
   skos:prefLabel "Alkali Treatment"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Alkali treatment is an feed processing technique that involves the application of alkaline substances to raw feed materials, primarily to enhance the digestibility of fibrous components. This process typically uses alkaline agents, such as sodium hydroxide, potassium hydroxide, or ammonia, which can solubilize hemicellulose, lignin, and other complex carbohydrates, improving the overall nutritional value of fibrous feedstuffs. (HV GPT4)"@en .
+  skos:definition "Alkali treatment is an feed processing technique that involves the application of alkaline substances to raw feed materials, primarily to enhance the digestibility of fibrous components. This process typically uses alkaline agents, such as sodium hydroxide, potassium hydroxide, or ammonia, which can solubilize hemicellulose, lignin, and other complex carbohydrates, improving the overall nutritional value of fibrous feedstuffs. (HV GPT4)"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100991> .
 
 <urn:era-aom:livestock:AOM_000820> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7145,7 +7154,8 @@
   skos:prefLabel "Enzyme Treatment"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)"@en .
+  skos:definition "Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100990> .
 
 <urn:era-aom:livestock:AOM_000821> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7237,7 +7247,8 @@
   skos:prefLabel "Fermentation"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Feed fermentation is a process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT)."@en .
+  skos:definition "Feed fermentation is a process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT)."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100990> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9731,6 +9742,7 @@
   skos:prefLabel "Cattle Manure"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000561> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11953> .
 
 <urn:era-aom:livestock:AOM_001096> a skos:Concept ;
@@ -9741,6 +9753,7 @@
   era:status "unknown" ;
   skos:altLabel "Chicken Meal"@en ;
   skos:altLabel "Chicken Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100983> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_9031> .
 
 <urn:era-aom:livestock:AOM_001097> a skos:Concept ;
@@ -9749,7 +9762,8 @@
   skos:prefLabel "Pig Manure"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:altLabel "Pig Litter"@en .
+  skos:altLabel "Pig Litter"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000561> .
 
 <urn:era-aom:livestock:AOM_001098> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9770,6 +9784,7 @@
   era:status "unknown" ;
   skos:altLabel "Feather Meal"@en ;
   skos:altLabel "Feather Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100984> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11704> .
 
 <urn:era-aom:livestock:AOM_001100> a skos:Concept ;
@@ -9826,6 +9841,7 @@
   skos:prefLabel "Meat and Bone"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12323> .
 
 <urn:era-aom:livestock:AOM_001107> a skos:Concept ;
@@ -9847,6 +9863,7 @@
   era:status "unknown" ;
   skos:altLabel "Oryctes rhinoceros Meal"@en ;
   skos:altLabel "Oryctes rhinoceros Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100982> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_72550> .
 
 <urn:era-aom:livestock:AOM_001109> a skos:Concept ;
@@ -9889,6 +9906,7 @@
   era:status "unknown" ;
   skos:altLabel "Shrimp Meal"@en ;
   skos:altLabel "Shrimp Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100977> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11585> .
 
 <urn:era-aom:livestock:AOM_001113> a skos:Concept ;
@@ -10197,7 +10215,8 @@
   era:status "unknown" ;
   skos:altLabel "Poultry Manure"@en ;
   skos:altLabel "Poultry Waste"@en ;
-  skos:altLabel "Poultry Excreta"@en .
+  skos:altLabel "Poultry Excreta"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000561> .
 
 <urn:era-aom:livestock:AOM_001147> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -15740,6 +15759,7 @@
   skos:prefLabel "Rumen Contents"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12538> .
 
 <urn:era-aom:livestock:AOM_001813> a skos:Concept ;
@@ -15887,7 +15907,8 @@
   skos:notation "AOM_001827" ;
   skos:prefLabel "Popcorn Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100987> .
 
 <urn:era-aom:livestock:AOM_001829> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -15914,7 +15935,8 @@
   skos:notation "AOM_001831" ;
   skos:prefLabel "Vitalite"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100987> .
 
 <urn:era-aom:livestock:AOM_001832> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -15971,7 +15993,8 @@
   skos:notation "AOM_001838" ;
   skos:prefLabel "Biscuit Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100987> .
 
 <urn:era-aom:livestock:AOM_001839> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -16276,6 +16299,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Stinging Nettle"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000811> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3501> .
 
 <urn:era-aom:livestock:AOM_001872> a skos:Concept ;
@@ -16573,6 +16597,7 @@
   skos:prefLabel "Asteraceae"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000811> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4210> .
 
 <urn:era-aom:livestock:AOM_001906> a skos:Concept ;
@@ -16726,6 +16751,7 @@
   skos:prefLabel "Shrimp Heads"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100977> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11582> .
 
 <urn:era-aom:livestock:AOM_001924> a skos:Concept ;
@@ -16757,6 +16783,7 @@
   era:status "unknown" ;
   skos:altLabel "Menhaden Meal"@en ;
   skos:altLabel "Menhaden Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100980> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_55119> .
 
 <urn:era-aom:livestock:AOM_001927> a skos:Concept ;
@@ -16775,6 +16802,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Rainbow Trout Viscera De-oiled Silage"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_001927> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_8022> .
 
 <urn:era-aom:livestock:AOM_001929> a skos:Concept ;
@@ -16815,6 +16843,7 @@
   era:status "unknown" ;
   skos:altLabel "Housefly Maggot Dried Meal"@en ;
   skos:altLabel "Housefly Maggot Dried Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100981> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_7370> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12278> .
 
@@ -16877,6 +16906,7 @@
   skos:altLabel "Chicken Viscera Dried Ground"@en ;
   skos:altLabel "Chicken Offal Dried Meal"@en ;
   skos:altLabel "Chicken Offal Dried Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100983> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_9031> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12474> .
 
@@ -17460,7 +17490,8 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Danish Fish Meal"@en ;
-  skos:altLabel "Danish Fish Milled"@en .
+  skos:altLabel "Danish Fish Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100979> .
 
 <urn:era-aom:livestock:AOM_002006> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17500,7 +17531,8 @@
   era:status "unknown" ;
   skos:altLabel "Feather Meal Boiled Milled"@en ;
   skos:altLabel "Feather Boiled Dried Meal"@en ;
-  skos:altLabel "Feather Boiled Dried Milled"@en .
+  skos:altLabel "Feather Boiled Dried Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100984> .
 
 <urn:era-aom:livestock:AOM_002011> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -18109,7 +18141,8 @@
   skos:prefLabel "Egg"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:altLabel "Hatchery Eggs"@en .
+  skos:altLabel "Hatchery Eggs"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> .
 
 <urn:era-aom:livestock:AOM_002079> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -18126,14 +18159,16 @@
   skos:notation "AOM_002080" ;
   skos:prefLabel "Lard"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> .
 
 <urn:era-aom:livestock:AOM_002081> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_002081" ;
   skos:prefLabel "Mixed Marine Hydrolysate"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100986> .
 
 <urn:era-aom:livestock:AOM_002082> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -18141,6 +18176,7 @@
   skos:prefLabel "Shrimp Hydrolysate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100986> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_397977> .
 
 <urn:era-aom:livestock:AOM_002083> a skos:Concept ;
@@ -18733,7 +18769,8 @@
   skos:prefLabel "Fossil Shell Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:altLabel "Fossil Shell Flour"@en .
+  skos:altLabel "Fossil Shell Flour"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_002192> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -18741,6 +18778,7 @@
   skos:prefLabel "Fish Offal"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100985> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_7898> .
 
 <urn:era-aom:livestock:AOM_002200> a skos:Concept ;
@@ -18749,6 +18787,7 @@
   skos:prefLabel "Chlorella vulgaris"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100989> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3077> .
 
 <urn:era-aom:livestock:AOM_002201> a skos:Concept ;
@@ -19076,6 +19115,7 @@
   era:status "unknown" ;
   skos:altLabel "Brown Fish Meal"@en ;
   skos:altLabel "Brown Fish Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100978> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11685> .
 
 <urn:era-aom:livestock:AOM_002241> a skos:Concept ;
@@ -19970,7 +20010,8 @@
   skos:prefLabel "Sprouted"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A process in which grains or seeds are soaked and germinated under controlled moisture and temperature conditions to initiate sprouting. This enhances enzymatic activity, reduces anti-nutritional factors, and increases the bioavailability of certain nutrients, making the feed more digestible and nutritionally beneficial for livestock."@en .
+  skos:definition "A process in which grains or seeds are soaked and germinated under controlled moisture and temperature conditions to initiate sprouting. This enhances enzymatic activity, reduces anti-nutritional factors, and increases the bioavailability of certain nutrients, making the feed more digestible and nutritionally beneficial for livestock."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100990> .
 
 <urn:era-aom:livestock:AOM_003100> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -20063,6 +20104,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Kitchen Waste"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000781> ;
   skos:relatedMatch <https://www.feedipedia.org/node/614> .
 
 <urn:era-aom:livestock:AOM_003200> a skos:Concept ;
@@ -20087,7 +20129,8 @@
   skos:prefLabel "Molasses Treatment"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Molasses treatment involves applying molasses to fibrous feeds such as straw, stover, or hay to enhance palatability, increase energy content, and reduce dustiness. While it does not chemically alter fiber structure like alkali treatments, molasses provides readily fermentable carbohydrates that improve feed intake and support rumen microbial activity. It is often used as a carrier for urea or minerals in treated feeds and is widely adopted in both smallholder and commercial livestock systems for its ease of use and positive impact on voluntary intake."@en .
+  skos:definition "Molasses treatment involves applying molasses to fibrous feeds such as straw, stover, or hay to enhance palatability, increase energy content, and reduce dustiness. While it does not chemically alter fiber structure like alkali treatments, molasses provides readily fermentable carbohydrates that improve feed intake and support rumen microbial activity. It is often used as a carrier for urea or minerals in treated feeds and is widely adopted in both smallholder and commercial livestock systems for its ease of use and positive impact on voluntary intake."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100991> .
 
 <urn:era-aom:livestock:AOM_003203> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -20112,6 +20155,7 @@
   skos:altLabel "poultry slaughterhouse waste"@en ;
   skos:altLabel "chicken offal"@en ;
   skos:altLabel "chicken by-product meal"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12911> .
 
 <urn:era-aom:livestock:AOM_003207> a skos:Concept ;
@@ -20497,7 +20541,8 @@
   skos:notation "AOM_003829" ;
   skos:prefLabel "Bread Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100987> .
 
 <urn:era-aom:livestock:AOM_003853> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21140,6 +21185,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "great basil"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000811> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_39350> .
 
 <urn:era-aom:livestock:AOM_003997> a skos:Concept ;
@@ -21152,6 +21198,7 @@
   skos:altLabel "Ocimum viridiflorum Leaves Extract"@en ;
   skos:altLabel "Ocimum suave Leaves Extract"@en ;
   skos:altLabel "Ocimum viride Leaves Extract"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000811> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_204144> .
 
 <urn:era-aom:livestock:AOM_003999> a skos:Concept ;
@@ -21276,7 +21323,8 @@
   skos:prefLabel "Inoculation"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A biological treatment in which specific microorganisms (e.g., lactic acid bacteria, fungi, or enzymes) are intentionally introduced to feed materials to improve fermentation, preservation, or nutrient availability. Commonly used in silage production, composting, or enhancing digestibility of fibrous feeds."@en .
+  skos:definition "A biological treatment in which specific microorganisms (e.g., lactic acid bacteria, fungi, or enzymes) are intentionally introduced to feed materials to improve fermentation, preservation, or nutrient availability. Commonly used in silage production, composting, or enhancing digestibility of fibrous feeds."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100990> .
 
 <urn:era-aom:livestock:AOM_004614> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21364,6 +21412,7 @@
   era:status "unknown" ;
   skos:altLabel "Chicken Litter"@en ;
   skos:altLabel "Chicken Waste"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000561> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12473> .
 
 <urn:era-aom:livestock:AOM_006009> a skos:Concept ;
@@ -23422,14 +23471,16 @@
   skos:notation "AOM_006239" ;
   skos:prefLabel "Untreated Organic Waste Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100988> .
 
 <urn:era-aom:livestock:AOM_006240> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_006240" ;
   skos:prefLabel "Untreated Organic Waste Dried Fermented Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100988> .
 
 <urn:era-aom:livestock:AOM_006241> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -25765,3 +25816,139 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
+
+<urn:era-aom:livestock:AOM_100976> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100976" ;
+  skos:prefLabel "Animal by-products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
+
+<urn:era-aom:livestock:AOM_100977> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100977" ;
+  skos:prefLabel "Shrimp feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000542> .
+
+<urn:era-aom:livestock:AOM_100978> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100978" ;
+  skos:prefLabel "Brown fish feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000549> .
+
+<urn:era-aom:livestock:AOM_100979> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100979" ;
+  skos:prefLabel "Danish fish feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000549> .
+
+<urn:era-aom:livestock:AOM_100980> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100980" ;
+  skos:prefLabel "Menhaden feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000549> .
+
+<urn:era-aom:livestock:AOM_100981> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100981" ;
+  skos:prefLabel "Housefly maggot feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000554> .
+
+<urn:era-aom:livestock:AOM_100982> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100982" ;
+  skos:prefLabel "Oryctes rhinoceros feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000554> .
+
+<urn:era-aom:livestock:AOM_100983> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100983" ;
+  skos:prefLabel "Chicken feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000559> .
+
+<urn:era-aom:livestock:AOM_100984> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100984" ;
+  skos:prefLabel "Feather by-products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> .
+
+<urn:era-aom:livestock:AOM_100985> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100985" ;
+  skos:prefLabel "Fish by-products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> .
+
+<urn:era-aom:livestock:AOM_100986> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100986" ;
+  skos:prefLabel "Marine hydrolysates"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100976> .
+
+<urn:era-aom:livestock:AOM_100987> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100987" ;
+  skos:prefLabel "Processed food by-products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000781> .
+
+<urn:era-aom:livestock:AOM_100988> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100988" ;
+  skos:prefLabel "Untreated organic-waste feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000781> .
+
+<urn:era-aom:livestock:AOM_100989> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100989" ;
+  skos:prefLabel "Microalgae supplements"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000736> .
+
+<urn:era-aom:livestock:AOM_100990> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100990" ;
+  skos:prefLabel "Biological feed processes"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000845> .
+
+<urn:era-aom:livestock:AOM_100991> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100991" ;
+  skos:prefLabel "Chemical feed processes"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000845> .
+
+<urn:era-aom:livestock:AOM_100992> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100992" ;
+  skos:prefLabel "Diet source"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000108> .

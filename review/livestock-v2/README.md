@@ -32,14 +32,14 @@ Pending identity investigations: `identity_review_candidates.csv`.
 | Batch | Candidate parents |
 |---|---:|
 | Farming System / livestock system | 4 |
-| Management / Livestock Management | 42 |
+| Management / Livestock Management | 12 |
 | Management / Livestock Practices | 2 |
 | Outcomes / Efficiency | 1 |
 | Outcomes / Productivity | 15 |
 | Outcomes / Social | 1 |
 | Species / Animal | 2 |
 
-137 child relations depend on these 234 candidate
+86 child relations depend on these 234 candidate
 parents. High priority means at least 10 affected children; medium means 3–9.
 Priority measures impact, not semantic confidence.
 
@@ -71,7 +71,7 @@ fields are intentional. AI may summarize evidence but cannot approve.
 
 ## Safety
 
-- identifiers minted: 127;
-- hierarchy changes applied: 487;
-- semantic decisions applied: 169;
+- identifiers minted: 144;
+- hierarchy changes applied: 555;
+- semantic decisions applied: 199;
 - private workbook content used: 0.
