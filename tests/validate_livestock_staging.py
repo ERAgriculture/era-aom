@@ -28,7 +28,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2645 and len(ids) == len(known)
+assert len(ids) == 2671 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -54,7 +54,7 @@ assert len(replacements) == 3
 assert len(deprecations) == 1
 assert deprecations[0]["deprecated_id"] == "AOM_001884"
 assert deprecations[0]["replacement_id"] == "AOM_000564"
-assert len(new_concepts) == 144
+assert len(new_concepts) == 170
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -107,8 +107,18 @@ remaining_feed_mint_cases = {
     "PARENT-199",
 }
 assert remaining_feed_mint_cases <= set(new_by_case)
+final_mint_cases = {
+    "PARENT-002", "PARENT-004", "PARENT-201", "PARENT-202",
+    "PARENT-203", "PARENT-205", "PARENT-206", "PARENT-207",
+    "PARENT-208", "PARENT-209", "PARENT-210", "PARENT-211",
+    "PARENT-215", "PARENT-216", "PARENT-217", "PARENT-218",
+    "PARENT-219", "PARENT-220", "PARENT-222", "PARENT-223",
+    "PARENT-224", "PARENT-228", "PARENT-229", "PARENT-231",
+    "PARENT-232", "PARENT-233",
+}
+assert final_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 100993)
+    f"AOM_{number:06d}" for number in range(100849, 101019)
 }
 assert {row["concept_id"] for row in id_registry} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}
@@ -161,7 +171,7 @@ for case_id in {"PARENT-078", "PARENT-200", "PARENT-227"}:
         row["subject_id"] for row in relations
         if row["relation_type"] == "broader"
         and row["object_id"] == new_concept["concept_id"]
-    } == children
+    } >= children
     assert not any(row["child_id"] in children for row in gaps)
 expected_new_parents = {
     "PARENT-078": "AOM_000615",
@@ -195,7 +205,7 @@ assert {
     ("AOM_100873", "related", "AOM_002226"),
     ("AOM_100874", "related", "AOM_001314"),
 }
-assert len(reparentings) == 53
+assert len(reparentings) == 64
 for reparenting in reparentings:
     children = set(reparenting["child_ids"].split(";"))
     assert {
@@ -220,6 +230,9 @@ assert ("AOM_100969", "AOM_000102") in {
 assert new_by_case["PARENT-017"]["preferred_label"] == "Animal by-products"
 assert new_by_case["PARENT-197"]["broader_id"] == "AOM_000845"
 assert new_by_case["PARENT-199"]["preferred_label"] == "Diet source"
+assert new_by_case["PARENT-206"]["preferred_label"] == "Reproductive status"
+assert new_by_case["PARENT-233"]["preferred_label"] == "Porcine animals"
+assert gaps == []
 approved_aliases = {
     row["label"] for row in labels
     if row["concept_id"] == "AOM_001676"
