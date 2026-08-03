@@ -198,6 +198,7 @@
   skos:altLabel "Sus scrofa"@en ;
   skos:altLabel "Sus domesticus"@en ;
   skos:definition "Suidae is a family of artiodactyl mammals which are commonly called pigs, hogs or boars. In addition to numerous fossil species, 17 extant species are currently recognized (or 18 counting domestic pigs and wild boars separately), classified into between four and eight genera. The family includes the domestic pig, Sus scrofa domesticus or Sus domesticus, in addition to numerous species of wild pig, such as babirusas and warthogs. All suids, or swine, are native to the Old World, ranging from Asia to Europe and Africa. [Wikipedia]"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101018> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/FOODON_03411136> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_9821> .
 
@@ -426,6 +427,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Hawaiian Sea Urchin"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101017> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_7673> .
 
 <urn:era-aom:livestock:AOM_000037> a skos:Concept ;
@@ -1857,7 +1859,8 @@
   skos:prefLabel "Conventional Pasture Management"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "This could be the traditional or farmer practice or a practice the authors state as an unimproved control practice."@en .
+  skos:definition "This could be the traditional or farmer practice or a practice the authors state as an unimproved control practice."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101000> .
 
 <urn:era-aom:livestock:AOM_000163> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -1873,7 +1876,8 @@
   skos:notation "AOM_000164" ;
   skos:prefLabel "Improved Pasture"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101000> .
 
 <urn:era-aom:livestock:AOM_000165> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -1908,7 +1912,8 @@
   skos:prefLabel "Controlled Grazing"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "The restriction of animal movement within pastures. Controlled grazing is known by many names, such as rotational grazing, rotational stocking, intensive grazing and strip grazing. Typically a large pasture is subdivided into several smaller pastures (paddocks) by cross fencing and animals stocked in one of the paddocks. When the forage has been removed, cattle are rotated to the next paddock."@en .
+  skos:definition "The restriction of animal movement within pastures. Controlled grazing is known by many names, such as rotational grazing, rotational stocking, intensive grazing and strip grazing. Typically a large pasture is subdivided into several smaller pastures (paddocks) by cross fencing and animals stocked in one of the paddocks. When the forage has been removed, cattle are rotated to the next paddock."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101000> .
 
 <urn:era-aom:livestock:AOM_000169> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -1917,7 +1922,8 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Zero Grazing"@en ;
-  skos:definition "Within a farm livestock are confined and not allowed to graze pasture, instead fodder grown on the farm is cut and taken to the animals."@en .
+  skos:definition "Within a farm livestock are confined and not allowed to graze pasture, instead fodder grown on the farm is cut and taken to the animals."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101000> .
 
 <urn:era-aom:livestock:AOM_000170> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -1925,14 +1931,16 @@
   skos:prefLabel "Aquasilviculture"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "An aquaculture practice in combination with a sylviculture practice in close spatial proximity. The classic example of this practice is fish or crustacean farming in mangroves, to conserve or restore mangrove trees and produce food."@en .
+  skos:definition "An aquaculture practice in combination with a sylviculture practice in close spatial proximity. The classic example of this practice is fish or crustacean farming in mangroves, to conserve or restore mangrove trees and produce food."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000107> .
 
 <urn:era-aom:livestock:AOM_000171> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000171" ;
   skos:prefLabel "Optimization of Stocking Density"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101000> .
 
 <urn:era-aom:livestock:AOM_000172> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -1940,14 +1948,16 @@
   skos:prefLabel "Shade Trees"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Shade provision using trees (silvopastoralism)"@en .
+  skos:definition "Shade provision using trees (silvopastoralism)"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101000> .
 
 <urn:era-aom:livestock:AOM_000173> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000173" ;
   skos:prefLabel "Disease Prevention"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100997> .
 
 <urn:era-aom:livestock:AOM_000174> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -1987,21 +1997,24 @@
   skos:notation "AOM_000178" ;
   skos:prefLabel "Growth Promotor"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000108> .
 
 <urn:era-aom:livestock:AOM_000179> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000179" ;
   skos:prefLabel "N-inhibitors"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101000> .
 
 <urn:era-aom:livestock:AOM_000180> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000180" ;
   skos:prefLabel "Monitoring"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100997> .
 
 <urn:era-aom:livestock:AOM_000181> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -2009,7 +2022,8 @@
   skos:prefLabel "Fodder Banks"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Control is a farmer not storing fodder for the dry seasons and either having to buy in fodder or try and subsist on whatever is available in the environment."@en .
+  skos:definition "Control is a farmer not storing fodder for the dry seasons and either having to buy in fodder or try and subsist on whatever is available in the environment."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101001> .
 
 <urn:era-aom:livestock:AOM_000182> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -2017,7 +2031,8 @@
   skos:prefLabel "Hay"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Control is a farmer not storing fodder for the dry seasons and either having to buy in fodder or try and subsist on whatever is available in the environment."@en .
+  skos:definition "Control is a farmer not storing fodder for the dry seasons and either having to buy in fodder or try and subsist on whatever is available in the environment."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101001> .
 
 <urn:era-aom:livestock:AOM_000183> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -2025,7 +2040,8 @@
   skos:prefLabel "Silage"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Control is a farmer not storing fodder for the dry seasons and either having to buy in fodder or try and subsist on whatever is available in the environment."@en .
+  skos:definition "Control is a farmer not storing fodder for the dry seasons and either having to buy in fodder or try and subsist on whatever is available in the environment."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101001> .
 
 <urn:era-aom:livestock:AOM_000187> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -3803,7 +3819,8 @@
   skos:prefLabel "Milk Fat Yield"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Amount of fat produced. Provide the actual quantity of fat produced instead of expressing it as a percentage or proportion of the milk."@en .
+  skos:definition "Amount of fat produced. Provide the actual quantity of fat produced instead of expressing it as a percentage or proportion of the milk."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101015> .
 
 <urn:era-aom:livestock:AOM_000382> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -3811,7 +3828,8 @@
   skos:prefLabel "Milk Fat Content"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "The percentage or proportion of  milk that is fat."@en .
+  skos:definition "The percentage or proportion of  milk that is fat."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101015> .
 
 <urn:era-aom:livestock:AOM_000383> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -3908,7 +3926,8 @@
   skos:prefLabel "Labour-Time"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Labour time per task, season, or unit land (gender is not specified)."@en .
+  skos:definition "Labour time per task, season, or unit land (gender is not specified)."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101014> .
 
 <urn:era-aom:livestock:AOM_000394> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -3932,7 +3951,8 @@
   skos:prefLabel "Return to Labour"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Return to Labour or Labour Productivity. This may be expressed as income/day labour, income/area or production/day labour."@en .
+  skos:definition "Return to Labour or Labour Productivity. This may be expressed as income/day labour, income/area or production/day labour."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101014> .
 
 <urn:era-aom:livestock:AOM_000397> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4007,21 +4027,24 @@
   skos:notation "AOM_000405" ;
   skos:prefLabel "Total Cost per Animal"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101006> .
 
 <urn:era-aom:livestock:AOM_000406> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000406" ;
   skos:prefLabel "Total Cost per Area"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101006> .
 
 <urn:era-aom:livestock:AOM_000407> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000407" ;
   skos:prefLabel "Total Cost per Unit Production"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101007> .
 
 <urn:era-aom:livestock:AOM_000408> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4112,7 +4135,8 @@
   skos:prefLabel "Variable Costs-Mulch"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Cost of mulch materials."@en .
+  skos:definition "Cost of mulch materials."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101008> .
 
 <urn:era-aom:livestock:AOM_000419> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4147,7 +4171,8 @@
   skos:prefLabel "Variable Costs-Pesticides"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Cost of pest control inputs."@en .
+  skos:definition "Cost of pest control inputs."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101009> .
 
 <urn:era-aom:livestock:AOM_000423> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4182,7 +4207,8 @@
   skos:prefLabel "Variable Costs-Biological Control"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Cost of biological control inputs or management (e.g. entomopathogens, parasitoids, traps)."@en .
+  skos:definition "Cost of biological control inputs or management (e.g. entomopathogens, parasitoids, traps)."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101009> .
 
 <urn:era-aom:livestock:AOM_000427> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4190,7 +4216,8 @@
   skos:prefLabel "Variable Costs-Seed or Planting Material"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Cost of planting materials, such as  Seed or seedlings."@en .
+  skos:definition "Cost of planting materials, such as  Seed or seedlings."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101008> .
 
 <urn:era-aom:livestock:AOM_000428> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4216,7 +4243,8 @@
   skos:prefLabel "Variable Costs-Veterinary"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Cost of animal care, are variable costs of drugs, vaccines, medication, vet charges, ect."@en .
+  skos:definition "Cost of animal care, are variable costs of drugs, vaccines, medication, vet charges, ect."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_003110> .
 
 <urn:era-aom:livestock:AOM_000433> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4277,7 +4305,8 @@
   skos:prefLabel "Family  Labor Cost (Male)"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Labor input per activity, if not specified whether hired workers or family. If specified  use \"Family labor input\" or \"Hired labor input\". Family labor, usuall unpaid working days or hours. Hired labor, workers that are paid for working time."@en .
+  skos:definition "Labor input per activity, if not specified whether hired workers or family. If specified  use \"Family labor input\" or \"Hired labor input\". Family labor, usuall unpaid working days or hours. Hired labor, workers that are paid for working time."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101010> .
 
 <urn:era-aom:livestock:AOM_000442> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4285,7 +4314,8 @@
   skos:prefLabel "Family  Labor Cost (Female)"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Labor input per activity, if not specified whether hired workers or family. If specified  use \"Family labor input\" or \"Hired labor input\". Family labor, usuall unpaid working days or hours. Hired labor, workers that are paid for working time."@en .
+  skos:definition "Labor input per activity, if not specified whether hired workers or family. If specified  use \"Family labor input\" or \"Hired labor input\". Family labor, usuall unpaid working days or hours. Hired labor, workers that are paid for working time."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101010> .
 
 <urn:era-aom:livestock:AOM_000443> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4337,35 +4367,40 @@
   skos:notation "AOM_000448" ;
   skos:prefLabel "Labor Opportunity Cost"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101005> .
 
 <urn:era-aom:livestock:AOM_000449> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000449" ;
   skos:prefLabel "Capital Opportunity Cost"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101005> .
 
 <urn:era-aom:livestock:AOM_000450> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000450" ;
   skos:prefLabel "Land Opportunity Cost"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101005> .
 
 <urn:era-aom:livestock:AOM_000451> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000451" ;
   skos:prefLabel "Monetary Private Benefits-Sale of produce"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101011> .
 
 <urn:era-aom:livestock:AOM_000452> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000452" ;
   skos:prefLabel "Monetary Private Benefits-Sale of manure"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101011> .
 
 <urn:era-aom:livestock:AOM_000453> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4373,14 +4408,16 @@
   skos:prefLabel "Monetary Private Benefits-Animal rent"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "E.g. draught labour"@en .
+  skos:definition "E.g. draught labour"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101011> .
 
 <urn:era-aom:livestock:AOM_000454> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000454" ;
   skos:prefLabel "Non-Monetary Private Benefits-Consumption"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101012> .
 
 <urn:era-aom:livestock:AOM_000455> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4388,28 +4425,32 @@
   skos:prefLabel "Non-Monetary Private Benefits-Nutrient/Soil management"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "E.g. compost or manure"@en .
+  skos:definition "E.g. compost or manure"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101012> .
 
 <urn:era-aom:livestock:AOM_000456> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000456" ;
   skos:prefLabel "Non-Monetary Private Benefits-Animal labour"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101012> .
 
 <urn:era-aom:livestock:AOM_000457> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000457" ;
   skos:prefLabel "Monetary Societal Benefits"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101013> .
 
 <urn:era-aom:livestock:AOM_000458> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000458" ;
   skos:prefLabel "Non-monetary Societal Benefits"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101013> .
 
 <urn:era-aom:livestock:AOM_000459> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4739,7 +4780,8 @@
   skos:prefLabel "Yield Stability"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "The variability in yields between seasons or between years."@en .
+  skos:definition "The variability in yields between seasons or between years."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000361> .
 
 <urn:era-aom:livestock:AOM_000497> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4850,7 +4892,8 @@
   skos:prefLabel "Apparent N Efficiency"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Animal Products Only. Integration of N into production. Formula = N.retained/N.supplied."@en .
+  skos:definition "Animal Products Only. Integration of N into production. Formula = N.retained/N.supplied."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000502> .
 
 <urn:era-aom:livestock:AOM_000510> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4919,7 +4962,8 @@
   skos:prefLabel "Income Female"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Female income from practice(s)."@en .
+  skos:definition "Female income from practice(s)."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101016> .
 
 <urn:era-aom:livestock:AOM_000518> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -4927,7 +4971,8 @@
   skos:prefLabel "Income Male"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Male income from practice(s)."@en .
+  skos:definition "Male income from practice(s)."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101016> .
 
 <urn:era-aom:livestock:AOM_000519> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7464,6 +7509,7 @@
   era:status "unknown" ;
   skos:altLabel "domesticated broodstock production"@en ;
   skos:definition "system of production dedicated to the production of sexually mature animal using juvenile that come from a farm. This system may be composed of one or several rearing stage unit"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100994> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001585> .
 
 <urn:era-aom:livestock:AOM_000855> a skos:Concept ;
@@ -7561,6 +7607,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "system of production dedicated to the production of mature animal using immature or submature animals coming from the natural environment.This system may be composed of one or several rearing stage unit"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000862> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001581> .
 
 <urn:era-aom:livestock:AOM_000865> a skos:Concept ;
@@ -8107,6 +8154,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "building divided into rows of individual stalls or cubicles in which animals lay when at rest but are not restrained."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000911> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001907> .
 
 <urn:era-aom:livestock:AOM_000913> a skos:Concept ;
@@ -8370,6 +8418,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "total mass of animals in a rearing unit"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100998> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000334> .
 
 <urn:era-aom:livestock:AOM_000938> a skos:Concept ;
@@ -8380,6 +8429,7 @@
   era:status "unknown" ;
   skos:altLabel "animal biomass density"@en ;
   skos:definition "mass of animals per area or volume"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100998> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000043> .
 
 <urn:era-aom:livestock:AOM_000939> a skos:Concept ;
@@ -8399,6 +8449,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "total number of animals in a rearing unit"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100998> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000333> .
 
 <urn:era-aom:livestock:AOM_000941> a skos:Concept ;
@@ -8408,6 +8459,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "number or proportion of animal in various stages of development in the group. A group may be homogeneous (only one rearing stage) or heterogeneous (several rearing stages)."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100996> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001704> .
 
 <urn:era-aom:livestock:AOM_000942> a skos:Concept ;
@@ -8417,6 +8469,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "number or proportion of animal of different sexes in the group. A group may be homogeneous (only one sex) or heterogeneous (male and female)."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100996> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001705> .
 
 <urn:era-aom:livestock:AOM_000943> a skos:Concept ;
@@ -8426,6 +8479,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "composition of an animal group in term of genetic lines or breed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100996> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0002001> .
 
 <urn:era-aom:livestock:AOM_000944> a skos:Concept ;
@@ -8506,6 +8560,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "time duration and/or seasonal period of grazing system"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100995> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001946> .
 
 <urn:era-aom:livestock:AOM_000953> a skos:Concept ;
@@ -8513,7 +8568,8 @@
   skos:notation "AOM_000953" ;
   skos:prefLabel "per cycle"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100995> .
 
 <urn:era-aom:livestock:AOM_000954> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8528,7 +8584,8 @@
   skos:notation "AOM_000955" ;
   skos:prefLabel "Cattle;Buffalo"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101002> .
 
 <urn:era-aom:livestock:AOM_000956> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8788,7 +8845,8 @@
   skos:notation "AOM_000983" ;
   skos:prefLabel "Sheep"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101002> .
 
 <urn:era-aom:livestock:AOM_000984> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8939,7 +8997,8 @@
   skos:notation "AOM_001000" ;
   skos:prefLabel "Goat"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101002> .
 
 <urn:era-aom:livestock:AOM_001001> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9076,7 +9135,8 @@
   skos:notation "AOM_001017" ;
   skos:prefLabel "Pig"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101002> .
 
 <urn:era-aom:livestock:AOM_001018> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9293,7 +9353,8 @@
   skos:notation "AOM_001039" ;
   skos:prefLabel "Chicken"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101002> .
 
 <urn:era-aom:livestock:AOM_001040> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9301,7 +9362,8 @@
   skos:prefLabel "Chick"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Chicks are typically less than one week old."@en .
+  skos:definition "Chicks are typically less than one week old."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101003> .
 
 <urn:era-aom:livestock:AOM_001041> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9310,7 +9372,8 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Pullet"@en ;
-  skos:definition "A pullet is a female chicken that is less than one year old and has not yet reached sexual maturity. The term is typically used to refer to female chickens that are between the ages of one week and six months."@en .
+  skos:definition "A pullet is a female chicken that is less than one year old and has not yet reached sexual maturity. The term is typically used to refer to female chickens that are between the ages of one week and six months."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101003> .
 
 <urn:era-aom:livestock:AOM_001042> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9319,7 +9382,8 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Cockerel"@en ;
-  skos:definition "A cockerel is a male chicken that has not yet reached sexual maturity. The term is typically used to refer to male chickens that are less than one year old."@en .
+  skos:definition "A cockerel is a male chicken that has not yet reached sexual maturity. The term is typically used to refer to male chickens that are less than one year old."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101003> .
 
 <urn:era-aom:livestock:AOM_001043> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9376,7 +9440,8 @@
   skos:notation "AOM_001048" ;
   skos:prefLabel "Fish"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101002> .
 
 <urn:era-aom:livestock:AOM_001049> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9384,7 +9449,8 @@
   skos:prefLabel "Fry"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "This is the initial stage of fish development, when a fish hatches from an egg. Fry are typically less than one month old."@en .
+  skos:definition "This is the initial stage of fish development, when a fish hatches from an egg. Fry are typically less than one month old."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101004> .
 
 <urn:era-aom:livestock:AOM_001050> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9392,7 +9458,8 @@
   skos:prefLabel "Fingerling"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Fingerlings are small fish that are between the ages of one month and one year. They are typically between 2-5 cm in length."@en .
+  skos:definition "Fingerlings are small fish that are between the ages of one month and one year. They are typically between 2-5 cm in length."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101004> .
 
 <urn:era-aom:livestock:AOM_001051> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9400,7 +9467,8 @@
   skos:prefLabel "Juvenile"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Juveniles are fish that are between the ages of one year and two years. They are typically between 5-10 cm in length."@en .
+  skos:definition "Juveniles are fish that are between the ages of one year and two years. They are typically between 5-10 cm in length."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101004> .
 
 <urn:era-aom:livestock:AOM_001052> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9408,7 +9476,8 @@
   skos:prefLabel "Sub-adult"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Sub-adults are fish that are between the ages of two years and three years. They are typically between 10-20 cm in length."@en .
+  skos:definition "Sub-adults are fish that are between the ages of two years and three years. They are typically between 10-20 cm in length."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101004> .
 
 <urn:era-aom:livestock:AOM_001053> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9669,28 +9738,32 @@
   skos:notation "AOM_001084" ;
   skos:prefLabel "Variable Cost-Innoculants"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101008> .
 
 <urn:era-aom:livestock:AOM_001085> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001085" ;
   skos:prefLabel "Variable Cost-Biopesticides"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101008> .
 
 <urn:era-aom:livestock:AOM_001086> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001086" ;
   skos:prefLabel "Variable Cost-Soil Amendments"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101008> .
 
 <urn:era-aom:livestock:AOM_001087> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001087" ;
   skos:prefLabel "Animal Bedding"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_003110> .
 
 <urn:era-aom:livestock:AOM_001088> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19327,7 +19400,8 @@
   skos:prefLabel "Primiparous"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Refers to a female animal that is pregnant or has given birth for the first time."@en .
+  skos:definition "Refers to a female animal that is pregnant or has given birth for the first time."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100999> .
 
 <urn:era-aom:livestock:AOM_002502> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19335,7 +19409,8 @@
   skos:prefLabel "Multiparous"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Refers to a female animal that has been pregnant or has given birth more than once."@en .
+  skos:definition "Refers to a female animal that has been pregnant or has given birth more than once."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100999> .
 
 <urn:era-aom:livestock:AOM_002503> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19343,7 +19418,8 @@
   skos:prefLabel "Mixed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Refers to the first stage (trimester) of pregnancy in animals."@en .
+  skos:definition "Refers to the first stage (trimester) of pregnancy in animals."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100999> .
 
 <urn:era-aom:livestock:AOM_002504> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19351,7 +19427,8 @@
   skos:prefLabel "First trimester"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "The second stage of pregnancy, often associated with increased nutritional requirements as the fetus grows."@en .
+  skos:definition "The second stage of pregnancy, often associated with increased nutritional requirements as the fetus grows."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100999> .
 
 <urn:era-aom:livestock:AOM_002505> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19359,7 +19436,8 @@
   skos:prefLabel "Second trimester"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Refers to the final stage of pregnancy, where the focus is on ensuring adequate nutrition to support both the mother and the developing fetus as it approaches birth."@en .
+  skos:definition "Refers to the final stage of pregnancy, where the focus is on ensuring adequate nutrition to support both the mother and the developing fetus as it approaches birth."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100999> .
 
 <urn:era-aom:livestock:AOM_002506> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19367,14 +19445,16 @@
   skos:prefLabel "Third trimester"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Refers to the period immediately following birth"@en .
+  skos:definition "Refers to the period immediately following birth"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100999> .
 
 <urn:era-aom:livestock:AOM_002507> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_002507" ;
   skos:prefLabel "Forth trimester"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100999> .
 
 <urn:era-aom:livestock:AOM_002508> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19466,7 +19546,8 @@
   skos:notation "AOM_003003" ;
   skos:prefLabel "Feed Addition"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000108> .
 
 <urn:era-aom:livestock:AOM_003004> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19474,7 +19555,8 @@
   skos:prefLabel "Product"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Feeds added to animal diets that come from non-woody crops usually grown for human consumption. These can be crop grain, field residues (for example maize stalks left over once the grain component has been harvested), or processing residues (for example the maize bran produced as a byproduct of milling flour). Soyabeans fit in this category as they are grown for human consumption and livestock feed."@en .
+  skos:definition "Feeds added to animal diets that come from non-woody crops usually grown for human consumption. These can be crop grain, field residues (for example maize stalks left over once the grain component has been harvested), or processing residues (for example the maize bran produced as a byproduct of milling flour). Soyabeans fit in this category as they are grown for human consumption and livestock feed."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_003014> .
 
 <urn:era-aom:livestock:AOM_003005> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19536,7 +19618,8 @@
   skos:prefLabel "Feed Substitution"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Components of a basal diet fully or partially substituted for residues from crops not primarily grown for fodder, but for another purpose (e.g. consumption). These can be field residues (for example maize stalks left over once the grain component has been harvested) and or processing residues (for example the maize bran produced as a byproduct of milling flour)."@en .
+  skos:definition "Components of a basal diet fully or partially substituted for residues from crops not primarily grown for fodder, but for another purpose (e.g. consumption). These can be field residues (for example maize stalks left over once the grain component has been harvested) and or processing residues (for example the maize bran produced as a byproduct of milling flour)."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000108> .
 
 <urn:era-aom:livestock:AOM_003012> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19625,7 +19708,8 @@
   skos:prefLabel "Concentrated Feed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Non-forage feeds rich in energy and protein. Concentrates include feeds such as maize bran, cotton seed cake, molasses, fish meal and bean cake. Non-forage feeds may use energy or protein rich part plants such as Seed,  whereas forage feeds are mainly plant leaves and stems."@en .
+  skos:definition "Non-forage feeds rich in energy and protein. Concentrates include feeds such as maize bran, cotton seed cake, molasses, fish meal and bean cake. Non-forage feeds may use energy or protein rich part plants such as Seed,  whereas forage feeds are mainly plant leaves and stems."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000108> .
 
 <urn:era-aom:livestock:AOM_003022> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19671,7 +19755,8 @@
   skos:notation "AOM_003026" ;
   skos:prefLabel "production unit structure"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100993> .
 
 <urn:era-aom:livestock:AOM_003027> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19985,7 +20070,8 @@
   skos:notation "AOM_003090" ;
   skos:prefLabel "Variable Costs-Nutrients"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101008> .
 
 <urn:era-aom:livestock:AOM_003095> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -25952,3 +26038,211 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_000108> .
+
+<urn:era-aom:livestock:AOM_100993> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100993" ;
+  skos:prefLabel "Rearing or housing structure"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000900> .
+
+<urn:era-aom:livestock:AOM_100994> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100994" ;
+  skos:prefLabel "Reproducer production system"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000850> .
+
+<urn:era-aom:livestock:AOM_100995> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100995" ;
+  skos:prefLabel "Grazing time"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
+
+<urn:era-aom:livestock:AOM_100996> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100996" ;
+  skos:prefLabel "Group structure"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000107> .
+
+<urn:era-aom:livestock:AOM_100997> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100997" ;
+  skos:prefLabel "Animal health management"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000151> .
+
+<urn:era-aom:livestock:AOM_100998> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100998" ;
+  skos:prefLabel "Livestock abundance"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000107> .
+
+<urn:era-aom:livestock:AOM_100999> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100999" ;
+  skos:prefLabel "Reproductive status"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000107> .
+
+<urn:era-aom:livestock:AOM_101000> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101000" ;
+  skos:prefLabel "Pasture management"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000107> .
+
+<urn:era-aom:livestock:AOM_101001> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101001" ;
+  skos:prefLabel "Fodder storage"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101000> .
+
+<urn:era-aom:livestock:AOM_101002> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101002" ;
+  skos:prefLabel "Animal rearing stage"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000107> .
+
+<urn:era-aom:livestock:AOM_101003> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101003" ;
+  skos:prefLabel "Young chicken"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_001039> .
+
+<urn:era-aom:livestock:AOM_101004> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101004" ;
+  skos:prefLabel "Young fish"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_001048> .
+
+<urn:era-aom:livestock:AOM_101005> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101005" ;
+  skos:prefLabel "Opportunity cost"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000403> .
+
+<urn:era-aom:livestock:AOM_101006> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101006" ;
+  skos:prefLabel "Total cost per asset"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000404> .
+
+<urn:era-aom:livestock:AOM_101007> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101007" ;
+  skos:prefLabel "Total cost efficiency"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000403> .
+
+<urn:era-aom:livestock:AOM_101008> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101008" ;
+  skos:prefLabel "Input variable costs"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_003110> .
+
+<urn:era-aom:livestock:AOM_101009> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101009" ;
+  skos:prefLabel "Pest-control variable costs"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101008> .
+
+<urn:era-aom:livestock:AOM_101010> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101010" ;
+  skos:prefLabel "Family labor cost"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000439> .
+
+<urn:era-aom:livestock:AOM_101011> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101011" ;
+  skos:prefLabel "Private monetary income"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000397> .
+
+<urn:era-aom:livestock:AOM_101012> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101012" ;
+  skos:prefLabel "Private non-monetary benefits"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000397> .
+
+<urn:era-aom:livestock:AOM_101013> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101013" ;
+  skos:prefLabel "Societal benefits"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000397> .
+
+<urn:era-aom:livestock:AOM_101014> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101014" ;
+  skos:prefLabel "Labor outcomes"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000360> .
+
+<urn:era-aom:livestock:AOM_101015> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101015" ;
+  skos:prefLabel "Milk-fat outcomes"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000366> .
+
+<urn:era-aom:livestock:AOM_101016> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101016" ;
+  skos:prefLabel "Gender-equity outcomes"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000358> .
+
+<urn:era-aom:livestock:AOM_101017> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101017" ;
+  skos:prefLabel "Sea urchins"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000032> .
+
+<urn:era-aom:livestock:AOM_101018> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101018" ;
+  skos:prefLabel "Porcine animals"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000004> .
