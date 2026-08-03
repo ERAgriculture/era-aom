@@ -19,22 +19,27 @@ Evidence-backed recommendations for eight priority cases:
 Approved cereal by-product batch evidence:
 [`CEREAL_BYPRODUCT_RECOMMENDATIONS.md`](CEREAL_BYPRODUCT_RECOMMENDATIONS.md).
 
+Approved legume by-product batch evidence:
+[`LEGUME_BYPRODUCT_RECOMMENDATIONS.md`](LEGUME_BYPRODUCT_RECOMMENDATIONS.md).
+
 Deferred concept-to-schema remodeling candidates:
 `schema_remodeling_candidates.csv`.
+
+Pending identity investigations: `identity_review_candidates.csv`.
 
 ## Missing-parent batches
 
 | Batch | Candidate parents |
 |---|---:|
 | Farming System / livestock system | 4 |
-| Management / Livestock Management | 189 |
+| Management / Livestock Management | 176 |
 | Management / Livestock Practices | 2 |
 | Outcomes / Efficiency | 1 |
 | Outcomes / Productivity | 15 |
 | Outcomes / Social | 1 |
 | Species / Animal | 2 |
 
-383 child relations depend on these 234 candidate
+356 child relations depend on these 234 candidate
 parents. High priority means at least 10 affected children; medium means 3–9.
 Priority measures impact, not semantic confidence.
 
@@ -66,7 +71,7 @@ fields are intentional. AI may summarize evidence but cannot approve.
 
 ## Safety
 
-- identifiers minted: 16;
-- hierarchy changes applied: 130;
-- semantic decisions applied: 22;
+- identifiers minted: 26;
+- hierarchy changes applied: 167;
+- semantic decisions applied: 35;
 - private workbook content used: 0.
