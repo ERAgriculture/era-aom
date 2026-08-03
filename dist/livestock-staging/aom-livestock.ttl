@@ -4414,35 +4414,40 @@
   skos:notation "AOM_000459" ;
   skos:prefLabel "Variable Cost-Tillage"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_000460> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000460" ;
   skos:prefLabel "Variable Cost-Weeding"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_000461> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000461" ;
   skos:prefLabel "Variable Cost-Harvesting"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_000462> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000462" ;
   skos:prefLabel "Variable Cost-Threshing"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_000463> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000463" ;
   skos:prefLabel "Variable Cost-Planting"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_000464> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -5695,6 +5700,7 @@
   skos:prefLabel "Soybean Cake"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16043> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
@@ -5705,6 +5711,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Soybean Oil Cake Full Fat"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16043> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
@@ -5715,6 +5722,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Soybean Hay"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
 <urn:era-aom:livestock:AOM_000613> a skos:Concept ;
@@ -5736,6 +5744,7 @@
   skos:prefLabel "Soybean Residue"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
 <urn:era-aom:livestock:AOM_000615> a skos:Concept ;
@@ -8294,7 +8303,8 @@
   skos:prefLabel "Grazing Intensity"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "used to record qualitative assessments of grazing intensity or pressure (e.g. low, medium or high)"@en .
+  skos:definition "used to record qualitative assessments of grazing intensity or pressure (e.g. low, medium or high)"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000937> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8366,7 +8376,8 @@
   skos:notation "AOM_000944" ;
   skos:prefLabel "Number of fields per unit"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000945> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8374,7 +8385,8 @@
   skos:prefLabel "Target sward height"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "In the context of pasture management, sward height refers to the average height of the vegetation (e.g., grasses and legumes) in a pasture."@en .
+  skos:definition "In the context of pasture management, sward height refers to the average height of the vegetation (e.g., grasses and legumes) in a pasture."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000946> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8382,7 +8394,8 @@
   skos:prefLabel "Max sward height"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:altLabel "post-stocking"@en .
+  skos:altLabel "post-stocking"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000947> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8391,7 +8404,8 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "plot size, pasture size"@en ;
-  skos:definition "The size of an area of pasture under homogenous management analagous to the size of the experimental replicate. This area may or may not be subdivided to control the movements of livestock."@en .
+  skos:definition "The size of an area of pasture under homogenous management analagous to the size of the experimental replicate. This area may or may not be subdivided to control the movements of livestock."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000948> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8399,7 +8413,8 @@
   skos:prefLabel "Division Size"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "The area of a subdivision within an field/plot/pasture. Subdivisions are typically to constrain the movement and grazing of livestock with in the field."@en .
+  skos:definition "The area of a subdivision within an field/plot/pasture. Subdivisions are typically to constrain the movement and grazing of livestock with in the field."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000949> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8408,6 +8423,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "rationed grazing"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001945> .
 
 <urn:era-aom:livestock:AOM_000950> a skos:Concept ;
@@ -8415,14 +8431,16 @@
   skos:notation "AOM_000950" ;
   skos:prefLabel "Cycle length"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000951> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000951" ;
   skos:prefLabel "Rest period"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000952> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -8445,7 +8463,8 @@
   skos:notation "AOM_000954" ;
   skos:prefLabel "Number of animals"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_000955> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -9537,49 +9556,56 @@
   skos:notation "AOM_001077" ;
   skos:prefLabel "Variable Cost-Transplanting"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_001078> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001078" ;
   skos:prefLabel "Variable Cost-Water Harvesting Structures"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_001079> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001079" ;
   skos:prefLabel "Variable Cost-Erosion Control Structures"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_001080> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001080" ;
   skos:prefLabel "Variable Cost-Spraying"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_001081> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001081" ;
   skos:prefLabel "Variable Cost-Spreading"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_001082> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001082" ;
   skos:prefLabel "Variable Cost-Preparing Beds"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_001083> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001083" ;
   skos:prefLabel "Variable Cost-Pruning"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100854> .
 
 <urn:era-aom:livestock:AOM_001084> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -11036,6 +11062,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Soybean Stover"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/19916> .
 
@@ -11045,6 +11072,7 @@
   skos:prefLabel "Soybean Shell"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
 <urn:era-aom:livestock:AOM_001273> a skos:Concept ;
@@ -11754,6 +11782,7 @@
   skos:prefLabel "Soybean Flakes Defatted"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16043> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
@@ -16282,6 +16311,7 @@
   skos:prefLabel "Soybean Hull"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12623> .
 
@@ -17411,6 +17441,7 @@
   skos:prefLabel "Soybean Dried Fermented"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
 <urn:era-aom:livestock:AOM_002021> a skos:Concept ;
@@ -17423,6 +17454,7 @@
   skos:altLabel "Soybean Oil Cake"@en ;
   skos:altLabel "Soybean Cake"@en ;
   skos:altLabel "Soybean Cake Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16043> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
@@ -17667,6 +17699,7 @@
   skos:prefLabel "Soybean Haulm"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
 <urn:era-aom:livestock:AOM_002050> a skos:Concept ;
@@ -20657,6 +20690,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Soybean Cheese Residue"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
 <urn:era-aom:livestock:AOM_003931> a skos:Concept ;
@@ -24436,3 +24470,28 @@
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_000594> ;
   skos:related <urn:era-aom:livestock:AOM_000648> .
+
+<urn:era-aom:livestock:AOM_100852> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100852" ;
+  skos:prefLabel "Soybean by-products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000615> ;
+  skos:related <urn:era-aom:livestock:AOM_001582> .
+
+<urn:era-aom:livestock:AOM_100853> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100853" ;
+  skos:prefLabel "Grazing management"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000107> .
+
+<urn:era-aom:livestock:AOM_100854> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100854" ;
+  skos:prefLabel "Management activity variable cost"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_003110> .

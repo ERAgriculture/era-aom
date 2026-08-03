@@ -27,7 +27,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2504 and len(ids) == len(known)
+assert len(ids) == 2507 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -53,13 +53,17 @@ assert len(replacements) == 3
 assert len(deprecations) == 1
 assert deprecations[0]["deprecated_id"] == "AOM_001884"
 assert deprecations[0]["replacement_id"] == "AOM_000564"
-assert len(new_concepts) == 3
+assert len(new_concepts) == 6
 new_by_case = {row["case_id"]: row for row in new_concepts}
-assert set(new_by_case) == {"PARENT-006", "PARENT-007", "PARENT-036"}
-assert {row["concept_id"] for row in id_registry} == {
-    "AOM_100849", "AOM_100850", "AOM_100851",
+assert set(new_by_case) == {
+    "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
+    "PARENT-227",
 }
-assert {"AOM_100849", "AOM_100850", "AOM_100851"} <= known
+assert {row["concept_id"] for row in id_registry} == {
+    "AOM_100849", "AOM_100850", "AOM_100851", "AOM_100852", "AOM_100853",
+    "AOM_100854",
+}
+assert {row["concept_id"] for row in id_registry} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}
 assert status["AOM_001884"] == "deprecated"
 brewers_pref = next(
@@ -103,11 +107,38 @@ assert {
     if row["relation_type"] == "broader" and row["object_id"] == "AOM_100851"
 } == maize_children
 assert not any(row["child_id"] in maize_children for row in gaps)
-assert len(semantic_relations) == 1
+for case_id in {"PARENT-078", "PARENT-200", "PARENT-227"}:
+    new_concept = new_by_case[case_id]
+    children = set(new_concept["child_ids"].split(";"))
+    assert {
+        row["subject_id"] for row in relations
+        if row["relation_type"] == "broader"
+        and row["object_id"] == new_concept["concept_id"]
+    } == children
+    assert not any(row["child_id"] in children for row in gaps)
+expected_new_parents = {
+    "PARENT-078": "AOM_000615",
+    "PARENT-200": "AOM_000107",
+    "PARENT-227": "AOM_003110",
+}
+broader_triples = {
+    (row["subject_id"], row["object_id"])
+    for row in relations if row["relation_type"] == "broader"
+}
+for case_id, parent_id in expected_new_parents.items():
+    assert (new_by_case[case_id]["concept_id"], parent_id) in broader_triples
+assert new_by_case["PARENT-227"]["derived_path"] == (
+    "Outcomes/Productivity/Economics/Costs/Variable Cost/"
+    "Management activity variable cost"
+)
+assert len(semantic_relations) == 2
 assert {
     (row["subject_id"], row["relation_type"], row["object_id"])
     for row in relations if row["relation_type"] == "related"
-} == {("AOM_100851", "related", "AOM_000648")}
+} == {
+    ("AOM_100851", "related", "AOM_000648"),
+    ("AOM_100852", "related", "AOM_001582"),
+}
 approved_aliases = {
     row["label"] for row in labels
     if row["concept_id"] == "AOM_001676"

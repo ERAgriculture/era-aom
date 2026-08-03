@@ -343,8 +343,7 @@ def main():
             raise ValueError(f"New concept has unknown children: {sorted(unknown_children)}")
         gaps = [
             gap for gap in gaps
-            if not (gap["child_id"] in child_ids and
-                    gap["missing_parent_path"] == new_concept["derived_path"])
+            if gap["child_id"] not in child_ids
         ]
         for child_id in sorted(child_ids):
             relations.append({

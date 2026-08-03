@@ -23,14 +23,14 @@ Deferred concept-to-schema remodeling candidates:
 | Batch | Candidate parents |
 |---|---:|
 | Farming System / livestock system | 4 |
-| Management / Livestock Management | 205 |
+| Management / Livestock Management | 203 |
 | Management / Livestock Practices | 2 |
 | Outcomes / Efficiency | 1 |
-| Outcomes / Productivity | 16 |
+| Outcomes / Productivity | 15 |
 | Outcomes / Social | 1 |
 | Species / Animal | 2 |
 
-454 child relations depend on these 234 candidate
+420 child relations depend on these 234 candidate
 parents. High priority means at least 10 affected children; medium means 3–9.
 Priority measures impact, not semantic confidence.
 
@@ -38,9 +38,7 @@ Priority measures impact, not semantic confidence.
 
 | Case | Children | Candidate path | Same-label existing ID |
 |---|---:|---|---|
-| PARENT-078 | 12 | Management/Livestock Management/Feed Characteristic/Feed Composition/Feed Ingredient/Crop Byproduct/Legume ByProducts/Soybean | AOM_001582 |
-| PARENT-200 | 10 | Management/Livestock Management/Grazing Management | — |
-| PARENT-227 | 12 | Outcomes/Productivity/Economics/Variable Cost/Management Activities | — |
+
 
 ## Allowed decisions
 
@@ -64,7 +62,7 @@ fields are intentional. AI may summarize evidence but cannot approve.
 
 ## Safety
 
-- identifiers minted: 3;
-- hierarchy changes applied: 46;
-- semantic decisions applied: 5;
+- identifiers minted: 6;
+- hierarchy changes applied: 83;
+- semantic decisions applied: 8;
 - private workbook content used: 0.
