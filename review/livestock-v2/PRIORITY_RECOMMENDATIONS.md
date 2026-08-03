@@ -1,9 +1,9 @@
 # AOM Livestock v2 priority recommendations
 
 Evidence brief for two identity blockers and six high-impact missing-parent
-cases. Both identity blockers and `PARENT-006` were approved on 2026-08-03 and
-applied through normalized governance overlays. Remaining recommendations stay
-proposals.
+cases. Both identity blockers, `PARENT-006`, and `PARENT-007` were approved on
+2026-08-03 and applied through normalized governance overlays. Remaining
+recommendations stay proposals.
 
 ## Recommended decisions
 
@@ -114,9 +114,10 @@ constituent making up feed, including plant, animal, aquatic, organic, and
 inorganic sources.
 [Codex Code of Practice on Good Animal Feeding](https://www.fao.org/4/i1111e/i1111e02.pdf).
 
-Recommendation: mint `Feed ingredient`, broader Feed Characteristic. Reviewer
-should separately decide whether ingredient metadata fields belong in concept
-hierarchy or data schema.
+Approved decision: mint `AOM_100850`, `Feed ingredient`, broader `AOM_000328`
+Feed Characteristic, and reparent 18 children. Ingredient name, part, species,
+proportion, and source remain flagged for later remodeling as data properties
+or schema fields.
 
 ### `PARENT-036` — Maize by-products
 

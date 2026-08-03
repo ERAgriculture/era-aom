@@ -31,3 +31,5 @@ All notable vocabulary changes will be recorded here.
 - Establish append-only livestock identifier policy; mint `AOM_100849` Mineral
   content under Feed Chemical Composition and reparent 13 mineral-element
   concepts.
+- Mint `AOM_100850` Feed ingredient under Feed Characteristic and reparent 18
+  concepts; flag five ingredient-metadata concepts for later schema remodeling.

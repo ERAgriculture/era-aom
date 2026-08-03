@@ -19,6 +19,7 @@ decisions = read(REVIEW / "03_review_decisions.csv")
 gaps = read(DATA / "hierarchy_gaps.csv")
 relations = read(DATA / "relations.csv")
 summary = json.loads((REVIEW / "summary.json").read_text())
+remodeling = read(REVIEW / "schema_remodeling_candidates.csv")
 
 assert len(collisions) == 4
 assert {row["case_id"] for row in collisions} == {
@@ -33,9 +34,9 @@ assert len({row["case_id"] for row in parents}) == len(parents)
 assert len(decisions) == len(parents) + 2
 assert len({row["case_id"] for row in decisions}) == len(decisions)
 approved = [row for row in decisions if row["decision"]]
-assert len(approved) == 3
+assert len(approved) == 4
 assert {row["case_id"] for row in approved} == {
-    "ID-AOM-006275", "PATH-BREWERS-GRAIN", "PARENT-006",
+    "ID-AOM-006275", "PATH-BREWERS-GRAIN", "PARENT-006", "PARENT-007",
 }
 identity_decision = next(row for row in approved if row["case_id"] == "ID-AOM-006275")
 assert identity_decision["decision"] == "retain_and_map_existing"
@@ -46,6 +47,9 @@ assert brewers_decision["approved_id"] == "AOM_000564"
 mineral_decision = next(row for row in approved if row["case_id"] == "PARENT-006")
 assert mineral_decision["decision"] == "mint"
 assert mineral_decision["approved_id"] == "AOM_100849"
+ingredient_decision = next(row for row in approved if row["case_id"] == "PARENT-007")
+assert ingredient_decision["decision"] == "mint"
+assert ingredient_decision["approved_id"] == "AOM_100850"
 assert all(row["reviewer"] == "Pete Steward" for row in approved)
 assert all(row["decision"] == "" for row in decisions if row not in approved)
 collision_recommendation = next(
@@ -61,10 +65,15 @@ collision_records = [
 assert {row["decision"] for row in collision_records} == {"retain", "map_to_existing"}
 assert {row["replacement_id"] for row in collision_records} == {"", "AOM_001676"}
 assert all(row["reviewer"] == "Pete Steward" for row in collision_records)
+assert {row["concept_id"] for row in remodeling} == {
+    "AOM_000531", "AOM_000532", "AOM_000533", "AOM_000534", "AOM_000535",
+}
+assert all(row["status"] == "deferred" and row["trigger_case"] == "PARENT-007"
+           for row in remodeling)
 assert summary["safety"] == {
-    "semantic_decisions_applied": 3,
-    "identifiers_minted": 1,
-    "hierarchy_changes_applied": 14,
+    "semantic_decisions_applied": 4,
+    "identifiers_minted": 2,
+    "hierarchy_changes_applied": 33,
 }
 assert "AOM_000230" not in {row["child_id"] for row in gaps}
 assert "AOM_000230" in {row["subject_id"] for row in relations}

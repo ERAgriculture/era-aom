@@ -365,6 +365,9 @@ Evidence-backed recommendations for eight priority cases:
 [`PRIORITY_RECOMMENDATIONS.md`](PRIORITY_RECOMMENDATIONS.md). Structured copy:
 `04_priority_recommendations.csv`.
 
+Deferred concept-to-schema remodeling candidates:
+`schema_remodeling_candidates.csv`.
+
 ## Missing-parent batches
 
 | Batch | Candidate parents |
