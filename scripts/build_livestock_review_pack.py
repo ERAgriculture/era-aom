@@ -33,6 +33,7 @@ labels = read("labels")
 identity_resolutions = read("approved_identity_resolutions")
 deprecations = read("approved_deprecations")
 new_concepts = read("approved_new_concepts")
+reparentings = read("approved_reparentings")
 deprecation_by_id = {row["deprecated_id"]: row for row in deprecations}
 retained_deprecation_by_id = {row["replacement_id"]: row for row in deprecations}
 
@@ -232,6 +233,22 @@ for new_concept in new_concepts:
         "rationale": new_concept["rationale"],
     })
     parent_rows.append(historical)
+current_parent_cases = {row["case_id"] for row in parent_rows}
+for reparenting in reparentings:
+    case_id = reparenting["case_id"]
+    if case_id in current_parent_cases:
+        continue
+    historical = dict(existing_parent_rows[case_id])
+    historical.update({
+        "priority": "resolved",
+        "decision": "reparent",
+        "approved_parent_id": reparenting["target_parent_id"],
+        "reviewer": reparenting["reviewer"],
+        "review_date": reparenting["review_date"],
+        "evidence": reparenting["evidence"],
+        "rationale": reparenting["rationale"],
+    })
+    parent_rows.append(historical)
 
 decision_rows = []
 for case_id, issue_type, question in [
@@ -312,6 +329,23 @@ for new_concept in new_concepts:
             "evidence": new_concept["evidence"],
             "rationale": new_concept["rationale"],
         }
+for reparenting in reparentings:
+    if reparenting["case_id"] not in existing_decisions:
+        existing_decisions[reparenting["case_id"]] = {
+            "case_id": reparenting["case_id"],
+            "case_type": "missing_explicit_parent",
+            "priority": "normal",
+            "review_question": (
+                "Mint explicit intermediate concept, map to existing concept, "
+                "reparent children, or reject hierarchy?"
+            ),
+            "decision": "reparent",
+            "approved_id": reparenting["target_parent_id"],
+            "reviewer": reparenting["reviewer"],
+            "review_date": reparenting["review_date"],
+            "evidence": reparenting["evidence"],
+            "rationale": reparenting["rationale"],
+        }
 for row in decision_rows:
     if row["case_id"] in existing_decisions:
         row.update(existing_decisions[row["case_id"]])
@@ -321,7 +355,7 @@ write("02_missing_parent_candidates.csv", list(parent_rows[0]), parent_rows)
 write("03_review_decisions.csv", list(decision_rows[0]), decision_rows)
 
 summary = {
-    "status": "review-input-only",
+    "status": "review-and-governance",
     "source": "AOM Livestock v2 normalized public staging",
     "identity_cases": 2,
     "identity_records": len(collision_rows),
@@ -335,6 +369,9 @@ summary = {
         "hierarchy_changes_applied": sum(
             1 + len(list(filter(None, row["child_ids"].split(";"))))
             for row in new_concepts
+        ) + sum(
+            len(list(filter(None, row["child_ids"].split(";"))))
+            for row in reparentings
         ),
     },
 }
@@ -350,13 +387,14 @@ high_lines = "\n".join(
 )
 (OUT / "README.md").write_text(f"""# AOM Livestock v2 domain-review pack
 
-Review input generated from public normalized staging. No decision in this
-directory changes AOM.
+Review queues and signed governance records generated from public normalized
+staging. Approved decisions affect generated AOM only through normalized
+governance tables and validated pull requests. Blank decisions remain pending.
 
 ## Review order
 
-1. Resolve two blocking identity cases in `01_identity_collisions.csv`.
-2. Review {len(parent_rows)} missing-parent candidates in
+1. Inspect signed identity and hierarchy decisions already applied.
+2. Review unresolved candidates in
    `02_missing_parent_candidates.csv`, grouped into batches below.
 3. Record signed decisions in `03_review_decisions.csv`.
 4. Apply approved decisions through separate validated pull request.
@@ -364,6 +402,9 @@ directory changes AOM.
 Evidence-backed recommendations for eight priority cases:
 [`PRIORITY_RECOMMENDATIONS.md`](PRIORITY_RECOMMENDATIONS.md). Structured copy:
 `04_priority_recommendations.csv`.
+
+Approved cereal by-product batch evidence:
+[`CEREAL_BYPRODUCT_RECOMMENDATIONS.md`](CEREAL_BYPRODUCT_RECOMMENDATIONS.md).
 
 Deferred concept-to-schema remodeling candidates:
 `schema_remodeling_candidates.csv`.
@@ -407,7 +448,7 @@ fields are intentional. AI may summarize evidence but cannot approve.
 ## Safety
 
 - identifiers minted: {len(new_concepts)};
-- hierarchy changes applied: {sum(1 + len(list(filter(None, row['child_ids'].split(';')))) for row in new_concepts)};
+- hierarchy changes applied: {sum(1 + len(list(filter(None, row['child_ids'].split(';')))) for row in new_concepts) + sum(len(list(filter(None, row['child_ids'].split(';')))) for row in reparentings)};
 - semantic decisions applied: {sum(bool(row['decision']) for row in decision_rows)};
 - private workbook content used: 0.
 """, encoding="utf-8")

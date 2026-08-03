@@ -81,6 +81,7 @@ def main():
     new_concepts = read_governance("approved_new_concepts.csv")
     id_registry = read_governance("livestock_id_registry.csv")
     semantic_relations = read_governance("approved_semantic_relations.csv")
+    reparentings = read_governance("approved_reparentings.csv")
     resolution_by_row = {row["source_row"]: row for row in identity_resolutions}
     replacement_by_key = {
         (row["source_row"], row["source_column"]): row
@@ -356,6 +357,24 @@ def main():
         })
         concept_ids.add(concept_id)
 
+    for reparenting in reparentings:
+        target_id = reparenting["target_parent_id"]
+        child_ids = set(filter(None, reparenting["child_ids"].split(";")))
+        if target_id not in concept_ids or not child_ids <= concept_ids:
+            raise ValueError("Approved reparenting references unknown concept")
+        already_parented = {
+            row["subject_id"] for row in relations
+            if row["relation_type"] == "broader"
+        }
+        if child_ids & already_parented:
+            raise ValueError("Approved reparenting child already has broader relation")
+        gaps = [gap for gap in gaps if gap["child_id"] not in child_ids]
+        for child_id in sorted(child_ids):
+            relations.append({
+                "subject_id": child_id, "relation_type": "broader",
+                "object_id": target_id, "status": "reviewed",
+            })
+
     for semantic_relation in semantic_relations:
         if semantic_relation["relation_type"] not in {"related"}:
             raise ValueError("Unsupported approved semantic relation type")
@@ -561,6 +580,7 @@ aom:releasedIn a owl:ObjectProperty ; rdfs:range aom:Release .
             "approved_new_concepts": len(new_concepts),
             "registered_livestock_ids": len(id_registry),
             "approved_semantic_relations": len(semantic_relations),
+            "approved_reparentings": len(reparentings),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,

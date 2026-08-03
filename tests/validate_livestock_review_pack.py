@@ -20,8 +20,11 @@ gaps = read(DATA / "hierarchy_gaps.csv")
 relations = read(DATA / "relations.csv")
 summary = json.loads((REVIEW / "summary.json").read_text())
 remodeling = read(REVIEW / "schema_remodeling_candidates.csv")
+cereal_brief = (REVIEW / "CEREAL_BYPRODUCT_RECOMMENDATIONS.md").read_text()
 
 assert len(collisions) == 4
+assert summary["status"] == "review-and-governance"
+assert "14 missing-parent cases" in cereal_brief
 assert {row["case_id"] for row in collisions} == {
     "ID-AOM-006275", "PATH-BREWERS-GRAIN"
 }
@@ -34,10 +37,13 @@ assert len({row["case_id"] for row in parents}) == len(parents)
 assert len(decisions) == len(parents) + 2
 assert len({row["case_id"] for row in decisions}) == len(decisions)
 approved = [row for row in decisions if row["decision"]]
-assert len(approved) == 8
+assert len(approved) == 22
 assert {row["case_id"] for row in approved} == {
     "ID-AOM-006275", "PATH-BREWERS-GRAIN", "PARENT-006", "PARENT-007",
     "PARENT-036", "PARENT-078", "PARENT-200", "PARENT-227",
+    "PARENT-031", "PARENT-032", "PARENT-033", "PARENT-034", "PARENT-035",
+    "PARENT-037", "PARENT-038", "PARENT-039", "PARENT-040", "PARENT-041",
+    "PARENT-042", "PARENT-043", "PARENT-044", "PARENT-045",
 }
 identity_decision = next(row for row in approved if row["case_id"] == "ID-AOM-006275")
 assert identity_decision["decision"] == "retain_and_map_existing"
@@ -62,6 +68,21 @@ for case_id, approved_id in {
     decision = next(row for row in approved if row["case_id"] == case_id)
     assert decision["decision"] == "mint"
     assert decision["approved_id"] == approved_id
+for case_id, approved_id in {
+    "PARENT-031": "AOM_100855", "PARENT-032": "AOM_100856",
+    "PARENT-033": "AOM_100857", "PARENT-035": "AOM_100858",
+    "PARENT-037": "AOM_100859", "PARENT-038": "AOM_100860",
+    "PARENT-040": "AOM_100861", "PARENT-041": "AOM_100862",
+    "PARENT-042": "AOM_100863", "PARENT-044": "AOM_100864",
+}.items():
+    decision = next(row for row in approved if row["case_id"] == case_id)
+    assert decision["decision"] == "mint" and decision["approved_id"] == approved_id
+for case_id, approved_id in {
+    "PARENT-034": "AOM_000594", "PARENT-039": "AOM_100860",
+    "PARENT-043": "AOM_100863", "PARENT-045": "AOM_100864",
+}.items():
+    decision = next(row for row in approved if row["case_id"] == case_id)
+    assert decision["decision"] == "reparent" and decision["approved_id"] == approved_id
 assert all(row["reviewer"] == "Pete Steward" for row in approved)
 assert all(row["decision"] == "" for row in decisions if row not in approved)
 collision_recommendation = next(
@@ -81,15 +102,18 @@ assert {row["concept_id"] for row in remodeling} == {
     "AOM_000531", "AOM_000532", "AOM_000533", "AOM_000534", "AOM_000535",
     "AOM_000612", "AOM_002020", "AOM_000944", "AOM_000945", "AOM_000946",
     "AOM_000947", "AOM_000948", "AOM_000950", "AOM_000951", "AOM_000954",
+    "AOM_001178", "AOM_002013", "AOM_001618", "AOM_006143", "AOM_001276",
+    "AOM_006316", "AOM_002086", "AOM_000587",
 }
 assert all(row["status"] == "deferred" for row in remodeling)
 assert {row["trigger_case"] for row in remodeling} == {
-    "PARENT-007", "PARENT-078", "PARENT-200",
+    "PARENT-007", "PARENT-078", "PARENT-200", "PARENT-032", "PARENT-038",
+    "PARENT-042", "PARENT-043", "PARENT-044",
 }
 assert summary["safety"] == {
-    "semantic_decisions_applied": 8,
-    "identifiers_minted": 6,
-    "hierarchy_changes_applied": 83,
+    "semantic_decisions_applied": 22,
+    "identifiers_minted": 16,
+    "hierarchy_changes_applied": 130,
 }
 assert "AOM_000230" not in {row["child_id"] for row in gaps}
 assert "AOM_000230" in {row["subject_id"] for row in relations}
