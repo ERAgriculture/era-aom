@@ -41,3 +41,6 @@ All notable vocabulary changes will be recorded here.
 - Resolve 14 cereal by-product hierarchy cases in one batch: mint 10 contextual
   groupings, flatten four redundant paths, add five crop/product relations, and
   queue eight classification reviews.
+- Resolve 13 legume by-product hierarchy cases: mint 10 contextual groupings,
+  normalize Common/Green/Haricot bean ancestry, flatten three paths, add four
+  product relations, and queue identity/classification reviews.

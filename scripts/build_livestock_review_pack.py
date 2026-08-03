@@ -406,8 +406,13 @@ Evidence-backed recommendations for eight priority cases:
 Approved cereal by-product batch evidence:
 [`CEREAL_BYPRODUCT_RECOMMENDATIONS.md`](CEREAL_BYPRODUCT_RECOMMENDATIONS.md).
 
+Approved legume by-product batch evidence:
+[`LEGUME_BYPRODUCT_RECOMMENDATIONS.md`](LEGUME_BYPRODUCT_RECOMMENDATIONS.md).
+
 Deferred concept-to-schema remodeling candidates:
 `schema_remodeling_candidates.csv`.
+
+Pending identity investigations: `identity_review_candidates.csv`.
 
 ## Missing-parent batches
 
