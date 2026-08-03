@@ -63,9 +63,12 @@ view. Never use stored `Path` for concept identity or hierarchy.
 - *Panicum antidotale Dried*;
 - *Panicum maximum Dried*.
 
-Stable IDs cannot identify two concepts. Migration must preserve
-`AOM_006275` as a legacy collision, mint one reviewed replacement ID, and
-publish an explicit crosswalk. Never silently choose one meaning.
+Stable IDs cannot identify two concepts. Review subsequently found existing
+`AOM_001676` already represents *Megathyrsus maximus Dried*, equivalent to the
+*Panicum maximum Dried* row. Approved resolution retains `AOM_006275` for
+*Panicum antidotale Dried* and maps the other legacy row to `AOM_001676` through
+an explicit crosswalk; no replacement concept is minted. Legacy evidence stays
+unchanged.
 
 ### Duplicate concept path
 

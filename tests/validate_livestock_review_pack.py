@@ -29,22 +29,28 @@ assert sum(int(row["affected_child_count"]) for row in parents) == len(gaps)
 assert len({row["case_id"] for row in parents}) == len(parents)
 assert len(decisions) == len(parents) + 2
 assert len({row["case_id"] for row in decisions}) == len(decisions)
-assert all(row["decision"] == "" for row in decisions)
-assert all(row["approved_id"] == "" for row in decisions)
-assert all(row["reviewer"] == "" for row in decisions)
+approved = [row for row in decisions if row["decision"]]
+assert len(approved) == 1
+assert approved[0]["case_id"] == "ID-AOM-006275"
+assert approved[0]["decision"] == "retain_and_map_existing"
+assert approved[0]["approved_id"] == "AOM_006275"
+assert approved[0]["reviewer"] == "Pete Steward"
+assert all(row["decision"] == "" for row in decisions if row not in approved)
 collision_recommendation = next(
     row for row in read(REVIEW / "04_priority_recommendations.csv")
     if row["case_id"] == "ID-AOM-006275"
 )
 assert "existing AOM_001676" in collision_recommendation["recommended_disposition"]
 assert "do not mint another concept" in collision_recommendation["recommended_disposition"]
-collision_questions = {
-    row["review_question"] for row in collisions
+collision_records = [
+    row for row in collisions
     if row["case_id"] == "ID-AOM-006275"
-}
-assert all("AOM_001676" in question for question in collision_questions)
+]
+assert {row["decision"] for row in collision_records} == {"retain", "map_to_existing"}
+assert {row["replacement_id"] for row in collision_records} == {"", "AOM_001676"}
+assert all(row["reviewer"] == "Pete Steward" for row in collision_records)
 assert summary["safety"] == {
-    "semantic_decisions_applied": 0,
+    "semantic_decisions_applied": 1,
     "identifiers_minted": 0,
     "hierarchy_changes_applied": 0,
 }

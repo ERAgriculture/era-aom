@@ -21,4 +21,7 @@ All notable vocabulary changes will be recorded here.
 - Correct hierarchy derivation for labels containing `/`; add domain-review
   pack for identity collisions and missing explicit parents.
 - Add evidence-backed recommendations for two identity blockers and six
-  high-impact missing-parent cases; apply no semantic decisions.
+  high-impact missing-parent cases.
+- Resolve `AOM_006275` collision: retain it for *Panicum antidotale Dried*, map
+  *Panicum maximum Dried* to existing `AOM_001676`, correct three species
+  mappings, preserve legacy labels as synonyms, and record signed provenance.

@@ -4,8 +4,11 @@ Generated from public AOM Livestock v2.0, DOI
 <https://doi.org/10.7910/DVN/75E7HV>.
 
 Review staging only: not canonical AOM and not a formal semantic release.
-Existing AOM identifiers remain unchanged. Records sharing duplicate ID
-`AOM_006275` are excluded from generated graph and recorded in
+Legacy release rows remain unchanged in `legacy_records.csv`. Approved
+row-level identity decisions live in `approved_identity_resolutions.csv`;
+reviewed mapping corrections live in `approved_mapping_replacements.csv`.
+Generator applies these governance overlays without rewriting source evidence.
+Unresolved duplicate identifiers remain excluded and recorded in
 `quarantine.csv`. Duplicate paths remain visible for review.
 
 `Path` is derived from explicit `L1`–`L10` values. Missing explicit parent
@@ -20,4 +23,11 @@ Regenerate:
 
 ```bash
 python scripts/normalize_livestock_release.py /path/to/02a_AOM_v2.0.0.csv .
+```
+
+Dataverse requires guestbook submission for direct file download. Committed
+immutable snapshot is also valid deterministic input:
+
+```bash
+python scripts/normalize_livestock_release.py data/livestock-staging/legacy_records.csv .
 ```

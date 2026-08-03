@@ -3,6 +3,7 @@
 
 import csv
 import hashlib
+import io
 import json
 import re
 import sys
@@ -33,6 +34,7 @@ SCHEME_ID = "aom-livestock-v2"
 SCHEME_URI = "urn:era-aom:scheme:livestock-v2"
 URI_PREFIX = "urn:era-aom:livestock:"
 DOI = "https://doi.org/10.7910/DVN/75E7HV"
+SOURCE_SHA256 = "a5c6a4873c0ee1aa41a2975ebb2fb74ca3beb867ea3702e227118e5ecce6c17c"
 
 
 def clean(value):
@@ -66,30 +68,79 @@ def main():
     data_dir = root / "data/livestock-staging"
     dist_dir = root / "dist/livestock-staging"
 
-    with source.open(encoding="cp1252", newline="") as handle:
-        reader = csv.DictReader(handle)
-        source_fields = reader.fieldnames[:38]
-        records = [{field: clean(row.get(field)) for field in source_fields} for row in reader]
+    def read_governance(name):
+        path = data_dir / name
+        if not path.exists():
+            return []
+        with path.open(encoding="utf-8", newline="") as handle:
+            return list(csv.DictReader(handle))
 
-    for number, record in enumerate(records, 2):
+    identity_resolutions = read_governance("approved_identity_resolutions.csv")
+    mapping_replacements = read_governance("approved_mapping_replacements.csv")
+    resolution_by_row = {row["source_row"]: row for row in identity_resolutions}
+    replacement_by_key = {
+        (row["source_row"], row["source_column"]): row
+        for row in mapping_replacements
+    }
+
+    raw_source = source.read_bytes()
+    try:
+        source_text = raw_source.decode("utf-8")
+    except UnicodeDecodeError:
+        source_text = raw_source.decode("cp1252")
+    reader = csv.DictReader(io.StringIO(source_text, newline=""))
+    repository_snapshot = "source_row" in reader.fieldnames
+    source_fields = [
+        field for field in reader.fieldnames
+        if field not in {"source_row", "Derived_Path"}
+    ][:38]
+    records = []
+    for number, raw in enumerate(reader, 2):
+        record = {field: clean(raw.get(field)) for field in source_fields}
+        record["_source_row"] = clean(raw.get("source_row")) if repository_snapshot else str(number)
+        records.append(record)
+
+    for record in records:
         levels = [record[level] for level in LEVELS if record[level]]
-        record["_source_row"] = str(number)
         record["_path_key"] = tuple(levels)
         record["_path"] = "/".join(levels)
         record["_parent_path"] = "/".join(levels[:-1])
         record["_label"] = levels[-1] if levels else ""
         record["_level"] = str(len(levels))
 
-    id_counts = Counter(row["AOM"] for row in records if row["AOM"])
+    legacy = [{
+        "source_row": row["_source_row"],
+        **{field: row[field] for field in source_fields},
+        "Derived_Path": row["_path"],
+    } for row in records]
+
+    source_rows = {row["_source_row"] for row in records}
+    if not set(resolution_by_row) <= source_rows:
+        raise ValueError("Approved identity resolution references unknown source row")
+    if not {key[0] for key in replacement_by_key} <= source_rows:
+        raise ValueError("Approved mapping replacement references unknown source row")
+
+    resolved_to_existing = {
+        source_row for source_row, resolution in resolution_by_row.items()
+        if resolution["action"] == "map_to_existing"
+    }
+
+    id_counts = Counter(
+        row["AOM"] for row in records
+        if row["AOM"] and row["_source_row"] not in resolved_to_existing
+    )
     path_counts = Counter(row["_path_key"] for row in records if row["_path_key"])
     duplicate_ids = {key for key, count in id_counts.items() if count > 1}
     duplicate_paths = {key for key, count in path_counts.items() if count > 1}
-    excluded = {row["_source_row"] for row in records if row["AOM"] in duplicate_ids}
+    unresolved_duplicate_rows = {
+        row["_source_row"] for row in records if row["AOM"] in duplicate_ids
+    }
+    excluded = resolved_to_existing | unresolved_duplicate_rows
 
     quarantine = []
     for row in records:
         reasons = []
-        if row["AOM"] in duplicate_ids:
+        if row["AOM"] in duplicate_ids and row["_source_row"] not in resolved_to_existing:
             reasons.append("duplicate_concept_id")
         if row["_path_key"] in duplicate_paths:
             reasons.append("duplicate_derived_path")
@@ -104,6 +155,16 @@ def main():
         row for row in records
         if row["_source_row"] not in excluded and row["AOM"] and row["_label"]
     ]
+
+    for row in eligible:
+        for column in MAPPING_FIELDS:
+            replacement = replacement_by_key.get((row["_source_row"], column))
+            if replacement:
+                if row[column] != replacement["old_value"]:
+                    raise ValueError(
+                        f"Mapping replacement source mismatch at row {row['_source_row']} {column}"
+                    )
+                row[column] = replacement["new_value"]
     by_path = defaultdict(list)
     for row in eligible:
         by_path[row["_path_key"]].append(row)
@@ -166,13 +227,16 @@ def main():
                 if value in NON_VALUES:
                     continue
                 target_id, target_uri, repaired = normalize_mapping(value)
+                replacement = replacement_by_key.get((row["_source_row"], column))
                 mappings.append({
                     "subject_id": concept_id, "mapping_relation": "relatedMatch",
                     "target_scheme": scheme, "target_id": target_id,
                     "target_uri": target_uri, "original_value": value,
                     "normalization_applied": "malformed_http_repair" if repaired else "",
-                    "evidence": DOI, "status": "legacy-unreviewed",
-                    "source_release": "AOM Livestock v2.0", "reviewer": "",
+                    "evidence": replacement["evidence"] if replacement else DOI,
+                    "status": "reviewed" if replacement else "legacy-unreviewed",
+                    "source_release": "AOM Livestock v2.0",
+                    "reviewer": replacement["reviewer"] if replacement else "",
                 })
         for column in PROPERTY_FIELDS:
             if row[column]:
@@ -186,16 +250,32 @@ def main():
             "source_row": row["_source_row"], "source_doi": DOI,
         })
 
+    records_by_source = {row["_source_row"]: row for row in records}
+    label_keys = {
+        (row["concept_id"], row["language"], row["label"].casefold())
+        for row in labels
+    }
+    for resolution in identity_resolutions:
+        if resolution["action"] != "map_to_existing":
+            continue
+        source_row = records_by_source[resolution["source_row"]]
+        target_id = resolution["resolved_concept_id"]
+        alias_values = [source_row["_label"], *map(clean, source_row["Synonym"].split(";"))]
+        for alias in alias_values:
+            key = (target_id, "en", alias.casefold())
+            if alias and key not in label_keys:
+                label_keys.add(key)
+                labels.append({
+                    "concept_id": target_id, "language": "en",
+                    "label_type": "alt", "label": alias,
+                    "source_column": "approved_identity_resolution",
+                })
+
     schemes = [{
         "scheme_id": SCHEME_ID, "module": "aom-livestock",
         "preferred_label": "AOM Livestock v2 staging", "language": "en",
         "status": "staging-not-canonical", "source_doi": DOI,
     }]
-    legacy = [{
-        "source_row": row["_source_row"],
-        **{field: row[field] for field in source_fields},
-        "Derived_Path": row["_path"],
-    } for row in records]
     tables = {
         "schemes": schemes, "concepts": concepts, "labels": labels,
         "definitions": definitions, "notes": notes, "relations": relations,
@@ -309,13 +389,20 @@ aom:releasedIn a owl:ObjectProperty ; rdfs:range aom:Release .
     manifest = {
         "manifest_schema_version": "1.0.0", "status": "staging-not-canonical",
         "source": {"doi": "10.7910/DVN/75E7HV", "version": "2.0",
-                   "sha256": hashlib.sha256(source.read_bytes()).hexdigest()},
+                   "sha256": SOURCE_SHA256},
+        "generation_input": {
+            "type": "repository-legacy-snapshot" if repository_snapshot else "doi-release-csv",
+            "sha256": hashlib.sha256(raw_source).hexdigest(),
+        },
         "counts": {
             "source_records": len(records), "published_staging_concepts": len(concepts),
-            "excluded_duplicate_id_records": len(excluded),
+            "excluded_duplicate_id_records": len(unresolved_duplicate_rows),
+            "resolved_to_existing_records": len(resolved_to_existing),
             "quarantine_assertions": len(quarantine),
             "hierarchy_relations": len(relations), "hierarchy_gaps": len(gaps),
             "mapping_assertions": len(mappings),
+            "approved_identity_resolutions": len(identity_resolutions),
+            "approved_mapping_replacements": len(mapping_replacements),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,

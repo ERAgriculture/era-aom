@@ -30,12 +30,16 @@ concepts = read("concepts")
 gaps = read("hierarchy_gaps")
 quarantine = read("quarantine")
 labels = read("labels")
+identity_resolutions = read("approved_identity_resolutions")
 
+legacy_by_source = {row["source_row"]: row for row in legacy}
 legacy_by_id = {
     row["AOM"]: row for row in legacy
     if row["AOM"] and row["AOM"] != "AOM_006275"
 }
-legacy_by_source = {row["source_row"]: row for row in legacy}
+for resolution in identity_resolutions:
+    if resolution["action"] == "retain":
+        legacy_by_id[resolution["resolved_concept_id"]] = legacy_by_source[resolution["source_row"]]
 pref = {row["concept_id"]: row["label"] for row in labels if row["label_type"] == "pref"}
 concept_path_to_id = {}
 label_to_ids = defaultdict(list)
@@ -88,6 +92,39 @@ for row in quarantine:
         "rationale": "",
     })
 
+if not any(row["case_id"] == "ID-AOM-006275" for row in collision_rows):
+    for resolution in identity_resolutions:
+        source = legacy_by_source[resolution["source_row"]]
+        collision_rows.append({
+            "case_id": "ID-AOM-006275",
+            "priority": "resolved",
+            "issue_type": "duplicate_concept_id",
+            "source_row": resolution["source_row"],
+            "concept_id": source["AOM"],
+            "preferred_label": source["L9"],
+            "derived_path": source["Derived_Path"],
+            "description": source["Description"],
+            "synonym": source["Synonym"],
+            "scientific_name": source["Scientific Name"],
+            "agrovoc": source["Agrovoc"],
+            "ncbi": source["NCBI"],
+            "wfo": source["WFO"],
+            "feedipedia": source["Feedipedia"],
+            "evidence_observation": (
+                "Approved row-level resolution retained separately from immutable legacy evidence."
+            ),
+            "review_question": "Resolved by approved identity governance record.",
+            "decision": resolution["action"],
+            "retained_id": "AOM_006275",
+            "replacement_id": (
+                resolution["resolved_concept_id"]
+                if resolution["action"] == "map_to_existing" else ""
+            ),
+            "reviewer": resolution["reviewer"],
+            "review_date": resolution["review_date"],
+            "rationale": resolution["rationale"],
+        })
+
 gap_ids = {row["child_id"] for row in gaps}
 groups = defaultdict(list)
 for child_id in sorted(gap_ids):
@@ -97,7 +134,19 @@ for child_id in sorted(gap_ids):
 
 parent_rows = []
 batch_counts = Counter()
-for number, parent_key in enumerate(sorted(groups), 1):
+existing_parent_ids = {}
+parent_path = OUT / "02_missing_parent_candidates.csv"
+if parent_path.exists():
+    with parent_path.open(encoding="utf-8", newline="") as handle:
+        existing_parent_ids = {
+            row["candidate_parent_path"]: row["case_id"]
+            for row in csv.DictReader(handle)
+        }
+next_parent_number = max(
+    [int(case_id.removeprefix("PARENT-")) for case_id in existing_parent_ids.values()],
+    default=0,
+) + 1
+for parent_key in sorted(groups):
     children = groups[parent_key]
     parent_label = parent_key[-1]
     nearest_id = ""
@@ -115,13 +164,18 @@ for number, parent_key in enumerate(sorted(groups), 1):
     subbranch = parent_key[1] if len(parent_key) > 1 else ""
     batch = f"{branch} / {subbranch}" if subbranch else branch
     batch_counts[batch] += 1
+    candidate_path = "/".join(parent_key)
+    case_id = existing_parent_ids.get(candidate_path)
+    if not case_id:
+        case_id = f"PARENT-{next_parent_number:03d}"
+        next_parent_number += 1
     parent_rows.append({
-        "case_id": f"PARENT-{number:03d}",
+        "case_id": case_id,
         "priority": priority,
         "top_branch": branch,
         "review_batch": batch,
         "candidate_parent_label": parent_label,
-        "candidate_parent_path": "/".join(parent_key),
+        "candidate_parent_path": candidate_path,
         "candidate_depth": len(parent_key),
         "affected_child_count": impact,
         "affected_child_ids": ";".join(children),
@@ -161,6 +215,38 @@ for row in parent_rows:
         "review_date": "", "evidence": "", "rationale": "",
     })
 
+# Preserve signed governance records when regenerating review queues.
+existing_decisions = {}
+decision_path = OUT / "03_review_decisions.csv"
+if decision_path.exists():
+    with decision_path.open(encoding="utf-8", newline="") as handle:
+        existing_decisions = {
+            row["case_id"]: row for row in csv.DictReader(handle)
+            if row["decision"]
+        }
+if "ID-AOM-006275" not in existing_decisions and identity_resolutions:
+    retained = next(row for row in identity_resolutions if row["action"] == "retain")
+    mapped = next(row for row in identity_resolutions if row["action"] == "map_to_existing")
+    existing_decisions["ID-AOM-006275"] = {
+        "case_id": "ID-AOM-006275",
+        "case_type": "duplicate_concept_id",
+        "priority": "blocker",
+        "review_question": "Assign retained ID, replacement ID, and explicit crosswalk.",
+        "decision": "retain_and_map_existing",
+        "approved_id": retained["resolved_concept_id"],
+        "reviewer": retained["reviewer"],
+        "review_date": retained["review_date"],
+        "evidence": retained["evidence"],
+        "rationale": (
+            f"Retain {retained['resolved_concept_id']} for Panicum antidotale Dried; "
+            f"map legacy row {mapped['source_row']} to existing "
+            f"{mapped['resolved_concept_id']} Megathyrsus maximus Dried; correct species mappings."
+        ),
+    }
+for row in decision_rows:
+    if row["case_id"] in existing_decisions:
+        row.update(existing_decisions[row["case_id"]])
+
 write("01_identity_collisions.csv", list(collision_rows[0]), collision_rows)
 write("02_missing_parent_candidates.csv", list(parent_rows[0]), parent_rows)
 write("03_review_decisions.csv", list(decision_rows[0]), decision_rows)
@@ -175,7 +261,7 @@ summary = {
     "priority": dict(Counter(row["priority"] for row in parent_rows)),
     "review_batches": dict(sorted(batch_counts.items())),
     "safety": {
-        "semantic_decisions_applied": 0,
+        "semantic_decisions_applied": sum(bool(row["decision"]) for row in decision_rows),
         "identifiers_minted": 0,
         "hierarchy_changes_applied": 0,
     },
@@ -247,7 +333,7 @@ fields are intentional. AI may summarize evidence but cannot approve.
 
 - identifiers minted: 0;
 - hierarchy changes applied: 0;
-- semantic decisions applied: 0;
+- semantic decisions applied: {sum(bool(row['decision']) for row in decision_rows)};
 - private workbook content used: 0.
 """, encoding="utf-8")
 
