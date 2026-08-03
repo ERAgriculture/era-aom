@@ -28,3 +28,6 @@ All notable vocabulary changes will be recorded here.
 - Merge duplicate Brewers Grain concepts: retain `AOM_000564`, deprecate
   `AOM_001884` with replacement link, normalize label to `Brewers grains,
   dehydrated`, and preserve legacy synonyms.
+- Establish append-only livestock identifier policy; mint `AOM_100849` Mineral
+  content under Feed Chemical Composition and reparent 13 mineral-element
+  concepts.

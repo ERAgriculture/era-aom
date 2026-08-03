@@ -1,8 +1,9 @@
 # AOM Livestock v2 priority recommendations
 
 Evidence brief for two identity blockers and six high-impact missing-parent
-cases. Both identity blockers were approved on 2026-08-03 and applied through
-normalized governance overlays. Remaining recommendations stay proposals.
+cases. Both identity blockers and `PARENT-006` were approved on 2026-08-03 and
+applied through normalized governance overlays. Remaining recommendations stay
+proposals.
 
 ## Recommended decisions
 
@@ -101,9 +102,9 @@ FAO identifies minerals as major feed components and explicitly includes most
 listed children among major and trace elements.
 [FAO feed composition guidance](https://www.fao.org/4/s4314e/s4314e04.htm).
 
-Recommendation: mint `Mineral content`, broader Feed Chemical Composition.
-Use scope note: measured mineral-element content of feed material. This avoids
-confusion with mineral feed supplements.
+Approved decision: mint `AOM_100849`, `Mineral content`, broader
+`AOM_000196` Feed Chemical Composition. Scope note: measured mineral-element
+content of feed material. This avoids confusion with mineral feed supplements.
 
 ### `PARENT-007` — Feed ingredient
 

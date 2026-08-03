@@ -6408,6 +6408,9 @@
         "@value": "Any measurable characteristic related to the concentration of calcium in feed. Source: EOL",
         "@language": "en"
       },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0000162"
@@ -6586,6 +6589,9 @@
         "@value": "any measurable characteristic related to the concentration of cobalt (CHEBI:27638) in feed",
         "@language": "en"
       },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0000153"
@@ -6635,6 +6641,9 @@
       "skos:definition": {
         "@value": "any measurable characteristic related to the concentration of copper (CHEBI:28694) in food",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
       },
       "skos:relatedMatch": [
         {
@@ -7027,6 +7036,9 @@
         "@value": "any measurable characteristic related to the concentration of iodine (CHEBI:24859) in fee",
         "@language": "en"
       },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0000155"
@@ -7049,6 +7061,9 @@
       "skos:definition": {
         "@value": "any measurable characteristic related to the concentration of iron (CHEBI:18248) in feed",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
       },
       "skos:relatedMatch": [
         {
@@ -7094,6 +7109,9 @@
         "@value": "any measurable characteristic related to the concentration of magnesium (CHEBI:33974) in feeds",
         "@language": "en"
       },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_000169"
@@ -7116,6 +7134,9 @@
       "skos:definition": {
         "@value": "any measurable characteristic related to the concentration of manganese (CHEBI:18291) in feed",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
       },
       "skos:relatedMatch": [
         {
@@ -7379,6 +7400,9 @@
         "@value": "Any measurable characteristic related to the concentration of phosphorus in feed. Source: EOL",
         "@language": "en"
       },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0000161"
@@ -7405,6 +7429,9 @@
         "@value": "any measurable characteristic related to the concentration of potassium (CHEBI:26216) in feed",
         "@language": "en"
       },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0001693"
@@ -7427,6 +7454,9 @@
       "skos:definition": {
         "@value": "any measurable characteristic related to the concentration of selenium (CHEBI:27568) in feed",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
       },
       "skos:relatedMatch": [
         {
@@ -7882,6 +7912,9 @@
       "skos:definition": {
         "@value": "any measurable characteristic related to the concentration of zinc (CHEBI:27363) in feed",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
       },
       "skos:relatedMatch": [
         {
@@ -48225,7 +48258,10 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown"
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
+      }
     },
     {
       "@id": "urn:era-aom:livestock:AOM_002211",
@@ -49044,6 +49080,9 @@
       "skos:definition": {
         "@value": "any measurable characteristic related to the concentration of sodium  in feed",
         "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_100849"
       }
     },
     {
@@ -62771,6 +62810,23 @@
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000819"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_100849",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_100849",
+      "skos:prefLabel": {
+        "@value": "Mineral content",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000196"
       }
     }
   ]

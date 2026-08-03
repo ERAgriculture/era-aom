@@ -20,11 +20,13 @@ quarantine, gaps, legacy = read("quarantine"), read("hierarchy_gaps"), read("leg
 resolutions = read("approved_identity_resolutions")
 replacements = read("approved_mapping_replacements")
 deprecations = read("approved_deprecations")
+new_concepts = read("approved_new_concepts")
+id_registry = read("livestock_id_registry")
 manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2501 and len(ids) == len(known)
+assert len(ids) == 2502 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -50,6 +52,10 @@ assert len(replacements) == 3
 assert len(deprecations) == 1
 assert deprecations[0]["deprecated_id"] == "AOM_001884"
 assert deprecations[0]["replacement_id"] == "AOM_000564"
+assert len(new_concepts) == 1
+assert new_concepts[0]["concept_id"] == "AOM_100849"
+assert {row["concept_id"] for row in id_registry} == {"AOM_100849"}
+assert "AOM_100849" in known
 status = {row["concept_id"]: row["status"] for row in concepts}
 assert status["AOM_001884"] == "deprecated"
 brewers_pref = next(
@@ -67,6 +73,16 @@ assert {
     for row in relations
     if row["relation_type"] == "replaced_by"
 } == {("AOM_001884", "replaced_by", "AOM_000564")}
+mineral_children = set(new_concepts[0]["child_ids"].split(";"))
+assert {
+    row["subject_id"] for row in relations
+    if row["relation_type"] == "broader" and row["object_id"] == "AOM_100849"
+} == mineral_children
+assert ("AOM_100849", "broader", "AOM_000196") in {
+    (row["subject_id"], row["relation_type"], row["object_id"])
+    for row in relations
+}
+assert not any(row["child_id"] in mineral_children for row in gaps)
 approved_aliases = {
     row["label"] for row in labels
     if row["concept_id"] == "AOM_001676"
@@ -97,5 +113,7 @@ assert manifest["counts"]["mapping_assertions"] == len(mappings)
 assert manifest["counts"]["approved_identity_resolutions"] == len(resolutions)
 assert manifest["counts"]["approved_mapping_replacements"] == len(replacements)
 assert manifest["counts"]["approved_deprecations"] == len(deprecations)
+assert manifest["counts"]["approved_new_concepts"] == len(new_concepts)
+assert manifest["counts"]["registered_livestock_ids"] == len(id_registry)
 print("Livestock staging validation passed:", len(concepts), "concepts,",
       len(relations), "relations,", len(gaps), "gaps,", len(mappings), "mappings")
