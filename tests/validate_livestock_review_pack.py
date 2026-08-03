@@ -198,7 +198,7 @@ assert len(identity_review) == 2
 assert {row["case_id"] for row in identity_review} == {
     "IDENTITY-BEAN-VINE", "IDENTITY-FICUS-GNAPHALOCARPA",
 }
-assert all(row["status"] == "pending" for row in identity_review)
+assert all(row["status"] == "resolved" for row in identity_review)
 assert {row["case_id"] for row in terminology_review} == {
     "TERM-BROWN-DANISH-FISH", "TERM-VITALITE", "TERM-ASTERACEAE-SUPPLEMENT",
 }

@@ -9736,9 +9736,10 @@
 <urn:era-aom:livestock:AOM_001084> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001084" ;
-  skos:prefLabel "Variable Cost-Innoculants"@en ;
+  skos:prefLabel "Variable cost—inoculants"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Variable Cost-Innoculants"@en ;
   skos:broader <urn:era-aom:livestock:AOM_101008> .
 
 <urn:era-aom:livestock:AOM_001085> a skos:Concept ;
@@ -16626,9 +16627,10 @@
 <urn:era-aom:livestock:AOM_001898> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001898" ;
-  skos:prefLabel "Bothriocloa Dried"@en ;
+  skos:prefLabel "Bothriochloa dried"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Bothriocloa Dried"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100945> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_79826> .
 
@@ -18321,9 +18323,10 @@
 <urn:era-aom:livestock:AOM_002090> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_002090" ;
-  skos:prefLabel "Harissonia abyssinica Leaves"@en ;
+  skos:prefLabel "Harrisonia abyssinica leaves"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Harissonia abyssinica Leaves"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100955> .
 
 <urn:era-aom:livestock:AOM_002091> a skos:Concept ;
@@ -19451,9 +19454,10 @@
 <urn:era-aom:livestock:AOM_002507> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_002507" ;
-  skos:prefLabel "Forth trimester"@en ;
+  skos:prefLabel "Fourth trimester"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Forth trimester"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100999> .
 
 <urn:era-aom:livestock:AOM_002508> a skos:Concept ;
@@ -21105,9 +21109,11 @@
 <urn:era-aom:livestock:AOM_003960> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_003960" ;
-  skos:prefLabel "Green Bean Vine"@en ;
+  skos:prefLabel "Common bean vine"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Green Bean Vine"@en ;
+  skos:altLabel "Haricot Bean Vine"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100866> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3885> .
 
@@ -21206,9 +21212,10 @@
 <urn:era-aom:livestock:AOM_003981> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_003981" ;
-  skos:prefLabel "Ziziphus jujube Leaves"@en ;
+  skos:prefLabel "Ziziphus jujuba leaves"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Ziziphus jujube Leaves"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100967> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_326968> .
 
@@ -21301,8 +21308,9 @@
   skos:notation "AOM_004000" ;
   skos:prefLabel "Haricot Bean Vine"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:broader <urn:era-aom:livestock:AOM_100866> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_003960> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3885> .
 
 <urn:era-aom:livestock:AOM_004002> a skos:Concept ;
@@ -24600,9 +24608,10 @@
 <urn:era-aom:livestock:AOM_006373> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_006373" ;
-  skos:prefLabel "Ficus gnaphalocarpa Leaves and Twigs"@en ;
+  skos:prefLabel "Ficus exasperata leaves and twigs"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Ficus gnaphalocarpa Leaves and Twigs"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_459060> .
 

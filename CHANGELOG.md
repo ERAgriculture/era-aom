@@ -44,3 +44,11 @@ All notable vocabulary changes will be recorded here.
 - Resolve 13 legume by-product hierarchy cases: mint 10 contextual groupings,
   normalize Common/Green/Haricot bean ancestry, flatten three paths, add four
   product relations, and queue identity/classification reviews.
+- Complete livestock hierarchy reconstruction across crop by-products, crop
+  products, forage plants, remaining feed concepts, management, outcomes, and
+  species: 234 signed parent decisions, 170 governed identifiers, and zero
+  remaining hierarchy gaps.
+- Add provenance-aware preferred-label correction overlays; correct six
+  high-confidence terms while retaining legacy labels as alternatives.
+- Merge duplicate Green Bean Vine/Haricot Bean Vine identities into retained
+  `AOM_003960` Common bean vine; deprecate `AOM_004000` with replacement link.
