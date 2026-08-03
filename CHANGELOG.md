@@ -33,3 +33,5 @@ All notable vocabulary changes will be recorded here.
   concepts.
 - Mint `AOM_100850` Feed ingredient under Feed Characteristic and reparent 18
   concepts; flag five ingredient-metadata concepts for later schema remodeling.
+- Mint `AOM_100851` Maize by-products under Cereal ByProducts, reparent 12
+  concepts, and relate grouping to maize crop/product without asserting identity.

@@ -22,11 +22,12 @@ replacements = read("approved_mapping_replacements")
 deprecations = read("approved_deprecations")
 new_concepts = read("approved_new_concepts")
 id_registry = read("livestock_id_registry")
+semantic_relations = read("approved_semantic_relations")
 manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2503 and len(ids) == len(known)
+assert len(ids) == 2504 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -52,11 +53,13 @@ assert len(replacements) == 3
 assert len(deprecations) == 1
 assert deprecations[0]["deprecated_id"] == "AOM_001884"
 assert deprecations[0]["replacement_id"] == "AOM_000564"
-assert len(new_concepts) == 2
+assert len(new_concepts) == 3
 new_by_case = {row["case_id"]: row for row in new_concepts}
-assert set(new_by_case) == {"PARENT-006", "PARENT-007"}
-assert {row["concept_id"] for row in id_registry} == {"AOM_100849", "AOM_100850"}
-assert {"AOM_100849", "AOM_100850"} <= known
+assert set(new_by_case) == {"PARENT-006", "PARENT-007", "PARENT-036"}
+assert {row["concept_id"] for row in id_registry} == {
+    "AOM_100849", "AOM_100850", "AOM_100851",
+}
+assert {"AOM_100849", "AOM_100850", "AOM_100851"} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}
 assert status["AOM_001884"] == "deprecated"
 brewers_pref = next(
@@ -94,6 +97,17 @@ assert ("AOM_100850", "broader", "AOM_000328") in {
     for row in relations
 }
 assert not any(row["child_id"] in ingredient_children for row in gaps)
+maize_children = set(new_by_case["PARENT-036"]["child_ids"].split(";"))
+assert {
+    row["subject_id"] for row in relations
+    if row["relation_type"] == "broader" and row["object_id"] == "AOM_100851"
+} == maize_children
+assert not any(row["child_id"] in maize_children for row in gaps)
+assert len(semantic_relations) == 1
+assert {
+    (row["subject_id"], row["relation_type"], row["object_id"])
+    for row in relations if row["relation_type"] == "related"
+} == {("AOM_100851", "related", "AOM_000648")}
 approved_aliases = {
     row["label"] for row in labels
     if row["concept_id"] == "AOM_001676"
@@ -119,6 +133,7 @@ assert manifest["counts"]["source_records"] == len(legacy)
 assert manifest["counts"]["published_staging_concepts"] == len(concepts)
 assert manifest["counts"]["hierarchy_relations"] == len(parents)
 assert manifest["counts"]["replacement_relations"] == 1
+assert manifest["counts"]["semantic_relations"] == len(semantic_relations)
 assert manifest["counts"]["hierarchy_gaps"] == len(gaps)
 assert manifest["counts"]["mapping_assertions"] == len(mappings)
 assert manifest["counts"]["approved_identity_resolutions"] == len(resolutions)
@@ -126,5 +141,6 @@ assert manifest["counts"]["approved_mapping_replacements"] == len(replacements)
 assert manifest["counts"]["approved_deprecations"] == len(deprecations)
 assert manifest["counts"]["approved_new_concepts"] == len(new_concepts)
 assert manifest["counts"]["registered_livestock_ids"] == len(id_registry)
+assert manifest["counts"]["approved_semantic_relations"] == len(semantic_relations)
 print("Livestock staging validation passed:", len(concepts), "concepts,",
       len(relations), "relations,", len(gaps), "gaps,", len(mappings), "mappings")

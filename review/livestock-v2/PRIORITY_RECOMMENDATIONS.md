@@ -1,9 +1,9 @@
 # AOM Livestock v2 priority recommendations
 
 Evidence brief for two identity blockers and six high-impact missing-parent
-cases. Both identity blockers, `PARENT-006`, and `PARENT-007` were approved on
-2026-08-03 and applied through normalized governance overlays. Remaining
-recommendations stay proposals.
+cases. Both identity blockers plus `PARENT-006`, `PARENT-007`, and `PARENT-036`
+were approved on 2026-08-03 and applied through normalized governance overlays.
+Remaining recommendations stay proposals.
 
 ## Recommended decisions
 
@@ -132,9 +132,10 @@ by-products used for animal feed.
 AGROVOC defines [by-products](https://agrovoc.fao.org/browse/agrovoc/en/page/c_1172)
 as secondary/incidental products.
 
-Recommendation: mint `Maize by-products`. Relate to `AOM_000648`, but do not
-assert identity. Longer-term model should separate source taxon from processed
-feed material.
+Approved decision: mint `AOM_100851`, `Maize by-products`, broader
+`AOM_000594`; reparent 12 children. Add `skos:related` to `AOM_000648`, but do
+not assert identity or hierarchy. Longer-term model should separate source
+taxon from processed feed material.
 
 ### `PARENT-078` — Soybean by-products
 

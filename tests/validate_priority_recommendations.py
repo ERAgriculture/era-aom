@@ -16,9 +16,10 @@ assert len(rows) == len(expected)
 assert all(row["recommended_disposition"] for row in rows)
 assert all(row["internal_evidence"] and row["external_evidence"] for row in rows)
 approved = [row for row in rows if row["reviewer_decision"]]
-assert len(approved) == 4
+assert len(approved) == 5
 assert {row["case_id"] for row in approved} == {
     "ID-AOM-006275", "PATH-BREWERS-GRAIN", "PARENT-006", "PARENT-007",
+    "PARENT-036",
 }
 assert all(row["reviewer_decision"] == "approved" for row in approved)
 assert all(row["reviewer"] == "Pete Steward" for row in approved)
