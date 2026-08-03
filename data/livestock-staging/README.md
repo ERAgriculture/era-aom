@@ -13,6 +13,8 @@ Approved minted concepts live in `approved_new_concepts.csv`; allocations live
 in append-only `livestock_id_registry.csv`. See [`../../IDENTIFIERS.md`](../../IDENTIFIERS.md).
 Approved non-hierarchical concept links live in
 `approved_semantic_relations.csv`.
+Approved hierarchy flattening and direct reparenting decisions live in
+`approved_reparentings.csv`.
 Generator applies these governance overlays without rewriting source evidence.
 Unresolved duplicate identifiers remain excluded and recorded in
 `quarantine.csv`. Duplicate paths remain visible for review.

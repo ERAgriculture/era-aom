@@ -38,3 +38,6 @@ All notable vocabulary changes will be recorded here.
 - Add bundled priority parents: `AOM_100852` Soybean by-products,
   `AOM_100853` Grazing management, and `AOM_100854` Management activity
   variable cost; resolve 34 hierarchy gaps and queue 10 modeling follow-ups.
+- Resolve 14 cereal by-product hierarchy cases in one batch: mint 10 contextual
+  groupings, flatten four redundant paths, add five crop/product relations, and
+  queue eight classification reviews.

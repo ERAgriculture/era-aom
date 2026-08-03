@@ -1,18 +1,18 @@
 {
-  "status": "review-input-only",
+  "status": "review-and-governance",
   "source": "AOM Livestock v2 normalized public staging",
   "identity_cases": 2,
   "identity_records": 4,
   "missing_parent_candidates": 234,
-  "affected_child_relations": 420,
+  "affected_child_relations": 383,
   "priority": {
-    "normal": 182,
-    "medium": 46,
-    "resolved": 6
+    "normal": 173,
+    "medium": 41,
+    "resolved": 20
   },
   "review_batches": {
     "Farming System / livestock system": 4,
-    "Management / Livestock Management": 203,
+    "Management / Livestock Management": 189,
     "Management / Livestock Practices": 2,
     "Outcomes / Efficiency": 1,
     "Outcomes / Productivity": 15,
@@ -20,8 +20,8 @@
     "Species / Animal": 2
   },
   "safety": {
-    "semantic_decisions_applied": 8,
-    "identifiers_minted": 6,
-    "hierarchy_changes_applied": 83
+    "semantic_decisions_applied": 22,
+    "identifiers_minted": 16,
+    "hierarchy_changes_applied": 130
   }
 }
