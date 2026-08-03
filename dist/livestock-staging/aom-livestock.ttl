@@ -5034,6 +5034,7 @@
   era:status "unknown" ;
   skos:altLabel "Raw material name"@en ;
   skos:definition "any characteristics related to food raw material name- e.g. wheat flour, soybean meal"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000351> .
 
 <urn:era-aom:livestock:AOM_000532> a skos:Concept ;
@@ -5044,6 +5045,7 @@
   era:status "unknown" ;
   skos:altLabel "Raw material part"@en ;
   skos:definition "any measurable or observable characteristics related to the part of the food raw material entering in the composition of animal diet- e.g. bran, starch, beet…"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000354> .
 
 <urn:era-aom:livestock:AOM_000533> a skos:Concept ;
@@ -5054,6 +5056,7 @@
   era:status "unknown" ;
   skos:altLabel "Raw material species"@en ;
   skos:definition "any characteristics related to the botanical species of food raw material e.g. maize (Zea mays), peruvian anchoveta (Engraulis ringens), etc"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000353> .
 
 <urn:era-aom:livestock:AOM_000534> a skos:Concept ;
@@ -5064,6 +5067,7 @@
   era:status "unknown" ;
   skos:altLabel "Raw material proportion"@en ;
   skos:definition "any measurable or declared characteristics related to the proportion of food raw material in animal diet- e.g. 0.6 corn grain"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000350> .
 
 <urn:era-aom:livestock:AOM_000535> a skos:Concept ;
@@ -5072,7 +5076,8 @@
   skos:prefLabel "Ingredient source"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:altLabel "Raw material source"@en .
+  skos:altLabel "Raw material source"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000536> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -5290,14 +5295,16 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "metazoans"@en ;
-  skos:altLabel "multicellular animals"@en .
+  skos:altLabel "multicellular animals"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000561> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000561" ;
   skos:prefLabel "Animal Manures"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000563> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -6549,6 +6556,7 @@
   skos:prefLabel "Forage Plants"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> ;
   skos:relatedMatch <https://www.feedipedia.org/content/feeds?category=15965> .
 
 <urn:era-aom:livestock:AOM_000736> a skos:Concept ;
@@ -6556,7 +6564,8 @@
   skos:notation "AOM_000736" ;
   skos:prefLabel "Supplement"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000737> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -6867,7 +6876,8 @@
   skos:notation "AOM_000781" ;
   skos:prefLabel "Other Ingredients"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000782> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7019,7 +7029,8 @@
   skos:notation "AOM_000807" ;
   skos:prefLabel "Prebiotic"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000808> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7034,14 +7045,16 @@
   skos:notation "AOM_000809" ;
   skos:prefLabel "Essential Fatty Acid"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000811> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000811" ;
   skos:prefLabel "Herb or Extract"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000817> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12759,7 +12772,8 @@
   skos:notation "AOM_001491" ;
   skos:prefLabel "Preformulated Feed"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_001492> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -16469,7 +16483,8 @@
   skos:notation "AOM_001916" ;
   skos:prefLabel "Crop Byproduct"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_001917> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19607,7 +19622,8 @@
   skos:notation "AOM_003076" ;
   skos:prefLabel "Probiotic"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_003077> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19719,7 +19735,8 @@
   skos:notation "AOM_003100" ;
   skos:prefLabel "Grazing"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_003101> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -24194,7 +24211,8 @@
   skos:notation "AOM_006389" ;
   skos:prefLabel "Organic Acid"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_006395> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -24389,3 +24407,11 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_000196> .
+
+<urn:era-aom:livestock:AOM_100850> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100850" ;
+  skos:prefLabel "Feed ingredient"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .

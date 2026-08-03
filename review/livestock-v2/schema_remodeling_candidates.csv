@@ -1,0 +1,6 @@
+concept_id,current_label,current_model,recommended_model,status,trigger_case,rationale
+AOM_000531,Ingredient name,skos_concept,data_property_or_schema_field,deferred,PARENT-007,Describes ingredient record attribute rather than ingredient class.
+AOM_000532,Ingredient part,skos_concept,data_property_or_schema_field,deferred,PARENT-007,Describes ingredient record attribute rather than ingredient class.
+AOM_000533,Ingredient species,skos_concept,taxon_reference_property,deferred,PARENT-007,Should reference taxon concept or identifier rather than act as ingredient class.
+AOM_000534,Ingredient proportion,skos_concept,quantitative_schema_field,deferred,PARENT-007,Quantitative value requires unit and measurement semantics.
+AOM_000535,Ingredient source,skos_concept,data_property_or_reference,deferred,PARENT-007,Describes ingredient provenance or origin rather than ingredient class.
