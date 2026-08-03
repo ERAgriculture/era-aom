@@ -24,6 +24,7 @@ cereal_brief = (REVIEW / "CEREAL_BYPRODUCT_RECOMMENDATIONS.md").read_text()
 legume_brief = (REVIEW / "LEGUME_BYPRODUCT_RECOMMENDATIONS.md").read_text()
 remaining_brief = (REVIEW / "REMAINING_CROP_BYPRODUCT_RECOMMENDATIONS.md").read_text()
 crop_product_brief = (REVIEW / "CROP_PRODUCT_RECOMMENDATIONS.md").read_text()
+forage_brief = (REVIEW / "FORAGE_PLANT_RECOMMENDATIONS.md").read_text()
 identity_review = read(REVIEW / "identity_review_candidates.csv")
 
 assert len(collisions) == 4
@@ -32,6 +33,7 @@ assert "14 missing-parent cases" in cereal_brief
 assert "13 missing-parent cases" in legume_brief
 assert "55 unresolved hierarchy cases" in remaining_brief
 assert "32 missing-parent cases" in crop_product_brief
+assert "47 missing-parent cases" in forage_brief
 assert {row["case_id"] for row in collisions} == {
     "ID-AOM-006275", "PATH-BREWERS-GRAIN"
 }
@@ -44,7 +46,7 @@ assert len({row["case_id"] for row in parents}) == len(parents)
 assert len(decisions) == len(parents) + 2
 assert len({row["case_id"] for row in decisions}) == len(decisions)
 approved = [row for row in decisions if row["decision"]]
-assert len(approved) == 122
+assert len(approved) == 169
 assert {
     "ID-AOM-006275", "PATH-BREWERS-GRAIN", "PARENT-006", "PARENT-007",
     "PARENT-036", "PARENT-078", "PARENT-200", "PARENT-227",
@@ -77,6 +79,11 @@ crop_product_cases = {
     *{f"PARENT-{number:03d}" for number in range(115, 143)},
 }
 assert crop_product_cases <= {row["case_id"] for row in approved}
+forage_cases = {
+    *{f"PARENT-{number:03d}" for number in range(143, 189)},
+    "PARENT-234",
+}
+assert forage_cases <= {row["case_id"] for row in approved}
 identity_decision = next(row for row in approved if row["case_id"] == "ID-AOM-006275")
 assert identity_decision["decision"] == "retain_and_map_existing"
 assert identity_decision["approved_id"] == "AOM_006275"
@@ -168,13 +175,15 @@ assert {row["trigger_case"] for row in remodeling} == {
     "PARENT-079", "PARENT-117", "PARENT-123", "PARENT-128",
     "PARENT-129", "PARENT-138", "PARENT-142",
 }
-assert len(identity_review) == 1
-assert identity_review[0]["case_id"] == "IDENTITY-BEAN-VINE"
-assert identity_review[0]["status"] == "pending"
+assert len(identity_review) == 2
+assert {row["case_id"] for row in identity_review} == {
+    "IDENTITY-BEAN-VINE", "IDENTITY-FICUS-GNAPHALOCARPA",
+}
+assert all(row["status"] == "pending" for row in identity_review)
 assert summary["safety"] == {
-    "semantic_decisions_applied": 122,
-    "identifiers_minted": 96,
-    "hierarchy_changes_applied": 397,
+    "semantic_decisions_applied": 169,
+    "identifiers_minted": 127,
+    "hierarchy_changes_applied": 487,
 }
 assert "AOM_000230" not in {row["child_id"] for row in gaps}
 assert "AOM_000230" in {row["subject_id"] for row in relations}

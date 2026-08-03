@@ -28,7 +28,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2597 and len(ids) == len(known)
+assert len(ids) == 2628 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -54,7 +54,7 @@ assert len(replacements) == 3
 assert len(deprecations) == 1
 assert deprecations[0]["deprecated_id"] == "AOM_001884"
 assert deprecations[0]["replacement_id"] == "AOM_000564"
-assert len(new_concepts) == 96
+assert len(new_concepts) == 127
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -88,8 +88,19 @@ crop_product_cases = {
     "PARENT-139", "PARENT-140", "PARENT-141", "PARENT-142",
 }
 assert crop_product_cases <= set(new_by_case)
+forage_mint_cases = {
+    "PARENT-143", "PARENT-144", "PARENT-146", "PARENT-147",
+    "PARENT-150", "PARENT-151", "PARENT-152", "PARENT-153",
+    "PARENT-155", "PARENT-156", "PARENT-157", "PARENT-158",
+    "PARENT-159", "PARENT-160", "PARENT-161", "PARENT-165",
+    "PARENT-166", "PARENT-167", "PARENT-168", "PARENT-170",
+    "PARENT-173", "PARENT-176", "PARENT-177", "PARENT-180",
+    "PARENT-182", "PARENT-184", "PARENT-185", "PARENT-186",
+    "PARENT-187", "PARENT-188", "PARENT-234",
+}
+assert forage_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 100945)
+    f"AOM_{number:06d}" for number in range(100849, 100976)
 }
 assert {row["concept_id"] for row in id_registry} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}
@@ -159,7 +170,7 @@ assert new_by_case["PARENT-227"]["derived_path"] == (
     "Outcomes/Productivity/Economics/Costs/Variable Cost/"
     "Management activity variable cost"
 )
-assert len(semantic_relations) == 20
+assert len(semantic_relations) == 21
 assert {
     (row["subject_id"], row["relation_type"], row["object_id"])
     for row in relations if row["relation_type"] == "related"
@@ -176,7 +187,7 @@ assert {
     ("AOM_100873", "related", "AOM_002226"),
     ("AOM_100874", "related", "AOM_001314"),
 }
-assert len(reparentings) == 24
+assert len(reparentings) == 40
 for reparenting in reparentings:
     children = set(reparenting["child_ids"].split(";"))
     assert {
@@ -191,6 +202,13 @@ assert new_by_case["PARENT-098"]["preferred_label"] == "Other plant by-products"
 assert new_by_case["PARENT-115"]["preferred_label"] == "Crop product"
 assert new_by_case["PARENT-135"]["preferred_label"] == "Black cumin by-products"
 assert ("AOM_001818", "AOM_100937") in broader_triples
+assert new_by_case["PARENT-143"]["preferred_label"] == "Bothriochloa forage materials"
+assert new_by_case["PARENT-157"]["preferred_label"] == "Harrisonia abyssinica forage materials"
+assert new_by_case["PARENT-177"]["preferred_label"] == "Ziziphus jujuba forage materials"
+assert ("AOM_100969", "AOM_000102") in {
+    (row["subject_id"], row["object_id"])
+    for row in relations if row["relation_type"] == "related"
+}
 approved_aliases = {
     row["label"] for row in labels
     if row["concept_id"] == "AOM_001676"
