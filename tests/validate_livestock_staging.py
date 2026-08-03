@@ -28,7 +28,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2628 and len(ids) == len(known)
+assert len(ids) == 2645 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -54,7 +54,7 @@ assert len(replacements) == 3
 assert len(deprecations) == 1
 assert deprecations[0]["deprecated_id"] == "AOM_001884"
 assert deprecations[0]["replacement_id"] == "AOM_000564"
-assert len(new_concepts) == 127
+assert len(new_concepts) == 144
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -99,8 +99,16 @@ forage_mint_cases = {
     "PARENT-187", "PARENT-188", "PARENT-234",
 }
 assert forage_mint_cases <= set(new_by_case)
+remaining_feed_mint_cases = {
+    "PARENT-008", "PARENT-009", "PARENT-010", "PARENT-011",
+    "PARENT-013", "PARENT-014", "PARENT-015", "PARENT-017",
+    "PARENT-020", "PARENT-021", "PARENT-022", "PARENT-192",
+    "PARENT-193", "PARENT-196", "PARENT-197", "PARENT-198",
+    "PARENT-199",
+}
+assert remaining_feed_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 100976)
+    f"AOM_{number:06d}" for number in range(100849, 100993)
 }
 assert {row["concept_id"] for row in id_registry} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}
@@ -187,7 +195,7 @@ assert {
     ("AOM_100873", "related", "AOM_002226"),
     ("AOM_100874", "related", "AOM_001314"),
 }
-assert len(reparentings) == 40
+assert len(reparentings) == 53
 for reparenting in reparentings:
     children = set(reparenting["child_ids"].split(";"))
     assert {
@@ -209,6 +217,9 @@ assert ("AOM_100969", "AOM_000102") in {
     (row["subject_id"], row["object_id"])
     for row in relations if row["relation_type"] == "related"
 }
+assert new_by_case["PARENT-017"]["preferred_label"] == "Animal by-products"
+assert new_by_case["PARENT-197"]["broader_id"] == "AOM_000845"
+assert new_by_case["PARENT-199"]["preferred_label"] == "Diet source"
 approved_aliases = {
     row["label"] for row in labels
     if row["concept_id"] == "AOM_001676"
