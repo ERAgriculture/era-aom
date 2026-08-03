@@ -17,16 +17,41 @@ def read(name):
 concepts, labels = read("concepts"), read("labels")
 relations, mappings = read("relations"), read("mappings")
 quarantine, gaps, legacy = read("quarantine"), read("hierarchy_gaps"), read("legacy_records")
+resolutions = read("approved_identity_resolutions")
+replacements = read("approved_mapping_replacements")
 manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2500 and len(ids) == len(known)
-assert "AOM_006275" not in known
-assert {"duplicate_concept_id", "duplicate_derived_path"} <= {row["reason"] for row in quarantine}
+assert len(ids) == 2501 and len(ids) == len(known)
+assert "AOM_006275" in known
+assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
+assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
 assert all(row["subject_id"] in known and row["object_id"] in known for row in relations)
-assert all(row["subject_id"] in known and row["status"] == "legacy-unreviewed" for row in mappings)
-assert all(row["reviewer"] == "" for row in mappings)
+assert all(row["subject_id"] in known for row in mappings)
+reviewed = [row for row in mappings if row["status"] == "reviewed"]
+assert len(reviewed) == 3
+assert {row["subject_id"] for row in reviewed} == {"AOM_006275"}
+assert {row["target_id"] for row in reviewed} == {
+    "NCBITaxon_3031383", "wfo-0000883036", "413",
+}
+assert all(row["reviewer"] == "Pete Steward" for row in reviewed)
+assert all(
+    row["status"] == "legacy-unreviewed" and row["reviewer"] == ""
+    for row in mappings if row not in reviewed
+)
+assert len(resolutions) == 2
+assert {row["action"] for row in resolutions} == {"retain", "map_to_existing"}
+assert {row["resolved_concept_id"] for row in resolutions} == {
+    "AOM_006275", "AOM_001676",
+}
+assert len(replacements) == 3
+approved_aliases = {
+    row["label"] for row in labels
+    if row["concept_id"] == "AOM_001676"
+    and row["source_column"] == "approved_identity_resolution"
+}
+assert approved_aliases == {"Panicum maximum Dried", "Panicum maximum hay"}
 assert all(row["disposition"] == "review_and_mint_or_map_parent" for row in gaps)
 pref = Counter(row["concept_id"] for row in labels if row["label_type"] == "pref")
 assert set(pref) == known and all(count == 1 for count in pref.values())
@@ -44,5 +69,7 @@ assert manifest["counts"]["published_staging_concepts"] == len(concepts)
 assert manifest["counts"]["hierarchy_relations"] == len(relations)
 assert manifest["counts"]["hierarchy_gaps"] == len(gaps)
 assert manifest["counts"]["mapping_assertions"] == len(mappings)
+assert manifest["counts"]["approved_identity_resolutions"] == len(resolutions)
+assert manifest["counts"]["approved_mapping_replacements"] == len(replacements)
 print("Livestock staging validation passed:", len(concepts), "concepts,",
       len(relations), "relations,", len(gaps), "gaps,", len(mappings), "mappings")

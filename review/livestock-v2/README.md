@@ -6,7 +6,7 @@ directory changes AOM.
 ## Review order
 
 1. Resolve two blocking identity cases in `01_identity_collisions.csv`.
-2. Review 233 missing-parent candidates in
+2. Review 234 missing-parent candidates in
    `02_missing_parent_candidates.csv`, grouped into batches below.
 3. Record signed decisions in `03_review_decisions.csv`.
 4. Apply approved decisions through separate validated pull request.
@@ -20,14 +20,14 @@ Evidence-backed recommendations for eight priority cases:
 | Batch | Candidate parents |
 |---|---:|
 | Farming System / livestock system | 4 |
-| Management / Livestock Management | 207 |
+| Management / Livestock Management | 208 |
 | Management / Livestock Practices | 2 |
 | Outcomes / Efficiency | 1 |
 | Outcomes / Productivity | 16 |
 | Outcomes / Social | 1 |
 | Species / Animal | 2 |
 
-496 child relations depend on these 233 candidate
+497 child relations depend on these 234 candidate
 parents. High priority means at least 10 affected children; medium means 3–9.
 Priority measures impact, not semantic confidence.
 
@@ -66,5 +66,5 @@ fields are intentional. AI may summarize evidence but cannot approve.
 
 - identifiers minted: 0;
 - hierarchy changes applied: 0;
-- semantic decisions applied: 0;
+- semantic decisions applied: 1;
 - private workbook content used: 0.

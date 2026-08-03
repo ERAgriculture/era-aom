@@ -36785,6 +36785,14 @@
         {
           "@value": "Megathyrsus maximus Hay",
           "@language": "en"
+        },
+        {
+          "@value": "Panicum maximum Dried",
+          "@language": "en"
+        },
+        {
+          "@value": "Panicum maximum hay",
+          "@language": "en"
         }
       ],
       "skos:broader": {
@@ -60116,6 +60124,37 @@
       "skos:relatedMatch": [
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_523336"
+        }
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_006275",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_006275",
+      "skos:prefLabel": {
+        "@value": "Panicum antidotale Dried",
+        "@language": "en"
+      },
+      "era:conceptType": "legacy_aom_concept",
+      "era:status": "unknown",
+      "skos:altLabel": [
+        {
+          "@value": "Panicum antidotale hay",
+          "@language": "en"
+        }
+      ],
+      "skos:relatedMatch": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3031383"
+        },
+        {
+          "@id": "https://www.feedipedia.org/node/413"
+        },
+        {
+          "@id": "https://www.worldfloraonline.org/taxon/wfo-0000883036"
         }
       ]
     },

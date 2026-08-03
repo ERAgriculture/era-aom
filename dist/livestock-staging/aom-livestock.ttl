@@ -14294,6 +14294,8 @@
   era:status "unknown" ;
   skos:altLabel "Guinea Grass Hay"@en ;
   skos:altLabel "Megathyrsus maximus Hay"@en ;
+  skos:altLabel "Panicum maximum Dried"@en ;
+  skos:altLabel "Panicum maximum hay"@en ;
   skos:broader <urn:era-aom:livestock:AOM_001479> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_59788> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11522> .
@@ -23318,6 +23320,17 @@
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_001448> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_523336> .
+
+<urn:era-aom:livestock:AOM_006275> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_006275" ;
+  skos:prefLabel "Panicum antidotale Dried"@en ;
+  era:conceptType "legacy_aom_concept" ;
+  era:status "unknown" ;
+  skos:altLabel "Panicum antidotale hay"@en ;
+  skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3031383> ;
+  skos:relatedMatch <https://www.feedipedia.org/node/413> ;
+  skos:relatedMatch <https://www.worldfloraonline.org/taxon/wfo-0000883036> .
 
 <urn:era-aom:livestock:AOM_006276> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;

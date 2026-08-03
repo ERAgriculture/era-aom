@@ -15,8 +15,12 @@ assert {row["case_id"] for row in rows} == expected
 assert len(rows) == len(expected)
 assert all(row["recommended_disposition"] for row in rows)
 assert all(row["internal_evidence"] and row["external_evidence"] for row in rows)
-assert all(row["reviewer_decision"] == "" for row in rows)
-assert all(row["reviewer"] == "" and row["review_date"] == "" for row in rows)
+approved = [row for row in rows if row["reviewer_decision"]]
+assert len(approved) == 1
+assert approved[0]["case_id"] == "ID-AOM-006275"
+assert approved[0]["reviewer_decision"] == "approved"
+assert approved[0]["reviewer"] == "Pete Steward"
+assert approved[0]["review_date"] == "2026-08-03"
+assert all(not row["reviewer"] and not row["review_date"] for row in rows if row not in approved)
 assert all(row["confidence"] in {"medium", "high"} for row in rows)
 print("Priority recommendation validation passed:", len(rows), "review cases")
-

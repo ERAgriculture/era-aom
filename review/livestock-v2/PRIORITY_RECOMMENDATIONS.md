@@ -1,8 +1,8 @@
 # AOM Livestock v2 priority recommendations
 
 Evidence brief for two identity blockers and six high-impact missing-parent
-cases. Recommendations remain proposals. No identifier, mapping, hierarchy, or
-label change has been applied.
+cases. `ID-AOM-006275` was approved on 2026-08-03 and applied through normalized
+governance overlays. Remaining recommendations stay proposals.
 
 ## Recommended decisions
 
