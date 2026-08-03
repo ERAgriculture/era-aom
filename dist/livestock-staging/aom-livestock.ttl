@@ -6022,6 +6022,7 @@
   skos:prefLabel "Rice Grain"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100927> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_6599> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12526> .
@@ -6034,6 +6035,7 @@
   era:status "unknown" ;
   skos:altLabel "Whole Rice Milled"@en ;
   skos:altLabel "Whole Rice Meal"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100927> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_25500> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> .
 
@@ -6066,7 +6068,8 @@
   skos:notation "AOM_000662" ;
   skos:prefLabel "Cereal Products"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> .
 
 <urn:era-aom:livestock:AOM_000663> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -6074,6 +6077,7 @@
   skos:prefLabel "Jackfruit"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000665> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_11864> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_649> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3489> ;
@@ -6096,14 +6100,16 @@
   skos:notation "AOM_000665" ;
   skos:prefLabel "Fruit Product"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> .
 
 <urn:era-aom:livestock:AOM_000667> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000667" ;
   skos:prefLabel "Legume Products"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> .
 
 <urn:era-aom:livestock:AOM_000668> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -6137,6 +6143,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Palmae Oil"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100934> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_5514> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4710> ;
   skos:relatedMatch <https://www.feedipedia.org/node/15497> .
@@ -6147,6 +6154,7 @@
   skos:prefLabel "Palm Oil Crude"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100934> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_5514> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4710> .
 
@@ -6201,7 +6209,8 @@
   skos:notation "AOM_000677" ;
   skos:prefLabel "Oil Plant Products"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> .
 
 <urn:era-aom:livestock:AOM_000678> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -6212,6 +6221,7 @@
   skos:altLabel "Yuca Starch"@en ;
   skos:altLabel "Tapioca Starch"@en ;
   skos:altLabel "Manioc Starch"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100936> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_15525> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3983> ;
   skos:relatedMatch <https://www.feedipedia.org/node/14602> .
@@ -6225,6 +6235,7 @@
   skos:altLabel "Yuca Tuber"@en ;
   skos:altLabel "Tapioca Tuber"@en ;
   skos:altLabel "Manioc Tuber"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100936> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_9649> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3983> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11946> .
@@ -6247,6 +6258,7 @@
   skos:prefLabel "Roots and Tuber Products"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> ;
   skos:relatedMatch <https://www.feedipedia.org/content/feeds?category=13602> .
 
 <urn:era-aom:livestock:AOM_000682> a skos:Concept ;
@@ -9924,6 +9936,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "Lupinus angustifolius"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100930> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12271> .
 
@@ -11000,6 +11013,7 @@
   skos:prefLabel "Fluted Pumpkin Leaves"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100942> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_383670> .
 
 <urn:era-aom:livestock:AOM_001257> a skos:Concept ;
@@ -11027,6 +11041,7 @@
   skos:prefLabel "Lemon Peel Essential Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100928> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_2708> .
 
 <urn:era-aom:livestock:AOM_001261> a skos:Concept ;
@@ -11065,6 +11080,7 @@
   skos:prefLabel "Ziziphus mauritiania"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000665> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_157914> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12199> .
 
@@ -11473,6 +11489,7 @@
   skos:prefLabel "Date"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_42345> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12049> .
 
@@ -11482,6 +11499,7 @@
   skos:prefLabel "Cotton Seed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000677> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_35678> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3633> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12024> .
@@ -11503,6 +11521,7 @@
   skos:prefLabel "Pigeon Pea"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000667> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_13356> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3821> .
 
@@ -11533,6 +11552,7 @@
   skos:prefLabel "Wheat Grain"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_001319> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12754> .
 
@@ -11553,6 +11573,7 @@
   skos:prefLabel "Common Bean Crushed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100931> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3885> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12005> .
 
@@ -11564,6 +11585,7 @@
   era:status "unknown" ;
   skos:altLabel "Safflower Meal"@en ;
   skos:altLabel "Safflower Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100935> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4222> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12554> .
 
@@ -11578,6 +11600,7 @@
   skos:altLabel "Manioc Flour"@en ;
   skos:altLabel "Cassava Flour"@en ;
   skos:altLabel "Cassava Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100936> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_9649> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3983> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12798> .
@@ -11588,6 +11611,7 @@
   skos:prefLabel "Coffee Ground Roasted"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100926> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_24831> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3641> .
 
@@ -11731,6 +11755,7 @@
   skos:prefLabel "Rosemary Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100941> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_39367> .
 
 <urn:era-aom:livestock:AOM_001345> a skos:Concept ;
@@ -11739,6 +11764,7 @@
   skos:prefLabel "Rosemary Leaves"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100941> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_39367> .
 
 <urn:era-aom:livestock:AOM_001346> a skos:Concept ;
@@ -11783,6 +11809,7 @@
   skos:prefLabel "Blue Lupin"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100930> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_14477> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12271> .
@@ -11793,6 +11820,7 @@
   skos:prefLabel "Turmeric"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100923> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_136217> .
 
 <urn:era-aom:livestock:AOM_001355> a skos:Concept ;
@@ -11814,6 +11842,7 @@
   skos:prefLabel "Black Cumin Seed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100940> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_555479> .
 
 <urn:era-aom:livestock:AOM_001358> a skos:Concept ;
@@ -11824,6 +11853,7 @@
   era:status "unknown" ;
   skos:altLabel "Black Cumin Meal"@en ;
   skos:altLabel "Black Cumin Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100940> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_555479> .
 
 <urn:era-aom:livestock:AOM_001359> a skos:Concept ;
@@ -11832,6 +11862,7 @@
   skos:prefLabel "Onion Bulb"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100944> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4679> .
 
 <urn:era-aom:livestock:AOM_001360> a skos:Concept ;
@@ -11843,6 +11874,7 @@
   skos:altLabel "Ethiopian Eggplant"@en ;
   skos:altLabel "Garden Egg"@en ;
   skos:altLabel "Gilo"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100924> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_205524> .
 
 <urn:era-aom:livestock:AOM_001361> a skos:Concept ;
@@ -12443,6 +12475,7 @@
   skos:prefLabel "Mango"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000665> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_29780> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12304> .
 
@@ -14643,6 +14676,7 @@
   skos:altLabel "Noug Ground Pressed"@en ;
   skos:altLabel "Noug Meal Cake"@en ;
   skos:altLabel "Noug Milled Cake"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_001190> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_12827> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4230> .
 
@@ -15129,6 +15163,7 @@
   era:status "unknown" ;
   skos:altLabel "Winged Bean Meal"@en ;
   skos:altLabel "Winged Bean Milled"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100932> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_14477> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/637> .
@@ -15411,7 +15446,8 @@
   skos:notation "AOM_001780" ;
   skos:prefLabel "Lippia javanica"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100923> .
 
 <urn:era-aom:livestock:AOM_001781> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -15751,6 +15787,7 @@
   skos:prefLabel "Legume Residue"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000667> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_13356> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3821> .
 
@@ -15760,6 +15797,7 @@
   skos:prefLabel "Ensete ventricosum Corm"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100937> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4639> ;
   skos:relatedMatch <https://www.feedipedia.org/node/22889> .
 
@@ -15769,6 +15807,7 @@
   skos:prefLabel "Ensete ventricosum Leaves"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100937> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4639> ;
   skos:relatedMatch <https://www.feedipedia.org/node/22891> .
 
@@ -15778,6 +15817,7 @@
   skos:prefLabel "Potato Starch"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100938> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4113> .
 
 <urn:era-aom:livestock:AOM_001821> a skos:Concept ;
@@ -15914,6 +15954,7 @@
   skos:prefLabel "Palm Oil Sludge"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100934> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_5514> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4710> ;
   skos:relatedMatch <https://www.feedipedia.org/node/15497> .
@@ -16012,6 +16053,7 @@
   skos:prefLabel "Ficus sur"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000665> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_100575> .
 
 <urn:era-aom:livestock:AOM_001848> a skos:Concept ;
@@ -16040,6 +16082,7 @@
   skos:prefLabel "Brassica oleracea"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100924> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3712> .
 
 <urn:era-aom:livestock:AOM_001851> a skos:Concept ;
@@ -16462,6 +16505,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Blue Lupin Seed"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100930> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_14477> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12271> .
@@ -18273,6 +18317,7 @@
   skos:prefLabel "Cocoa Bean Cake"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100925> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_24831> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3641> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11693> .
@@ -18283,6 +18328,7 @@
   skos:prefLabel "Cocoa Bean"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100925> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_24831> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3641> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11693> .
@@ -18571,6 +18617,7 @@
   skos:prefLabel "Tomato Pulp"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100929> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4081> .
 
 <urn:era-aom:livestock:AOM_002150> a skos:Concept ;
@@ -18757,6 +18804,7 @@
   skos:prefLabel "Safflower Seed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100935> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4222> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12554> .
 
@@ -18806,6 +18854,7 @@
   skos:prefLabel "Black Cumin Seed Cake"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100939> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_555479> .
 
 <urn:era-aom:livestock:AOM_002216> a skos:Concept ;
@@ -19191,7 +19240,8 @@
   skos:notation "AOM_002353" ;
   skos:prefLabel "Date Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_001311> .
 
 <urn:era-aom:livestock:AOM_002500> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19701,6 +19751,7 @@
   skos:altLabel "Sisso Spinach"@en ;
   skos:altLabel "Brazilian Spinach"@en ;
   skos:altLabel "Dwarf Copperleaf"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100924> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_221762> .
 
 <urn:era-aom:livestock:AOM_003067> a skos:Concept ;
@@ -19745,6 +19796,7 @@
   skos:altLabel "Lagos bologi"@en ;
   skos:altLabel "sweetheart"@en ;
   skos:altLabel "Kutu bata"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100924> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_110664> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12740> .
 
@@ -20127,6 +20179,7 @@
   skos:prefLabel "Sugar"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100922> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12650> .
 
 <urn:era-aom:livestock:AOM_003359> a skos:Concept ;
@@ -20135,6 +20188,7 @@
   skos:prefLabel "Onion Veins"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100944> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4679> .
 
 <urn:era-aom:livestock:AOM_003385> a skos:Concept ;
@@ -20360,6 +20414,7 @@
   skos:prefLabel "Coconut Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100933> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_13894> .
 
 <urn:era-aom:livestock:AOM_003703> a skos:Concept ;
@@ -20480,6 +20535,7 @@
   skos:prefLabel "Rosemary Residues"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100941> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_39367> .
 
 <urn:era-aom:livestock:AOM_003889> a skos:Concept ;
@@ -22623,6 +22679,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Black Cumin Seed Cake"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100939> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_555479> .
 
 <urn:era-aom:livestock:AOM_006159> a skos:Concept ;
@@ -22989,7 +23046,8 @@
   skos:notation "AOM_006200" ;
   skos:prefLabel "Garlic Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100943> .
 
 <urn:era-aom:livestock:AOM_006201> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -25207,3 +25265,195 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_001916> .
+
+<urn:era-aom:livestock:AOM_100921> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100921" ;
+  skos:prefLabel "Crop product"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
+
+<urn:era-aom:livestock:AOM_100922> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100922" ;
+  skos:prefLabel "Cash crop products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> .
+
+<urn:era-aom:livestock:AOM_100923> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100923" ;
+  skos:prefLabel "Spice products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> .
+
+<urn:era-aom:livestock:AOM_100924> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100924" ;
+  skos:prefLabel "Vegetable products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100921> .
+
+<urn:era-aom:livestock:AOM_100925> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100925" ;
+  skos:prefLabel "Cocoa products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100922> .
+
+<urn:era-aom:livestock:AOM_100926> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100926" ;
+  skos:prefLabel "Coffee products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100922> .
+
+<urn:era-aom:livestock:AOM_100927> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100927" ;
+  skos:prefLabel "Rice products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000662> .
+
+<urn:era-aom:livestock:AOM_100928> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100928" ;
+  skos:prefLabel "Lemon products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000665> .
+
+<urn:era-aom:livestock:AOM_100929> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100929" ;
+  skos:prefLabel "Tomato products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000665> .
+
+<urn:era-aom:livestock:AOM_100930> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100930" ;
+  skos:prefLabel "Blue lupin products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000667> .
+
+<urn:era-aom:livestock:AOM_100931> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100931" ;
+  skos:prefLabel "Common bean products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000667> .
+
+<urn:era-aom:livestock:AOM_100932> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100932" ;
+  skos:prefLabel "Winged bean products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000667> .
+
+<urn:era-aom:livestock:AOM_100933> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100933" ;
+  skos:prefLabel "Coconut products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000677> .
+
+<urn:era-aom:livestock:AOM_100934> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100934" ;
+  skos:prefLabel "Palm products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000677> .
+
+<urn:era-aom:livestock:AOM_100935> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100935" ;
+  skos:prefLabel "Safflower products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000677> .
+
+<urn:era-aom:livestock:AOM_100936> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100936" ;
+  skos:prefLabel "Cassava products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000681> .
+
+<urn:era-aom:livestock:AOM_100937> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100937" ;
+  skos:prefLabel "Ensete products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000681> .
+
+<urn:era-aom:livestock:AOM_100938> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100938" ;
+  skos:prefLabel "Potato products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000681> .
+
+<urn:era-aom:livestock:AOM_100939> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100939" ;
+  skos:prefLabel "Black cumin by-products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_001916> .
+
+<urn:era-aom:livestock:AOM_100940> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100940" ;
+  skos:prefLabel "Black cumin products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100923> .
+
+<urn:era-aom:livestock:AOM_100941> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100941" ;
+  skos:prefLabel "Rosemary products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100923> .
+
+<urn:era-aom:livestock:AOM_100942> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100942" ;
+  skos:prefLabel "Fluted pumpkin products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100924> .
+
+<urn:era-aom:livestock:AOM_100943> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100943" ;
+  skos:prefLabel "Garlic products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100924> .
+
+<urn:era-aom:livestock:AOM_100944> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100944" ;
+  skos:prefLabel "Onion products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_100924> .
