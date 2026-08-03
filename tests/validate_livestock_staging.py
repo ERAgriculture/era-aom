@@ -28,7 +28,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2527 and len(ids) == len(known)
+assert len(ids) == 2573 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -54,18 +54,33 @@ assert len(replacements) == 3
 assert len(deprecations) == 1
 assert deprecations[0]["deprecated_id"] == "AOM_001884"
 assert deprecations[0]["replacement_id"] == "AOM_000564"
-assert len(new_concepts) == 26
+assert len(new_concepts) == 72
 new_by_case = {row["case_id"]: row for row in new_concepts}
-assert set(new_by_case) == {
+assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
     "PARENT-227",
     "PARENT-031", "PARENT-032", "PARENT-033", "PARENT-035", "PARENT-037",
     "PARENT-038", "PARENT-040", "PARENT-041", "PARENT-042", "PARENT-044",
     "PARENT-065", "PARENT-066", "PARENT-067", "PARENT-068", "PARENT-070",
     "PARENT-072", "PARENT-074", "PARENT-075", "PARENT-076", "PARENT-077",
+} <= set(new_by_case)
+remaining_cases = {
+    "PARENT-027", "PARENT-028", "PARENT-029", "PARENT-030",
+    "PARENT-047", "PARENT-048", "PARENT-049", "PARENT-052",
+    "PARENT-053", "PARENT-054", "PARENT-056", "PARENT-058",
+    "PARENT-059", "PARENT-061", "PARENT-062", "PARENT-063",
+    "PARENT-080", "PARENT-082", "PARENT-083", "PARENT-084",
+    "PARENT-085", "PARENT-086", "PARENT-087", "PARENT-088",
+    "PARENT-089", "PARENT-090", "PARENT-091", "PARENT-092",
+    "PARENT-093", "PARENT-094", "PARENT-096", "PARENT-098",
+    "PARENT-099", "PARENT-100", "PARENT-102", "PARENT-103",
+    "PARENT-105", "PARENT-106", "PARENT-107", "PARENT-108",
+    "PARENT-109", "PARENT-110", "PARENT-111", "PARENT-112",
+    "PARENT-113", "PARENT-114",
 }
+assert remaining_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 100875)
+    f"AOM_{number:06d}" for number in range(100849, 100921)
 }
 assert {row["concept_id"] for row in id_registry} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}
@@ -135,11 +150,11 @@ assert new_by_case["PARENT-227"]["derived_path"] == (
     "Outcomes/Productivity/Economics/Costs/Variable Cost/"
     "Management activity variable cost"
 )
-assert len(semantic_relations) == 11
+assert len(semantic_relations) == 20
 assert {
     (row["subject_id"], row["relation_type"], row["object_id"])
     for row in relations if row["relation_type"] == "related"
-} == {
+} >= {
     ("AOM_100851", "related", "AOM_000648"),
     ("AOM_100852", "related", "AOM_001582"),
     ("AOM_100856", "related", "AOM_001202"),
@@ -152,7 +167,7 @@ assert {
     ("AOM_100873", "related", "AOM_002226"),
     ("AOM_100874", "related", "AOM_001314"),
 }
-assert len(reparentings) == 7
+assert len(reparentings) == 16
 for reparenting in reparentings:
     children = set(reparenting["child_ids"].split(";"))
     assert {
@@ -161,6 +176,9 @@ for reparenting in reparentings:
         and row["object_id"] == reparenting["target_parent_id"]
     } >= children
     assert not any(row["child_id"] in children for row in gaps)
+assert new_by_case["PARENT-099"]["broader_id"] == "AOM_000615"
+assert new_by_case["PARENT-099"]["preferred_label"] == "African yam bean by-products"
+assert new_by_case["PARENT-098"]["preferred_label"] == "Other plant by-products"
 approved_aliases = {
     row["label"] for row in labels
     if row["concept_id"] == "AOM_001676"

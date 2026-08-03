@@ -22,12 +22,14 @@ summary = json.loads((REVIEW / "summary.json").read_text())
 remodeling = read(REVIEW / "schema_remodeling_candidates.csv")
 cereal_brief = (REVIEW / "CEREAL_BYPRODUCT_RECOMMENDATIONS.md").read_text()
 legume_brief = (REVIEW / "LEGUME_BYPRODUCT_RECOMMENDATIONS.md").read_text()
+remaining_brief = (REVIEW / "REMAINING_CROP_BYPRODUCT_RECOMMENDATIONS.md").read_text()
 identity_review = read(REVIEW / "identity_review_candidates.csv")
 
 assert len(collisions) == 4
 assert summary["status"] == "review-and-governance"
 assert "14 missing-parent cases" in cereal_brief
 assert "13 missing-parent cases" in legume_brief
+assert "55 unresolved hierarchy cases" in remaining_brief
 assert {row["case_id"] for row in collisions} == {
     "ID-AOM-006275", "PATH-BREWERS-GRAIN"
 }
@@ -40,8 +42,8 @@ assert len({row["case_id"] for row in parents}) == len(parents)
 assert len(decisions) == len(parents) + 2
 assert len({row["case_id"] for row in decisions}) == len(decisions)
 approved = [row for row in decisions if row["decision"]]
-assert len(approved) == 35
-assert {row["case_id"] for row in approved} == {
+assert len(approved) == 90
+assert {
     "ID-AOM-006275", "PATH-BREWERS-GRAIN", "PARENT-006", "PARENT-007",
     "PARENT-036", "PARENT-078", "PARENT-200", "PARENT-227",
     "PARENT-031", "PARENT-032", "PARENT-033", "PARENT-034", "PARENT-035",
@@ -50,7 +52,24 @@ assert {row["case_id"] for row in approved} == {
     "PARENT-065", "PARENT-066", "PARENT-067", "PARENT-068", "PARENT-069",
     "PARENT-070", "PARENT-071", "PARENT-072", "PARENT-073", "PARENT-074",
     "PARENT-075", "PARENT-076", "PARENT-077",
+} <= {row["case_id"] for row in approved}
+remaining_cases = {
+    "PARENT-027", "PARENT-028", "PARENT-029", "PARENT-030",
+    "PARENT-047", "PARENT-048", "PARENT-049", "PARENT-050",
+    "PARENT-051", "PARENT-052", "PARENT-053", "PARENT-054",
+    "PARENT-055", "PARENT-056", "PARENT-057", "PARENT-058",
+    "PARENT-059", "PARENT-060", "PARENT-061", "PARENT-062",
+    "PARENT-063", "PARENT-080", "PARENT-081", "PARENT-082",
+    "PARENT-083", "PARENT-084", "PARENT-085", "PARENT-086",
+    "PARENT-087", "PARENT-088", "PARENT-089", "PARENT-090",
+    "PARENT-091", "PARENT-092", "PARENT-093", "PARENT-094",
+    "PARENT-095", "PARENT-096", "PARENT-098", "PARENT-099",
+    "PARENT-100", "PARENT-101", "PARENT-102", "PARENT-103",
+    "PARENT-104", "PARENT-105", "PARENT-106", "PARENT-107",
+    "PARENT-108", "PARENT-109", "PARENT-110", "PARENT-111",
+    "PARENT-112", "PARENT-113", "PARENT-114",
 }
+assert remaining_cases <= {row["case_id"] for row in approved}
 identity_decision = next(row for row in approved if row["case_id"] == "ID-AOM-006275")
 assert identity_decision["decision"] == "retain_and_map_existing"
 assert identity_decision["approved_id"] == "AOM_006275"
@@ -125,21 +144,26 @@ assert {row["concept_id"] for row in remodeling} == {
     "AOM_000947", "AOM_000948", "AOM_000950", "AOM_000951", "AOM_000954",
     "AOM_001178", "AOM_002013", "AOM_001618", "AOM_006143", "AOM_001276",
     "AOM_006316", "AOM_002086", "AOM_000587",
-    "AOM_001646", "AOM_001366",
+    "AOM_001646", "AOM_001366", "AOM_001307", "AOM_003973",
+    "AOM_001893", "AOM_001335", "AOM_001440", "AOM_001337",
+    "AOM_001745", "AOM_003918", "AOM_006320", "AOM_003482",
+    "AOM_001300",
 }
 assert all(row["status"] == "deferred" for row in remodeling)
 assert {row["trigger_case"] for row in remodeling} == {
     "PARENT-007", "PARENT-078", "PARENT-200", "PARENT-032", "PARENT-038",
     "PARENT-042", "PARENT-043", "PARENT-044",
-    "PARENT-067", "PARENT-072",
+    "PARENT-067", "PARENT-072", "PARENT-082", "PARENT-085",
+    "PARENT-086", "PARENT-092", "PARENT-094", "PARENT-059",
+    "PARENT-099", "PARENT-109", "PARENT-111",
 }
 assert len(identity_review) == 1
 assert identity_review[0]["case_id"] == "IDENTITY-BEAN-VINE"
 assert identity_review[0]["status"] == "pending"
 assert summary["safety"] == {
-    "semantic_decisions_applied": 35,
-    "identifiers_minted": 26,
-    "hierarchy_changes_applied": 167,
+    "semantic_decisions_applied": 90,
+    "identifiers_minted": 72,
+    "hierarchy_changes_applied": 315,
 }
 assert "AOM_000230" not in {row["child_id"] for row in gaps}
 assert "AOM_000230" in {row["subject_id"] for row in relations}
