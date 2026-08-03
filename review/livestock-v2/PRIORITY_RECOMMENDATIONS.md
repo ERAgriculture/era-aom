@@ -1,9 +1,8 @@
 # AOM Livestock v2 priority recommendations
 
 Evidence brief for two identity blockers and six high-impact missing-parent
-cases. Both identity blockers plus `PARENT-006`, `PARENT-007`, and `PARENT-036`
-were approved on 2026-08-03 and applied through normalized governance overlays.
-Remaining recommendations stay proposals.
+cases. All eight priority cases were approved on 2026-08-03 and applied through
+normalized governance overlays.
 
 ## Recommended decisions
 
@@ -142,9 +141,10 @@ taxon from processed feed material.
 Same modeling issue as Maize: 12 derivative materials currently need grouping,
 while `AOM_001582` represents Soybean under Crop Product/Legume Products.
 
-Recommendation: mint `Soybean by-products`; relate to `AOM_001582` without
-identity. Confidence medium because child set mixes cake, dried material,
-residue, straw, and other processing states needing curator review.
+Approved decision: mint `AOM_100852`, `Soybean by-products`, broader
+`AOM_000615`; reparent 12 children and relate to `AOM_001582` without asserting
+identity. *Soybean Dried* and *Soybean Dried Fermented* remain queued for
+classification review.
 
 ### `PARENT-200` — Grazing management
 
@@ -153,7 +153,9 @@ and related controls. FAO describes grazing management through livestock kind,
 class, stocking rate, season, and intensity.
 [FAO grazing management](https://www.fao.org/4/X9137E/x9137e06.htm).
 
-Recommendation: mint `Grazing management`, broader Livestock Management.
+Approved decision: mint `AOM_100853`, `Grazing management`, broader
+`AOM_000107` Livestock Management, and reparent 10 children. Eight quantitative
+children remain queued for schema remodeling.
 
 ### `PARENT-227` — Management-activity variable cost
 
@@ -163,9 +165,9 @@ soil preparation, planting, inputs, labour, harvesting, and commercialization
 within variable-cost accounting.
 [FAO variable-cost example](https://www.fao.org/4/al309e/al309e.pdf).
 
-Recommendation: mint `Management-activity variable cost`, broader Economics.
-Label avoids ambiguous generic `Management Activities` and states children
-measure costs, not activities themselves.
+Approved decision: mint `AOM_100854`, `Management activity variable cost`,
+broader existing `AOM_003110` Variable Cost, and reparent 12 children. This
+avoids reproducing broken legacy path or minting duplicate Variable Cost node.
 
 ## Approval gate
 
