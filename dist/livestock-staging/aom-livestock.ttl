@@ -5366,6 +5366,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Cob"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12875> .
 
@@ -5387,6 +5388,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Offal"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12280> .
 
@@ -5397,6 +5399,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Straw"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12873> .
@@ -11201,6 +11204,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Gluten"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12288> .
 
@@ -11225,6 +11229,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Germ"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12286> .
 
@@ -11249,6 +11254,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Sheath"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
 
@@ -11259,6 +11265,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Leaves"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/22237> .
 
@@ -11270,6 +11277,7 @@
   era:status "unknown" ;
   skos:altLabel "Corn Chaff"@en ;
   skos:altLabel "Maize Chaff"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
 
 <urn:era-aom:livestock:AOM_001300> a skos:Concept ;
@@ -12326,6 +12334,7 @@
   era:status "unknown" ;
   skos:altLabel "Nixtamalized Maize"@en ;
   skos:altLabel "Alkaline-treated Maize"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12290> .
 
@@ -13738,6 +13747,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Bran"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_d859f064> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12280> .
@@ -19956,6 +19966,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Steep Liquor"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
 
 <urn:era-aom:livestock:AOM_003323> a skos:Concept ;
@@ -21001,6 +21012,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Stover"@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12873> .
@@ -24415,3 +24427,12 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_100851> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_100851" ;
+  skos:prefLabel "Maize by-products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000594> ;
+  skos:related <urn:era-aom:livestock:AOM_000648> .

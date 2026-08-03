@@ -80,6 +80,7 @@ def main():
     deprecations = read_governance("approved_deprecations.csv")
     new_concepts = read_governance("approved_new_concepts.csv")
     id_registry = read_governance("livestock_id_registry.csv")
+    semantic_relations = read_governance("approved_semantic_relations.csv")
     resolution_by_row = {row["source_row"]: row for row in identity_resolutions}
     replacement_by_key = {
         (row["source_row"], row["source_column"]): row
@@ -356,6 +357,20 @@ def main():
         })
         concept_ids.add(concept_id)
 
+    for semantic_relation in semantic_relations:
+        if semantic_relation["relation_type"] not in {"related"}:
+            raise ValueError("Unsupported approved semantic relation type")
+        if not {
+            semantic_relation["subject_id"], semantic_relation["object_id"]
+        } <= concept_ids:
+            raise ValueError("Approved semantic relation references unknown concept")
+        relations.append({
+            "subject_id": semantic_relation["subject_id"],
+            "relation_type": semantic_relation["relation_type"],
+            "object_id": semantic_relation["object_id"],
+            "status": "reviewed",
+        })
+
     for deprecation in deprecations:
         deprecated_id = deprecation["deprecated_id"]
         replacement_id = deprecation["replacement_id"]
@@ -401,6 +416,10 @@ def main():
         row["subject_id"]: row["object_id"]
         for row in relations if row["relation_type"] == "replaced_by"
     }
+    related = defaultdict(list)
+    for row in relations:
+        if row["relation_type"] == "related":
+            related[row["subject_id"]].append(row["object_id"])
     concept_status = {
         row["concept_id"]: "deprecated" if row["status"] == "deprecated" else "unknown"
         for row in concepts
@@ -432,6 +451,11 @@ def main():
             item["skos:broader"] = {"@id": URI_PREFIX + broader[concept_id]}
         if concept_id in replaced_by:
             item["dcterms:isReplacedBy"] = {"@id": URI_PREFIX + replaced_by[concept_id]}
+        if related[concept_id]:
+            item["skos:related"] = [
+                {"@id": URI_PREFIX + target_id}
+                for target_id in sorted(set(related[concept_id]))
+            ]
         if mapped[concept_id]:
             item["skos:relatedMatch"] = [{"@id": x} for x in sorted(set(mapped[concept_id]))]
         graph.append(item)
@@ -469,6 +493,10 @@ def main():
             terms.append(f"skos:broader <{URI_PREFIX + broader[concept_id]}>")
         if concept_id in replaced_by:
             terms.append(f"dcterms:isReplacedBy <{URI_PREFIX + replaced_by[concept_id]}>")
+        terms += [
+            f"skos:related <{URI_PREFIX + target_id}>"
+            for target_id in sorted(set(related[concept_id]))
+        ]
         terms += [f"skos:relatedMatch <{x}>" for x in sorted(set(mapped[concept_id]))]
         ttl.append(f"<{URI_PREFIX + concept_id}> " + " ;\n  ".join(terms) + " .\n")
     (dist_dir / "aom-livestock.ttl").write_text("\n".join(ttl), encoding="utf-8")
@@ -523,6 +551,9 @@ aom:releasedIn a owl:ObjectProperty ; rdfs:range aom:Release .
             "replacement_relations": sum(
                 row["relation_type"] == "replaced_by" for row in relations
             ),
+            "semantic_relations": sum(
+                row["relation_type"] == "related" for row in relations
+            ),
             "hierarchy_gaps": len(gaps),
             "mapping_assertions": len(mappings),
             "approved_identity_resolutions": len(identity_resolutions),
@@ -530,6 +561,7 @@ aom:releasedIn a owl:ObjectProperty ; rdfs:range aom:Release .
             "approved_deprecations": len(deprecations),
             "approved_new_concepts": len(new_concepts),
             "registered_livestock_ids": len(id_registry),
+            "approved_semantic_relations": len(semantic_relations),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,
