@@ -13511,12 +13511,16 @@
       },
       "skos:notation": "AOM_000564",
       "skos:prefLabel": {
-        "@value": "Brewers Grain",
+        "@value": "Brewers grains, dehydrated",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:altLabel": [
+        {
+          "@value": "Brewers Grain",
+          "@language": "en"
+        },
         {
           "@value": "Brewers Grain Dried",
           "@language": "en"
@@ -13527,6 +13531,14 @@
         },
         {
           "@value": "Distillers Grains Dried",
+          "@language": "en"
+        },
+        {
+          "@value": "Brewers By-Product",
+          "@language": "en"
+        },
+        {
+          "@value": "Distillers Grains",
           "@language": "en"
         }
       ],
@@ -41758,7 +41770,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "Brewers By-Product",
@@ -41771,6 +41783,9 @@
       ],
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000564"
       },
       "skos:relatedMatch": [
         {

@@ -77,11 +77,15 @@ def main():
 
     identity_resolutions = read_governance("approved_identity_resolutions.csv")
     mapping_replacements = read_governance("approved_mapping_replacements.csv")
+    deprecations = read_governance("approved_deprecations.csv")
     resolution_by_row = {row["source_row"]: row for row in identity_resolutions}
     replacement_by_key = {
         (row["source_row"], row["source_column"]): row
         for row in mapping_replacements
     }
+    deprecation_by_id = {row["deprecated_id"]: row for row in deprecations}
+    retained_by_id = {row["replacement_id"]: row for row in deprecations}
+    resolved_path_ids = set(deprecation_by_id) | set(retained_by_id)
 
     raw_source = source.read_bytes()
     try:
@@ -119,6 +123,9 @@ def main():
         raise ValueError("Approved identity resolution references unknown source row")
     if not {key[0] for key in replacement_by_key} <= source_rows:
         raise ValueError("Approved mapping replacement references unknown source row")
+    source_ids = {row["AOM"] for row in records}
+    if not (set(deprecation_by_id) | set(retained_by_id)) <= source_ids:
+        raise ValueError("Approved deprecation references unknown concept ID")
 
     resolved_to_existing = {
         source_row for source_row, resolution in resolution_by_row.items()
@@ -148,7 +155,12 @@ def main():
             quarantine.append({
                 "source_row": row["_source_row"], "concept_id": row["AOM"],
                 "preferred_label": row["_label"], "derived_path": row["_path"],
-                "reason": reason, "disposition": "domain_review_required",
+                "reason": reason,
+                "disposition": (
+                    "resolved_deprecation"
+                    if reason == "duplicate_derived_path" and row["AOM"] in resolved_path_ids
+                    else "domain_review_required"
+                ),
             })
 
     eligible = [
@@ -173,17 +185,26 @@ def main():
     relations, gaps, mappings, properties, sources = [], [], [], [], []
     for row in eligible:
         concept_id = row["AOM"]
+        deprecation = deprecation_by_id.get(concept_id)
+        retained = retained_by_id.get(concept_id)
+        preferred_label = retained["preferred_label"] if retained else row["_label"]
         concepts.append({
             "concept_id": concept_id, "scheme_id": SCHEME_ID,
             "module": "aom-livestock", "concept_type": "legacy_aom_concept",
-            "notation": concept_id, "status": "staging",
+            "notation": concept_id, "status": "deprecated" if deprecation else "staging",
             "hierarchy_level": row["_level"], "derived_path": row["_path"],
             "source_row": row["_source_row"],
         })
         labels.append({
             "concept_id": concept_id, "language": "en", "label_type": "pref",
-            "label": row["_label"], "source_column": f"L{row['_level']}",
+            "label": preferred_label,
+            "source_column": "approved_deprecation" if retained else f"L{row['_level']}",
         })
+        if preferred_label.casefold() != row["_label"].casefold():
+            labels.append({
+                "concept_id": concept_id, "language": "en", "label_type": "alt",
+                "label": row["_label"], "source_column": f"L{row['_level']}",
+            })
         seen = set()
         for synonym in map(clean, row["Synonym"].split(";")):
             key = synonym.casefold()
@@ -250,6 +271,14 @@ def main():
             "source_row": row["_source_row"], "source_doi": DOI,
         })
 
+    for deprecation in deprecations:
+        relations.append({
+            "subject_id": deprecation["deprecated_id"],
+            "relation_type": "replaced_by",
+            "object_id": deprecation["replacement_id"],
+            "status": "reviewed",
+        })
+
     records_by_source = {row["_source_row"]: row for row in records}
     label_keys = {
         (row["concept_id"], row["language"], row["label"].casefold())
@@ -269,6 +298,21 @@ def main():
                     "concept_id": target_id, "language": "en",
                     "label_type": "alt", "label": alias,
                     "source_column": "approved_identity_resolution",
+                })
+
+    for deprecation in deprecations:
+        deprecated_id = deprecation["deprecated_id"]
+        replacement_id = deprecation["replacement_id"]
+        source = next(row for row in records if row["AOM"] == deprecated_id)
+        aliases = [source["_label"], *map(clean, source["Synonym"].split(";"))]
+        for alias in aliases:
+            key = (replacement_id, "en", alias.casefold())
+            if alias and key not in label_keys:
+                label_keys.add(key)
+                labels.append({
+                    "concept_id": replacement_id, "language": "en",
+                    "label_type": "alt", "label": alias,
+                    "source_column": "approved_deprecation",
                 })
 
     schemes = [{
@@ -293,7 +337,18 @@ def main():
         if row["label_type"] == "alt":
             alt[row["concept_id"]].append(row["label"])
     defs = {row["concept_id"]: row["definition"] for row in definitions}
-    broader = {row["subject_id"]: row["object_id"] for row in relations}
+    broader = {
+        row["subject_id"]: row["object_id"]
+        for row in relations if row["relation_type"] == "broader"
+    }
+    replaced_by = {
+        row["subject_id"]: row["object_id"]
+        for row in relations if row["relation_type"] == "replaced_by"
+    }
+    concept_status = {
+        row["concept_id"]: "deprecated" if row["status"] == "deprecated" else "unknown"
+        for row in concepts
+    }
     mapped = defaultdict(list)
     for row in mappings:
         if row["target_uri"]:
@@ -309,7 +364,8 @@ def main():
             "@id": URI_PREFIX + concept_id, "@type": "skos:Concept",
             "skos:inScheme": {"@id": SCHEME_URI}, "skos:notation": concept_id,
             "skos:prefLabel": {"@value": pref[concept_id], "@language": "en"},
-            "era:conceptType": "legacy_aom_concept", "era:status": "unknown",
+            "era:conceptType": "legacy_aom_concept",
+            "era:status": concept_status[concept_id],
         }
         if alt[concept_id]:
             item["skos:altLabel"] = [{"@value": x, "@language": "en"} for x in alt[concept_id]]
@@ -317,6 +373,8 @@ def main():
             item["skos:definition"] = {"@value": defs[concept_id], "@language": "en"}
         if concept_id in broader:
             item["skos:broader"] = {"@id": URI_PREFIX + broader[concept_id]}
+        if concept_id in replaced_by:
+            item["dcterms:isReplacedBy"] = {"@id": URI_PREFIX + replaced_by[concept_id]}
         if mapped[concept_id]:
             item["skos:relatedMatch"] = [{"@id": x} for x in sorted(set(mapped[concept_id]))]
         graph.append(item)
@@ -344,13 +402,16 @@ def main():
             "a skos:Concept", f"skos:inScheme <{SCHEME_URI}>",
             f"skos:notation {json.dumps(concept_id)}",
             f"skos:prefLabel {json.dumps(pref[concept_id], ensure_ascii=False)}@en",
-            'era:conceptType "legacy_aom_concept"', 'era:status "unknown"',
+            'era:conceptType "legacy_aom_concept"',
+            f'era:status {json.dumps(concept_status[concept_id])}',
         ]
         terms += [f"skos:altLabel {json.dumps(x, ensure_ascii=False)}@en" for x in alt[concept_id]]
         if concept_id in defs:
             terms.append(f"skos:definition {json.dumps(defs[concept_id], ensure_ascii=False)}@en")
         if concept_id in broader:
             terms.append(f"skos:broader <{URI_PREFIX + broader[concept_id]}>")
+        if concept_id in replaced_by:
+            terms.append(f"dcterms:isReplacedBy <{URI_PREFIX + replaced_by[concept_id]}>")
         terms += [f"skos:relatedMatch <{x}>" for x in sorted(set(mapped[concept_id]))]
         ttl.append(f"<{URI_PREFIX + concept_id}> " + " ;\n  ".join(terms) + " .\n")
     (dist_dir / "aom-livestock.ttl").write_text("\n".join(ttl), encoding="utf-8")
@@ -362,7 +423,7 @@ def main():
     } for row in concepts]
     edges = [{
         "source": row["subject_id"], "target": row["object_id"],
-        "edge_type": "broader", "status": row["status"],
+        "edge_type": row["relation_type"], "status": row["status"],
     } for row in relations]
     write_csv(dist_dir / "nodes.csv", list(nodes[0]), nodes)
     write_csv(dist_dir / "edges.csv", list(edges[0]), edges)
@@ -399,10 +460,17 @@ aom:releasedIn a owl:ObjectProperty ; rdfs:range aom:Release .
             "excluded_duplicate_id_records": len(unresolved_duplicate_rows),
             "resolved_to_existing_records": len(resolved_to_existing),
             "quarantine_assertions": len(quarantine),
-            "hierarchy_relations": len(relations), "hierarchy_gaps": len(gaps),
+            "hierarchy_relations": sum(
+                row["relation_type"] == "broader" for row in relations
+            ),
+            "replacement_relations": sum(
+                row["relation_type"] == "replaced_by" for row in relations
+            ),
+            "hierarchy_gaps": len(gaps),
             "mapping_assertions": len(mappings),
             "approved_identity_resolutions": len(identity_resolutions),
             "approved_mapping_replacements": len(mapping_replacements),
+            "approved_deprecations": len(deprecations),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,

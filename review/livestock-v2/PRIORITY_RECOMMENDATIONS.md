@@ -1,8 +1,8 @@
 # AOM Livestock v2 priority recommendations
 
 Evidence brief for two identity blockers and six high-impact missing-parent
-cases. `ID-AOM-006275` was approved on 2026-08-03 and applied through normalized
-governance overlays. Remaining recommendations stay proposals.
+cases. Both identity blockers were approved on 2026-08-03 and applied through
+normalized governance overlays. Remaining recommendations stay proposals.
 
 ## Recommended decisions
 
@@ -86,11 +86,11 @@ represents dehydrated brewers grains. Feedipedia separately models
 [ensiled](https://www.feedipedia.org/node/11894), and
 [fresh](https://www.feedipedia.org/node/11895) forms.
 
-Recommendation: merge duplicate records. Provisionally retain `AOM_000564`
+Approved decision: merge duplicate records. Retain `AOM_000564`
 because structural audit found two downstream references versus one for
 `AOM_001884`. Deprecate `AOM_001884` with replacement link. Preferred label
-should become `Brewers grains, dehydrated` if Feedipedia mapping remains
-intended; otherwise remove overly specific mapping and retain broader label.
+becomes `Brewers grains, dehydrated`; both legacy synonym sets remain attached
+to retained concept.
 
 ## High-impact missing parents
 

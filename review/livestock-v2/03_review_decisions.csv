@@ -1,6 +1,6 @@
 case_id,case_type,priority,review_question,decision,approved_id,reviewer,review_date,evidence,rationale
 ID-AOM-006275,duplicate_concept_id,blocker,"Assign retained ID, replacement ID, and explicit crosswalk.",retain_and_map_existing,AOM_006275,Pete Steward,2026-08-03,review/livestock-v2/PRIORITY_RECOMMENDATIONS.md,Retain AOM_006275 for Panicum antidotale Dried; map legacy row 1052 to existing AOM_001676 Megathyrsus maximus Dried; correct species mappings.
-PATH-BREWERS-GRAIN,duplicate_derived_path,blocker,"Decide identity, distinction, merge, or deprecation.",,,,,,
+PATH-BREWERS-GRAIN,duplicate_derived_path,blocker,"Decide identity, distinction, merge, or deprecation.",deprecate_with_replacement,AOM_000564,Pete Steward,2026-08-03,review/livestock-v2/PRIORITY_RECOMMENDATIONS.md,"Same label, hierarchy path, and Feedipedia 11893 target; no distinguishing definition; AOM_000564 has more downstream references."
 PARENT-001,missing_explicit_parent,normal,"Mint explicit intermediate concept, map to existing concept, reparent children, or reject hierarchy?",,,,,,
 PARENT-002,missing_explicit_parent,normal,"Mint explicit intermediate concept, map to existing concept, reparent children, or reject hierarchy?",,,,,,
 PARENT-003,missing_explicit_parent,normal,"Mint explicit intermediate concept, map to existing concept, reparent children, or reject hierarchy?",,,,,,

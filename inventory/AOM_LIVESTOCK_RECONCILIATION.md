@@ -77,8 +77,10 @@ Two IDs identify the same path/edge *Brewers Grain*:
 - `AOM_000564`;
 - `AOM_001884`.
 
-Domain review must decide exact identity, replacement/deprecation, or justified
-distinction. No automatic merge.
+Review approved `AOM_000564` as retained concept and `AOM_001884` as deprecated
+with explicit replacement link. Retained preferred label is `Brewers grains,
+dehydrated`; legacy labels remain synonyms. Decision is encoded as normalized
+governance overlay without changing published-v2 source evidence.
 
 ## Related workbook assets
 
