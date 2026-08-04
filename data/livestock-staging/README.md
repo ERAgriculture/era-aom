@@ -9,6 +9,8 @@ row-level identity decisions live in `approved_identity_resolutions.csv`;
 reviewed mapping corrections live in `approved_mapping_replacements.csv`.
 Approved identifier deprecations and replacement links live in
 `approved_deprecations.csv`.
+Approved preferred-label corrections live in `approved_label_corrections.csv`;
+legacy preferred labels remain published as `skos:altLabel` values.
 Approved minted concepts live in `approved_new_concepts.csv`; allocations live
 in append-only `livestock_id_registry.csv`. See [`../../IDENTIFIERS.md`](../../IDENTIFIERS.md).
 Approved non-hierarchical concept links live in

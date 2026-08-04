@@ -409,10 +409,15 @@ Approved cereal by-product batch evidence:
 Approved legume by-product batch evidence:
 [`LEGUME_BYPRODUCT_RECOMMENDATIONS.md`](LEGUME_BYPRODUCT_RECOMMENDATIONS.md).
 
+Approved controlled-term and identity corrections:
+[`CONTROLLED_TERM_CORRECTIONS.md`](CONTROLLED_TERM_CORRECTIONS.md).
+
 Deferred concept-to-schema remodeling candidates:
 `schema_remodeling_candidates.csv`.
 
-Pending identity investigations: `identity_review_candidates.csv`.
+Identity investigations and dispositions: `identity_review_candidates.csv`.
+
+Pending weak or undocumented terms: `terminology_review_candidates.csv`.
 
 ## Missing-parent batches
 

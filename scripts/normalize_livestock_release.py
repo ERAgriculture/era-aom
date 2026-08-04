@@ -78,6 +78,7 @@ def main():
     identity_resolutions = read_governance("approved_identity_resolutions.csv")
     mapping_replacements = read_governance("approved_mapping_replacements.csv")
     deprecations = read_governance("approved_deprecations.csv")
+    label_corrections = read_governance("approved_label_corrections.csv")
     new_concepts = read_governance("approved_new_concepts.csv")
     id_registry = read_governance("livestock_id_registry.csv")
     semantic_relations = read_governance("approved_semantic_relations.csv")
@@ -89,6 +90,9 @@ def main():
     }
     deprecation_by_id = {row["deprecated_id"]: row for row in deprecations}
     retained_by_id = {row["replacement_id"]: row for row in deprecations}
+    label_correction_by_id = {
+        row["concept_id"]: row for row in label_corrections
+    }
     resolved_path_ids = set(deprecation_by_id) | set(retained_by_id)
 
     raw_source = source.read_bytes()
@@ -130,6 +134,10 @@ def main():
     source_ids = {row["AOM"] for row in records}
     if not (set(deprecation_by_id) | set(retained_by_id)) <= source_ids:
         raise ValueError("Approved deprecation references unknown concept ID")
+    if len(label_correction_by_id) != len(label_corrections):
+        raise ValueError("Approved label corrections must have unique concept IDs")
+    if not set(label_correction_by_id) <= source_ids:
+        raise ValueError("Approved label correction references unknown concept ID")
     registered_ids = {row["concept_id"] for row in id_registry}
     new_ids = {row["concept_id"] for row in new_concepts}
     if len(new_ids) != len(new_concepts) or not new_ids <= registered_ids:
@@ -197,7 +205,14 @@ def main():
         concept_id = row["AOM"]
         deprecation = deprecation_by_id.get(concept_id)
         retained = retained_by_id.get(concept_id)
-        preferred_label = retained["preferred_label"] if retained else row["_label"]
+        label_correction = label_correction_by_id.get(concept_id)
+        if label_correction and label_correction["old_label"] != row["_label"]:
+            raise ValueError(f"Label correction source mismatch for {concept_id}")
+        preferred_label = (
+            retained["preferred_label"] if retained else
+            label_correction["new_label"] if label_correction else
+            row["_label"]
+        )
         concepts.append({
             "concept_id": concept_id, "scheme_id": SCHEME_ID,
             "module": "aom-livestock", "concept_type": "legacy_aom_concept",
@@ -208,7 +223,11 @@ def main():
         labels.append({
             "concept_id": concept_id, "language": "en", "label_type": "pref",
             "label": preferred_label,
-            "source_column": "approved_deprecation" if retained else f"L{row['_level']}",
+            "source_column": (
+                "approved_deprecation" if retained else
+                "approved_label_correction" if label_correction else
+                f"L{row['_level']}"
+            ),
         })
         if preferred_label.casefold() != row["_label"].casefold():
             labels.append({
@@ -577,6 +596,7 @@ aom:releasedIn a owl:ObjectProperty ; rdfs:range aom:Release .
             "approved_identity_resolutions": len(identity_resolutions),
             "approved_mapping_replacements": len(mapping_replacements),
             "approved_deprecations": len(deprecations),
+            "approved_label_corrections": len(label_corrections),
             "approved_new_concepts": len(new_concepts),
             "registered_livestock_ids": len(id_registry),
             "approved_semantic_relations": len(semantic_relations),
