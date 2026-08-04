@@ -88,3 +88,5 @@ All notable vocabulary changes will be recorded here.
   contract to 125 biological mappings and add reusable guarded promotion tool.
 - Add final all-remainder taxon review: 146 labels classified into 91
   live-validated mapping candidates and 55 explicit holds.
+- Govern all 146 final source-taxon decisions: approve 91 NCBI mappings and
+  preserve 55 ambiguous/contextual labels as explicit null-target holds.

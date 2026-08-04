@@ -28,7 +28,13 @@ def main():
     with TARGET.open(encoding="utf-8", newline="") as handle:
         approved = list(csv.DictReader(handle))
     assert batch and all(row["status"] == "proposed-for-review" for row in batch)
-    assert all(row["proposed_ncbi_taxon_id"] and row["accepted_name"] for row in batch)
+    assert all(
+        (not row["decision_action"].startswith("hold_")
+         and row["proposed_ncbi_taxon_id"] and row["accepted_name"])
+        or (row["decision_action"].startswith("hold_")
+            and not row["proposed_ncbi_taxon_id"] and not row["accepted_name"])
+        for row in batch
+    )
     existing = {
         (row["target_property"], row["source_value"].strip().casefold())
         for row in approved
@@ -39,12 +45,16 @@ def main():
         if key in existing:
             raise SystemExit(f"Already governed: {row['source_name']}")
         existing.add(key)
+        mapped = bool(row["proposed_ncbi_taxon_id"])
         promoted.append({
             "target_property": "aom:sourceTaxon",
             "source_value": row["source_name"],
-            "binding_action": "map_to_external",
+            "binding_action": "map_to_external" if mapped else "hold_ambiguous",
             "target_concept_id": "",
-            "target_uri": "http://purl.obolibrary.org/obo/" + row["proposed_ncbi_taxon_id"],
+            "target_uri": (
+                "http://purl.obolibrary.org/obo/" + row["proposed_ncbi_taxon_id"]
+                if mapped else ""
+            ),
             "target_label": row["accepted_name"],
             "value_class": "owl:Class",
             "status": "approved",
