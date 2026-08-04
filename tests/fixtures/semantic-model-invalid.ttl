@@ -1,0 +1,8 @@
+@prefix aom: <urn:era-aom:schema:> .
+@prefix ex: <urn:era-aom:test:> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+
+ex:badObservation a aom:QuantitativeObservation ;
+  sosa:observedProperty "target sward height" ;
+  sosa:hasResult [ a qudt:QuantityValue ; qudt:numericValue "fifteen" ] .

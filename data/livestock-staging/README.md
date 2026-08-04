@@ -18,6 +18,8 @@ Approved non-hierarchical concept links live in
 Approved hierarchy flattening and direct reparenting decisions live in
 `approved_reparentings.csv`.
 Generator applies these governance overlays without rewriting source evidence.
+OWL domain semantics and SHACL constraints live under `schemas/`; remodeling
+dispositions are staged separately from this backward-compatible SKOS release.
 Unresolved duplicate identifiers remain excluded and recorded in
 `quarantine.csv`. Duplicate paths remain visible for review.
 

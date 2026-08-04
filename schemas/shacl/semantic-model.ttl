@@ -1,0 +1,58 @@
+@prefix aom: <urn:era-aom:schema:> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aom:FeedMaterialShape a sh:NodeShape ;
+  sh:targetClass aom:FeedMaterial ;
+  sh:property [
+    sh:path aom:ingredientName ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string
+  ] ;
+  sh:property [ sh:path aom:sourceTaxon ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:ingredientPart ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:processingMethod ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:productRole ; sh:class aom:ProductRole ] .
+
+aom:IngredientComponentShape a sh:NodeShape ;
+  sh:targetClass aom:IngredientComponent ;
+  sh:property [
+    sh:path aom:ingredientMaterial ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:class aom:FeedMaterial
+  ] ;
+  sh:property [
+    sh:path aom:ingredientProportion ;
+    sh:maxCount 1 ;
+    sh:class qudt:QuantityValue ;
+    sh:node aom:QuantityValueShape
+  ] .
+
+aom:QuantitativeObservationShape a sh:NodeShape ;
+  sh:targetClass aom:QuantitativeObservation ;
+  sh:property [
+    sh:path sosa:observedProperty ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:nodeKind sh:IRI
+  ] ;
+  sh:property [
+    sh:path sosa:hasResult ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:class qudt:QuantityValue ;
+    sh:node aom:QuantityValueShape
+  ] .
+
+aom:QuantityValueShape a sh:NodeShape ;
+  sh:class qudt:QuantityValue ;
+  sh:property [
+    sh:path qudt:numericValue ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:datatype xsd:decimal
+  ] ;
+  sh:property [
+    sh:path qudt:unit ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:nodeKind sh:IRI
+  ] .

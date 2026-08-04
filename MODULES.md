@@ -13,7 +13,7 @@ domain review.
 
 | Module | Scope | Current state |
 |---|---|---|
-| `aom-core` | cross-domain study, intervention, observation, unit, provenance, and context concepts | design deferred until crop/livestock comparison |
+| `aom-core` | cross-domain study, intervention, observation, unit, provenance, and context semantics | layered semantic model accepted; staged migration pending |
 | `aom-crop` | ERA practices, outcomes, crop products, inputs, sites, and field model | `prac` + `out` normalization pilot |
 | `aom-livestock` | diets, feed ingredients, animals, physiology, husbandry practices, livestock outcomes | v2 release inventoried; normalized review staging generated |
 | `mappings` | reviewed links among modules and external resources | model placeholders now; mapping work later |
@@ -54,8 +54,11 @@ Reconciliation report:
 
 ## Next analysis
 
-1. Resolve duplicate identity/path cases through domain review.
-2. Review missing explicit hierarchy parents and mint/map only after approval.
-3. Review legacy mapping assertions.
+1. Apply semantic-model phase 2 to pipeline records and dual-publish legacy fields.
+2. Review legacy mapping assertions.
+3. Resolve evidence-dependent feed-material and reproductive classifications.
 4. Identify true shared concepts across crop and livestock.
-5. Propose `aom-core`; do not create it from naming similarity alone.
+5. Promote only demonstrated cross-domain semantics into `aom-core`.
+
+Semantic layering decision:
+[`docs/decisions/0001-semantic-model-layers.md`](docs/decisions/0001-semantic-model-layers.md).
