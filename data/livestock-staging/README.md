@@ -17,6 +17,10 @@ Approved non-hierarchical concept links live in
 `approved_semantic_relations.csv`.
 Approved hierarchy flattening and direct reparenting decisions live in
 `approved_reparentings.csv`.
+Approved phase-2 data-model migration bindings live in
+`approved_semantic_bindings.csv`. These preserve legacy identifiers while
+specifying normalized properties, observation patterns, quantity kinds, unit
+requirements, and consumer-cutover policy.
 Generator applies these governance overlays without rewriting source evidence.
 OWL domain semantics and SHACL constraints live under `schemas/`; remodeling
 dispositions are staged separately from this backward-compatible SKOS release.

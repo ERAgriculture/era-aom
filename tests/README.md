@@ -16,4 +16,5 @@ round-trip tests will be added with normalized pilot data.
 - `validate_priority_recommendations.py`: pins eight evidence-backed priority
   proposals and validates signed approvals.
 - `validate_semantic_model.py`: parses OWL/SHACL, checks complete disposition
-  coverage, and proves valid/invalid semantic-model fixtures behave correctly.
+  and phase-2 binding coverage, validates RDF/JSON-LD equivalence, and proves
+  valid/invalid semantic-model fixtures behave correctly.

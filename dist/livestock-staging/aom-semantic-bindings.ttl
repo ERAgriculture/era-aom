@@ -1,0 +1,158 @@
+@prefix aom: <urn:era-aom:schema:> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:era-aom:binding:AOM_000531> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000531> ;
+  aom:bindingKind "property" ;
+  aom:targetClass <urn:era-aom:schema:FeedMaterial> ;
+  aom:targetProperty <urn:era-aom:schema:ingredientName> ;
+  aom:unitRequirement "not_applicable" ;
+  aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://www.w3.org/2001/XMLSchema#string> .
+
+<urn:era-aom:binding:AOM_000532> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000532> ;
+  aom:bindingKind "property" ;
+  aom:targetClass <urn:era-aom:schema:FeedMaterial> ;
+  aom:targetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:unitRequirement "not_applicable" ;
+  aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<urn:era-aom:binding:AOM_000533> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000533> ;
+  aom:bindingKind "property" ;
+  aom:targetClass <urn:era-aom:schema:FeedMaterial> ;
+  aom:targetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:unitRequirement "not_applicable" ;
+  aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+  aom:bindingStatus "approved" .
+
+<urn:era-aom:binding:AOM_000534> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000534> ;
+  aom:bindingKind "quantified_component" ;
+  aom:targetClass <urn:era-aom:schema:IngredientComponent> ;
+  aom:targetProperty <urn:era-aom:schema:ingredientProportion> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/Dimensionless> .
+
+<urn:era-aom:binding:AOM_000535> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000535> ;
+  aom:bindingKind "property" ;
+  aom:targetClass <urn:era-aom:schema:FeedMaterial> ;
+  aom:targetProperty <urn:era-aom:schema:ingredientSource> ;
+  aom:unitRequirement "not_applicable" ;
+  aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+  aom:bindingStatus "approved" .
+
+<urn:era-aom:binding:AOM_000944> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000944> ;
+  aom:bindingKind "observable_property" ;
+  aom:targetClass <urn:era-aom:schema:QuantitativeObservation> ;
+  aom:targetProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+
+<urn:era-aom:livestock:AOM_000944> a skos:Concept, sosa:ObservableProperty .
+
+<urn:era-aom:binding:AOM_000945> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000945> ;
+  aom:bindingKind "observable_property" ;
+  aom:targetClass <urn:era-aom:schema:QuantitativeObservation> ;
+  aom:targetProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/Length> .
+
+<urn:era-aom:livestock:AOM_000945> a skos:Concept, sosa:ObservableProperty .
+
+<urn:era-aom:binding:AOM_000946> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000946> ;
+  aom:bindingKind "observable_property" ;
+  aom:targetClass <urn:era-aom:schema:QuantitativeObservation> ;
+  aom:targetProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/Length> .
+
+<urn:era-aom:livestock:AOM_000946> a skos:Concept, sosa:ObservableProperty .
+
+<urn:era-aom:binding:AOM_000947> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000947> ;
+  aom:bindingKind "observable_property" ;
+  aom:targetClass <urn:era-aom:schema:QuantitativeObservation> ;
+  aom:targetProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/Area> .
+
+<urn:era-aom:livestock:AOM_000947> a skos:Concept, sosa:ObservableProperty .
+
+<urn:era-aom:binding:AOM_000948> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000948> ;
+  aom:bindingKind "observable_property" ;
+  aom:targetClass <urn:era-aom:schema:QuantitativeObservation> ;
+  aom:targetProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/Area> .
+
+<urn:era-aom:livestock:AOM_000948> a skos:Concept, sosa:ObservableProperty .
+
+<urn:era-aom:binding:AOM_000950> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000950> ;
+  aom:bindingKind "observable_property" ;
+  aom:targetClass <urn:era-aom:schema:QuantitativeObservation> ;
+  aom:targetProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/Time> .
+
+<urn:era-aom:livestock:AOM_000950> a skos:Concept, sosa:ObservableProperty .
+
+<urn:era-aom:binding:AOM_000951> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000951> ;
+  aom:bindingKind "observable_property" ;
+  aom:targetClass <urn:era-aom:schema:QuantitativeObservation> ;
+  aom:targetProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/Time> .
+
+<urn:era-aom:livestock:AOM_000951> a skos:Concept, sosa:ObservableProperty .
+
+<urn:era-aom:binding:AOM_000954> a aom:SemanticBinding ;
+  aom:legacyConcept <urn:era-aom:livestock:AOM_000954> ;
+  aom:bindingKind "observable_property" ;
+  aom:targetClass <urn:era-aom:schema:QuantitativeObservation> ;
+  aom:targetProperty <http://www.w3.org/ns/sosa/observedProperty> ;
+  aom:unitRequirement "required" ;
+  aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+  aom:bindingStatus "approved" ;
+  aom:valueClass <http://qudt.org/schema/qudt/QuantityValue> ;
+  aom:quantityKind <http://qudt.org/vocab/quantitykind/Count> .
+
+<urn:era-aom:livestock:AOM_000954> a skos:Concept, sosa:ObservableProperty .

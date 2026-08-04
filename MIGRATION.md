@@ -18,6 +18,10 @@ transition.
 8. Validate clean-build reproducibility and consumer parity.
 9. Obtain canonical-cutover approval.
 
+Phase-2 livestock structural contract is defined in
+[`docs/decisions/0002-phase-2-structural-migration-contract.md`](docs/decisions/0002-phase-2-structural-migration-contract.md).
+It does not itself authorize canonical cutover or concept deprecation.
+
 ## Cutover rule
 
 Pilot approval proves architecture only. Canonical cutover requires approved

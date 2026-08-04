@@ -1,5 +1,6 @@
 @prefix aom: <urn:era-aom:schema:> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -56,3 +57,17 @@ aom:QuantityValueShape a sh:NodeShape ;
     sh:minCount 1 ; sh:maxCount 1 ;
     sh:nodeKind sh:IRI
   ] .
+
+aom:SemanticBindingShape a sh:NodeShape ;
+  sh:targetClass aom:SemanticBinding ;
+  sh:closed true ;
+  sh:ignoredProperties ( rdf:type ) ;
+  sh:property [ sh:path aom:legacyConcept ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:bindingKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "property" "quantified_component" "observable_property" ) ] ;
+  sh:property [ sh:path aom:targetClass ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:targetProperty ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:valueClass ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:quantityKind ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:unitRequirement ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "required" "not_applicable" ) ] ;
+  sh:property [ sh:path aom:compatibilityPolicy ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path aom:bindingStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "approved" ) ] .
