@@ -27,3 +27,5 @@ large review pass, with explicit rank, synonym, spelling, and collision policy.
 
 `taxon_mapping_candidates_final.csv` classifies all 146 remaining labels: 91
 live-validated mapping proposals and 55 conservative unresolved/context holds.
+ADR 0010 governs every result: candidates become external bindings and holds
+remain explicit null-target decisions pending source correction or expert review.

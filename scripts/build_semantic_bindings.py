@@ -35,7 +35,7 @@ with VALUE_SOURCE.open(encoding="utf-8", newline="") as handle:
 
 assert len(rows) == 13
 assert len({row["legacy_concept_id"] for row in rows}) == 13
-assert len(value_rows) == 129
+assert len(value_rows) == 275
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
