@@ -167,6 +167,30 @@ assert actions_4 == {
 }
 assert sum(row["rank"] == "genus" for row in taxon_batch_4) == 8
 assert sum(row["rank"] == "subspecies" for row in taxon_batch_4) == 2
+
+with (FACET_REVIEW / "taxon_mapping_candidates_final.csv").open(encoding="utf-8", newline="") as h:
+    taxon_final = list(csv.DictReader(h))
+assert len(taxon_final) == 146
+assert len({row["source_name"] for row in taxon_final}) == 146
+assert all(row["status"] == "proposed-for-review" and not row["reviewer"] and not row["review_date"] for row in taxon_final)
+final_mapped = [row for row in taxon_final if row["proposed_ncbi_taxon_id"]]
+final_held = [row for row in taxon_final if not row["proposed_ncbi_taxon_id"]]
+assert len(final_mapped) == 91 and len(final_held) == 55
+assert all(row["accepted_name"] and row["rank"] and row["evidence"] for row in final_mapped)
+assert all(row["evidence"].endswith(row["proposed_ncbi_taxon_id"].removeprefix("NCBITaxon_")) for row in final_mapped)
+assert all(row["decision_action"].startswith("hold_") and not row["accepted_name"] for row in final_held)
+final_actions = {action: sum(row["decision_action"] == action for row in taxon_final) for action in {
+    "accept_existing", "accept_as_synonym", "replace_incorrect",
+    "map_unspecified_species_to_genus", "hold_unresolved", "hold_contextual",
+}}
+assert final_actions == {
+    "accept_existing": 75,
+    "accept_as_synonym": 6,
+    "replace_incorrect": 4,
+    "map_unspecified_species_to_genus": 6,
+    "hold_unresolved": 50,
+    "hold_contextual": 5,
+}
 ingredient_source_bindings = [row for row in value_bindings if row["target_property"] == "aom:ingredientSource"]
 taxon_value_bindings = [row for row in value_bindings if row["target_property"] == "aom:sourceTaxon"]
 assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in ingredient_source_bindings] == [
