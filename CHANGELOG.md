@@ -74,3 +74,5 @@ All notable vocabulary changes will be recorded here.
   genus/family ranks and Pennisetum-to-Cenchrus synonym handling; keep WFO held.
 - Add second taxon review batch: flag incorrect Brassica-to-Arecaceae mapping,
   record synonym/rank cases, and hold a chemical string misfiled as taxonomy.
+- Approve second source-taxon batch: add 14 NCBI bindings, replace incorrect
+  Brassica identifier, and govern known non-taxa with `hold_non_taxon`.
