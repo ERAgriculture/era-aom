@@ -103,6 +103,8 @@ assert all(row["ncbi_uri"].endswith(row["ncbi_taxon_id"]) for row in taxon_candi
 assert {row["rank"] for row in taxon_candidates} == {"species", "genus", "family"}
 renamed = next(row for row in taxon_candidates if row["source_name"] == "Pennisetum purpureum")
 assert renamed["accepted_name"] == "Cenchrus purpureus" and renamed["ncbi_taxon_id"] == "NCBITaxon_154765"
+guizotia = next(row for row in taxon_candidates if row["source_name"] == "Guizotia abyssinica")
+assert guizotia["ncbi_taxon_id"] == "NCBITaxon_4230"
 
 with (FACET_REVIEW / "taxon_mapping_candidates_batch_2.csv").open(encoding="utf-8", newline="") as h:
     taxon_batch_2 = list(csv.DictReader(h))
@@ -119,6 +121,9 @@ assert {name: row["accepted_name"] for name, row in synonyms.items()} == {
     "Panicum maximum": "Megathyrsus maximus",
 }
 assert all(row["legacy_ncbi_taxon_id"] == row["proposed_ncbi_taxon_id"] for row in synonyms.values())
+brevoortia = next(row for row in taxon_batch_2 if row["source_name"] == "Brevoortia")
+assert brevoortia["legacy_ncbi_taxon_id"] == "NCBITaxon_55119"
+assert brevoortia["proposed_ncbi_taxon_id"] == "NCBITaxon_224706"
 non_taxon = next(row for row in taxon_batch_2 if row["source_name"] == "sodium carboxymethyl cellulose")
 assert non_taxon["decision_action"] == "hold_non_taxon" and not non_taxon["proposed_ncbi_taxon_id"].strip()
 
@@ -165,6 +170,15 @@ corrected_targets = {
 assert corrected_targets == {
     "Psophocarpus tetragonolobus": "NCBITaxon_3891",
     "Theba pisana": "NCBITaxon_145622",
+}
+integrity_targets = {
+    row["source_value"]: row["target_uri"].removeprefix("http://purl.obolibrary.org/obo/")
+    for row in taxon_value_bindings
+    if row["source_value"] in {"Brevoortia", "Guizotia abyssinica"}
+}
+assert integrity_targets == {
+    "Brevoortia": "NCBITaxon_224706",
+    "Guizotia abyssinica": "NCBITaxon_4230",
 }
 assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in value_bindings)
 

@@ -80,3 +80,5 @@ All notable vocabulary changes will be recorded here.
   expose wrong legacy targets for Theba pisana and winged bean.
 - Approve third source-taxon batch: add 21 NCBI bindings, including corrected
   identifiers for Theba pisana and Psophocarpus tetragonolobus.
+- Correct approved Guizotia and Brevoortia NCBI collisions; add pinned snapshot
+  plus repeatable offline/live integrity validation for all 45 taxon mappings.
