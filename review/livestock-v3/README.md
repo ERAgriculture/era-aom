@@ -29,3 +29,6 @@ large review pass, with explicit rank, synonym, spelling, and collision policy.
 live-validated mapping proposals and 55 conservative unresolved/context holds.
 ADR 0010 governs every result: candidates become external bindings and holds
 remain explicit null-target decisions pending source correction or expert review.
+
+`taxon_mapping_candidates_addendum.csv` governs 23 labels found by older-release
+pipeline audit: 22 NCBI bindings and one conservative hold. See ADR 0011.
