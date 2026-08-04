@@ -78,3 +78,5 @@ All notable vocabulary changes will be recorded here.
   Brassica identifier, and govern known non-taxa with `hold_non_taxon`.
 - Add third taxon review batch with 21 live-NCBI-verified species candidates;
   expose wrong legacy targets for Theba pisana and winged bean.
+- Approve third source-taxon batch: add 21 NCBI bindings, including corrected
+  identifiers for Theba pisana and Psophocarpus tetragonolobus.
