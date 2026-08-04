@@ -68,3 +68,5 @@ All notable vocabulary changes will be recorded here.
 - Add review-only facet proposals for 83 legacy ingredient-component labels;
   classify atomic, composite, and unresolved cases without source counts,
   automatic mappings, or concept minting.
+- Add first ten-taxon NCBI review batch, preserving rank and synonym evidence
+  while holding WFO and material-to-taxon assertions for expert approval.

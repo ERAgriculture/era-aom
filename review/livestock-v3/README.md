@@ -12,3 +12,6 @@ legacy ingredient-component descriptors. See
 labels as noncanonical proposals. Review rationale and summary live in
 `INGREDIENT_COMPONENT_VALUE_RECOMMENDATIONS.md`. Labels are included; private
 counts and source rows are not.
+
+`taxon_mapping_candidates_batch_1.csv` records ten NCBI-verified taxon proposals;
+WFO candidates remain held and material-to-taxon assertions remain unapproved.
