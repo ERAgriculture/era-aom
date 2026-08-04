@@ -30,7 +30,8 @@
     "approved_semantic_relations": 21,
     "approved_reparentings": 64,
     "approved_semantic_bindings": 13,
-    "approved_semantic_value_bindings": 298
+    "approved_semantic_value_bindings": 298,
+    "approved_ingredient_component_classifications": 83
   },
   "identifier_policy": {
     "concept_ids_preserved": true,
@@ -47,6 +48,11 @@
       "path": "data/livestock-staging/approved_identity_resolutions.csv",
       "bytes": 562,
       "sha256": "b6bb11a0e88d26dbc0b150182da9a50a352d8883726b9082d092e9c4bc0ed2fb"
+    },
+    {
+      "path": "data/livestock-staging/approved_ingredient_component_classifications.csv",
+      "bytes": 16436,
+      "sha256": "8f271c0712a1692d456dee5ad58285fba2c83847d704cf5b142350f02851851c"
     },
     {
       "path": "data/livestock-staging/approved_label_corrections.csv",

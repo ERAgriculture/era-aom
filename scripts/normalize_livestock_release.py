@@ -601,6 +601,9 @@ def main():
             "approved_semantic_value_bindings": len(
                 read_governance("approved_semantic_value_bindings.csv")
             ),
+            "approved_ingredient_component_classifications": len(
+                read_governance("approved_ingredient_component_classifications.csv")
+            ),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,
