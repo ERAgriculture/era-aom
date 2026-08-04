@@ -102,6 +102,24 @@ assert all(row["ncbi_uri"].endswith(row["ncbi_taxon_id"]) for row in taxon_candi
 assert {row["rank"] for row in taxon_candidates} == {"species", "genus", "family"}
 renamed = next(row for row in taxon_candidates if row["source_name"] == "Pennisetum purpureum")
 assert renamed["accepted_name"] == "Cenchrus purpureus" and renamed["ncbi_taxon_id"] == "NCBITaxon_154765"
+
+with (FACET_REVIEW / "taxon_mapping_candidates_batch_2.csv").open(encoding="utf-8", newline="") as h:
+    taxon_batch_2 = list(csv.DictReader(h))
+assert len(taxon_batch_2) == 15
+assert all(row["status"] == "proposed-for-review" and not row["reviewer"] for row in taxon_batch_2)
+assert {row["rank"] for row in taxon_batch_2 if row["rank"]} == {"species", "genus", "family"}
+brassica = next(row for row in taxon_batch_2 if row["source_name"] == "Brassica napus")
+assert brassica["legacy_ncbi_taxon_id"] == "NCBITaxon_4710"
+assert brassica["proposed_ncbi_taxon_id"] == "NCBITaxon_3708"
+assert brassica["decision_action"] == "replace_incorrect"
+synonyms = {row["source_name"]: row for row in taxon_batch_2 if row["decision_action"] == "accept_as_synonym"}
+assert {name: row["accepted_name"] for name, row in synonyms.items()} == {
+    "Acacia tortilis": "Vachellia tortilis",
+    "Panicum maximum": "Megathyrsus maximus",
+}
+assert all(row["legacy_ncbi_taxon_id"] == row["proposed_ncbi_taxon_id"] for row in synonyms.values())
+non_taxon = next(row for row in taxon_batch_2 if row["source_name"] == "sodium carboxymethyl cellulose")
+assert non_taxon["decision_action"] == "hold_non_taxon" and not non_taxon["proposed_ncbi_taxon_id"].strip()
 ingredient_source_bindings = [row for row in value_bindings if row["target_property"] == "aom:ingredientSource"]
 taxon_value_bindings = [row for row in value_bindings if row["target_property"] == "aom:sourceTaxon"]
 assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in ingredient_source_bindings] == [
