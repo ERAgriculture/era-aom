@@ -84,3 +84,5 @@ All notable vocabulary changes will be recorded here.
   plus repeatable offline/live integrity validation for all 45 taxon mappings.
 - Add large fourth taxon review batch with 80 live-verified NCBI candidates,
   including five wrong-ID replacements and explicit genus-rank preservation.
+- Approve all 80 batch-4 source-taxon decisions; expand live-validated NCBI
+  contract to 125 biological mappings and add reusable guarded promotion tool.
