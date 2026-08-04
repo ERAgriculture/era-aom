@@ -52,3 +52,6 @@ All notable vocabulary changes will be recorded here.
   high-confidence terms while retaining legacy labels as alternatives.
 - Merge duplicate Green Bean Vine/Haricot Bean Vine identities into retained
   `AOM_003960` Common bean vine; deprecate `AOM_004000` with replacement link.
+- Accept layered semantic model separating SKOS vocabulary, OWL domain records,
+  SOSA/QUDT observations, SHACL validation, and PROV-O provenance; publish
+  machine-readable migration dispositions for all 50 deferred modeling cases.

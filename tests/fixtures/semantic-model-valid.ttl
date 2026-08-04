@@ -1,0 +1,26 @@
+@prefix aom: <urn:era-aom:schema:> .
+@prefix ex: <urn:era-aom:test:> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:maizeBran a aom:FeedMaterial ;
+  aom:ingredientName "Maize bran" ;
+  aom:sourceTaxon <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4577> .
+
+ex:component a aom:IngredientComponent ;
+  aom:ingredientMaterial ex:maizeBran ;
+  aom:ingredientProportion [
+    a qudt:QuantityValue ;
+    qudt:numericValue "25.0"^^xsd:decimal ;
+    qudt:unit unit:PERCENT
+  ] .
+
+ex:swardHeightObservation a aom:QuantitativeObservation ;
+  sosa:observedProperty ex:targetSwardHeight ;
+  sosa:hasResult [
+    a qudt:QuantityValue ;
+    qudt:numericValue "15.0"^^xsd:decimal ;
+    qudt:unit unit:CentiM
+  ] .

@@ -549,21 +549,10 @@ def main():
     } for row in relations]
     write_csv(dist_dir / "nodes.csv", list(nodes[0]), nodes)
     write_csv(dist_dir / "edges.csv", list(edges[0]), edges)
-    (dist_dir / "aom-schema.ttl").write_text("""@prefix aom: <urn:era-aom:schema:> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-<urn:era-aom:schema> a owl:Ontology ; rdfs:label "AOM schema"@en .
-aom:Module a owl:Class ; rdfs:label "Module"@en .
-aom:MappingAssertion a owl:Class ; rdfs:label "Mapping assertion"@en .
-aom:ChangeProposal a owl:Class ; rdfs:label "Change proposal"@en .
-aom:Release a owl:Class ; rdfs:label "Release"@en .
-aom:Evidence a owl:Class ; rdfs:label "Evidence"@en .
-aom:Reviewer a owl:Class ; rdfs:label "Reviewer"@en .
-aom:inModule a owl:ObjectProperty ; rdfs:range aom:Module .
-aom:supportedBy a owl:ObjectProperty ; rdfs:range aom:Evidence .
-aom:reviewedBy a owl:ObjectProperty ; rdfs:range aom:Reviewer .
-aom:releasedIn a owl:ObjectProperty ; rdfs:range aom:Release .
-""", encoding="utf-8")
+    schema_source = root / "schemas/owl/aom-semantic-model.ttl"
+    (dist_dir / "aom-schema.ttl").write_text(
+        schema_source.read_text(encoding="utf-8"), encoding="utf-8"
+    )
 
     files = sorted(
         path for path in [*data_dir.glob("*.csv"), *dist_dir.glob("*")]

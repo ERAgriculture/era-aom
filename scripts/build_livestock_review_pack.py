@@ -415,6 +415,9 @@ Approved controlled-term and identity corrections:
 Deferred concept-to-schema remodeling candidates:
 `schema_remodeling_candidates.csv`.
 
+Approved target-layer and migration dispositions for all remodeling cases:
+`semantic_model_dispositions.csv`.
+
 Identity investigations and dispositions: `identity_review_candidates.csv`.
 
 Pending weak or undocumented terms: `terminology_review_candidates.csv`.
