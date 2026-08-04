@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OWL = ROOT / "schemas/owl/aom-semantic-model.ttl"
 SHAPES = ROOT / "schemas/shacl/semantic-model.ttl"
 REVIEW = ROOT / "review/livestock-v2"
+FACET_REVIEW = ROOT / "review/livestock-v3"
 DATA = ROOT / "data/livestock-staging"
 DIST = ROOT / "dist/livestock-staging"
 FIXTURES = ROOT / "tests/fixtures"
@@ -48,6 +49,20 @@ assert all(
     and row["unit_requirement"] == "required"
     for row in bindings if row["binding_kind"] in {"quantified_component", "observable_property"}
 )
+ingredient_part_binding = next(row for row in bindings if row["legacy_concept_id"] == "AOM_000532")
+assert ingredient_part_binding["target_property"] == "aom:legacyComponentDescriptor"
+assert ingredient_part_binding["value_class"] == "xsd:string"
+assert ingredient_part_binding["compatibility_policy"] == "preserve_raw_descriptor_until_reviewed_facet_decomposition"
+
+with (FACET_REVIEW / "ingredient_component_facets.csv").open(encoding="utf-8", newline="") as h:
+    facets = list(csv.DictReader(h))
+assert len(facets) == 8
+assert len({row["facet_id"] for row in facets}) == 8
+assert all(row["status"] == "design-approved" and row["reviewer"] == "Pete Steward" for row in facets)
+assert {row["target_property"] for row in facets if row["target_property"]} == {
+    "aom:legacyComponentDescriptor", "aom:ingredientPart", "aom:physicalForm",
+    "aom:processingMethod", "aom:productRole", "aom:ingredientConstituent",
+}
 assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in value_bindings] == [
     ("On-farm", "map_to_existing", "AOM_000141"),
     ("Purchased", "map_to_existing", "AOM_000142"),
@@ -85,10 +100,13 @@ assert binding_result, report
 valid_graph = Graph().parse(FIXTURES / "semantic-model-valid.ttl")
 invalid_graph = Graph().parse(FIXTURES / "semantic-model-invalid.ttl")
 invalid_value_binding_graph = Graph().parse(FIXTURES / "semantic-value-binding-invalid.ttl")
+invalid_facet_graph = Graph().parse(FIXTURES / "semantic-facet-invalid.ttl")
 valid_result, _, _ = validate(valid_graph, shacl_graph=shapes, ont_graph=ontology)
 invalid_result, _, _ = validate(invalid_graph, shacl_graph=shapes, ont_graph=ontology)
 invalid_value_binding_result, _, _ = validate(invalid_value_binding_graph, shacl_graph=shapes, ont_graph=ontology)
+invalid_facet_result, _, _ = validate(invalid_facet_graph, shacl_graph=shapes, ont_graph=ontology)
 assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
-print("Semantic model validation passed: 50 dispositions; 13 structural and 3 value bindings")
+assert not invalid_facet_result
+print("Semantic model validation passed: 50 dispositions; 13 structural, 3 value bindings, 8 facet decisions")

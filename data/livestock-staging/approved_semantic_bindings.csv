@@ -1,6 +1,6 @@
 legacy_concept_id,current_label,binding_kind,target_class,target_property,value_class,quantity_kind_uri,unit_requirement,compatibility_policy,status,reviewer,review_date,evidence
 AOM_000531,Ingredient name,property,aom:FeedMaterial,aom:ingredientName,xsd:string,,not_applicable,dual_publish_legacy_identifier_until_consumer_cutover,approved,Pete Steward,2026-08-04,PARENT-007
-AOM_000532,Ingredient part,property,aom:FeedMaterial,aom:ingredientPart,skos:Concept,,not_applicable,dual_publish_legacy_identifier_until_consumer_cutover,approved,Pete Steward,2026-08-04,PARENT-007
+AOM_000532,Ingredient part,property,aom:FeedMaterial,aom:legacyComponentDescriptor,xsd:string,,not_applicable,preserve_raw_descriptor_until_reviewed_facet_decomposition,approved,Pete Steward,2026-08-04,FACET-001
 AOM_000533,Ingredient species,property,aom:FeedMaterial,aom:sourceTaxon,iri,,not_applicable,dual_publish_legacy_identifier_until_consumer_cutover,approved,Pete Steward,2026-08-04,PARENT-007
 AOM_000534,Ingredient proportion,quantified_component,aom:IngredientComponent,aom:ingredientProportion,qudt:QuantityValue,http://qudt.org/vocab/quantitykind/Dimensionless,required,dual_publish_legacy_identifier_until_consumer_cutover,approved,Pete Steward,2026-08-04,PARENT-007
 AOM_000535,Ingredient source,property,aom:FeedMaterial,aom:ingredientSource,iri,,not_applicable,dual_publish_legacy_identifier_until_consumer_cutover,approved,Pete Steward,2026-08-04,PARENT-007

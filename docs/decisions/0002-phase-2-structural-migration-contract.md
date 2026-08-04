@@ -32,7 +32,7 @@ Four field-like concepts become explicit `aom:FeedMaterial` properties:
 | Legacy concept | Normalized use |
 |---|---|
 | AOM_000531 Ingredient name | `aom:ingredientName` |
-| AOM_000532 Ingredient part | `aom:ingredientPart` |
+| AOM_000532 Ingredient part | `aom:legacyComponentDescriptor` pending reviewed facet decomposition (corrected by ADR 0004) |
 | AOM_000533 Ingredient species | `aom:sourceTaxon` |
 | AOM_000535 Ingredient source | `aom:ingredientSource` |
 

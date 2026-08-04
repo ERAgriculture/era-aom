@@ -1,0 +1,7 @@
+@prefix aom: <urn:era-aom:schema:> .
+@prefix ex: <urn:era-aom:test:> .
+
+ex:badMaterial a aom:FeedMaterial ;
+  aom:legacyComponentDescriptor ex:notAString ;
+  aom:ingredientPart ex:untypedPart ;
+  aom:physicalForm "meal" .

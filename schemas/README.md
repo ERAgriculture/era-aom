@@ -24,3 +24,5 @@ Phase-2 binding contract:
 [`../docs/decisions/0002-phase-2-structural-migration-contract.md`](../docs/decisions/0002-phase-2-structural-migration-contract.md).
 Ingredient-source value decision:
 [`../docs/decisions/0003-ingredient-source-value-bindings.md`](../docs/decisions/0003-ingredient-source-value-bindings.md).
+Ingredient-component facet decision:
+[`../docs/decisions/0004-ingredient-component-facet-model.md`](../docs/decisions/0004-ingredient-component-facet-model.md).

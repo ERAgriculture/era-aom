@@ -38,13 +38,13 @@
         "@id": "urn:era-aom:schema:FeedMaterial"
       },
       "aom:targetProperty": {
-        "@id": "urn:era-aom:schema:ingredientPart"
+        "@id": "urn:era-aom:schema:legacyComponentDescriptor"
       },
       "aom:unitRequirement": "not_applicable",
-      "aom:compatibilityPolicy": "dual_publish_legacy_identifier_until_consumer_cutover",
+      "aom:compatibilityPolicy": "preserve_raw_descriptor_until_reviewed_facet_decomposition",
       "aom:bindingStatus": "approved",
       "aom:valueClass": {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
     },
     {

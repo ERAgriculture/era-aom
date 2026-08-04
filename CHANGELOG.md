@@ -62,3 +62,6 @@ All notable vocabulary changes will be recorded here.
 - Govern ingredient-source controlled values: reuse `AOM_000141` On-farm and
   `AOM_000142` Purchased, hold ambiguous Unspecified as semantic null, publish
   RDF/JSON-LD bindings, and enforce mapping decisions with SHACL.
+- Correct heterogeneous Ingredient part migration: preserve raw descriptor,
+  define typed part/form/process/role/constituent facets, and prohibit automatic
+  label-only mappings pending reviewed decomposition.

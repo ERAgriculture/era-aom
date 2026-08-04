@@ -21,6 +21,10 @@ transition.
 Phase-2 livestock structural contract is defined in
 [`docs/decisions/0002-phase-2-structural-migration-contract.md`](docs/decisions/0002-phase-2-structural-migration-contract.md).
 It does not itself authorize canonical cutover or concept deprecation.
+Phase-3 ingredient-component decomposition is defined in
+[`docs/decisions/0004-ingredient-component-facet-model.md`](docs/decisions/0004-ingredient-component-facet-model.md).
+Raw descriptors remain authoritative migration evidence until each facet
+assertion receives reviewed value governance.
 
 ## Cutover rule
 
