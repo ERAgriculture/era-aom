@@ -7,7 +7,19 @@
 
 ex:maizeBran a aom:FeedMaterial ;
   aom:ingredientName "Maize bran" ;
+  aom:legacyComponentDescriptor "Bran" ;
+  aom:ingredientPart ex:grainPart ;
+  aom:physicalForm ex:mealForm ;
+  aom:processingMethod ex:milling ;
+  aom:productRole ex:byproductRole ;
+  aom:ingredientConstituent ex:starch ;
   aom:sourceTaxon <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4577> .
+
+ex:grainPart a aom:IngredientPartCategory .
+ex:mealForm a aom:IngredientPhysicalForm .
+ex:milling a aom:ProcessingMethod .
+ex:byproductRole a aom:ProductRole .
+ex:starch a aom:IngredientConstituent .
 
 ex:component a aom:IngredientComponent ;
   aom:ingredientMaterial ex:maizeBran ;

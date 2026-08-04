@@ -24,6 +24,9 @@ requirements, and consumer-cutover policy.
 Approved controlled-value decisions live in
 `approved_semantic_value_bindings.csv`. Exact ingredient-source values reuse
 existing AOM concepts; ambiguous values are explicit holds and never guessed.
+Legacy ingredient-component descriptors remain strings until phase-3 review
+decomposes them across typed part, physical-form, processing, product-role, and
+constituent facets. See `../../review/livestock-v3/` and ADR 0004.
 Generator applies these governance overlays without rewriting source evidence.
 OWL domain semantics and SHACL constraints live under `schemas/`; remodeling
 dispositions are staged separately from this backward-compatible SKOS release.

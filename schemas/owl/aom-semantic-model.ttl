@@ -39,6 +39,18 @@ aom:QuantitativeObservation a owl:Class ;
 aom:ProductRole a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "product role"@en .
+aom:IngredientPartCategory a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "ingredient part category"@en .
+aom:IngredientPhysicalForm a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "ingredient physical form"@en .
+aom:ProcessingMethod a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "processing method"@en .
+aom:IngredientConstituent a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "ingredient constituent"@en .
 aom:ParityStatus a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "parity status"@en .
@@ -63,15 +75,22 @@ aom:sourceTaxon a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ;
   rdfs:comment "Links feed material to a reviewed taxon IRI; does not imply SKOS identity."@en .
 aom:ingredientPart a owl:ObjectProperty ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range skos:Concept .
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPartCategory .
+aom:physicalForm a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPhysicalForm .
 aom:processingMethod a owl:ObjectProperty ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range skos:Concept .
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProcessingMethod .
 aom:productRole a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProductRole .
+aom:ingredientConstituent a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientConstituent .
 aom:ingredientSource a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientSourceCategory .
 aom:ingredientName a owl:DatatypeProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range xsd:string .
+aom:legacyComponentDescriptor a owl:DatatypeProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range xsd:string ;
+  rdfs:comment "Unmodified legacy component descriptor retained until reviewed decomposition into explicit facets."@en .
 
 aom:legacyConcept a owl:ObjectProperty ;
   rdfs:domain aom:SemanticBinding ; rdfs:range skos:Concept .
