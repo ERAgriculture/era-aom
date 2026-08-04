@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:era-aom:schema:ingredient-component-value-candidate",
+  "title": "AOM ingredient-component value candidate",
+  "type": "object",
+  "required": [
+    "source_value", "normalized_value", "proposed_facet", "secondary_facets",
+    "disposition", "confidence", "rationale", "status", "reviewer",
+    "review_date", "evidence"
+  ],
+  "properties": {
+    "source_value": {"type": "string", "minLength": 1},
+    "normalized_value": {"type": "string", "minLength": 1},
+    "proposed_facet": {"enum": ["anatomical_part", "physical_form", "processing_method", "product_role", "chemical_constituent", "composite_descriptor", "unresolved_descriptor"]},
+    "secondary_facets": {"type": "string"},
+    "disposition": {"enum": ["review_single", "decompose", "hold"]},
+    "confidence": {"enum": ["high", "medium", "low"]},
+    "rationale": {"type": "string", "minLength": 1},
+    "status": {"const": "proposed-for-review"},
+    "reviewer": {"const": ""},
+    "review_date": {"const": ""},
+    "evidence": {"const": "aggregate-only-livestock-profile"}
+  },
+  "additionalProperties": false
+}

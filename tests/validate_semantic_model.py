@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+import json
 from pathlib import Path
 
 from pyshacl import validate
@@ -63,6 +64,34 @@ assert {row["target_property"] for row in facets if row["target_property"]} == {
     "aom:legacyComponentDescriptor", "aom:ingredientPart", "aom:physicalForm",
     "aom:processingMethod", "aom:productRole", "aom:ingredientConstituent",
 }
+
+with (FACET_REVIEW / "ingredient_component_value_candidates.csv").open(encoding="utf-8", newline="") as h:
+    facet_candidates = list(csv.DictReader(h))
+candidate_schema = json.loads(
+    (ROOT / "schemas/json/ingredient-component-value-candidate.schema.json").read_text()
+)
+allowed_facets = set(candidate_schema["properties"]["proposed_facet"]["enum"])
+allowed_secondary = allowed_facets - {"composite_descriptor", "unresolved_descriptor"}
+assert len(facet_candidates) == 83
+assert len({row["normalized_value"] for row in facet_candidates}) == 83
+assert all(row["normalized_value"] == " ".join(row["source_value"].strip().lower().split()) for row in facet_candidates)
+assert all(row["proposed_facet"] in allowed_facets for row in facet_candidates)
+assert all(
+    not row["secondary_facets"] or set(row["secondary_facets"].split(";")) <= allowed_secondary
+    for row in facet_candidates
+)
+assert all(row["status"] == "proposed-for-review" for row in facet_candidates)
+assert all(not row["reviewer"] and not row["review_date"] for row in facet_candidates)
+assert all(row["evidence"] == "aggregate-only-livestock-profile" for row in facet_candidates)
+assert all(
+    (row["proposed_facet"] == "composite_descriptor" and row["disposition"] == "decompose")
+    or (row["proposed_facet"] == "unresolved_descriptor" and row["disposition"] == "hold")
+    or (row["proposed_facet"] not in {"composite_descriptor", "unresolved_descriptor"}
+        and row["disposition"] == "review_single")
+    for row in facet_candidates
+)
+assert sum(row["proposed_facet"] == "anatomical_part" for row in facet_candidates) == 30
+assert sum(row["proposed_facet"] == "composite_descriptor" for row in facet_candidates) == 28
 assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in value_bindings] == [
     ("On-farm", "map_to_existing", "AOM_000141"),
     ("Purchased", "map_to_existing", "AOM_000142"),
@@ -109,4 +138,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 3 value bindings, 8 facet decisions")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 3 value bindings, 8 facets, 83 value proposals")

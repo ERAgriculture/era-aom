@@ -26,3 +26,6 @@ Ingredient-source value decision:
 [`../docs/decisions/0003-ingredient-source-value-bindings.md`](../docs/decisions/0003-ingredient-source-value-bindings.md).
 Ingredient-component facet decision:
 [`../docs/decisions/0004-ingredient-component-facet-model.md`](../docs/decisions/0004-ingredient-component-facet-model.md).
+Phase-3 value proposals validate against
+`json/ingredient-component-value-candidate.schema.json`; proposal validation
+does not grant mapping approval.
