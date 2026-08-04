@@ -25,6 +25,7 @@ new_concepts = read("approved_new_concepts")
 id_registry = read("livestock_id_registry")
 semantic_relations = read("approved_semantic_relations")
 reparentings = read("approved_reparentings")
+semantic_bindings = read("approved_semantic_bindings")
 manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
@@ -53,6 +54,7 @@ assert {row["resolved_concept_id"] for row in resolutions} == {
 }
 assert len(replacements) == 3
 assert len(deprecations) == 2
+assert len(semantic_bindings) == 13
 assert {
     (row["deprecated_id"], row["replacement_id"])
     for row in deprecations
@@ -60,6 +62,7 @@ assert {
     ("AOM_001884", "AOM_000564"),
     ("AOM_004000", "AOM_003960"),
 }
+assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert len(label_corrections) == 6
 assert len(new_concepts) == 170
 new_by_case = {row["case_id"]: row for row in new_concepts}

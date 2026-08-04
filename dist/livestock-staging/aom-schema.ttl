@@ -19,6 +19,9 @@ aom:ChangeProposal a owl:Class ; rdfs:label "change proposal"@en .
 aom:Release a owl:Class ; rdfs:label "release"@en .
 aom:Evidence a owl:Class ; rdfs:subClassOf prov:Entity ; rdfs:label "evidence"@en .
 aom:Reviewer a owl:Class ; rdfs:subClassOf prov:Agent ; rdfs:label "reviewer"@en .
+aom:SemanticBinding a owl:Class ;
+  rdfs:label "semantic binding"@en ;
+  rdfs:comment "Governed migration contract connecting a legacy AOM concept to its normalized data-model use."@en .
 
 aom:FeedMaterial a owl:Class ;
   rdfs:label "feed material"@en ;
@@ -62,3 +65,14 @@ aom:productRole a owl:ObjectProperty ;
 aom:ingredientSource a owl:ObjectProperty ; rdfs:domain aom:FeedMaterial .
 aom:ingredientName a owl:DatatypeProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range xsd:string .
+
+aom:legacyConcept a owl:ObjectProperty ;
+  rdfs:domain aom:SemanticBinding ; rdfs:range skos:Concept .
+aom:targetClass a owl:ObjectProperty ; rdfs:domain aom:SemanticBinding .
+aom:targetProperty a owl:ObjectProperty ; rdfs:domain aom:SemanticBinding .
+aom:valueClass a owl:ObjectProperty ; rdfs:domain aom:SemanticBinding .
+aom:quantityKind a owl:ObjectProperty ; rdfs:domain aom:SemanticBinding .
+aom:bindingKind a owl:DatatypeProperty ; rdfs:domain aom:SemanticBinding ; rdfs:range xsd:string .
+aom:unitRequirement a owl:DatatypeProperty ; rdfs:domain aom:SemanticBinding ; rdfs:range xsd:string .
+aom:compatibilityPolicy a owl:DatatypeProperty ; rdfs:domain aom:SemanticBinding ; rdfs:range xsd:string .
+aom:bindingStatus a owl:DatatypeProperty ; rdfs:domain aom:SemanticBinding ; rdfs:range xsd:string .

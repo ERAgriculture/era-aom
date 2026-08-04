@@ -1,0 +1,348 @@
+{
+  "@context": {
+    "aom": "urn:era-aom:schema:",
+    "qudt": "http://qudt.org/schema/qudt/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "urn:era-aom:binding:AOM_000531",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000531"
+      },
+      "aom:bindingKind": "property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:FeedMaterial"
+      },
+      "aom:targetProperty": {
+        "@id": "urn:era-aom:schema:ingredientName"
+      },
+      "aom:unitRequirement": "not_applicable",
+      "aom:compatibilityPolicy": "dual_publish_legacy_identifier_until_consumer_cutover",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000532",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000532"
+      },
+      "aom:bindingKind": "property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:FeedMaterial"
+      },
+      "aom:targetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:unitRequirement": "not_applicable",
+      "aom:compatibilityPolicy": "dual_publish_legacy_identifier_until_consumer_cutover",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000533",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000533"
+      },
+      "aom:bindingKind": "property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:FeedMaterial"
+      },
+      "aom:targetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:unitRequirement": "not_applicable",
+      "aom:compatibilityPolicy": "dual_publish_legacy_identifier_until_consumer_cutover",
+      "aom:bindingStatus": "approved"
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000534",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000534"
+      },
+      "aom:bindingKind": "quantified_component",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:IngredientComponent"
+      },
+      "aom:targetProperty": {
+        "@id": "urn:era-aom:schema:ingredientProportion"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "dual_publish_legacy_identifier_until_consumer_cutover",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/Dimensionless"
+      }
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000535",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000535"
+      },
+      "aom:bindingKind": "property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:FeedMaterial"
+      },
+      "aom:targetProperty": {
+        "@id": "urn:era-aom:schema:ingredientSource"
+      },
+      "aom:unitRequirement": "not_applicable",
+      "aom:compatibilityPolicy": "dual_publish_legacy_identifier_until_consumer_cutover",
+      "aom:bindingStatus": "approved"
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000944",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000944"
+      },
+      "aom:bindingKind": "observable_property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:QuantitativeObservation"
+      },
+      "aom:targetProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "retain_legacy_uri_and_add_observable_property_type",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/DimensionlessRatio"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000944",
+      "@type": [
+        "skos:Concept",
+        "sosa:ObservableProperty"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000945",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000945"
+      },
+      "aom:bindingKind": "observable_property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:QuantitativeObservation"
+      },
+      "aom:targetProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "retain_legacy_uri_and_add_observable_property_type",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/Length"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000945",
+      "@type": [
+        "skos:Concept",
+        "sosa:ObservableProperty"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000946",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000946"
+      },
+      "aom:bindingKind": "observable_property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:QuantitativeObservation"
+      },
+      "aom:targetProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "retain_legacy_uri_and_add_observable_property_type",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/Length"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000946",
+      "@type": [
+        "skos:Concept",
+        "sosa:ObservableProperty"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000947",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000947"
+      },
+      "aom:bindingKind": "observable_property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:QuantitativeObservation"
+      },
+      "aom:targetProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "retain_legacy_uri_and_add_observable_property_type",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/Area"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000947",
+      "@type": [
+        "skos:Concept",
+        "sosa:ObservableProperty"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000948",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000948"
+      },
+      "aom:bindingKind": "observable_property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:QuantitativeObservation"
+      },
+      "aom:targetProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "retain_legacy_uri_and_add_observable_property_type",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/Area"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000948",
+      "@type": [
+        "skos:Concept",
+        "sosa:ObservableProperty"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000950",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000950"
+      },
+      "aom:bindingKind": "observable_property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:QuantitativeObservation"
+      },
+      "aom:targetProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "retain_legacy_uri_and_add_observable_property_type",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/Time"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000950",
+      "@type": [
+        "skos:Concept",
+        "sosa:ObservableProperty"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000951",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000951"
+      },
+      "aom:bindingKind": "observable_property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:QuantitativeObservation"
+      },
+      "aom:targetProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "retain_legacy_uri_and_add_observable_property_type",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/Time"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000951",
+      "@type": [
+        "skos:Concept",
+        "sosa:ObservableProperty"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:binding:AOM_000954",
+      "@type": "aom:SemanticBinding",
+      "aom:legacyConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000954"
+      },
+      "aom:bindingKind": "observable_property",
+      "aom:targetClass": {
+        "@id": "urn:era-aom:schema:QuantitativeObservation"
+      },
+      "aom:targetProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty"
+      },
+      "aom:unitRequirement": "required",
+      "aom:compatibilityPolicy": "retain_legacy_uri_and_add_observable_property_type",
+      "aom:bindingStatus": "approved",
+      "aom:valueClass": {
+        "@id": "http://qudt.org/schema/qudt/QuantityValue"
+      },
+      "aom:quantityKind": {
+        "@id": "http://qudt.org/vocab/quantitykind/Count"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000954",
+      "@type": [
+        "skos:Concept",
+        "sosa:ObservableProperty"
+      ]
+    }
+  ]
+}

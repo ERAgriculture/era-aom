@@ -55,3 +55,7 @@ All notable vocabulary changes will be recorded here.
 - Accept layered semantic model separating SKOS vocabulary, OWL domain records,
   SOSA/QUDT observations, SHACL validation, and PROV-O provenance; publish
   machine-readable migration dispositions for all 50 deferred modeling cases.
+- Publish 13 approved phase-2 structural bindings in CSV, JSON-LD, and Turtle;
+  retain legacy URIs, dual-type eight quantitative concepts as SOSA observable
+  properties, define QUDT quantity families, and document reversible pipeline
+  cutover requirements.

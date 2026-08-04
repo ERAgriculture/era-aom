@@ -6,6 +6,7 @@ import hashlib
 import io
 import json
 import re
+import subprocess
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -553,6 +554,10 @@ def main():
     (dist_dir / "aom-schema.ttl").write_text(
         schema_source.read_text(encoding="utf-8"), encoding="utf-8"
     )
+    subprocess.run(
+        [sys.executable, str(root / "scripts/build_semantic_bindings.py")],
+        cwd=root, check=True,
+    )
 
     files = sorted(
         path for path in [*data_dir.glob("*.csv"), *dist_dir.glob("*")]
@@ -590,6 +595,9 @@ def main():
             "registered_livestock_ids": len(id_registry),
             "approved_semantic_relations": len(semantic_relations),
             "approved_reparentings": len(reparentings),
+            "approved_semantic_bindings": len(
+                read_governance("approved_semantic_bindings.csv")
+            ),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,
