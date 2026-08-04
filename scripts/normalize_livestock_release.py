@@ -598,6 +598,9 @@ def main():
             "approved_semantic_bindings": len(
                 read_governance("approved_semantic_bindings.csv")
             ),
+            "approved_semantic_value_bindings": len(
+                read_governance("approved_semantic_value_bindings.csv")
+            ),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,

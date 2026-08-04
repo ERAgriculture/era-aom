@@ -21,6 +21,9 @@ Approved phase-2 data-model migration bindings live in
 `approved_semantic_bindings.csv`. These preserve legacy identifiers while
 specifying normalized properties, observation patterns, quantity kinds, unit
 requirements, and consumer-cutover policy.
+Approved controlled-value decisions live in
+`approved_semantic_value_bindings.csv`. Exact ingredient-source values reuse
+existing AOM concepts; ambiguous values are explicit holds and never guessed.
 Generator applies these governance overlays without rewriting source evidence.
 OWL domain semantics and SHACL constraints live under `schemas/`; remodeling
 dispositions are staged separately from this backward-compatible SKOS release.

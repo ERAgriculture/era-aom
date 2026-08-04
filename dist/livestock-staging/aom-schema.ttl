@@ -22,6 +22,9 @@ aom:Reviewer a owl:Class ; rdfs:subClassOf prov:Agent ; rdfs:label "reviewer"@en
 aom:SemanticBinding a owl:Class ;
   rdfs:label "semantic binding"@en ;
   rdfs:comment "Governed migration contract connecting a legacy AOM concept to its normalized data-model use."@en .
+aom:SemanticValueBinding a owl:Class ;
+  rdfs:label "semantic value binding"@en ;
+  rdfs:comment "Governed decision mapping a source controlled value to an ontology concept or explicitly holding it unresolved."@en .
 
 aom:FeedMaterial a owl:Class ;
   rdfs:label "feed material"@en ;
@@ -42,6 +45,9 @@ aom:ParityStatus a owl:Class ;
 aom:GestationalStage a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "gestational stage"@en .
+aom:IngredientSourceCategory a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "ingredient source category"@en .
 
 aom:inModule a owl:ObjectProperty ; rdfs:range aom:Module .
 aom:supportedBy a owl:ObjectProperty ; rdfs:subPropertyOf prov:wasDerivedFrom ; rdfs:range aom:Evidence .
@@ -62,7 +68,8 @@ aom:processingMethod a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range skos:Concept .
 aom:productRole a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProductRole .
-aom:ingredientSource a owl:ObjectProperty ; rdfs:domain aom:FeedMaterial .
+aom:ingredientSource a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientSourceCategory .
 aom:ingredientName a owl:DatatypeProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range xsd:string .
 
@@ -76,3 +83,13 @@ aom:bindingKind a owl:DatatypeProperty ; rdfs:domain aom:SemanticBinding ; rdfs:
 aom:unitRequirement a owl:DatatypeProperty ; rdfs:domain aom:SemanticBinding ; rdfs:range xsd:string .
 aom:compatibilityPolicy a owl:DatatypeProperty ; rdfs:domain aom:SemanticBinding ; rdfs:range xsd:string .
 aom:bindingStatus a owl:DatatypeProperty ; rdfs:domain aom:SemanticBinding ; rdfs:range xsd:string .
+aom:valueTargetProperty a owl:ObjectProperty ; rdfs:domain aom:SemanticValueBinding .
+aom:valueTargetConcept a owl:ObjectProperty ;
+  rdfs:domain aom:SemanticValueBinding ; rdfs:range skos:Concept .
+aom:targetValueClass a owl:ObjectProperty ; rdfs:domain aom:SemanticValueBinding .
+aom:sourceValue a owl:DatatypeProperty ;
+  rdfs:domain aom:SemanticValueBinding ; rdfs:range xsd:string .
+aom:bindingAction a owl:DatatypeProperty ;
+  rdfs:domain aom:SemanticValueBinding ; rdfs:range xsd:string .
+aom:valueBindingStatus a owl:DatatypeProperty ;
+  rdfs:domain aom:SemanticValueBinding ; rdfs:range xsd:string .

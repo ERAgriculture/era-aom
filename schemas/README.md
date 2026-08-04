@@ -15,10 +15,12 @@ Semantic model assets:
   observations, quantities, and governance provenance;
 - `shacl/semantic-model.ttl`: SHACL Core constraints for feed materials,
   ingredient components, quantitative observations, QUDT values, and governed
-  semantic bindings.
+  structural/value semantic bindings.
 
 `dist/livestock-staging/aom-schema.ttl` is generated from the OWL source; do
 not edit distribution copy directly. Architecture decision:
 [`../docs/decisions/0001-semantic-model-layers.md`](../docs/decisions/0001-semantic-model-layers.md).
 Phase-2 binding contract:
 [`../docs/decisions/0002-phase-2-structural-migration-contract.md`](../docs/decisions/0002-phase-2-structural-migration-contract.md).
+Ingredient-source value decision:
+[`../docs/decisions/0003-ingredient-source-value-bindings.md`](../docs/decisions/0003-ingredient-source-value-bindings.md).

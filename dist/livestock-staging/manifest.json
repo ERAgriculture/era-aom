@@ -29,7 +29,8 @@
     "registered_livestock_ids": 170,
     "approved_semantic_relations": 21,
     "approved_reparentings": 64,
-    "approved_semantic_bindings": 13
+    "approved_semantic_bindings": 13,
+    "approved_semantic_value_bindings": 3
   },
   "identifier_policy": {
     "concept_ids_preserved": true,
@@ -76,6 +77,11 @@
       "path": "data/livestock-staging/approved_semantic_relations.csv",
       "bytes": 4789,
       "sha256": "6b3ea94bc1964167cfcface865be6d86590f8ec8651d9f6aa333212a35bb3151"
+    },
+    {
+      "path": "data/livestock-staging/approved_semantic_value_bindings.csv",
+      "bytes": 803,
+      "sha256": "033d4c05712028340ff93faf1bebe05058c5d124a930825f076b23f79d2b565a"
     },
     {
       "path": "data/livestock-staging/concepts.csv",
@@ -144,8 +150,8 @@
     },
     {
       "path": "dist/livestock-staging/README.md",
-      "bytes": 630,
-      "sha256": "51c96594915e5636df40f530dd376f8667ddb8c4faabf4a185aa086dfb307639"
+      "bytes": 653,
+      "sha256": "81f1ab442c9047366740f01cae1e7920c6a9559d6b5a61c9c799e8945a264574"
     },
     {
       "path": "dist/livestock-staging/aom-livestock.jsonld",
@@ -159,18 +165,18 @@
     },
     {
       "path": "dist/livestock-staging/aom-schema.ttl",
-      "bytes": 4323,
-      "sha256": "72e47c6919ce41e876f75e0356ce1be1cbae5f0b8508365cab48bd8926ed7116"
+      "bytes": 5315,
+      "sha256": "e1bfcc5538a2d74ad4e8d5c3a0d020aeb653e226bf4f15fce387452ce8e6f4f7"
     },
     {
       "path": "dist/livestock-staging/aom-semantic-bindings.jsonld",
-      "bytes": 10972,
-      "sha256": "b1addf2cbe3b9d01a80316ed078d2c5f341422658d5246cad16587d3ceacd5c2"
+      "bytes": 12813,
+      "sha256": "62b0b32cd7b60573c526a5f84cf3d64435e728c14015a3c518467cf4b04fd863"
     },
     {
       "path": "dist/livestock-staging/aom-semantic-bindings.ttl",
-      "bytes": 7762,
-      "sha256": "73c254be183ab8721b4446768160fcc602ab394456b2c65eeab3a6b688fd7cc9"
+      "bytes": 9050,
+      "sha256": "2c590f8084be22a74363b856eeced1119a7d81421a49339cb723c3802e97c393"
     },
     {
       "path": "dist/livestock-staging/edges.csv",
