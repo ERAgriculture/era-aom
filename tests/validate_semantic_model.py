@@ -37,7 +37,7 @@ with (DATA / "approved_semantic_bindings.csv").open(encoding="utf-8", newline=""
     bindings = list(csv.DictReader(h))
 with (DATA / "approved_semantic_value_bindings.csv").open(encoding="utf-8", newline="") as h:
     value_bindings = list(csv.DictReader(h))
-assert len(value_bindings) == 275
+assert len(value_bindings) == 298
 phase_2 = {row["concept_id"] for row in dispositions if row["migration_phase"] == "2"}
 assert len(bindings) == 13
 assert {row["legacy_concept_id"] for row in bindings} == phase_2
@@ -191,6 +191,12 @@ assert final_actions == {
     "hold_unresolved": 50,
     "hold_contextual": 5,
 }
+with (FACET_REVIEW / "taxon_mapping_candidates_addendum.csv").open(encoding="utf-8", newline="") as h:
+    taxon_addendum = list(csv.DictReader(h))
+assert len(taxon_addendum) == 23
+assert len({row["source_name"] for row in taxon_addendum}) == 23
+assert sum(bool(row["proposed_ncbi_taxon_id"]) for row in taxon_addendum) == 22
+assert sum(row["decision_action"] == "hold_unresolved" for row in taxon_addendum) == 1
 ingredient_source_bindings = [row for row in value_bindings if row["target_property"] == "aom:ingredientSource"]
 taxon_value_bindings = [row for row in value_bindings if row["target_property"] == "aom:sourceTaxon"]
 assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in ingredient_source_bindings] == [
@@ -198,9 +204,9 @@ assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) f
     ("Purchased", "map_to_existing", "AOM_000142"),
     ("Unspecified", "hold_ambiguous", ""),
 ]
-assert len(taxon_value_bindings) == 272
-assert sum(row["binding_action"] == "map_to_external" for row in taxon_value_bindings) == 216
-assert sum(row["binding_action"] == "hold_ambiguous" for row in taxon_value_bindings) == 55
+assert len(taxon_value_bindings) == 295
+assert sum(row["binding_action"] == "map_to_external" for row in taxon_value_bindings) == 238
+assert sum(row["binding_action"] == "hold_ambiguous" for row in taxon_value_bindings) == 56
 assert all(
     row["target_uri"].startswith("http://purl.obolibrary.org/obo/NCBITaxon_")
     for row in taxon_value_bindings if row["binding_action"] == "map_to_external"
@@ -238,6 +244,11 @@ final_holds = {
     if row["source_value"] in final_sources and row["binding_action"] == "hold_ambiguous"
 }
 assert final_holds == {row["source_name"] for row in final_held}
+addendum_sources = {row["source_name"] for row in taxon_addendum}
+approved_addendum = {row["source_value"] for row in taxon_value_bindings} & addendum_sources
+assert approved_addendum == addendum_sources
+petiolare = next(row for row in taxon_value_bindings if row["source_value"] == "Pennisetum petiolare")
+assert petiolare["binding_action"] == "hold_ambiguous" and not petiolare["target_uri"]
 assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in value_bindings)
 
 with (DATA / "labels.csv").open(encoding="utf-8", newline="") as h:
@@ -255,7 +266,7 @@ semantic_value_binding = URIRef("urn:era-aom:schema:SemanticValueBinding")
 ingredient_source_category = URIRef("urn:era-aom:schema:IngredientSourceCategory")
 observable_property = URIRef("http://www.w3.org/ns/sosa/ObservableProperty")
 assert len(set(binding_graph.subjects(RDF.type, semantic_binding))) == 13
-assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 275
+assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 298
 assert {
     str(subject).removeprefix("urn:era-aom:livestock:")
     for subject in binding_graph.subjects(RDF.type, ingredient_source_category)
@@ -279,4 +290,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 275 value bindings, 8 facets, 83 value proposals")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 298 value bindings, 8 facets, 83 value proposals")

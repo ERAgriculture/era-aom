@@ -90,3 +90,5 @@ All notable vocabulary changes will be recorded here.
   live-validated mapping candidates and 55 explicit holds.
 - Govern all 146 final source-taxon decisions: approve 91 NCBI mappings and
   preserve 55 ambiguous/contextual labels as explicit null-target holds.
+- Govern 23 older-release audit labels through 22 corrected or exact NCBI
+  bindings and one explicit hold; expand approved taxon mapping contract to 238.
