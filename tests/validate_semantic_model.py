@@ -145,6 +145,28 @@ assert normalized_names == {
     "Opuntia ficus indica": "Opuntia ficus-indica",
     "Pennisetum clandestinum": "Cenchrus clandestinus",
 }
+
+with (FACET_REVIEW / "taxon_mapping_candidates_batch_4.csv").open(encoding="utf-8", newline="") as h:
+    taxon_batch_4 = list(csv.DictReader(h))
+assert len(taxon_batch_4) == 80
+assert len({row["source_name"] for row in taxon_batch_4}) == 80
+assert {row["rank"] for row in taxon_batch_4} == {"species", "genus", "subspecies"}
+assert all(row["status"] == "proposed-for-review" and not row["reviewer"] and not row["review_date"] for row in taxon_batch_4)
+assert all(row["evidence"].endswith(row["proposed_ncbi_taxon_id"].removeprefix("NCBITaxon_")) for row in taxon_batch_4)
+actions_4 = {action: sum(row["decision_action"] == action for row in taxon_batch_4) for action in {
+    "accept_existing", "accept_as_synonym", "replace_incorrect",
+    "map_unspecified_species_to_genus", "accept_as_misspelling", "replace_retired",
+}}
+assert actions_4 == {
+    "accept_existing": 55,
+    "accept_as_synonym": 11,
+    "replace_incorrect": 5,
+    "map_unspecified_species_to_genus": 5,
+    "accept_as_misspelling": 3,
+    "replace_retired": 1,
+}
+assert sum(row["rank"] == "genus" for row in taxon_batch_4) == 8
+assert sum(row["rank"] == "subspecies" for row in taxon_batch_4) == 2
 ingredient_source_bindings = [row for row in value_bindings if row["target_property"] == "aom:ingredientSource"]
 taxon_value_bindings = [row for row in value_bindings if row["target_property"] == "aom:sourceTaxon"]
 assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in ingredient_source_bindings] == [

@@ -21,3 +21,6 @@ non-taxon hold; it explicitly repairs a Brassica/Arecaceae legacy mismatch.
 
 `taxon_mapping_candidates_batch_3.csv` adds 21 species candidates, including
 two wrong-ID replacements and explicit spelling/synonym normalization cases.
+
+`taxon_mapping_candidates_batch_4.csv` adds 80 live-verified candidates in one
+large review pass, with explicit rank, synonym, spelling, and collision policy.

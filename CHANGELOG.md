@@ -82,3 +82,5 @@ All notable vocabulary changes will be recorded here.
   identifiers for Theba pisana and Psophocarpus tetragonolobus.
 - Correct approved Guizotia and Brevoortia NCBI collisions; add pinned snapshot
   plus repeatable offline/live integrity validation for all 45 taxon mappings.
+- Add large fourth taxon review batch with 80 live-verified NCBI candidates,
+  including five wrong-ID replacements and explicit genus-rank preservation.
