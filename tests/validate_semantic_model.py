@@ -92,6 +92,16 @@ assert all(
 )
 assert sum(row["proposed_facet"] == "anatomical_part" for row in facet_candidates) == 30
 assert sum(row["proposed_facet"] == "composite_descriptor" for row in facet_candidates) == 28
+
+with (FACET_REVIEW / "taxon_mapping_candidates_batch_1.csv").open(encoding="utf-8", newline="") as h:
+    taxon_candidates = list(csv.DictReader(h))
+assert len(taxon_candidates) == 10
+assert len({row["source_name"] for row in taxon_candidates}) == 10
+assert all(row["status"] == "proposed-for-review" and not row["reviewer"] and not row["review_date"] for row in taxon_candidates)
+assert all(row["ncbi_uri"].endswith(row["ncbi_taxon_id"]) for row in taxon_candidates)
+assert {row["rank"] for row in taxon_candidates} == {"species", "genus", "family"}
+renamed = next(row for row in taxon_candidates if row["source_name"] == "Pennisetum purpureum")
+assert renamed["accepted_name"] == "Cenchrus purpureus" and renamed["ncbi_taxon_id"] == "NCBITaxon_154765"
 assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in value_bindings] == [
     ("On-farm", "map_to_existing", "AOM_000141"),
     ("Purchased", "map_to_existing", "AOM_000142"),
