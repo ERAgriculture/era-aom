@@ -1,0 +1,8 @@
+@prefix aom: <urn:era-aom:schema:> .
+
+<urn:test:invalid-value-binding> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty aom:ingredientSource ;
+  aom:sourceValue "On-farm" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass aom:IngredientSourceCategory ;
+  aom:valueBindingStatus "approved" .

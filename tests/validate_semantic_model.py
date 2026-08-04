@@ -33,6 +33,8 @@ assert {row["migration_phase"] for row in dispositions} <= {"2", "3"}
 
 with (DATA / "approved_semantic_bindings.csv").open(encoding="utf-8", newline="") as h:
     bindings = list(csv.DictReader(h))
+with (DATA / "approved_semantic_value_bindings.csv").open(encoding="utf-8", newline="") as h:
+    value_bindings = list(csv.DictReader(h))
 phase_2 = {row["concept_id"] for row in dispositions if row["migration_phase"] == "2"}
 assert len(bindings) == 13
 assert {row["legacy_concept_id"] for row in bindings} == phase_2
@@ -46,13 +48,33 @@ assert all(
     and row["unit_requirement"] == "required"
     for row in bindings if row["binding_kind"] in {"quantified_component", "observable_property"}
 )
+assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in value_bindings] == [
+    ("On-farm", "map_to_existing", "AOM_000141"),
+    ("Purchased", "map_to_existing", "AOM_000142"),
+    ("Unspecified", "hold_ambiguous", ""),
+]
+assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in value_bindings)
+
+with (DATA / "labels.csv").open(encoding="utf-8", newline="") as h:
+    labels = list(csv.DictReader(h))
+preferred = {row["concept_id"]: row["label"] for row in labels if row["language"] == "en" and row["label_type"] == "pref"}
+for row in value_bindings:
+    if row["target_concept_id"]:
+        assert preferred[row["target_concept_id"]] == row["target_label"] == row["source_value"]
 
 binding_graph = Graph().parse(DIST / "aom-semantic-bindings.ttl")
 jsonld_binding_graph = Graph().parse(DIST / "aom-semantic-bindings.jsonld")
 assert len(binding_graph) == len(jsonld_binding_graph)
 semantic_binding = URIRef("urn:era-aom:schema:SemanticBinding")
+semantic_value_binding = URIRef("urn:era-aom:schema:SemanticValueBinding")
+ingredient_source_category = URIRef("urn:era-aom:schema:IngredientSourceCategory")
 observable_property = URIRef("http://www.w3.org/ns/sosa/ObservableProperty")
 assert len(set(binding_graph.subjects(RDF.type, semantic_binding))) == 13
+assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 3
+assert {
+    str(subject).removeprefix("urn:era-aom:livestock:")
+    for subject in binding_graph.subjects(RDF.type, ingredient_source_category)
+} == {"AOM_000141", "AOM_000142"}
 assert {
     str(subject).removeprefix("urn:era-aom:livestock:")
     for subject in binding_graph.subjects(RDF.type, observable_property)
@@ -62,8 +84,11 @@ assert binding_result, report
 
 valid_graph = Graph().parse(FIXTURES / "semantic-model-valid.ttl")
 invalid_graph = Graph().parse(FIXTURES / "semantic-model-invalid.ttl")
+invalid_value_binding_graph = Graph().parse(FIXTURES / "semantic-value-binding-invalid.ttl")
 valid_result, _, _ = validate(valid_graph, shacl_graph=shapes, ont_graph=ontology)
 invalid_result, _, _ = validate(invalid_graph, shacl_graph=shapes, ont_graph=ontology)
+invalid_value_binding_result, _, _ = validate(invalid_value_binding_graph, shacl_graph=shapes, ont_graph=ontology)
 assert valid_result
 assert not invalid_result
-print("Semantic model validation passed: 50 dispositions; valid/invalid fixtures behave")
+assert not invalid_value_binding_result
+print("Semantic model validation passed: 50 dispositions; 13 structural and 3 value bindings")

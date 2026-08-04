@@ -15,7 +15,8 @@ aom:FeedMaterialShape a sh:NodeShape ;
   sh:property [ sh:path aom:sourceTaxon ; sh:nodeKind sh:IRI ] ;
   sh:property [ sh:path aom:ingredientPart ; sh:nodeKind sh:IRI ] ;
   sh:property [ sh:path aom:processingMethod ; sh:nodeKind sh:IRI ] ;
-  sh:property [ sh:path aom:productRole ; sh:class aom:ProductRole ] .
+  sh:property [ sh:path aom:productRole ; sh:class aom:ProductRole ] ;
+  sh:property [ sh:path aom:ingredientSource ; sh:class aom:IngredientSourceCategory ] .
 
 aom:IngredientComponentShape a sh:NodeShape ;
   sh:targetClass aom:IngredientComponent ;
@@ -71,3 +72,20 @@ aom:SemanticBindingShape a sh:NodeShape ;
   sh:property [ sh:path aom:unitRequirement ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "required" "not_applicable" ) ] ;
   sh:property [ sh:path aom:compatibilityPolicy ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path aom:bindingStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "approved" ) ] .
+
+aom:SemanticValueBindingShape a sh:NodeShape ;
+  sh:targetClass aom:SemanticValueBinding ;
+  sh:closed true ;
+  sh:ignoredProperties ( rdf:type ) ;
+  sh:property [ sh:path aom:valueTargetProperty ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:sourceValue ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path aom:bindingAction ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "map_to_existing" "hold_ambiguous" ) ] ;
+  sh:property [ sh:path aom:valueTargetConcept ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:targetValueClass ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:valueBindingStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "approved" ) ] ;
+  sh:or (
+    [ sh:property [ sh:path aom:bindingAction ; sh:hasValue "map_to_existing" ] ;
+      sh:property [ sh:path aom:valueTargetConcept ; sh:minCount 1 ; sh:maxCount 1 ] ]
+    [ sh:property [ sh:path aom:bindingAction ; sh:hasValue "hold_ambiguous" ] ;
+      sh:property [ sh:path aom:valueTargetConcept ; sh:maxCount 0 ] ]
+  ) .

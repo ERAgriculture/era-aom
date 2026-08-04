@@ -343,6 +343,65 @@
         "skos:Concept",
         "sosa:ObservableProperty"
       ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000141",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientSourceCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:on-farm",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientSource"
+      },
+      "aom:sourceValue": "On-farm",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientSourceCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000141"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000142",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientSourceCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:purchased",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientSource"
+      },
+      "aom:sourceValue": "Purchased",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientSourceCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_000142"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:unspecified",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientSource"
+      },
+      "aom:sourceValue": "Unspecified",
+      "aom:bindingAction": "hold_ambiguous",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientSourceCategory"
+      },
+      "aom:valueBindingStatus": "approved"
     }
   ]
 }

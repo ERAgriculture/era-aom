@@ -6,9 +6,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/livestock-staging/approved_semantic_bindings.csv"
+VALUE_SOURCE = ROOT / "data/livestock-staging/approved_semantic_value_bindings.csv"
 DIST = ROOT / "dist/livestock-staging"
 CONCEPT_BASE = "urn:era-aom:livestock:"
 BINDING_BASE = "urn:era-aom:binding:"
+VALUE_BINDING_BASE = "urn:era-aom:value-binding:"
 PREFIXES = {
     "aom": "urn:era-aom:schema:",
     "qudt": "http://qudt.org/schema/qudt/",
@@ -27,9 +29,13 @@ def expand(value):
 
 with SOURCE.open(encoding="utf-8", newline="") as handle:
     rows = list(csv.DictReader(handle))
+with VALUE_SOURCE.open(encoding="utf-8", newline="") as handle:
+    value_rows = list(csv.DictReader(handle))
 
 assert len(rows) == 13
 assert len({row["legacy_concept_id"] for row in rows}) == 13
+assert len(value_rows) == 3
+assert {row["binding_action"] for row in value_rows} == {"map_to_existing", "hold_ambiguous"}
 
 graph = []
 for row in rows:
@@ -53,6 +59,22 @@ for row in rows:
     graph.append(binding)
     if row["binding_kind"] == "observable_property":
         graph.append({"@id": concept_uri, "@type": ["skos:Concept", "sosa:ObservableProperty"]})
+
+for row in value_rows:
+    binding = {
+        "@id": VALUE_BINDING_BASE + "ingredient-source:" + row["source_value"].lower().replace(" ", "-"),
+        "@type": "aom:SemanticValueBinding",
+        "aom:valueTargetProperty": {"@id": expand(row["target_property"])},
+        "aom:sourceValue": row["source_value"],
+        "aom:bindingAction": row["binding_action"],
+        "aom:targetValueClass": {"@id": expand(row["value_class"])},
+        "aom:valueBindingStatus": row["status"],
+    }
+    if row["target_concept_id"]:
+        target = CONCEPT_BASE + row["target_concept_id"]
+        binding["aom:valueTargetConcept"] = {"@id": target}
+        graph.append({"@id": target, "@type": ["skos:Concept", "aom:IngredientSourceCategory"]})
+    graph.append(binding)
 
 document = {"@context": PREFIXES, "@graph": graph}
 DIST.mkdir(parents=True, exist_ok=True)
@@ -81,5 +103,20 @@ for row in rows:
     ttl.append(f"<{BINDING_BASE + row['legacy_concept_id']}> " + " ;\n  ".join(terms) + " .\n")
     if row["binding_kind"] == "observable_property":
         ttl.append(f"<{concept_uri}> a skos:Concept, sosa:ObservableProperty .\n")
+for row in value_rows:
+    terms = [
+        "a aom:SemanticValueBinding",
+        f'aom:valueTargetProperty <{expand(row["target_property"])}>',
+        f'aom:sourceValue {json.dumps(row["source_value"])}',
+        f'aom:bindingAction {json.dumps(row["binding_action"])}',
+        f'aom:targetValueClass <{expand(row["value_class"])}>',
+        f'aom:valueBindingStatus {json.dumps(row["status"])}',
+    ]
+    if row["target_concept_id"]:
+        target = CONCEPT_BASE + row["target_concept_id"]
+        terms.append(f"aom:valueTargetConcept <{target}>")
+        ttl.append(f"<{target}> a skos:Concept, aom:IngredientSourceCategory .\n")
+    identifier = VALUE_BINDING_BASE + "ingredient-source:" + row["source_value"].lower().replace(" ", "-")
+    ttl.append(f"<{identifier}> " + " ;\n  ".join(terms) + " .\n")
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
-print(f"Built {len(rows)} approved phase-2 semantic bindings")
+print(f"Built {len(rows)} structural and {len(value_rows)} value semantic bindings")

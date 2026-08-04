@@ -59,3 +59,6 @@ All notable vocabulary changes will be recorded here.
   retain legacy URIs, dual-type eight quantitative concepts as SOSA observable
   properties, define QUDT quantity families, and document reversible pipeline
   cutover requirements.
+- Govern ingredient-source controlled values: reuse `AOM_000141` On-farm and
+  `AOM_000142` Purchased, hold ambiguous Unspecified as semantic null, publish
+  RDF/JSON-LD bindings, and enforce mapping decisions with SHACL.

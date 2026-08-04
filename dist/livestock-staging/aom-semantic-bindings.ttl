@@ -156,3 +156,30 @@
   aom:quantityKind <http://qudt.org/vocab/quantitykind/Count> .
 
 <urn:era-aom:livestock:AOM_000954> a skos:Concept, sosa:ObservableProperty .
+
+<urn:era-aom:livestock:AOM_000141> a skos:Concept, aom:IngredientSourceCategory .
+
+<urn:era-aom:value-binding:ingredient-source:on-farm> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientSource> ;
+  aom:sourceValue "On-farm" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientSourceCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_000141> .
+
+<urn:era-aom:livestock:AOM_000142> a skos:Concept, aom:IngredientSourceCategory .
+
+<urn:era-aom:value-binding:ingredient-source:purchased> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientSource> ;
+  aom:sourceValue "Purchased" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientSourceCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_000142> .
+
+<urn:era-aom:value-binding:ingredient-source:unspecified> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientSource> ;
+  aom:sourceValue "Unspecified" ;
+  aom:bindingAction "hold_ambiguous" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientSourceCategory> ;
+  aom:valueBindingStatus "approved" .
