@@ -33,6 +33,8 @@ jobs:
         run: |
           python scripts/build_semantic_bindings.py
           python tests/validate_semantic_model.py
+      - name: Validate pinned NCBI taxon bindings
+        run: python scripts/validate_ncbi_taxon_bindings.py
       - name: Parse semantic distributions
         run: |
           python -c 'from rdflib import Graph; [Graph().parse(path) for path in ["dist/pilot/prac.jsonld", "dist/pilot/prac.ttl", "dist/pilot/out.jsonld", "dist/pilot/out.ttl", "dist/livestock-staging/aom-livestock.jsonld", "dist/livestock-staging/aom-livestock.ttl", "dist/livestock-staging/aom-schema.ttl", "dist/livestock-staging/aom-semantic-bindings.jsonld", "dist/livestock-staging/aom-semantic-bindings.ttl"]]'
