@@ -72,3 +72,5 @@ All notable vocabulary changes will be recorded here.
   while holding WFO and material-to-taxon assertions for expert approval.
 - Approve ten exact source-name to NCBI Taxonomy bindings, including explicit
   genus/family ranks and Pennisetum-to-Cenchrus synonym handling; keep WFO held.
+- Add second taxon review batch: flag incorrect Brassica-to-Arecaceae mapping,
+  record synonym/rank cases, and hold a chemical string misfiled as taxonomy.

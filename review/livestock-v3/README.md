@@ -15,3 +15,6 @@ counts and source rows are not.
 
 `taxon_mapping_candidates_batch_1.csv` records ten NCBI-verified taxon proposals;
 WFO candidates remain held and material-to-taxon assertions remain unapproved.
+
+`taxon_mapping_candidates_batch_2.csv` adds 14 biological candidates and one
+non-taxon hold; it explicitly repairs a Brassica/Arecaceae legacy mismatch.
