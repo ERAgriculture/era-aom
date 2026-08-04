@@ -37,6 +37,7 @@ with (DATA / "approved_semantic_bindings.csv").open(encoding="utf-8", newline=""
     bindings = list(csv.DictReader(h))
 with (DATA / "approved_semantic_value_bindings.csv").open(encoding="utf-8", newline="") as h:
     value_bindings = list(csv.DictReader(h))
+assert len(value_bindings) == 28
 phase_2 = {row["concept_id"] for row in dispositions if row["migration_phase"] == "2"}
 assert len(bindings) == 13
 assert {row["legacy_concept_id"] for row in bindings} == phase_2
@@ -127,8 +128,16 @@ assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) f
     ("Purchased", "map_to_existing", "AOM_000142"),
     ("Unspecified", "hold_ambiguous", ""),
 ]
-assert len(taxon_value_bindings) == 10
-assert all(row["binding_action"] == "map_to_external" and row["target_uri"].startswith("http://purl.obolibrary.org/obo/NCBITaxon_") for row in taxon_value_bindings)
+assert len(taxon_value_bindings) == 25
+assert sum(row["binding_action"] == "map_to_external" for row in taxon_value_bindings) == 24
+assert all(
+    row["target_uri"].startswith("http://purl.obolibrary.org/obo/NCBITaxon_")
+    for row in taxon_value_bindings if row["binding_action"] == "map_to_external"
+)
+brassica_binding = next(row for row in taxon_value_bindings if row["source_value"] == "Brassica napus")
+assert brassica_binding["target_uri"].endswith("NCBITaxon_3708")
+chemical_hold = next(row for row in taxon_value_bindings if row["source_value"] == "sodium carboxymethyl cellulose")
+assert chemical_hold["binding_action"] == "hold_non_taxon" and not chemical_hold["target_uri"]
 assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in value_bindings)
 
 with (DATA / "labels.csv").open(encoding="utf-8", newline="") as h:
@@ -146,7 +155,7 @@ semantic_value_binding = URIRef("urn:era-aom:schema:SemanticValueBinding")
 ingredient_source_category = URIRef("urn:era-aom:schema:IngredientSourceCategory")
 observable_property = URIRef("http://www.w3.org/ns/sosa/ObservableProperty")
 assert len(set(binding_graph.subjects(RDF.type, semantic_binding))) == 13
-assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 13
+assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 28
 assert {
     str(subject).removeprefix("urn:era-aom:livestock:")
     for subject in binding_graph.subjects(RDF.type, ingredient_source_category)
@@ -170,4 +179,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 13 value bindings, 8 facets, 83 value proposals")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 28 value bindings, 8 facets, 83 value proposals")

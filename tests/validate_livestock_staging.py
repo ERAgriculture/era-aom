@@ -56,7 +56,7 @@ assert {row["resolved_concept_id"] for row in resolutions} == {
 assert len(replacements) == 3
 assert len(deprecations) == 2
 assert len(semantic_bindings) == 13
-assert len(semantic_value_bindings) == 13
+assert len(semantic_value_bindings) == 28
 assert {
     (row["deprecated_id"], row["replacement_id"])
     for row in deprecations
@@ -65,7 +65,7 @@ assert {
     ("AOM_004000", "AOM_003960"),
 }
 assert manifest["counts"]["approved_semantic_bindings"] == 13
-assert manifest["counts"]["approved_semantic_value_bindings"] == 13
+assert manifest["counts"]["approved_semantic_value_bindings"] == 28
 assert len(label_corrections) == 6
 assert len(new_concepts) == 170
 new_by_case = {row["case_id"]: row for row in new_concepts}
