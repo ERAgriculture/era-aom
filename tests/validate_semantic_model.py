@@ -121,6 +121,25 @@ assert {name: row["accepted_name"] for name, row in synonyms.items()} == {
 assert all(row["legacy_ncbi_taxon_id"] == row["proposed_ncbi_taxon_id"] for row in synonyms.values())
 non_taxon = next(row for row in taxon_batch_2 if row["source_name"] == "sodium carboxymethyl cellulose")
 assert non_taxon["decision_action"] == "hold_non_taxon" and not non_taxon["proposed_ncbi_taxon_id"].strip()
+
+with (FACET_REVIEW / "taxon_mapping_candidates_batch_3.csv").open(encoding="utf-8", newline="") as h:
+    taxon_batch_3 = list(csv.DictReader(h))
+assert len(taxon_batch_3) == 21
+assert len({row["source_name"] for row in taxon_batch_3}) == 21
+assert {row["rank"] for row in taxon_batch_3} == {"species"}
+assert all(row["status"] == "proposed-for-review" and not row["reviewer"] and not row["review_date"] for row in taxon_batch_3)
+assert all(row["evidence"].endswith(row["proposed_ncbi_taxon_id"].removeprefix("NCBITaxon_")) for row in taxon_batch_3)
+wrong_ids = {row["source_name"]: row for row in taxon_batch_3 if row["decision_action"] == "replace_incorrect"}
+assert {name: (row["legacy_ncbi_taxon_id"], row["proposed_ncbi_taxon_id"]) for name, row in wrong_ids.items()} == {
+    "Psophocarpus tetragonolobus": ("NCBITaxon_3847", "NCBITaxon_3891"),
+    "Theba pisana": ("NCBITaxon_2315439", "NCBITaxon_145622"),
+}
+normalized_names = {row["source_name"]: row["accepted_name"] for row in taxon_batch_3 if row["source_name"] != row["accepted_name"]}
+assert normalized_names == {
+    "Gliciridia sepium": "Gliricidia sepium",
+    "Opuntia ficus indica": "Opuntia ficus-indica",
+    "Pennisetum clandestinum": "Cenchrus clandestinus",
+}
 ingredient_source_bindings = [row for row in value_bindings if row["target_property"] == "aom:ingredientSource"]
 taxon_value_bindings = [row for row in value_bindings if row["target_property"] == "aom:sourceTaxon"]
 assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in ingredient_source_bindings] == [
