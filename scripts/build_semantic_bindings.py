@@ -13,6 +13,7 @@ BINDING_BASE = "urn:era-aom:binding:"
 VALUE_BINDING_BASE = "urn:era-aom:value-binding:"
 PREFIXES = {
     "aom": "urn:era-aom:schema:",
+    "owl": "http://www.w3.org/2002/07/owl#",
     "qudt": "http://qudt.org/schema/qudt/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sosa": "http://www.w3.org/ns/sosa/",
@@ -34,8 +35,8 @@ with VALUE_SOURCE.open(encoding="utf-8", newline="") as handle:
 
 assert len(rows) == 13
 assert len({row["legacy_concept_id"] for row in rows}) == 13
-assert len(value_rows) == 3
-assert {row["binding_action"] for row in value_rows} == {"map_to_existing", "hold_ambiguous"}
+assert len(value_rows) == 13
+assert {row["binding_action"] for row in value_rows} == {"map_to_existing", "map_to_external", "hold_ambiguous"}
 
 graph = []
 for row in rows:
@@ -70,10 +71,11 @@ for row in value_rows:
         "aom:targetValueClass": {"@id": expand(row["value_class"])},
         "aom:valueBindingStatus": row["status"],
     }
-    if row["target_concept_id"]:
-        target = CONCEPT_BASE + row["target_concept_id"]
+    target = row["target_uri"] or (CONCEPT_BASE + row["target_concept_id"] if row["target_concept_id"] else "")
+    if target:
         binding["aom:valueTargetConcept"] = {"@id": target}
-        graph.append({"@id": target, "@type": ["skos:Concept", "aom:IngredientSourceCategory"]})
+        if row["target_concept_id"]:
+            graph.append({"@id": target, "@type": ["skos:Concept", "aom:IngredientSourceCategory"]})
     graph.append(binding)
 
 document = {"@context": PREFIXES, "@graph": graph}
@@ -112,10 +114,11 @@ for row in value_rows:
         f'aom:targetValueClass <{expand(row["value_class"])}>',
         f'aom:valueBindingStatus {json.dumps(row["status"])}',
     ]
-    if row["target_concept_id"]:
-        target = CONCEPT_BASE + row["target_concept_id"]
+    target = row["target_uri"] or (CONCEPT_BASE + row["target_concept_id"] if row["target_concept_id"] else "")
+    if target:
         terms.append(f"aom:valueTargetConcept <{target}>")
-        ttl.append(f"<{target}> a skos:Concept, aom:IngredientSourceCategory .\n")
+        if row["target_concept_id"]:
+            ttl.append(f"<{target}> a skos:Concept, aom:IngredientSourceCategory .\n")
     identifier = VALUE_BINDING_BASE + "ingredient-source:" + row["source_value"].lower().replace(" ", "-")
     ttl.append(f"<{identifier}> " + " ;\n  ".join(terms) + " .\n")
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")

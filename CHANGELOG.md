@@ -70,3 +70,5 @@ All notable vocabulary changes will be recorded here.
   automatic mappings, or concept minting.
 - Add first ten-taxon NCBI review batch, preserving rank and synonym evidence
   while holding WFO and material-to-taxon assertions for expert approval.
+- Approve ten exact source-name to NCBI Taxonomy bindings, including explicit
+  genus/family ranks and Pennisetum-to-Cenchrus synonym handling; keep WFO held.

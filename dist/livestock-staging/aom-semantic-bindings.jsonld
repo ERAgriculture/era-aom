@@ -1,6 +1,7 @@
 {
   "@context": {
     "aom": "urn:era-aom:schema:",
+    "owl": "http://www.w3.org/2002/07/owl#",
     "qudt": "http://qudt.org/schema/qudt/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sosa": "http://www.w3.org/ns/sosa/",
@@ -402,6 +403,166 @@
         "@id": "urn:era-aom:schema:IngredientSourceCategory"
       },
       "aom:valueBindingStatus": "approved"
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:zea-mays",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Zea mays",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4577"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:glycine-max",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Glycine max",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3847"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:triticum-aestivum",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Triticum aestivum",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4565"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:gossypium",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Gossypium",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3633"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:arachis-hypogaea",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Arachis hypogaea",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3818"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:pennisetum-purpureum",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Pennisetum purpureum",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_154765"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:ostreidae",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Ostreidae",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6563"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:helianthus-annuus",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Helianthus annuus",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4232"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:oryza-sativa",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Oryza sativa",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4530"
+      }
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-source:guizotia-abyssinica",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:sourceTaxon"
+      },
+      "aom:sourceValue": "Guizotia abyssinica",
+      "aom:bindingAction": "map_to_external",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4146"
+      }
     }
   ]
 }
