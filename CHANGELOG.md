@@ -86,3 +86,5 @@ All notable vocabulary changes will be recorded here.
   including five wrong-ID replacements and explicit genus-rank preservation.
 - Approve all 80 batch-4 source-taxon decisions; expand live-validated NCBI
   contract to 125 biological mappings and add reusable guarded promotion tool.
+- Add final all-remainder taxon review: 146 labels classified into 91
+  live-validated mapping candidates and 55 explicit holds.
