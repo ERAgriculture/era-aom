@@ -65,3 +65,6 @@ All notable vocabulary changes will be recorded here.
 - Correct heterogeneous Ingredient part migration: preserve raw descriptor,
   define typed part/form/process/role/constituent facets, and prohibit automatic
   label-only mappings pending reviewed decomposition.
+- Add review-only facet proposals for 83 legacy ingredient-component labels;
+  classify atomic, composite, and unresolved cases without source counts,
+  automatic mappings, or concept minting.

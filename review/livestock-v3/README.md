@@ -7,3 +7,8 @@ mappings and do not authorize automatic assertions.
 `ingredient_component_facets.csv` defines allowed dispositions for heterogeneous
 legacy ingredient-component descriptors. See
 [`../../docs/decisions/0004-ingredient-component-facet-model.md`](../../docs/decisions/0004-ingredient-component-facet-model.md).
+
+`ingredient_component_value_candidates.csv` classifies 83 aggregate-profile
+labels as noncanonical proposals. Review rationale and summary live in
+`INGREDIENT_COMPONENT_VALUE_RECOMMENDATIONS.md`. Labels are included; private
+counts and source rows are not.
