@@ -1,4 +1,5 @@
 @prefix aom: <urn:era-aom:schema:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
@@ -183,3 +184,83 @@
   aom:bindingAction "hold_ambiguous" ;
   aom:targetValueClass <urn:era-aom:schema:IngredientSourceCategory> ;
   aom:valueBindingStatus "approved" .
+
+<urn:era-aom:value-binding:ingredient-source:zea-mays> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Zea mays" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
+
+<urn:era-aom:value-binding:ingredient-source:glycine-max> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Glycine max" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
+
+<urn:era-aom:value-binding:ingredient-source:triticum-aestivum> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Triticum aestivum" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4565> .
+
+<urn:era-aom:value-binding:ingredient-source:gossypium> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Gossypium" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3633> .
+
+<urn:era-aom:value-binding:ingredient-source:arachis-hypogaea> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Arachis hypogaea" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3818> .
+
+<urn:era-aom:value-binding:ingredient-source:pennisetum-purpureum> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Pennisetum purpureum" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_154765> .
+
+<urn:era-aom:value-binding:ingredient-source:ostreidae> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Ostreidae" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_6563> .
+
+<urn:era-aom:value-binding:ingredient-source:helianthus-annuus> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Helianthus annuus" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4232> .
+
+<urn:era-aom:value-binding:ingredient-source:oryza-sativa> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Oryza sativa" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4530> .
+
+<urn:era-aom:value-binding:ingredient-source:guizotia-abyssinica> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:sourceTaxon> ;
+  aom:sourceValue "Guizotia abyssinica" ;
+  aom:bindingAction "map_to_external" ;
+  aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4146> .

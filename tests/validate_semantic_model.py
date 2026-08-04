@@ -102,11 +102,15 @@ assert all(row["ncbi_uri"].endswith(row["ncbi_taxon_id"]) for row in taxon_candi
 assert {row["rank"] for row in taxon_candidates} == {"species", "genus", "family"}
 renamed = next(row for row in taxon_candidates if row["source_name"] == "Pennisetum purpureum")
 assert renamed["accepted_name"] == "Cenchrus purpureus" and renamed["ncbi_taxon_id"] == "NCBITaxon_154765"
-assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in value_bindings] == [
+ingredient_source_bindings = [row for row in value_bindings if row["target_property"] == "aom:ingredientSource"]
+taxon_value_bindings = [row for row in value_bindings if row["target_property"] == "aom:sourceTaxon"]
+assert [(row["source_value"], row["binding_action"], row["target_concept_id"]) for row in ingredient_source_bindings] == [
     ("On-farm", "map_to_existing", "AOM_000141"),
     ("Purchased", "map_to_existing", "AOM_000142"),
     ("Unspecified", "hold_ambiguous", ""),
 ]
+assert len(taxon_value_bindings) == 10
+assert all(row["binding_action"] == "map_to_external" and row["target_uri"].startswith("http://purl.obolibrary.org/obo/NCBITaxon_") for row in taxon_value_bindings)
 assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in value_bindings)
 
 with (DATA / "labels.csv").open(encoding="utf-8", newline="") as h:
@@ -124,7 +128,7 @@ semantic_value_binding = URIRef("urn:era-aom:schema:SemanticValueBinding")
 ingredient_source_category = URIRef("urn:era-aom:schema:IngredientSourceCategory")
 observable_property = URIRef("http://www.w3.org/ns/sosa/ObservableProperty")
 assert len(set(binding_graph.subjects(RDF.type, semantic_binding))) == 13
-assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 3
+assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 13
 assert {
     str(subject).removeprefix("urn:era-aom:livestock:")
     for subject in binding_graph.subjects(RDF.type, ingredient_source_category)
@@ -148,4 +152,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 3 value bindings, 8 facets, 83 value proposals")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 13 value bindings, 8 facets, 83 value proposals")
