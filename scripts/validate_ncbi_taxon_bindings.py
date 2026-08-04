@@ -21,9 +21,10 @@ def approved_rows():
             if row["target_property"] == "aom:sourceTaxon"
             and row["binding_action"] == "map_to_external"
         ]
-    assert len(rows) == 45
-    assert not any(row["target_uri"] == "http://purl.obolibrary.org/obo/NCBITaxon_4146" for row in rows)
-    assert not any(row["target_uri"] == "http://purl.obolibrary.org/obo/NCBITaxon_55119" for row in rows)
+    assert len(rows) == 125
+    targets = {row["source_value"]: row["target_uri"] for row in rows}
+    assert targets["Guizotia abyssinica"] != "http://purl.obolibrary.org/obo/NCBITaxon_4146"
+    assert targets["Brevoortia"] != "http://purl.obolibrary.org/obo/NCBITaxon_55119"
     assert len({row["source_value"].strip().casefold() for row in rows}) == len(rows)
     return rows
 
