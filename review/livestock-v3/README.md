@@ -18,3 +18,6 @@ WFO candidates remain held and material-to-taxon assertions remain unapproved.
 
 `taxon_mapping_candidates_batch_2.csv` adds 14 biological candidates and one
 non-taxon hold; it explicitly repairs a Brassica/Arecaceae legacy mismatch.
+
+`taxon_mapping_candidates_batch_3.csv` adds 21 species candidates, including
+two wrong-ID replacements and explicit spelling/synonym normalization cases.

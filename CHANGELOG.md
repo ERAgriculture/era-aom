@@ -76,3 +76,5 @@ All notable vocabulary changes will be recorded here.
   record synonym/rank cases, and hold a chemical string misfiled as taxonomy.
 - Approve second source-taxon batch: add 14 NCBI bindings, replace incorrect
   Brassica identifier, and govern known non-taxa with `hold_non_taxon`.
+- Add third taxon review batch with 21 live-NCBI-verified species candidates;
+  expose wrong legacy targets for Theba pisana and winged bean.
