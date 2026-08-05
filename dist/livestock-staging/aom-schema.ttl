@@ -40,8 +40,13 @@ aom:ProductRole a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "product role"@en .
 aom:IngredientPartCategory a owl:Class ;
+  rdfs:subClassOf aom:FeedMaterialComponent ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "ingredient part category"@en .
+aom:FeedMaterialComponent a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "feed material component"@en ;
+  rdfs:comment "Reviewed material scope or component, including anatomical parts and collective material such as a whole crop."@en .
 aom:IngredientPhysicalForm a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "ingredient physical form"@en .
@@ -74,7 +79,10 @@ aom:ingredientProportion a owl:ObjectProperty ;
 aom:sourceTaxon a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ;
   rdfs:comment "Links feed material to a reviewed taxon IRI; does not imply SKOS identity."@en .
+aom:materialComponent a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:FeedMaterialComponent .
 aom:ingredientPart a owl:ObjectProperty ;
+  rdfs:subPropertyOf aom:materialComponent ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPartCategory .
 aom:physicalForm a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPhysicalForm .

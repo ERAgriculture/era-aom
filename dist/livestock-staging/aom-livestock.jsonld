@@ -30252,12 +30252,16 @@
       },
       "skos:notation": "AOM_001326",
       "skos:prefLabel": {
-        "@value": "Maize Ensiled",
+        "@value": "Whole-crop maize silage",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:altLabel": [
+        {
+          "@value": "Maize Ensiled",
+          "@language": "en"
+        },
         {
           "@value": "Corn Ensiled",
           "@language": "en"
@@ -30268,6 +30272,14 @@
         },
         {
           "@value": "Maize Silage",
+          "@language": "en"
+        },
+        {
+          "@value": "Maize Whole Ensiled",
+          "@language": "en"
+        },
+        {
+          "@value": "Maize Whole Silage",
           "@language": "en"
         }
       ],
@@ -57247,7 +57259,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "Maize Whole Silage",
@@ -57256,6 +57268,9 @@
       ],
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001313"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_001326"
       },
       "skos:relatedMatch": [
         {
@@ -68634,6 +68649,46 @@
       "era:status": "unknown",
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101021"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101085",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterialComponent"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101085",
+      "skos:prefLabel": {
+        "@value": "Feed material components",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101086",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterialComponent"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101086",
+      "skos:prefLabel": {
+        "@value": "Whole crop",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101085"
       }
     }
   ]

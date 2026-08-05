@@ -46,11 +46,11 @@ with (DATA / "approved_ingredient_component_decompositions.csv").open(encoding="
 with (DATA / "approved_feed_material_facets.csv").open(encoding="utf-8", newline="") as h:
     material_facets = list(csv.DictReader(h))
 assert len(value_bindings) == 298
-assert len(facet_value_concepts) == 67
+assert len(facet_value_concepts) == 69
 assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 65
-assert len({row["concept_id"] for row in facet_value_concepts}) == 67
-assert len(material_facets) == 1
+assert len({row["concept_id"] for row in facet_value_concepts}) == 69
+assert len(material_facets) == 2
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_value_concepts
 }
@@ -74,12 +74,13 @@ assert ingredient_part_binding["compatibility_policy"] == "preserve_raw_descript
 
 with (FACET_REVIEW / "ingredient_component_facets.csv").open(encoding="utf-8", newline="") as h:
     facets = list(csv.DictReader(h))
-assert len(facets) == 8
-assert len({row["facet_id"] for row in facets}) == 8
+assert len(facets) == 9
+assert len({row["facet_id"] for row in facets}) == 9
 assert all(row["status"] == "design-approved" and row["reviewer"] == "Pete Steward" for row in facets)
 assert {row["target_property"] for row in facets if row["target_property"]} == {
     "aom:legacyComponentDescriptor", "aom:ingredientPart", "aom:physicalForm",
     "aom:processingMethod", "aom:productRole", "aom:ingredientConstituent",
+    "aom:materialComponent",
 }
 
 with (FACET_REVIEW / "ingredient_component_value_candidates.csv").open(encoding="utf-8", newline="") as h:
@@ -299,7 +300,7 @@ assert len(set(binding_graph.subjects(RDF.type, semantic_binding))) == 13
 assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 418
 for value_class in {
     "IngredientPartCategory", "IngredientPhysicalForm", "ProcessingMethod",
-    "ProductRole", "IngredientConstituent",
+    "ProductRole", "IngredientConstituent", "FeedMaterialComponent",
 }:
     assert any(binding_graph.subjects(RDF.type, URIRef("urn:era-aom:schema:" + value_class)))
 assert {
@@ -310,13 +311,17 @@ assert {
     str(subject).removeprefix("urn:era-aom:livestock:")
     for subject in binding_graph.subjects(RDF.type, observable_property)
 } == {row["legacy_concept_id"] for row in bindings if row["binding_kind"] == "observable_property"}
-maize_whole_ensiled = URIRef("urn:era-aom:livestock:AOM_006072")
-assert (maize_whole_ensiled, RDF.type, URIRef("urn:era-aom:schema:FeedMaterial")) in binding_graph
+whole_crop_maize_silage = URIRef("urn:era-aom:livestock:AOM_001326")
+assert (whole_crop_maize_silage, RDF.type, URIRef("urn:era-aom:schema:FeedMaterial")) in binding_graph
 assert not any(binding_graph.objects(
-    maize_whole_ensiled, URIRef("urn:era-aom:schema:physicalForm")
+    whole_crop_maize_silage, URIRef("urn:era-aom:schema:physicalForm")
 ))
-assert (maize_whole_ensiled, URIRef("urn:era-aom:schema:processingMethod"),
+assert (whole_crop_maize_silage, URIRef("urn:era-aom:schema:materialComponent"),
+        URIRef("urn:era-aom:livestock:AOM_101086")) in binding_graph
+assert (whole_crop_maize_silage, URIRef("urn:era-aom:schema:processingMethod"),
         URIRef("urn:era-aom:livestock:AOM_000831")) in binding_graph
+deprecated_maize_whole_ensiled = URIRef("urn:era-aom:livestock:AOM_006072")
+assert not any(binding_graph.predicate_objects(deprecated_maize_whole_ensiled))
 binding_result, _, report = validate(binding_graph, shacl_graph=shapes, ont_graph=ontology)
 assert binding_result, report
 
@@ -332,4 +337,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 8 facets, 83 governed values")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 9 facets, 83 governed values")

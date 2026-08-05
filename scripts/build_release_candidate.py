@@ -123,6 +123,11 @@ def main():
     copy_csv_and_parquet(
         sources / "edges.csv", output / "edges.csv", output / "edges.parquet"
     )
+    copy_csv_and_parquet(
+        root / "data" / "livestock-staging" / "approved_deprecations.csv",
+        output / "migration-crosswalk.csv",
+        output / "migration-crosswalk.parquet",
+    )
     shutil.copyfile(config_path, output / "release.json")
     shutil.copyfile(root / "LICENSE.md", output / "LICENSE.md")
     shutil.copyfile(root / "CITATION.cff", output / "CITATION.cff")

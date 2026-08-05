@@ -9,6 +9,7 @@ REVIEW = "review/livestock-v3/ingredient_component_value_candidates.csv"
 DATE = "2026-08-05"
 REVIEWER = "Pete Steward"
 FACET_MODEL = {
+    "material_component": ("aom:materialComponent", "aom:FeedMaterialComponent"),
     "anatomical_part": ("aom:ingredientPart", "aom:IngredientPartCategory"),
     "physical_form": ("aom:physicalForm", "aom:IngredientPhysicalForm"),
     "processing_method": ("aom:processingMethod", "aom:ProcessingMethod"),
@@ -86,6 +87,15 @@ VALUES = [
     ("process_milling", "Milling", "process_root", "processing_method"),
     ("process_hydrolysis", "Hydrolysis", "process_root", "processing_method"),
     ("process_sugar", "Sugar processing", "process_root", "processing_method"),
+]
+
+# Extensions append after established allocations so existing persistent IDs do
+# not shift when new facet families are introduced.
+EXTENSION_ROOTS = [
+    ("material_component_root", "Feed material components", "Reviewed material scopes and components that are not limited to anatomical parts.", "material_component"),
+]
+EXTENSION_VALUES = [
+    ("component_whole_crop", "Whole crop", "material_component_root", "material_component"),
 ]
 
 # Existing AOM concepts that also serve as governed facet values. Reuse their
@@ -180,8 +190,10 @@ def main():
     assert registry[-1]["concept_id"] == "AOM_101018"
     definitions = [(key, label, None, facet, note) for key, label, note, facet in ROOTS]
     definitions += [(key, label, parent, facet, f"Governed {facet.replace('_', ' ')} value used for ingredient-component semantics.") for key, label, parent, facet in VALUES]
+    definitions += [(key, label, None, facet, note) for key, label, note, facet in EXTENSION_ROOTS]
+    definitions += [(key, label, parent, facet, f"Governed {facet.replace('_', ' ')} value used for feed-material semantics.") for key, label, parent, facet in EXTENSION_VALUES]
     ids = {key: f"AOM_{101019 + i:06d}" for i, (key, *_rest) in enumerate(definitions)}
-    root_paths = {key: f"Management/Livestock Management/Feed Characteristic/{label}" for key, label, *_ in definitions[:len(ROOTS)]}
+    root_paths = {key: f"Management/Livestock Management/Feed Characteristic/{label}" for key, label, parent, *_ in definitions if parent is None}
     new_concepts = []
     for key, label, parent, facet, note in definitions:
         parent_id = "AOM_000328" if parent is None else ids[parent]

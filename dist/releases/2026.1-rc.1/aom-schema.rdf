@@ -57,6 +57,12 @@
     <rdfs:label xml:lang="en">processing method</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedMaterialComponent">
+    <rdfs:label xml:lang="en">feed material component</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Reviewed material scope or component, including anatomical parts and collective material such as a whole crop.</rdfs:comment>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientProportion">
     <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
@@ -77,6 +83,12 @@
     <rdfs:label xml:lang="en">feed material</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientPart">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/materialComponent"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/SemanticValueBinding">
     <rdfs:label xml:lang="en">semantic value binding</rdfs:label>
     <rdfs:comment xml:lang="en">Governed decision mapping a source controlled value to an ontology concept or explicitly holding it unresolved.</rdfs:comment>
@@ -91,11 +103,6 @@
     <rdfs:label xml:lang="en">quantitative observation</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientPart">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/SemanticBinding">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -197,6 +204,7 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPartCategory">
     <rdfs:label xml:lang="en">ingredient part category</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Release">
@@ -228,6 +236,11 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/inModule">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Module"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/unitRequirement">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>

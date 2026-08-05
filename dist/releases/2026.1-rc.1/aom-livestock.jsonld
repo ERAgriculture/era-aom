@@ -2860,6 +2860,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001062"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101023"
       },
       {
@@ -9557,6 +9560,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001326"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -9596,7 +9604,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -50877,6 +50885,49 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101085",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101086"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101085"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed material components"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -120000,6 +120051,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101086",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101086"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Whole crop"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006161",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -120467,11 +120556,23 @@
       },
       {
         "@language": "en",
+        "@value": "Maize Ensiled"
+      },
+      {
+        "@language": "en",
         "@value": "Corn Silage"
       },
       {
         "@language": "en",
+        "@value": "Maize Whole Ensiled"
+      },
+      {
+        "@language": "en",
         "@value": "Maize Silage"
+      },
+      {
+        "@language": "en",
+        "@value": "Maize Whole Silage"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -120492,7 +120593,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Maize Ensiled"
+        "@value": "Whole-crop maize silage"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [

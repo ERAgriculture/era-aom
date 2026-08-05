@@ -49,7 +49,7 @@ def main():
 
     concepts = set(livestock_ttl.subjects(RDF.type, SKOS.Concept))
     schemes = set(livestock_ttl.subjects(RDF.type, SKOS.ConceptScheme))
-    assert len(concepts) == 2737 and len(schemes) == 1
+    assert len(concepts) == 2739 and len(schemes) == 1
     assert all(str(item).startswith(base) for item in concepts | schemes)
     assert not any(
         isinstance(term, URIRef) and str(term).startswith("urn:era-aom:")
@@ -109,7 +109,13 @@ def main():
 
     nodes = pq.read_table(release / "nodes.parquet")
     edges = pq.read_table(release / "edges.parquet")
-    assert nodes.num_rows == 2737 and edges.num_rows == 2756
+    crosswalk = pq.read_table(release / "migration-crosswalk.parquet")
+    assert nodes.num_rows == 2739 and edges.num_rows == 2759
+    assert crosswalk.num_rows == 3
+    assert ("AOM_006072", "AOM_001326") in set(zip(
+        crosswalk.column("deprecated_id").to_pylist(),
+        crosswalk.column("replacement_id").to_pylist(),
+    ))
     assert pq.read_schema(release / "nodes.parquet").names == [
         "node_id", "label", "node_type", "module", "status"
     ]

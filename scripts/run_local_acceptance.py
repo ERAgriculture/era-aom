@@ -67,7 +67,7 @@ def main():
     hierarchy = json_get(hierarchy_url, timings)["results"]["bindings"][0]
     broader_count = int(hierarchy["broaderCount"]["value"])
     narrower_count = int(hierarchy["narrowerCount"]["value"])
-    assert broader_count == narrower_count == 2733, hierarchy
+    assert broader_count == narrower_count == 2735, hierarchy
 
     api = args.skosmos.rstrip("/") + "/rest/v1"
     vocabularies = json_get(api + "/vocabularies?lang=en", timings)
