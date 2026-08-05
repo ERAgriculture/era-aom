@@ -33,20 +33,21 @@ held = {
     row["rule_id"] for row in assessment
     if row["recommendation"].startswith("hold") or row["recommendation"].startswith("defer")
 }
-assert len(approved) == len(recommended) == 40
-assert {row["rule_id"] for row in approved} == recommended
+assert len(approved) == 40 and len(recommended) == 41
+assert recommended - {row["rule_id"] for row in approved} == {"PROCESS-DEHULLED"}
+assert {row["rule_id"] for row in approved} < recommended
 assert not ({row["rule_id"] for row in approved} & held)
 assert all(
     row["status"] == "approved" and row["reviewer"] == "Pete Steward"
     and row["review_date"] == "2026-08-05"
     for row in approved
 )
-assert len(generated) == 1594
+assert len(generated) == 1596
 assert manifest == {
     "rule_version": "1.0.0", "status": "approved-and-promoted",
     "reviewer": "Pete Steward", "review_date": "2026-08-05",
-    "approved_rules": 40, "generated_assertions": 1594,
-    "held_or_deferred_rules": 27, "legacy_identifiers_preserved": True,
+    "approved_rules": 40, "generated_assertions": 1596,
+    "unapproved_rules": 28, "legacy_identifiers_preserved": True,
     "ilri_identifiers_used": False,
 }
 assert len({
@@ -78,6 +79,8 @@ assert by_material["AOM_001326"] == {
 }
 assert "AOM_006072" not in by_material
 assert "AOM_001313" not in by_material
+assert ("aom:processingMethod", "Soaking") in by_material["AOM_006500"]
+assert not any(row["rule_id"] == "PROCESS-DEHULLED" for row in generated)
 assert not any(row["target_label"] in {"Cake form", "Pulp form"} for row in generated)
 
 families_with_candidates = {

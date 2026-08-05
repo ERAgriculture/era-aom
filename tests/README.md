@@ -24,6 +24,9 @@ round-trip tests will be added with normalized pilot data.
 - `validate_approved_ingredient_rule_promotion.py`: checks signed rule approval,
   held-rule exclusion, generated assertion uniqueness, guard enforcement,
   family coverage, and critical ambiguous/deprecated cases.
+- `validate_ingredient_model_gap_review.py`: checks all remaining exceptions are
+  covered once by six model families, cluster recommendations remain proposed,
+  and governed-label overrides replace stale edge-label input.
 - `validate_semantic_model.py`: parses OWL/SHACL, checks complete disposition
   and phase-2 binding coverage, validates RDF/JSON-LD equivalence, and proves
   valid/invalid semantic-model fixtures behave correctly.

@@ -27,7 +27,7 @@ AOM_000558,Shell,Animal Byproduct,,Shell,,,,|Shell|||,low,expert_exception,no so
 AOM_000559,Animal,Animal,animal,,,,,animal||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000561,Animal Manures,Animal Manures,animal manures,,,,,animal manures||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000563,Unspecified Bran,Crop Byproduct,unspecified,Bran,,,,unspecified|Bran|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_000564,Brewers Grain,Crop Byproduct,brewers,Grain,,,,brewers|Grain|||,high,rule_application_candidate,,missing,approved_retained_replacement,proposed-not-applied,1.0.0
+AOM_000564,"Brewers grains, dehydrated",Crop Byproduct,brewers,Grain,Drying,,,brewers|Grain|Drying||,high,rule_application_candidate,,missing,approved_retained_replacement,proposed-not-applied,1.0.0
 AOM_000565,Brewers Spent Grain,Crop Byproduct,brewers spent,Grain,,,,brewers spent|Grain|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000567,Hominy Ground,Crop Byproduct,hominy,,Grinding,,,hominy||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000569,Maize Cob,Crop Byproduct,maize,Cob,,,,maize|Cob|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -393,7 +393,7 @@ AOM_001321,Safflower Ground,Crop Product,safflower,,Grinding,,,safflower||Grindi
 AOM_001322,Cassava Ground,Crop Product,cassava,,Grinding,,,cassava||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001323,Coffee Ground Roasted,Crop Product,coffee,,Grinding;Roasting,,,coffee||Grinding;Roasting||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001324,Maize Whole Ground,Crop Product,maize,,Grinding,,,maize||Grinding||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,unreviewed,proposed-not-applied,1.0.0
-AOM_001326,Maize Ensiled,Crop Product,maize,,Ensiling,,,maize||Ensiling||,high,rule_application_candidate,,missing,approved_retained_replacement,proposed-not-applied,1.0.0
+AOM_001326,Whole-crop maize silage,Crop Product,crop maize,,Ensiling,,,crop maize||Ensiling||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,approved_retained_replacement,proposed-not-applied,1.0.0
 AOM_001331,Oat Grain,Crop Product,oat,Grain,,,,oat|Grain|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001332,Oat Ground,Crop Product,oat,,Grinding,,,oat||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001333,Oil,Crop Product,,,,Oil,,|||Oil|,low,expert_exception,no source identity remains after decomposition,missing,unreviewed,proposed-not-applied,1.0.0
@@ -648,7 +648,7 @@ AOM_001636,Chromolaena odorata Leaves,Forage Plants,chromolaena odorata,Leaf,,,,
 AOM_001637,Chromolaena odorata Leaves Dried Ground,Forage Plants,chromolaena odorata,Leaf,Drying;Grinding,,,chromolaena odorata|Leaf|Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001638,Palm Kernel Cake,Crop Byproduct,palm,Kernel,,Cake,,palm|Kernel||Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001641,Cotton Seed Cake Dried,Crop Byproduct,cotton,Seed,Drying,Cake,,cotton|Seed|Drying|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_001642,Cotton Seed Decorticated Ground,Crop Byproduct,cotton decorticated,Seed,Grinding,,,cotton decorticated|Seed|Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_001642,Cotton Seed Decorticated Ground,Crop Byproduct,cotton,Seed,Grinding;Dehulling,,,cotton|Seed|Grinding;Dehulling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001643,Cotton Seed Ground,Crop Byproduct,cotton,Seed,Grinding,,,cotton|Seed|Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001644,Cotton Seed Cake Ground,Crop Byproduct,cotton,Seed,Grinding,Cake,,cotton|Seed|Grinding|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001645,Sheanut Cake Boiled Dried,Crop Byproduct,sheanut,,Boiling;Drying,Cake,,sheanut||Boiling;Drying|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -875,7 +875,7 @@ AOM_001894,Sunflower Seed Cake Ground,Crop Byproduct,sunflower,Seed,Grinding,Cak
 AOM_001895,Oat,Crop Product,oat,,,,,oat||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001896,Blue Lupin Grain,Crop Product,blue lupin,Grain,,,,blue lupin|Grain|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001897,Sheanut,Crop Product,sheanut,,,,,sheanut||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_001898,Bothriocloa Dried,Forage Plants,bothriocloa,,Drying,,,bothriocloa||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_001898,Bothriochloa dried,Forage Plants,bothriochloa,,Drying,,,bothriochloa||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001900,Stereochlaena cameronii,Forage Plants,stereochlaena cameronii,,,,,stereochlaena cameronii||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001901,Atriplex nummularia,Forage Plants,atriplex nummularia,,,,,atriplex nummularia||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001902,Sesbania sesban Leaves Dried,Forage Plants,sesbania sesban,Leaf,Drying,,,sesbania sesban|Leaf|Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1038,7 +1038,7 @@ AOM_002086,Sorghum Sprout Dried Ground,Crop Byproduct,sorghum sprout,,Drying;Gri
 AOM_002087,Prosopis Pods Ground,Forage Plants,prosopis,Pod,Grinding,,,prosopis|Pod|Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002088,Alfalfa Pods,Forage Plants,alfalfa,Pod,,,,alfalfa|Pod|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002089,Alfalfa Pods Dried,Forage Plants,alfalfa,Pod,Drying,,,alfalfa|Pod|Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_002090,Harissonia abyssinica Leaves,Forage Plants,harissonia abyssinica,Leaf,,,,harissonia abyssinica|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_002090,Harrisonia abyssinica leaves,Forage Plants,harrisonia abyssinica,Leaf,,,,harrisonia abyssinica|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002091,Cassava Binder,Other Ingredients,cassava binder,,,,,cassava binder||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002092,Walnut Leaves,Crop Byproduct,walnut,Leaf,,,,walnut|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002093,Walnut Leaves Dried Ethanol Treated Ground,Crop Byproduct,walnut ethanol treated,Leaf,Drying;Grinding,,,walnut ethanol treated|Leaf|Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1064,14 +1064,14 @@ AOM_002117,Sorghum Straw Alkali Treated Dried,Crop Byproduct,sorghum,Straw,Alkal
 AOM_002118,Opuntia ficus indica Cladode Ensiled Singed,Forage Plants,opuntia ficus indica cladode singed,,Ensiling,,,opuntia ficus indica cladode singed||Ensiling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002119,Maize Crushed,Crop Product,maize,,Crushing,,,maize||Crushing||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002120,Poultry Litter Deep Stacked,Animal Manures,poultry litter deep stacked,,,,,poultry litter deep stacked||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_002121,Soybean Flakes Defatted Crushed Dehulled Heated,Crop Byproduct,soybean flakes dehulled,,Crushing;Defatting;Heating,,,soybean flakes dehulled||Crushing;Defatting;Heating||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_002122,Soybean Flakes Defatted Crushed Dehulled Dried Extruded Heated Ground,Crop Byproduct,soybean flakes dehulled,,Crushing;Defatting;Drying;Extrusion;Grinding;Heating,,,soybean flakes dehulled||Crushing;Defatting;Drying;Extrusion;Grinding;Heating||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_002121,Soybean Flakes Defatted Crushed Dehulled Heated,Crop Byproduct,soybean flakes,,Crushing;Defatting;Heating;Dehulling,,,soybean flakes||Crushing;Defatting;Heating;Dehulling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_002122,Soybean Flakes Defatted Crushed Dehulled Dried Extruded Heated Ground,Crop Byproduct,soybean flakes,,Crushing;Defatting;Drying;Extrusion;Grinding;Heating;Dehulling,,,soybean flakes||Crushing;Defatting;Drying;Extrusion;Grinding;Heating;Dehulling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002123,Poultry Litter Deep Stacked Dried,Animal Manures,poultry litter deep stacked,,Drying,,,poultry litter deep stacked||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002124,Wheat Crushed,Crop Product,wheat,,Crushing,,,wheat||Crushing||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_002125,White Lupin Grain Dehulled Dried Soaked,Crop Product,lupin dehulled,Grain,Drying;Soaking,,White,lupin dehulled|Grain|Drying;Soaking||White,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_002125,White Lupin Grain Dehulled Dried Soaked,Crop Product,lupin,Grain,Drying;Dehulling;Soaking,,White,lupin|Grain|Drying;Dehulling;Soaking||White,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002126,White Lupin Grain Dried Soaked,Crop Product,lupin,Grain,Drying;Soaking,,White,lupin|Grain|Drying;Soaking||White,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002128,Sesame Seed Dried Ground Soaked,Crop Byproduct,sesame,Seed,Drying;Grinding;Soaking,,,sesame|Seed|Drying;Grinding;Soaking||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_002129,Soybean Dehulled Ground,Crop Product,soybean dehulled,,Grinding,,,soybean dehulled||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_002129,Soybean Dehulled Ground,Crop Product,soybean,,Grinding;Dehulling,,,soybean||Grinding;Dehulling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002130,Jatropha curcas Cake Ground,Forage Plants,jatropha curcas,,Grinding,Cake,,jatropha curcas||Grinding|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002131,Water Hyacinth Dried Fermented Ground,Forage Plants,water hyacinth,,Drying;Fermentation;Grinding,,,water hyacinth||Drying;Fermentation;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_002132,Rottboellia cochinchinensis,Forage Plants,rottboellia cochinchinensis,,,,,rottboellia cochinchinensis||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1262,7 +1262,7 @@ AOM_003931,Typha domingensis,Forage Plants,typha domingensis,,,,,typha domingens
 AOM_003933,Watermelon Vine,Crop Byproduct,watermelon,Vine,,,,watermelon|Vine|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003950,Vitex doniana Leaves Ground,Forage Plants,vitex doniana,Leaf,Grinding,,,vitex doniana|Leaf|Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003954,Jatropha curcas Leaves,Forage Plants,jatropha curcas,Leaf,,,,jatropha curcas|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_003960,Green Bean Vine,Crop Byproduct,bean,Vine,,,Green,bean|Vine|||Green,low,expert_exception,"green may identify colour, maturity, or fresh state",missing,approved_retained_replacement,proposed-not-applied,1.0.0
+AOM_003960,Common bean vine,Crop Byproduct,common bean,Vine,,,,common bean|Vine|||,high,rule_application_candidate,,missing,approved_retained_replacement,proposed-not-applied,1.0.0
 AOM_003961,Acacia tortilis Pods,Forage Plants,acacia tortilis,Pod,,,,acacia tortilis|Pod|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003962,Desmodium tortuosom,Forage Plants,desmodium tortuosom,,,,,desmodium tortuosom||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003970,Adansonia digitata Seed Cake Ground,Forage Plants,adansonia digitata,Seed,Grinding,Cake,,adansonia digitata|Seed|Grinding|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1272,7 +1272,7 @@ AOM_003973,Cotton Seed,Crop Byproduct,cotton,Seed,,,,cotton|Seed|||,high,rule_ap
 AOM_003977,Tridax procumbens,Forage Plants,tridax procumbens,,,,,tridax procumbens||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003978,Cassava Starch Residue,Crop Byproduct,cassava starch residue,,,,,cassava starch residue||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003980,Colostrum,Animal,colostrum,,,,,colostrum||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_003981,Ziziphus jujube Leaves,Forage Plants,ziziphus jujube,Leaf,,,,ziziphus jujube|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_003981,Ziziphus jujuba leaves,Forage Plants,ziziphus jujuba,Leaf,,,,ziziphus jujuba|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003984,Viscum album,Forage Plants,viscum album,,,,,viscum album||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003987,Pericopis laxiflora,Forage Plants,pericopis laxiflora,,,,,pericopis laxiflora||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_003989,Myrtus communis Leaves,Forage Plants,myrtus communis,Leaf,,,,myrtus communis|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1360,7 +1360,7 @@ AOM_006069,Commelina benghalensis Dried,Forage Plants,commelina benghalensis,,Dr
 AOM_006070,Commelina imberbis Dried,Forage Plants,commelina imberbis,,Drying,,,commelina imberbis||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006071,Maize Cob Ground,Crop Byproduct,maize,Cob,Grinding,,,maize|Cob|Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006072,Maize Whole Ensiled,Crop Product,maize,,Ensiling,,,maize||Ensiling||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,approved_deprecated,proposed-not-applied,1.0.0
-AOM_006073,Cotton Seed Cake Decorticated,Crop Byproduct,cotton decorticated,Seed,,Cake,,cotton decorticated|Seed||Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006073,Cotton Seed Cake Decorticated,Crop Byproduct,cotton,Seed,Dehulling,Cake,,cotton|Seed|Dehulling|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006074,Cynodon nlemfuensis Dried,Forage Plants,cynodon nlemfuensis,,Drying,,,cynodon nlemfuensis||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006075,Cynodon Dried,Forage Plants,cynodon,,Drying,,,cynodon||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006076,Maize Stover Ensiled,Crop Byproduct,maize,Stover,Ensiling,,,maize|Stover|Ensiling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1394,7 +1394,7 @@ AOM_006104,Garcinia kola Seeds Dried Ground,Forage Plants,garcinia kola seeds,,D
 AOM_006105,Gmelina arborea Leaves Dried Ground,Forage Plants,gmelina arborea,Leaf,Drying;Grinding,,,gmelina arborea|Leaf|Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006106,Gmelina arborea Leaves Wilted,Forage Plants,gmelina arborea,Leaf,Wilting,,,gmelina arborea|Leaf|Wilting||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006107,Gmelina arborea Dried,Forage Plants,gmelina arborea,,Drying,,,gmelina arborea||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_006108,Green Bean Vine Dried,Crop Byproduct,bean,Vine,Drying,,Green,bean|Vine|Drying||Green,low,expert_exception,"green may identify colour, maturity, or fresh state",missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006108,Green Bean Vine Dried,Crop Byproduct,common bean,Vine,Drying,,,common bean|Vine|Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006109,Grewia spp. Dried,Forage Plants,grewia spp,,Drying,,,grewia spp||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006110,Groundnut Haulm Crushed,Crop Byproduct,groundnut haulm,,Crushing,,,groundnut haulm||Crushing||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006111,Groundnut Haulm Dried,Crop Byproduct,groundnut haulm,,Drying,,,groundnut haulm||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1444,7 +1444,7 @@ AOM_006162,Cassava Sieviate Dried Fermented Ground,Crop Byproduct,cassava sievia
 AOM_006163,Cassava Starch Residue Dried Fermented Ground,Crop Byproduct,cassava starch residue,,Drying;Fermentation;Grinding,,,cassava starch residue||Drying;Fermentation;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006164,Maize Grain Crushed,Crop Product,maize,Grain,Crushing,,,maize|Grain|Crushing||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006165,Maize Straw Ensiled Urea Treated Wilted,Crop Byproduct,maize,Straw,Ensiling;Urea treatment;Wilting,,,maize|Straw|Ensiling;Urea treatment;Wilting||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_006166,Cotton Seed Decorticated Dried,Crop Byproduct,cotton decorticated,Seed,Drying,,,cotton decorticated|Seed|Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006166,Cotton Seed Decorticated Dried,Crop Byproduct,cotton,Seed,Drying;Dehulling,,,cotton|Seed|Drying;Dehulling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006167,Fish Processing Waste Ground,Animal Byproduct,fish processing waste,,Grinding,,,fish processing waste||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006169,Groundnut Residue,Crop Byproduct,groundnut residue,,,,,groundnut residue||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006170,Noug Dried,Crop Byproduct,noug,,Drying,,,noug||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1470,7 +1470,7 @@ AOM_006190,Rice Straw Ground,Crop Byproduct,rice,Straw,Grinding,,,rice|Straw|Gri
 AOM_006191,Rice Straw Dried,Crop Byproduct,rice,Straw,Drying,,,rice|Straw|Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006192,Rice Straw Dried Ensiled Urea Treated,Crop Byproduct,rice,Straw,Drying;Ensiling;Urea treatment,,,rice|Straw|Drying;Ensiling;Urea treatment||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006194,Shell Ground,Animal Byproduct,,Shell,Grinding,,,|Shell|Grinding||,low,expert_exception,no source identity remains after decomposition,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_006196,Adansonia digitata Seed Cake Decorticated Ground,Forage Plants,adansonia digitata decorticated,Seed,Grinding,Cake,,adansonia digitata decorticated|Seed|Grinding|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006196,Adansonia digitata Seed Cake Decorticated Ground,Forage Plants,adansonia digitata,Seed,Grinding;Dehulling,Cake,,adansonia digitata|Seed|Grinding;Dehulling|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006198,Cochlospermum planchonii Rhizomes Dried Ground,Forage Plants,cochlospermum planchonii rhizomes,,Drying;Grinding,,,cochlospermum planchonii rhizomes||Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006199,Teff,Crop Byproduct,teff,,,,,teff||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006200,Garlic Oil,Crop Product,garlic,,,Oil,,garlic|||Oil|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1500,7 +1500,7 @@ AOM_006224,Lima Bean Vein Dried,Crop Byproduct,lima bean vein,,Drying,,,lima bea
 AOM_006226,Maize Bran Alkali Treated Ground,Crop Byproduct,maize,Bran,Alkali treatment;Grinding,,,maize|Bran|Alkali treatment;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006227,Moringa oleifera Leaves Extract Dried Ground,Forage Plants,moringa oleifera extract,Leaf,Drying;Grinding,,,moringa oleifera extract|Leaf|Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006229,Mucuna pruriens Seed Alkali Treated Boiled Ground,Forage Plants,mucuna pruriens,Seed,Alkali treatment;Boiling;Grinding,,,mucuna pruriens|Seed|Alkali treatment;Boiling;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_006230,Mucuna pruriens Seed Alkali Treated Boiled Decorticated Dried Ground,Forage Plants,mucuna pruriens decorticated,Seed,Alkali treatment;Boiling;Drying;Grinding,,,mucuna pruriens decorticated|Seed|Alkali treatment;Boiling;Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006230,Mucuna pruriens Seed Alkali Treated Boiled Decorticated Dried Ground,Forage Plants,mucuna pruriens,Seed,Alkali treatment;Boiling;Drying;Grinding;Dehulling,,,mucuna pruriens|Seed|Alkali treatment;Boiling;Drying;Grinding;Dehulling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006231,Mucuna pruriens Seed Boiled Dried Ground,Forage Plants,mucuna pruriens,Seed,Boiling;Drying;Grinding,,,mucuna pruriens|Seed|Boiling;Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006232,Mucuna pruriens Protein Isolate Alkali Treated Boiled Ground,Forage Plants,mucuna pruriens protein isolate,,Alkali treatment;Boiling;Grinding,,,mucuna pruriens protein isolate||Alkali treatment;Boiling;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006233,Mucuna pruriens Protein Isolate Alkali Treated Dried Ground,Forage Plants,mucuna pruriens protein isolate,,Alkali treatment;Drying;Grinding,,,mucuna pruriens protein isolate||Alkali treatment;Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1616,7 +1616,7 @@ AOM_006368,Eragrostis curvula Dried Ground,Forage Plants,eragrostis curvula,,Dry
 AOM_006369,Hyparrhenia,Forage Plants,hyparrhenia,,,,,hyparrhenia||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006370,Euphorbia hirta,Forage Plants,euphorbia hirta,,,,,euphorbia hirta||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006371,Faidherbia albida Dried,Forage Plants,faidherbia albida,,Drying,,,faidherbia albida||Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_006373,Ficus gnaphalocarpa Leaves and Twigs,Forage Plants,ficus gnaphalocarpa and twigs,Leaf,,,,ficus gnaphalocarpa and twigs|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006373,Ficus exasperata leaves and twigs,Forage Plants,ficus exasperata and twigs,Leaf,,,,ficus exasperata and twigs|Leaf|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006374,Finger Millet Straw Ensiled Urea Treated,Crop Byproduct,finger millet,Straw,Ensiling;Urea treatment,,,finger millet|Straw|Ensiling;Urea treatment||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006375,Gigantochloa pseudoarundinacea,Forage Plants,gigantochloa pseudoarundinacea,,,,,gigantochloa pseudoarundinacea||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006376,Gliciridia sepium Leaves Wilted,Forage Plants,gliciridia sepium,Leaf,Wilting,,,gliciridia sepium|Leaf|Wilting||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1629,7 +1629,7 @@ AOM_006395,Tectona grandis Wilted,Forage Plants,tectona grandis,,Wilting,,,tecto
 AOM_006396,Soybean Straw Dried Molasses Treated Urea Treated,Crop Byproduct,soybean,Straw,Drying;Molasses treatment;Urea treatment,,,soybean|Straw|Drying;Molasses treatment;Urea treatment||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006397,Maize Straw Molasses Treated Urea Treated,Crop Byproduct,maize,Straw,Molasses treatment;Urea treatment,,,maize|Straw|Molasses treatment;Urea treatment||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006399,Mucuna pruriens Seed Alkali Treated Boiled Dried Ground,Forage Plants,mucuna pruriens,Seed,Alkali treatment;Boiling;Drying;Grinding,,,mucuna pruriens|Seed|Alkali treatment;Boiling;Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_006400,Mucuna pruriens Protein Isolate Alkali Treated Boiled Decorticated Ground,Forage Plants,mucuna pruriens protein isolate decorticated,,Alkali treatment;Boiling;Grinding,,,mucuna pruriens protein isolate decorticated||Alkali treatment;Boiling;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006400,Mucuna pruriens Protein Isolate Alkali Treated Boiled Decorticated Ground,Forage Plants,mucuna pruriens protein isolate,,Alkali treatment;Boiling;Grinding;Dehulling,,,mucuna pruriens protein isolate||Alkali treatment;Boiling;Grinding;Dehulling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006402,Cassava Waste Dried Fermented,Crop Byproduct,cassava waste,,Drying;Fermentation,,,cassava waste||Drying;Fermentation||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006403,Sweet Potato Vine Ensiled Wilted,Crop Byproduct,sweet potato,Vine,Ensiling;Wilting,,,sweet potato|Vine|Ensiling;Wilting||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006404,Cassava Sieviate Dried Ground,Crop Byproduct,cassava sieviate,,Drying;Grinding,,,cassava sieviate||Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1639,6 +1639,6 @@ AOM_006408,Linseed Ground,Crop Byproduct,linseed,,Grinding,,,linseed||Grinding||
 AOM_006410,Occicum gatissimum,Forage Plants,occicum gatissimum,,,,,occicum gatissimum||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006411,Palm Kernel Cake Dried,Crop Byproduct,palm,Kernel,Drying,Cake,,palm|Kernel|Drying|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006413,Rice Straw Ensiled,Crop Byproduct,rice,Straw,Ensiling,,,rice|Straw|Ensiling||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_006500,Mucuna pruriens Seed Boiled Dried Ground,Forage Plants,mucuna pruriens,Seed,Boiling;Drying;Grinding,,,mucuna pruriens|Seed|Boiling;Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006500,Mucuna pruriens Seed Boiled Decorticated Dried Ground Soaked,Forage Plants,mucuna pruriens,Seed,Boiling;Drying;Grinding;Dehulling;Soaking,,,mucuna pruriens|Seed|Boiling;Drying;Grinding;Dehulling;Soaking||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_00672,Sugar Beet Leaves Ensiled Wilted,Crop Byproduct,sugar beet,Leaf,Ensiling;Wilting,,,sugar beet|Leaf|Ensiling;Wilting||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_012120,White Lupin Grain Roasted,Crop Product,lupin,Grain,Roasting,,White,lupin|Grain|Roasting||White,high,rule_application_candidate,,present,unreviewed,proposed-not-applied,1.0.0

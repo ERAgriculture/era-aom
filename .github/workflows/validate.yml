@@ -36,10 +36,12 @@ jobs:
           python scripts/build_ingredient_rule_quality_gate.py
           python scripts/build_ingredient_facet_value_governance.py
           python scripts/promote_approved_ingredient_rules.py
+          python scripts/build_ingredient_model_gap_review.py
           python tests/validate_feed_identity_audit.py
           python tests/validate_ingredient_harmonization_workbench.py
           python tests/validate_ingredient_rule_quality_gate.py
           python tests/validate_approved_ingredient_rule_promotion.py
+          python tests/validate_ingredient_model_gap_review.py
           python tests/validate_maize_identity_review.py
           python tests/validate_maize_identity_implementation.py
           python tests/validate_feed_material_harmonization.py

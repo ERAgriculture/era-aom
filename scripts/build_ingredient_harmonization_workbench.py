@@ -12,11 +12,13 @@ SOURCE = ROOT / "data/livestock-staging/legacy_records.csv"
 OUT = ROOT / "review/livestock-v5"
 DEPRECATIONS = ROOT / "data/livestock-staging/approved_deprecations.csv"
 CONCEPTS = ROOT / "data/livestock-staging/concepts.csv"
+LABELS = ROOT / "data/livestock-staging/labels.csv"
 
 ALIASES = {
     "corn": "maize", "milled": "ground", "grounded": "ground",
     "ensilation": "ensiled", "silage": "ensiled", "toasted": "roasted",
-    "cooked": "heated", "leaves": "leaf", "pods": "pod",
+    "cooked": "heated", "dehydrated": "dried", "decorticated": "dehulled",
+    "grains": "grain", "leaves": "leaf", "pods": "pod",
 }
 PROCESS = {
     "alkali treated": "Alkali treatment", "autoclaved": "Autoclaving",
@@ -25,6 +27,7 @@ PROCESS = {
     "ensiled": "Ensiling", "enzyme treated": "Enzyme treatment",
     "extruded": "Extrusion", "fermented": "Fermentation", "ground": "Grinding",
     "heated": "Heating", "hydrolysed": "Hydrolysis", "molasses treated": "Molasses treatment",
+    "dehulled": "Dehulling",
     "pelleted": "Pelleting", "pressed": "Pressing", "roasted": "Roasting",
     "soaked": "Soaking", "sprouted": "Sprouting", "urea treated": "Urea treatment",
     "wilted": "Wilting",
@@ -61,6 +64,7 @@ STRUCTURAL_L6 = {
 
 def normalize(value):
     text = re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
+    text = re.sub(r"\bgreen bean\b", "common bean", text)
     words = [ALIASES.get(word, word) for word in text.split()]
     return " ".join(words)
 
@@ -94,6 +98,11 @@ with DEPRECATIONS.open(encoding="utf-8", newline="") as handle:
     approved_deprecations = list(csv.DictReader(handle))
 with CONCEPTS.open(encoding="utf-8", newline="") as handle:
     concept_paths = {row["concept_id"]: row["derived_path"] for row in csv.DictReader(handle)}
+with LABELS.open(encoding="utf-8", newline="") as handle:
+    governed_labels = {
+        row["concept_id"]: row["label"] for row in csv.DictReader(handle)
+        if row["language"] == "en" and row["label_type"] == "pref"
+    }
 deprecated = {row["deprecated_id"]: row["replacement_id"] for row in approved_deprecations}
 retained_replacements = set(deprecated.values())
 ingredient_occurrences = [
@@ -113,7 +122,8 @@ rows.sort(key=lambda row: row["AOM"])
 
 inventory = []
 for row in rows:
-    label = normalize(row["Edge_Value"])
+    governed_label = governed_labels[row["AOM"]]
+    label = normalize(governed_label)
     process = matches(label, PROCESS)
     component = matches(label, COMPONENT)
     form = matches(label, FORM)
@@ -141,7 +151,7 @@ for row in rows:
         ";".join(value for _, value in quality),
     ])
     inventory.append({
-        "concept_id": row["AOM"], "preferred_label": row["Edge_Value"],
+        "concept_id": row["AOM"], "preferred_label": governed_label,
         "ingredient_family": row["L6"], "source_identity_candidate": base,
         "component_candidates": ";".join(value for _, value in component),
         "process_candidates": ";".join(value for _, value in process),

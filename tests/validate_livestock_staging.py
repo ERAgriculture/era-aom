@@ -73,7 +73,7 @@ assert sum(row["disposition"] == "decompose" for row in component_classification
 assert sum(row["disposition"] == "hold" for row in component_classifications) == 2
 assert len(facet_concepts) == 91
 assert len(harmonization_rules) == 40
-assert len(generated_material_facets) == 1594
+assert len(generated_material_facets) == 1596
 assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 65
 assert len(component_value_holds) == 10
@@ -99,7 +99,7 @@ assert manifest["counts"]["approved_semantic_value_bindings"] == 298
 assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
 assert manifest["counts"]["approved_ingredient_facet_concepts"] == 91
 assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
-assert manifest["counts"]["approved_generated_feed_material_facets"] == 1594
+assert manifest["counts"]["approved_generated_feed_material_facets"] == 1596
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 10
