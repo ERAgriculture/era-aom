@@ -30,7 +30,10 @@ jobs:
       - name: Validate priority recommendations
         run: python tests/validate_priority_recommendations.py
       - name: Validate feed-material harmonization reviews
-        run: python tests/validate_feed_material_harmonization.py
+        run: |
+          python scripts/build_feed_identity_audit.py
+          python tests/validate_feed_identity_audit.py
+          python tests/validate_feed_material_harmonization.py
       - name: Validate semantic model and dispositions
         run: |
           python scripts/build_semantic_bindings.py

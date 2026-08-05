@@ -3,6 +3,11 @@
 Generated from public AOM Livestock v2.0, DOI
 <https://doi.org/10.7910/DVN/75E7HV>.
 
+Public v2 provides reproducible release source. Its 2,503 AOM rows, identifiers,
+and L1–L10 hierarchy were compared with current ERA transition workbook snapshot
+modified 2026-07-09; see `inventory/AOM_LIVESTOCK_RECONCILIATION.md`. Workbook
+path, restricted supporting sheets, and private fingerprint are not published.
+
 Review staging only: not canonical AOM and not a formal semantic release.
 Legacy release rows remain unchanged in `legacy_records.csv`. Approved
 row-level identity decisions live in `approved_identity_resolutions.csv`;
