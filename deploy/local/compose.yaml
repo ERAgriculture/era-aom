@@ -1,0 +1,44 @@
+name: era-aom-browser
+services:
+  fuseki:
+    build:
+      context: https://github.com/NatLibFi/Skosmos.git#v3.3
+      dockerfile: dockerfiles/jena-fuseki2-docker/Dockerfile
+      args: {JENA_VERSION: 5.4.0}
+    command: --config=/fuseki/config.ttl
+    environment: {JAVA_OPTIONS: "-Xmx2g -Xms1g"}
+    ports: ["127.0.0.1:${FUSEKI_PORT:-9030}:3030"]
+    volumes: ["./fuseki.ttl:/fuseki/config.ttl:ro", "fuseki-data:/fuseki/databases"]
+    restart: unless-stopped
+  fuseki-cache:
+    image: varnish:7.7.3
+    depends_on: [fuseki]
+    ports: ["127.0.0.1:${CACHE_PORT:-9031}:80"]
+    volumes: ["./varnish-default.vcl:/etc/varnish/default.vcl:ro"]
+    restart: unless-stopped
+  load-release:
+    image: curlimages/curl:8.12.1
+    depends_on: [fuseki]
+    volumes: ["../../dist/releases/2026.1-rc.1:/release:ro"]
+    command:
+      - /bin/sh
+      - -ec
+      - |
+        endpoint='http://fuseki:3030/skosmos/data?graph=https%3A%2F%2Fw3id.org%2Fera-aom%2Fgraph%2Flivestock'
+        for file in aom-livestock.ttl aom-schema.ttl aom-semantic-bindings.ttl; do
+          curl --fail --retry 30 --retry-delay 2 --retry-connrefused -X POST \
+            -H 'Content-Type: text/turtle' -T "/release/$${file}" "$${endpoint}"
+        done
+    restart: "no"
+  skosmos:
+    build:
+      context: https://github.com/NatLibFi/Skosmos.git#v3.3
+      dockerfile: dockerfiles/Dockerfile.ubuntu
+    depends_on:
+      load-release: {condition: service_completed_successfully}
+      fuseki-cache: {condition: service_started}
+    ports: ["127.0.0.1:${SKOSMOS_PORT:-9090}:80"]
+    volumes: ["../../config/skosmos/era-aom.ttl:/var/www/html/config.ttl:ro"]
+    restart: unless-stopped
+volumes:
+  fuseki-data:

@@ -1,8 +1,27 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
-@prefix skosmos: <http://purl.org/net/Skosmos#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skosmos: <http://purl.org/net/skosmos#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix aomcfg: <https://w3id.org/era-aom/config/> .
+
+aomcfg:configuration a skosmos:Configuration ;
+  skosmos:sparqlEndpoint <http://fuseki-cache:80/skosmos/sparql> ;
+  skosmos:sparqlDialect "JenaText" ;
+  skosmos:sparqlCollationEnabled false ;
+  skosmos:sparqlTimeout 20 ;
+  skosmos:httpTimeout 5 ;
+  skosmos:serviceName "ERA-AOM Vocabulary Browser" ;
+  skosmos:languages ( [ rdfs:label "en" ; rdf:value "en_GB.utf8" ] ) ;
+  skosmos:searchResultsSize 20 ;
+  skosmos:transitiveLimit 1000 ;
+  skosmos:rdfListItemsLimit 1000 ;
+  skosmos:templateCache "/tmp/skosmos-template-cache" ;
+  skosmos:feedbackAddress "" ;
+  skosmos:feedbackSender "" ;
+  skosmos:feedbackEnvelopeSender "" ;
+  skosmos:globalPlugins () .
 
 aomcfg:livestock a skosmos:Vocabulary, void:Dataset ;
   dc:title "Agriculture Ontology for Meta-analysis — Livestock"@en ;
@@ -15,4 +34,6 @@ aomcfg:livestock a skosmos:Vocabulary, void:Dataset ;
   skosmos:showStatistics true ;
   skosmos:loadExternalResources false ;
   skosmos:shortName "ERA-AOM Livestock" ;
+  void:sparqlEndpoint <http://fuseki-cache:80/skosmos/sparql> ;
+  skosmos:sparqlGraph <https://w3id.org/era-aom/graph/livestock> ;
   skosmos:mainConceptScheme <https://w3id.org/era-aom/scheme/livestock-v2> .

@@ -23,6 +23,16 @@ checksums must match.
 
 ## Semantic-tool evaluation
 
+Local browser stack is defined in `deploy/local/`. It pins Skosmos 3.3 and
+Jena/Fuseki 5.4.0, loads release candidate into one named graph, and exposes
+services on loopback only. Validate configuration in CI, then run where Docker
+is available:
+
+```sh
+docker compose -f deploy/local/compose.yaml up --build
+python scripts/check_browser_stack.py
+```
+
 1. Load `aom-livestock.ttl`, `aom-schema.ttl`, and semantic bindings into
    Apache Jena/Fuseki named graphs.
 2. Point Skosmos vocabulary configuration at graph and verify search, hierarchy,
