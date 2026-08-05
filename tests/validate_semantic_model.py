@@ -37,7 +37,20 @@ with (DATA / "approved_semantic_bindings.csv").open(encoding="utf-8", newline=""
     bindings = list(csv.DictReader(h))
 with (DATA / "approved_semantic_value_bindings.csv").open(encoding="utf-8", newline="") as h:
     value_bindings = list(csv.DictReader(h))
+with (DATA / "approved_ingredient_facet_concepts.csv").open(encoding="utf-8", newline="") as h:
+    facet_value_concepts = list(csv.DictReader(h))
+with (DATA / "approved_ingredient_component_value_mappings.csv").open(encoding="utf-8", newline="") as h:
+    component_value_mappings = list(csv.DictReader(h))
+with (DATA / "approved_ingredient_component_decompositions.csv").open(encoding="utf-8", newline="") as h:
+    component_decompositions = list(csv.DictReader(h))
 assert len(value_bindings) == 298
+assert len(facet_value_concepts) == 55
+assert len(component_value_mappings) == 35
+assert len(component_decompositions) == 39
+assert len({row["concept_id"] for row in facet_value_concepts}) == 55
+assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
+    row["concept_id"] for row in facet_value_concepts
+}
 phase_2 = {row["concept_id"] for row in dispositions if row["migration_phase"] == "2"}
 assert len(bindings) == 13
 assert {row["legacy_concept_id"] for row in bindings} == phase_2
@@ -278,7 +291,12 @@ semantic_value_binding = URIRef("urn:era-aom:schema:SemanticValueBinding")
 ingredient_source_category = URIRef("urn:era-aom:schema:IngredientSourceCategory")
 observable_property = URIRef("http://www.w3.org/ns/sosa/ObservableProperty")
 assert len(set(binding_graph.subjects(RDF.type, semantic_binding))) == 13
-assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 298
+assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 372
+for value_class in {
+    "IngredientPartCategory", "IngredientPhysicalForm", "ProcessingMethod",
+    "ProductRole", "IngredientConstituent",
+}:
+    assert any(binding_graph.subjects(RDF.type, URIRef("urn:era-aom:schema:" + value_class)))
 assert {
     str(subject).removeprefix("urn:era-aom:livestock:")
     for subject in binding_graph.subjects(RDF.type, ingredient_source_category)
@@ -302,4 +320,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 298 value bindings, 8 facets, 83 value proposals")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 372 value bindings, 8 facets, 83 value proposals")

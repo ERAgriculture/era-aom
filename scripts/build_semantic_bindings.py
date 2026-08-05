@@ -7,6 +7,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/livestock-staging/approved_semantic_bindings.csv"
 VALUE_SOURCE = ROOT / "data/livestock-staging/approved_semantic_value_bindings.csv"
+FACET_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_facet_concepts.csv"
+FACET_MAPPING_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_value_mappings.csv"
+FACET_DECOMPOSITION_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_decompositions.csv"
 DIST = ROOT / "dist/livestock-staging"
 CONCEPT_BASE = "urn:era-aom:livestock:"
 BINDING_BASE = "urn:era-aom:binding:"
@@ -32,6 +35,12 @@ with SOURCE.open(encoding="utf-8", newline="") as handle:
     rows = list(csv.DictReader(handle))
 with VALUE_SOURCE.open(encoding="utf-8", newline="") as handle:
     value_rows = list(csv.DictReader(handle))
+with FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
+    facet_rows = list(csv.DictReader(handle))
+with FACET_MAPPING_SOURCE.open(encoding="utf-8", newline="") as handle:
+    facet_mappings = list(csv.DictReader(handle))
+with FACET_DECOMPOSITION_SOURCE.open(encoding="utf-8", newline="") as handle:
+    facet_decompositions = list(csv.DictReader(handle))
 
 assert len(rows) == 13
 assert len({row["legacy_concept_id"] for row in rows}) == 13
@@ -39,6 +48,30 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
+assert len(facet_rows) == 55 and len(facet_mappings) == 35 and len(facet_decompositions) == 39
+facet_by_id = {row["concept_id"]: row for row in facet_rows}
+facet_value_rows = []
+for row in facet_mappings:
+    facet = facet_by_id[row["target_concept_id"]]
+    facet_value_rows.append({
+        "identifier": "ingredient-component:" + row["source_value"].lower().replace(" ", "-"),
+        "target_property": facet["target_property"], "source_value": row["source_value"],
+        "binding_action": "map_to_existing", "target_concept_id": row["target_concept_id"],
+        "target_uri": "", "target_label": row["target_label"],
+        "value_class": facet["value_class"], "status": row["status"],
+    })
+for row in facet_decompositions:
+    facet = facet_by_id[row["target_concept_id"]]
+    facet_value_rows.append({
+        "identifier": "ingredient-component:" + row["source_value"].lower().replace(" ", "-") + ":" + row["assertion_order"],
+        "target_property": facet["target_property"], "source_value": row["source_value"],
+        "binding_action": "decompose_to_existing", "target_concept_id": row["target_concept_id"],
+        "target_uri": "", "target_label": row["target_label"],
+        "value_class": facet["value_class"], "status": row["status"],
+    })
+for row in value_rows:
+    row["identifier"] = "ingredient-source:" + row["source_value"].lower().replace(" ", "-")
+all_value_rows = value_rows + facet_value_rows
 
 graph = []
 for row in rows:
@@ -63,9 +96,9 @@ for row in rows:
     if row["binding_kind"] == "observable_property":
         graph.append({"@id": concept_uri, "@type": ["skos:Concept", "sosa:ObservableProperty"]})
 
-for row in value_rows:
+for row in all_value_rows:
     binding = {
-        "@id": VALUE_BINDING_BASE + "ingredient-source:" + row["source_value"].lower().replace(" ", "-"),
+        "@id": VALUE_BINDING_BASE + row["identifier"],
         "@type": "aom:SemanticValueBinding",
         "aom:valueTargetProperty": {"@id": expand(row["target_property"])},
         "aom:sourceValue": row["source_value"],
@@ -77,7 +110,7 @@ for row in value_rows:
     if target:
         binding["aom:valueTargetConcept"] = {"@id": target}
         if row["target_concept_id"]:
-            graph.append({"@id": target, "@type": ["skos:Concept", "aom:IngredientSourceCategory"]})
+            graph.append({"@id": target, "@type": ["skos:Concept", row["value_class"]]})
     graph.append(binding)
 
 document = {"@context": PREFIXES, "@graph": graph}
@@ -107,7 +140,7 @@ for row in rows:
     ttl.append(f"<{BINDING_BASE + row['legacy_concept_id']}> " + " ;\n  ".join(terms) + " .\n")
     if row["binding_kind"] == "observable_property":
         ttl.append(f"<{concept_uri}> a skos:Concept, sosa:ObservableProperty .\n")
-for row in value_rows:
+for row in all_value_rows:
     terms = [
         "a aom:SemanticValueBinding",
         f'aom:valueTargetProperty <{expand(row["target_property"])}>',
@@ -120,8 +153,8 @@ for row in value_rows:
     if target:
         terms.append(f"aom:valueTargetConcept <{target}>")
         if row["target_concept_id"]:
-            ttl.append(f"<{target}> a skos:Concept, aom:IngredientSourceCategory .\n")
-    identifier = VALUE_BINDING_BASE + "ingredient-source:" + row["source_value"].lower().replace(" ", "-")
+            ttl.append(f"<{target}> a skos:Concept, {row['value_class']} .\n")
+    identifier = VALUE_BINDING_BASE + row["identifier"]
     ttl.append(f"<{identifier}> " + " ;\n  ".join(terms) + " .\n")
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
-print(f"Built {len(rows)} structural and {len(value_rows)} value semantic bindings")
+print(f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings")

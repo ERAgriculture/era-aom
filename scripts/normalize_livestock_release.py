@@ -84,6 +84,7 @@ def main():
     id_registry = read_governance("livestock_id_registry.csv")
     semantic_relations = read_governance("approved_semantic_relations.csv")
     reparentings = read_governance("approved_reparentings.csv")
+    facet_concepts = read_governance("approved_ingredient_facet_concepts.csv")
     resolution_by_row = {row["source_row"]: row for row in identity_resolutions}
     replacement_by_key = {
         (row["source_row"], row["source_column"]): row
@@ -463,6 +464,7 @@ def main():
         for row in concepts
     }
     concept_type = {row["concept_id"]: row["concept_type"] for row in concepts}
+    facet_value_class = {row["concept_id"]: row["value_class"] for row in facet_concepts}
     mapped = defaultdict(list)
     for row in mappings:
         if row["target_uri"]:
@@ -475,7 +477,9 @@ def main():
     }]
     for concept_id in sorted(pref):
         item = {
-            "@id": URI_PREFIX + concept_id, "@type": "skos:Concept",
+            "@id": URI_PREFIX + concept_id,
+            "@type": (["skos:Concept", facet_value_class[concept_id]]
+                      if concept_id in facet_value_class else "skos:Concept"),
             "skos:inScheme": {"@id": SCHEME_URI}, "skos:notation": concept_id,
             "skos:prefLabel": {"@value": pref[concept_id], "@language": "en"},
             "era:conceptType": concept_type[concept_id],
@@ -501,6 +505,7 @@ def main():
     jsonld = {
         "@context": {"skos": "http://www.w3.org/2004/02/skos/core#",
                      "dcterms": "http://purl.org/dc/terms/",
+                     "aom": "urn:era-aom:schema:",
                      "era": "urn:era:property:"},
         "@graph": graph,
     }
@@ -511,6 +516,7 @@ def main():
     ttl = [
         "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
         "@prefix dcterms: <http://purl.org/dc/terms/> .", "",
+        "@prefix aom: <urn:era-aom:schema:> .", "",
         "@prefix era: <urn:era:property:> .", "",
         f"<{SCHEME_URI}> a skos:ConceptScheme ;",
         '  skos:prefLabel "AOM Livestock v2 staging"@en ;',
@@ -518,7 +524,9 @@ def main():
     ]
     for concept_id in sorted(pref):
         terms = [
-            "a skos:Concept", f"skos:inScheme <{SCHEME_URI}>",
+            (f"a skos:Concept, {facet_value_class[concept_id]}"
+             if concept_id in facet_value_class else "a skos:Concept"),
+            f"skos:inScheme <{SCHEME_URI}>",
             f"skos:notation {json.dumps(concept_id)}",
             f"skos:prefLabel {json.dumps(pref[concept_id], ensure_ascii=False)}@en",
             f'era:conceptType {json.dumps(concept_type[concept_id])}',
@@ -603,6 +611,13 @@ def main():
             ),
             "approved_ingredient_component_classifications": len(
                 read_governance("approved_ingredient_component_classifications.csv")
+            ),
+            "approved_ingredient_facet_concepts": len(facet_concepts),
+            "approved_ingredient_component_value_mappings": len(
+                read_governance("approved_ingredient_component_value_mappings.csv")
+            ),
+            "approved_ingredient_component_decompositions": len(
+                read_governance("approved_ingredient_component_decompositions.csv")
             ),
         },
         "identifier_policy": {

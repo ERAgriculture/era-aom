@@ -94,3 +94,5 @@ All notable vocabulary changes will be recorded here.
   bindings and one explicit hold; expand approved taxon mapping contract to 238.
 - Govern all 83 profiled ingredient-component descriptors as classification-only
   routes: 52 atomic reviews, 28 decompositions, and three explicit holds.
+- Add 55 typed ingredient facet concepts, approve 35 atomic value mappings, and
+  publish 39 explicit assertions decomposing 17 compound descriptors.

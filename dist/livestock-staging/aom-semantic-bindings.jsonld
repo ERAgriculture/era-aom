@@ -4952,6 +4952,1708 @@
       "aom:valueTargetConcept": {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4562"
       }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101049",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:block",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Block",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101049"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101024",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:bulb",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Bulb",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101024"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101025",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:cladode",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Cladode",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101025"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101026",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:cob",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Cob",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101026"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101027",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:corm",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Corm",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101027"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101055",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:discards",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Discards",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101055"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101028",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:fruits",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Fruits",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101028"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101029",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:germ",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Germ",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101029"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101064",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:gluten",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientConstituent"
+      },
+      "aom:sourceValue": "Gluten",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientConstituent"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101064"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101030",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:hull",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Hull",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101030"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101031",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:husk",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Husk",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101031"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101032",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:kernel",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Kernel",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101032"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101033",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Leaves",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101033"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101050",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:lick",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Lick",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101050"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101056",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:market-waste",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Market Waste",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101056"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101057",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:offal",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Offal",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101057"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101034",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:peel",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Peel",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101034"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101034",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:peels",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Peels",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101034"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101035",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:pods",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Pods",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101035"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101051",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:powder",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Powder",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101051"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101058",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:processing-waste",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Processing Waste",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101058"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101036",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:pseudo-stem",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Pseudo-stem",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101036"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101059",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:residue",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Residue",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101059"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101037",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:root",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Root",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101037"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101038",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:seed",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Seed",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101038"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101038",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:seeds",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Seeds",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101038"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101039",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:sheath",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Sheath",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101039"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101060",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:shorts",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Shorts",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101060"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101041",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:sprout",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Sprout",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101041"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101042",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:stalk",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Stalk",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101042"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101042",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:stalks",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Stalks",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101042"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101065",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:starch",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientConstituent"
+      },
+      "aom:sourceValue": "Starch",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientConstituent"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101065"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101043",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:tuber",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Tuber",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101043"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101044",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:viscera",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Viscera",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101044"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101061",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:waste",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Waste",
+      "aom:bindingAction": "map_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101061"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101052",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:bean-cake:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Bean Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101052"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101062",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:bean-cake:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Bean Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101062"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101040",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:bean-shell:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Bean Shell",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101040"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101068",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:brewers-grain:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Brewers Grain",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101068"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101062",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:brewers-grain:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Brewers Grain",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101062"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101053",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:flakes-defatted:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Flakes Defatted",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101053"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101069",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:flakes-defatted:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Flakes Defatted",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101069"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101066",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:full-fat-cake:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientConstituent"
+      },
+      "aom:sourceValue": "Full Fat Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientConstituent"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101066"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101052",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:full-fat-cake:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Full Fat Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101052"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101070",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:full-fat-cake:3",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Full Fat Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101070"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101054",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:hay:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Hay",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101054"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101071",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:hay:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Hay",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101071"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101032",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:kernel-cake:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Kernel Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101032"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101052",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:kernel-cake:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Kernel Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101052"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101070",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:kernel-cake:3",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Kernel Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101070"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101033",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-and-soft-twig:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Leaves and Soft Twig",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101033"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101045",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-and-soft-twig:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Leaves and Soft Twig",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101045"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101033",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-and-twigs:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Leaves and Twigs",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101033"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101045",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-and-twigs:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Leaves and Twigs",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101045"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101033",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-cake:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Leaves Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101033"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101052",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-cake:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Leaves Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101052"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101070",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-cake:3",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Leaves Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101070"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101033",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-extract:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Leaves Extract",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101033"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101072",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:leaves-extract:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Leaves Extract",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101072"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101034",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:peel-essential-oil:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Peel Essential Oil",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101034"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101067",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:peel-essential-oil:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientConstituent"
+      },
+      "aom:sourceValue": "Peel Essential Oil",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientConstituent"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101067"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101072",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:peel-essential-oil:3",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Peel Essential Oil",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101072"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101037",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:root-bark:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Root Bark",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101037"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101046",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:root-bark:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Root Bark",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101046"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101038",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:seed-cake:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Seed Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101038"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101052",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:seed-cake:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:physicalForm"
+      },
+      "aom:sourceValue": "Seed Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101052"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101070",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:seed-cake:3",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Seed Cake",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101070"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101038",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:seed-hull:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Seed Hull",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101038"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101030",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:seed-hull:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Seed Hull",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101030"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101047",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:stover:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Stover",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101047"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101033",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:stover:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Stover",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101033"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101063",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:stover:3",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:productRole"
+      },
+      "aom:sourceValue": "Stover",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProductRole"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101063"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101048",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:threshed-top:1",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:ingredientPart"
+      },
+      "aom:sourceValue": "Threshed Top",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:IngredientPartCategory"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101048"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101073",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:value-binding:ingredient-component:threshed-top:2",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:processingMethod"
+      },
+      "aom:sourceValue": "Threshed Top",
+      "aom:bindingAction": "decompose_to_existing",
+      "aom:targetValueClass": {
+        "@id": "urn:era-aom:schema:ProcessingMethod"
+      },
+      "aom:valueBindingStatus": "approved",
+      "aom:valueTargetConcept": {
+        "@id": "urn:era-aom:livestock:AOM_101073"
+      }
     }
   ]
 }

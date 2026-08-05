@@ -2,6 +2,7 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
+    "aom": "urn:era-aom:schema:",
     "era": "urn:era:property:"
   },
   "@graph": [
@@ -67306,6 +67307,1106 @@
       "era:status": "unknown",
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000004"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101019",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101019",
+      "skos:prefLabel": {
+        "@value": "Ingredient anatomical parts",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101020",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101020",
+      "skos:prefLabel": {
+        "@value": "Ingredient physical forms",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101021",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101021",
+      "skos:prefLabel": {
+        "@value": "Ingredient processing methods",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101022",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101022",
+      "skos:prefLabel": {
+        "@value": "Ingredient product roles",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101023",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101023",
+      "skos:prefLabel": {
+        "@value": "Ingredient constituents",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101024",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101024",
+      "skos:prefLabel": {
+        "@value": "Bulb",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101025",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101025",
+      "skos:prefLabel": {
+        "@value": "Cladode",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101026",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101026",
+      "skos:prefLabel": {
+        "@value": "Cob",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101027",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101027",
+      "skos:prefLabel": {
+        "@value": "Corm",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101028",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101028",
+      "skos:prefLabel": {
+        "@value": "Fruit",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101029",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101029",
+      "skos:prefLabel": {
+        "@value": "Germ",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101030",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101030",
+      "skos:prefLabel": {
+        "@value": "Hull",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101031",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101031",
+      "skos:prefLabel": {
+        "@value": "Husk",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101032",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101032",
+      "skos:prefLabel": {
+        "@value": "Kernel",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101033",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101033",
+      "skos:prefLabel": {
+        "@value": "Leaf",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101034",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101034",
+      "skos:prefLabel": {
+        "@value": "Peel",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101035",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101035",
+      "skos:prefLabel": {
+        "@value": "Pod",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101036",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101036",
+      "skos:prefLabel": {
+        "@value": "Pseudostem",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101037",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101037",
+      "skos:prefLabel": {
+        "@value": "Root",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101038",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101038",
+      "skos:prefLabel": {
+        "@value": "Seed",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101039",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101039",
+      "skos:prefLabel": {
+        "@value": "Sheath",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101040",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101040",
+      "skos:prefLabel": {
+        "@value": "Shell",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101041",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101041",
+      "skos:prefLabel": {
+        "@value": "Sprout",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101042",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101042",
+      "skos:prefLabel": {
+        "@value": "Stalk",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101043",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101043",
+      "skos:prefLabel": {
+        "@value": "Tuber",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101044",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101044",
+      "skos:prefLabel": {
+        "@value": "Viscera",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101045",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101045",
+      "skos:prefLabel": {
+        "@value": "Twig",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101046",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101046",
+      "skos:prefLabel": {
+        "@value": "Bark",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101047",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101047",
+      "skos:prefLabel": {
+        "@value": "Stem",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101048",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101048",
+      "skos:prefLabel": {
+        "@value": "Plant top",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101019"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101049",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101049",
+      "skos:prefLabel": {
+        "@value": "Block form",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101020"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101050",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101050",
+      "skos:prefLabel": {
+        "@value": "Lick form",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101020"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101051",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101051",
+      "skos:prefLabel": {
+        "@value": "Powder form",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101020"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101052",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101052",
+      "skos:prefLabel": {
+        "@value": "Cake form",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101020"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101053",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101053",
+      "skos:prefLabel": {
+        "@value": "Flake form",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101020"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101054",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101054",
+      "skos:prefLabel": {
+        "@value": "Dried form",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101020"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101055",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101055",
+      "skos:prefLabel": {
+        "@value": "Discard role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101056",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101056",
+      "skos:prefLabel": {
+        "@value": "Market-waste role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101057",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101057",
+      "skos:prefLabel": {
+        "@value": "Offal role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101058",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101058",
+      "skos:prefLabel": {
+        "@value": "Processing-waste role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101059",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101059",
+      "skos:prefLabel": {
+        "@value": "Residue role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101060",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101060",
+      "skos:prefLabel": {
+        "@value": "Milling-shorts role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101061",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101061",
+      "skos:prefLabel": {
+        "@value": "Waste role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101062",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101062",
+      "skos:prefLabel": {
+        "@value": "By-product role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101063",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101063",
+      "skos:prefLabel": {
+        "@value": "Crop-residue role",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101022"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101064",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101064",
+      "skos:prefLabel": {
+        "@value": "Gluten constituent",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101023"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101065",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101065",
+      "skos:prefLabel": {
+        "@value": "Starch constituent",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101023"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101066",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101066",
+      "skos:prefLabel": {
+        "@value": "Fat constituent",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101023"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101067",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientConstituent"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101067",
+      "skos:prefLabel": {
+        "@value": "Essential-oil constituent",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101023"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101068",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101068",
+      "skos:prefLabel": {
+        "@value": "Brewing",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101021"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101069",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101069",
+      "skos:prefLabel": {
+        "@value": "Defatting",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101021"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101070",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101070",
+      "skos:prefLabel": {
+        "@value": "Pressing",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101021"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101071",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101071",
+      "skos:prefLabel": {
+        "@value": "Drying",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101021"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101072",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101072",
+      "skos:prefLabel": {
+        "@value": "Extraction",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101021"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101073",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101073",
+      "skos:prefLabel": {
+        "@value": "Threshing",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101021"
       }
     }
   ]
