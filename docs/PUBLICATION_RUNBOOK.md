@@ -45,8 +45,9 @@ python scripts/check_browser_stack.py
 
 ## Persistent namespace and content negotiation
 
-Proposed namespace is `https://w3id.org/era-aom/`. Register only after
-institutional owner accepts redirect targets and maintenance responsibility.
+Approved namespace is `https://w3id.org/era-aom/`; approved browser target is
+`https://vocab.era.cgiar.org/livestock`. Register only after CGIAR DNS and
+operational ownership are confirmed and redirect destinations are live.
 Generate registration files through `scripts/build_w3id_proposal.py`; see
 `docs/W3ID_REGISTRATION.md`. Generator rejects unapproved/example targets.
 Required representations:

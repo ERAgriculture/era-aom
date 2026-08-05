@@ -1,6 +1,7 @@
 # Decision 0016: split persistent identity from hosting
 
-Status: proposed — hosting targets and maintainers await approval.
+Status: accepted — identity and target names approved 2026-08-05; deployment
+remains gated on DNS, live hosting, release publication, and external approval.
 
 ## Context
 
@@ -26,11 +27,23 @@ can dereference stable IRIs into explicit SKOS graphs.
 
 ## Required approvals
 
-1. Production Skosmos HTTPS base URL and operational owner.
-2. Immutable release asset base URL and formal `2026.1` publication.
-3. Individual w3id maintainer(s); organization alone is insufficient continuity.
-4. External PR to `perma-id/w3id.org`.
+Approved configuration:
 
-Generator refuses example domains and unapproved target configuration. No w3id
-files should be submitted until generated output passes local validation and all
-destinations resolve.
+- Skosmos target: `https://vocab.era.cgiar.org/livestock`;
+- immutable artifact target: GitHub Release `2026.1`;
+- individual maintainer: Pete Steward (`peetmate`);
+- organizational continuity: `ERAgriculture`;
+- owner attribution: Alliance of Bioversity International and CIAT, within
+  CGIAR.
+
+Still required:
+
+1. CGIAR DNS delegation and operational hosting owner confirmation.
+2. Live Skosmos deployment and immutable `2026.1` publication.
+3. Destination/content-negotiation tests.
+4. Explicit approval for external PR to `perma-id/w3id.org`.
+
+Generator refuses example domains and unapproved target configuration. Approved
+target names authorize generating review files, not DNS changes, deployment,
+release publication, or external submission. No w3id files should be submitted
+until generated output passes validation and all destinations resolve.
