@@ -2,8 +2,8 @@ name: era-aom-browser
 services:
   fuseki:
     build:
-      context: https://github.com/NatLibFi/Skosmos.git#v3.3
-      dockerfile: dockerfiles/jena-fuseki2-docker/Dockerfile
+      context: https://github.com/NatLibFi/Skosmos.git#v3.3:dockerfiles/jena-fuseki2-docker
+      dockerfile: Dockerfile
       args: {JENA_VERSION: 5.4.0}
     command: --config=/fuseki/config.ttl
     environment: {JAVA_OPTIONS: "-Xmx2g -Xms1g"}
