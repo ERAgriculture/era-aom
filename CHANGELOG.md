@@ -92,3 +92,5 @@ All notable vocabulary changes will be recorded here.
   preserve 55 ambiguous/contextual labels as explicit null-target holds.
 - Govern 23 older-release audit labels through 22 corrected or exact NCBI
   bindings and one explicit hold; expand approved taxon mapping contract to 238.
+- Govern all 83 profiled ingredient-component descriptors as classification-only
+  routes: 52 atomic reviews, 28 decompositions, and three explicit holds.

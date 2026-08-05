@@ -27,6 +27,7 @@ semantic_relations = read("approved_semantic_relations")
 reparentings = read("approved_reparentings")
 semantic_bindings = read("approved_semantic_bindings")
 semantic_value_bindings = read("approved_semantic_value_bindings")
+component_classifications = read("approved_ingredient_component_classifications")
 manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
@@ -57,6 +58,13 @@ assert len(replacements) == 3
 assert len(deprecations) == 2
 assert len(semantic_bindings) == 13
 assert len(semantic_value_bindings) == 298
+assert len(component_classifications) == 83
+assert len({row["normalized_value"] for row in component_classifications}) == 83
+assert all(row["status"] == "approved-classification" for row in component_classifications)
+assert all(row["reviewer"] == "Pete Steward" for row in component_classifications)
+assert sum(row["disposition"] == "review_single" for row in component_classifications) == 52
+assert sum(row["disposition"] == "decompose" for row in component_classifications) == 28
+assert sum(row["disposition"] == "hold" for row in component_classifications) == 3
 assert {
     (row["deprecated_id"], row["replacement_id"])
     for row in deprecations
@@ -66,6 +74,7 @@ assert {
 }
 assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
+assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
 assert len(label_corrections) == 6
 assert len(new_concepts) == 170
 new_by_case = {row["case_id"]: row for row in new_concepts}

@@ -94,6 +94,18 @@ assert all(
 assert sum(row["proposed_facet"] == "anatomical_part" for row in facet_candidates) == 30
 assert sum(row["proposed_facet"] == "composite_descriptor" for row in facet_candidates) == 28
 
+with (DATA / "approved_ingredient_component_classifications.csv").open(encoding="utf-8", newline="") as h:
+    approved_components = list(csv.DictReader(h))
+assert len(approved_components) == 83
+assert {row["source_value"] for row in approved_components} == {
+    row["source_value"] for row in facet_candidates
+}
+assert all(row["status"] == "approved-classification" for row in approved_components)
+assert all(row["reviewer"] == "Pete Steward" and row["review_date"] == "2026-08-04" for row in approved_components)
+assert sum(row["disposition"] == "review_single" for row in approved_components) == 52
+assert sum(row["disposition"] == "decompose" for row in approved_components) == 28
+assert sum(row["disposition"] == "hold" for row in approved_components) == 3
+
 with (FACET_REVIEW / "taxon_mapping_candidates_batch_1.csv").open(encoding="utf-8", newline="") as h:
     taxon_candidates = list(csv.DictReader(h))
 assert len(taxon_candidates) == 10

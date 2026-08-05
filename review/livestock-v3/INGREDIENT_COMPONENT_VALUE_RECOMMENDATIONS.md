@@ -2,8 +2,9 @@
 
 ## Status
 
-Proposed for expert review. No row is approved mapping governance. No concept
-IRI, new identifier, or canonical assertion is created by this review pack.
+Classification outcomes approved through ADR 0012. No row is approved concept
+mapping governance. No concept IRI, new identifier, or canonical assertion is
+created by this review pack.
 
 ## Evidence boundary
 
@@ -56,3 +57,5 @@ existing matches may occupy incompatible hierarchy branches.
 Machine-readable proposals:
 `ingredient_component_value_candidates.csv`. Validation schema:
 `../../schemas/json/ingredient-component-value-candidate.schema.json`.
+Approved classification contract:
+`../../data/livestock-staging/approved_ingredient_component_classifications.csv`.

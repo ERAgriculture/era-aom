@@ -27,6 +27,9 @@ existing AOM concepts; ambiguous values are explicit holds and never guessed.
 Legacy ingredient-component descriptors remain strings until phase-3 review
 decomposes them across typed part, physical-form, processing, product-role, and
 constituent facets. See `../../review/livestock-v3/` and ADR 0004.
+Approved descriptor routing lives in
+`approved_ingredient_component_classifications.csv`; classification never
+authorizes concept identity or a facet IRI. See ADR 0012.
 Generator applies these governance overlays without rewriting source evidence.
 OWL domain semantics and SHACL constraints live under `schemas/`; remodeling
 dispositions are staged separately from this backward-compatible SKOS release.
