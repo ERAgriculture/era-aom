@@ -47,6 +47,8 @@ python scripts/check_browser_stack.py
 
 Proposed namespace is `https://w3id.org/era-aom/`. Register only after
 institutional owner accepts redirect targets and maintenance responsibility.
+Generate registration files through `scripts/build_w3id_proposal.py`; see
+`docs/W3ID_REGISTRATION.md`. Generator rejects unapproved/example targets.
 Required representations:
 
 - `text/html`: public concept page;
