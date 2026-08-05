@@ -4062,11 +4062,6 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/physicalForm": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101076"
-      }
-    ],
     "https://w3id.org/era-aom/schema/processingMethod": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000831"
@@ -4651,13 +4646,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_101076",
-    "@type": [
-      "https://w3id.org/era-aom/schema/IngredientPhysicalForm",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:threshed-top:2",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -4983,6 +4971,37 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:whole:hold",
+    "@type": [
+      "https://w3id.org/era-aom/schema/SemanticValueBinding"
+    ],
+    "https://w3id.org/era-aom/schema/bindingAction": [
+      {
+        "@value": "hold_ambiguous"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/sourceValue": [
+      {
+        "@value": "Whole"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/targetValueClass": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/valueBindingStatus": [
+      {
+        "@value": "approved"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/valueTargetProperty": [
+      {
+        "@id": "https://w3id.org/era-aom/schema/legacyComponentDescriptor"
       }
     ]
   },
@@ -9562,42 +9581,6 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:whole",
-    "@type": [
-      "https://w3id.org/era-aom/schema/SemanticValueBinding"
-    ],
-    "https://w3id.org/era-aom/schema/bindingAction": [
-      {
-        "@value": "map_to_existing"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/sourceValue": [
-      {
-        "@value": "Whole"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/targetValueClass": [
-      {
-        "@id": "https://w3id.org/era-aom/schema/IngredientPhysicalForm"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueBindingStatus": [
-      {
-        "@value": "approved"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueTargetConcept": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101076"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueTargetProperty": [
-      {
-        "@id": "https://w3id.org/era-aom/schema/physicalForm"
       }
     ]
   },

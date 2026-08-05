@@ -110,7 +110,7 @@ ATOMIC = {
     "Ash": "const_ash", "Binder": "role_binder", "Grain": "part_grain",
     "Manure": "role_waste", "Mix": "form_mixture", "Oil": "const_oil",
     "Shell": "part_shell", "Shells": "part_shell", "Sludge": "role_processing_waste",
-    "Tops": "part_top", "Whole": "form_whole",
+    "Tops": "part_top",
 }
 
 DECOMPOSITIONS = {
@@ -154,6 +154,7 @@ HOLDS = {
     "Shaft": "Cassava usage may be typo or local synonym for stem; no authoritative identity found.",
     "Vine": "Feed usage may mean stem alone or collective aerial biomass including leaves.",
     "Weeds": "Names source-material class, not anatomical part, form, process, role, or constituent.",
+    "Whole": "May mean whole crop, whole organism, whole grain, or absence of a component; source context must resolve scope.",
 }
 
 

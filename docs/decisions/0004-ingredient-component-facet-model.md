@@ -42,10 +42,11 @@ a SOSA/QUDT observation rather than a categorical constituent assertion.
 
 Worked example: `AOM_006072 Maize Whole Ensiled` remains a SKOS concept and an
 `aom:FeedMaterial`. Its legacy `skos:broader AOM_001313 Maize Whole` supports
-navigation; it does not carry compositional meaning. Reviewed semantic assertions
-state `aom:physicalForm AOM_101076 Whole form` and
-`aom:processingMethod AOM_000831 Ensiling`. `Ensilation` and `Ensiled` remain
-alternate labels for search and source compatibility.
+navigation; it does not carry compositional meaning. Reviewed evidence supports
+`aom:processingMethod AOM_000831 Ensiling`. It does not yet establish whether
+“whole” means whole crop, whole grain, or an omitted component, so no physical-form
+or component assertion is published. `Ensilation` and `Ensiled` remain alternate
+labels for search and source compatibility.
 
 `aom:IngredientComponent` is not a part/form value. It represents use of a feed
 material inside a formulation and may carry its proportion. Therefore “whole” is

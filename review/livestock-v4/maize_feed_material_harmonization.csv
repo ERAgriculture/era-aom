@@ -1,0 +1,17 @@
+legacy_concept_id,legacy_label,feed_primary,component,process_profile,identity_disposition,status,evidence,rationale
+AOM_000648,Maize,Maize,unspecified,none,retain_primary,design-reviewed,data/livestock-staging/legacy_records.csv,Base primary feed term.
+AOM_000649,Maize Grain,Maize,Grain,none,compose_candidate,review-required,data/livestock-staging/legacy_records.csv,Explicit grain label and ILRI FEED0023; relationship to bare Maize requires occurrence review.
+AOM_001313,Maize Whole,Maize,unresolved,none,hold_ambiguous,held,data/livestock-staging/legacy_records.csv,Whole may mean whole crop whole grain or unspecified component.
+AOM_006072,Maize Whole Ensiled,Maize,unresolved,Ensiling,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Ensiling is explicit; whole scope unresolved.
+AOM_001324,Maize Whole Ground,Maize,unresolved,Grinding,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Grinding is explicit; whole scope unresolved; ILRI FEED0391 requires definition review.
+AOM_001326,Maize Ensiled,Maize,unresolved,Ensiling,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Process explicit but processed component absent.
+AOM_001674,Maize Ground,Maize,unresolved,Grinding,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Process explicit but processed component absent.
+AOM_006164,Maize Grain Crushed,Maize,Grain,Crushing,compose_candidate,review-required,data/livestock-staging/legacy_records.csv,Explicit grain and crushing dimensions.
+AOM_001679,Maize Grain Ground,Maize,Grain,Grinding,compose_candidate,review-required,data/livestock-staging/legacy_records.csv,Explicit grain and grinding dimensions; compare FEED0422 records before deduplication.
+AOM_001656,Maize Dried Ground,Maize,unresolved,Drying > Grinding,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Processes explicit but component absent.
+AOM_002031,Maize Dried Ground Heated,Maize,unresolved,Drying > Grinding > Heating,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Ordered processes require source confirmation; component absent.
+AOM_002108,Maize Cracked,Maize,unresolved,Cracking,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Process explicit but likely grain component is not stated.
+AOM_002119,Maize Crushed,Maize,unresolved,Crushing,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Process explicit but likely grain component is not stated.
+AOM_000570,Maize Extruded,Maize,unresolved,Extrusion,compose_partial,component-review-required,data/livestock-staging/legacy_records.csv,Process explicit but processed component absent.
+AOM_004003,Maize Yellow Grain,Maize,Grain,none,compose_with_quality,review-required,data/livestock-staging/legacy_records.csv,Yellow is quality or variety dimension rather than component or process.
+AOM_004002,Maize Yellow,Maize,unresolved,none,hold_ambiguous,held,data/livestock-staging/legacy_records.csv,May represent cultivar color quality or parent grouping.

@@ -5989,29 +5989,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101076",
-      "@type": [
-        "skos:Concept",
-        "aom:IngredientPhysicalForm"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:value-binding:ingredient-component:whole",
-      "@type": "aom:SemanticValueBinding",
-      "aom:valueTargetProperty": {
-        "@id": "urn:era-aom:schema:physicalForm"
-      },
-      "aom:sourceValue": "Whole",
-      "aom:bindingAction": "map_to_existing",
-      "aom:targetValueClass": {
-        "@id": "urn:era-aom:schema:IngredientPhysicalForm"
-      },
-      "aom:valueBindingStatus": "approved",
-      "aom:valueTargetConcept": {
-        "@id": "urn:era-aom:livestock:AOM_101076"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101052",
       "@type": [
         "skos:Concept",
@@ -7624,21 +7601,17 @@
       "aom:valueBindingStatus": "approved"
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101076",
-      "@type": [
-        "skos:Concept",
-        "aom:IngredientPhysicalForm"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006072",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:physicalForm": {
-        "@id": "urn:era-aom:livestock:AOM_101076"
-      }
+      "@id": "urn:era-aom:value-binding:ingredient-component:whole:hold",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:legacyComponentDescriptor"
+      },
+      "aom:sourceValue": "Whole",
+      "aom:bindingAction": "hold_ambiguous",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "aom:valueBindingStatus": "approved"
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000831",
