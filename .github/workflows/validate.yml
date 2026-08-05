@@ -33,6 +33,7 @@ jobs:
         run: |
           python scripts/build_feed_identity_audit.py
           python tests/validate_feed_identity_audit.py
+          python tests/validate_maize_identity_review.py
           python tests/validate_feed_material_harmonization.py
       - name: Validate semantic model and dispositions
         run: |
