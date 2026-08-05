@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 compose = yaml.safe_load((ROOT / "deploy/local/compose.yaml").read_text())
 services = compose["services"]
 assert set(services) == {"fuseki", "fuseki-cache", "load-release", "skosmos"}
-assert services["fuseki"]["build"]["context"].endswith("#v3.3")
+assert services["fuseki"]["build"]["context"].endswith("#v3.3:dockerfiles/jena-fuseki2-docker")
 assert services["fuseki"]["build"]["args"]["JENA_VERSION"] == "5.4.0"
 assert services["fuseki-cache"]["image"] == "varnish:7.7.3"
 assert services["load-release"]["image"] == "curlimages/curl:8.12.1"
