@@ -10,6 +10,11 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialIntegrity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/MaterialIntegrity"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientMaterial">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
@@ -98,6 +103,12 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientConstituent"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/MaterialIntegrity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Compositional integrity retained by a material independently of particle form or processing.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">material integrity</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/QuantitativeObservation">
     <rdfs:label xml:lang="en">quantitative observation</rdfs:label>

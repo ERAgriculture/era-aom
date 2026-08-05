@@ -42,6 +42,7 @@ jobs:
           python tests/validate_ingredient_rule_quality_gate.py
           python tests/validate_approved_ingredient_rule_promotion.py
           python tests/validate_ingredient_model_gap_review.py
+          python tests/validate_whole_grain_integrity.py
           python tests/validate_maize_identity_review.py
           python tests/validate_maize_identity_implementation.py
           python tests/validate_feed_material_harmonization.py

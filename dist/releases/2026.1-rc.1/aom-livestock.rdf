@@ -2693,11 +2693,12 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:altLabel xml:lang="en">Corn Whole Ground</skos:altLabel>
     <skos:altLabel xml:lang="en">Corn Whole Milled</skos:altLabel>
     <skos:altLabel xml:lang="en">Maize Whole Meal</skos:altLabel>
-    <skos:prefLabel xml:lang="en">Maize Whole Ground</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Maize Whole Ground</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11662"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
+    <skos:prefLabel xml:lang="en">Ground whole-grain maize</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_001324</skos:notation>
     <era:status>unknown</era:status>
@@ -3163,17 +3164,18 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_000318</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003981">
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100967"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000660">
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:prefLabel xml:lang="en">Ziziphus jujuba leaves</skos:prefLabel>
     <era:status>unknown</era:status>
-    <skos:notation>AOM_003981</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_326968"/>
-    <skos:altLabel xml:lang="en">Ziziphus jujube Leaves</skos:altLabel>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001319"/>
+    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_25511"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4565"/>
+    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12754"/>
+    <skos:altLabel xml:lang="en">Wheat Whole Ground</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Ground whole-grain wheat</skos:prefLabel>
+    <skos:notation>AOM_000660</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006177"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001970">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -3186,6 +3188,18 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:altLabel xml:lang="en">Jatropha curcas Cake Seed Meal</skos:altLabel>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003981">
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100967"/>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:prefLabel xml:lang="en">Ziziphus jujuba leaves</skos:prefLabel>
+    <era:status>unknown</era:status>
+    <skos:notation>AOM_003981</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_326968"/>
+    <skos:altLabel xml:lang="en">Ziziphus jujube Leaves</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006177"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003914">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_003893"/>
@@ -7046,18 +7060,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_000304</skos:notation>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000660">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001319"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_25511"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4565"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12754"/>
-    <skos:prefLabel xml:lang="en">Wheat Whole Ground</skos:prefLabel>
-    <skos:notation>AOM_000660</skos:notation>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002032">
     <skos:prefLabel xml:lang="en">Breadfruit Dried Ground</skos:prefLabel>
     <era:status>unknown</era:status>
@@ -7486,11 +7488,12 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_000656</skos:notation>
     <skos:altLabel xml:lang="en">Whole Rice Meal</skos:altLabel>
     <skos:altLabel xml:lang="en">Whole Rice Milled</skos:altLabel>
+    <skos:altLabel xml:lang="en">Whole Rice Ground</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ground whole-grain rice</skos:prefLabel>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4530"/>
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_25500"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:prefLabel xml:lang="en">Whole Rice Ground</skos:prefLabel>
     <era:status>unknown</era:status>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002136">
@@ -11089,6 +11092,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101022"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_100850"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101021"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101109"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101020"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000321"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000845"/>
@@ -11611,8 +11615,9 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000648"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Whole-grain maize</skos:prefLabel>
     <skos:altLabel xml:lang="en">Corn Whole</skos:altLabel>
-    <skos:prefLabel xml:lang="en">Maize Whole</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Maize Whole</skos:altLabel>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006072"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001324"/>
   </rdf:Description>
@@ -25906,6 +25911,16 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:prefLabel xml:lang="en">Sheep Meal</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101110">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/MaterialIntegrity"/>
+    <era:status>unknown</era:status>
+    <skos:prefLabel xml:lang="en">Whole grain</skos:prefLabel>
+    <era:conceptType>aom_concept</era:conceptType>
+    <skos:notation>AOM_101110</skos:notation>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101109"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002216">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2491204"/>
@@ -30557,6 +30572,17 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101109">
+    <era:conceptType>aom_concept</era:conceptType>
+    <skos:notation>AOM_101109</skos:notation>
+    <skos:prefLabel xml:lang="en">Material integrity values</skos:prefLabel>
+    <era:status>unknown</era:status>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/MaterialIntegrity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000328"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101110"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101089">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>

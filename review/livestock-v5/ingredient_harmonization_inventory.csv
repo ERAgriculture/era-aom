@@ -89,9 +89,9 @@ AOM_000649,Maize Grain,Crop Product,maize,Grain,,,,maize|Grain|||,high,rule_appl
 AOM_000651,Maize Oil,Crop Product,maize,,,Oil,,maize|||Oil|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000654,Millet,Crop Product,millet,,,,,millet||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000655,Rice Grain,Crop Product,rice,Grain,,,,rice|Grain|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_000656,Whole Rice Ground,Crop Product,rice,,Grinding,,,rice||Grinding||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,unreviewed,proposed-not-applied,1.0.0
+AOM_000656,Ground whole-grain rice,Crop Product,rice,Grain,Grinding,,,rice|Grain|Grinding||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,approved_model_resolution,proposed-not-applied,1.0.0
 AOM_000657,Sorghum Grain,Crop Product,sorghum,Grain,,,,sorghum|Grain|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_000660,Wheat Whole Ground,Crop Product,wheat,,Grinding,,,wheat||Grinding||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,unreviewed,proposed-not-applied,1.0.0
+AOM_000660,Ground whole-grain wheat,Crop Product,wheat,Grain,Grinding,,,wheat|Grain|Grinding||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,approved_model_resolution,proposed-not-applied,1.0.0
 AOM_000662,Cereal Products,Crop Product,cereal products,,,,,cereal products||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000663,Jackfruit,Crop Product,jackfruit,,,,,jackfruit||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000664,Ripe Avocado,Crop Product,avocado,,,,Ripe,avocado||||Ripe,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -382,7 +382,7 @@ AOM_001308,Canola Oil,Crop Product,canola,,,Oil,,canola|||Oil|,high,rule_applica
 AOM_001309,Canola,Crop Product,canola,,,,,canola||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001311,Date,Crop Byproduct,date,,,,,date||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001312,Cotton Seed,Crop Byproduct,cotton,Seed,,,,cotton|Seed|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_001313,Maize Whole,Crop Product,maize,,,,,maize||||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,unreviewed,proposed-not-applied,1.0.0
+AOM_001313,Whole-grain maize,Crop Product,maize,Grain,,,,maize|Grain|||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,approved_model_resolution,proposed-not-applied,1.0.0
 AOM_001314,Pigeon Pea,Crop Byproduct,pigeon pea,,,,,pigeon pea||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001316,Sorghum,Crop Product,sorghum,,,,,sorghum||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001317,Soybean Full Fat,Crop Product,soybean full fat,,,,,soybean full fat||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -392,7 +392,7 @@ AOM_001320,Common Bean Crushed,Crop Product,common bean,,Crushing,,,common bean|
 AOM_001321,Safflower Ground,Crop Product,safflower,,Grinding,,,safflower||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001322,Cassava Ground,Crop Product,cassava,,Grinding,,,cassava||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001323,Coffee Ground Roasted,Crop Product,coffee,,Grinding;Roasting,,,coffee||Grinding;Roasting||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_001324,Maize Whole Ground,Crop Product,maize,,Grinding,,,maize||Grinding||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,unreviewed,proposed-not-applied,1.0.0
+AOM_001324,Ground whole-grain maize,Crop Product,maize,Grain,Grinding,,,maize|Grain|Grinding||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,approved_model_resolution,proposed-not-applied,1.0.0
 AOM_001326,Whole-crop maize silage,Crop Product,crop maize,,Ensiling,,,crop maize||Ensiling||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,approved_retained_replacement,proposed-not-applied,1.0.0
 AOM_001331,Oat Grain,Crop Product,oat,Grain,,,,oat|Grain|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001332,Oat Ground,Crop Product,oat,,Grinding,,,oat||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0

@@ -1,7 +1,8 @@
 cluster_id,concept_ids,preferred_labels,recommendation,retained_id_if_approved,rationale,approval_status,reviewer,review_date
 INGCLUSTER-0001,AOM_001459;AOM_001898,Bothriochloa Dried;Bothriochloa dried,deprecate-replace-review,AOM_001459,Corrected labels and public mappings coincide; confirm downstream references before deprecating AOM_001898.,proposed,,
 INGCLUSTER-0002,AOM_001312;AOM_003973,Cotton Seed;Cotton Seed,hold-product-role-review,,Cotton records share label/taxon/Feedipedia but differ in product/by-product hierarchy and CPC scope.,proposed,,
-INGCLUSTER-0003,AOM_001324;AOM_001674,Maize Ground;Maize Whole Ground,retain-distinct-pending-integrity,,Generic ground maize and whole-grain ground maize must not merge before integrity model.,proposed,,
-INGCLUSTER-0004,AOM_000648;AOM_001313,Maize;Maize Whole,retain-distinct-pending-integrity,,Maize source grouping and whole-grain material are different semantic levels.,proposed,,
+INGCLUSTER-0003,AOM_001324;AOM_001679,Ground whole-grain maize;Maize Grain Ground,retain-distinct-integrity-specified,,Whole-grain ground maize explicitly retains integrity; generic grain-ground maize does not establish it.,proposed,,
+INGCLUSTER-0004,AOM_000649;AOM_001313,Maize Grain;Whole-grain maize,retain-distinct-integrity-specified,,Whole-grain maize explicitly retains integrity; generic maize grain does not establish it.,proposed,,
 INGCLUSTER-0005,AOM_000555;AOM_000556,Milk;Whole Milk,retain-distinct-pending-composition,,"Milk and whole milk differ by composition state, not physical form.",proposed,,
-INGCLUSTER-0006,AOM_000660;AOM_001346,Wheat Ground;Wheat Whole Ground,retain-distinct-pending-integrity,,Generic ground wheat and whole-grain ground wheat require integrity distinction.,proposed,,
+INGCLUSTER-0006,AOM_000656;AOM_006156,Ground whole-grain rice;Rice Grain Ground,retain-distinct-integrity-specified,,Whole-grain ground rice explicitly retains integrity; generic rice-grain ground does not establish it.,proposed,,
+INGCLUSTER-0007,AOM_000660;AOM_002017,Ground whole-grain wheat;Wheat Grain Ground,retain-distinct-integrity-specified,,Whole-grain ground wheat explicitly retains integrity; generic wheat-grain ground does not establish it.,proposed,,

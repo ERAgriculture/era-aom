@@ -88,6 +88,10 @@ aom:legacyConcept a owl:ObjectProperty ;
     rdfs:domain aom:SemanticBinding ;
     rdfs:range skos:Concept .
 
+aom:materialIntegrity a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:MaterialIntegrity .
+
 aom:physicalForm a owl:ObjectProperty ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:IngredientPhysicalForm .
@@ -170,6 +174,11 @@ aom:IngredientPhysicalForm a owl:Class ;
 
 aom:IngredientSourceCategory a owl:Class ;
     rdfs:label "ingredient source category"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:MaterialIntegrity a owl:Class ;
+    rdfs:label "material integrity"@en ;
+    rdfs:comment "Compositional integrity retained by a material independently of particle form or processing."@en ;
     rdfs:subClassOf skos:Concept .
 
 aom:Module a owl:Class ;

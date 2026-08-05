@@ -13,6 +13,7 @@ OUT = ROOT / "review/livestock-v5"
 DEPRECATIONS = ROOT / "data/livestock-staging/approved_deprecations.csv"
 CONCEPTS = ROOT / "data/livestock-staging/concepts.csv"
 LABELS = ROOT / "data/livestock-staging/labels.csv"
+INTEGRITY_DECISIONS = ROOT / "data/livestock-staging/approved_whole_grain_integrity_decisions.csv"
 
 ALIASES = {
     "corn": "maize", "milled": "ground", "grounded": "ground",
@@ -103,6 +104,8 @@ with LABELS.open(encoding="utf-8", newline="") as handle:
         row["concept_id"]: row["label"] for row in csv.DictReader(handle)
         if row["language"] == "en" and row["label_type"] == "pref"
     }
+with INTEGRITY_DECISIONS.open(encoding="utf-8", newline="") as handle:
+    model_resolved = {row["concept_id"] for row in csv.DictReader(handle) if row["status"] == "approved"}
 deprecated = {row["deprecated_id"]: row["replacement_id"] for row in approved_deprecations}
 retained_replacements = set(deprecated.values())
 ingredient_occurrences = [
@@ -163,6 +166,7 @@ for row in rows:
         "governance_state": (
             "approved_deprecated" if row["AOM"] in deprecated else
             "approved_retained_replacement" if row["AOM"] in retained_replacements else
+            "approved_model_resolution" if row["AOM"] in model_resolved else
             "unreviewed"
         ),
         "status": "proposed-not-applied", "rule_version": "1.0.0",

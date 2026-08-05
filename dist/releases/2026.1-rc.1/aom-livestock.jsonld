@@ -2878,6 +2878,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101109"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101020"
       },
       {
@@ -7673,6 +7676,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101110",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/MaterialIntegrity"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101109"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101110"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Whole grain"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -22876,6 +22917,10 @@
       {
         "@language": "en",
         "@value": "Corn Whole"
+      },
+      {
+        "@language": "en",
+        "@value": "Maize Whole"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -22904,7 +22949,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Maize Whole"
+        "@value": "Whole-grain maize"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
@@ -56470,6 +56515,10 @@
       {
         "@language": "en",
         "@value": "Whole Rice Milled"
+      },
+      {
+        "@language": "en",
+        "@value": "Whole Rice Ground"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -56490,7 +56539,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Whole Rice Ground"
+        "@value": "Ground whole-grain rice"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
@@ -73601,6 +73650,12 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Wheat Whole Ground"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001319"
@@ -73619,7 +73674,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Wheat Whole Ground"
+        "@value": "Ground whole-grain wheat"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
@@ -86126,6 +86181,49 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101109",
+    "@type": [
+      "https://w3id.org/era-aom/schema/MaterialIntegrity",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101109"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Material integrity values"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -109307,6 +109405,10 @@
       {
         "@language": "en",
         "@value": "Maize Whole Meal"
+      },
+      {
+        "@language": "en",
+        "@value": "Maize Whole Ground"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -109327,7 +109429,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Maize Whole Ground"
+        "@value": "Ground whole-grain maize"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [

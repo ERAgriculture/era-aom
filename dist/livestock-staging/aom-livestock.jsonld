@@ -15689,12 +15689,16 @@
       },
       "skos:notation": "AOM_000656",
       "skos:prefLabel": {
-        "@value": "Whole Rice Ground",
+        "@value": "Ground whole-grain rice",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:altLabel": [
+        {
+          "@value": "Whole Rice Ground",
+          "@language": "en"
+        },
         {
           "@value": "Whole Rice Milled",
           "@language": "en"
@@ -15761,11 +15765,17 @@
       },
       "skos:notation": "AOM_000660",
       "skos:prefLabel": {
-        "@value": "Wheat Whole Ground",
+        "@value": "Ground whole-grain wheat",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:altLabel": [
+        {
+          "@value": "Wheat Whole Ground",
+          "@language": "en"
+        }
+      ],
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001319"
       },
@@ -29908,12 +29918,16 @@
       },
       "skos:notation": "AOM_001313",
       "skos:prefLabel": {
-        "@value": "Maize Whole",
+        "@value": "Whole-grain maize",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:altLabel": [
+        {
+          "@value": "Maize Whole",
+          "@language": "en"
+        },
         {
           "@value": "Corn Whole",
           "@language": "en"
@@ -30205,12 +30219,16 @@
       },
       "skos:notation": "AOM_001324",
       "skos:prefLabel": {
-        "@value": "Maize Whole Ground",
+        "@value": "Ground whole-grain maize",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:altLabel": [
+        {
+          "@value": "Maize Whole Ground",
+          "@language": "en"
+        },
         {
           "@value": "Corn Whole Meal",
           "@language": "en"
@@ -69129,6 +69147,46 @@
       "era:status": "unknown",
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101020"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101109",
+      "@type": [
+        "skos:Concept",
+        "aom:MaterialIntegrity"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101109",
+      "skos:prefLabel": {
+        "@value": "Material integrity values",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101110",
+      "@type": [
+        "skos:Concept",
+        "aom:MaterialIntegrity"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101110",
+      "skos:prefLabel": {
+        "@value": "Whole grain",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101109"
       }
     }
   ]
