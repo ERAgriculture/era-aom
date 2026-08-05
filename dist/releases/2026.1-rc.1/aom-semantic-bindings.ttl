@@ -1,0 +1,3634 @@
+@prefix aom: <https://w3id.org/era-aom/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/era-aom/binding/AOM_000531> a aom:SemanticBinding ;
+    aom:bindingKind "property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000531> ;
+    aom:targetClass aom:FeedMaterial ;
+    aom:targetProperty aom:ingredientName ;
+    aom:unitRequirement "not_applicable" ;
+    aom:valueClass xsd:string .
+
+<https://w3id.org/era-aom/binding/AOM_000532> a aom:SemanticBinding ;
+    aom:bindingKind "property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "preserve_raw_descriptor_until_reviewed_facet_decomposition" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000532> ;
+    aom:targetClass aom:FeedMaterial ;
+    aom:targetProperty aom:legacyComponentDescriptor ;
+    aom:unitRequirement "not_applicable" ;
+    aom:valueClass xsd:string .
+
+<https://w3id.org/era-aom/binding/AOM_000533> a aom:SemanticBinding ;
+    aom:bindingKind "property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000533> ;
+    aom:targetClass aom:FeedMaterial ;
+    aom:targetProperty aom:sourceTaxon ;
+    aom:unitRequirement "not_applicable" .
+
+<https://w3id.org/era-aom/binding/AOM_000534> a aom:SemanticBinding ;
+    aom:bindingKind "quantified_component" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000534> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/Dimensionless> ;
+    aom:targetClass aom:IngredientComponent ;
+    aom:targetProperty aom:ingredientProportion ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/binding/AOM_000535> a aom:SemanticBinding ;
+    aom:bindingKind "property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000535> ;
+    aom:targetClass aom:FeedMaterial ;
+    aom:targetProperty aom:ingredientSource ;
+    aom:unitRequirement "not_applicable" .
+
+<https://w3id.org/era-aom/binding/AOM_000944> a aom:SemanticBinding ;
+    aom:bindingKind "observable_property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000944> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ;
+    aom:targetClass aom:QuantitativeObservation ;
+    aom:targetProperty sosa:observedProperty ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/binding/AOM_000945> a aom:SemanticBinding ;
+    aom:bindingKind "observable_property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000945> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/Length> ;
+    aom:targetClass aom:QuantitativeObservation ;
+    aom:targetProperty sosa:observedProperty ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/binding/AOM_000946> a aom:SemanticBinding ;
+    aom:bindingKind "observable_property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000946> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/Length> ;
+    aom:targetClass aom:QuantitativeObservation ;
+    aom:targetProperty sosa:observedProperty ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/binding/AOM_000947> a aom:SemanticBinding ;
+    aom:bindingKind "observable_property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000947> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/Area> ;
+    aom:targetClass aom:QuantitativeObservation ;
+    aom:targetProperty sosa:observedProperty ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/binding/AOM_000948> a aom:SemanticBinding ;
+    aom:bindingKind "observable_property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000948> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/Area> ;
+    aom:targetClass aom:QuantitativeObservation ;
+    aom:targetProperty sosa:observedProperty ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/binding/AOM_000950> a aom:SemanticBinding ;
+    aom:bindingKind "observable_property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000950> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/Time> ;
+    aom:targetClass aom:QuantitativeObservation ;
+    aom:targetProperty sosa:observedProperty ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/binding/AOM_000951> a aom:SemanticBinding ;
+    aom:bindingKind "observable_property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000951> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/Time> ;
+    aom:targetClass aom:QuantitativeObservation ;
+    aom:targetProperty sosa:observedProperty ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/binding/AOM_000954> a aom:SemanticBinding ;
+    aom:bindingKind "observable_property" ;
+    aom:bindingStatus "approved" ;
+    aom:compatibilityPolicy "retain_legacy_uri_and_add_observable_property_type" ;
+    aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000954> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/Count> ;
+    aom:targetClass aom:QuantitativeObservation ;
+    aom:targetProperty sosa:observedProperty ;
+    aom:unitRequirement "required" ;
+    aom:valueClass qudt:QuantityValue .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:ash> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Ash" ;
+    aom:targetValueClass aom:IngredientConstituent ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101080> ;
+    aom:valueTargetProperty aom:ingredientConstituent .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:bean-cake:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Bean Cake" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:bean-cake:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Bean Cake" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101062> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:bean-shell:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Bean Shell" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101040> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:beans:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Beans" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:binder> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Binder" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101079> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:block> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Block" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101049> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:bran:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Bran" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101082> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:bran:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Bran" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101062> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:brewers-grain:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Brewers Grain" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101068> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:brewers-grain:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Brewers Grain" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101062> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:bulb> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Bulb" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101024> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:cake:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Cake" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:cake:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Cake" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101070> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:cake:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Cake" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101062> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:cladode> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Cladode" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101025> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:cob> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Cob" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101026> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:corm> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Corm" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101027> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:discards> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Discards" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101055> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:flakes-defatted:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Flakes Defatted" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101053> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:flakes-defatted:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Flakes Defatted" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101069> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:fruits> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Fruits" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101028> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:full-fat-cake:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Full Fat Cake" ;
+    aom:targetValueClass aom:IngredientConstituent ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101066> ;
+    aom:valueTargetProperty aom:ingredientConstituent .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:full-fat-cake:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Full Fat Cake" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:full-fat-cake:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Full Fat Cake" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101070> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:full-fat:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Full Fat" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:germ> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Germ" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101029> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:gluten> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Gluten" ;
+    aom:targetValueClass aom:IngredientConstituent ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101064> ;
+    aom:valueTargetProperty aom:ingredientConstituent .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:grain> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Grain" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101074> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:hash:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Hash" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101075> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:hash:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Hash" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101062> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:haulm:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Haulm" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101047> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:haulm:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Haulm" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:haulm:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Haulm" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101063> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:hay:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Hay" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101054> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:hay:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Hay" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101071> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:heads:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Heads" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:hull> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Hull" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101030> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:husk> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Husk" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101031> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:hydrolysate:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Hydrolysate" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101083> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:juice:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Juice" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101077> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:juice:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Juice" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101072> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:kernel> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Kernel" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101032> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:kernel-cake:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Kernel Cake" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101032> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:kernel-cake:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Kernel Cake" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:kernel-cake:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Kernel Cake" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101070> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Leaves" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-and-soft-twig:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves and Soft Twig" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-and-soft-twig:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves and Soft Twig" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101045> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-and-twigs:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves and Twigs" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-and-twigs:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves and Twigs" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101045> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-cake:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves Cake" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-cake:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves Cake" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-cake:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves Cake" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101070> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-extract:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves Extract" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:leaves-extract:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Leaves Extract" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101072> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:lick> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Lick" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101050> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:litter:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Litter" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:manure> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Manure" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101061> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:market-waste> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Market Waste" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101056> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:meal:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Meal" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:mix> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Mix" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101075> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:molasses:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Molasses" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101077> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:molasses:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Molasses" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101084> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:molasses:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Molasses" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101062> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:offal> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Offal" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101057> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:oil> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Oil" ;
+    aom:targetValueClass aom:IngredientConstituent ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101081> ;
+    aom:valueTargetProperty aom:ingredientConstituent .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:oil-crude:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Oil Crude" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:peel> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Peel" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101034> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:peel-essential-oil:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Peel Essential Oil" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101034> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:peel-essential-oil:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Peel Essential Oil" ;
+    aom:targetValueClass aom:IngredientConstituent ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101067> ;
+    aom:valueTargetProperty aom:ingredientConstituent .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:peel-essential-oil:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Peel Essential Oil" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101072> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:peels> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Peels" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101034> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:pods> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Pods" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101035> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:pods-husk:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Pods Husk" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101035> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:pods-husk:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Pods Husk" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101031> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:powder> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Powder" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101051> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:processing-waste> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Processing Waste" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101058> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:pseudo-stem> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Pseudo-stem" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101036> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:pulp:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Pulp" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101078> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:pulp:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Pulp" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101062> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:residue> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Residue" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101059> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:root> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Root" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101037> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:root-bark:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Root Bark" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101037> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:root-bark:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Root Bark" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101046> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seed> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Seed" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seed-cake:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Seed Cake" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seed-cake:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Seed Cake" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seed-cake:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Seed Cake" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101070> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seed-hull:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Seed Hull" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seed-hull:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Seed Hull" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101030> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seed-kernel:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Seed Kernel" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seed-kernel:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Seed Kernel" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101032> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:seeds> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Seeds" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:shaft:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Shaft" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:sheath> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Sheath" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101039> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:shell> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Shell" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101040> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:shells> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Shells" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101040> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:shorts> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Shorts" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101060> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:sludge> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Sludge" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101058> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:sprout> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Sprout" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101041> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:stalk> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Stalk" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101042> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:stalks> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Stalks" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101042> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:starch> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Starch" ;
+    aom:targetValueClass aom:IngredientConstituent ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101065> ;
+    aom:valueTargetProperty aom:ingredientConstituent .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:stover:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Stover" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101047> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:stover:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Stover" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:stover:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Stover" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101063> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:straw:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Straw" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101047> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:straw:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Straw" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:straw:3> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Straw" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101054> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:straw:4> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Straw" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101063> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:threshed-top:1> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Threshed Top" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101048> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:threshed-top:2> a aom:SemanticValueBinding ;
+    aom:bindingAction "decompose_to_existing" ;
+    aom:sourceValue "Threshed Top" ;
+    aom:targetValueClass aom:ProcessingMethod ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101073> ;
+    aom:valueTargetProperty aom:processingMethod .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:tops> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Tops" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101048> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:tuber> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Tuber" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101043> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:vine:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Vine" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:viscera> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Viscera" ;
+    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101044> ;
+    aom:valueTargetProperty aom:ingredientPart .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:waste> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Waste" ;
+    aom:targetValueClass aom:ProductRole ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101061> ;
+    aom:valueTargetProperty aom:productRole .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:weeds:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Weeds" ;
+    aom:targetValueClass xsd:string ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
+
+<https://w3id.org/era-aom/value-binding/ingredient-component:whole> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Whole" ;
+    aom:targetValueClass aom:IngredientPhysicalForm ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101076> ;
+    aom:valueTargetProperty aom:physicalForm .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-angustissima> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Acacia angustissima" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_468212> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-brevispica> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Acacia brevispica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-cyanophylla> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Acacia cyanophylla" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-etbaica> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Acacia etbaica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-karroo> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Acacia karroo" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-polyacantha> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Acacia polyacantha" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-saligna> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Acacia saligna" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_420411> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-senegal> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Acacia senegal" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_138043> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:acacia-tortilis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Acacia tortilis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_138046> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:adansonia-digitata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Adansonia digitata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_69109> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:aeschynomene-histrix> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Aeschynomene histrix" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:afzelia-africana> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Afzelia africana" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_162641> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:albizia-gummifera> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Albizia gummifera" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1561840> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:albizia-harveyi> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Albizia harveyi" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_199155> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:albizia-lebbeck> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Albizia lebbeck" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_371650> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:allium-cepa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Allium cepa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4679> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:amaranthus-cruentus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Amaranthus cruentus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_117272> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:andropogon> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Andropogon" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_15314> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:andropogon-abyssinica> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Andropogon abyssinica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:andropogon-gayanus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Andropogon gayanus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1092577> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:andropogon-guianensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Andropogon guianensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:andropogon-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Andropogon spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_15314> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:annona-senegalensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Annona senegalensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_306945> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:anthyllis-tetraphylla> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Anthyllis tetraphylla" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:arachis-hypogaea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Arachis hypogaea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3818> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:arecaceae> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Arecaceae" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4710> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:aristida> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Aristida" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_38709> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:aristida-adscensionis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Aristida adscensionis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_121766> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:aristida-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Aristida spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:arthrospir-platensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Arthrospir platensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:artocarpus-heterophylla> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Artocarpus heterophylla" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3489> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:artocarpus-incisus> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Artocarpus incisus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:asteraceae> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Asteraceae" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4210> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:asteriscus-maritimus> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Asteriscus maritimus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:atractylis-cancellata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Atractylis cancellata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_143173> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:atriplex-halimus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Atriplex halimus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_240028> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:atriplex-nummularia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Atriplex nummularia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3553> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:avena-sativa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Avena sativa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4498> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:azadirachta-indica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Azadirachta indica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_124943> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:berchemia-discolor> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Berchemia discolor" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:beta-vulgaris> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Beta vulgaris" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_161934> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:beta-vulgaris-subsp.-vulgaris> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Beta vulgaris subsp. vulgaris" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3555> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:bothriochloa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Bothriochloa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_79826> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:bothriochloa-insculpta> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Bothriochloa insculpta" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_106883> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:bothriochloa-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Bothriochloa spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_79826> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:bracharia> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Bracharia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:bracharia-decumbens> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Bracharia decumbens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:brachiaria-brizantha> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Brachiaria brizantha" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_240448> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:brachiaria-ruziziensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Brachiaria ruziziensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_240450> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:brachiaria-serrata> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Brachiaria serrata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:brassica-napus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Brassica napus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3708> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:brassica-oleracea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Brassica oleracea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3712> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:brassica-oleracea-sp.> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Brassica oleracea sp." ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:brevoortia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Brevoortia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_224706> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cajanus-cajan> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cajanus cajan" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3821> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:calliandra-calothyrsus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Calliandra calothyrsus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_560018> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:calycotome-villosa> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Calycotome villosa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:canavalia-gladiata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Canavalia gladiata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3824> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:carica-papaya> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Carica papaya" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3649> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:carissa-edulis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Carissa edulis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_992661> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:carthamus-tinctorius> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Carthamus tinctorius" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4222> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:catha-edulis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Catha edulis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_123405> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cenchrus-ciliaris> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cenchrus ciliaris" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_35872> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cenchrus-longisetus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cenchrus longisetus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_29694> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:centrosema-molle> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Centrosema molle" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1300970> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:centrosema-pubescens> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Centrosema pubescens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_185703> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:chamaecytisus-palmensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Chamaecytisus palmensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:chloris> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Chloris" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_66011> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:chloris-gayana> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Chloris gayana" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_110876> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:chloris-spp.> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Chloris spp." ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_66011> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:chromolaena-odorata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Chromolaena odorata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_103745> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cicer-arietinum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cicer arietinum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3827> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:citrullus-lanatus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Citrullus lanatus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3654> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:citrus-limon> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Citrus limon" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_2708> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:citrus-sinensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Citrus sinensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_2711> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cocos-nucifera> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cocos nucifera" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_13894> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:coffea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Coffea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_13442> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:colocasia-esculenta> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Colocasia esculenta" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4460> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:combretum-aculeatum> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Combretum aculeatum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:combretum-apiculatum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Combretum apiculatum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_493957> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:creeping-bluegrass> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Creeping bluegrass" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:crossopterix-febrifuga> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Crossopterix febrifuga" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:crotalaria-ochroleuca> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Crotalaria ochroleuca" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_165772> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:curcuma-longa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Curcuma longa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_136217> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cyamopsis-tetragonoloba> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cyamopsis tetragonoloba" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3832> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cynadon-dactylon> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cynadon dactylon" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_28909> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cynadon-plectostachyus> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Cynadon plectostachyus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cynodon> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cynodon" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_15437> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cynodon-nlemfuensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Cynodon nlemfuensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cynodon-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Cynodon spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cyperus-elegantulus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cyperus elegantulus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1234201> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:cyperus-rotundus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Cyperus rotundus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_512623> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:daniellia-oliveri> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Daniellia oliveri" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_162735> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:delonix-elata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Delonix elata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_162737> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:desmodium> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Desmodium" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_53866> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:desmodium-distortum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Desmodium distortum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1125888> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:desmodium-intortum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Desmodium intortum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_556506> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:desmodium-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Desmodium spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_53866> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:dichrostachys-cinerea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Dichrostachys cinerea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_196665> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:digitaria-abyssinica> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Digitaria abyssinica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:digitaria-decumbens> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Digitaria decumbens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:digitaria-nodosa> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Digitaria nodosa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:digitaria-smutsii> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Digitaria smutsii" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:digitaria-ternata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Digitaria ternata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_977937> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:digitaria-ternota> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Digitaria ternota" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:diheteropogon-amplectens> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Diheteropogon amplectens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_796866> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:dioscorea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Dioscorea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4672> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:dolichos-lablab> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Dolichos lablab" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_35936> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eichhornia-crassipes> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eichhornia crassipes" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_44947> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eleusine-floccifolia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eleusine floccifolia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_268724> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:elionurus-muticus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Elionurus muticus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_91514> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ensete-ventricosum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ensete ventricosum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4639> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eragostris-tremula> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eragostris tremula" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_208289> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eragotris-tremula> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Eragotris tremula" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eragrostis-capensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eragrostis capensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_42051> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eragrostis-curvula> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eragrostis curvula" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_38414> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eragrostis-papposa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eragrostis papposa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_208284> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eragrostis-rigidior> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eragrostis rigidior" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_208287> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eragrostis-tef> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eragrostis tef" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_110835> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eruca-sativa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eruca sativa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_29727> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:erythrina-abyssinica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Erythrina abyssinica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1237573> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:erythrina-brucei> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Erythrina brucei" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1232591> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eucalyptus-alba> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eucalyptus alba" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_183808> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:euclea-schimperi> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Euclea schimperi" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:eupatorium-odoratum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Eupatorium odoratum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_103745> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:fabaceae> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Fabaceae" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3803> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:fabaceae-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Fabaceae spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:fabaceae-spp.> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Fabaceae spp." ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:faidherbia-albida> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Faidherbia albida" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_138055> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ficus-natalensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ficus natalensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_309307> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ficus-polita> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ficus polita" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_378027> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ficus-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ficus spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_319808> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ficus-sur> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ficus sur" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_100575> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ficus-thonningii> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ficus thonningii" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_309310> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:gliciridia-sepium> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Gliciridia sepium" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_167663> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:glycine-max> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Glycine max" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:gmelina-arborea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Gmelina arborea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_201509> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:gossypium> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Gossypium" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3633> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:grewia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Grewia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_82407> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:grewia-similis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Grewia similis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1670854> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:grewia-spp.> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Grewia spp." ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_82407> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:guizotia-abyssinica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Guizotia abyssinica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4230> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:harissonia-abyssinica> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Harissonia abyssinica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:harpachne-schimperi> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Harpachne schimperi" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:helianthus-annuus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Helianthus annuus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4232> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:heteropogon-contortus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Heteropogon contortus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_79849> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:hoodia-gordonii> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Hoodia gordonii" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_197266> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:hordeum-vulgare> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Hordeum vulgare" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4513> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:humulus-lupulus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Humulus lupulus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3486> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:hyparrhenia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Hyparrhenia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_42078> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:hyparrhenia-filipendula> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Hyparrhenia filipendula" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_106890> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:hyparrhenia-rufa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Hyparrhenia rufa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_167342> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:hyparrhenia-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Hyparrhenia spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_42078> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:hyperthelia-dissoluta> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Hyperthelia dissoluta" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_330566> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:indigofera-indica> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Indigofera indica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ipomoea-batatas> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ipomoea batatas" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4120> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:jardinea-congoensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Jardinea congoensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_2837565> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:jatropha-curcas> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Jatropha curcas" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_180498> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:juglans-regia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Juglans regia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_51240> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:khaya-senegalensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Khaya senegalensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_587579> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lablab-purpureus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Lablab purpureus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_35936> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lactobacillus-plantarium> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Lactobacillus plantarium" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lates-niloticus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Lates niloticus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_29147> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lemna> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Lemna" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4469> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lemna-minor> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Lemna minor" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4472> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lemna-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Lemna spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4469> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:leucaena> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Leucaena" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3865> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:leucaena-leucocephala> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Leucaena leucocephala" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3866> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:leucaena-padilla> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Leucaena padilla" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_190754> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:leucaena-pallida> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Leucaena pallida" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_190754> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:leucaena-sp> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Leucaena sp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3865> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:linum-usitatissimum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Linum usitatissimum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4006> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lippia-javanica> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Lippia javanica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lolium-multiflorum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Lolium multiflorum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4521> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:loudetia-simplex> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Loudetia simplex" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_318917> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:loudetia-togoensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Loudetia togoensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lupinus-albus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Lupinus albus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3870> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:lupinus-angustifolius> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Lupinus angustifolius" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3871> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:macadamia-integrifolia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Macadamia integrifolia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_60698> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:macroptilium-atropurpureum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Macroptilium atropurpureum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_90550> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:macrotermes-bellicosus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Macrotermes bellicosus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_201577> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:macrotyloma-axillare> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Macrotyloma axillare" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3876> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:mangifera-indica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Mangifera indica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_29780> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:manihot-esculenta> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Manihot esculenta" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3983> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:medicago-arborea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Medicago arborea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_66807> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:medicago-sativa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Medicago sativa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3879> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:megathyrsus-maximus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Megathyrsus maximus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_59788> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:melinis-repens> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Melinis repens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_29709> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:microchloa-caffra> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Microchloa caffra" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_121779> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:moringa-oleifera> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Moringa oleifera" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3735> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:moringa-stenopetala> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Moringa stenopetala" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_161034> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:mucuna-pruriens> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Mucuna pruriens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_157652> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:musa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Musa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4640> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:musa-paradisiaca> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Musa paradisiaca" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:musca-domestica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Musca domestica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_7370> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:nigella-sativa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Nigella sativa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_555479> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ocimum-gratissimum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ocimum gratissimum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_204144> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:olea-europaea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Olea europaea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4146> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:on-farm> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "On-farm" ;
+    aom:targetValueClass aom:IngredientSourceCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_000141> ;
+    aom:valueTargetProperty aom:ingredientSource .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:oncorhynchus-mykiss> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Oncorhynchus mykiss" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_8022> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:opuntia-ficus-indica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Opuntia ficus indica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_371859> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:oryctes-rhinoceros> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Oryctes rhinoceros" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_72550> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:oryza-sativa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Oryza sativa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ostreidae> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ostreidae" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_6563> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:panicum-maximum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Panicum maximum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_59788> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pennisetum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4541> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-clandestinum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pennisetum clandestinum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_173850> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-glaucum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pennisetum glaucum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4543> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-mezianum> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Pennisetum mezianum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-pedicellatum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pennisetum pedicellatum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_281133> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-petiolar> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Pennisetum petiolar" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-petiolare> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Pennisetum petiolare" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-purpureum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pennisetum purpureum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_154765> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-spp> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pennisetum spp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4541> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pennisetum-villosum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pennisetum villosum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_29694> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:persea-americana> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Persea americana" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3435> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:phalaris-aquatica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Phalaris aquatica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_28479> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:phaseolus-vulgaris> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Phaseolus vulgaris" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3885> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:phoenix-dactylifera> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Phoenix dactylifera" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_42345> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:piliostigma-thonningii> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Piliostigma thonningii" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_653098> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pisum-sativum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pisum sativum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3888> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pithecellobium-dulce> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pithecellobium dulce" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_404691> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:plantago-albicans> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Plantago albicans" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_197790> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:poaceae> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Poaceae" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4479> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pogonarthria-squarrosa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pogonarthria squarrosa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_269603> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:prosopis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Prosopis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_35715> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:prosopis-africana> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Prosopis africana" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_433926> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:prosopis-juliflora> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Prosopis juliflora" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3128859> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:psophocarpus-scandens> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Psophocarpus scandens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:psophocarpus-tetragonolobus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Psophocarpus tetragonolobus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3891> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pterocarpus-erinaceus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pterocarpus erinaceus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1071183> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pterocarpus-lucens> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pterocarpus lucens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1071184> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:pueraria-phaseoloides> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Pueraria phaseoloides" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_109224> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:purchased> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Purchased" ;
+    aom:targetValueClass aom:IngredientSourceCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_000142> ;
+    aom:valueTargetProperty aom:ingredientSource .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:rhynchophorus-phoenicisis> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Rhynchophorus phoenicisis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:rosmarinus-officinalis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Rosmarinus officinalis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_39367> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:rottboellia-cochinchinensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Rottboellia cochinchinensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_300125> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:saccharomyces-cerevisiae> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Saccharomyces cerevisiae" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4932> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:saccharum-officinarum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Saccharum officinarum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4547> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sardina-pilchardus> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Sardina pilchardus" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_27697> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:schizachyrium-exile> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Schizachyrium exile" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1564046> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:schizachyrium-jeffreysii> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Schizachyrium jeffreysii" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_2851936> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:schoenefeldia-gracilis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Schoenefeldia gracilis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_751703> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:secale-cereale> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Secale cereale" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4550> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sesamum-indicum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Sesamum indicum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4182> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sesbania-goetzei> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Sesbania goetzei" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1332686> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sesbania-sesban> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Sesbania sesban" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_76396> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sesbania-sp> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Sesbania sp" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sodium-carboxymethyl-cellulose> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_non_taxon" ;
+    aom:sourceValue "sodium carboxymethyl cellulose" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:solanum-aethiopicum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Solanum aethiopicum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_205524> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:solanum-lycopersicum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Solanum lycopersicum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4081> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:solanum-tuberosum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Solanum tuberosum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4113> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sorghum-bicolor> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Sorghum bicolor" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4558> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sorghum-sudanense> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Sorghum sudanense" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_171959> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:spermacoce-stachydea> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Spermacoce stachydea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sporobolus-natalensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Sporobolus natalensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_523336> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:sporobolus-panicoides> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Sporobolus panicoides" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1629783> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:stereochlaena-cameronii> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Stereochlaena cameronii" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1133591> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:stereospermum-kunthianum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Stereospermum kunthianum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1237820> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:stipa-parviflora> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Stipa parviflora" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:stipa-tenacissima> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Stipa tenacissima" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_666013> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:stylosanthes-guianensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Stylosanthes guianensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_62615> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:stylosanthes-hamata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Stylosanthes hamata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_37660> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:stylosanthes-scabra> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Stylosanthes scabra" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_79078> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:talinium-triangulare> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Talinium triangulare" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:telfairia-occidentalis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Telfairia occidentalis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_383670> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:tephrosia-bracteolata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Tephrosia bracteolata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_1628388> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:terminalia-brownii> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Terminalia brownii" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:terminalia-sericea> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Terminalia sericea" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_459862> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:theba-pisana> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Theba pisana" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_145622> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:themeda-triandra> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Themeda triandra" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_106636> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:theobroma-cacao> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Theobroma cacao" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3641> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:tithonia-diversifolia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Tithonia diversifolia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_684020> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:tribulus-terrestris> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Tribulus terrestris" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_210369> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:trifolium-alexandrinum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Trifolium alexandrinum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_97006> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:trifolium-repens> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Trifolium repens" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3899> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:tripsacum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Tripsacum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4562> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:tripsacum-laxum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Tripsacum laxum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_47471> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:tripsacum-spp.> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Tripsacum spp." ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4562> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:triticale> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Triticale" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_49317> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:triticum-aestivum> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Triticum aestivum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4565> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:trypsacum-laxum> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Trypsacum laxum" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ulva-rigida> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ulva rigida" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_75689> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:unspecified> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Unspecified" ;
+    aom:targetValueClass aom:IngredientSourceCategory ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:ingredientSource .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:urochloa-mosambicensis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Urochloa mosambicensis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_240432> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:urtica-dioica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Urtica dioica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3501> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vachellia-nilotica> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Vachellia nilotica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_138033> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vachellia-sieberiana> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Vachellia sieberiana" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_546664> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vachellia-tortilis> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Vachellia tortilis" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_138046> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vallisneria-aethiopica> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Vallisneria aethiopica" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vicia> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Vicia" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3904> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vicia-faba> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Vicia faba" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3906> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vigna-unguiculata> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Vigna unguiculata" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_3917> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vitellaria-paradoxa> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Vitellaria paradoxa" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_292385> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:vitex-simplex> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Vitex simplex" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:zea-mays> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Zea mays" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:zea-mays-(baby)> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
+    aom:sourceValue "Zea mays (baby)" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/value-binding/ingredient-source:ziziphus-mauritiana> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_external" ;
+    aom:sourceValue "Ziziphus mauritiana" ;
+    aom:targetValueClass owl:Class ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_157914> ;
+    aom:valueTargetProperty aom:sourceTaxon .
+
+<https://w3id.org/era-aom/livestock/AOM_000141> a skos:Concept,
+        aom:IngredientSourceCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_000142> a skos:Concept,
+        aom:IngredientSourceCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_000944> a skos:Concept,
+        sosa:ObservableProperty .
+
+<https://w3id.org/era-aom/livestock/AOM_000945> a skos:Concept,
+        sosa:ObservableProperty .
+
+<https://w3id.org/era-aom/livestock/AOM_000946> a skos:Concept,
+        sosa:ObservableProperty .
+
+<https://w3id.org/era-aom/livestock/AOM_000947> a skos:Concept,
+        sosa:ObservableProperty .
+
+<https://w3id.org/era-aom/livestock/AOM_000948> a skos:Concept,
+        sosa:ObservableProperty .
+
+<https://w3id.org/era-aom/livestock/AOM_000950> a skos:Concept,
+        sosa:ObservableProperty .
+
+<https://w3id.org/era-aom/livestock/AOM_000951> a skos:Concept,
+        sosa:ObservableProperty .
+
+<https://w3id.org/era-aom/livestock/AOM_000954> a skos:Concept,
+        sosa:ObservableProperty .
+
+<https://w3id.org/era-aom/livestock/AOM_101024> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101025> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101026> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101027> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101028> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101029> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101036> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101039> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101041> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101043> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101044> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101046> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101049> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101050> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101051> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101053> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101055> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101056> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101057> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101059> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101060> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101064> a skos:Concept,
+        aom:IngredientConstituent .
+
+<https://w3id.org/era-aom/livestock/AOM_101065> a skos:Concept,
+        aom:IngredientConstituent .
+
+<https://w3id.org/era-aom/livestock/AOM_101066> a skos:Concept,
+        aom:IngredientConstituent .
+
+<https://w3id.org/era-aom/livestock/AOM_101067> a skos:Concept,
+        aom:IngredientConstituent .
+
+<https://w3id.org/era-aom/livestock/AOM_101068> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101069> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101071> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101073> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101074> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101076> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101078> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101079> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101080> a skos:Concept,
+        aom:IngredientConstituent .
+
+<https://w3id.org/era-aom/livestock/AOM_101081> a skos:Concept,
+        aom:IngredientConstituent .
+
+<https://w3id.org/era-aom/livestock/AOM_101082> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101083> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101084> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101030> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101031> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101035> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101037> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101042> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101045> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101048> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101054> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101058> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101061> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101075> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101077> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101032> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101034> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101040> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101047> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101063> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101072> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101038> a skos:Concept,
+        aom:IngredientPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101070> a skos:Concept,
+        aom:ProcessingMethod .
+
+<https://w3id.org/era-aom/livestock/AOM_101052> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101062> a skos:Concept,
+        aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101033> a skos:Concept,
+        aom:IngredientPartCategory .
+

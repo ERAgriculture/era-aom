@@ -1,0 +1,18 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
+@prefix skosmos: <http://purl.org/net/Skosmos#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix aomcfg: <https://w3id.org/era-aom/config/> .
+
+aomcfg:livestock a skosmos:Vocabulary, void:Dataset ;
+  dc:title "Agriculture Ontology for Meta-analysis — Livestock"@en ;
+  dc:publisher "Alliance of Bioversity International and CIAT"@en ;
+  dc:type mdrtype:ONTOLOGY ;
+  void:uriSpace "https://w3id.org/era-aom/livestock/" ;
+  skosmos:language "en" ;
+  skosmos:defaultLanguage "en" ;
+  skosmos:showTopConcepts true ;
+  skosmos:showStatistics true ;
+  skosmos:loadExternalResources false ;
+  skosmos:shortName "ERA-AOM Livestock" ;
+  skosmos:mainConceptScheme <https://w3id.org/era-aom/scheme/livestock-v2> .

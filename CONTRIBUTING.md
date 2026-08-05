@@ -51,6 +51,12 @@ Human reviewer owns semantic decision.
 ## Bulk proposals
 
 Open issue describing scope before preparing more than five related concepts.
-Normalized bulk template and validator will be published before canonical
-cutover. Never submit restricted source data or copyrighted full text.
+Use [`templates/bulk-change-proposals.csv`](templates/bulk-change-proposals.csv)
+and validate before submission:
 
+```sh
+python scripts/validate_bulk_proposals.py path/to/proposals.csv
+```
+
+Submit template through pull request linked to scope issue. Never submit
+restricted source data or copyrighted full text.

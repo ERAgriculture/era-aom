@@ -34,11 +34,18 @@ Normalized livestock review staging:
 [`data/livestock-staging/README.md`](data/livestock-staging/README.md).
 Contribution and review workflow: [`CONTRIBUTING.md`](CONTRIBUTING.md).
 Persistent identifier allocation policy: [`IDENTIFIERS.md`](IDENTIFIERS.md).
+Publication and rollback procedure: [`docs/PUBLICATION_RUNBOOK.md`](docs/PUBLICATION_RUNBOOK.md).
+Current noncanonical release candidate:
+[`2026.1-rc.1`](docs/releases/2026.1-rc.1.md).
 Livestock domain-review pack:
 [`review/livestock-v2/README.md`](review/livestock-v2/README.md).
 
 No workbook content is published during inventory. This protects closed and
 unreviewed sheets while recording reproducible structural metadata.
+
+Release-candidate artifacts use proposed `https://w3id.org/era-aom/`
+identifiers for interoperability testing. Namespace registration and public
+deployment remain pending; candidate does not authorize canonical cutover.
 
 ## Licensing
 

@@ -26,6 +26,11 @@ Phase-3 ingredient-component decomposition is defined in
 Raw descriptors remain authoritative migration evidence until each facet
 assertion receives reviewed value governance.
 
+Public packaging candidate `2026.1-rc.1` proves deterministic multi-format
+generation and local semantic validation. Live namespace, Skosmos, AgroPortal,
+named-reviewer, and canonical-cutover gates remain open; see
+[`docs/releases/2026.1-rc.1.md`](docs/releases/2026.1-rc.1.md).
+
 ## Cutover rule
 
 Pilot approval proves architecture only. Canonical cutover requires approved
