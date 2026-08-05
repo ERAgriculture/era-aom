@@ -33,8 +33,10 @@ jobs:
         run: |
           python scripts/build_feed_identity_audit.py
           python scripts/build_ingredient_harmonization_workbench.py
+          python scripts/build_ingredient_rule_quality_gate.py
           python tests/validate_feed_identity_audit.py
           python tests/validate_ingredient_harmonization_workbench.py
+          python tests/validate_ingredient_rule_quality_gate.py
           python tests/validate_maize_identity_review.py
           python tests/validate_maize_identity_implementation.py
           python tests/validate_feed_material_harmonization.py

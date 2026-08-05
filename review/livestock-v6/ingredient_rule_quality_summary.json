@@ -1,0 +1,30 @@
+{
+  "rule_version": "1.0.0",
+  "rules_assessed": 67,
+  "recommendations": {
+    "approve-bulk": 20,
+    "approve-with-guard": 20,
+    "defer-no-occurrences": 12,
+    "hold-ambiguous": 5,
+    "hold-model-gap": 10
+  },
+  "rule_matches_by_recommendation": {
+    "approve-bulk": 1045,
+    "approve-with-guard": 558,
+    "defer-no-occurrences": 0,
+    "hold-ambiguous": 26,
+    "hold-model-gap": 110
+  },
+  "families": 20,
+  "promotion_gate": {
+    "status": "blocked-pending-human-rule-approval",
+    "automatic_changes": 0,
+    "required_before_promotion": [
+      "named reviewer approves selected rules and guards",
+      "held rules remain excluded",
+      "stratified family samples pass",
+      "generated assertions pass semantic and regression validation",
+      "legacy identifiers and approved replacements remain resolvable"
+    ]
+  }
+}
