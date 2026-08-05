@@ -44,7 +44,10 @@ jobs:
           pyshacl --shacl schemas/shacl/concepts.ttl dist/pilot/out.ttl
           pyshacl --shacl schemas/shacl/concepts.ttl dist/livestock-staging/aom-livestock.ttl
       - name: Validate persistent-identifier proposal tooling
-        run: python tests/test_w3id_proposal.py
+        run: |
+          python tests/test_w3id_proposal.py
+          python scripts/build_w3id_proposal.py --config=config/publication-targets.json --output=/tmp/era-aom-w3id
+          python scripts/validate_w3id_proposal.py /tmp/era-aom-w3id
       - name: Rebuild and validate release candidate
         run: |
           python scripts/build_release_candidate.py --config=config/releases/2026.1-rc.1.json
