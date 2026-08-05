@@ -49,3 +49,22 @@ jobs:
           python scripts/validate_release_candidate.py --release=2026.1-rc.1
           python scripts/validate_bulk_proposals.py templates/bulk-change-proposals.csv --allow-empty
           python scripts/validate_deployment_bundle.py
+
+  browser-stack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build and start browser stack
+        run: docker compose -f deploy/local/compose.yaml up --build --detach
+      - name: Verify loaded graph and browser
+        run: python scripts/check_browser_stack.py --attempts=90 --delay=2
+      - name: Capture container logs on failure
+        if: failure()
+        run: docker compose -f deploy/local/compose.yaml logs --no-color
+      - name: Stop browser stack
+        if: always()
+        run: docker compose -f deploy/local/compose.yaml down --volumes
