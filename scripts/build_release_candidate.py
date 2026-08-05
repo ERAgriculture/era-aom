@@ -12,7 +12,7 @@ from pathlib import Path
 
 import pyarrow as pa
 import pyarrow.parquet as pq
-from rdflib import Graph, Literal, URIRef
+from rdflib import Graph, RDF, SKOS, URIRef
 
 
 if os.environ.get("PYTHONHASHSEED") != "0":
@@ -56,6 +56,25 @@ def rewrite_graph(source, base):
     return result
 
 
+def materialize_browser_hierarchy(graph):
+    """Publish explicit SKOS inverses and top concepts required by browsers."""
+    concepts = set(graph.subjects(RDF.type, SKOS.Concept))
+    schemes = set(graph.subjects(RDF.type, SKOS.ConceptScheme))
+    if len(schemes) != 1:
+        raise ValueError(f"Expected one concept scheme, found {len(schemes)}")
+    scheme = next(iter(schemes))
+    broader = list(graph.subject_objects(SKOS.broader))
+    for child, parent in broader:
+        graph.add((parent, SKOS.narrower, child))
+    roots = {concept for concept in concepts if not any(graph.objects(concept, SKOS.broader))}
+    if not roots:
+        raise ValueError("Hierarchy has no root concepts")
+    for root in roots:
+        graph.add((root, SKOS.topConceptOf, scheme))
+        graph.add((scheme, SKOS.hasTopConcept, root))
+    return roots
+
+
 def write_graph(graph, path, rdf_format):
     graph.serialize(destination=path, format=rdf_format, encoding="utf-8")
 
@@ -82,6 +101,7 @@ def main():
 
     sources = root / "dist" / "livestock-staging"
     livestock = rewrite_graph(sources / "aom-livestock.ttl", base)
+    materialize_browser_hierarchy(livestock)
     schema = rewrite_graph(sources / "aom-schema.ttl", base)
     bindings = rewrite_graph(sources / "aom-semantic-bindings.ttl", base)
 

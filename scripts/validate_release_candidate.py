@@ -82,6 +82,15 @@ def main():
     for concept in concepts:
         visit(concept)
 
+    scheme = next(iter(schemes))
+    roots = {concept for concept in concepts if not any(livestock_ttl.objects(concept, SKOS.broader))}
+    declared_top = set(livestock_ttl.subjects(SKOS.topConceptOf, scheme))
+    assert roots == declared_top == set(livestock_ttl.objects(scheme, SKOS.hasTopConcept))
+    assert len(roots) == 4
+    broader_pairs = set(livestock_ttl.subject_objects(SKOS.broader))
+    narrower_pairs = {(child, parent) for parent, child in livestock_ttl.subject_objects(SKOS.narrower)}
+    assert broader_pairs == narrower_pairs
+
     conforms, _, report = validate(
         livestock_ttl,
         shacl_graph=graph(root / "schemas" / "shacl" / "concepts.ttl"),

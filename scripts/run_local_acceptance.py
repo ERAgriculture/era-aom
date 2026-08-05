@@ -62,6 +62,13 @@ def main():
     assert count == profile["expected_concepts"], count
     results["concept_count"] = count
 
+    hierarchy_query = "SELECT (COUNT(?broader) AS ?broaderCount) (COUNT(?narrower) AS ?narrowerCount) WHERE { { ?child <http://www.w3.org/2004/02/skos/core#broader> ?parent . BIND(?parent AS ?broader) } UNION { ?parent <http://www.w3.org/2004/02/skos/core#narrower> ?child . BIND(?child AS ?narrower) } }"
+    hierarchy_url = args.fuseki + "/sparql?" + urllib.parse.urlencode({"query": hierarchy_query})
+    hierarchy = json_get(hierarchy_url, timings)["results"]["bindings"][0]
+    broader_count = int(hierarchy["broaderCount"]["value"])
+    narrower_count = int(hierarchy["narrowerCount"]["value"])
+    assert broader_count == narrower_count == 2733, hierarchy
+
     api = args.skosmos.rstrip("/") + "/rest/v1"
     vocabularies = json_get(api + "/vocabularies?lang=en", timings)
     assert vocid in json.dumps(vocabularies), vocabularies
@@ -71,7 +78,11 @@ def main():
     assert broader is not None
     stats = json_get(api + f"/{vocid}/vocabularyStatistics?lang=en", timings)
     assert str(count) in json.dumps(stats), stats
-    results["api"] = {"vocabularies": "pass", "search": "pass", "broader": "pass", "statistics": "pass"}
+    top_concepts = json_get(api + f"/{vocid}/topConcepts?lang=en", timings)
+    top_text = json.dumps(top_concepts)
+    assert all(item in top_text for item in profile["expected_top_concepts"]), top_concepts
+    results["api"] = {"vocabularies": "pass", "search": "pass", "broader": "pass", "top_concepts": "pass", "statistics": "pass"}
+    results["hierarchy"] = {"roots": len(profile["expected_top_concepts"]), "broader": broader_count, "narrower": narrower_count}
 
     page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{concept_id}"
     status, headers, body, elapsed = request(page, "text/html")
@@ -87,7 +98,7 @@ def main():
     timings.append(elapsed)
     assert status == 200
     backup = Graph().parse(data=graph_body, format="turtle")
-    assert len(backup) >= 24109, len(backup)
+    assert len(backup) >= 26850, len(backup)
     results["graph_backup"] = {"triples": len(backup), "parse": "pass"}
 
     redirect_expectations = {
@@ -115,7 +126,7 @@ def main():
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     (output / "acceptance.json").write_text(json.dumps(results, indent=2) + "\n")
-    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Backup graph triples: {len(backup):,}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Concept HTML + embedded JSON-LD: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
+    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Concept HTML + embedded JSON-LD: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
     (output / "acceptance.md").write_text("\n".join(lines))
     print(json.dumps(results, indent=2))
 
