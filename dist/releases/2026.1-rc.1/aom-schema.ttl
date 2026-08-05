@@ -1,0 +1,206 @@
+@prefix aom: <https://w3id.org/era-aom/schema/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/era-aom/schema> a owl:Ontology ;
+    dcterms:description "OWL model separating AOM knowledge-organization concepts from agricultural observations, feed-material records, quantities, and governance provenance."@en ;
+    dcterms:title "AOM semantic model"@en ;
+    owl:versionInfo "design-1" .
+
+aom:ChangeProposal a owl:Class ;
+    rdfs:label "change proposal"@en .
+
+aom:GestationalStage a owl:Class ;
+    rdfs:label "gestational stage"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:MappingAssertion a owl:Class ;
+    rdfs:label "mapping assertion"@en .
+
+aom:ParityStatus a owl:Class ;
+    rdfs:label "parity status"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:QuantitativeObservation a owl:Class ;
+    rdfs:label "quantitative observation"@en ;
+    rdfs:subClassOf sosa:Observation .
+
+aom:bindingAction a owl:DatatypeProperty ;
+    rdfs:domain aom:SemanticValueBinding ;
+    rdfs:range xsd:string .
+
+aom:bindingKind a owl:DatatypeProperty ;
+    rdfs:domain aom:SemanticBinding ;
+    rdfs:range xsd:string .
+
+aom:bindingStatus a owl:DatatypeProperty ;
+    rdfs:domain aom:SemanticBinding ;
+    rdfs:range xsd:string .
+
+aom:compatibilityPolicy a owl:DatatypeProperty ;
+    rdfs:domain aom:SemanticBinding ;
+    rdfs:range xsd:string .
+
+aom:hasIngredientComponent a owl:ObjectProperty ;
+    rdfs:domain aom:FeedFormulation ;
+    rdfs:range aom:IngredientComponent .
+
+aom:inModule a owl:ObjectProperty ;
+    rdfs:range aom:Module .
+
+aom:ingredientConstituent a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:IngredientConstituent .
+
+aom:ingredientMaterial a owl:ObjectProperty ;
+    rdfs:domain aom:IngredientComponent ;
+    rdfs:range aom:FeedMaterial .
+
+aom:ingredientName a owl:DatatypeProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range xsd:string .
+
+aom:ingredientPart a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:IngredientPartCategory .
+
+aom:ingredientProportion a owl:ObjectProperty ;
+    rdfs:domain aom:IngredientComponent ;
+    rdfs:range qudt:QuantityValue .
+
+aom:ingredientSource a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:IngredientSourceCategory .
+
+aom:legacyComponentDescriptor a owl:DatatypeProperty ;
+    rdfs:comment "Unmodified legacy component descriptor retained until reviewed decomposition into explicit facets."@en ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range xsd:string .
+
+aom:legacyConcept a owl:ObjectProperty ;
+    rdfs:domain aom:SemanticBinding ;
+    rdfs:range skos:Concept .
+
+aom:physicalForm a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:IngredientPhysicalForm .
+
+aom:processingMethod a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:ProcessingMethod .
+
+aom:productRole a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:ProductRole .
+
+aom:quantityKind a owl:ObjectProperty ;
+    rdfs:domain aom:SemanticBinding .
+
+aom:releasedIn a owl:ObjectProperty ;
+    rdfs:range aom:Release .
+
+aom:reviewedBy a owl:ObjectProperty ;
+    rdfs:range aom:Reviewer .
+
+aom:sourceTaxon a owl:ObjectProperty ;
+    rdfs:comment "Links feed material to a reviewed taxon IRI; does not imply SKOS identity."@en ;
+    rdfs:domain aom:FeedMaterial .
+
+aom:sourceValue a owl:DatatypeProperty ;
+    rdfs:domain aom:SemanticValueBinding ;
+    rdfs:range xsd:string .
+
+aom:supportedBy a owl:ObjectProperty ;
+    rdfs:range aom:Evidence ;
+    rdfs:subPropertyOf prov:wasDerivedFrom .
+
+aom:targetClass a owl:ObjectProperty ;
+    rdfs:domain aom:SemanticBinding .
+
+aom:targetProperty a owl:ObjectProperty ;
+    rdfs:domain aom:SemanticBinding .
+
+aom:targetValueClass a owl:ObjectProperty ;
+    rdfs:domain aom:SemanticValueBinding .
+
+aom:unitRequirement a owl:DatatypeProperty ;
+    rdfs:domain aom:SemanticBinding ;
+    rdfs:range xsd:string .
+
+aom:valueBindingStatus a owl:DatatypeProperty ;
+    rdfs:domain aom:SemanticValueBinding ;
+    rdfs:range xsd:string .
+
+aom:valueClass a owl:ObjectProperty ;
+    rdfs:domain aom:SemanticBinding .
+
+aom:valueTargetConcept a owl:ObjectProperty ;
+    rdfs:domain aom:SemanticValueBinding ;
+    rdfs:range skos:Concept .
+
+aom:valueTargetProperty a owl:ObjectProperty ;
+    rdfs:domain aom:SemanticValueBinding .
+
+aom:Evidence a owl:Class ;
+    rdfs:label "evidence"@en ;
+    rdfs:subClassOf prov:Entity .
+
+aom:FeedFormulation a owl:Class ;
+    rdfs:label "feed formulation"@en .
+
+aom:IngredientConstituent a owl:Class ;
+    rdfs:label "ingredient constituent"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:IngredientPartCategory a owl:Class ;
+    rdfs:label "ingredient part category"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:IngredientPhysicalForm a owl:Class ;
+    rdfs:label "ingredient physical form"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:IngredientSourceCategory a owl:Class ;
+    rdfs:label "ingredient source category"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:Module a owl:Class ;
+    rdfs:label "module"@en .
+
+aom:ProcessingMethod a owl:Class ;
+    rdfs:label "processing method"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:ProductRole a owl:Class ;
+    rdfs:label "product role"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:Release a owl:Class ;
+    rdfs:label "release"@en .
+
+aom:Reviewer a owl:Class ;
+    rdfs:label "reviewer"@en ;
+    rdfs:subClassOf prov:Agent .
+
+aom:IngredientComponent a owl:Class ;
+    rdfs:label "ingredient component"@en ;
+    rdfs:comment "A feed material used in a formulation, optionally with a quantitative proportion."@en .
+
+aom:SemanticValueBinding a owl:Class ;
+    rdfs:label "semantic value binding"@en ;
+    rdfs:comment "Governed decision mapping a source controlled value to an ontology concept or explicitly holding it unresolved."@en .
+
+aom:SemanticBinding a owl:Class ;
+    rdfs:label "semantic binding"@en ;
+    rdfs:comment "Governed migration contract connecting a legacy AOM concept to its normalized data-model use."@en .
+
+aom:FeedMaterial a owl:Class ;
+    rdfs:label "feed material"@en ;
+    rdfs:comment "A material used or evaluated as feed. Source organism, part, processing method, and economic product role are modeled as facets."@en .
+

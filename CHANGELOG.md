@@ -4,6 +4,11 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Build noncanonical `2026.1-rc.1` with proposed HTTPS identifiers, equivalent
+  Turtle/JSON-LD/RDF/XML, CSV/Parquet visualization exports, manifest,
+  checksums, Skosmos configuration, bulk proposal validation, and explicit
+  publication/rollback gates.
+
 - Closed ingredient facet governance across all 83 descriptors with 46 atomic
   mappings, 65 composite assertions, and nine explicit holds.
 

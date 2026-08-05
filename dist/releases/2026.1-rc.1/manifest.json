@@ -1,0 +1,103 @@
+{
+  "release_id": "2026.1-rc.1",
+  "release_status": "release-candidate-not-canonical",
+  "change_classification": "compatible",
+  "created": "2026-08-05",
+  "canonical_cutover": false,
+  "compatibility_policy": "dual_publish",
+  "publisher": "Alliance of Bioversity International and CIAT",
+  "rights": "CC BY 4.0",
+  "reviewer": "TBD",
+  "namespace_base": "https://w3id.org/era-aom/",
+  "namespace_status": "proposed-registration-pending",
+  "source_doi": "https://doi.org/10.7910/DVN/75E7HV",
+  "source_version": "2.0",
+  "source_repository_commit": "a9714cc16b0a761082ea1dc010eb27da3a90cc97",
+  "manifest_schema_version": "1.0.0",
+  "source_staging_manifest_sha256": "9d0a0f1a3fc0260ab45bd6bbb1617cbc1fdc1df5e883340c6a70f9d8f20657c6",
+  "counts": {
+    "livestock_triples": 24109,
+    "schema_triples": 144,
+    "semantic_binding_triples": 3125
+  },
+  "distributions": [
+    {
+      "path": "CITATION.cff",
+      "bytes": 1337,
+      "sha256": "6f07aba1dda6543305de29677400bb57875f5e9bc8655fb974fa8278df4a649d"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 273,
+      "sha256": "ef0bffb59472aa8155825bd338eb951adf39f0a44cb82f480d3188ce182ebcff"
+    },
+    {
+      "path": "aom-livestock.jsonld",
+      "bytes": 3046371,
+      "sha256": "01d3eb81344fb308342a4084c09af6832d0f5a9262c08e17649ae7b0f102768e"
+    },
+    {
+      "path": "aom-livestock.rdf",
+      "bytes": 1991263,
+      "sha256": "402775696e44dfb6dcd0163004ef28aa3709bec1343e18e491ca9d86e27ebed5"
+    },
+    {
+      "path": "aom-livestock.ttl",
+      "bytes": 1327628,
+      "sha256": "3198d0c9799aeafca97da78bf023ba6913e0ea62b2588e7cc540ae03bad487c4"
+    },
+    {
+      "path": "aom-schema.rdf",
+      "bytes": 16721,
+      "sha256": "1c4175321ec075a1c14b2a82a4c428ae8bb63e304108eb92d1b83353f72c7504"
+    },
+    {
+      "path": "aom-schema.ttl",
+      "bytes": 6610,
+      "sha256": "7a2b746e44f415aa1f3993d02b84a6ff81f6063d71db955275b549d35f57d180"
+    },
+    {
+      "path": "aom-semantic-bindings.jsonld",
+      "bytes": 417116,
+      "sha256": "5f8fa02aed05336e4c8e9b28a72a9a99126ed6d45a4c3b9619f6f36c8e8d6fea"
+    },
+    {
+      "path": "aom-semantic-bindings.ttl",
+      "bytes": 173104,
+      "sha256": "3433634f39812716e3c2df36dc74818f6071ea1011582c489ae7867c544914f5"
+    },
+    {
+      "path": "edges.csv",
+      "bytes": 129521,
+      "sha256": "60f0a314d85b8a6360fc98f5dba3d5dadd673e864518c5b5c4cdba96e017d709"
+    },
+    {
+      "path": "edges.parquet",
+      "bytes": 17201,
+      "sha256": "3cda3e2ab48b9437070f515c40efab55b26c9913920fd3d19f1c50ae6b442fb4"
+    },
+    {
+      "path": "nodes.csv",
+      "bytes": 177625,
+      "sha256": "1a324b38e1a414603f2798bd11a215f7563f60f60aa2ca4b69e31ed900ef855f"
+    },
+    {
+      "path": "nodes.parquet",
+      "bytes": 36257,
+      "sha256": "5cad25bb1742d6058bbc5f45f0022874cbf5f36375821e1a36208c0bfef6f1de"
+    },
+    {
+      "path": "release.json",
+      "bytes": 598,
+      "sha256": "df1d4f6dbeb78d3ccf70d77abfa2025a0a82b4360be990cf594c9816c4ba1cbb"
+    }
+  ],
+  "publication_gates": {
+    "namespace_registered": false,
+    "live_content_negotiation": false,
+    "skosmos_deployment": false,
+    "agroportal_registration": false,
+    "named_reviewer": false,
+    "canonical_cutover_approved": false
+  }
+}
