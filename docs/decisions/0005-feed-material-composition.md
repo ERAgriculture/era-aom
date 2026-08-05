@@ -40,9 +40,12 @@ remain held without inferred component or form.
 ## Maize example
 
 `Maize Grain Ground` can normalize to `Maize + Grain + Grinding` when source
-evidence confirms grain. `Maize Whole Ensiled` currently normalizes only to
-`Maize + unresolved component + Ensiling`; “whole” requires review. This prevents
-false equivalence between whole grain and whole-crop silage.
+evidence confirms grain. Approved maize review resolves `AOM_001326` as
+`Whole-crop maize silage`: material component `Whole crop` plus process
+`Ensiling`. Legacy synonym `AOM_006072` is deprecated and replaced by
+`AOM_001326`. Unqualified `Whole` remains held because it may mean whole crop,
+whole organism, whole grain, or absence of a component. This prevents false
+equivalence between whole grain and whole-crop silage.
 
 ## Consequences
 

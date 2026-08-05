@@ -27,11 +27,11 @@
   },
   "source_repository_commit": "a9714cc16b0a761082ea1dc010eb27da3a90cc97",
   "manifest_schema_version": "1.0.0",
-  "source_staging_manifest_sha256": "3b84e5695b342cbd785a6d5e1a96c2283bbf2204815e1bbb70549957fd501fc4",
+  "source_staging_manifest_sha256": "663a78bbe87f27506e009be1c2a0de8b7ef7fadc4ddf269a9f7a8c1e57bb6631",
   "counts": {
-    "livestock_triples": 26852,
-    "schema_triples": 144,
-    "semantic_binding_triples": 3127
+    "livestock_triples": 26874,
+    "schema_triples": 153,
+    "semantic_binding_triples": 3130
   },
   "distributions": [
     {
@@ -46,58 +46,68 @@
     },
     {
       "path": "aom-livestock.jsonld",
-      "bytes": 3317097,
-      "sha256": "19b0623125ca55733e0186a4e2adb86bc9ce575cdd62c22ddf55ecd011251ba4"
+      "bytes": 3319530,
+      "sha256": "3edd2f1c3efddd63f8a7dfab9c08adaea0e4a472c419753240ccb9bb38a76046"
     },
     {
       "path": "aom-livestock.rdf",
-      "bytes": 2216193,
-      "sha256": "140adf61c22e984da75717c0f3c533574256a43ffc89c084163b6fcf26755bc8"
+      "bytes": 2217907,
+      "sha256": "820dd7d0753e540d29cb21b1e4a98772dc7e0cf76e70397b221b6b11ab25e694"
     },
     {
       "path": "aom-livestock.ttl",
-      "bytes": 1493338,
-      "sha256": "7481a05f4a505ad274e75eea93dbc45a1ce6b574daf8de6de3f0fdb897510a3e"
+      "bytes": 1494396,
+      "sha256": "e8973e0865c44e306b665aec57a899b62d6d218fb62eb30a83cfbeef626a6a63"
     },
     {
       "path": "aom-schema.rdf",
-      "bytes": 16721,
-      "sha256": "3204abdc34515aaba8914aaab9eea2a5d30dcf6ca8f5adb4014140d9d35a2865"
+      "bytes": 17730,
+      "sha256": "e23e1287bf967159354c6ff9b2fa3cfa9fe6ead310c9e4ce0d0959991eea0da2"
     },
     {
       "path": "aom-schema.ttl",
-      "bytes": 6610,
-      "sha256": "7a2b746e44f415aa1f3993d02b84a6ff81f6063d71db955275b549d35f57d180"
+      "bytes": 7073,
+      "sha256": "64192d050e1416b67b3e6227cb19c1ad2acd08648fec785584f4bac17690df62"
     },
     {
       "path": "aom-semantic-bindings.jsonld",
-      "bytes": 417306,
-      "sha256": "d08f826a28d088e03702ed326e82e6bfc4efdaafdbe060dbe67cfdbfbf95d9fd"
+      "bytes": 417656,
+      "sha256": "fa4475327fa9749d4ce6480630a1a511137997621be05e0b83e9d29e48859d35"
     },
     {
       "path": "aom-semantic-bindings.ttl",
-      "bytes": 173189,
-      "sha256": "82acaa3afb33ef2c049f0d49351a0d1c22ea8c4266a244fec128579e29548c26"
+      "bytes": 173366,
+      "sha256": "d05a7e64af9b240afaa74a988a7949bc2fb205dbf936bf001209949f6c2edcb1"
     },
     {
       "path": "edges.csv",
-      "bytes": 129521,
-      "sha256": "60f0a314d85b8a6360fc98f5dba3d5dadd673e864518c5b5c4cdba96e017d709"
+      "bytes": 129642,
+      "sha256": "a3198766516e6c23f34bb3d9d7005882e376a8e26c3349c7f90f6ed6bf88180d"
     },
     {
       "path": "edges.parquet",
-      "bytes": 17217,
-      "sha256": "39e64020d6a7f26df9172a13a43b42e9a9b7374332f2f4e73a08f22a01429b62"
+      "bytes": 17226,
+      "sha256": "5bd194e7a1e5d150c2c97c0091c1e48a878a14c5b2b62f77258cca5440e61088"
+    },
+    {
+      "path": "migration-crosswalk.csv",
+      "bytes": 1002,
+      "sha256": "2752186c6cff2cfe307223ebd24ffa1a80f4637c3d673b89239b60329971ef75"
+    },
+    {
+      "path": "migration-crosswalk.parquet",
+      "bytes": 3917,
+      "sha256": "337773a02cb1d433012f7b6ee0899581d946314a90d3df65cc252fa1b7a09502"
     },
     {
       "path": "nodes.csv",
-      "bytes": 177623,
-      "sha256": "207a0681c00b0d1867af98c2f695604b38c6630a2785bea103c131ab81fd747b"
+      "bytes": 177762,
+      "sha256": "dd67535f3f376a272dab1f5f80ee4a52e86bc52848d030c14bbbe02372b63cab"
     },
     {
       "path": "nodes.parquet",
-      "bytes": 36272,
-      "sha256": "23e27b66c10628bf17aeb48e40a76107e98ef5c8a2bab4b959c2a5c0308eadf4"
+      "bytes": 36316,
+      "sha256": "4e14f5fb268609d0657d4803119d066c8bb6a2a8aa764f0fdc8e737f142fbbb3"
     },
     {
       "path": "release.json",

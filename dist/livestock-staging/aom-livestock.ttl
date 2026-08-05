@@ -11732,12 +11732,15 @@
 <urn:era-aom:livestock:AOM_001326> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001326" ;
-  skos:prefLabel "Maize Ensiled"@en ;
+  skos:prefLabel "Whole-crop maize silage"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Maize Ensiled"@en ;
   skos:altLabel "Corn Ensiled"@en ;
   skos:altLabel "Corn Silage"@en ;
   skos:altLabel "Maize Silage"@en ;
+  skos:altLabel "Maize Whole Ensiled"@en ;
+  skos:altLabel "Maize Whole Silage"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000648> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/13883> .
@@ -22110,9 +22113,10 @@
   skos:notation "AOM_006072" ;
   skos:prefLabel "Maize Whole Ensiled"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:altLabel "Maize Whole Silage"@en ;
   skos:broader <urn:era-aom:livestock:AOM_001313> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_001326> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
 
 <urn:era-aom:livestock:AOM_006073> a skos:Concept ;
@@ -26786,3 +26790,19 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_101021> .
+
+<urn:era-aom:livestock:AOM_101085> a skos:Concept, aom:FeedMaterialComponent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101085" ;
+  skos:prefLabel "Feed material components"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101086> a skos:Concept, aom:FeedMaterialComponent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101086" ;
+  skos:prefLabel "Whole crop"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101085> .

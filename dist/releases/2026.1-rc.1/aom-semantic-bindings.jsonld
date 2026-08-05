@@ -4057,18 +4057,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006072",
-    "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000831"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101033",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -8423,6 +8411,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101086",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:eupatorium-odoratum",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -8908,6 +8903,23 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/ingredientPart"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001326",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ],
+    "https://w3id.org/era-aom/schema/materialComponent": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101086"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processingMethod": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000831"
       }
     ]
   },
@@ -10384,42 +10396,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:ocimum-gratissimum",
-    "@type": [
-      "https://w3id.org/era-aom/schema/SemanticValueBinding"
-    ],
-    "https://w3id.org/era-aom/schema/bindingAction": [
-      {
-        "@value": "map_to_external"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/sourceValue": [
-      {
-        "@value": "Ocimum gratissimum"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/targetValueClass": [
-      {
-        "@id": "http://www.w3.org/2002/07/owl#Class"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueBindingStatus": [
-      {
-        "@value": "approved"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueTargetConcept": [
-      {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_204144"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueTargetProperty": [
-      {
-        "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:viscera",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -10452,6 +10428,42 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/ingredientPart"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:eragrostis-papposa",
+    "@type": [
+      "https://w3id.org/era-aom/schema/SemanticValueBinding"
+    ],
+    "https://w3id.org/era-aom/schema/bindingAction": [
+      {
+        "@value": "map_to_external"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/sourceValue": [
+      {
+        "@value": "Eragrostis papposa"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/targetValueClass": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/valueBindingStatus": [
+      {
+        "@value": "approved"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/valueTargetConcept": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_208284"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/valueTargetProperty": [
+      {
+        "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
       }
     ]
   },
@@ -10528,7 +10540,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:eragrostis-papposa",
+    "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:ocimum-gratissimum",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
     ],
@@ -10539,7 +10551,7 @@
     ],
     "https://w3id.org/era-aom/schema/sourceValue": [
       {
-        "@value": "Eragrostis papposa"
+        "@value": "Ocimum gratissimum"
       }
     ],
     "https://w3id.org/era-aom/schema/targetValueClass": [
@@ -10554,7 +10566,7 @@
     ],
     "https://w3id.org/era-aom/schema/valueTargetConcept": [
       {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_208284"
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_204144"
       }
     ],
     "https://w3id.org/era-aom/schema/valueTargetProperty": [

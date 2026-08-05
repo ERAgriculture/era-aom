@@ -7614,6 +7614,23 @@
       "aom:valueBindingStatus": "approved"
     },
     {
+      "@id": "urn:era-aom:livestock:AOM_101086",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterialComponent"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_001326",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:materialComponent": {
+        "@id": "urn:era-aom:livestock:AOM_101086"
+      }
+    },
+    {
       "@id": "urn:era-aom:livestock:AOM_000831",
       "@type": [
         "skos:Concept",
@@ -7621,7 +7638,7 @@
       ]
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_006072",
+      "@id": "urn:era-aom:livestock:AOM_001326",
       "@type": [
         "skos:Concept",
         "aom:FeedMaterial"

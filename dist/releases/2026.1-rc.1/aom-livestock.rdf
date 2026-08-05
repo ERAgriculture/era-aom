@@ -1697,6 +1697,16 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:prefLabel xml:lang="en">Tamarind Wilted</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101086">
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101085"/>
+    <skos:notation>AOM_101086</skos:notation>
+    <era:status>unknown</era:status>
+    <skos:prefLabel xml:lang="en">Whole crop</skos:prefLabel>
+    <era:conceptType>aom_concept</era:conceptType>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000034">
     <skos:definition xml:lang="en">Fish are the gill-bearing aquatic craniate animals that lack limbs with digits. Most fish are ectothermic ("cold-blooded"), allowing their body temperatures to vary as ambient temperatures change, though some of the large active swimmers like white shark and tuna can hold a higher core temperature.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000032"/>
@@ -7681,6 +7691,17 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100917"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101085">
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000328"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
+    <skos:prefLabel xml:lang="en">Feed material components</skos:prefLabel>
+    <era:conceptType>aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:notation>AOM_101085</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101086"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001385">
     <skos:altLabel xml:lang="en">Palisade Grass</skos:altLabel>
     <skos:altLabel xml:lang="en">Bread Grass</skos:altLabel>
@@ -10981,6 +11002,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_000328</skos:notation>
     <era:status>unknown</era:status>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001062"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101085"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101023"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000326"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101022"/>
@@ -29659,15 +29681,18 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/13883"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
     <skos:altLabel xml:lang="en">Corn Ensiled</skos:altLabel>
+    <skos:altLabel xml:lang="en">Maize Ensiled</skos:altLabel>
     <skos:altLabel xml:lang="en">Corn Silage</skos:altLabel>
+    <skos:altLabel xml:lang="en">Maize Whole Ensiled</skos:altLabel>
     <skos:altLabel xml:lang="en">Maize Silage</skos:altLabel>
-    <skos:prefLabel xml:lang="en">Maize Ensiled</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Maize Whole Silage</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_001326</skos:notation>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000648"/>
     <era:status>unknown</era:status>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:prefLabel xml:lang="en">Whole-crop maize silage</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003596">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -32021,13 +32046,14 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006072">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <era:status>deprecated</era:status>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
     <skos:prefLabel xml:lang="en">Maize Whole Ensiled</skos:prefLabel>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_001326"/>
     <skos:notation>AOM_006072</skos:notation>
     <skos:altLabel xml:lang="en">Maize Whole Silage</skos:altLabel>
-    <era:status>unknown</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001313"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002103">

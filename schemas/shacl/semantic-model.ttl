@@ -14,6 +14,7 @@ aom:FeedMaterialShape a sh:NodeShape ;
   ] ;
   sh:property [ sh:path aom:sourceTaxon ; sh:nodeKind sh:IRI ] ;
   sh:property [ sh:path aom:legacyComponentDescriptor ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path aom:materialComponent ; sh:class aom:FeedMaterialComponent ] ;
   sh:property [ sh:path aom:ingredientPart ; sh:class aom:IngredientPartCategory ] ;
   sh:property [ sh:path aom:physicalForm ; sh:class aom:IngredientPhysicalForm ] ;
   sh:property [ sh:path aom:processingMethod ; sh:class aom:ProcessingMethod ] ;

@@ -8004,19 +8004,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_001326> a skos:Concept ;
-    skos:altLabel "Corn Ensiled"@en,
-        "Corn Silage"@en,
-        "Maize Silage"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_001326" ;
-    skos:prefLabel "Maize Ensiled"@en ;
-    skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577>,
-        <https://www.feedipedia.org/node/13883> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_001332> a skos:Concept ;
     skos:altLabel "Oat Meal"@en,
         "Oat Milled"@en ;
@@ -15544,6 +15531,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_006072> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_001326> ;
     skos:altLabel "Maize Whole Silage"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001313> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -15551,7 +15539,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Maize Whole Ensiled"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
+    era:status "deprecated" .
 
 <https://w3id.org/era-aom/livestock/AOM_006073> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003973> ;
@@ -18756,6 +18744,15 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101086> a skos:Concept,
+        aom:FeedMaterialComponent ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101085> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101086" ;
+    skos:prefLabel "Whole crop"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_000011> a skos:Concept ;
     skos:altLabel "Camelid"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000004> ;
@@ -20005,6 +20002,22 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Wheat Grain"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565>,
         <https://www.feedipedia.org/node/12754> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_001326> a skos:Concept ;
+    skos:altLabel "Corn Ensiled"@en,
+        "Corn Silage"@en,
+        "Maize Ensiled"@en,
+        "Maize Silage"@en,
+        "Maize Whole Ensiled"@en,
+        "Maize Whole Silage"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_001326" ;
+    skos:prefLabel "Whole-crop maize silage"@en ;
+    skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577>,
+        <https://www.feedipedia.org/node/13883> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -22702,6 +22715,16 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000017> ;
     skos:notation "AOM_101018" ;
     skos:prefLabel "Porcine animals"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101085> a skos:Concept,
+        aom:FeedMaterialComponent ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101086> ;
+    skos:notation "AOM_101085" ;
+    skos:prefLabel "Feed material components"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -28478,28 +28501,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000328> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000107> ;
-    skos:definition "any measurable, observable or declared characteristic related to elements or set of elements, with nutritional purposes"@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000196>,
-        <https://w3id.org/era-aom/livestock/AOM_000321>,
-        <https://w3id.org/era-aom/livestock/AOM_000326>,
-        <https://w3id.org/era-aom/livestock/AOM_000327>,
-        <https://w3id.org/era-aom/livestock/AOM_000845>,
-        <https://w3id.org/era-aom/livestock/AOM_001062>,
-        <https://w3id.org/era-aom/livestock/AOM_100850>,
-        <https://w3id.org/era-aom/livestock/AOM_101019>,
-        <https://w3id.org/era-aom/livestock/AOM_101020>,
-        <https://w3id.org/era-aom/livestock/AOM_101021>,
-        <https://w3id.org/era-aom/livestock/AOM_101022>,
-        <https://w3id.org/era-aom/livestock/AOM_101023> ;
-    skos:notation "AOM_000328" ;
-    skos:prefLabel "Feed Characteristic"@en ;
-    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000065> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_000579> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100861> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -28627,6 +28628,29 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_101002> ;
     skos:notation "AOM_000107" ;
     skos:prefLabel "Livestock Management"@en ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000328> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000107> ;
+    skos:definition "any measurable, observable or declared characteristic related to elements or set of elements, with nutritional purposes"@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000196>,
+        <https://w3id.org/era-aom/livestock/AOM_000321>,
+        <https://w3id.org/era-aom/livestock/AOM_000326>,
+        <https://w3id.org/era-aom/livestock/AOM_000327>,
+        <https://w3id.org/era-aom/livestock/AOM_000845>,
+        <https://w3id.org/era-aom/livestock/AOM_001062>,
+        <https://w3id.org/era-aom/livestock/AOM_100850>,
+        <https://w3id.org/era-aom/livestock/AOM_101019>,
+        <https://w3id.org/era-aom/livestock/AOM_101020>,
+        <https://w3id.org/era-aom/livestock/AOM_101021>,
+        <https://w3id.org/era-aom/livestock/AOM_101022>,
+        <https://w3id.org/era-aom/livestock/AOM_101023>,
+        <https://w3id.org/era-aom/livestock/AOM_101085> ;
+    skos:notation "AOM_000328" ;
+    skos:prefLabel "Feed Characteristic"@en ;
+    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000065> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 

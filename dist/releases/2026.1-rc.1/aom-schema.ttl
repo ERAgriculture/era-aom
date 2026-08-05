@@ -68,7 +68,8 @@ aom:ingredientName a owl:DatatypeProperty ;
 
 aom:ingredientPart a owl:ObjectProperty ;
     rdfs:domain aom:FeedMaterial ;
-    rdfs:range aom:IngredientPartCategory .
+    rdfs:range aom:IngredientPartCategory ;
+    rdfs:subPropertyOf aom:materialComponent .
 
 aom:ingredientProportion a owl:ObjectProperty ;
     rdfs:domain aom:IngredientComponent ;
@@ -160,7 +161,8 @@ aom:IngredientConstituent a owl:Class ;
 
 aom:IngredientPartCategory a owl:Class ;
     rdfs:label "ingredient part category"@en ;
-    rdfs:subClassOf skos:Concept .
+    rdfs:subClassOf skos:Concept,
+        aom:FeedMaterialComponent .
 
 aom:IngredientPhysicalForm a owl:Class ;
     rdfs:label "ingredient physical form"@en ;
@@ -187,6 +189,15 @@ aom:Release a owl:Class ;
 aom:Reviewer a owl:Class ;
     rdfs:label "reviewer"@en ;
     rdfs:subClassOf prov:Agent .
+
+aom:materialComponent a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:FeedMaterialComponent .
+
+aom:FeedMaterialComponent a owl:Class ;
+    rdfs:label "feed material component"@en ;
+    rdfs:comment "Reviewed material scope or component, including anatomical parts and collective material such as a whole crop."@en ;
+    rdfs:subClassOf skos:Concept .
 
 aom:IngredientComponent a owl:Class ;
     rdfs:label "ingredient component"@en ;
