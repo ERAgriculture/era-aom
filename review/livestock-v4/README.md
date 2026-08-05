@@ -30,6 +30,10 @@ Outputs:
   hierarchy, extracted process/form terms, definition coverage, lexical
   collisions, and public mapping evidence;
 - `maize_feed_material_harmonization.csv`: family-level dimensional analysis.
+- `MAIZE_IDENTITY_REVIEW.md` and
+  `maize_identity_review_recommendations.csv`: canonical occurrence evidence,
+  public-authority evidence, proposed decision rules, and 16 recommendations for
+  expert approval.
 
 ILRI feed identifiers are excluded from candidate generation and scoring. That
 system is changing; existing values remain deferred private provenance only.
