@@ -11,6 +11,19 @@ WORKBENCH = ROOT / "review/livestock-v5"
 DATA = ROOT / "data/livestock-staging"
 REVIEWER = "Pete Steward"
 DATE = "2026-08-05"
+APPROVED_RULE_IDS = {
+    "PROCESS-ALKALI_TREATED", "PROCESS-AUTOCLAVED", "PROCESS-BOILED",
+    "PROCESS-CRACKED", "PROCESS-CRUSHED", "PROCESS-DEFATTED", "PROCESS-DRIED",
+    "PROCESS-ENSILED", "PROCESS-ENZYME_TREATED", "PROCESS-EXTRUDED",
+    "PROCESS-FERMENTED", "PROCESS-GROUND", "PROCESS-HEATED",
+    "PROCESS-MOLASSES_TREATED", "PROCESS-PRESSED", "PROCESS-ROASTED",
+    "PROCESS-SOAKED", "PROCESS-SPROUTED", "PROCESS-UREA_TREATED", "PROCESS-WILTED",
+    "COMPONENT-BLOOD", "COMPONENT-BRAN", "COMPONENT-COB", "COMPONENT-GRAIN",
+    "COMPONENT-HUSK", "COMPONENT-KERNEL", "COMPONENT-LEAF", "COMPONENT-PEEL",
+    "COMPONENT-POD", "COMPONENT-ROOT", "COMPONENT-SEED", "COMPONENT-SHELL",
+    "COMPONENT-STEM", "COMPONENT-STOVER", "COMPONENT-STRAW", "COMPONENT-TUBER",
+    "COMPONENT-VINE", "FORM-BLOCK", "FORM-PELLET", "FORM-POWDER",
+}
 
 FIELD_BY_DIMENSION = {
     "component": "component_candidates",
@@ -38,9 +51,10 @@ manual_assertions = read(DATA / "approved_feed_material_facets.csv")
 
 approved = [
     row for row in assessment
-    if row["recommendation"] in {"approve-bulk", "approve-with-guard"}
+    if row["rule_id"] in APPROVED_RULE_IDS
 ]
-assert len(approved) == 40
+assert len(approved) == len(APPROVED_RULE_IDS) == 40
+assert {row["rule_id"] for row in approved} == APPROVED_RULE_IDS
 approved_rows = [{
     "rule_id": row["rule_id"], "dimension": row["dimension"],
     "source_pattern": row["source_pattern"], "normalized_value": row["normalized_value"],
@@ -113,7 +127,7 @@ write(
         "reviewer": REVIEWER, "review_date": DATE,
         "approved_rules": len(approved_rows),
         "generated_assertions": len(assertions),
-        "held_or_deferred_rules": len(assessment) - len(approved_rows),
+        "unapproved_rules": len(assessment) - len(approved_rows),
         "legacy_identifiers_preserved": True,
         "ilri_identifiers_used": False,
     }, indent=2) + "\n",

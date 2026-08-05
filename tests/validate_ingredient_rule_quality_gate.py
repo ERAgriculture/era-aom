@@ -18,8 +18,8 @@ rules = read("ingredient_rule_quality_assessment.csv")
 families = read("ingredient_family_rollout_plan.csv")
 summary = json.loads((REVIEW / "ingredient_rule_quality_summary.json").read_text())
 
-assert len(rules) == summary["rules_assessed"] == 67
-assert len({row["rule_id"] for row in rules}) == 67
+assert len(rules) == summary["rules_assessed"] == 68
+assert len({row["rule_id"] for row in rules}) == 68
 assert len(families) == summary["families"] == 20
 assert sum(int(row["concept_count"]) for row in families) == 1643
 assert all(row["approval_status"] == "proposed-for-bulk-review" for row in rules)
@@ -33,8 +33,10 @@ assert by_rule["PROCESS-GROUND"]["matched_concept_count"] == "342"
 assert by_rule["COMPONENT-GRAIN"]["recommendation"] == "approve-with-guard"
 for rule_id in {"FORM-CAKE", "FORM-OIL", "FORM-PULP", "FORM-MEAL", "FORM-HAY"}:
     assert by_rule[rule_id]["recommendation"] == "hold-model-gap"
-for rule_id in {"QUALITY-YELLOW", "QUALITY-GREEN", "QUALITY-RIPE"}:
+for rule_id in {"QUALITY-YELLOW", "QUALITY-RIPE"}:
     assert by_rule[rule_id]["recommendation"] == "hold-model-gap"
+assert by_rule["QUALITY-GREEN"]["recommendation"] == "defer-no-occurrences"
+assert by_rule["PROCESS-DEHULLED"]["recommendation"] == "approve-bulk"
 assert by_rule["AMBIGUOUS-WHOLE"]["recommendation"] == "hold-ambiguous"
 assert all(
     row["sample_concepts"] or row["recommendation"] == "defer-no-occurrences"

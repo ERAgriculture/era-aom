@@ -22,15 +22,15 @@ summary = json.loads((REVIEW / "ingredient_harmonization_summary.json").read_tex
 
 assert len(inventory) == summary["ingredient_concepts"] == 1643
 assert len({row["concept_id"] for row in inventory}) == 1643
-assert len(rules) == summary["rules"] == 67
-assert len({row["rule_id"] for row in rules}) == 67
-assert len(clusters) == 8 and summary["unresolved_signature_clusters"] == 6
-assert len(exceptions) == summary["unresolved_expert_exceptions"] == 30
+assert len(rules) == summary["rules"] == 68
+assert len({row["rule_id"] for row in rules}) == 68
+assert len(clusters) == 6 and summary["unresolved_signature_clusters"] == 6
+assert len(exceptions) == summary["unresolved_expert_exceptions"] == 29
 assert summary["routes"] == {
     "batch_review": 10,
-    "expert_exception": 32,
+    "expert_exception": 31,
     "retain_atomic_candidate": 621,
-    "rule_application_candidate": 980,
+    "rule_application_candidate": 981,
 }
 assert summary["safety"] == {
     "automatic_ontology_changes": 0,
@@ -47,12 +47,13 @@ assert by_id["AOM_001326"]["process_candidates"] == "Ensiling"
 assert by_id["AOM_006072"]["governance_state"] == "approved_deprecated"
 assert by_id["AOM_001313"]["review_route"] == "expert_exception"
 assert "whole may mean" in by_id["AOM_001313"]["exception_reason"]
-assert any(
-    set(row["concept_ids"].split(";")) == {"AOM_001326", "AOM_006072"}
-    and row["status"] == "resolved-by-approved-deprecation"
+assert not any(
+    {"AOM_001326", "AOM_006072"} <= set(row["concept_ids"].split(";"))
     for row in clusters
 )
 assert "AOM_006072" not in {row["concept_id"] for row in exceptions}
+assert by_id["AOM_006500"]["process_candidates"] == "Boiling;Drying;Grinding;Dehulling;Soaking"
+assert by_id["AOM_006108"]["source_identity_candidate"] == "common bean"
 print(
     f"Ingredient harmonization workbench validation passed: {len(inventory)} concepts, "
     f"{len(rules)} rules, {len(exceptions)} unresolved exceptions"
