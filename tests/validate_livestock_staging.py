@@ -31,11 +31,12 @@ component_classifications = read("approved_ingredient_component_classifications"
 facet_concepts = read("approved_ingredient_facet_concepts")
 component_value_mappings = read("approved_ingredient_component_value_mappings")
 component_decompositions = read("approved_ingredient_component_decompositions")
+component_value_holds = read("approved_ingredient_component_value_holds")
 manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2726 and len(ids) == len(known)
+assert len(ids) == 2737 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -66,15 +67,21 @@ assert len({row["normalized_value"] for row in component_classifications}) == 83
 assert all(row["status"] == "approved-classification" for row in component_classifications)
 assert all(row["reviewer"] == "Pete Steward" for row in component_classifications)
 assert sum(row["disposition"] == "review_single" for row in component_classifications) == 52
-assert sum(row["disposition"] == "decompose" for row in component_classifications) == 28
-assert sum(row["disposition"] == "hold" for row in component_classifications) == 3
-assert len(facet_concepts) == 55
-assert len(component_value_mappings) == 35
-assert len(component_decompositions) == 39
+assert sum(row["disposition"] == "decompose" for row in component_classifications) == 29
+assert sum(row["disposition"] == "hold" for row in component_classifications) == 2
+assert len(facet_concepts) == 66
+assert len(component_value_mappings) == 46
+assert len(component_decompositions) == 65
+assert len(component_value_holds) == 9
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_concepts
 }
-assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in facet_concepts + component_value_mappings + component_decompositions)
+assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in facet_concepts + component_value_mappings + component_decompositions + component_value_holds)
+assert ({row["source_value"] for row in component_value_mappings} |
+        {row["source_value"] for row in component_decompositions} |
+        {row["source_value"] for row in component_value_holds}) == {
+            row["source_value"] for row in component_classifications
+        }
 assert {
     (row["deprecated_id"], row["replacement_id"])
     for row in deprecations
@@ -85,11 +92,12 @@ assert {
 assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
 assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
-assert manifest["counts"]["approved_ingredient_facet_concepts"] == 55
-assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 35
-assert manifest["counts"]["approved_ingredient_component_decompositions"] == 39
+assert manifest["counts"]["approved_ingredient_facet_concepts"] == 66
+assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 46
+assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
+assert manifest["counts"]["approved_ingredient_component_value_holds"] == 9
 assert len(label_corrections) == 6
-assert len(new_concepts) == 225
+assert len(new_concepts) == 236
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -153,7 +161,7 @@ final_mint_cases = {
 }
 assert final_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 101074)
+    f"AOM_{number:06d}" for number in range(100849, 101085)
 }
 assert {row["concept_id"] for row in id_registry} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}

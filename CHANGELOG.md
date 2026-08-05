@@ -4,6 +4,9 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Closed ingredient facet governance across all 83 descriptors with 46 atomic
+  mappings, 65 composite assertions, and nine explicit holds.
+
 - Create repository and Phase 0 workbook inventory.
 - Normalize `prac` and `out` into pilot concept, annotation, relation,
   property, registry, and provenance tables.
