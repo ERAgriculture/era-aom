@@ -88,6 +88,12 @@ VALUES = [
     ("process_sugar", "Sugar processing", "process_root", "processing_method"),
 ]
 
+# Existing AOM concepts that also serve as governed facet values. Reuse their
+# persistent identifiers rather than minting duplicate concepts.
+EXISTING_VALUES = [
+    ("AOM_000831", "Ensiling", "processing_method"),
+]
+
 ATOMIC = {
     "Block": "form_block", "Bulb": "part_bulb", "Cladode": "part_cladode",
     "Cob": "part_cob", "Corm": "part_corm", "Discards": "role_discard",
@@ -104,7 +110,7 @@ ATOMIC = {
     "Ash": "const_ash", "Binder": "role_binder", "Grain": "part_grain",
     "Manure": "role_waste", "Mix": "form_mixture", "Oil": "const_oil",
     "Shell": "part_shell", "Shells": "part_shell", "Sludge": "role_processing_waste",
-    "Tops": "part_top", "Whole": "form_whole",
+    "Tops": "part_top",
 }
 
 DECOMPOSITIONS = {
@@ -148,6 +154,7 @@ HOLDS = {
     "Shaft": "Cassava usage may be typo or local synonym for stem; no authoritative identity found.",
     "Vine": "Feed usage may mean stem alone or collective aerial biomass including leaves.",
     "Weeds": "Names source-material class, not anatomical part, form, process, role, or constituent.",
+    "Whole": "May mean whole crop, whole organism, whole grain, or absence of a component; source context must resolve scope.",
 }
 
 
@@ -205,6 +212,15 @@ def main():
             "concept_role": "facet_root" if parent is None else "facet_value",
             "status": "approved", "reviewer": REVIEWER, "review_date": DATE,
             "evidence": REVIEW,
+        })
+    for concept_id, label, facet in EXISTING_VALUES:
+        target_property, value_class = FACET_MODEL[facet]
+        facet_concepts.append({
+            "concept_id": concept_id, "preferred_label": label, "facet": facet,
+            "target_property": target_property, "value_class": value_class,
+            "concept_role": "facet_value", "status": "approved",
+            "reviewer": REVIEWER, "review_date": DATE,
+            "evidence": "data/livestock-staging/definitions.csv",
         })
     write(DATA / "approved_ingredient_facet_concepts.csv", facet_fields, facet_concepts)
 

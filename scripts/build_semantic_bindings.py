@@ -11,6 +11,7 @@ FACET_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_facet_concepts
 FACET_MAPPING_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_value_mappings.csv"
 FACET_DECOMPOSITION_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_decompositions.csv"
 FACET_HOLD_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_value_holds.csv"
+MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_facets.csv"
 DIST = ROOT / "dist/livestock-staging"
 CONCEPT_BASE = "urn:era-aom:livestock:"
 BINDING_BASE = "urn:era-aom:binding:"
@@ -44,6 +45,8 @@ with FACET_DECOMPOSITION_SOURCE.open(encoding="utf-8", newline="") as handle:
     facet_decompositions = list(csv.DictReader(handle))
 with FACET_HOLD_SOURCE.open(encoding="utf-8", newline="") as handle:
     facet_holds = list(csv.DictReader(handle))
+with MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
+    material_facets = list(csv.DictReader(handle))
 
 assert len(rows) == 13
 assert len({row["legacy_concept_id"] for row in rows}) == 13
@@ -51,8 +54,9 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 66 and len(facet_mappings) == 46 and len(facet_decompositions) == 65
-assert len(facet_holds) == 9
+assert len(facet_rows) == 67 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
+assert len(facet_holds) == 10
+assert len(material_facets) == 1
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:
@@ -125,6 +129,19 @@ for row in all_value_rows:
             graph.append({"@id": target, "@type": ["skos:Concept", row["value_class"]]})
     graph.append(binding)
 
+for row in material_facets:
+    material = CONCEPT_BASE + row["feed_material_id"]
+    facet = facet_by_id[row["target_concept_id"]]
+    graph.append({
+        "@id": CONCEPT_BASE + row["target_concept_id"],
+        "@type": ["skos:Concept", facet["value_class"]],
+    })
+    graph.append({
+        "@id": material,
+        "@type": ["skos:Concept", "aom:FeedMaterial"],
+        row["target_property"]: {"@id": CONCEPT_BASE + row["target_concept_id"]},
+    })
+
 document = {"@context": PREFIXES, "@graph": graph}
 DIST.mkdir(parents=True, exist_ok=True)
 (DIST / "aom-semantic-bindings.jsonld").write_text(
@@ -168,5 +185,14 @@ for row in all_value_rows:
             ttl.append(f"<{target}> a skos:Concept, {row['value_class']} .\n")
     identifier = VALUE_BINDING_BASE + row["identifier"]
     ttl.append(f"<{identifier}> " + " ;\n  ".join(terms) + " .\n")
+for row in material_facets:
+    material = CONCEPT_BASE + row["feed_material_id"]
+    target = CONCEPT_BASE + row["target_concept_id"]
+    facet = facet_by_id[row["target_concept_id"]]
+    ttl.append(f"<{target}> a skos:Concept, {facet['value_class']} .\n")
+    ttl.append(
+        f"<{material}> a skos:Concept, aom:FeedMaterial ;\n"
+        f"  {row['target_property']} <{target}> .\n"
+    )
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
 print(f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings")

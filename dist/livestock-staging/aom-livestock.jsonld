@@ -18741,18 +18741,25 @@
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000831",
-      "@type": "skos:Concept",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ],
       "skos:inScheme": {
         "@id": "urn:era-aom:scheme:livestock-v2"
       },
       "skos:notation": "AOM_000831",
       "skos:prefLabel": {
-        "@value": "Ensilation",
+        "@value": "Ensiling",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:altLabel": [
+        {
+          "@value": "Ensilation",
+          "@language": "en"
+        },
         {
           "@value": "Silage Process",
           "@language": "en"

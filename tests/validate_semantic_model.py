@@ -43,11 +43,14 @@ with (DATA / "approved_ingredient_component_value_mappings.csv").open(encoding="
     component_value_mappings = list(csv.DictReader(h))
 with (DATA / "approved_ingredient_component_decompositions.csv").open(encoding="utf-8", newline="") as h:
     component_decompositions = list(csv.DictReader(h))
+with (DATA / "approved_feed_material_facets.csv").open(encoding="utf-8", newline="") as h:
+    material_facets = list(csv.DictReader(h))
 assert len(value_bindings) == 298
-assert len(facet_value_concepts) == 66
-assert len(component_value_mappings) == 46
+assert len(facet_value_concepts) == 67
+assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 65
-assert len({row["concept_id"] for row in facet_value_concepts}) == 66
+assert len({row["concept_id"] for row in facet_value_concepts}) == 67
+assert len(material_facets) == 1
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_value_concepts
 }
@@ -307,6 +310,13 @@ assert {
     str(subject).removeprefix("urn:era-aom:livestock:")
     for subject in binding_graph.subjects(RDF.type, observable_property)
 } == {row["legacy_concept_id"] for row in bindings if row["binding_kind"] == "observable_property"}
+maize_whole_ensiled = URIRef("urn:era-aom:livestock:AOM_006072")
+assert (maize_whole_ensiled, RDF.type, URIRef("urn:era-aom:schema:FeedMaterial")) in binding_graph
+assert not any(binding_graph.objects(
+    maize_whole_ensiled, URIRef("urn:era-aom:schema:physicalForm")
+))
+assert (maize_whole_ensiled, URIRef("urn:era-aom:schema:processingMethod"),
+        URIRef("urn:era-aom:livestock:AOM_000831")) in binding_graph
 binding_result, _, report = validate(binding_graph, shacl_graph=shapes, ont_graph=ontology)
 assert binding_result, report
 

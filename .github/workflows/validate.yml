@@ -29,6 +29,8 @@ jobs:
         run: python tests/validate_livestock_review_pack.py
       - name: Validate priority recommendations
         run: python tests/validate_priority_recommendations.py
+      - name: Validate feed-material harmonization reviews
+        run: python tests/validate_feed_material_harmonization.py
       - name: Validate semantic model and dispositions
         run: |
           python scripts/build_semantic_bindings.py

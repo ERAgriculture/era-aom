@@ -20,6 +20,11 @@ text = (ROOT / "config/skosmos/era-aom.ttl").read_text()
 assert "http://purl.org/net/skosmos#" in text
 assert "http://purl.org/net/Skosmos#" not in text
 assert "https://w3id.org/era-aom/graph/livestock" in text
+assert 'skosmos:customCss "resource/css/era-aom.css"' in text
+css = ROOT / "config/skosmos/era-aom.css"
+assert css.is_file() and ".prop-skos_relatedMatch" in css.read_text()
+assert any("era-aom.css:/var/www/html/resource/css/era-aom.css:ro" in volume
+           for volume in services["skosmos"]["volumes"])
 
 production = yaml.safe_load((ROOT / "deploy/production/compose.yaml").read_text())
 production_services = production["services"]
@@ -30,5 +35,7 @@ assert "ports" not in production_services["skosmos"]
 assert production_services["proxy"]["ports"] == ["80:80", "443:443", "443:443/udp"]
 graph = rdflib.Graph(); graph.parse(ROOT / "config/skosmos/era-aom-production.ttl", format="turtle")
 assert len(graph) > 0
+assert any("era-aom.css:/var/www/html/resource/css/era-aom.css:ro" in volume
+           for volume in production_services["skosmos"]["volumes"])
 assert "vocab.era.cgiar.org" in (ROOT / "deploy/production/Caddyfile").read_text()
 print("Deployment bundle validation passed.")

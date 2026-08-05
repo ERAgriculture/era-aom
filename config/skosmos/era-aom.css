@@ -1,0 +1,20 @@
+/* Keep long external mapping IRIs readable and prevent adjacent values colliding. */
+.prop-skos_relatedMatch .property-value li,
+.prop-skos_exactMatch .property-value li,
+.prop-skos_closeMatch .property-value li,
+.prop-skos_broadMatch .property-value li,
+.prop-skos_narrowMatch .property-value li {
+  margin-bottom: 0.5rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.prop-skos_relatedMatch .property-value a,
+.prop-skos_exactMatch .property-value a,
+.prop-skos_closeMatch .property-value a,
+.prop-skos_broadMatch .property-value a,
+.prop-skos_narrowMatch .property-value a {
+  display: block;
+  max-width: 100%;
+}

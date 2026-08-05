@@ -2938,16 +2938,6 @@
   aom:valueBindingStatus "approved" ;
   aom:valueTargetConcept <urn:era-aom:livestock:AOM_101048> .
 
-<urn:era-aom:livestock:AOM_101076> a skos:Concept, aom:IngredientPhysicalForm .
-
-<urn:era-aom:value-binding:ingredient-component:whole> a aom:SemanticValueBinding ;
-  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
-  aom:sourceValue "Whole" ;
-  aom:bindingAction "map_to_existing" ;
-  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
-  aom:valueBindingStatus "approved" ;
-  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101076> .
-
 <urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm .
 
 <urn:era-aom:value-binding:ingredient-component:bean-cake:1> a aom:SemanticValueBinding ;
@@ -3660,3 +3650,15 @@
   aom:bindingAction "hold_ambiguous" ;
   aom:targetValueClass <http://www.w3.org/2001/XMLSchema#string> ;
   aom:valueBindingStatus "approved" .
+
+<urn:era-aom:value-binding:ingredient-component:whole:hold> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:legacyComponentDescriptor> ;
+  aom:sourceValue "Whole" ;
+  aom:bindingAction "hold_ambiguous" ;
+  aom:targetValueClass <http://www.w3.org/2001/XMLSchema#string> ;
+  aom:valueBindingStatus "approved" .
+
+<urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_006072> a skos:Concept, aom:FeedMaterial ;
+  aom:processingMethod <urn:era-aom:livestock:AOM_000831> .
