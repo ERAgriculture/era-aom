@@ -10,6 +10,7 @@ VALUE_SOURCE = ROOT / "data/livestock-staging/approved_semantic_value_bindings.c
 FACET_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_facet_concepts.csv"
 FACET_MAPPING_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_value_mappings.csv"
 FACET_DECOMPOSITION_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_decompositions.csv"
+FACET_HOLD_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_value_holds.csv"
 DIST = ROOT / "dist/livestock-staging"
 CONCEPT_BASE = "urn:era-aom:livestock:"
 BINDING_BASE = "urn:era-aom:binding:"
@@ -41,6 +42,8 @@ with FACET_MAPPING_SOURCE.open(encoding="utf-8", newline="") as handle:
     facet_mappings = list(csv.DictReader(handle))
 with FACET_DECOMPOSITION_SOURCE.open(encoding="utf-8", newline="") as handle:
     facet_decompositions = list(csv.DictReader(handle))
+with FACET_HOLD_SOURCE.open(encoding="utf-8", newline="") as handle:
+    facet_holds = list(csv.DictReader(handle))
 
 assert len(rows) == 13
 assert len({row["legacy_concept_id"] for row in rows}) == 13
@@ -48,7 +51,8 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 55 and len(facet_mappings) == 35 and len(facet_decompositions) == 39
+assert len(facet_rows) == 66 and len(facet_mappings) == 46 and len(facet_decompositions) == 65
+assert len(facet_holds) == 9
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:
@@ -68,6 +72,14 @@ for row in facet_decompositions:
         "binding_action": "decompose_to_existing", "target_concept_id": row["target_concept_id"],
         "target_uri": "", "target_label": row["target_label"],
         "value_class": facet["value_class"], "status": row["status"],
+    })
+for row in facet_holds:
+    facet_value_rows.append({
+        "identifier": "ingredient-component:" + row["source_value"].lower().replace(" ", "-") + ":hold",
+        "target_property": row["target_property"], "source_value": row["source_value"],
+        "binding_action": row["binding_action"], "target_concept_id": "",
+        "target_uri": "", "target_label": "", "value_class": row["value_class"],
+        "status": row["status"],
     })
 for row in value_rows:
     row["identifier"] = "ingredient-source:" + row["source_value"].lower().replace(" ", "-")

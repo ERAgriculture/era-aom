@@ -619,6 +619,9 @@ def main():
             "approved_ingredient_component_decompositions": len(
                 read_governance("approved_ingredient_component_decompositions.csv")
             ),
+            "approved_ingredient_component_value_holds": len(
+                read_governance("approved_ingredient_component_value_holds.csv")
+            ),
         },
         "identifier_policy": {
             "concept_ids_preserved": True, "rdf_uri_base": URI_PREFIX,

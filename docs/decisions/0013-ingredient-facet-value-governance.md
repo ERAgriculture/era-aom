@@ -32,3 +32,6 @@ exact contracts, but canonical cutover remains separately gated.
 External ontology alignments remain later reviewed mappings. AOM identifiers
 provide stable project semantics without claiming unverified equivalence to
 Plant Ontology, FoodOn, ChEBI, or other external concepts.
+
+ADR 0014 closes deferred cases while preserving every identifier and decision
+made here.

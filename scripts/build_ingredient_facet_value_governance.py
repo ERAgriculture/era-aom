@@ -75,6 +75,17 @@ VALUES = [
     ("process_drying", "Drying", "process_root", "processing_method"),
     ("process_extraction", "Extraction", "process_root", "processing_method"),
     ("process_threshing", "Threshing", "process_root", "processing_method"),
+    ("part_grain", "Grain", "part_root", "anatomical_part"),
+    ("form_mixture", "Mixture form", "form_root", "physical_form"),
+    ("form_whole", "Whole form", "form_root", "physical_form"),
+    ("form_liquid", "Liquid form", "form_root", "physical_form"),
+    ("form_pulp", "Pulp form", "form_root", "physical_form"),
+    ("role_binder", "Binder role", "role_root", "product_role"),
+    ("const_ash", "Ash constituent", "constituent_root", "chemical_constituent"),
+    ("const_oil", "Oil constituent", "constituent_root", "chemical_constituent"),
+    ("process_milling", "Milling", "process_root", "processing_method"),
+    ("process_hydrolysis", "Hydrolysis", "process_root", "processing_method"),
+    ("process_sugar", "Sugar processing", "process_root", "processing_method"),
 ]
 
 ATOMIC = {
@@ -90,6 +101,10 @@ ATOMIC = {
     "Shorts": "role_shorts", "Sprout": "part_sprout", "Stalk": "part_stalk",
     "Stalks": "part_stalk", "Starch": "const_starch", "Tuber": "part_tuber",
     "Viscera": "part_viscera", "Waste": "role_waste",
+    "Ash": "const_ash", "Binder": "role_binder", "Grain": "part_grain",
+    "Manure": "role_waste", "Mix": "form_mixture", "Oil": "const_oil",
+    "Shell": "part_shell", "Shells": "part_shell", "Sludge": "role_processing_waste",
+    "Tops": "part_top", "Whole": "form_whole",
 }
 
 DECOMPOSITIONS = {
@@ -110,6 +125,29 @@ DECOMPOSITIONS = {
     "Seed Hull": ["part_seed", "part_hull"],
     "Stover": ["part_stem", "part_leaf", "role_crop_residue"],
     "Threshed Top": ["part_top", "process_threshing"],
+    "Bran": ["process_milling", "role_byproduct"],
+    "Cake": ["form_cake", "process_pressing", "role_byproduct"],
+    "Haulm": ["part_stem", "part_leaf", "role_crop_residue"],
+    "Hydrolysate": ["process_hydrolysis"],
+    "Juice": ["form_liquid", "process_extraction"],
+    "Molasses": ["form_liquid", "process_sugar", "role_byproduct"],
+    "Pods Husk": ["part_pod", "part_husk"],
+    "Pulp": ["form_pulp", "role_byproduct"],
+    "Seed Kernel": ["part_seed", "part_kernel"],
+    "Straw": ["part_stem", "part_leaf", "form_dried", "role_crop_residue"],
+    "Hash": ["form_mixture", "role_byproduct"],
+}
+
+HOLDS = {
+    "Beans": "May denote whole material identity or seed; no audited occurrence resolves scope.",
+    "Full Fat": "Compositional state cannot be represented truthfully as mere fat-constituent identity.",
+    "Heads": "Source-only mapping cannot distinguish audited shrimp heads from possible plant reproductive heads.",
+    "Litter": "May denote bedding, poultry excreta mixture, or material identity; no audited occurrence resolves scope.",
+    "Meal": "Audited value is a named complete ration, not evidence for ground physical form or extraction residue.",
+    "Oil Crude": "Crude is processing state or grade, not a processing method; current facet model lacks that distinction.",
+    "Shaft": "Cassava usage may be typo or local synonym for stem; no authoritative identity found.",
+    "Vine": "Feed usage may mean stem alone or collective aerial biomass including leaves.",
+    "Weeds": "Names source-material class, not anatomical part, form, process, role, or constituent.",
 }
 
 
@@ -193,7 +231,19 @@ def main():
                 "rationale": "High-confidence compound descriptor decomposed into independently typed facet assertion.",
             })
     write(DATA / "approved_ingredient_component_decompositions.csv", decomposition_fields, decompositions)
-    print(f"Allocated {len(definitions)} facet concepts; approved {len(mappings)} atomic mappings and {len(decompositions)} decomposition assertions")
+    hold_fields = ["source_value", "target_property", "value_class", "binding_action", "status", "reviewer", "review_date", "evidence", "rationale"]
+    holds = [{
+        "source_value": source, "target_property": "aom:legacyComponentDescriptor",
+        "value_class": "xsd:string", "binding_action": "hold_ambiguous", "status": "approved",
+        "reviewer": REVIEWER, "review_date": DATE,
+        "evidence": "review/livestock-v3/INGREDIENT_FACET_CLOSURE.md",
+        "rationale": rationale,
+    } for source, rationale in HOLDS.items()]
+    write(DATA / "approved_ingredient_component_value_holds.csv", hold_fields, holds)
+    governed = set(ATOMIC) | set(DECOMPOSITIONS) | set(HOLDS)
+    assert len(governed) == 83 and not (set(ATOMIC) & set(DECOMPOSITIONS))
+    assert not (set(ATOMIC) & set(HOLDS)) and not (set(DECOMPOSITIONS) & set(HOLDS))
+    print(f"Allocated {len(definitions)} facet concepts; approved {len(mappings)} atomic mappings, {len(decompositions)} decomposition assertions, and {len(holds)} holds")
 
 
 if __name__ == "__main__":
