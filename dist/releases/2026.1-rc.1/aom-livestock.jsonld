@@ -8210,6 +8210,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101097",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101097"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Molasses treatment"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_100980",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -16328,6 +16366,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101106",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPartCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101106"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Straw"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006345",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -18218,6 +18294,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101088",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101088"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Autoclaving"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -27745,31 +27859,79 @@
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101095"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101068"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101083"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101098"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101102"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101094"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101093"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101084"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101089"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101071"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101090"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101099"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101082"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101096"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101092"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101097"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101100"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101070"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101101"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101091"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101073"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101072"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101087"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101088"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -42866,6 +43028,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101091",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101091"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Crushing"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_003107",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -43415,6 +43615,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101078"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101108"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101076"
@@ -50421,6 +50624,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101093",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101093"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Extrusion"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -62407,6 +62648,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101101",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101101"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Urea treatment"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002086",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -65122,6 +65401,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101099",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101099"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Soaking"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -72009,6 +72326,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101102",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101102"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Wilting"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -80190,6 +80545,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101104",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPartCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101104"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Bran"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000049",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -87277,6 +87670,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101095",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101095"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Grinding"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000851",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -91338,6 +91769,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101094",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101094"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Fermentation"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -96643,6 +97112,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101096",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101096"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Heating"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -103215,6 +103722,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101089",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101089"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Boiling"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -115172,6 +115717,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101087",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101087"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Alkali treatment"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000390",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -115255,6 +115838,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101098",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101098"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Roasting"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -116280,6 +116901,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101103",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPartCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101103"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Blood"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -125266,6 +125925,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101090",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101090"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Cracking"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006085",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -126286,13 +126983,14 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_002557",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101107",
     "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPartCategory",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001062"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -126302,18 +127000,18 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "AOM_002557"
+        "@value": "AOM_101107"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Digestible Ash"
+        "@value": "Vine"
       }
     ],
     "urn:era:property:conceptType": [
       {
-        "@value": "legacy_aom_concept"
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -126359,6 +127057,43 @@
       },
       {
         "@id": "http://aims.fao.org/aos/agrovoc/c_5514"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_002557",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001062"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_002557"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Digestible Ash"
       }
     ],
     "urn:era:property:conceptType": [
@@ -128694,6 +129429,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101108",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPhysicalForm",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101020"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101108"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Pellet form"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000920",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -128741,6 +129514,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101100",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101100"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sprouting"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -129723,6 +130534,44 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101092",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101092"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Enzyme treatment"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -132442,6 +133291,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101105",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/IngredientPartCategory"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101105"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Stover"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000030",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -134451,6 +135338,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101041"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101107"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101032"
       },
       {
@@ -134493,6 +135383,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101037"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101104"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101038"
       },
       {
@@ -134508,10 +135401,19 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101028"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101103"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101047"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101033"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101105"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101046"

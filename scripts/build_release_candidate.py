@@ -128,6 +128,16 @@ def main():
         output / "migration-crosswalk.csv",
         output / "migration-crosswalk.parquet",
     )
+    copy_csv_and_parquet(
+        root / "data" / "livestock-staging" / "approved_ingredient_harmonization_rules.csv",
+        output / "ingredient-harmonization-rules.csv",
+        output / "ingredient-harmonization-rules.parquet",
+    )
+    copy_csv_and_parquet(
+        root / "data" / "livestock-staging" / "approved_generated_feed_material_facets.csv",
+        output / "feed-material-facets.csv",
+        output / "feed-material-facets.parquet",
+    )
     shutil.copyfile(config_path, output / "release.json")
     shutil.copyfile(root / "LICENSE.md", output / "LICENSE.md")
     shutil.copyfile(root / "CITATION.cff", output / "CITATION.cff")

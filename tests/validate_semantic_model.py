@@ -45,12 +45,15 @@ with (DATA / "approved_ingredient_component_decompositions.csv").open(encoding="
     component_decompositions = list(csv.DictReader(h))
 with (DATA / "approved_feed_material_facets.csv").open(encoding="utf-8", newline="") as h:
     material_facets = list(csv.DictReader(h))
+with (DATA / "approved_generated_feed_material_facets.csv").open(encoding="utf-8", newline="") as h:
+    generated_material_facets = list(csv.DictReader(h))
+material_facets += generated_material_facets
 assert len(value_bindings) == 298
-assert len(facet_value_concepts) == 69
+assert len(facet_value_concepts) == 91
 assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 65
-assert len({row["concept_id"] for row in facet_value_concepts}) == 69
-assert len(material_facets) == 2
+assert len({row["concept_id"] for row in facet_value_concepts}) == 91
+assert len(material_facets) == 1596
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_value_concepts
 }
@@ -337,4 +340,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 9 facets, 83 governed values")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 9 facets, 1596 material assertions")
