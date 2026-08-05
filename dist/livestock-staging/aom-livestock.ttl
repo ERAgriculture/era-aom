@@ -1,6 +1,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
+@prefix aom: <urn:era-aom:schema:> .
+
 @prefix era: <urn:era:property:> .
 
 <urn:era-aom:scheme:livestock-v2> a skos:ConceptScheme ;
@@ -26255,3 +26257,443 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_000004> .
+
+<urn:era-aom:livestock:AOM_101019> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101019" ;
+  skos:prefLabel "Ingredient anatomical parts"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101020> a skos:Concept, aom:IngredientPhysicalForm ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101020" ;
+  skos:prefLabel "Ingredient physical forms"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101021> a skos:Concept, aom:ProcessingMethod ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101021" ;
+  skos:prefLabel "Ingredient processing methods"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101022> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101022" ;
+  skos:prefLabel "Ingredient product roles"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101023> a skos:Concept, aom:IngredientConstituent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101023" ;
+  skos:prefLabel "Ingredient constituents"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101024> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101024" ;
+  skos:prefLabel "Bulb"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101025> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101025" ;
+  skos:prefLabel "Cladode"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101026> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101026" ;
+  skos:prefLabel "Cob"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101027> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101027" ;
+  skos:prefLabel "Corm"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101028> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101028" ;
+  skos:prefLabel "Fruit"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101029> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101029" ;
+  skos:prefLabel "Germ"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101030> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101030" ;
+  skos:prefLabel "Hull"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101031> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101031" ;
+  skos:prefLabel "Husk"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101032> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101032" ;
+  skos:prefLabel "Kernel"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101033" ;
+  skos:prefLabel "Leaf"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101034> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101034" ;
+  skos:prefLabel "Peel"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101035> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101035" ;
+  skos:prefLabel "Pod"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101036> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101036" ;
+  skos:prefLabel "Pseudostem"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101037> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101037" ;
+  skos:prefLabel "Root"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101038" ;
+  skos:prefLabel "Seed"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101039> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101039" ;
+  skos:prefLabel "Sheath"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101040> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101040" ;
+  skos:prefLabel "Shell"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101041> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101041" ;
+  skos:prefLabel "Sprout"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101042> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101042" ;
+  skos:prefLabel "Stalk"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101043> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101043" ;
+  skos:prefLabel "Tuber"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101044> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101044" ;
+  skos:prefLabel "Viscera"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101045> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101045" ;
+  skos:prefLabel "Twig"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101046> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101046" ;
+  skos:prefLabel "Bark"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101047> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101047" ;
+  skos:prefLabel "Stem"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101048> a skos:Concept, aom:IngredientPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101048" ;
+  skos:prefLabel "Plant top"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101049> a skos:Concept, aom:IngredientPhysicalForm ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101049" ;
+  skos:prefLabel "Block form"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101020> .
+
+<urn:era-aom:livestock:AOM_101050> a skos:Concept, aom:IngredientPhysicalForm ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101050" ;
+  skos:prefLabel "Lick form"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101020> .
+
+<urn:era-aom:livestock:AOM_101051> a skos:Concept, aom:IngredientPhysicalForm ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101051" ;
+  skos:prefLabel "Powder form"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101020> .
+
+<urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101052" ;
+  skos:prefLabel "Cake form"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101020> .
+
+<urn:era-aom:livestock:AOM_101053> a skos:Concept, aom:IngredientPhysicalForm ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101053" ;
+  skos:prefLabel "Flake form"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101020> .
+
+<urn:era-aom:livestock:AOM_101054> a skos:Concept, aom:IngredientPhysicalForm ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101054" ;
+  skos:prefLabel "Dried form"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101020> .
+
+<urn:era-aom:livestock:AOM_101055> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101055" ;
+  skos:prefLabel "Discard role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101056> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101056" ;
+  skos:prefLabel "Market-waste role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101057> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101057" ;
+  skos:prefLabel "Offal role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101058> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101058" ;
+  skos:prefLabel "Processing-waste role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101059> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101059" ;
+  skos:prefLabel "Residue role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101060> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101060" ;
+  skos:prefLabel "Milling-shorts role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101061> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101061" ;
+  skos:prefLabel "Waste role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101062" ;
+  skos:prefLabel "By-product role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101063> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101063" ;
+  skos:prefLabel "Crop-residue role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101064> a skos:Concept, aom:IngredientConstituent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101064" ;
+  skos:prefLabel "Gluten constituent"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101023> .
+
+<urn:era-aom:livestock:AOM_101065> a skos:Concept, aom:IngredientConstituent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101065" ;
+  skos:prefLabel "Starch constituent"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101023> .
+
+<urn:era-aom:livestock:AOM_101066> a skos:Concept, aom:IngredientConstituent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101066" ;
+  skos:prefLabel "Fat constituent"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101023> .
+
+<urn:era-aom:livestock:AOM_101067> a skos:Concept, aom:IngredientConstituent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101067" ;
+  skos:prefLabel "Essential-oil constituent"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101023> .
+
+<urn:era-aom:livestock:AOM_101068> a skos:Concept, aom:ProcessingMethod ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101068" ;
+  skos:prefLabel "Brewing"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101021> .
+
+<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101069" ;
+  skos:prefLabel "Defatting"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101021> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101070" ;
+  skos:prefLabel "Pressing"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101021> .
+
+<urn:era-aom:livestock:AOM_101071> a skos:Concept, aom:ProcessingMethod ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101071" ;
+  skos:prefLabel "Drying"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101021> .
+
+<urn:era-aom:livestock:AOM_101072> a skos:Concept, aom:ProcessingMethod ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101072" ;
+  skos:prefLabel "Extraction"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101021> .
+
+<urn:era-aom:livestock:AOM_101073> a skos:Concept, aom:ProcessingMethod ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101073" ;
+  skos:prefLabel "Threshing"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101021> .

@@ -2487,3 +2487,743 @@
   aom:targetValueClass <http://www.w3.org/2002/07/owl#Class> ;
   aom:valueBindingStatus "approved" ;
   aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_4562> .
+
+<urn:era-aom:livestock:AOM_101049> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:block> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Block" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101049> .
+
+<urn:era-aom:livestock:AOM_101024> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:bulb> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Bulb" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101024> .
+
+<urn:era-aom:livestock:AOM_101025> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:cladode> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Cladode" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101025> .
+
+<urn:era-aom:livestock:AOM_101026> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:cob> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Cob" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101026> .
+
+<urn:era-aom:livestock:AOM_101027> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:corm> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Corm" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101027> .
+
+<urn:era-aom:livestock:AOM_101055> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:discards> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Discards" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101055> .
+
+<urn:era-aom:livestock:AOM_101028> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:fruits> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Fruits" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101028> .
+
+<urn:era-aom:livestock:AOM_101029> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:germ> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Germ" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101029> .
+
+<urn:era-aom:livestock:AOM_101064> a skos:Concept, aom:IngredientConstituent .
+
+<urn:era-aom:value-binding:ingredient-component:gluten> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientConstituent> ;
+  aom:sourceValue "Gluten" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientConstituent> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101064> .
+
+<urn:era-aom:livestock:AOM_101030> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:hull> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Hull" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101030> .
+
+<urn:era-aom:livestock:AOM_101031> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:husk> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Husk" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101031> .
+
+<urn:era-aom:livestock:AOM_101032> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:kernel> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Kernel" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101032> .
+
+<urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:leaves> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Leaves" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101033> .
+
+<urn:era-aom:livestock:AOM_101050> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:lick> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Lick" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101050> .
+
+<urn:era-aom:livestock:AOM_101056> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:market-waste> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Market Waste" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101056> .
+
+<urn:era-aom:livestock:AOM_101057> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:offal> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Offal" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101057> .
+
+<urn:era-aom:livestock:AOM_101034> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:peel> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Peel" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101034> .
+
+<urn:era-aom:livestock:AOM_101034> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:peels> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Peels" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101034> .
+
+<urn:era-aom:livestock:AOM_101035> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:pods> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Pods" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101035> .
+
+<urn:era-aom:livestock:AOM_101051> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:powder> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Powder" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101051> .
+
+<urn:era-aom:livestock:AOM_101058> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:processing-waste> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Processing Waste" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101058> .
+
+<urn:era-aom:livestock:AOM_101036> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:pseudo-stem> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Pseudo-stem" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101036> .
+
+<urn:era-aom:livestock:AOM_101059> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:residue> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Residue" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101059> .
+
+<urn:era-aom:livestock:AOM_101037> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:root> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Root" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101037> .
+
+<urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:seed> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Seed" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101038> .
+
+<urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:seeds> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Seeds" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101038> .
+
+<urn:era-aom:livestock:AOM_101039> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:sheath> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Sheath" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101039> .
+
+<urn:era-aom:livestock:AOM_101060> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:shorts> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Shorts" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101060> .
+
+<urn:era-aom:livestock:AOM_101041> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:sprout> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Sprout" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101041> .
+
+<urn:era-aom:livestock:AOM_101042> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:stalk> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Stalk" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101042> .
+
+<urn:era-aom:livestock:AOM_101042> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:stalks> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Stalks" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101042> .
+
+<urn:era-aom:livestock:AOM_101065> a skos:Concept, aom:IngredientConstituent .
+
+<urn:era-aom:value-binding:ingredient-component:starch> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientConstituent> ;
+  aom:sourceValue "Starch" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientConstituent> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101065> .
+
+<urn:era-aom:livestock:AOM_101043> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:tuber> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Tuber" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101043> .
+
+<urn:era-aom:livestock:AOM_101044> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:viscera> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Viscera" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101044> .
+
+<urn:era-aom:livestock:AOM_101061> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:waste> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Waste" ;
+  aom:bindingAction "map_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101061> .
+
+<urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:bean-cake:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Bean Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101052> .
+
+<urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:bean-cake:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Bean Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101062> .
+
+<urn:era-aom:livestock:AOM_101040> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:bean-shell:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Bean Shell" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101040> .
+
+<urn:era-aom:livestock:AOM_101068> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:brewers-grain:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Brewers Grain" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101068> .
+
+<urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:brewers-grain:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Brewers Grain" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101062> .
+
+<urn:era-aom:livestock:AOM_101053> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:flakes-defatted:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Flakes Defatted" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101053> .
+
+<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:flakes-defatted:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Flakes Defatted" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101069> .
+
+<urn:era-aom:livestock:AOM_101066> a skos:Concept, aom:IngredientConstituent .
+
+<urn:era-aom:value-binding:ingredient-component:full-fat-cake:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientConstituent> ;
+  aom:sourceValue "Full Fat Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientConstituent> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101066> .
+
+<urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:full-fat-cake:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Full Fat Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101052> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:full-fat-cake:3> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Full Fat Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101070> .
+
+<urn:era-aom:livestock:AOM_101054> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:hay:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Hay" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101054> .
+
+<urn:era-aom:livestock:AOM_101071> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:hay:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Hay" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101071> .
+
+<urn:era-aom:livestock:AOM_101032> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:kernel-cake:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Kernel Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101032> .
+
+<urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:kernel-cake:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Kernel Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101052> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:kernel-cake:3> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Kernel Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101070> .
+
+<urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-and-soft-twig:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Leaves and Soft Twig" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101033> .
+
+<urn:era-aom:livestock:AOM_101045> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-and-soft-twig:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Leaves and Soft Twig" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101045> .
+
+<urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-and-twigs:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Leaves and Twigs" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101033> .
+
+<urn:era-aom:livestock:AOM_101045> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-and-twigs:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Leaves and Twigs" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101045> .
+
+<urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-cake:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Leaves Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101033> .
+
+<urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-cake:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Leaves Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101052> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-cake:3> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Leaves Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101070> .
+
+<urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-extract:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Leaves Extract" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101033> .
+
+<urn:era-aom:livestock:AOM_101072> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:leaves-extract:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Leaves Extract" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101072> .
+
+<urn:era-aom:livestock:AOM_101034> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:peel-essential-oil:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Peel Essential Oil" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101034> .
+
+<urn:era-aom:livestock:AOM_101067> a skos:Concept, aom:IngredientConstituent .
+
+<urn:era-aom:value-binding:ingredient-component:peel-essential-oil:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientConstituent> ;
+  aom:sourceValue "Peel Essential Oil" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientConstituent> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101067> .
+
+<urn:era-aom:livestock:AOM_101072> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:peel-essential-oil:3> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Peel Essential Oil" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101072> .
+
+<urn:era-aom:livestock:AOM_101037> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:root-bark:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Root Bark" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101037> .
+
+<urn:era-aom:livestock:AOM_101046> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:root-bark:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Root Bark" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101046> .
+
+<urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:seed-cake:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Seed Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101038> .
+
+<urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:value-binding:ingredient-component:seed-cake:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:physicalForm> ;
+  aom:sourceValue "Seed Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPhysicalForm> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101052> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:seed-cake:3> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Seed Cake" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101070> .
+
+<urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:seed-hull:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Seed Hull" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101038> .
+
+<urn:era-aom:livestock:AOM_101030> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:seed-hull:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Seed Hull" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101030> .
+
+<urn:era-aom:livestock:AOM_101047> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:stover:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Stover" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101047> .
+
+<urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:stover:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Stover" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101033> .
+
+<urn:era-aom:livestock:AOM_101063> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:value-binding:ingredient-component:stover:3> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:productRole> ;
+  aom:sourceValue "Stover" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProductRole> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101063> .
+
+<urn:era-aom:livestock:AOM_101048> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:value-binding:ingredient-component:threshed-top:1> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:ingredientPart> ;
+  aom:sourceValue "Threshed Top" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:IngredientPartCategory> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101048> .
+
+<urn:era-aom:livestock:AOM_101073> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:value-binding:ingredient-component:threshed-top:2> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:sourceValue "Threshed Top" ;
+  aom:bindingAction "decompose_to_existing" ;
+  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:valueBindingStatus "approved" ;
+  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101073> .

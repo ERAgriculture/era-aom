@@ -14,6 +14,8 @@ labels as noncanonical proposals. Review rationale and summary live in
 counts and source rows are not.
 ADR 0012 promotes all 83 into a classification-only contract: 52 atomic mapping
 reviews, 28 decompositions, and three holds. No facet IRI is approved.
+ADR 0013 then approves 35 high-confidence atomic mappings and 39 explicit
+assertions across 17 composites using 55 dedicated typed facet concepts.
 
 `taxon_mapping_candidates_batch_1.csv` records ten NCBI-verified taxon proposals;
 WFO candidates remain held and material-to-taxon assertions remain unapproved.
