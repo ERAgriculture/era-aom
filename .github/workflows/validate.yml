@@ -48,3 +48,4 @@ jobs:
           python scripts/build_release_candidate.py --config=config/releases/2026.1-rc.1.json
           python scripts/validate_release_candidate.py --release=2026.1-rc.1
           python scripts/validate_bulk_proposals.py templates/bulk-change-proposals.csv --allow-empty
+          python scripts/validate_deployment_bundle.py
