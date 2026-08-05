@@ -3,6 +3,10 @@
 Status: accepted — identity and target names approved 2026-08-05; deployment
 remains gated on DNS, live hosting, release publication, and external approval.
 
+Hosting work is explicitly bookmarked after local runtime preparation. Resume
+only after local quality acceptance is complete and stakeholders judge browser,
+API, RDF, redirect, backup, and rollback evidence sufficient.
+
 ## Context
 
 `w3id.org` is a permanent HTTPS redirect service, not ontology hosting. ERA-AOM

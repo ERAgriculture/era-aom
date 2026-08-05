@@ -40,5 +40,12 @@ services:
     ports: ["127.0.0.1:${SKOSMOS_PORT:-9090}:80"]
     volumes: ["../../config/skosmos/era-aom.ttl:/var/www/html/config.ttl:ro"]
     restart: unless-stopped
+  w3id-mock:
+    image: httpd:2.4.68-alpine
+    ports: ["127.0.0.1:${W3ID_MOCK_PORT:-9080}:80"]
+    volumes:
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf:ro
+      - ../w3id/era-aom:/usr/local/apache2/htdocs/era-aom:ro
+    restart: unless-stopped
 volumes:
   fuseki-data:
