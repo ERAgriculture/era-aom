@@ -1,0 +1,43 @@
+{
+  "rule_version": "1.0.0",
+  "source": "data/livestock-staging/legacy_records.csv",
+  "ingredient_concepts": 1643,
+  "rules": 67,
+  "signature_clusters": 8,
+  "clustered_concepts": 16,
+  "unresolved_signature_clusters": 6,
+  "unresolved_expert_exceptions": 30,
+  "routes": {
+    "batch_review": 10,
+    "expert_exception": 32,
+    "retain_atomic_candidate": 621,
+    "rule_application_candidate": 980
+  },
+  "family_counts": {
+    "Animal": 70,
+    "Animal Byproduct": 26,
+    "Animal Manures": 12,
+    "Crop Byproduct": 440,
+    "Crop Product": 158,
+    "Essential Fatty Acid": 1,
+    "Forage Plants": 739,
+    "Grazing": 1,
+    "Herb or Extract": 1,
+    "Ingredient name": 1,
+    "Ingredient part": 1,
+    "Ingredient proportion": 1,
+    "Ingredient source": 1,
+    "Ingredient species": 1,
+    "Organic Acid": 2,
+    "Other Ingredients": 55,
+    "Prebiotic": 2,
+    "Preformulated Feed": 29,
+    "Probiotic": 6,
+    "Supplement": 96
+  },
+  "safety": {
+    "automatic_ontology_changes": 0,
+    "legacy_ids_preserved": true,
+    "ilri_identifiers_used": false
+  }
+}
