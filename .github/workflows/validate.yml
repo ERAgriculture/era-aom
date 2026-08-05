@@ -66,7 +66,17 @@ jobs:
       - name: Build and start browser stack
         run: docker compose -f deploy/local/compose.yaml up --build --detach
       - name: Verify loaded graph and browser
-        run: python scripts/check_browser_stack.py --attempts=90 --delay=2
+        run: |
+          python scripts/check_browser_stack.py --attempts=90 --delay=2
+          python -m pip install --requirement requirements-dev.txt
+          python scripts/run_local_acceptance.py --output=acceptance-results
+      - name: Upload local acceptance report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: era-aom-local-acceptance
+          path: acceptance-results/
+          if-no-files-found: warn
       - name: Capture container logs on failure
         if: failure()
         run: docker compose -f deploy/local/compose.yaml logs --no-color

@@ -7,11 +7,12 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 compose = yaml.safe_load((ROOT / "deploy/local/compose.yaml").read_text())
 services = compose["services"]
-assert set(services) == {"fuseki", "fuseki-cache", "load-release", "skosmos"}
+assert set(services) == {"fuseki", "fuseki-cache", "load-release", "skosmos", "w3id-mock"}
 assert services["fuseki"]["build"]["context"].endswith("#v3.3:dockerfiles/jena-fuseki2-docker")
 assert services["fuseki"]["build"]["args"]["JENA_VERSION"] == "5.4.0"
 assert services["fuseki-cache"]["image"] == "varnish:7.7.3"
 assert services["load-release"]["image"] == "curlimages/curl:8.12.1"
+assert services["w3id-mock"]["image"] == "httpd:2.4.68-alpine"
 assert all(port.startswith("127.0.0.1:") for service in services.values() for port in service.get("ports", []))
 for relative in ("config/skosmos/era-aom.ttl", "deploy/local/fuseki.ttl"):
     graph = rdflib.Graph(); graph.parse(ROOT / relative, format="turtle"); assert len(graph) > 0
