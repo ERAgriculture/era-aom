@@ -15,6 +15,9 @@ round-trip tests will be added with normalized pilot data.
   signed-decision preservation while unapproved cases remain untouched.
 - `validate_priority_recommendations.py`: pins eight evidence-backed priority
   proposals and validates signed approvals.
+- `validate_ingredient_harmonization_workbench.py`: checks complete governed
+  ingredient coverage, reusable-rule routing, resolved-decision awareness,
+  exception isolation, and prohibition of automatic changes or ILRI evidence.
 - `validate_semantic_model.py`: parses OWL/SHACL, checks complete disposition
   and phase-2 binding coverage, validates RDF/JSON-LD equivalence, and proves
   valid/invalid semantic-model fixtures behave correctly.
