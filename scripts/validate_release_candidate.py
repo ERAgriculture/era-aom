@@ -49,7 +49,7 @@ def main():
 
     concepts = set(livestock_ttl.subjects(RDF.type, SKOS.Concept))
     schemes = set(livestock_ttl.subjects(RDF.type, SKOS.ConceptScheme))
-    assert len(concepts) == 2739 and len(schemes) == 1
+    assert len(concepts) == 2761 and len(schemes) == 1
     assert all(str(item).startswith(base) for item in concepts | schemes)
     assert not any(
         isinstance(term, URIRef) and str(term).startswith("urn:era-aom:")
@@ -110,8 +110,11 @@ def main():
     nodes = pq.read_table(release / "nodes.parquet")
     edges = pq.read_table(release / "edges.parquet")
     crosswalk = pq.read_table(release / "migration-crosswalk.parquet")
-    assert nodes.num_rows == 2739 and edges.num_rows == 2759
+    rules = pq.read_table(release / "ingredient-harmonization-rules.parquet")
+    material_facets = pq.read_table(release / "feed-material-facets.parquet")
+    assert nodes.num_rows == 2761 and edges.num_rows == 2781
     assert crosswalk.num_rows == 3
+    assert rules.num_rows == 40 and material_facets.num_rows == 1594
     assert ("AOM_006072", "AOM_001326") in set(zip(
         crosswalk.column("deprecated_id").to_pylist(),
         crosswalk.column("replacement_id").to_pylist(),

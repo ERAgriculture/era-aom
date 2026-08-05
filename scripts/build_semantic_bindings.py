@@ -12,6 +12,7 @@ FACET_MAPPING_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_compon
 FACET_DECOMPOSITION_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_decompositions.csv"
 FACET_HOLD_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component_value_holds.csv"
 MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_facets.csv"
+GENERATED_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_generated_feed_material_facets.csv"
 DIST = ROOT / "dist/livestock-staging"
 CONCEPT_BASE = "urn:era-aom:livestock:"
 BINDING_BASE = "urn:era-aom:binding:"
@@ -47,6 +48,9 @@ with FACET_HOLD_SOURCE.open(encoding="utf-8", newline="") as handle:
     facet_holds = list(csv.DictReader(handle))
 with MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
     material_facets = list(csv.DictReader(handle))
+with GENERATED_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
+    generated_material_facets = list(csv.DictReader(handle))
+material_facets += generated_material_facets
 
 assert len(rows) == 13
 assert len({row["legacy_concept_id"] for row in rows}) == 13
@@ -54,9 +58,9 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 69 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
+assert len(facet_rows) == 91 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
 assert len(facet_holds) == 10
-assert len(material_facets) == 2
+assert len(material_facets) == 1596
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:

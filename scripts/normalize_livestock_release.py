@@ -613,6 +613,12 @@ def main():
                 read_governance("approved_ingredient_component_classifications.csv")
             ),
             "approved_ingredient_facet_concepts": len(facet_concepts),
+            "approved_ingredient_harmonization_rules": len(
+                read_governance("approved_ingredient_harmonization_rules.csv")
+            ),
+            "approved_generated_feed_material_facets": len(
+                read_governance("approved_generated_feed_material_facets.csv")
+            ),
             "approved_ingredient_component_value_mappings": len(
                 read_governance("approved_ingredient_component_value_mappings.csv")
             ),

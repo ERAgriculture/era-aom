@@ -96,7 +96,39 @@ EXTENSION_ROOTS = [
 ]
 EXTENSION_VALUES = [
     ("component_whole_crop", "Whole crop", "material_component_root", "material_component"),
+    # ADR 0016 bulk-rule targets. Append only: existing allocations never shift.
+    ("process_alkali_treatment", "Alkali treatment", "process_root", "processing_method"),
+    ("process_autoclaving", "Autoclaving", "process_root", "processing_method"),
+    ("process_boiling", "Boiling", "process_root", "processing_method"),
+    ("process_cracking", "Cracking", "process_root", "processing_method"),
+    ("process_crushing", "Crushing", "process_root", "processing_method"),
+    ("process_enzyme_treatment", "Enzyme treatment", "process_root", "processing_method"),
+    ("process_extrusion", "Extrusion", "process_root", "processing_method"),
+    ("process_fermentation", "Fermentation", "process_root", "processing_method"),
+    ("process_grinding", "Grinding", "process_root", "processing_method"),
+    ("process_heating", "Heating", "process_root", "processing_method"),
+    ("process_molasses_treatment", "Molasses treatment", "process_root", "processing_method"),
+    ("process_roasting", "Roasting", "process_root", "processing_method"),
+    ("process_soaking", "Soaking", "process_root", "processing_method"),
+    ("process_sprouting", "Sprouting", "process_root", "processing_method"),
+    ("process_urea_treatment", "Urea treatment", "process_root", "processing_method"),
+    ("process_wilting", "Wilting", "process_root", "processing_method"),
+    ("part_blood", "Blood", "part_root", "anatomical_part"),
+    ("part_bran", "Bran", "part_root", "anatomical_part"),
+    ("part_stover", "Stover", "part_root", "anatomical_part"),
+    ("part_straw", "Straw", "part_root", "anatomical_part"),
+    ("part_vine", "Vine", "part_root", "anatomical_part"),
+    ("form_pellet", "Pellet form", "form_root", "physical_form"),
 ]
+RULE_EXTENSION_KEYS = {key for key, *_ in EXTENSION_VALUES[1:]}
+
+
+def evidence_for(key):
+    if key in RULE_EXTENSION_KEYS:
+        return "review/livestock-v6/ingredient_rule_quality_assessment.csv"
+    if key in {"material_component_root", "component_whole_crop"}:
+        return "review/livestock-v4/MAIZE_IDENTITY_REVIEW.md"
+    return REVIEW
 
 # Existing AOM concepts that also serve as governed facet values. Reuse their
 # persistent identifiers rather than minting duplicate concepts.
@@ -203,7 +235,7 @@ def main():
             "case_id": "FACETVAL-" + key.upper(), "concept_id": ids[key],
             "preferred_label": label, "scope_note": note, "broader_id": parent_id,
             "hierarchy_level": level, "derived_path": path, "child_ids": "",
-            "reviewer": REVIEWER, "review_date": DATE, "evidence": REVIEW,
+            "reviewer": REVIEWER, "review_date": DATE, "evidence": evidence_for(key),
             "rationale": "Dedicated facet value prevents reuse of equal labels from incompatible AOM branches.",
         })
     new_registry = [{
@@ -223,7 +255,7 @@ def main():
             "target_property": target_property, "value_class": value_class,
             "concept_role": "facet_root" if parent is None else "facet_value",
             "status": "approved", "reviewer": REVIEWER, "review_date": DATE,
-            "evidence": REVIEW,
+            "evidence": evidence_for(key),
         })
     for concept_id, label, facet in EXISTING_VALUES:
         target_property, value_class = FACET_MODEL[facet]

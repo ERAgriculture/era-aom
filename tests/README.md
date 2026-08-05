@@ -21,6 +21,9 @@ round-trip tests will be added with normalized pilot data.
 - `validate_ingredient_rule_quality_gate.py`: checks every reusable rule has
   evidence counts, samples, risk, guard, recommendation, and a blocked promotion
   state until named review approval.
+- `validate_approved_ingredient_rule_promotion.py`: checks signed rule approval,
+  held-rule exclusion, generated assertion uniqueness, guard enforcement,
+  family coverage, and critical ambiguous/deprecated cases.
 - `validate_semantic_model.py`: parses OWL/SHACL, checks complete disposition
   and phase-2 binding coverage, validates RDF/JSON-LD equivalence, and proves
   valid/invalid semantic-model fixtures behave correctly.

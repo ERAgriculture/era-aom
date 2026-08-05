@@ -27,11 +27,11 @@
   },
   "source_repository_commit": "a9714cc16b0a761082ea1dc010eb27da3a90cc97",
   "manifest_schema_version": "1.0.0",
-  "source_staging_manifest_sha256": "663a78bbe87f27506e009be1c2a0de8b7ef7fadc4ddf269a9f7a8c1e57bb6631",
+  "source_staging_manifest_sha256": "348acb1fec309cddbe106883a16f8865516c9574bdc63561a68660b63cb526d9",
   "counts": {
-    "livestock_triples": 26874,
+    "livestock_triples": 27072,
     "schema_triples": 153,
-    "semantic_binding_triples": 3130
+    "semantic_binding_triples": 6700
   },
   "distributions": [
     {
@@ -46,18 +46,18 @@
     },
     {
       "path": "aom-livestock.jsonld",
-      "bytes": 3319530,
-      "sha256": "3edd2f1c3efddd63f8a7dfab9c08adaea0e4a472c419753240ccb9bb38a76046"
+      "bytes": 3341084,
+      "sha256": "afed72101aa42320787888150bd329f2c00dc45a67f29ccbf398938f0c89ca70"
     },
     {
       "path": "aom-livestock.rdf",
-      "bytes": 2217907,
-      "sha256": "820dd7d0753e540d29cb21b1e4a98772dc7e0cf76e70397b221b6b11ab25e694"
+      "bytes": 2233191,
+      "sha256": "0941cc008fb3b0ccaca43f2a52c96043499c776584460c52cedbfde7a007394a"
     },
     {
       "path": "aom-livestock.ttl",
-      "bytes": 1494396,
-      "sha256": "e8973e0865c44e306b665aec57a899b62d6d218fb62eb30a83cfbeef626a6a63"
+      "bytes": 1503652,
+      "sha256": "a7a88103c1b53138a1fbf55b7a08b401b9cf5a4d6e81a1a79a92299485fd7b3c"
     },
     {
       "path": "aom-schema.rdf",
@@ -71,23 +71,43 @@
     },
     {
       "path": "aom-semantic-bindings.jsonld",
-      "bytes": 417656,
-      "sha256": "fa4475327fa9749d4ce6480630a1a511137997621be05e0b83e9d29e48859d35"
+      "bytes": 819571,
+      "sha256": "760d81736b17ade229b91c933e54e77ccd316b3787e33cd35808f7764a9b124a"
     },
     {
       "path": "aom-semantic-bindings.ttl",
-      "bytes": 173366,
-      "sha256": "d05a7e64af9b240afaa74a988a7949bc2fb205dbf936bf001209949f6c2edcb1"
+      "bytes": 377125,
+      "sha256": "68f137e05517fca23eb217c0a4cb365dcf51a57bd4edf97002f1899a43df626f"
     },
     {
       "path": "edges.csv",
-      "bytes": 129642,
-      "sha256": "a3198766516e6c23f34bb3d9d7005882e376a8e26c3349c7f90f6ed6bf88180d"
+      "bytes": 130500,
+      "sha256": "3ab4e9b0c804d345fa4f4b102e5922c5d4be9f9b502c1e9bfc3ae62814a10f66"
     },
     {
       "path": "edges.parquet",
-      "bytes": 17226,
-      "sha256": "5bd194e7a1e5d150c2c97c0091c1e48a878a14c5b2b62f77258cca5440e61088"
+      "bytes": 17321,
+      "sha256": "f39b1b0e044555c9db9ec495bafb85219267142f2dda3b2c0d9964f9518eb1b0"
+    },
+    {
+      "path": "feed-material-facets.csv",
+      "bytes": 417678,
+      "sha256": "0bf1a91dae7d885d68d239bbbd79f352914eeefb58a5be0ab2b3efc94fdd2308"
+    },
+    {
+      "path": "feed-material-facets.parquet",
+      "bytes": 11691,
+      "sha256": "671413ace22c32605b5ec6c8fb5bf923820f57542378a439eb22f73e8416041c"
+    },
+    {
+      "path": "ingredient-harmonization-rules.csv",
+      "bytes": 13090,
+      "sha256": "26ae8425333153227a05cf35f9f021d04ca9167c5b481ac1a76cc40a609fb561"
+    },
+    {
+      "path": "ingredient-harmonization-rules.parquet",
+      "bytes": 5604,
+      "sha256": "c35c851341f3334ddc057799a96f8ce69284700d956f9b1d9870054ff550bf91"
     },
     {
       "path": "migration-crosswalk.csv",
@@ -101,13 +121,13 @@
     },
     {
       "path": "nodes.csv",
-      "bytes": 177762,
-      "sha256": "dd67535f3f376a272dab1f5f80ee4a52e86bc52848d030c14bbbe02372b63cab"
+      "bytes": 178974,
+      "sha256": "43e0bd7db00e39bdc620baa938b78857564284ae6980b0d660ee97f2449ec715"
     },
     {
       "path": "nodes.parquet",
-      "bytes": 36316,
-      "sha256": "4e14f5fb268609d0657d4803119d066c8bb6a2a8aa764f0fdc8e737f142fbbb3"
+      "bytes": 36537,
+      "sha256": "b6420de1081b5548bee2d2fb1bdc4cc2a8bd58b79d0e5c2e447b8536373b6e1a"
     },
     {
       "path": "release.json",
