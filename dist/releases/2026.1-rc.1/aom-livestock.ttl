@@ -5398,14 +5398,16 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000831> a skos:Concept ;
-    skos:altLabel "Ensiled"@en,
+<https://w3id.org/era-aom/livestock/AOM_000831> a skos:Concept,
+        aom:ProcessingMethod ;
+    skos:altLabel "Ensilation"@en,
+        "Ensiled"@en,
         "Silage Process"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000830> ;
     skos:definition "Ensilation is a specific form of fermentation to preserve forage by packing it tightly into a silo or other airtight container and allowing it to ferment. This fermentation process creates an anaerobic environment that preserves the feed and enhances its nutritional quality by increasing the concentration of organic acids and decreasing the pH. The resulting ensiled feed can be stored for extended periods of time and used as a source of nutrition for livestock. (human validated chatGPT)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000831" ;
-    skos:prefLabel "Ensilation"@en ;
+    skos:prefLabel "Ensiling"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 

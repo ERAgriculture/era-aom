@@ -88,6 +88,12 @@ VALUES = [
     ("process_sugar", "Sugar processing", "process_root", "processing_method"),
 ]
 
+# Existing AOM concepts that also serve as governed facet values. Reuse their
+# persistent identifiers rather than minting duplicate concepts.
+EXISTING_VALUES = [
+    ("AOM_000831", "Ensiling", "processing_method"),
+]
+
 ATOMIC = {
     "Block": "form_block", "Bulb": "part_bulb", "Cladode": "part_cladode",
     "Cob": "part_cob", "Corm": "part_corm", "Discards": "role_discard",
@@ -205,6 +211,15 @@ def main():
             "concept_role": "facet_root" if parent is None else "facet_value",
             "status": "approved", "reviewer": REVIEWER, "review_date": DATE,
             "evidence": REVIEW,
+        })
+    for concept_id, label, facet in EXISTING_VALUES:
+        target_property, value_class = FACET_MODEL[facet]
+        facet_concepts.append({
+            "concept_id": concept_id, "preferred_label": label, "facet": facet,
+            "target_property": target_property, "value_class": value_class,
+            "concept_role": "facet_value", "status": "approved",
+            "reviewer": REVIEWER, "review_date": DATE,
+            "evidence": "data/livestock-staging/definitions.csv",
         })
     write(DATA / "approved_ingredient_facet_concepts.csv", facet_fields, facet_concepts)
 

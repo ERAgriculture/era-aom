@@ -142,6 +142,11 @@
     aom:unitRequirement "required" ;
     aom:valueClass qudt:QuantityValue .
 
+<https://w3id.org/era-aom/livestock/AOM_006072> a skos:Concept,
+        aom:FeedMaterial ;
+    aom:physicalForm <https://w3id.org/era-aom/livestock/AOM_101076> ;
+    aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_000831> .
+
 <https://w3id.org/era-aom/value-binding/ingredient-component:ash> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Ash" ;
@@ -3425,6 +3430,9 @@
 <https://w3id.org/era-aom/livestock/AOM_000142> a skos:Concept,
         aom:IngredientSourceCategory .
 
+<https://w3id.org/era-aom/livestock/AOM_000831> a skos:Concept,
+        aom:ProcessingMethod .
+
 <https://w3id.org/era-aom/livestock/AOM_000944> a skos:Concept,
         sosa:ObservableProperty .
 
@@ -3539,9 +3547,6 @@
 <https://w3id.org/era-aom/livestock/AOM_101074> a skos:Concept,
         aom:IngredientPartCategory .
 
-<https://w3id.org/era-aom/livestock/AOM_101076> a skos:Concept,
-        aom:IngredientPhysicalForm .
-
 <https://w3id.org/era-aom/livestock/AOM_101078> a skos:Concept,
         aom:IngredientPhysicalForm .
 
@@ -3594,6 +3599,9 @@
         aom:ProductRole .
 
 <https://w3id.org/era-aom/livestock/AOM_101075> a skos:Concept,
+        aom:IngredientPhysicalForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101076> a skos:Concept,
         aom:IngredientPhysicalForm .
 
 <https://w3id.org/era-aom/livestock/AOM_101077> a skos:Concept,

@@ -13,6 +13,7 @@ aomcfg:configuration a skosmos:Configuration ;
   skosmos:sparqlTimeout 20 ;
   skosmos:httpTimeout 5 ;
   skosmos:serviceName "ERA-AOM Vocabulary Browser" ;
+  skosmos:customCss "resource/css/era-aom.css" ;
   skosmos:baseHref "https://vocab.era.cgiar.org/" ;
   skosmos:languages ( [ rdfs:label "en" ; rdf:value "en_GB.utf8" ] ) ;
   skosmos:searchResultsSize 20 ;

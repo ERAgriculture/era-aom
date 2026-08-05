@@ -38,7 +38,9 @@ services:
       load-release: {condition: service_completed_successfully}
       fuseki-cache: {condition: service_started}
     expose: ["80"]
-    volumes: ["../../config/skosmos/era-aom-production.ttl:/var/www/html/config.ttl:ro"]
+    volumes:
+      - "../../config/skosmos/era-aom-production.ttl:/var/www/html/config.ttl:ro"
+      - "../../config/skosmos/era-aom.css:/var/www/html/resource/css/era-aom.css:ro"
     restart: unless-stopped
   proxy:
     image: caddy:2.11.4-alpine

@@ -7297,12 +7297,13 @@
   skos:definition "Feed fermentation is a process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT)."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100990> .
 
-<urn:era-aom:livestock:AOM_000831> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000831" ;
-  skos:prefLabel "Ensilation"@en ;
+  skos:prefLabel "Ensiling"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Ensilation"@en ;
   skos:altLabel "Silage Process"@en ;
   skos:altLabel "Ensiled"@en ;
   skos:definition "Ensilation is a specific form of fermentation to preserve forage by packing it tightly into a silo or other airtight container and allowing it to ferment. This fermentation process creates an anaerobic environment that preserves the feed and enhances its nutritional quality by increasing the concentration of organic acids and decreasing the pH. The resulting ensiled feed can be stored for extended periods of time and used as a source of nutrition for livestock. (human validated chatGPT)"@en ;

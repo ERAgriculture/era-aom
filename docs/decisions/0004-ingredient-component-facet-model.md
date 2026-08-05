@@ -40,6 +40,18 @@ Composite descriptors must split into multiple reviewed assertions. Unresolved
 descriptors remain raw strings with no IRI. Measured chemical composition remains
 a SOSA/QUDT observation rather than a categorical constituent assertion.
 
+Worked example: `AOM_006072 Maize Whole Ensiled` remains a SKOS concept and an
+`aom:FeedMaterial`. Its legacy `skos:broader AOM_001313 Maize Whole` supports
+navigation; it does not carry compositional meaning. Reviewed semantic assertions
+state `aom:physicalForm AOM_101076 Whole form` and
+`aom:processingMethod AOM_000831 Ensiling`. `Ensilation` and `Ensiled` remain
+alternate labels for search and source compatibility.
+
+`aom:IngredientComponent` is not a part/form value. It represents use of a feed
+material inside a formulation and may carry its proportion. Therefore “whole” is
+a physical-form facet of feed material, even when inherited from a legacy source
+column named “Component.”
+
 `review/livestock-v3/ingredient_component_facets.csv` is machine-readable design
 governance for classification work. It does not contain source-value mappings and
 does not authorize concept creation.

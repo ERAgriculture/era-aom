@@ -7622,6 +7622,40 @@
         "@id": "http://www.w3.org/2001/XMLSchema#string"
       },
       "aom:valueBindingStatus": "approved"
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101076",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPhysicalForm"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_006072",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:physicalForm": {
+        "@id": "urn:era-aom:livestock:AOM_101076"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_000831",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_006072",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:processingMethod": {
+        "@id": "urn:era-aom:livestock:AOM_000831"
+      }
     }
   ]
 }

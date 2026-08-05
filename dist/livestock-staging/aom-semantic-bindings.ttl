@@ -3660,3 +3660,13 @@
   aom:bindingAction "hold_ambiguous" ;
   aom:targetValueClass <http://www.w3.org/2001/XMLSchema#string> ;
   aom:valueBindingStatus "approved" .
+
+<urn:era-aom:livestock:AOM_101076> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:livestock:AOM_006072> a skos:Concept, aom:FeedMaterial ;
+  aom:physicalForm <urn:era-aom:livestock:AOM_101076> .
+
+<urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_006072> a skos:Concept, aom:FeedMaterial ;
+  aom:processingMethod <urn:era-aom:livestock:AOM_000831> .

@@ -69,7 +69,7 @@ assert all(row["reviewer"] == "Pete Steward" for row in component_classification
 assert sum(row["disposition"] == "review_single" for row in component_classifications) == 52
 assert sum(row["disposition"] == "decompose" for row in component_classifications) == 29
 assert sum(row["disposition"] == "hold" for row in component_classifications) == 2
-assert len(facet_concepts) == 66
+assert len(facet_concepts) == 67
 assert len(component_value_mappings) == 46
 assert len(component_decompositions) == 65
 assert len(component_value_holds) == 9
@@ -92,11 +92,11 @@ assert {
 assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
 assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
-assert manifest["counts"]["approved_ingredient_facet_concepts"] == 66
+assert manifest["counts"]["approved_ingredient_facet_concepts"] == 67
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 46
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 9
-assert len(label_corrections) == 6
+assert len(label_corrections) == 7
 assert len(new_concepts) == 236
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
@@ -291,6 +291,7 @@ assert corrected_labels == {
     "AOM_003981": "Ziziphus jujuba leaves",
     "AOM_002507": "Fourth trimester",
     "AOM_001084": "Variable cost—inoculants",
+    "AOM_000831": "Ensiling",
 }
 for correction in label_corrections:
     assert any(
