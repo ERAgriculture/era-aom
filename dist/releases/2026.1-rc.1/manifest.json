@@ -12,6 +12,19 @@
   "namespace_status": "proposed-registration-pending",
   "source_doi": "https://doi.org/10.7910/DVN/75E7HV",
   "source_version": "2.0",
+  "content_baseline": {
+    "public_release_role": "reproducible distributable source",
+    "era_workbook_role": "current transition-source alignment",
+    "era_workbook_snapshot_modified": "2026-07-09T11:29:11+03:00",
+    "era_workbook_sheet": "AOM",
+    "era_workbook_rows": 2503,
+    "era_workbook_meaningful_columns": 38,
+    "aom_id_mismatches": 0,
+    "hierarchy_level_mismatches": 0,
+    "normalized_cell_mismatches": 203,
+    "private_workbook_fingerprint_published": false,
+    "alignment_report": "inventory/AOM_LIVESTOCK_RECONCILIATION.md"
+  },
   "source_repository_commit": "a9714cc16b0a761082ea1dc010eb27da3a90cc97",
   "manifest_schema_version": "1.0.0",
   "source_staging_manifest_sha256": "3b84e5695b342cbd785a6d5e1a96c2283bbf2204815e1bbb70549957fd501fc4",
@@ -88,8 +101,8 @@
     },
     {
       "path": "release.json",
-      "bytes": 598,
-      "sha256": "df1d4f6dbeb78d3ccf70d77abfa2025a0a82b4360be990cf594c9816c4ba1cbb"
+      "bytes": 1154,
+      "sha256": "32f6fe84e67b6b41e81cd3cc1367042bd231cd0e852d1f811d45614b1b563a57"
     }
   ],
   "publication_gates": {

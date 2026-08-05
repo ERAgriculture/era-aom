@@ -17,6 +17,10 @@ Published dataset:
 Comparison source: current authoritative ERA workbook `AOM` and related
 livestock sheets. Workbook path and fingerprint remain private.
 
+Workbook alignment checked against active shared-workspace file modified
+2026-07-09 11:29:11 EAT, not the archived 2024 copy. Release manifests publish
+alignment facts but not private filesystem location or workbook fingerprint.
+
 ## Main result
 
 Published v2 and workbook `AOM` are closely related snapshots:
