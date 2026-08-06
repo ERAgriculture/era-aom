@@ -4629,6 +4629,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000610> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100852> ;
+    skos:definition "A feed material with governed source identity “soybean” and characteristics: physical form — Cake form."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000610" ;
     skos:prefLabel "Soybean Cake"@en ;
@@ -4640,6 +4641,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000611> a skos:Concept ;
     skos:altLabel "Soybean Oil Cake Full Fat"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100852> ;
+    skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient constituent — Fat constituent; physical form — Cake form; processing method — Pressing."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000611" ;
     skos:prefLabel "Soybean Full Fat Cake"@en ;
@@ -4679,6 +4681,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Rape Oil Cake"@en,
         "Rapeseed Cake"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100892> ;
+    skos:definition "A feed material with governed source identity “canola” and characteristics: physical form — Cake form."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000616" ;
     skos:prefLabel "Canola Cake"@en ;
@@ -7627,6 +7630,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001193> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003072> ;
+    skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001193" ;
     skos:prefLabel "Groundnut Oil"@en ;
@@ -8189,6 +8193,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001308> a skos:Concept ;
     skos:altLabel "Rapeseed Oil"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001309> ;
+    skos:definition "A feed material with governed source identity “canola” and characteristics: ingredient constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001308" ;
     skos:prefLabel "Canola Oil"@en ;
@@ -11570,6 +11575,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001817> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000667> ;
+    skos:definition "A feed material with governed source identity “legume” and characteristics: product role — Residue role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001817" ;
     skos:prefLabel "Legume Residue"@en ;
@@ -11785,6 +11791,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001846> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000594> ;
+    skos:definition "A feed material with governed source identity “cereal milling” and characteristics: processing method — Milling; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001846" ;
     skos:prefLabel "Pollard"@en ;
@@ -17363,6 +17370,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_006169> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100869> ;
+    skos:definition "A feed material with governed source identity “groundnut” and characteristics: product role — Residue role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_006169" ;
     skos:prefLabel "Groundnut Residue"@en ;
@@ -20584,6 +20592,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000557> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000558> ;
+    skos:definition "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001610> ;
     skos:notation "AOM_000557" ;
@@ -21544,6 +21553,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:altLabel "Goober Cake"@en,
         "Peanut Cake"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100869> ;
+    skos:definition "A feed material with governed source identity “groundnut” and characteristics: physical form — Cake form."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001660> ;
     skos:notation "AOM_001254" ;
@@ -21665,6 +21675,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001297> a skos:Concept ;
     skos:altLabel "Corn Sheath"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100851> ;
+    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Sheath."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001615> ;
     skos:notation "AOM_001297" ;
@@ -21891,6 +21902,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001439> a skos:Concept ;
     skos:altLabel "Beet Discards"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100909> ;
+    skos:definition "A feed material with governed source identity “beetroot” and characteristics: product role — Discard role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001952> ;
     skos:notation "AOM_001439" ;
@@ -22288,6 +22300,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001603> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000706> ;
+    skos:definition "A feed material with governed source identity “Acacia tortilis” and characteristics: ingredient part — Fruit."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001604> ;
     skos:notation "AOM_001603" ;
@@ -22366,6 +22379,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001761> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001760> ;
+    skos:definition "A feed material with governed source identity “Acacia etbaica” and characteristics: ingredient part — Fruit."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001762> ;
     skos:notation "AOM_001761" ;
@@ -22581,6 +22595,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001842> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100918> ;
+    skos:definition "A feed material with governed source identity “cabbage” and characteristics: product role — Discard role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001955> ;
     skos:notation "AOM_001842" ;
@@ -23774,6 +23789,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_006003> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000644> ;
+    skos:definition "A feed material with governed source identity “sugar processing” and characteristics: physical form — Liquid form; processing method — Sugar processing; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_006004> ;
     skos:notation "AOM_006003" ;
@@ -26364,6 +26380,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001675> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100855> ;
+    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Stem."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001843>,
         <https://w3id.org/era-aom/livestock/AOM_006361> ;

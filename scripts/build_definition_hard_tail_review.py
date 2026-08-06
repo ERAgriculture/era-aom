@@ -18,6 +18,7 @@ WORKBOOK = ROOT / "review/livestock-v13/workbook_source_scope_review.csv"
 IDENTITY = ROOT / "review/livestock-v16/identity_alias_review.csv"
 SHARED = ROOT / "review/livestock-v17/shared_page_review.csv"
 WORKBOOK_GAPS = ROOT / "review/livestock-v18/workbook_model_gap_review.csv"
+CONSOLIDATED = ROOT / "review/livestock-v19/authority_model_review.csv"
 
 CORE = {"AOM_000106", "AOM_000846"}
 FEEDIPEDIA_CATEGORY = {"AOM_000628", "AOM_000644", "AOM_000683", "AOM_000701", "AOM_000735"}
@@ -106,6 +107,18 @@ WORKBOOK_GAP_FACETS = {
     "AOM_003567": [("aom:productRole", "AOM_101059", "Residue role", "residue")],
 }
 
+CONSOLIDATED_FACETS = {
+    "AOM_000611": [("aom:ingredientConstituent", "AOM_101066", "Fat constituent", "full fat"),
+                    ("aom:physicalForm", "AOM_101052", "Cake form", "cake"),
+                    ("aom:processingMethod", "AOM_101070", "Pressing", "cake")],
+    "AOM_001675": [("aom:ingredientPart", "AOM_101047", "Stem", "stalk")],
+    "AOM_001846": [("aom:processingMethod", "AOM_101082", "Milling", "pollard"),
+                    ("aom:productRole", "AOM_101062", "By-product role", "pollard")],
+    "AOM_006003": [("aom:physicalForm", "AOM_101077", "Liquid form", "molasses"),
+                    ("aom:processingMethod", "AOM_101084", "Sugar processing", "molasses"),
+                    ("aom:productRole", "AOM_101062", "By-product role", "molasses")],
+}
+
 # Longest suffix first. Each match strips descriptor from governed source and
 # emits existing approved facet value; no new semantic class is invented here.
 DESCRIPTORS = [
@@ -124,6 +137,9 @@ DESCRIPTORS = [
     ("waste", "aom:productRole", "AOM_101061", "Waste role"),
     ("peels", "aom:ingredientPart", "AOM_101034", "Peel"),
     ("peel", "aom:ingredientPart", "AOM_101034", "Peel"),
+    ("shells", "aom:ingredientPart", "AOM_101040", "Shell"),
+    ("shell", "aom:ingredientPart", "AOM_101040", "Shell"),
+    ("sheath", "aom:ingredientPart", "AOM_101039", "Sheath"),
     ("fruits", "aom:ingredientPart", "AOM_101028", "Fruit"),
     ("fruit", "aom:ingredientPart", "AOM_101028", "Fruit"),
     ("cladode", "aom:ingredientPart", "AOM_101025", "Cladode"),
@@ -192,6 +208,7 @@ workbook = {row["concept_id"]: row for row in read(WORKBOOK)}
 identity = {row["concept_id"]: row for row in read(IDENTITY)}
 shared = {row["concept_id"]: row for row in read(SHARED)}
 workbook_gaps = {row["concept_id"]: row for row in read(WORKBOOK_GAPS)}
+consolidated = {row["concept_id"]: row for row in read(CONSOLIDATED)}
 review_rows, facet_rows = [], []
 for item in read(COHORT):
     cid, label, route = item["concept_id"], item["preferred_label"], item["recommended_route"]
@@ -202,6 +219,8 @@ for item in read(COHORT):
         facets = SHARED_PAGE_FACETS[cid]
     if cid in WORKBOOK_GAP_FACETS:
         facets = WORKBOOK_GAP_FACETS[cid]
+    if cid in CONSOLIDATED_FACETS:
+        facets = CONSOLIDATED_FACETS[cid]
     # These compound sources retain an uncovered component after generic suffix
     # stripping; partial decomposition would misstate governed identity.
     if cid in {"AOM_003930"}:
@@ -223,7 +242,8 @@ for item in read(COHORT):
         decision, status, source = "approve_feedipedia_alias_scope", "approved", source
         evidence = feed[cid]["feedipedia_url"]
         rationale = "Current Feedipedia heading establishes direct common-name, spelling, or word-order equivalence at same material scope."
-    elif route == "research_taxon_insufficient_for_material" and facets and source:
+    elif (route == "research_taxon_insufficient_for_material" and facets and source
+          and not (cid in consolidated and consolidated[cid]["status"] == "approved")):
         decision, status = "approve_taxon_source_with_explicit_facets", "approved"
         evidence = public_cohort[cid]["public_mapping_targets"]
         rationale = "Existing public taxon mapping establishes biological source; explicit label descriptors map only to pre-approved structured facet values."
@@ -246,7 +266,16 @@ for item in read(COHORT):
         decision, status = "approve_workbook_model_gap_with_explicit_facets", "approved"
         evidence = workbook_gaps[cid]["evidence"]
         rationale = workbook_gaps[cid]["rationale"] + " Definition adds only reviewed structured facets."
+    elif cid in consolidated and consolidated[cid]["status"] == "approved" and facets:
+        source = consolidated[cid]["governed_source_identity"]
+        decision, status = "approve_consolidated_authority_with_explicit_facets", "approved"
+        evidence = consolidated[cid]["evidence"]
+        rationale = consolidated[cid]["rationale"] + " Definition adds only reviewed structured facets."
     if status == "held":
+        consolidated_hold = consolidated.get(cid)
+        if consolidated_hold and consolidated_hold["status"] == "held":
+            blocker = consolidated_hold["blocker_code"]
+            next_action = consolidated_hold["rationale"]
         if route == "research_feedipedia":
             prior = feed[cid]["decision"]
             identity_hold = identity.get(cid)
@@ -273,6 +302,9 @@ for item in read(COHORT):
         elif route == "research_taxon_insufficient_for_material":
             blocker = "unmodelled_derived_material_descriptor"
             next_action = "Review descriptor meaning; map to existing facet or approve new facet concept before composing definition."
+        if consolidated_hold and consolidated_hold["status"] == "held":
+            blocker = consolidated_hold["blocker_code"]
+            next_action = consolidated_hold["rationale"]
     if status == "approved":
         for order, (prop, target, target_label, term) in enumerate(facets, 1):
             facet_rows.append({
