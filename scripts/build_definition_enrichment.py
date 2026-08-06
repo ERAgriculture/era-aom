@@ -33,7 +33,15 @@ new_concepts = read("approved_new_concepts.csv")
 inventory = {row["concept_id"]: row for row in csv.DictReader(
     (ROOT / "review/livestock-v5/ingredient_harmonization_inventory.csv").open(encoding="utf-8", newline="")
 )}
-material_facets = read("approved_feed_material_facets.csv") + read("approved_generated_feed_material_facets.csv")
+hard_tail_reviews = list(csv.DictReader(
+    (ROOT / "review/livestock-v14/definition_hard_tail_review.csv").open(encoding="utf-8", newline="")
+))
+hard_tail_by_id = {row["concept_id"]: row for row in hard_tail_reviews if row["status"] == "approved"}
+material_facets = (
+    read("approved_feed_material_facets.csv")
+    + read("approved_generated_feed_material_facets.csv")
+    + read("approved_hard_tail_feed_material_facets.csv")
+)
 feedipedia_scope_reviews = list(csv.DictReader(
     (ROOT / "review/livestock-v11/feedipedia_source_scope_review.csv").open(encoding="utf-8", newline="")
 ))
@@ -73,7 +81,9 @@ property_label = {
 for concept_id, facets in sorted(by_material.items()):
     if concept_id in existing or concepts[concept_id]["status"] == "deprecated":
         continue
-    source = inventory[concept_id]["source_identity_candidate"].strip()
+    source = hard_tail_by_id.get(concept_id, {}).get(
+        "governed_source_identity", inventory[concept_id]["source_identity_candidate"]
+    ).strip()
     if not source:
         raise ValueError(f"Approved facet material lacks governed source identity: {concept_id}")
     grouped = defaultdict(list)
@@ -88,8 +98,35 @@ for concept_id, facets in sorted(by_material.items()):
         "definition": f"A feed material with governed source identity “{source}” and characteristics: " + "; ".join(characteristics) + ".",
         "definition_method": "composed_from_approved_semantic_facets",
         "status": "approved", "reviewer": "Pete Steward", "review_date": "2026-08-06",
-        "evidence": "data/livestock-staging/approved_feed_material_facets.csv;data/livestock-staging/approved_generated_feed_material_facets.csv",
+        "evidence": (
+            "data/livestock-staging/approved_hard_tail_feed_material_facets.csv"
+            if concept_id in hard_tail_by_id else
+            "data/livestock-staging/approved_feed_material_facets.csv;data/livestock-staging/approved_generated_feed_material_facets.csv"
+        ),
         "rationale": "Definition states only governed source identity and approved semantic assertions; no biological or nutritional claim is inferred.",
+    })
+
+base_ids = {row["concept_id"] for row in rows}
+
+for review in hard_tail_reviews:
+    concept_id = review["concept_id"]
+    if review["status"] != "approved" or concept_id in existing or concept_id in base_ids:
+        continue
+    if review["decision"] == "approve_core_hierarchy_scope":
+        definition = f"An AOM top-level classification for “{review['preferred_label']}”, used to organize governed concepts in this domain."
+        method = "composed_from_governed_core_hierarchy_scope"
+    elif review["decision"] == "approve_feedipedia_category_scope":
+        definition = (
+            f"An AOM controlled feed category for “{review['preferred_label']}”. "
+            "Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."
+        )
+        method = "composed_from_reviewed_feedipedia_category_scope"
+    else:
+        raise ValueError(f"Approved hard-tail case lacks facets or category method: {concept_id}")
+    rows.append({
+        "concept_id": concept_id, "language": "en", "definition": definition,
+        "definition_method": method, "status": "approved", "reviewer": review["reviewer"],
+        "review_date": review["review_date"], "evidence": review["evidence"], "rationale": review["rationale"],
     })
 
 base_ids = {row["concept_id"] for row in rows}

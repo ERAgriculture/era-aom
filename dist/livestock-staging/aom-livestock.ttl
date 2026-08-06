@@ -1387,7 +1387,8 @@
   skos:notation "AOM_000106" ;
   skos:prefLabel "Management"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:definition "An AOM top-level classification for “Management”, used to organize governed concepts in this domain."@en .
 
 <urn:era-aom:livestock:AOM_000107> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -5353,6 +5354,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Fish Waste"@en ;
+  skos:definition "A feed material with governed source identity “Fish” and characteristics: product role — Processing-waste role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100985> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_7898> .
 
@@ -5370,6 +5372,7 @@
   skos:altLabel "Goliath barramundi"@en ;
   skos:altLabel "Giant lates"@en ;
   skos:altLabel "Victoria perch"@en ;
+  skos:definition "A feed material with governed source identity “Nile Perch Fish” and characteristics: ingredient constituent — Oil constituent."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000549> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_29147> .
 
@@ -5777,6 +5780,7 @@
   skos:prefLabel "Wheat Shorts"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Wheat” and characteristics: product role — Milling-shorts role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100864> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> .
 
@@ -5880,6 +5884,7 @@
   era:status "unknown" ;
   skos:altLabel "Peanut Hulls"@en ;
   skos:altLabel "Goober Hulls"@en ;
+  skos:definition "A feed material with governed source identity “Groundnut” and characteristics: ingredient part — Hull."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100869> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3818> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12155> .
@@ -5987,6 +5992,7 @@
   skos:prefLabel "Soybean Residue"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Soybean” and characteristics: product role — Residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
@@ -6058,6 +6064,7 @@
   skos:prefLabel "Oil Plant ByProducts"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled feed category for “Oil Plant ByProducts”. Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001916> ;
   skos:relatedMatch <https://www.feedipedia.org/content/feeds?category=13598> .
 
@@ -6148,6 +6155,7 @@
   skos:altLabel "Epipetrum Peels"@en ;
   skos:altLabel "Borderea Peels"@en ;
   skos:altLabel "Tamus Peels"@en ;
+  skos:definition "A feed material with governed source identity “Yam” and characteristics: ingredient part — Peel."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100914> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4672> .
 
@@ -6185,6 +6193,7 @@
   skos:prefLabel "Sugar Processing ByProducts"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled feed category for “Sugar Processing ByProducts”. Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001916> ;
   skos:relatedMatch <https://www.feedipedia.org/content/feeds?category=13603> .
 
@@ -6532,6 +6541,7 @@
   skos:prefLabel "Aquatic Plants"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled feed category for “Aquatic Plants”. Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000735> ;
   skos:relatedMatch <https://www.feedipedia.org/content/feeds?category=13587> .
 
@@ -6653,6 +6663,7 @@
   skos:prefLabel "Cereal and Grass Forages"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled feed category for “Cereal and Grass Forages”. Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000735> ;
   skos:relatedMatch <https://www.feedipedia.org/content/feeds?category=13593> .
 
@@ -6894,6 +6905,7 @@
   skos:prefLabel "Forage Plants"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled feed category for “Forage Plants”. Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> ;
   skos:relatedMatch <https://www.feedipedia.org/content/feeds?category=15965> .
 
@@ -7716,7 +7728,8 @@
   skos:notation "AOM_000846" ;
   skos:prefLabel "Farming System"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" .
+  era:status "unknown" ;
+  skos:definition "An AOM top-level classification for “Farming System”, used to organize governed concepts in this domain."@en .
 
 <urn:era-aom:livestock:AOM_000847> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -11002,6 +11015,7 @@
   skos:prefLabel "Common Bean Tops"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Common Bean” and characteristics: ingredient part — Plant top."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100866> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3885> .
 
@@ -11114,6 +11128,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Olea sativa Cake"@en ;
+  skos:definition "A feed material with governed source identity “Olive” and characteristics: physical form — Cake form."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100900> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4146> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12886> .
@@ -11562,6 +11577,7 @@
   skos:prefLabel "Cassava Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Cassava” and characteristics: product role — Waste role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100910> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3983> .
 
@@ -11596,6 +11612,7 @@
   skos:prefLabel "Flaxseed Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Flaxseed” and characteristics: ingredient constituent — Oil constituent."@en ;
   skos:broader <urn:era-aom:livestock:AOM_004255> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4006> .
 
@@ -12041,6 +12058,7 @@
   skos:prefLabel "Macadamia Cake"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Macadamia” and characteristics: physical form — Cake form."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100899> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_12827> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4230> ;
@@ -12408,6 +12426,7 @@
   skos:prefLabel "Rosemary Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Rosemary” and characteristics: ingredient constituent — Oil constituent."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100941> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_39367> .
 
@@ -12524,6 +12543,7 @@
   skos:prefLabel "Onion Bulb"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Onion” and characteristics: ingredient part — Bulb."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100944> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4679> .
 
@@ -14375,6 +14395,7 @@
   skos:prefLabel "Catha edulis Residue"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Catha edulis” and characteristics: product role — Residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001573> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_123405> .
 
@@ -15128,6 +15149,7 @@
   skos:prefLabel "Dichrostachys cinerea Fruits"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Dichrostachys cinerea” and characteristics: ingredient part — Fruit."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001141> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_196665> .
 
@@ -16384,6 +16406,7 @@
   skos:prefLabel "Potato Processing Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Potato” and characteristics: product role — Processing-waste role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100911> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4113> .
 
@@ -16448,6 +16471,7 @@
   skos:prefLabel "Scarlet Eggplant Market Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Scarlet Eggplant” and characteristics: product role — Market-waste role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001360> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_205524> .
 
@@ -16769,6 +16793,7 @@
   skos:prefLabel "Date Cull"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Date” and characteristics: product role — Discard role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100881> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_42345> .
 
@@ -16821,6 +16846,7 @@
   skos:prefLabel "Potato Starch"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Potato” and characteristics: ingredient constituent — Starch constituent."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100938> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4113> .
 
@@ -17087,6 +17113,7 @@
   skos:prefLabel "Ficus sur Fruits"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Ficus sur” and characteristics: ingredient part — Fruit."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001847> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_100575> .
 
@@ -17880,6 +17907,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Trout Oil Silage"@en ;
+  skos:definition "A feed material with governed source identity “Trout” and characteristics: ingredient constituent — Oil constituent."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001115> .
 
 <urn:era-aom:livestock:AOM_001931> a skos:Concept ;
@@ -18171,6 +18199,7 @@
   skos:prefLabel "Tomato Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Tomato” and characteristics: product role — Waste role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100920> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4081> .
 
@@ -19357,6 +19386,7 @@
   skos:prefLabel "Shrimp Hydrolysate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Shrimp” and characteristics: processing method — Hydrolysis."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100986> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_397977> .
 
@@ -19448,6 +19478,7 @@
   skos:prefLabel "Cassava Binder"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Cassava” and characteristics: product role — Binder role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000745> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3983> .
 
@@ -19506,6 +19537,7 @@
   skos:prefLabel "Sweet Potato Peels"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Sweet Potato” and characteristics: ingredient part — Peel."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100912> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4120> ;
   skos:relatedMatch <https://www.feedipedia.org/node/26513> .
@@ -19520,6 +19552,7 @@
   skos:altLabel "Copra Oil Cake"@en ;
   skos:altLabel "Copra Cake"@en ;
   skos:altLabel "Coconut Oil Cake"@en ;
+  skos:definition "A feed material with governed source identity “Coconut” and characteristics: physical form — Cake form."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100894> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_13894> .
 
@@ -19626,6 +19659,7 @@
   skos:prefLabel "Opuntia ficus indica Fruits"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Opuntia ficus indica” and characteristics: ingredient part — Fruit."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001166> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_371859> .
 
@@ -19936,6 +19970,7 @@
   skos:prefLabel "Opuntia stricta Cladode"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Opuntia stricta” and characteristics: ingredient part — Cladode."@en ;
   skos:broader <urn:era-aom:livestock:AOM_002153> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_701516> .
 
@@ -19955,6 +19990,7 @@
   skos:prefLabel "Carrot Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Carrot” and characteristics: product role — Waste role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100919> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4039> .
 
@@ -20005,6 +20041,7 @@
   skos:prefLabel "Fish Offal"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Fish” and characteristics: product role — Offal role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100985> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_7898> .
 
@@ -20384,6 +20421,7 @@
   skos:prefLabel "Rainbow Trout Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Rainbow Trout” and characteristics: ingredient constituent — Oil constituent."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001927> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_8022> .
 
@@ -21754,6 +21792,7 @@
   skos:prefLabel "Khat Leftover"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Khat” and characteristics: product role — Waste role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100878> .
 
 <urn:era-aom:livestock:AOM_003668> a skos:Concept ;
@@ -21854,6 +21893,7 @@
   skos:prefLabel "Coconut Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Coconut” and characteristics: ingredient constituent — Oil constituent."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100933> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_13894> .
 
@@ -21928,6 +21968,7 @@
   skos:prefLabel "Rice Milling Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Rice” and characteristics: product role — Waste role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100861> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> .
 
@@ -21986,6 +22027,7 @@
   skos:prefLabel "Rosemary Residues"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Rosemary” and characteristics: product role — Residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100941> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_39367> .
 
@@ -22165,6 +22207,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Acorn nut"@en ;
+  skos:definition "A feed material with governed source identity “Quercus ilex” and characteristics: ingredient part — Seed."@en ;
   skos:broader <urn:era-aom:livestock:AOM_006155> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_58334> .
 
@@ -22342,6 +22385,7 @@
   skos:prefLabel "Cowpea Residue"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Cowpea” and characteristics: product role — Residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100867> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3917> .
 
@@ -22351,6 +22395,7 @@
   skos:prefLabel "Sesame Residue"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Sesame” and characteristics: product role — Residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100902> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4182> .
 
@@ -22517,6 +22562,7 @@
   skos:prefLabel "Cassava Starch Residue"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Cassava” and characteristics: ingredient constituent — Starch constituent; product role — Residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100910> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3983> .
 
@@ -23664,6 +23710,7 @@
   skos:prefLabel "Date Discards"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Date” and characteristics: product role — Discard role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100881> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_42345> .
 
@@ -24752,6 +24799,7 @@
   skos:prefLabel "Garlic Oil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “Garlic” and characteristics: ingredient constituent — Oil constituent."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100943> .
 
 <urn:era-aom:livestock:AOM_006201> a skos:Concept ;
@@ -25940,6 +25988,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "great basil by product"@en ;
+  skos:definition "A feed material with governed source identity “Sweet Basil” and characteristics: product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_003996> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_39350> .
 
