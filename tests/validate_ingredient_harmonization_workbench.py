@@ -24,13 +24,13 @@ assert len(inventory) == summary["ingredient_concepts"] == 1643
 assert len({row["concept_id"] for row in inventory}) == 1643
 assert len(rules) == summary["rules"] == 68
 assert len({row["rule_id"] for row in rules}) == 68
-assert len(clusters) == 10 and summary["unresolved_signature_clusters"] == 0
+assert len(clusters) == 12 and summary["unresolved_signature_clusters"] == 0
 assert len(exceptions) == summary["unresolved_expert_exceptions"] == 0
 assert summary["routes"] == {
     "batch_review": 10,
     "expert_exception": 25,
-    "retain_atomic_candidate": 625,
-    "rule_application_candidate": 983,
+    "retain_atomic_candidate": 628,
+    "rule_application_candidate": 980,
 }
 assert summary["safety"] == {
     "automatic_ontology_changes": 0,

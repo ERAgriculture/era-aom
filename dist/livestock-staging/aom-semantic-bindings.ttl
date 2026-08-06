@@ -3828,6 +3828,21 @@
 <urn:era-aom:livestock:AOM_003596> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101038> .
 
+<urn:era-aom:livestock:AOM_101081> a skos:Concept, aom:IngredientConstituent .
+
+<urn:era-aom:livestock:AOM_000651> a skos:Concept, aom:FeedMaterial ;
+  aom:ingredientConstituent <urn:era-aom:livestock:AOM_101081> .
+
+<urn:era-aom:livestock:AOM_101081> a skos:Concept, aom:IngredientConstituent .
+
+<urn:era-aom:livestock:AOM_000674> a skos:Concept, aom:FeedMaterial ;
+  aom:ingredientConstituent <urn:era-aom:livestock:AOM_101081> .
+
+<urn:era-aom:livestock:AOM_101081> a skos:Concept, aom:IngredientConstituent .
+
+<urn:era-aom:livestock:AOM_001586> a skos:Concept, aom:FeedMaterial ;
+  aom:ingredientConstituent <urn:era-aom:livestock:AOM_101081> .
+
 <urn:era-aom:livestock:AOM_101095> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_000536> a skos:Concept, aom:FeedMaterial ;

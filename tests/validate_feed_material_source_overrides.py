@@ -18,7 +18,7 @@ overrides = read(DATA / "approved_feed_material_source_overrides.csv")
 inventory = read(REVIEW / "ingredient_harmonization_inventory.csv")
 generated = read(DATA / "approved_generated_feed_material_facets.csv")
 
-assert len(overrides) == 12
+assert len(overrides) == 15
 assert all(
     row["status"] == "approved" and row["reviewer"] == "Pete Steward"
     and row["review_date"] == "2026-08-06"
@@ -58,4 +58,9 @@ assert by_id["AOM_000678"]["source_identity_candidate"] == "cassava"
 assert by_id["AOM_001289"]["source_identity_candidate"] == "maize"
 assert by_id["AOM_003208"]["source_identity_candidate"] == "bambara groundnut"
 assert by_id["AOM_003596"]["source_identity_candidate"] == "grape"
-print("Feed-material source override validation passed: 12 governed identities")
+for concept_id, source in {
+    "AOM_000651": "maize", "AOM_000674": "sunflower", "AOM_001586": "soybean",
+}.items():
+    assert by_id[concept_id]["source_identity_candidate"] == source
+    assert not by_id[concept_id]["form_candidates"]
+print("Feed-material source override validation passed: 15 governed identities")
