@@ -19,6 +19,7 @@ relations, mappings = read("relations"), read("mappings")
 quarantine, gaps, legacy = read("quarantine"), read("hierarchy_gaps"), read("legacy_records")
 resolutions = read("approved_identity_resolutions")
 replacements = read("approved_mapping_replacements")
+mapping_reviews = read("approved_mapping_reviews")
 deprecations = read("approved_deprecations")
 label_corrections = read("approved_label_corrections")
 new_concepts = read("approved_new_concepts")
@@ -48,16 +49,18 @@ assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
 assert all(row["subject_id"] in known and row["object_id"] in known for row in relations)
 assert all(row["subject_id"] in known for row in mappings)
 reviewed = [row for row in mappings if row["status"] == "reviewed"]
+reviewed_related = [row for row in mappings if row["status"] == "reviewed-related"]
+review_held = [row for row in mappings if row["status"] == "review-held"]
 assert len(reviewed) == 3
 assert {row["subject_id"] for row in reviewed} == {"AOM_006275"}
 assert {row["target_id"] for row in reviewed} == {
     "NCBITaxon_3031383", "wfo-0000883036", "413",
 }
 assert all(row["reviewer"] == "Pete Steward" for row in reviewed)
-assert all(
-    row["status"] == "legacy-unreviewed" and row["reviewer"] == ""
-    for row in mappings if row not in reviewed
-)
+assert len(mapping_reviews) == 383
+assert len(reviewed_related) == 344 and len(review_held) == 12
+assert all(row["reviewer"] == "Pete Steward" for row in reviewed_related + review_held)
+assert all(row["status"] == "legacy-unreviewed" and row["reviewer"] == "" for row in mappings if row["status"] == "legacy-unreviewed")
 assert len(resolutions) == 2
 assert {row["action"] for row in resolutions} == {"retain", "map_to_existing"}
 assert {row["resolved_concept_id"] for row in resolutions} == {
@@ -108,6 +111,7 @@ assert {
     ("AOM_000949", "AOM_000935"),
 }
 assert manifest["counts"]["approved_semantic_bindings"] == 13
+assert manifest["counts"]["approved_mapping_reviews"] == 383
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
 assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
 assert manifest["counts"]["approved_ingredient_facet_concepts"] == 99

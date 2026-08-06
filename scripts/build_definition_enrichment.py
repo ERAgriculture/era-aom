@@ -26,9 +26,12 @@ labels = {
     if row["language"] == "en" and row["label_type"] == "pref"
 }
 mappings = defaultdict(list)
+definition_grade_mappings = defaultdict(list)
 for row in read("mappings.csv"):
     if row["target_scheme"] != "ilri-code":
         mappings[row["subject_id"]].append(row)
+        if row["status"] not in {"reviewed-related", "review-held"}:
+            definition_grade_mappings[row["subject_id"]].append(row)
 new_concepts = read("approved_new_concepts.csv")
 inventory = {row["concept_id"]: row for row in csv.DictReader(
     (ROOT / "review/livestock-v5/ingredient_harmonization_inventory.csv").open(encoding="utf-8", newline="")
@@ -275,6 +278,7 @@ for concept_id, concept in sorted(concepts.items()):
     path = concept["derived_path"]
     domain = domain_for(path)
     public = mappings[concept_id]
+    definition_grade_public = definition_grade_mappings[concept_id]
     schemes = sorted({row["target_scheme"] for row in public})
     targets = sorted({row["target_uri"] or row["target_id"] for row in public if row["target_uri"] or row["target_id"]})
     if domain in eligible_domains:
@@ -287,6 +291,8 @@ for concept_id, concept in sorted(concepts.items()):
             "rationale": "Definition states only approved hierarchy context and model role; no domain fact is inferred.",
         })
         route, status = "approved_structural_definition", "approved"
+    elif domain == "feed_material" and public and not definition_grade_public:
+        route, status = "research_related_mapping_insufficient", "research-required"
     elif domain == "feed_material" and "feedipedia" in schemes:
         route, status = "research_feedipedia", "research-required"
     elif domain == "feed_material" and ({"agrovoc", "ontology"} & set(schemes)):

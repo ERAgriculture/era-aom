@@ -625,8 +625,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001842">
     <skos:notation>AOM_001842</skos:notation>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4710"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_5514"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100918"/>
     <skos:prefLabel xml:lang="en">Cabbage Discards</skos:prefLabel>
@@ -2182,8 +2180,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001309">
     <skos:notation>AOM_001309</skos:notation>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_5514"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4710"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">Canola</skos:prefLabel>
@@ -3182,7 +3178,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_006350</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12081"/>
     <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">Bambusa bambos</skos:prefLabel>
   </rdf:Description>
@@ -4488,9 +4483,8 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_001675</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100855"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_d859f064"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
     <skos:prefLabel xml:lang="en">Baby Corn Stalk</skos:prefLabel>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001843"/>
@@ -5833,17 +5827,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:conceptType>aom_concept</era:conceptType>
     <era:status>unknown</era:status>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001476">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4521"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12543"/>
-    <skos:prefLabel xml:lang="en">Lolium multiflorum</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:notation>AOM_001476</skos:notation>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000701"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000736">
     <skos:notation>AOM_000736</skos:notation>
@@ -11667,8 +11650,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:prefLabel xml:lang="en">Legume Residue</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3821"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_13356"/>
     <skos:notation>AOM_001817</skos:notation>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001087">
@@ -11899,7 +11880,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_66017"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12597"/>
     <skos:prefLabel xml:lang="en">Digitaria decumbens</skos:prefLabel>
     <skos:altLabel xml:lang="en">Signal grass</skos:altLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000701"/>
@@ -13034,8 +13014,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:definition xml:lang="en">rearing system mainly dedicated to the egg production which may be composed of one or several rearing stage unit</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001761">
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_1323858907498"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_546664"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001760"/>
@@ -13137,8 +13115,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Oil</skos:prefLabel>
     <skos:notation>AOM_001333</skos:notation>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4710"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_36344"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000677"/>
@@ -13782,18 +13758,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_000500</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:definition xml:lang="en">Water used to produce crops (e.g., per unit product or unit land).</skos:definition>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001760">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_1323858907498"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_546664"/>
-    <era:status>unknown</era:status>
-    <skos:prefLabel xml:lang="en">Acacia etbaica</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:notation>AOM_001760</skos:notation>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000718"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001761"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101036">
     <skos:prefLabel xml:lang="en">Pseudostem</skos:prefLabel>
@@ -15530,7 +15494,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001193">
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_35679"/>
     <skos:prefLabel xml:lang="en">Groundnut Oil</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -15978,8 +15941,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001766">
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_546664"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_1323858907498"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000718"/>
     <skos:prefLabel xml:lang="en">Acacia polyacantha</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -17417,8 +17378,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001308">
     <skos:prefLabel xml:lang="en">Canola Oil</skos:prefLabel>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4710"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_5514"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_001308</skos:notation>
@@ -17793,12 +17752,11 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
     <skos:notation>AOM_001383</skos:notation>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12114"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_15314"/>
     <skos:prefLabel xml:lang="en">Andropogon guianensis</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000701"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_15314"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000361">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -19122,7 +19080,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100863"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3847"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12624"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Sorghum Threshed Top</skos:prefLabel>
     <era:status>unknown</era:status>
@@ -21965,7 +21922,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:status>unknown</era:status>
     <skos:notation>AOM_003893</skos:notation>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_58168"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11799"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_003914"/>
@@ -24160,7 +24116,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_001771</skos:notation>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_15843"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_190754"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000718"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001769"/>
@@ -28531,7 +28486,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_004002">
     <era:status>unknown</era:status>
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_12332"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11628"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
     <skos:altLabel xml:lang="en">Yellow Corn</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -29064,6 +29018,16 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100852"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001760">
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:prefLabel xml:lang="en">Acacia etbaica</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:notation>AOM_001760</skos:notation>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000718"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001761"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001668">
     <skos:definition xml:lang="en">A feed material with governed source identity “leucaena leucocephala” and characteristics: processing method — Wilting.</skos:definition>
@@ -31149,6 +31113,16 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:status>unknown</era:status>
     <skos:altLabel xml:lang="en">Coren Straw Urea Treated</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001476">
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4521"/>
+    <skos:prefLabel xml:lang="en">Lolium multiflorum</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:notation>AOM_001476</skos:notation>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000701"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001655">
     <skos:prefLabel xml:lang="en">Dichrostachys cinerea Fruits Dried</skos:prefLabel>
@@ -34526,7 +34500,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:notation>AOM_001216</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12179"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000726"/>
   </rdf:Description>
