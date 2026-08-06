@@ -15,7 +15,11 @@ def read(path):
 
 rows = read(REVIEW)
 definitions = read(DATA / "approved_definition_enrichments.csv")
+prior = read(ROOT / "review/livestock-v10/feedipedia_semantic_review.csv")
 assert len(rows) == 193 and len({row["concept_id"] for row in rows}) == 193
+assert not ({row["concept_id"] for row in rows} & {
+    row["concept_id"] for row in prior if row["status"] == "approved"
+})
 assert Counter(row["status"] for row in rows) == {"approved": 101, "held": 92}
 assert Counter(row["decision"] for row in rows) == {
     "approve_source_scope_definition": 101,

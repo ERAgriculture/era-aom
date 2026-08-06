@@ -7,8 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "review/livestock-v9/feedipedia_definition_evidence.csv"
-QUEUE = ROOT / "review/livestock-v8/definition_gap_queue.csv"
 INVENTORY = ROOT / "review/livestock-v5/ingredient_harmonization_inventory.csv"
+PRIOR_REVIEW = ROOT / "review/livestock-v10/feedipedia_semantic_review.csv"
 OUT = ROOT / "review/livestock-v11/feedipedia_source_scope_review.csv"
 
 
@@ -22,9 +22,12 @@ def normalize(value):
     return " ".join(re.sub(r"[^a-z0-9]+", " ", value).split())
 
 
+prior_promotions = {
+    row["concept_id"] for row in read(PRIOR_REVIEW) if row["status"] == "approved"
+}
 active = {
-    row["concept_id"] for row in read(QUEUE)
-    if row["recommended_route"] == "research_feedipedia"
+    row["concept_id"] for row in read(EVIDENCE)
+    if row["concept_id"] not in prior_promotions
 }
 inventory = {row["concept_id"]: row for row in read(INVENTORY)}
 hard_holds = {

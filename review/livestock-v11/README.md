@@ -1,7 +1,8 @@
 # Full-cohort Feedipedia source-scope review
 
-This cohort reviews every Feedipedia-routed definition gap remaining after
-livestock-v10. Healthy, unshared pages may support source/material scope when
+This cohort is fixed as frozen livestock-v9 Feedipedia evidence minus six
+livestock-v10 semantic promotions. It never derives membership from generated
+definition-gap output. Healthy, unshared pages may support source/material scope when
 page heading directly contains AOM preferred identity. They do not transfer
 narrower page descriptors into AOM.
 
