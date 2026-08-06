@@ -17,13 +17,13 @@
     "resolved_to_existing_records": 1,
     "quarantine_assertions": 2,
     "hierarchy_relations": 2765,
-    "replacement_relations": 4,
+    "replacement_relations": 10,
     "semantic_relations": 21,
     "hierarchy_gaps": 0,
     "mapping_assertions": 6045,
     "approved_identity_resolutions": 2,
     "approved_mapping_replacements": 3,
-    "approved_deprecations": 4,
+    "approved_deprecations": 10,
     "approved_label_corrections": 12,
     "approved_new_concepts": 268,
     "registered_livestock_ids": 268,
@@ -39,6 +39,7 @@
     "approved_feed_material_source_overrides": 6,
     "approved_ingredient_semantic_closure_decisions": 19,
     "approved_ingredient_cluster_decisions": 7,
+    "approved_ontology_collision_decisions": 105,
     "approved_ingredient_component_value_mappings": 45,
     "approved_ingredient_component_decompositions": 65,
     "approved_ingredient_component_value_holds": 10
@@ -51,8 +52,8 @@
   "files": [
     {
       "path": "data/livestock-staging/approved_deprecations.csv",
-      "bytes": 1260,
-      "sha256": "17e4da465561f108cdf88751efdf1fc9fd0c524734f60a1de4bce1829ec27a95"
+      "bytes": 2850,
+      "sha256": "8957e37748856ab4ccfe01835b12373d94a654ecb468b0cc32376c941334fc2d"
     },
     {
       "path": "data/livestock-staging/approved_feed_material_facets.csv",
@@ -135,6 +136,11 @@
       "sha256": "40b5a99a30d3b593116ccd6100612647b318113d28d0cbda33142ea8630c1518"
     },
     {
+      "path": "data/livestock-staging/approved_ontology_collision_decisions.csv",
+      "bytes": 29623,
+      "sha256": "f212240333c30ade23439b71b20008a7d05ba99bc5173249b5b9a370201c16f2"
+    },
+    {
       "path": "data/livestock-staging/approved_reparentings.csv",
       "bytes": 14581,
       "sha256": "1c20cda7a5faa7694226945c5e759fa9afe5625f9ccf8170be87faf602bec506"
@@ -161,8 +167,8 @@
     },
     {
       "path": "data/livestock-staging/concepts.csv",
-      "bytes": 579767,
-      "sha256": "039eb03220710f8f17c978180fee209615baad629816bd92ed1c44568bb5ff5f"
+      "bytes": 579785,
+      "sha256": "e6cb07d972babce223995025c25413a23d673c84ce989e17db3f76da6ee0e924"
     },
     {
       "path": "data/livestock-staging/definitions.csv",
@@ -176,8 +182,8 @@
     },
     {
       "path": "data/livestock-staging/labels.csv",
-      "bytes": 197039,
-      "sha256": "fd37b7addfdfa5f0898a928c607f5d233d56527efd17814a0cb1214d447072e3"
+      "bytes": 197147,
+      "sha256": "36f121af5b3a22500293b5b08e9c6ee8c2783691e72b95e06a5750e9294695d6"
     },
     {
       "path": "data/livestock-staging/legacy_records.csv",
@@ -211,8 +217,8 @@
     },
     {
       "path": "data/livestock-staging/relations.csv",
-      "bytes": 130866,
-      "sha256": "6b4d494d651c31c535b5db65c437fc2e2e8dc3a37eccb0c696f67ecf9f1f2ba4"
+      "bytes": 131124,
+      "sha256": "f861943948922075fcee29aacb1ca397111060c2d9eff4f23ea83e00e59e761b"
     },
     {
       "path": "data/livestock-staging/schemes.csv",
@@ -231,13 +237,13 @@
     },
     {
       "path": "dist/livestock-staging/aom-livestock.jsonld",
-      "bytes": 1951927,
-      "sha256": "cf21a1f565a0df235c72c5ca936faf77c88735428f6894f052d9fdabf48c74b4"
+      "bytes": 1952491,
+      "sha256": "74fefbdd0a11fd121ab03317f04d54db28895a3cc56850dfcb42a6607f095875"
     },
     {
       "path": "dist/livestock-staging/aom-livestock.ttl",
-      "bytes": 1210949,
-      "sha256": "ec8e8e9c8f388882c8e53751bd5848fc52bcfa42a133245c23a127f29f8b207f"
+      "bytes": 1211327,
+      "sha256": "640ab29c233da33c3586f6aa1683bc5f000ed06e350ebd2dd7e9014c9c886f0c"
     },
     {
       "path": "dist/livestock-staging/aom-schema.ttl",
@@ -256,13 +262,13 @@
     },
     {
       "path": "dist/livestock-staging/edges.csv",
-      "bytes": 130855,
-      "sha256": "9068241e8d8d8035cda18e3af5ff1a49e73635fc16d3e748b4ed492fe160f0ab"
+      "bytes": 131113,
+      "sha256": "530ea097ae7d26065664dce665b9818bcee1e65f5fcf4311ab26db4b1255b0b6"
     },
     {
       "path": "dist/livestock-staging/nodes.csv",
-      "bytes": 179494,
-      "sha256": "3cfa436582436eb89254c3d5d8cac0fad56cb53a6780f5a6fe4446a46e77b524"
+      "bytes": 179512,
+      "sha256": "e69b97be30bd3609264782ccead974798377ef610c4ae982a23d2a882c7912d2"
     }
   ]
 }

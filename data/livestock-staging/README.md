@@ -1,5 +1,10 @@
 # AOM livestock normalization staging
 
+Preferred-label identity governance lives in
+`approved_ontology_collision_decisions.csv`. Equal SKOS labels remain permitted
+where hierarchy and model role distinguish concepts; verified duplicates use
+`approved_deprecations.csv` replacement links.
+
 Generated from public AOM Livestock v2.0, DOI
 <https://doi.org/10.7910/DVN/75E7HV>.
 

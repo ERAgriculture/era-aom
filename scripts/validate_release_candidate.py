@@ -112,8 +112,8 @@ def main():
     crosswalk = pq.read_table(release / "migration-crosswalk.parquet")
     rules = pq.read_table(release / "ingredient-harmonization-rules.parquet")
     material_facets = pq.read_table(release / "feed-material-facets.parquet")
-    assert nodes.num_rows == 2769 and edges.num_rows == 2790
-    assert crosswalk.num_rows == 4
+    assert nodes.num_rows == 2769 and edges.num_rows == 2796
+    assert crosswalk.num_rows == 10
     assert rules.num_rows == 40 and material_facets.num_rows == 1625
     assert ("AOM_006072", "AOM_001326") in set(zip(
         crosswalk.column("deprecated_id").to_pylist(),

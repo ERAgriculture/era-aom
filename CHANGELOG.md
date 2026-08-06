@@ -4,6 +4,10 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Govern all 105 historical preferred-label collision groups: retain 98
+  context-distinct groups, deprecate six verified duplicates, preserve Cotton
+  Seed as explicit hold, and correct audit inputs to use governed active labels.
+
 - Close all 19 ingredient semantic-model exceptions with governed feed-product
   type and composition-state facets; approve seven identity-cluster decisions,
   deprecate duplicate Bothriochloa record `AOM_001898`, retain one explicit

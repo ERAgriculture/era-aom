@@ -395,6 +395,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000351"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000338"
@@ -434,7 +439,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -7938,6 +7943,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000350"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000331"
@@ -7991,7 +8001,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -12274,6 +12284,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000354"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000338"
@@ -12313,7 +12328,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -43341,6 +43356,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000352"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000338"
@@ -43380,7 +43400,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -61672,6 +61692,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000935"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -61711,7 +61736,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -87893,6 +87918,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000353"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000338"
@@ -87932,7 +87962,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -110624,6 +110654,60 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000935",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "rationed grazing"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000932"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "rationed pasture system"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000935"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Strip grazing"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://opendata.inra.fr/EOL/EOL_0001945"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000335",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -110701,60 +110785,6 @@
       {
         "@language": "en",
         "@value": "Variable Costs-Plastic Mulch"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000935",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@language": "en",
-        "@value": "rationed grazing"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000932"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "rationed pasture system"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_000935"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "strip grazing"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://opendata.inra.fr/EOL/EOL_0001945"
       }
     ],
     "urn:era:property:conceptType": [

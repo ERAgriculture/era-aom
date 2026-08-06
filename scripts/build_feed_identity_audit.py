@@ -7,6 +7,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/livestock-staging/legacy_records.csv"
+CONCEPTS = ROOT / "data/livestock-staging/concepts.csv"
+LABELS = ROOT / "data/livestock-staging/labels.csv"
+COLLISION_DECISIONS = ROOT / "data/livestock-staging/approved_ontology_collision_decisions.csv"
 OUT = ROOT / "review/livestock-v4"
 
 EMPTY = {"", "na", "no match", "no match in aom", "false"}
@@ -42,6 +45,17 @@ def clean_external(value):
 
 with SOURCE.open(encoding="utf-8", newline="") as handle:
     source_rows = list(csv.DictReader(handle))
+with CONCEPTS.open(encoding="utf-8", newline="") as handle:
+    governed_concepts = list(csv.DictReader(handle))
+with LABELS.open(encoding="utf-8", newline="") as handle:
+    governed_labels = list(csv.DictReader(handle))
+collision_decisions = {}
+if COLLISION_DECISIONS.exists():
+    with COLLISION_DECISIONS.open(encoding="utf-8", newline="") as handle:
+        collision_decisions = {
+            row["collision_key"]: row for row in csv.DictReader(handle)
+            if row["status"] == "approved"
+        }
 all_rows = [row for row in source_rows if row["AOM"]]
 rows = [row for row in all_rows if row["L5"] == "Feed Ingredient"]
 
@@ -121,25 +135,38 @@ for row in rows:
         "rationale": "",
     })
 
+current_pref = {
+    row["concept_id"]: row["label"] for row in governed_labels
+    if row["language"] == "en" and row["label_type"] == "pref"
+}
+current_concepts = {
+    row["concept_id"]: row for row in governed_concepts if row["status"] != "deprecated"
+}
 exact_labels = defaultdict(set)
-for row in all_rows:
-    key = normalized(row["Edge_Value"])
+for concept_id in current_concepts:
+    key = normalized(current_pref[concept_id])
     if key:
-        exact_labels[key].add(row["AOM"])
-all_by_id = {row["AOM"]: row for row in all_rows}
+        exact_labels[key].add(concept_id)
 preferred_collision_rows = []
 for key, ids_set in sorted(exact_labels.items()):
     if len(ids_set) < 2:
         continue
     ids = sorted(ids_set)
+    decision = collision_decisions.get(key)
     preferred_collision_rows.append({
         "collision_key": key,
         "concept_ids": ";".join(ids),
-        "preferred_labels": ";".join(all_by_id[item]["Edge_Value"] for item in ids),
-        "hierarchy_paths": " | ".join(all_by_id[item]["Derived_Path"] for item in ids),
+        "preferred_labels": ";".join(current_pref[item] for item in ids),
+        "hierarchy_paths": " | ".join(current_concepts[item]["derived_path"] for item in ids),
         "candidate_count": len(ids),
-        "status": "review-required",
-        "recommended_action": "Confirm duplicate, contextual distinction, relabel, or hold; never merge automatically.",
+        "status": (
+            "approved-identity-hold" if decision and decision["decision"] == "hold_identity"
+            else "approved-retain-distinct" if decision else "review-required"
+        ),
+        "recommended_action": (
+            decision["rationale"] if decision
+            else "Confirm duplicate, contextual distinction, relabel, or hold; never merge automatically."
+        ),
     })
 duplicate_label_groups = len(preferred_collision_rows)
 summary_rows = [
@@ -147,6 +174,7 @@ summary_rows = [
     {"scope": "all AOM", "quality_signal": "identified source rows", "count": len(all_rows), "severity": "high", "interpretation": "One source record lacks an AOM identifier.", "next_action": "Review unidentified source record before cutover."},
     {"scope": "all AOM", "quality_signal": "missing definitions", "count": sum(not row["Description"].strip() for row in all_rows), "severity": "high", "interpretation": "Identity and scope cannot be reviewed reliably from labels alone.", "next_action": "Author or source definitions by domain."},
     {"scope": "all AOM", "quality_signal": "normalized preferred-label collisions", "count": duplicate_label_groups, "severity": "high", "interpretation": "Potential duplicates, contextual variants, or over-normalized labels.", "next_action": "Review identity; never merge automatically."},
+    {"scope": "all AOM", "quality_signal": "unresolved preferred-label collisions", "count": sum(row["status"] == "review-required" for row in preferred_collision_rows), "severity": "pass" if all(row["status"] != "review-required" for row in preferred_collision_rows) else "high", "interpretation": "Collision groups without governed disposition.", "next_action": "Review identity; never merge automatically."},
     {"scope": "feed ingredients", "quality_signal": "concepts", "count": len(rows), "severity": "baseline", "interpretation": "Feed-material review scope.", "next_action": "Review in domain batches."},
     {"scope": "feed ingredients", "quality_signal": "lexical collision groups", "count": len(lexical_rows), "severity": "high", "interpretation": "Preferred and alternate labels collide after documented terminology normalization.", "next_action": "Compare hierarchy, definitions, source occurrences, and public mappings."},
     {"scope": "feed ingredients", "quality_signal": "shared public-identifier groups", "count": len(external_rows), "severity": "medium", "interpretation": "Feedipedia or CPC mappings span multiple semantic levels.", "next_action": "Review mapping granularity; shared mapping does not prove identity."},

@@ -63,7 +63,7 @@ assert {row["resolved_concept_id"] for row in resolutions} == {
     "AOM_006275", "AOM_001676",
 }
 assert len(replacements) == 3
-assert len(deprecations) == 4
+assert len(deprecations) == 10
 assert len(semantic_bindings) == 13
 assert len(semantic_value_bindings) == 298
 assert len(component_classifications) == 83
@@ -98,6 +98,12 @@ assert {
     ("AOM_004000", "AOM_003960"),
     ("AOM_006072", "AOM_001326"),
     ("AOM_001898", "AOM_001459"),
+    ("AOM_000338", "AOM_000350"),
+    ("AOM_000339", "AOM_000351"),
+    ("AOM_000340", "AOM_000352"),
+    ("AOM_000341", "AOM_000353"),
+    ("AOM_000342", "AOM_000354"),
+    ("AOM_000949", "AOM_000935"),
 }
 assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
@@ -183,6 +189,9 @@ assert status["AOM_001884"] == "deprecated"
 assert status["AOM_004000"] == "deprecated"
 assert status["AOM_006072"] == "deprecated"
 assert status["AOM_001898"] == "deprecated"
+assert all(status[concept_id] == "deprecated" for concept_id in {
+    "AOM_000338", "AOM_000339", "AOM_000340", "AOM_000341", "AOM_000342", "AOM_000949"
+})
 brewers_pref = next(
     row["label"] for row in labels
     if row["concept_id"] == "AOM_000564" and row["label_type"] == "pref"
@@ -202,6 +211,12 @@ assert {
     ("AOM_004000", "replaced_by", "AOM_003960"),
     ("AOM_006072", "replaced_by", "AOM_001326"),
     ("AOM_001898", "replaced_by", "AOM_001459"),
+    ("AOM_000338", "replaced_by", "AOM_000350"),
+    ("AOM_000339", "replaced_by", "AOM_000351"),
+    ("AOM_000340", "replaced_by", "AOM_000352"),
+    ("AOM_000341", "replaced_by", "AOM_000353"),
+    ("AOM_000342", "replaced_by", "AOM_000354"),
+    ("AOM_000949", "replaced_by", "AOM_000935"),
 }
 mineral_children = set(new_by_case["PARENT-006"]["child_ids"].split(";"))
 assert {
@@ -353,7 +368,7 @@ assert manifest["identifier_policy"]["rdf_uri_status"] == "provisional-staging-o
 assert manifest["counts"]["source_records"] == len(legacy)
 assert manifest["counts"]["published_staging_concepts"] == len(concepts)
 assert manifest["counts"]["hierarchy_relations"] == len(parents)
-assert manifest["counts"]["replacement_relations"] == 4
+assert manifest["counts"]["replacement_relations"] == 10
 assert manifest["counts"]["semantic_relations"] == len(semantic_relations)
 assert manifest["counts"]["hierarchy_gaps"] == len(gaps)
 assert manifest["counts"]["mapping_assertions"] == len(mappings)

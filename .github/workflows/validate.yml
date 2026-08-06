@@ -32,12 +32,15 @@ jobs:
       - name: Validate feed-material harmonization reviews
         run: |
           python scripts/build_feed_identity_audit.py
+          python scripts/build_ontology_collision_governance.py
+          python scripts/build_feed_identity_audit.py
           python scripts/build_ingredient_harmonization_workbench.py
           python scripts/build_ingredient_rule_quality_gate.py
           python scripts/build_ingredient_facet_value_governance.py
           python scripts/promote_approved_ingredient_rules.py
           python scripts/build_ingredient_model_gap_review.py
           python tests/validate_feed_identity_audit.py
+          python tests/validate_ontology_collision_governance.py
           python tests/validate_ingredient_harmonization_workbench.py
           python tests/validate_ingredient_rule_quality_gate.py
           python tests/validate_approved_ingredient_rule_promotion.py
