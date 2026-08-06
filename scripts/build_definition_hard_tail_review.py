@@ -15,6 +15,7 @@ FEEDIPEDIA = ROOT / "review/livestock-v11/feedipedia_source_scope_review.csv"
 PUBLIC = ROOT / "review/livestock-v12/public_authority_source_scope_review.csv"
 PUBLIC_COHORT = ROOT / "review/livestock-v12/public_authority_cohort.csv"
 WORKBOOK = ROOT / "review/livestock-v13/workbook_source_scope_review.csv"
+IDENTITY = ROOT / "review/livestock-v16/identity_alias_review.csv"
 
 CORE = {"AOM_000106", "AOM_000846"}
 FEEDIPEDIA_CATEGORY = {"AOM_000628", "AOM_000644", "AOM_000683", "AOM_000701", "AOM_000735"}
@@ -63,6 +64,23 @@ COMPOUND_DESCRIPTORS = {
         ("aom:physicalForm", "AOM_101075", "Mixture form", "hash"),
         ("aom:productRole", "AOM_101062", "By-product role", "hash"),
     ],
+    "molasses": [
+        ("aom:physicalForm", "AOM_101077", "Liquid form", "molasses"),
+        ("aom:processingMethod", "AOM_101084", "Sugar processing", "molasses"),
+        ("aom:productRole", "AOM_101062", "By-product role", "molasses"),
+    ],
+}
+
+IDENTITY_FACETS = {
+    "AOM_001811": [("aom:physicalForm", "AOM_101075", "Mixture form", "rumen contents"),
+                    ("aom:productRole", "AOM_101062", "By-product role", "rumen contents")],
+    "AOM_001845": [("aom:ingredientPart", "AOM_101041", "Sprout", "malt sprout"),
+                    ("aom:productRole", "AOM_101062", "By-product role", "malt sprout")],
+    "AOM_002166": [("aom:productRole", "AOM_101059", "Residue role", "bagasse")],
+    "AOM_003072": [("aom:ingredientPart", "AOM_101038", "Seed", "groundnut")],
+    "AOM_003482": [("aom:ingredientPart", "AOM_101037", "Root", "sugar beet")],
+    "AOM_003911": [("aom:productRole", "AOM_101059", "Residue role", "sievate")],
+    "AOM_006008": [("aom:productRole", "AOM_101062", "By-product role", "manure")],
 }
 
 # Longest suffix first. Each match strips descriptor from governed source and
@@ -148,10 +166,13 @@ feed = {row["concept_id"]: row for row in read(FEEDIPEDIA)}
 public = {row["concept_id"]: row for row in read(PUBLIC)}
 public_cohort = {row["concept_id"]: row for row in read(PUBLIC_COHORT)}
 workbook = {row["concept_id"]: row for row in read(WORKBOOK)}
+identity = {row["concept_id"]: row for row in read(IDENTITY)}
 review_rows, facet_rows = [], []
 for item in read(COHORT):
     cid, label, route = item["concept_id"], item["preferred_label"], item["recommended_route"]
     source, facets = decompose(label)
+    if cid in IDENTITY_FACETS:
+        facets = IDENTITY_FACETS[cid]
     # These compound sources retain an uncovered component after generic suffix
     # stripping; partial decomposition would misstate governed identity.
     if cid in {"AOM_003930"}:
@@ -181,16 +202,24 @@ for item in read(COHORT):
         decision, status = "approve_workbook_source_with_explicit_facets", "approved"
         evidence = "review/livestock-v13/workbook_source_cohort.csv"
         rationale = "Canonical workbook path establishes source; explicit oil descriptor maps to approved constituent facet, not physical form."
+    elif cid in identity and identity[cid]["status"] == "approved" and facets:
+        source = identity[cid]["governed_source_identity"]
+        decision, status = "approve_identity_alias_with_explicit_facets", "approved"
+        evidence = identity[cid]["evidence"]
+        rationale = identity[cid]["rationale"] + " Definition adds only reviewed structured facets."
     if status == "held":
         if route == "research_feedipedia":
             prior = feed[cid]["decision"]
-            blocker = prior.removeprefix("hold_")
+            identity_hold = identity.get(cid)
+            blocker = identity_hold["blocker_code"] if identity_hold and identity_hold["status"] == "held" else prior.removeprefix("hold_")
             next_action = {
                 "hold_shared_page": "Review every co-referenced AOM concept; retain distinct scopes or approve synonym/replacement with occurrence evidence.",
                 "hold_identity_or_alias_review": "Verify scientific/common-name equivalence and material part against taxonomic or feed authority.",
                 "hold_source_warning": "Find independent citable feed or taxonomic authority; warned page cannot support approval.",
                 "hold_retrieval_failure": "Recover archived page or replace mapping with reachable authoritative evidence.",
             }.get(prior, "Review mapping granularity and replace discovery-only evidence.")
+            if identity_hold and identity_hold["status"] == "held":
+                next_action = identity_hold["rationale"]
         elif route == "research_public_ontology":
             blocker = public[cid]["decision"].removeprefix("hold_")
             next_action = "Correct or narrow public mapping, then establish material component/product scope with direct authority evidence."

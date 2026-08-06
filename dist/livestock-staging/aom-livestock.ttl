@@ -5840,6 +5840,7 @@
   skos:prefLabel "Cowpea Haulm"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “cowpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100867> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3917> ;
   skos:relatedMatch <https://www.feedipedia.org/node/17446> .
@@ -11695,9 +11696,10 @@
 <urn:era-aom:livestock:AOM_001265> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001265" ;
-  skos:prefLabel "Ziziphus mauritiania"@en ;
+  skos:prefLabel "Ziziphus mauritiana"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Ziziphus mauritiania"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000665> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_157914> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12199> .
@@ -13441,9 +13443,10 @@
 <urn:era-aom:livestock:AOM_001462> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001462" ;
-  skos:prefLabel "Cynadon dactylon"@en ;
+  skos:prefLabel "Cynodon dactylon"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Cynadon dactylon"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11847> .
 
@@ -13634,6 +13637,7 @@
   skos:prefLabel "Sugar Beet Molasses"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “sugar beet” and characteristics: physical form — Liquid form; processing method — Sugar processing; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100915> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_4889> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3555> ;
@@ -16744,6 +16748,7 @@
   skos:prefLabel "Rumen Contents"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “ruminant digestive contents” and characteristics: physical form — Mixture form; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100976> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12538> .
 
@@ -17069,6 +17074,7 @@
   skos:prefLabel "Malt Sprout"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “barley malt” and characteristics: ingredient part — Sprout; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000594> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11829> .
 
@@ -19966,6 +19972,7 @@
   skos:prefLabel "Sugarcane Bagasse"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “sugarcane” and characteristics: product role — Residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100916> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4547> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11673> .
@@ -21222,6 +21229,7 @@
   skos:prefLabel "Groundnut"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Seed."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000667> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3818> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12165> .
@@ -21650,6 +21658,7 @@
   skos:prefLabel "Sugar Beet"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “sugar beet” and characteristics: ingredient part — Root."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100915> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3555> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11843> .
@@ -22247,6 +22256,7 @@
   skos:prefLabel "Cassava Sieviate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed material with governed source identity “cassava” and characteristics: product role — Residue role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100910> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3983> ;
   skos:relatedMatch <https://www.feedipedia.org/node/14530> .
@@ -22884,6 +22894,7 @@
   era:status "unknown" ;
   skos:altLabel "Chicken Litter"@en ;
   skos:altLabel "Chicken Waste"@en ;
+  skos:definition "A feed material with governed source identity “chicken” and characteristics: product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000561> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12473> .
 

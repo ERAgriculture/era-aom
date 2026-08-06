@@ -3583,6 +3583,21 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000601">
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:notation>AOM_000601</skos:notation>
+    <era:status>unknown</era:status>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/17446"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3917"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cowpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100867"/>
+    <skos:prefLabel xml:lang="en">Cowpea Haulm</skos:prefLabel>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006078"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_002018"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001754"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001932">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Housefly Maggot Dried Ground</skos:prefLabel>
@@ -4867,12 +4882,13 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001462">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
-    <skos:prefLabel xml:lang="en">Cynadon dactylon</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Cynadon dactylon</skos:altLabel>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11847"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_001462</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000701"/>
+    <skos:prefLabel xml:lang="en">Cynodon dactylon</skos:prefLabel>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001649"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001136">
@@ -7945,6 +7961,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001811">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_001811</skos:notation>
+    <skos:definition xml:lang="en">A feed material with governed source identity “ruminant digestive contents” and characteristics: physical form — Mixture form; product role — By-product role.</skos:definition>
     <skos:prefLabel xml:lang="en">Rumen Contents</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100976"/>
@@ -9279,13 +9296,14 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001265">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:altLabel xml:lang="en">Ziziphus mauritiania</skos:altLabel>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:prefLabel xml:lang="en">Ziziphus mauritiania</skos:prefLabel>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_157914"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12199"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000665"/>
     <skos:notation>AOM_001265</skos:notation>
+    <skos:prefLabel xml:lang="en">Ziziphus mauritiana</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000895">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -11086,6 +11104,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000561"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “chicken” and characteristics: product role — By-product role.</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001940"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001094"/>
   </rdf:Description>
@@ -19595,20 +19614,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000718"/>
     <skos:notation>AOM_002224</skos:notation>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000601">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:notation>AOM_000601</skos:notation>
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/17446"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3917"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100867"/>
-    <skos:prefLabel xml:lang="en">Cowpea Haulm</skos:prefLabel>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006078"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_002018"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001754"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001278">
     <skos:prefLabel xml:lang="en">Sheanut Cake</skos:prefLabel>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11599"/>
@@ -20299,6 +20304,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100916"/>
     <era:status>unknown</era:status>
+    <skos:definition xml:lang="en">A feed material with governed source identity “sugarcane” and characteristics: product role — Residue role.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006266"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006268"/>
@@ -20366,6 +20372,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:status>unknown</era:status>
     <skos:notation>AOM_003482</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “sugar beet” and characteristics: ingredient part — Root.</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006270"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002020">
@@ -24450,6 +24457,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000667"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: ingredient part — Seed.</skos:definition>
     <skos:prefLabel xml:lang="en">Groundnut</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
@@ -25019,6 +25027,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100910"/>
     <skos:notation>AOM_003911</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cassava” and characteristics: product role — Residue role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -29756,6 +29765,19 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006239"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006240"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001482">
+    <era:status>unknown</era:status>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3555"/>
+    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12340"/>
+    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_4889"/>
+    <skos:notation>AOM_001482</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “sugar beet” and characteristics: physical form — Liquid form; processing method — Sugar processing; product role — By-product role.</skos:definition>
+    <skos:prefLabel xml:lang="en">Sugar Beet Molasses</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100915"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101118">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101020"/>
     <skos:prefLabel xml:lang="en">Slurry form</skos:prefLabel>
@@ -32438,18 +32460,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:prefLabel xml:lang="en">Sorghum Ground</skos:prefLabel>
     <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001482">
-    <era:status>unknown</era:status>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3555"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12340"/>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_4889"/>
-    <skos:notation>AOM_001482</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:prefLabel xml:lang="en">Sugar Beet Molasses</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100915"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001677">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001407"/>
@@ -33185,6 +33195,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000594"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11829"/>
     <skos:notation>AOM_001845</skos:notation>
+    <skos:definition xml:lang="en">A feed material with governed source identity “barley malt” and characteristics: ingredient part — Sprout; product role — By-product role.</skos:definition>
     <era:status>unknown</era:status>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:prefLabel xml:lang="en">Malt Sprout</skos:prefLabel>
