@@ -80,7 +80,7 @@ assert sum(row["disposition"] == "hold" for row in component_classifications) ==
 assert len(facet_concepts) == 107
 assert len(harmonization_rules) == 40
 assert len(generated_material_facets) == 1599
-assert len(hard_tail_material_facets) == 129
+assert len(hard_tail_material_facets) == 147
 assert len(whole_grain_decisions) == 4
 assert len(source_overrides) == 15
 assert len(component_value_mappings) == 45
@@ -117,7 +117,7 @@ assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
 assert manifest["counts"]["approved_ingredient_facet_concepts"] == 107
 assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
 assert manifest["counts"]["approved_generated_feed_material_facets"] == 1599
-assert manifest["counts"]["approved_hard_tail_feed_material_facets"] == 129
+assert manifest["counts"]["approved_hard_tail_feed_material_facets"] == 147
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
 assert manifest["counts"]["approved_feed_material_source_overrides"] == 15
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45

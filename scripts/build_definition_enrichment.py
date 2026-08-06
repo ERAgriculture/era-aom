@@ -124,6 +124,13 @@ for review in hard_tail_reviews:
             "Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."
         )
         method = "composed_from_reviewed_feedipedia_category_scope"
+    elif review["decision"] == "approve_bounded_workbook_material_scope":
+        definition = (
+            f"An AOM feed material with governed operational source identity “{review['governed_source_identity']}”. "
+            "Component, whole-material integrity, processing method, physical form, product role, composition, "
+            "constituent, and nutritional properties are unspecified unless separately asserted."
+        )
+        method = "composed_from_bounded_workbook_material_scope"
     else:
         raise ValueError(f"Approved hard-tail case lacks facets or category method: {concept_id}")
     rows.append({
