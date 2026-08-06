@@ -34,6 +34,9 @@ inventory = {row["concept_id"]: row for row in csv.DictReader(
     (ROOT / "review/livestock-v5/ingredient_harmonization_inventory.csv").open(encoding="utf-8", newline="")
 )}
 material_facets = read("approved_feed_material_facets.csv") + read("approved_generated_feed_material_facets.csv")
+feedipedia_scope_reviews = list(csv.DictReader(
+    (ROOT / "review/livestock-v11/feedipedia_source_scope_review.csv").open(encoding="utf-8", newline="")
+))
 
 rows = []
 for row in new_concepts:
@@ -81,6 +84,37 @@ for concept_id, facets in sorted(by_material.items()):
         "status": "approved", "reviewer": "Pete Steward", "review_date": "2026-08-06",
         "evidence": "data/livestock-staging/approved_feed_material_facets.csv;data/livestock-staging/approved_generated_feed_material_facets.csv",
         "rationale": "Definition states only governed source identity and approved semantic assertions; no biological or nutritional claim is inferred.",
+    })
+
+base_ids = {row["concept_id"] for row in rows}
+
+family_label = {
+    "Animal": "animal-derived",
+    "Animal Byproduct": "animal by-product",
+    "Animal Manures": "animal-manure",
+    "Crop Byproduct": "crop by-product",
+    "Crop Product": "crop-product",
+    "Forage Plants": "forage-plant",
+    "Other Ingredients": "other-ingredient",
+}
+for review in feedipedia_scope_reviews:
+    concept_id = review["concept_id"]
+    if review["status"] != "approved" or concept_id in existing or concept_id in base_ids:
+        continue
+    source = review["source_identity"].strip()
+    if not source:
+        raise ValueError(f"Approved Feedipedia scope lacks governed identity: {concept_id}")
+    rows.append({
+        "concept_id": concept_id, "language": "en",
+        "definition": (
+            f"A {family_label[review['ingredient_family']]} feed material with governed identity “{source}”. "
+            "Component, processing method, physical form, product role, integrity, composition, and constituent "
+            "are unspecified at this concept level unless separately asserted."
+        ),
+        "definition_method": "composed_from_reviewed_feedipedia_source_scope",
+        "status": "approved", "reviewer": review["reviewer"], "review_date": review["review_date"],
+        "evidence": review["feedipedia_url"],
+        "rationale": review["rationale"],
     })
 
 base_ids = {row["concept_id"] for row in rows}

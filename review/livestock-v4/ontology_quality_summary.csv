@@ -2,11 +2,11 @@ scope,quality_signal,count,severity,interpretation,next_action
 all AOM,source rows,2503,baseline,Canonical-workbook-aligned source records audited.,Preserve baseline.
 all AOM,identified source rows,2502,high,One source record lacks an AOM identifier.,Review unidentified source record before cutover.
 legacy source,missing source definitions,1865,baseline,Public source rows without original definitions; preserved for provenance.,Do not alter source snapshot.
-active governed vocabulary,missing definitions,639,high,Active governed concepts without definitions after approved enrichment.,Prioritize remaining domain-authority research.
+active governed vocabulary,missing definitions,538,high,Active governed concepts without definitions after approved enrichment.,Prioritize remaining domain-authority research.
 all AOM,normalized preferred-label collisions,99,high,"Potential duplicates, contextual variants, or over-normalized labels.",Review identity; never merge automatically.
 all AOM,unresolved preferred-label collisions,0,pass,Collision groups without governed disposition.,Review identity; never merge automatically.
 feed ingredients,concepts,1644,baseline,Feed-material review scope.,Review in domain batches.
 feed ingredients,lexical collision groups,16,high,Preferred and alternate labels collide after documented terminology normalization.,"Compare hierarchy, definitions, source occurrences, and public mappings."
 feed ingredients,shared public-identifier groups,191,medium,Feedipedia or CPC mappings span multiple semantic levels.,Review mapping granularity; shared mapping does not prove identity.
 cereal feed materials,review candidates,369,high,Coherent first expert-review batch with extracted process/form signals.,"Complete disposition, reviewer, date, and rationale."
-cereal feed materials,missing definitions,137,high,Nearly all cereal identities lack explicit scope definitions.,Prioritize ambiguous whole/grain/component concepts.
+cereal feed materials,missing definitions,102,high,Nearly all cereal identities lack explicit scope definitions.,Prioritize ambiguous whole/grain/component concepts.
