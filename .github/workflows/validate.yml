@@ -42,6 +42,7 @@ jobs:
           python scripts/build_workbook_model_gap_review.py
           python scripts/build_authority_model_consolidation.py
           python scripts/build_definition_hard_tail_review.py
+          python scripts/build_final_definition_tail_register.py
           python scripts/build_authority_mapping_review.py
           python scripts/build_definition_enrichment.py
           python scripts/build_feed_identity_audit.py
@@ -63,6 +64,7 @@ jobs:
           python tests/validate_shared_page_review.py
           python tests/validate_workbook_model_gap_review.py
           python tests/validate_authority_model_consolidation.py
+          python tests/validate_final_definition_tail_register.py
           python tests/validate_authority_mapping_review.py
           python tests/validate_ingredient_harmonization_workbench.py
           python tests/validate_ingredient_rule_quality_gate.py
