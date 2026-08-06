@@ -19,6 +19,7 @@ IDENTITY = ROOT / "review/livestock-v16/identity_alias_review.csv"
 SHARED = ROOT / "review/livestock-v17/shared_page_review.csv"
 WORKBOOK_GAPS = ROOT / "review/livestock-v18/workbook_model_gap_review.csv"
 CONSOLIDATED = ROOT / "review/livestock-v19/authority_model_review.csv"
+MATERIAL_SCOPE = ROOT / "review/livestock-v21/material_scope_review.csv"
 
 CORE = {"AOM_000106", "AOM_000846"}
 FEEDIPEDIA_CATEGORY = {"AOM_000628", "AOM_000644", "AOM_000683", "AOM_000701", "AOM_000735"}
@@ -119,6 +120,23 @@ CONSOLIDATED_FACETS = {
                     ("aom:productRole", "AOM_101062", "By-product role", "molasses")],
 }
 
+MATERIAL_SCOPE_FACETS = {
+    "AOM_000538": [("aom:ingredientConstituent", "AOM_101080", "Ash constituent", "ash")],
+    "AOM_000571": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
+    "AOM_000577": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
+    "AOM_000578": [("aom:processingMethod", "AOM_101082", "Milling", "polish"),
+                    ("aom:productRole", "AOM_101062", "By-product role", "polish")],
+    "AOM_000589": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
+    "AOM_000603": COMPOUND_DESCRIPTORS["haulm"],
+    "AOM_000671": [("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil")],
+    "AOM_001317": [("aom:ingredientConstituent", "AOM_101066", "Fat constituent", "full fat")],
+    "AOM_001373": [("aom:productRole", "AOM_101079", "Binder role", "binder hierarchy")],
+    "AOM_002107": [("aom:ingredientPart", "AOM_101038", "Seed", "bean")],
+    "AOM_002218": COMPOUND_DESCRIPTORS["haulm"],
+    "AOM_003206": [("aom:productRole", "AOM_101062", "By-product role", "byproduct")],
+    "AOM_004255": [("aom:ingredientPart", "AOM_101038", "Seed", "seed")],
+}
+
 # Longest suffix first. Each match strips descriptor from governed source and
 # emits existing approved facet value; no new semantic class is invented here.
 DESCRIPTORS = [
@@ -209,6 +227,7 @@ identity = {row["concept_id"]: row for row in read(IDENTITY)}
 shared = {row["concept_id"]: row for row in read(SHARED)}
 workbook_gaps = {row["concept_id"]: row for row in read(WORKBOOK_GAPS)}
 consolidated = {row["concept_id"]: row for row in read(CONSOLIDATED)}
+material_scope = {row["concept_id"]: row for row in read(MATERIAL_SCOPE)}
 review_rows, facet_rows = [], []
 for item in read(COHORT):
     cid, label, route = item["concept_id"], item["preferred_label"], item["recommended_route"]
@@ -221,6 +240,8 @@ for item in read(COHORT):
         facets = WORKBOOK_GAP_FACETS[cid]
     if cid in CONSOLIDATED_FACETS:
         facets = CONSOLIDATED_FACETS[cid]
+    if cid in MATERIAL_SCOPE_FACETS:
+        facets = MATERIAL_SCOPE_FACETS[cid]
     # These compound sources retain an uncovered component after generic suffix
     # stripping; partial decomposition would misstate governed identity.
     if cid in {"AOM_003930"}:
@@ -271,6 +292,11 @@ for item in read(COHORT):
         decision, status = "approve_consolidated_authority_with_explicit_facets", "approved"
         evidence = consolidated[cid]["evidence"]
         rationale = consolidated[cid]["rationale"] + " Definition adds only reviewed structured facets."
+    elif cid in material_scope and material_scope[cid]["status"] == "approved":
+        source = material_scope[cid]["governed_source_identity"]
+        decision, status = "approve_bounded_workbook_material_scope", "approved"
+        evidence = material_scope[cid]["evidence"]
+        rationale = material_scope[cid]["rationale"]
     if status == "held":
         consolidated_hold = consolidated.get(cid)
         if consolidated_hold and consolidated_hold["status"] == "held":
