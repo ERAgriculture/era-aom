@@ -13,6 +13,8 @@ FACET_MODEL = {
     "anatomical_part": ("aom:ingredientPart", "aom:IngredientPartCategory"),
     "physical_form": ("aom:physicalForm", "aom:IngredientPhysicalForm"),
     "material_integrity": ("aom:materialIntegrity", "aom:MaterialIntegrity"),
+    "feed_product_type": ("aom:feedProductType", "aom:FeedProductType"),
+    "composition_state": ("aom:compositionState", "aom:CompositionState"),
     "processing_method": ("aom:processingMethod", "aom:ProcessingMethod"),
     "product_role": ("aom:productRole", "aom:ProductRole"),
     "chemical_constituent": ("aom:ingredientConstituent", "aom:IngredientConstituent"),
@@ -122,11 +124,20 @@ EXTENSION_VALUES = [
     ("form_pellet", "Pellet form", "form_root", "physical_form"),
     ("integrity_root", "Material integrity values", None, "material_integrity"),
     ("integrity_whole_grain", "Whole grain", "integrity_root", "material_integrity"),
+    # ADR 0020 closes ambiguous pulp, hay, formulated-meal, and whole-milk cases.
+    ("product_type_root", "Feed product types", None, "feed_product_type"),
+    ("product_processing_pulp", "Processing pulp", "product_type_root", "feed_product_type"),
+    ("product_hay", "Hay", "product_type_root", "feed_product_type"),
+    ("product_compound_feed", "Compound feed", "product_type_root", "feed_product_type"),
+    ("composition_state_root", "Composition states", None, "composition_state"),
+    ("composition_whole_milk", "Whole-milk composition", "composition_state_root", "composition_state"),
 ]
 RULE_EXTENSION_KEYS = {key for key, *_ in EXTENSION_VALUES[1:]}
 
 
 def evidence_for(key):
+    if key.startswith("product_") or key.startswith("composition_"):
+        return "docs/decisions/0020-ingredient-semantic-closure.md"
     if key in {"integrity_root", "integrity_whole_grain"}:
         return "docs/decisions/0018-whole-grain-integrity.md"
     if key in RULE_EXTENSION_KEYS:

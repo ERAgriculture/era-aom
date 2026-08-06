@@ -42,11 +42,11 @@ assert all(
     and row["review_date"] == "2026-08-05"
     for row in approved
 )
-assert len(generated) == 1600
+assert len(generated) == 1599
 assert manifest == {
     "rule_version": "1.0.0", "status": "approved-and-promoted",
     "reviewer": "Pete Steward", "review_date": "2026-08-05",
-    "approved_rules": 40, "generated_assertions": 1600,
+    "approved_rules": 40, "generated_assertions": 1599,
     "unapproved_rules": 28, "legacy_identifiers_preserved": True,
     "ilri_identifiers_used": False,
 }
@@ -83,6 +83,13 @@ assert ("aom:materialIntegrity", "Whole grain") in by_material["AOM_001313"]
 assert ("aom:ingredientPart", "Grain") in by_material["AOM_001313"]
 assert not any(row["rule_id"] == "PROCESS-DEHULLED" for row in generated)
 assert not any(row["target_label"] in {"Cake form", "Pulp form"} for row in generated)
+assert "AOM_001898" not in {row["feed_material_id"] for row in generated}
+assert ("aom:compositionState", "Whole-milk composition") in by_material["AOM_000555"]
+assert ("aom:feedProductType", "Compound feed") in by_material["AOM_000801"]
+assert ("aom:feedProductType", "Processing pulp") in by_material["AOM_001836"]
+assert by_material["AOM_000687"] >= {
+    ("aom:feedProductType", "Hay"), ("aom:processingMethod", "Drying")
+}
 
 families_with_candidates = {
     row["ingredient_family"] for row in inventory

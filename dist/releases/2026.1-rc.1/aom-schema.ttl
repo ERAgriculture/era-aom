@@ -47,6 +47,14 @@ aom:compatibilityPolicy a owl:DatatypeProperty ;
     rdfs:domain aom:SemanticBinding ;
     rdfs:range xsd:string .
 
+aom:compositionState a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:CompositionState .
+
+aom:feedProductType a owl:ObjectProperty ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:FeedProductType .
+
 aom:hasIngredientComponent a owl:ObjectProperty ;
     rdfs:domain aom:FeedFormulation ;
     rdfs:range aom:IngredientComponent .
@@ -152,12 +160,22 @@ aom:valueTargetConcept a owl:ObjectProperty ;
 aom:valueTargetProperty a owl:ObjectProperty ;
     rdfs:domain aom:SemanticValueBinding .
 
+aom:CompositionState a owl:Class ;
+    rdfs:label "composition state"@en ;
+    rdfs:comment "Governed compositional state of a feed material, independently of physical form."@en ;
+    rdfs:subClassOf skos:Concept .
+
 aom:Evidence a owl:Class ;
     rdfs:label "evidence"@en ;
     rdfs:subClassOf prov:Entity .
 
 aom:FeedFormulation a owl:Class ;
     rdfs:label "feed formulation"@en .
+
+aom:FeedProductType a owl:Class ;
+    rdfs:label "feed product type"@en ;
+    rdfs:comment "Product category arising from production, formulation, or conservation, independently of physical form and processing method."@en ;
+    rdfs:subClassOf skos:Concept .
 
 aom:IngredientConstituent a owl:Class ;
     rdfs:label "ingredient constituent"@en ;

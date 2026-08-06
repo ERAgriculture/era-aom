@@ -2878,6 +2878,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101115"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101111"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101109"
       },
       {
@@ -21016,6 +21022,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101114",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedProductType",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101111"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101114"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Compound feed"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001819",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -27294,6 +27338,49 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101115",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/CompositionState"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101116"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101115"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Composition states"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006158",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -31892,6 +31979,12 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Bothriocloa Dried"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001458"
@@ -31910,7 +32003,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Bothriochloa Dried"
+        "@value": "Bothriochloa dried"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
@@ -62333,13 +62426,14 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000768",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101116",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/CompositionState"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101115"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -62349,18 +62443,18 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "AOM_000768"
+        "@value": "AOM_101116"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Monocalcium Phosphate"
+        "@value": "Whole-milk composition"
       }
     ],
     "urn:era:property:conceptType": [
       {
-        "@value": "legacy_aom_concept"
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -62528,6 +62622,43 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_76396"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000768",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000768"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Monocalcium Phosphate"
       }
     ],
     "urn:era:property:conceptType": [
@@ -67281,6 +67412,44 @@
       {
         "@language": "en",
         "@value": "Cash crop products"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101112",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedProductType",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101111"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101112"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Processing pulp"
       }
     ],
     "urn:era:property:conceptType": [
@@ -108923,6 +109092,44 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101113",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedProductType",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101111"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101113"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Hay"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002130",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -112953,6 +113160,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101111",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedProductType",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101112"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101114"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101113"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101111"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed product types"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -128660,6 +128916,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001459"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -128699,7 +128960,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },

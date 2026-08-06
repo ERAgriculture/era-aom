@@ -8703,15 +8703,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_001459> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_001458> ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_001459" ;
-    skos:prefLabel "Bothriochloa Dried"@en ;
-    skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_79826> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_001460> a skos:Concept ;
     skos:altLabel "Creeping bluegrass"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000701> ;
@@ -11551,6 +11542,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001898> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_001459> ;
     skos:altLabel "Bothriocloa Dried"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100945> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -11558,7 +11550,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Bothriochloa dried"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_79826> ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
+    era:status "deprecated" .
 
 <https://w3id.org/era-aom/livestock/AOM_001900> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000701> ;
@@ -18963,6 +18955,42 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101112> a skos:Concept,
+        aom:FeedProductType ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101111> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101112" ;
+    skos:prefLabel "Processing pulp"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101113> a skos:Concept,
+        aom:FeedProductType ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101111> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101113" ;
+    skos:prefLabel "Hay"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101114> a skos:Concept,
+        aom:FeedProductType ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101111> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101114" ;
+    skos:prefLabel "Compound feed"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101116> a skos:Concept,
+        aom:CompositionState ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101115> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101116" ;
+    skos:prefLabel "Whole-milk composition"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_000011> a skos:Concept ;
     skos:altLabel "Camelid"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000004> ;
@@ -20430,6 +20458,16 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Bothriochloa"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_79826>,
         <https://www.feedipedia.org/node/11880> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_001459> a skos:Concept ;
+    skos:altLabel "Bothriocloa Dried"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_001458> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_001459" ;
+    skos:prefLabel "Bothriochloa dried"@en ;
+    skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_79826> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -22945,6 +22983,16 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_101110> ;
     skos:notation "AOM_101109" ;
     skos:prefLabel "Material integrity values"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101115> a skos:Concept,
+        aom:CompositionState ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101116> ;
+    skos:notation "AOM_101115" ;
+    skos:prefLabel "Composition states"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -26485,6 +26533,18 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101111> a skos:Concept,
+        aom:FeedProductType ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101112>,
+        <https://w3id.org/era-aom/livestock/AOM_101113>,
+        <https://w3id.org/era-aom/livestock/AOM_101114> ;
+    skos:notation "AOM_101111" ;
+    skos:prefLabel "Feed product types"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_000125> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000120> ;
     skos:definition "An experimental diet contains more enzyme supplements than a control diet. These are plant or animal enzymes used to facilitate the digestive process."@en ;
@@ -28882,30 +28942,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000328> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000107> ;
-    skos:definition "any measurable, observable or declared characteristic related to elements or set of elements, with nutritional purposes"@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000196>,
-        <https://w3id.org/era-aom/livestock/AOM_000321>,
-        <https://w3id.org/era-aom/livestock/AOM_000326>,
-        <https://w3id.org/era-aom/livestock/AOM_000327>,
-        <https://w3id.org/era-aom/livestock/AOM_000845>,
-        <https://w3id.org/era-aom/livestock/AOM_001062>,
-        <https://w3id.org/era-aom/livestock/AOM_100850>,
-        <https://w3id.org/era-aom/livestock/AOM_101019>,
-        <https://w3id.org/era-aom/livestock/AOM_101020>,
-        <https://w3id.org/era-aom/livestock/AOM_101021>,
-        <https://w3id.org/era-aom/livestock/AOM_101022>,
-        <https://w3id.org/era-aom/livestock/AOM_101023>,
-        <https://w3id.org/era-aom/livestock/AOM_101085>,
-        <https://w3id.org/era-aom/livestock/AOM_101109> ;
-    skos:notation "AOM_000328" ;
-    skos:prefLabel "Feed Characteristic"@en ;
-    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000065> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_000480> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000479> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -29000,6 +29036,32 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:notation "AOM_000109" ;
     skos:prefLabel "Diet Change"@en ;
     skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001932> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000328> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000107> ;
+    skos:definition "any measurable, observable or declared characteristic related to elements or set of elements, with nutritional purposes"@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000196>,
+        <https://w3id.org/era-aom/livestock/AOM_000321>,
+        <https://w3id.org/era-aom/livestock/AOM_000326>,
+        <https://w3id.org/era-aom/livestock/AOM_000327>,
+        <https://w3id.org/era-aom/livestock/AOM_000845>,
+        <https://w3id.org/era-aom/livestock/AOM_001062>,
+        <https://w3id.org/era-aom/livestock/AOM_100850>,
+        <https://w3id.org/era-aom/livestock/AOM_101019>,
+        <https://w3id.org/era-aom/livestock/AOM_101020>,
+        <https://w3id.org/era-aom/livestock/AOM_101021>,
+        <https://w3id.org/era-aom/livestock/AOM_101022>,
+        <https://w3id.org/era-aom/livestock/AOM_101023>,
+        <https://w3id.org/era-aom/livestock/AOM_101085>,
+        <https://w3id.org/era-aom/livestock/AOM_101109>,
+        <https://w3id.org/era-aom/livestock/AOM_101111>,
+        <https://w3id.org/era-aom/livestock/AOM_101115> ;
+    skos:notation "AOM_000328" ;
+    skos:prefLabel "Feed Characteristic"@en ;
+    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000065> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 

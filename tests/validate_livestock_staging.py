@@ -40,7 +40,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2763 and len(ids) == len(known)
+assert len(ids) == 2769 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -63,7 +63,7 @@ assert {row["resolved_concept_id"] for row in resolutions} == {
     "AOM_006275", "AOM_001676",
 }
 assert len(replacements) == 3
-assert len(deprecations) == 3
+assert len(deprecations) == 4
 assert len(semantic_bindings) == 13
 assert len(semantic_value_bindings) == 298
 assert len(component_classifications) == 83
@@ -73,9 +73,9 @@ assert all(row["reviewer"] == "Pete Steward" for row in component_classification
 assert sum(row["disposition"] == "review_single" for row in component_classifications) == 52
 assert sum(row["disposition"] == "decompose" for row in component_classifications) == 29
 assert sum(row["disposition"] == "hold" for row in component_classifications) == 2
-assert len(facet_concepts) == 93
+assert len(facet_concepts) == 99
 assert len(harmonization_rules) == 40
-assert len(generated_material_facets) == 1600
+assert len(generated_material_facets) == 1599
 assert len(whole_grain_decisions) == 4
 assert len(source_overrides) == 6
 assert len(component_value_mappings) == 45
@@ -97,20 +97,21 @@ assert {
     ("AOM_001884", "AOM_000564"),
     ("AOM_004000", "AOM_003960"),
     ("AOM_006072", "AOM_001326"),
+    ("AOM_001898", "AOM_001459"),
 }
 assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
 assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
-assert manifest["counts"]["approved_ingredient_facet_concepts"] == 93
+assert manifest["counts"]["approved_ingredient_facet_concepts"] == 99
 assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
-assert manifest["counts"]["approved_generated_feed_material_facets"] == 1600
+assert manifest["counts"]["approved_generated_feed_material_facets"] == 1599
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
 assert manifest["counts"]["approved_feed_material_source_overrides"] == 6
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 10
 assert len(label_corrections) == 12
-assert len(new_concepts) == 262
+assert len(new_concepts) == 268
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -174,13 +175,14 @@ final_mint_cases = {
 }
 assert final_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 101111)
+    f"AOM_{number:06d}" for number in range(100849, 101117)
 }
 assert {row["concept_id"] for row in id_registry} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}
 assert status["AOM_001884"] == "deprecated"
 assert status["AOM_004000"] == "deprecated"
 assert status["AOM_006072"] == "deprecated"
+assert status["AOM_001898"] == "deprecated"
 brewers_pref = next(
     row["label"] for row in labels
     if row["concept_id"] == "AOM_000564" and row["label_type"] == "pref"
@@ -199,6 +201,7 @@ assert {
     ("AOM_001884", "replaced_by", "AOM_000564"),
     ("AOM_004000", "replaced_by", "AOM_003960"),
     ("AOM_006072", "replaced_by", "AOM_001326"),
+    ("AOM_001898", "replaced_by", "AOM_001459"),
 }
 mineral_children = set(new_by_case["PARENT-006"]["child_ids"].split(";"))
 assert {
@@ -350,7 +353,7 @@ assert manifest["identifier_policy"]["rdf_uri_status"] == "provisional-staging-o
 assert manifest["counts"]["source_records"] == len(legacy)
 assert manifest["counts"]["published_staging_concepts"] == len(concepts)
 assert manifest["counts"]["hierarchy_relations"] == len(parents)
-assert manifest["counts"]["replacement_relations"] == 3
+assert manifest["counts"]["replacement_relations"] == 4
 assert manifest["counts"]["semantic_relations"] == len(semantic_relations)
 assert manifest["counts"]["hierarchy_gaps"] == len(gaps)
 assert manifest["counts"]["mapping_assertions"] == len(mappings)

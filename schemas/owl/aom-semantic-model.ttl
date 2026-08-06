@@ -54,6 +54,14 @@ aom:MaterialIntegrity a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "material integrity"@en ;
   rdfs:comment "Compositional integrity retained by a material independently of particle form or processing."@en .
+aom:FeedProductType a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "feed product type"@en ;
+  rdfs:comment "Product category arising from production, formulation, or conservation, independently of physical form and processing method."@en .
+aom:CompositionState a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "composition state"@en ;
+  rdfs:comment "Governed compositional state of a feed material, independently of physical form."@en .
 aom:ProcessingMethod a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "processing method"@en .
@@ -92,6 +100,10 @@ aom:physicalForm a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPhysicalForm .
 aom:materialIntegrity a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:MaterialIntegrity .
+aom:feedProductType a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:FeedProductType .
+aom:compositionState a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:CompositionState .
 aom:processingMethod a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProcessingMethod .
 aom:productRole a owl:ObjectProperty ;
