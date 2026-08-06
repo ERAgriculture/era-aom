@@ -628,6 +628,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100918"/>
     <skos:prefLabel xml:lang="en">Cabbage Discards</skos:prefLabel>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cabbage” and characteristics: product role — Discard role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -1876,6 +1877,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001846">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000594"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4498"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cereal milling” and characteristics: processing method — Milling; product role — By-product role.</skos:definition>
     <skos:prefLabel xml:lang="en">Pollard</skos:prefLabel>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
@@ -2095,6 +2097,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3847"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100852"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “soybean” and characteristics: ingredient constituent — Fat constituent; physical form — Cake form; processing method — Pressing.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:altLabel xml:lang="en">Soybean Oil Cake Full Fat</skos:altLabel>
     <skos:notation>AOM_000611</skos:notation>
@@ -4505,6 +4508,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_001675</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100855"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “maize” and characteristics: ingredient part — Stem.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
     <skos:prefLabel xml:lang="en">Baby Corn Stalk</skos:prefLabel>
@@ -8517,6 +8521,18 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001346"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_002124"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006169">
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: product role — Residue role.</skos:definition>
+    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_35679"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
+    <era:status>unknown</era:status>
+    <skos:prefLabel xml:lang="en">Groundnut Residue</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>AOM_006169</skos:notation>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000151">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:prefLabel xml:lang="en">Herd Management</skos:prefLabel>
@@ -8877,6 +8893,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000616">
+    <skos:definition xml:lang="en">A feed material with governed source identity “canola” and characteristics: physical form — Cake form.</skos:definition>
     <skos:prefLabel xml:lang="en">Canola Cake</skos:prefLabel>
     <skos:altLabel xml:lang="en">Canola Oil Cake</skos:altLabel>
     <skos:altLabel xml:lang="en">OilSeed Rape Cake</skos:altLabel>
@@ -9362,6 +9379,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:prefLabel xml:lang="en">Moringa oleifera Root Bark Dried Ground</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001254">
+    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: physical form — Cake form.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_35679"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
@@ -11695,6 +11713,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:prefLabel xml:lang="en">Legume Residue</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:definition xml:lang="en">A feed material with governed source identity “legume” and characteristics: product role — Residue role.</skos:definition>
     <skos:notation>AOM_001817</skos:notation>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001087">
@@ -12377,6 +12396,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6563"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/736"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell.</skos:definition>
     <skos:prefLabel xml:lang="en">Oyster Shells</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_000557</skos:notation>
@@ -13067,6 +13087,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_001761</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Acacia etbaica” and characteristics: ingredient part — Fruit.</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001762"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000345">
@@ -13965,6 +13986,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     <skos:prefLabel xml:lang="en">Acacia tortilis Fruits</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Acacia tortilis” and characteristics: ingredient part — Fruit.</skos:definition>
     <era:status>unknown</era:status>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001604"/>
   </rdf:Description>
@@ -14347,6 +14369,17 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     <skos:notation>AOM_000370</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:definition xml:lang="en">An AOM outcome concept for recording Meat Yield- Carcass within Meat Yield.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001308">
+    <skos:prefLabel xml:lang="en">Canola Oil</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:notation>AOM_001308</skos:notation>
+    <skos:altLabel xml:lang="en">Rapeseed Oil</skos:altLabel>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001309"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “canola” and characteristics: ingredient constituent — Oil constituent.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <era:status>unknown</era:status>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006209">
     <skos:notation>AOM_006209</skos:notation>
@@ -15383,6 +15416,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_001439</skos:notation>
+    <skos:definition xml:lang="en">A feed material with governed source identity “beetroot” and characteristics: product role — Discard role.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100909"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001952"/>
   </rdf:Description>
@@ -15542,6 +15576,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
     <skos:prefLabel xml:lang="en">Groundnut Oil</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: ingredient constituent — Oil constituent.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_003072"/>
     <skos:notation>AOM_001193</skos:notation>
@@ -17445,16 +17480,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:hasTopConcept rdf:resource="https://w3id.org/era-aom/livestock/AOM_000846"/>
     <skos:hasTopConcept rdf:resource="https://w3id.org/era-aom/livestock/AOM_000106"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001308">
-    <skos:prefLabel xml:lang="en">Canola Oil</skos:prefLabel>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:notation>AOM_001308</skos:notation>
-    <skos:altLabel xml:lang="en">Rapeseed Oil</skos:altLabel>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001309"/>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001961">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000672"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -18049,17 +18074,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_001704</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006169">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_35679"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
-    <era:status>unknown</era:status>
-    <skos:prefLabel xml:lang="en">Groundnut Residue</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:notation>AOM_006169</skos:notation>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001158">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -25006,6 +25020,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:altLabel xml:lang="en">Corn Sheath</skos:altLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100851"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “maize” and characteristics: ingredient part — Sheath.</skos:definition>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_a40b4471"/>
     <skos:prefLabel xml:lang="en">Maize Sheath</skos:prefLabel>
@@ -25235,6 +25250,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_16043"/>
     <skos:notation>AOM_000610</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “soybean” and characteristics: physical form — Cake form.</skos:definition>
     <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">Soybean Cake</skos:prefLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100852"/>
@@ -30301,6 +30317,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000644"/>
     <era:status>unknown</era:status>
+    <skos:definition xml:lang="en">A feed material with governed source identity “sugar processing” and characteristics: physical form — Liquid form; processing method — Sugar processing; product role — By-product role.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4547"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
