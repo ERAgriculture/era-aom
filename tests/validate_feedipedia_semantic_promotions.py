@@ -46,5 +46,9 @@ assert by_material == {
 }
 defined = {row["concept_id"] for row in definitions}
 assert promoted <= defined
-assert not ({"AOM_000673", "AOM_003908"} & defined)
+source_scope = {
+    row["concept_id"] for row in definitions
+    if row["definition_method"] == "composed_from_reviewed_feedipedia_source_scope"
+}
+assert {"AOM_000673", "AOM_003908"} <= source_scope
 print("Feedipedia semantic promotion validation passed: 6 promoted; 2 held")
