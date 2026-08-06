@@ -21,6 +21,7 @@ WORKBOOK_GAPS = ROOT / "review/livestock-v18/workbook_model_gap_review.csv"
 CONSOLIDATED = ROOT / "review/livestock-v19/authority_model_review.csv"
 MATERIAL_SCOPE = ROOT / "review/livestock-v21/material_scope_review.csv"
 ONTOLOGY_INTEGRITY = ROOT / "review/livestock-v22/ontology_integrity_review.csv"
+FINAL_TAIL = ROOT / "review/livestock-v23/final_tail_review.csv"
 
 CORE = {"AOM_000106", "AOM_000846"}
 FEEDIPEDIA_CATEGORY = {"AOM_000628", "AOM_000644", "AOM_000683", "AOM_000701", "AOM_000735"}
@@ -143,6 +144,13 @@ ONTOLOGY_INTEGRITY_FACETS = {
                     ("aom:ingredientPart", "AOM_101048", "Plant top", "top")],
 }
 
+FINAL_TAIL_FACETS = {
+    "AOM_000664": [("aom:ingredientPart", "AOM_101028", "Fruit", "avocado")],
+    "AOM_000672": [("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil")],
+    "AOM_000676": [("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil")],
+    "AOM_003172": [("aom:productRole", "AOM_101061", "Waste role", "waste")],
+}
+
 # Longest suffix first. Each match strips descriptor from governed source and
 # emits existing approved facet value; no new semantic class is invented here.
 DESCRIPTORS = [
@@ -235,6 +243,7 @@ workbook_gaps = {row["concept_id"]: row for row in read(WORKBOOK_GAPS)}
 consolidated = {row["concept_id"]: row for row in read(CONSOLIDATED)}
 material_scope = {row["concept_id"]: row for row in read(MATERIAL_SCOPE)}
 ontology_integrity = {row["concept_id"]: row for row in read(ONTOLOGY_INTEGRITY)}
+final_tail = {row["concept_id"]: row for row in read(FINAL_TAIL)} if FINAL_TAIL.exists() else {}
 review_rows, facet_rows = [], []
 for item in read(COHORT):
     cid, label, route = item["concept_id"], item["preferred_label"], item["recommended_route"]
@@ -251,6 +260,8 @@ for item in read(COHORT):
         facets = MATERIAL_SCOPE_FACETS[cid]
     if cid in ONTOLOGY_INTEGRITY_FACETS:
         facets = ONTOLOGY_INTEGRITY_FACETS[cid]
+    if cid in FINAL_TAIL_FACETS:
+        facets = FINAL_TAIL_FACETS[cid]
     # These compound sources retain an uncovered component after generic suffix
     # stripping; partial decomposition would misstate governed identity.
     if cid in {"AOM_003930"}:
@@ -311,6 +322,11 @@ for item in read(COHORT):
         decision, status = "approve_bounded_workbook_material_scope", "approved"
         evidence = ontology_integrity[cid]["evidence"]
         rationale = ontology_integrity[cid]["rationale"]
+    elif cid in final_tail and final_tail[cid]["status"] == "approved":
+        source = final_tail[cid]["governed_source_identity"]
+        decision, status = "approve_bounded_workbook_material_scope", "approved"
+        evidence = final_tail[cid]["evidence"]
+        rationale = final_tail[cid]["rationale"]
     if status == "held":
         consolidated_hold = consolidated.get(cid)
         if consolidated_hold and consolidated_hold["status"] == "held":
@@ -320,6 +336,10 @@ for item in read(COHORT):
         if integrity_hold and integrity_hold["status"] == "held":
             blocker = integrity_hold["blocker_code"]
             next_action = integrity_hold["rationale"]
+        final_hold = final_tail.get(cid)
+        if final_hold and final_hold["status"] == "held":
+            blocker = final_hold["blocker_code"]
+            next_action = final_hold["rationale"]
         if route == "research_feedipedia":
             prior = feed[cid]["decision"]
             identity_hold = identity.get(cid)
