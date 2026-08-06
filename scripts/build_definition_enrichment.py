@@ -40,6 +40,9 @@ feedipedia_scope_reviews = list(csv.DictReader(
 public_authority_reviews = list(csv.DictReader(
     (ROOT / "review/livestock-v12/public_authority_source_scope_review.csv").open(encoding="utf-8", newline="")
 ))
+workbook_source_reviews = list(csv.DictReader(
+    (ROOT / "review/livestock-v13/workbook_source_scope_review.csv").open(encoding="utf-8", newline="")
+))
 
 rows = []
 for row in new_concepts:
@@ -87,6 +90,49 @@ for concept_id, facets in sorted(by_material.items()):
         "status": "approved", "reviewer": "Pete Steward", "review_date": "2026-08-06",
         "evidence": "data/livestock-staging/approved_feed_material_facets.csv;data/livestock-staging/approved_generated_feed_material_facets.csv",
         "rationale": "Definition states only governed source identity and approved semantic assertions; no biological or nutritional claim is inferred.",
+    })
+
+base_ids = {row["concept_id"] for row in rows}
+
+workbook_family_label = {
+    "Animal": "animal-derived feed ingredient",
+    "Animal Byproduct": "animal by-product feed ingredient",
+    "Animal Manures": "animal-manure feed ingredient",
+    "Crop Byproduct": "crop by-product feed ingredient",
+    "Crop Product": "crop-product feed ingredient",
+    "Essential Fatty Acid": "essential-fatty-acid feed ingredient",
+    "Forage Plants": "forage feed material",
+    "Grazing": "grazing feed-source",
+    "Herb or Extract": "herb-or-extract feed ingredient",
+    "Ingredient source": "feed-ingredient source",
+    "Organic Acid": "organic-acid feed ingredient",
+    "Other Ingredients": "feed ingredient",
+    "Prebiotic": "prebiotic feed ingredient",
+    "Preformulated Feed": "preformulated feed",
+    "Probiotic": "probiotic feed ingredient",
+    "Supplement": "feed-supplement ingredient",
+}
+for review in workbook_source_reviews:
+    concept_id = review["concept_id"]
+    if review["status"] != "approved" or concept_id in existing or concept_id in base_ids:
+        continue
+    if review["definition_scope"] == "category":
+        definition = (
+            f"An AOM controlled category for “{review['preferred_label']}” within “{review['parent_label']}”. "
+            "Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+        )
+        method = "composed_from_canonical_workbook_category_scope"
+    else:
+        definition = (
+            f"A {workbook_family_label[review['ingredient_family']]} with governed workbook identity "
+            f"“{review['preferred_label']}”, classified within “{review['parent_label']}”. Component, processing method, "
+            "physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        )
+        method = "composed_from_canonical_workbook_identity_scope"
+    rows.append({
+        "concept_id": concept_id, "language": "en", "definition": definition,
+        "definition_method": method, "status": "approved", "reviewer": review["reviewer"],
+        "review_date": review["review_date"], "evidence": review["evidence"], "rationale": review["rationale"],
     })
 
 base_ids = {row["concept_id"] for row in rows}

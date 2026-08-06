@@ -5252,6 +5252,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Raw material source"@en ;
+  skos:definition "An AOM controlled category for “Ingredient source” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000536> a skos:Concept ;
@@ -5458,6 +5459,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "prickly pear fruit"@en ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Milk”, classified within “Animal”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000559> .
 
 <urn:era-aom:livestock:AOM_000557> a skos:Concept ;
@@ -5487,6 +5489,7 @@
   era:status "unknown" ;
   skos:altLabel "metazoans"@en ;
   skos:altLabel "multicellular animals"@en ;
+  skos:definition "An AOM controlled category for “Animal” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000561> a skos:Concept ;
@@ -5495,6 +5498,7 @@
   skos:prefLabel "Animal Manures"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Animal Manures” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000563> a skos:Concept ;
@@ -5782,6 +5786,7 @@
   skos:prefLabel "Cereal ByProducts"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Cereal ByProducts” within “Crop Byproduct”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001916> .
 
 <urn:era-aom:livestock:AOM_000595> a skos:Concept ;
@@ -6303,6 +6308,7 @@
   skos:prefLabel "Cereal Products"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Cereal Products” within “Crop Product”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100921> .
 
 <urn:era-aom:livestock:AOM_000663> a skos:Concept ;
@@ -6336,6 +6342,7 @@
   skos:prefLabel "Fruit Product"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Fruit Product” within “Crop Product”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100921> .
 
 <urn:era-aom:livestock:AOM_000667> a skos:Concept ;
@@ -6344,6 +6351,7 @@
   skos:prefLabel "Legume Products"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Legume Products” within “Crop Product”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100921> .
 
 <urn:era-aom:livestock:AOM_000668> a skos:Concept ;
@@ -6450,6 +6458,7 @@
   skos:prefLabel "Oil Plant Products"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Oil Plant Products” within “Crop Product”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100921> .
 
 <urn:era-aom:livestock:AOM_000678> a skos:Concept ;
@@ -6616,6 +6625,7 @@
   skos:prefLabel "Natural Pasture"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Natural Pasture”, classified within “Pasture”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001789> .
 
 <urn:era-aom:livestock:AOM_000698> a skos:Concept ;
@@ -6634,6 +6644,7 @@
   skos:prefLabel "Unspecified Grazing"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Unspecified Grazing”, classified within “Cereal and Grass Forages”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
 
 <urn:era-aom:livestock:AOM_000701> a skos:Concept ;
@@ -6803,6 +6814,7 @@
   skos:prefLabel "Forage Trees"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Forage Trees” within “Forage Plants”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000735> .
 
 <urn:era-aom:livestock:AOM_000719> a skos:Concept ;
@@ -6873,6 +6885,7 @@
   skos:prefLabel "Other Forage Plants"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Other Forage Plants” within “Forage Plants”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000735> .
 
 <urn:era-aom:livestock:AOM_000735> a skos:Concept ;
@@ -6890,6 +6903,7 @@
   skos:prefLabel "Supplement"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Supplement” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000737> a skos:Concept ;
@@ -6898,6 +6912,7 @@
   skos:prefLabel "Amino Acid"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Amino Acid” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_000738> a skos:Concept ;
@@ -6939,6 +6954,7 @@
   skos:prefLabel "Carboxymethyl Cellulose"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Carboxymethyl Cellulose”, classified within “Binder”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000745> .
 
 <urn:era-aom:livestock:AOM_000744> a skos:Concept ;
@@ -6947,6 +6963,7 @@
   skos:prefLabel "Cement"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Cement”, classified within “Binder”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000745> .
 
 <urn:era-aom:livestock:AOM_000745> a skos:Concept ;
@@ -6955,6 +6972,7 @@
   skos:prefLabel "Binder"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Binder” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_000746> a skos:Concept ;
@@ -6964,6 +6982,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Chromic Oxide"@en ;
+  skos:definition "A feed ingredient with governed workbook identity “Chromium Oxide”, classified within “Digestibility Marker”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000747> .
 
 <urn:era-aom:livestock:AOM_000747> a skos:Concept ;
@@ -6972,6 +6991,7 @@
   skos:prefLabel "Digestibility Marker"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Digestibility Marker” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_000748> a skos:Concept ;
@@ -7026,6 +7046,7 @@
   era:status "unknown" ;
   skos:altLabel "Baking Soda"@en ;
   skos:altLabel "Koek Soda"@en ;
+  skos:definition "A feed ingredient with governed workbook identity “Bicarbonate of Soda”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_000754> a skos:Concept ;
@@ -7034,6 +7055,7 @@
   skos:prefLabel "Calcium"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000755> a skos:Concept ;
@@ -7042,6 +7064,7 @@
   skos:prefLabel "Chalk"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Chalk”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000756> a skos:Concept ;
@@ -7050,6 +7073,7 @@
   skos:prefLabel "Copper"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Copper”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000757> a skos:Concept ;
@@ -7058,6 +7082,7 @@
   skos:prefLabel "Dicalcium Phosphate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Dicalcium Phosphate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000758> a skos:Concept ;
@@ -7067,6 +7092,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Iodized Salt"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Iodated Salt”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000759> a skos:Concept ;
@@ -7075,6 +7101,7 @@
   skos:prefLabel "Iodine"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Iodine”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000760> a skos:Concept ;
@@ -7087,6 +7114,7 @@
   skos:altLabel "Quicklime"@en ;
   skos:altLabel "Limestone"@en ;
   skos:altLabel "Unslacked Lime"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Lime”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000763> a skos:Concept ;
@@ -7095,6 +7123,7 @@
   skos:prefLabel "Manganese"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Manganese”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000764> a skos:Concept ;
@@ -7120,6 +7149,7 @@
   skos:prefLabel "Mineral Lick"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Mineral Lick”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000768> a skos:Concept ;
@@ -7128,6 +7158,7 @@
   skos:prefLabel "Monocalcium Phosphate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Monocalcium Phosphate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000770> a skos:Concept ;
@@ -7136,6 +7167,7 @@
   skos:prefLabel "Phosphorus"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Phosphorus”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000772> a skos:Concept ;
@@ -7149,6 +7181,7 @@
   skos:altLabel "Salt Block"@en ;
   skos:altLabel "Salt Course"@en ;
   skos:altLabel "Salt Lick"@en ;
+  skos:definition "A feed ingredient with governed workbook identity “Salt”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000774> a skos:Concept ;
@@ -7157,6 +7190,7 @@
   skos:prefLabel "Selenium"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Selenium”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000776> a skos:Concept ;
@@ -7165,6 +7199,7 @@
   skos:prefLabel "Sulphur"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Sulphur”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000777> a skos:Concept ;
@@ -7173,6 +7208,7 @@
   skos:prefLabel "Tricalcium Phosphate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Tricalcium Phosphate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000778> a skos:Concept ;
@@ -7181,6 +7217,7 @@
   skos:prefLabel "Zinc"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Zinc”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_000779> a skos:Concept ;
@@ -7189,6 +7226,7 @@
   skos:prefLabel "Mineral"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Mineral” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_000780> a skos:Concept ;
@@ -7197,6 +7235,7 @@
   skos:prefLabel "Lecithin"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Lecithin”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_000781> a skos:Concept ;
@@ -7205,6 +7244,7 @@
   skos:prefLabel "Other Ingredients"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Other Ingredients” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000782> a skos:Concept ;
@@ -7213,6 +7253,7 @@
   skos:prefLabel "Antitoxins"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Antitoxins” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_000783> a skos:Concept ;
@@ -7242,6 +7283,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Cobalamin"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin B12”, classified within “Vitamin”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000793> .
 
 <urn:era-aom:livestock:AOM_000789> a skos:Concept ;
@@ -7251,6 +7293,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Ascorbic Acid"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin C”, classified within “Vitamin”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000793> .
 
 <urn:era-aom:livestock:AOM_000790> a skos:Concept ;
@@ -7260,6 +7303,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Tocopherol"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin E”, classified within “Vitamin”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000793> .
 
 <urn:era-aom:livestock:AOM_000791> a skos:Concept ;
@@ -7269,6 +7313,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Vitamins"@en ;
+  skos:definition "An AOM controlled category for “Vitamin Mix” within “Vitamin”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000793> .
 
 <urn:era-aom:livestock:AOM_000793> a skos:Concept ;
@@ -7277,6 +7322,7 @@
   skos:prefLabel "Vitamin"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Vitamin” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_000794> a skos:Concept ;
@@ -7286,6 +7332,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Minerals and Vitamins Premix"@en ;
+  skos:definition "An AOM controlled category for “Minerals and Vitamins Mix” within “Mixture”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000795> .
 
 <urn:era-aom:livestock:AOM_000795> a skos:Concept ;
@@ -7294,6 +7341,7 @@
   skos:prefLabel "Mixture"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Mixture” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_000798> a skos:Concept ;
@@ -7312,6 +7360,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Industrial Commercial Feed"@en ;
+  skos:definition "An AOM controlled category for “Commercial Feed” within “Preformulated Feed”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_000800> a skos:Concept ;
@@ -7320,6 +7369,7 @@
   skos:prefLabel "Concentrate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Concentrate” within “Preformulated Feed”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_000801> a skos:Concept ;
@@ -7337,6 +7387,7 @@
   skos:prefLabel "Layer Concentrate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Layer Concentrate”, classified within “Concentrate”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000800> .
 
 <urn:era-aom:livestock:AOM_000804> a skos:Concept ;
@@ -7345,6 +7396,7 @@
   skos:prefLabel "Total Mixed Ration"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Total Mixed Ration”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_000805> a skos:Concept ;
@@ -7353,6 +7405,7 @@
   skos:prefLabel "Imported Concentrate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Imported Concentrate”, classified within “Concentrate”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000800> .
 
 <urn:era-aom:livestock:AOM_000807> a skos:Concept ;
@@ -7361,6 +7414,7 @@
   skos:prefLabel "Prebiotic"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Prebiotic” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000808> a skos:Concept ;
@@ -7369,6 +7423,7 @@
   skos:prefLabel "Fumaric Acid"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A organic-acid feed ingredient with governed workbook identity “Fumaric Acid”, classified within “Organic Acid”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_006389> .
 
 <urn:era-aom:livestock:AOM_000809> a skos:Concept ;
@@ -7377,6 +7432,7 @@
   skos:prefLabel "Essential Fatty Acid"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Essential Fatty Acid” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000811> a skos:Concept ;
@@ -7385,6 +7441,7 @@
   skos:prefLabel "Herb or Extract"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Herb or Extract” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000817> a skos:Concept ;
@@ -9896,6 +9953,7 @@
   skos:prefLabel "Cobalt"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Cobalt”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001067> a skos:Concept ;
@@ -9907,6 +9965,7 @@
   skos:altLabel "Copper Sulphate"@en ;
   skos:altLabel "Cupric Sulfate"@en ;
   skos:altLabel "Cupric Sulphate Anhydrous"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Copper Sulfate Anhydrous”, classified within “Copper”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000756> .
 
 <urn:era-aom:livestock:AOM_001068> a skos:Concept ;
@@ -9915,6 +9974,7 @@
   skos:prefLabel "Pseudovitamin"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Pseudovitamin”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_001069> a skos:Concept ;
@@ -10119,6 +10179,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Anti-aflatoxin"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Anti-mycotoxin”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_001094> a skos:Concept ;
@@ -10162,6 +10223,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Pig Litter"@en ;
+  skos:definition "A animal-manure feed ingredient with governed workbook identity “Pig Manure”, classified within “Pig ”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000561> .
 
 <urn:era-aom:livestock:AOM_001098> a skos:Concept ;
@@ -10350,6 +10412,7 @@
   skos:prefLabel "Trout"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Trout”, classified within “Fish”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000549> .
 
 <urn:era-aom:livestock:AOM_001116> a skos:Concept ;
@@ -10539,6 +10602,7 @@
   skos:prefLabel "Calycotome villosa"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Calycotome villosa”, classified within “Forage Trees”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> .
 
 <urn:era-aom:livestock:AOM_001136> a skos:Concept ;
@@ -10655,6 +10719,7 @@
   skos:altLabel "Poultry Manure"@en ;
   skos:altLabel "Poultry Waste"@en ;
   skos:altLabel "Poultry Excreta"@en ;
+  skos:definition "A animal-manure feed ingredient with governed workbook identity “Poultry Litter”, classified within “Poultry”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000561> .
 
 <urn:era-aom:livestock:AOM_001147> a skos:Concept ;
@@ -10877,6 +10942,7 @@
   skos:prefLabel "Unspecified Indigenous Trees"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Unspecified Indigenous Trees”, classified within “Forage Trees”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> .
 
 <urn:era-aom:livestock:AOM_001176> a skos:Concept ;
@@ -11688,6 +11754,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Unspecified Residue"@en ;
+  skos:definition "An AOM controlled category for “Unspecified Crop Residue” within “Crop Byproduct”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001916> .
 
 <urn:era-aom:livestock:AOM_001274> a skos:Concept ;
@@ -12539,6 +12606,7 @@
   skos:prefLabel "Ammonium Chloride"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Ammonium Chloride”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001368> a skos:Concept ;
@@ -12547,6 +12615,7 @@
   skos:prefLabel "Ammonium Sulphate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Ammonium Sulphate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001369> a skos:Concept ;
@@ -12555,6 +12624,7 @@
   skos:prefLabel "Calcium Bicarbonate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium Bicarbonate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001370> a skos:Concept ;
@@ -12563,6 +12633,7 @@
   skos:prefLabel "Calcium Carbonate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium Carbonate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001371> a skos:Concept ;
@@ -12571,6 +12642,7 @@
   skos:prefLabel "Calcium Oxide"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium Oxide”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001372> a skos:Concept ;
@@ -12579,6 +12651,7 @@
   skos:prefLabel "Calcium Phosphate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium Phosphate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001373> a skos:Concept ;
@@ -12596,6 +12669,7 @@
   skos:prefLabel "Gelatin"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Gelatin”, classified within “Binder”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000745> .
 
 <urn:era-aom:livestock:AOM_001375> a skos:Concept ;
@@ -12614,6 +12688,7 @@
   skos:prefLabel "Dexapanthenol"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Dexapanthenol”, classified within “Vitamin”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000793> .
 
 <urn:era-aom:livestock:AOM_001377> a skos:Concept ;
@@ -12633,6 +12708,7 @@
   skos:prefLabel "Magnesium Oxide"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Magnesium Oxide”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001379> a skos:Concept ;
@@ -12979,6 +13055,7 @@
   skos:prefLabel "Mineral Mix"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Mineral Mix”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001417> a skos:Concept ;
@@ -12987,6 +13064,7 @@
   skos:prefLabel "Zinc Manganese"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Zinc Manganese”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001418> a skos:Concept ;
@@ -12995,6 +13073,7 @@
   skos:prefLabel "Zinc Oxide"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Zinc Oxide”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001419> a skos:Concept ;
@@ -13037,6 +13116,7 @@
   skos:prefLabel "Spent Yeast"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A probiotic feed ingredient with governed workbook identity “Spent Yeast”, classified within “Probiotic”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_003076> .
 
 <urn:era-aom:livestock:AOM_001423> a skos:Concept ;
@@ -13045,6 +13125,7 @@
   skos:prefLabel "Bentonite"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Bentonite”, classified within “Binder”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000745> .
 
 <urn:era-aom:livestock:AOM_001427> a skos:Concept ;
@@ -13053,6 +13134,7 @@
   skos:prefLabel "Potassium Carbonate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Potassium Carbonate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001428> a skos:Concept ;
@@ -13064,6 +13146,7 @@
   skos:altLabel "Minerals and Salt Lick"@en ;
   skos:altLabel "Minerals and Salt Block"@en ;
   skos:altLabel "Minerals and Salt Mix"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Minerals and Salt”, classified within “Mixture”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000795> .
 
 <urn:era-aom:livestock:AOM_001431> a skos:Concept ;
@@ -13073,6 +13156,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Minerals and Urea Lick"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Minerals and Urea Mix”, classified within “Mixture”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000795> .
 
 <urn:era-aom:livestock:AOM_001433> a skos:Concept ;
@@ -13565,6 +13649,7 @@
   skos:prefLabel "Sodium Sulfate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Sodium Sulfate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001490> a skos:Concept ;
@@ -13573,6 +13658,7 @@
   skos:prefLabel "Trimethyl Cellulose"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Trimethyl Cellulose”, classified within “Binder”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000745> .
 
 <urn:era-aom:livestock:AOM_001491> a skos:Concept ;
@@ -13581,6 +13667,7 @@
   skos:prefLabel "Preformulated Feed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Preformulated Feed” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_001492> a skos:Concept ;
@@ -13589,6 +13676,7 @@
   skos:prefLabel "Protein-Mineral Concentrate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Protein-Mineral Concentrate”, classified within “Concentrate”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000800> .
 
 <urn:era-aom:livestock:AOM_001493> a skos:Concept ;
@@ -13597,6 +13685,7 @@
   skos:prefLabel "Growers Concentrate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Growers Concentrate”, classified within “Concentrate”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000800> .
 
 <urn:era-aom:livestock:AOM_001494> a skos:Concept ;
@@ -13605,6 +13694,7 @@
   skos:prefLabel "Finisher Diet"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Finisher Diet”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_001495> a skos:Concept ;
@@ -13613,6 +13703,7 @@
   skos:prefLabel "Growers Diet"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Growers Diet”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_001496> a skos:Concept ;
@@ -13621,6 +13712,7 @@
   skos:prefLabel "Starter Diet"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Starter Diet”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_001497> a skos:Concept ;
@@ -13662,6 +13754,7 @@
   skos:prefLabel "Swine Mix"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Swine Mix”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_001503> a skos:Concept ;
@@ -13670,6 +13763,7 @@
   skos:prefLabel "Polyethylene"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Polyethylene”, classified within “Binder”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000745> .
 
 <urn:era-aom:livestock:AOM_001504> a skos:Concept ;
@@ -13678,6 +13772,7 @@
   skos:prefLabel "Polyethylene glycol"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Polyethylene glycol”, classified within “Binder”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000745> .
 
 <urn:era-aom:livestock:AOM_001505> a skos:Concept ;
@@ -13686,6 +13781,7 @@
   skos:prefLabel "Polyvitamins"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Polyvitamins”, classified within “Vitamin”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000793> .
 
 <urn:era-aom:livestock:AOM_001506> a skos:Concept ;
@@ -13695,6 +13791,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Sodium Sesquicarbonate"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Kanwa-Potassium Salt”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001507> a skos:Concept ;
@@ -13703,6 +13800,7 @@
   skos:prefLabel "Unspecified"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Unspecified” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001508> a skos:Concept ;
@@ -13719,6 +13817,7 @@
   skos:prefLabel "Potassium Humate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Potassium Humate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001510> a skos:Concept ;
@@ -13970,6 +14069,7 @@
   skos:prefLabel "Crossopterix febrifuga"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Crossopterix febrifuga”, classified within “Other Forage Plants”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000734> .
 
 <urn:era-aom:livestock:AOM_001539> a skos:Concept ;
@@ -14040,6 +14140,7 @@
   skos:prefLabel "Talinium triangulare"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Talinium triangulare”, classified within “Other Forage Plants”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000734> .
 
 <urn:era-aom:livestock:AOM_001550> a skos:Concept ;
@@ -14246,6 +14347,7 @@
   skos:prefLabel "Protein"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Protein”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_001572> a skos:Concept ;
@@ -14254,6 +14356,7 @@
   skos:prefLabel "Casein"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Casein”, classified within “Protein”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001571> .
 
 <urn:era-aom:livestock:AOM_001573> a skos:Concept ;
@@ -14291,6 +14394,7 @@
   skos:prefLabel "Carbohydrate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Carbohydrate”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_001578> a skos:Concept ;
@@ -14299,6 +14403,7 @@
   skos:prefLabel "Dextrin"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Dextrin”, classified within “Carbohydrate”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001577> .
 
 <urn:era-aom:livestock:AOM_001579> a skos:Concept ;
@@ -15972,6 +16077,7 @@
   skos:altLabel "Carbamide"@en ;
   skos:altLabel "Urea Block"@en ;
   skos:altLabel "urea Dried Ground"@en ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Urea”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_001750> a skos:Concept ;
@@ -16236,6 +16342,7 @@
   skos:prefLabel "Trace-elements Mix"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Trace-elements Mix”, classified within “Mineral Mix”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001415> .
 
 <urn:era-aom:livestock:AOM_001774> a skos:Concept ;
@@ -16402,6 +16509,7 @@
   skos:prefLabel "Pasture"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Pasture” within “Cereal and Grass Forages”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
 
 <urn:era-aom:livestock:AOM_001790> a skos:Concept ;
@@ -16755,6 +16863,7 @@
   skos:prefLabel "Wood Charcoal"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Wood Charcoal”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001825> a skos:Concept ;
@@ -16763,6 +16872,7 @@
   skos:prefLabel "Olaquindox"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Olaquindox”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001826> a skos:Concept ;
@@ -16779,6 +16889,7 @@
   skos:prefLabel "Popcorn Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Popcorn Waste”, classified within “Processed Food Byproducts”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100987> .
 
 <urn:era-aom:livestock:AOM_001829> a skos:Concept ;
@@ -16817,6 +16928,7 @@
   skos:prefLabel "Starch"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Starch”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001834> a skos:Concept ;
@@ -16825,6 +16937,7 @@
   skos:prefLabel "Vitamin D3"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin D3”, classified within “Vitamin”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000793> .
 
 <urn:era-aom:livestock:AOM_001835> a skos:Concept ;
@@ -16869,6 +16982,7 @@
   skos:prefLabel "Biscuit Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Biscuit Waste”, classified within “Processed Food Byproducts”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100987> .
 
 <urn:era-aom:livestock:AOM_001839> a skos:Concept ;
@@ -16877,6 +16991,7 @@
   skos:prefLabel "Vitamin AD3E"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin AD3E”, classified within “Vitamin”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000793> .
 
 <urn:era-aom:livestock:AOM_001840> a skos:Concept ;
@@ -17135,6 +17250,7 @@
   skos:prefLabel "Forb"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Forb” within “Other Forage Plants”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000734> .
 
 <urn:era-aom:livestock:AOM_001865> a skos:Concept ;
@@ -17143,6 +17259,7 @@
   skos:prefLabel "Free Gossypol"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Free Gossypol”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001866> a skos:Concept ;
@@ -17152,6 +17269,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Glycerin"@en ;
+  skos:definition "A feed ingredient with governed workbook identity “Glycerol”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001867> a skos:Concept ;
@@ -17160,6 +17278,7 @@
   skos:prefLabel "Sand"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Sand”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001868> a skos:Concept ;
@@ -17176,6 +17295,7 @@
   skos:prefLabel "Waste Activated Sludge"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Waste Activated Sludge”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001870> a skos:Concept ;
@@ -17202,6 +17322,7 @@
   skos:prefLabel "Alkali"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Alkali”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001875> a skos:Concept ;
@@ -17247,6 +17368,7 @@
   skos:prefLabel "Clupeid Fish"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Clupeid Fish”, classified within “Fish”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000549> .
 
 <urn:era-aom:livestock:AOM_001878> a skos:Concept ;
@@ -17266,6 +17388,7 @@
   skos:prefLabel "Cod"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Cod”, classified within “Fish”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000549> .
 
 <urn:era-aom:livestock:AOM_001880> a skos:Concept ;
@@ -17293,6 +17416,7 @@
   skos:prefLabel "Herring"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Herring”, classified within “Fish”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000549> .
 
 <urn:era-aom:livestock:AOM_001883> a skos:Concept ;
@@ -17576,6 +17700,7 @@
   skos:prefLabel "Unspecified Grass"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Unspecified Grass” within “Cereal and Grass Forages”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
 
 <urn:era-aom:livestock:AOM_001913> a skos:Concept ;
@@ -17621,6 +17746,7 @@
   skos:prefLabel "Crop Byproduct"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Crop Byproduct” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_001917> a skos:Concept ;
@@ -17629,6 +17755,7 @@
   skos:prefLabel "Unspecified Filler"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Unspecified Filler” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001918> a skos:Concept ;
@@ -17665,6 +17792,7 @@
   skos:prefLabel "Water"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Water”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_001923> a skos:Concept ;
@@ -17807,6 +17935,7 @@
   skos:prefLabel "Suckled milk"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Suckled milk”, classified within “Milk”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000556> .
 
 <urn:era-aom:livestock:AOM_001936> a skos:Concept ;
@@ -19042,6 +19171,7 @@
   skos:prefLabel "Vitex simplex"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Vitex simplex”, classified within “Forage Trees”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> .
 
 <urn:era-aom:livestock:AOM_002061> a skos:Concept ;
@@ -19190,6 +19320,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Hatchery Eggs"@en ;
+  skos:definition "A animal by-product feed ingredient with governed workbook identity “Egg”, classified within “Animal Byproduct”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100976> .
 
 <urn:era-aom:livestock:AOM_002079> a skos:Concept ;
@@ -19209,6 +19340,7 @@
   skos:prefLabel "Lard"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal by-product feed ingredient with governed workbook identity “Lard”, classified within “Fat”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100976> .
 
 <urn:era-aom:livestock:AOM_002081> a skos:Concept ;
@@ -19345,6 +19477,7 @@
   skos:prefLabel "Fish Mix"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Fish Mix”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_002098> a skos:Concept ;
@@ -19353,6 +19486,7 @@
   skos:prefLabel "Poultry Feed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Poultry Feed”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_002100> a skos:Concept ;
@@ -19483,6 +19617,7 @@
   skos:prefLabel "Chick Mash"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Chick Mash”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_002111> a skos:Concept ;
@@ -20228,6 +20363,7 @@
   skos:prefLabel "Polyalthia longifolia"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Polyalthia longifolia”, classified within “Forage Trees”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> .
 
 <urn:era-aom:livestock:AOM_002240> a skos:Concept ;
@@ -20298,6 +20434,7 @@
   skos:prefLabel "Tuna"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Tuna”, classified within “Fish”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000549> .
 
 <urn:era-aom:livestock:AOM_002247> a skos:Concept ;
@@ -20316,6 +20453,7 @@
   skos:prefLabel "Termite"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Termite”, classified within “Insect”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000554> .
 
 <urn:era-aom:livestock:AOM_002249> a skos:Concept ;
@@ -20949,6 +21087,7 @@
   skos:prefLabel "Bidens diffusa"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Bidens diffusa”, classified within “Other Forage Plants”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000734> .
 
 <urn:era-aom:livestock:AOM_003063> a skos:Concept ;
@@ -21080,6 +21219,7 @@
   skos:prefLabel "Probiotic"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Probiotic” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_003077> a skos:Concept ;
@@ -21151,6 +21291,7 @@
   skos:prefLabel "Phosphate Salt Lick"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Phosphate Salt Lick”, classified within “Salt”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000772> .
 
 <urn:era-aom:livestock:AOM_003085> a skos:Concept ;
@@ -21204,6 +21345,7 @@
   skos:prefLabel "Grazing"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Grazing” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_003101> a skos:Concept ;
@@ -21331,6 +21473,7 @@
   skos:prefLabel "Wood Ash"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Wood Ash”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_003206> a skos:Concept ;
@@ -21502,6 +21645,7 @@
   skos:prefLabel "Growers Premix"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Growers Premix”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_003545> a skos:Concept ;
@@ -21580,6 +21724,7 @@
   skos:prefLabel "Commercial Protein Supplement"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Commercial Protein Supplement”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_003582> a skos:Concept ;
@@ -21682,6 +21827,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "white thorn tree"@en ;
+  skos:definition "A forage feed material with governed workbook identity “Vachellia polyacantha”, classified within “Forage Trees”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> .
 
 <urn:era-aom:livestock:AOM_003694> a skos:Concept ;
@@ -21690,6 +21836,7 @@
   skos:prefLabel "Vachellia erioloba"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Vachellia erioloba”, classified within “Forage Trees”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> .
 
 <urn:era-aom:livestock:AOM_003697> a skos:Concept ;
@@ -21742,6 +21889,7 @@
   skos:prefLabel "Lime Slaked"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Lime Slaked”, classified within “Lime”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000760> .
 
 <urn:era-aom:livestock:AOM_003815> a skos:Concept ;
@@ -21760,6 +21908,7 @@
   skos:prefLabel "Bread Waste"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Bread Waste”, classified within “Processed Food Byproducts”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100987> .
 
 <urn:era-aom:livestock:AOM_003853> a skos:Concept ;
@@ -21807,6 +21956,7 @@
   skos:prefLabel "L-Tryptophan"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “L-Tryptophan”, classified within “Amino Acid”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000737> .
 
 <urn:era-aom:livestock:AOM_003879> a skos:Concept ;
@@ -21845,6 +21995,7 @@
   skos:prefLabel "Bole Soil"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Bole Soil”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_003890> a skos:Concept ;
@@ -22023,6 +22174,7 @@
   skos:prefLabel "Forest Pasture"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Forest Pasture”, classified within “Cereal and Grass Forages”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
 
 <urn:era-aom:livestock:AOM_003908> a skos:Concept ;
@@ -22171,6 +22323,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Qaxxee"@en ;
+  skos:definition "A forage feed material with governed workbook identity “Hermosa sidoides”, classified within “Forage Trees”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> .
 
 <urn:era-aom:livestock:AOM_003926> a skos:Concept ;
@@ -22373,6 +22526,7 @@
   skos:prefLabel "Colostrum"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A animal-derived feed ingredient with governed workbook identity “Colostrum”, classified within “Milk”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000556> .
 
 <urn:era-aom:livestock:AOM_003981> a skos:Concept ;
@@ -22423,6 +22577,7 @@
   skos:prefLabel "Ruminant Premix"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A preformulated feed with governed workbook identity “Ruminant Premix”, classified within “Preformulated Feed”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_003994> a skos:Concept ;
@@ -22431,6 +22586,7 @@
   skos:prefLabel "Poly-enzyme"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Poly-enzyme”, classified within “Enzyme”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000751> .
 
 <urn:era-aom:livestock:AOM_003995> a skos:Concept ;
@@ -22589,6 +22745,7 @@
   skos:prefLabel "Anti-coccidia"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Anti-coccidia”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_004500> a skos:Concept ;
@@ -22804,6 +22961,7 @@
   skos:prefLabel "Alchornea cordifolia"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Alchornea cordifolia”, classified within “Forage Trees”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000718> .
 
 <urn:era-aom:livestock:AOM_006021> a skos:Concept ;
@@ -22812,6 +22970,7 @@
   skos:prefLabel "Andropogon tectorum"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Andropogon tectorum”, classified within “Cereal and Grass Forages”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
 
 <urn:era-aom:livestock:AOM_006022> a skos:Concept ;
@@ -23597,6 +23756,7 @@
   skos:prefLabel "Eragrostis racemosa"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Eragrostis racemosa”, classified within “Cereal and Grass Forages”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
 
 <urn:era-aom:livestock:AOM_006095> a skos:Concept ;
@@ -23626,6 +23786,7 @@
   skos:prefLabel "Festuca ovina"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Festuca ovina”, classified within “Cereal and Grass Forages”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
 
 <urn:era-aom:livestock:AOM_006098> a skos:Concept ;
@@ -23894,6 +24055,7 @@
   skos:prefLabel "Magnesium Sulfate"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Magnesium Sulfate”, classified within “Mineral”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_006126> a skos:Concept ;
@@ -24581,6 +24743,7 @@
   skos:prefLabel "Teff"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A crop by-product feed ingredient with governed workbook identity “Teff”, classified within “Cereal ByProducts”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000594> .
 
 <urn:era-aom:livestock:AOM_006200> a skos:Concept ;
@@ -24799,6 +24962,7 @@
   skos:prefLabel "Unspecified Forage"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Unspecified Forage” within “Cereal ByProducts”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000594> .
 
 <urn:era-aom:livestock:AOM_006223> a skos:Concept ;
@@ -24917,6 +25081,7 @@
   skos:prefLabel "Nassella Trichotoma"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Nassella Trichotoma”, classified within “Cereal and Grass Forages”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> .
 
 <urn:era-aom:livestock:AOM_006237> a skos:Concept ;
@@ -24965,6 +25130,7 @@
   skos:prefLabel "Unspecified Yeast"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Unspecified Yeast” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_006242> a skos:Concept ;
@@ -25730,6 +25896,7 @@
   skos:prefLabel "Protected Fat"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Protected Fat”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_006335> a skos:Concept ;
@@ -25782,6 +25949,7 @@
   skos:prefLabel "Anti fungi"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed-supplement ingredient with governed workbook identity “Anti fungi”, classified within “Supplement”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000736> .
 
 <urn:era-aom:livestock:AOM_006340> a skos:Concept ;
@@ -25790,6 +25958,7 @@
   skos:prefLabel "Propionibacterium freudenreinchi"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A probiotic feed ingredient with governed workbook identity “Propionibacterium freudenreinchi”, classified within “Probiotic”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_003076> .
 
 <urn:era-aom:livestock:AOM_006341> a skos:Concept ;
@@ -25869,6 +26038,7 @@
   skos:prefLabel "Pleurotus ostreatus"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A feed ingredient with governed workbook identity “Pleurotus ostreatus”, classified within “Other Ingredients”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_006350> a skos:Concept ;
@@ -25886,6 +26056,7 @@
   skos:prefLabel "Bambusa tulda"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Bambusa tulda”, classified within “Other Forage Plants”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000734> .
 
 <urn:era-aom:livestock:AOM_006352> a skos:Concept ;
@@ -26104,6 +26275,7 @@
   skos:prefLabel "Gigantochloa pseudoarundinacea"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "A forage feed material with governed workbook identity “Gigantochloa pseudoarundinacea”, classified within “Other Forage Plants”. Component, processing method, physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000734> .
 
 <urn:era-aom:livestock:AOM_006376> a skos:Concept ;
@@ -26164,6 +26336,7 @@
   skos:prefLabel "Organic Acid"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:definition "An AOM controlled category for “Organic Acid” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_006395> a skos:Concept ;
