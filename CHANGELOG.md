@@ -4,13 +4,18 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Close all 19 ingredient semantic-model exceptions with governed feed-product
+  type and composition-state facets; approve seven identity-cluster decisions,
+  deprecate duplicate Bothriochloa record `AOM_001898`, retain one explicit
+  Cotton Seed identity hold, and publish 1,625 material-facet assertions.
+
 - Build noncanonical `2026.1-rc.1` with proposed HTTPS identifiers, equivalent
   Turtle/JSON-LD/RDF/XML, CSV/Parquet visualization exports, manifest,
   checksums, Skosmos configuration, bulk proposal validation, and explicit
   publication/rollback gates.
 
-- Closed ingredient facet governance across all 83 descriptors with 46 atomic
-  mappings, 65 composite assertions, and nine explicit holds.
+- Closed ingredient facet governance across all 83 descriptors with 45 atomic
+  mappings, 65 composite assertions, and ten explicit holds.
 
 - Create repository and Phase 0 workbook inventory.
 - Normalize `prac` and `out` into pilot concept, annotation, relation,

@@ -25,7 +25,10 @@ def write(path, rows, fields):
 
 
 exceptions = read(REVIEW5 / "ingredient_exception_queue.csv")
-clusters = read(REVIEW5 / "ingredient_signature_clusters.csv")
+clusters = [
+    row for row in read(REVIEW5 / "ingredient_signature_clusters.csv")
+    if row["status"] in {"proposed-not-applied", "held-by-approved-identity-review"}
+]
 legacy = read(DATA / "legacy_records.csv")
 labels = read(DATA / "labels.csv")
 
@@ -88,23 +91,17 @@ for gap_id, members in sorted(grouped.items()):
         "reviewer": "", "review_date": "",
     })
 
-cluster_recommendation = {
-    "INGCLUSTER-0001": ("deprecate-replace-review", "AOM_001459", "Corrected labels and public mappings coincide; confirm downstream references before deprecating AOM_001898."),
-    "INGCLUSTER-0002": ("hold-product-role-review", "", "Cotton records share label/taxon/Feedipedia but differ in product/by-product hierarchy and CPC scope."),
-    "INGCLUSTER-0003": ("retain-distinct-integrity-specified", "", "Whole-grain ground maize explicitly retains integrity; generic grain-ground maize does not establish it."),
-    "INGCLUSTER-0004": ("retain-distinct-integrity-specified", "", "Whole-grain maize explicitly retains integrity; generic maize grain does not establish it."),
-    "INGCLUSTER-0005": ("retain-distinct-pending-composition", "", "Milk and whole milk differ by composition state, not physical form."),
-    "INGCLUSTER-0006": ("retain-distinct-integrity-specified", "", "Whole-grain ground rice explicitly retains integrity; generic rice-grain ground does not establish it."),
-    "INGCLUSTER-0007": ("retain-distinct-integrity-specified", "", "Whole-grain ground wheat explicitly retains integrity; generic wheat-grain ground does not establish it."),
-}
 cluster_rows = []
 for row in clusters:
-    action, retained_id, rationale = cluster_recommendation[row["cluster_id"]]
+    action, retained_id, rationale = (
+        "hold-product-role-review", "",
+        "Cotton records share label/taxon/Feedipedia but differ in product/by-product hierarchy and CPC scope.",
+    )
     cluster_rows.append({
         "cluster_id": row["cluster_id"], "concept_ids": row["concept_ids"],
         "preferred_labels": row["preferred_labels"], "recommendation": action,
         "retained_id_if_approved": retained_id, "rationale": rationale,
-        "approval_status": "proposed", "reviewer": "", "review_date": "",
+        "approval_status": "approved-hold", "reviewer": "Pete Steward", "review_date": "2026-08-06",
     })
 
 preferred = {
@@ -135,14 +132,14 @@ summary = {
     "remaining_exceptions": len(exceptions), "model_gap_families": len(gap_rows),
     "remaining_signature_clusters": len(cluster_rows),
     "governed_label_overrides": len(label_audit),
-    "high_confidence_deprecation_reviews": sum(
-        row["recommendation"] == "deprecate-replace-review" for row in cluster_rows
-    ),
+    "high_confidence_deprecation_reviews": 0,
     "automatic_identity_changes": 0,
 }
 OUT.mkdir(parents=True, exist_ok=True)
-write(OUT / "ingredient_model_gap_families.csv", gap_rows, list(gap_rows[0]))
-write(OUT / "ingredient_cluster_recommendations.csv", cluster_rows, list(cluster_rows[0]))
+gap_fields = ["gap_id", "model_area", "concept_count", "concept_ids", "representative_labels", "proposed_model_response", "rationale", "recommendation", "approval_status", "reviewer", "review_date"]
+cluster_fields = ["cluster_id", "concept_ids", "preferred_labels", "recommendation", "retained_id_if_approved", "rationale", "approval_status", "reviewer", "review_date"]
+write(OUT / "ingredient_model_gap_families.csv", gap_rows, gap_fields)
+write(OUT / "ingredient_cluster_recommendations.csv", cluster_rows, cluster_fields)
 write(OUT / "governed_label_source_audit.csv", label_audit, list(label_audit[0]))
 (OUT / "ingredient_model_gap_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
 print(

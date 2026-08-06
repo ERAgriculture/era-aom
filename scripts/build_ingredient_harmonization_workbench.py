@@ -15,6 +15,8 @@ CONCEPTS = ROOT / "data/livestock-staging/concepts.csv"
 LABELS = ROOT / "data/livestock-staging/labels.csv"
 INTEGRITY_DECISIONS = ROOT / "data/livestock-staging/approved_whole_grain_integrity_decisions.csv"
 SOURCE_OVERRIDES = ROOT / "data/livestock-staging/approved_feed_material_source_overrides.csv"
+CLOSURE_DECISIONS = ROOT / "data/livestock-staging/approved_ingredient_semantic_closure_decisions.csv"
+CLUSTER_DECISIONS = ROOT / "data/livestock-staging/approved_ingredient_cluster_decisions.csv"
 
 ALIASES = {
     "corn": "maize", "milled": "ground", "grounded": "ground",
@@ -111,6 +113,13 @@ with SOURCE_OVERRIDES.open(encoding="utf-8", newline="") as handle:
     source_overrides = {
         row["concept_id"]: row for row in csv.DictReader(handle) if row["status"] == "approved"
     }
+with CLOSURE_DECISIONS.open(encoding="utf-8", newline="") as handle:
+    model_resolved |= {row["concept_id"] for row in csv.DictReader(handle) if row["status"] == "approved"}
+with CLUSTER_DECISIONS.open(encoding="utf-8", newline="") as handle:
+    cluster_decisions = {
+        frozenset(row["concept_ids"].split(";")): row
+        for row in csv.DictReader(handle) if row["status"] == "approved"
+    }
 deprecated = {row["deprecated_id"]: row["replacement_id"] for row in approved_deprecations}
 retained_replacements = set(deprecated.values())
 ingredient_occurrences = [
@@ -197,6 +206,13 @@ for number, (signature, members) in enumerate(
     resolved_pairs = {
         (old, new) for old, new in deprecated.items() if {old, new} <= member_ids
     }
+    cluster_decision = cluster_decisions.get(frozenset(member_ids))
+    cluster_status = (
+        "resolved-by-approved-deprecation" if resolved_pairs else
+        "held-by-approved-identity-review" if cluster_decision and cluster_decision["decision"] == "hold_identity" else
+        "resolved-by-approved-model" if cluster_decision else
+        "proposed-not-applied"
+    )
     clusters.append({
         "cluster_id": f"INGCLUSTER-{number:04d}", "normalized_signature": signature,
         "concept_ids": ";".join(sorted(row["concept_id"] for row in members)),
@@ -204,7 +220,7 @@ for number, (signature, members) in enumerate(
         "member_count": len(members), "highest_confidence":
         "high" if all(row["confidence"] == "high" for row in members) else "medium_or_low",
         "recommended_action": "review_as_family; never merge from signature alone",
-        "status": "resolved-by-approved-deprecation" if resolved_pairs else "proposed-not-applied",
+        "status": cluster_status,
     })
 
 exceptions = [
@@ -251,7 +267,8 @@ OUT.mkdir(parents=True, exist_ok=True)
 write_csv(OUT / "ingredient_harmonization_inventory.csv", inventory, list(inventory[0]))
 write_csv(OUT / "ingredient_rule_catalog.csv", rule_rows, list(rule_rows[0]))
 write_csv(OUT / "ingredient_signature_clusters.csv", clusters, list(clusters[0]))
-write_csv(OUT / "ingredient_exception_queue.csv", exception_rows, list(exception_rows[0]))
+exception_fields = ["exception_id", "concept_id", "preferred_label", "ingredient_family", "exception_reason", "recommended_action", "status"]
+write_csv(OUT / "ingredient_exception_queue.csv", exception_rows, exception_fields)
 (OUT / "ingredient_harmonization_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
 
 print(

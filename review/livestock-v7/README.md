@@ -1,6 +1,6 @@
 # Ingredient model-gap consolidation
 
-This packet turns remaining exception work into model families:
+This packet records completed model-family closure and remaining explicit identity holds:
 
 - `ingredient_model_gap_families.csv` — all unresolved exceptions grouped by
   required ontology capability;
@@ -10,5 +10,5 @@ This packet turns remaining exception work into model families:
   labels override stale legacy edge labels;
 - `ingredient_model_gap_summary.json` — workload totals.
 
-No identity change is automatic. High-confidence duplicate recommendations still
-require explicit approval and compatibility checks.
+ADR 0020 closes all 19 model exceptions. Bothriochloa deprecation and five
+retain-distinct decisions are approved. Cotton Seed remains one approved hold.

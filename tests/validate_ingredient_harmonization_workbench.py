@@ -24,8 +24,8 @@ assert len(inventory) == summary["ingredient_concepts"] == 1643
 assert len({row["concept_id"] for row in inventory}) == 1643
 assert len(rules) == summary["rules"] == 68
 assert len({row["rule_id"] for row in rules}) == 68
-assert len(clusters) == 7 and summary["unresolved_signature_clusters"] == 7
-assert len(exceptions) == summary["unresolved_expert_exceptions"] == 19
+assert len(clusters) == 7 and summary["unresolved_signature_clusters"] == 0
+assert len(exceptions) == summary["unresolved_expert_exceptions"] == 0
 assert summary["routes"] == {
     "batch_review": 10,
     "expert_exception": 25,
@@ -55,6 +55,9 @@ assert "AOM_006072" not in {row["concept_id"] for row in exceptions}
 assert by_id["AOM_006500"]["process_candidates"] == "Boiling;Drying;Grinding;Dehulling;Soaking"
 assert by_id["AOM_006108"]["source_identity_candidate"] == "common bean"
 assert by_id["AOM_001313"]["governance_state"] == "approved_model_resolution"
+assert by_id["AOM_000555"]["governance_state"] == "approved_model_resolution"
+assert by_id["AOM_001898"]["governance_state"] == "approved_deprecated"
+assert sum(row["status"] == "held-by-approved-identity-review" for row in clusters) == 1
 assert by_id["AOM_001616"]["source_identity_candidate"] == "blood"
 assert not by_id["AOM_001616"]["component_candidates"]
 assert by_id["AOM_001333"]["source_identity_candidate"] == "oil"

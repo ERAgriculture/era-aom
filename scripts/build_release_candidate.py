@@ -86,6 +86,21 @@ def copy_csv_and_parquet(source, csv_target, parquet_target):
     pq.write_table(pa.Table.from_pylist(rows), parquet_target, compression="zstd")
 
 
+def combine_csv_and_parquet(sources, csv_target, parquet_target):
+    rows = []
+    fields = []
+    for source in sources:
+        with source.open(encoding="utf-8", newline="") as handle:
+            reader = csv.DictReader(handle)
+            fields.extend(field for field in reader.fieldnames if field not in fields)
+            rows.extend(reader)
+    with csv_target.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+    pq.write_table(pa.Table.from_pylist(rows), parquet_target, compression="zstd")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True)
@@ -133,8 +148,11 @@ def main():
         output / "ingredient-harmonization-rules.csv",
         output / "ingredient-harmonization-rules.parquet",
     )
-    copy_csv_and_parquet(
-        root / "data" / "livestock-staging" / "approved_generated_feed_material_facets.csv",
+    combine_csv_and_parquet(
+        [
+            root / "data" / "livestock-staging" / "approved_feed_material_facets.csv",
+            root / "data" / "livestock-staging" / "approved_generated_feed_material_facets.csv",
+        ],
         output / "feed-material-facets.csv",
         output / "feed-material-facets.parquet",
     )

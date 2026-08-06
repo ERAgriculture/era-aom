@@ -12771,9 +12771,10 @@
 <urn:era-aom:livestock:AOM_001459> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001459" ;
-  skos:prefLabel "Bothriochloa Dried"@en ;
+  skos:prefLabel "Bothriochloa dried"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Bothriocloa Dried"@en ;
   skos:broader <urn:era-aom:livestock:AOM_001458> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_79826> .
 
@@ -16639,9 +16640,10 @@
   skos:notation "AOM_001898" ;
   skos:prefLabel "Bothriochloa dried"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:altLabel "Bothriocloa Dried"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100945> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_001459> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_79826> .
 
 <urn:era-aom:livestock:AOM_001900> a skos:Concept ;
@@ -27002,3 +27004,51 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_101109> .
+
+<urn:era-aom:livestock:AOM_101111> a skos:Concept, aom:FeedProductType ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101111" ;
+  skos:prefLabel "Feed product types"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101112> a skos:Concept, aom:FeedProductType ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101112" ;
+  skos:prefLabel "Processing pulp"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101111> .
+
+<urn:era-aom:livestock:AOM_101113> a skos:Concept, aom:FeedProductType ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101113" ;
+  skos:prefLabel "Hay"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101111> .
+
+<urn:era-aom:livestock:AOM_101114> a skos:Concept, aom:FeedProductType ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101114" ;
+  skos:prefLabel "Compound feed"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101111> .
+
+<urn:era-aom:livestock:AOM_101115> a skos:Concept, aom:CompositionState ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101115" ;
+  skos:prefLabel "Composition states"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101116> a skos:Concept, aom:CompositionState ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101116" ;
+  skos:prefLabel "Whole-milk composition"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101115> .

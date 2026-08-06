@@ -58,9 +58,9 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 93 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
+assert len(facet_rows) == 99 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
 assert len(facet_holds) == 10
-assert len(material_facets) == 1606
+assert len(material_facets) == 1625
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:

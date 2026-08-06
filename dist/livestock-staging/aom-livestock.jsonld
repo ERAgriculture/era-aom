@@ -33004,11 +33004,17 @@
       },
       "skos:notation": "AOM_001459",
       "skos:prefLabel": {
-        "@value": "Bothriochloa Dried",
+        "@value": "Bothriochloa dried",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
+      "skos:altLabel": [
+        {
+          "@value": "Bothriocloa Dried",
+          "@language": "en"
+        }
+      ],
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001458"
       },
@@ -43111,7 +43117,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "Bothriocloa Dried",
@@ -43120,6 +43126,9 @@
       ],
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100945"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_001459"
       },
       "skos:relatedMatch": [
         {
@@ -69187,6 +69196,126 @@
       "era:status": "unknown",
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101109"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101111",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedProductType"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101111",
+      "skos:prefLabel": {
+        "@value": "Feed product types",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101112",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedProductType"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101112",
+      "skos:prefLabel": {
+        "@value": "Processing pulp",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101111"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101113",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedProductType"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101113",
+      "skos:prefLabel": {
+        "@value": "Hay",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101111"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101114",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedProductType"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101114",
+      "skos:prefLabel": {
+        "@value": "Compound feed",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101111"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101115",
+      "@type": [
+        "skos:Concept",
+        "aom:CompositionState"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101115",
+      "skos:prefLabel": {
+        "@value": "Composition states",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_000328"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101116",
+      "@type": [
+        "skos:Concept",
+        "aom:CompositionState"
+      ],
+      "skos:inScheme": {
+        "@id": "urn:era-aom:scheme:livestock-v2"
+      },
+      "skos:notation": "AOM_101116",
+      "skos:prefLabel": {
+        "@value": "Whole-milk composition",
+        "@language": "en"
+      },
+      "era:conceptType": "aom_concept",
+      "era:status": "unknown",
+      "skos:broader": {
+        "@id": "urn:era-aom:livestock:AOM_101115"
       }
     }
   ]

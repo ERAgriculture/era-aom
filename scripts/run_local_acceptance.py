@@ -67,7 +67,7 @@ def main():
     hierarchy = json_get(hierarchy_url, timings)["results"]["bindings"][0]
     broader_count = int(hierarchy["broaderCount"]["value"])
     narrower_count = int(hierarchy["narrowerCount"]["value"])
-    assert broader_count == narrower_count == 2759, hierarchy
+    assert broader_count == narrower_count == profile["expected_hierarchy_relations"], hierarchy
 
     api = args.skosmos.rstrip("/") + "/rest/v1"
     vocabularies = json_get(api + "/vocabularies?lang=en", timings)
@@ -98,7 +98,7 @@ def main():
     timings.append(elapsed)
     assert status == 200
     backup = Graph().parse(data=graph_body, format="turtle")
-    assert len(backup) >= 26850, len(backup)
+    assert len(backup) >= profile["minimum_graph_triples"], len(backup)
     results["graph_backup"] = {"triples": len(backup), "parse": "pass"}
 
     redirect_expectations = {

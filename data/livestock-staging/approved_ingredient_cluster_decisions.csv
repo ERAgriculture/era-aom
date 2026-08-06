@@ -1,0 +1,8 @@
+case_id,concept_ids,decision,retained_id,status,reviewer,review_date,evidence,rationale
+CLUSTER-BOTHRIOCHLOA,AOM_001459;AOM_001898,deprecate_replace,AOM_001459,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Corrected labels taxon mappings and public mappings coincide; no distinguishing definition exists.
+CLUSTER-COTTON,AOM_001312;AOM_003973,hold_identity,,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Product versus by-product hierarchy and CPC granularity remain ambiguous.
+CLUSTER-MAIZE-GROUND,AOM_001324;AOM_001679,retain_distinct,,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Ground whole-grain maize has explicit integrity; generic maize grain ground does not.
+CLUSTER-MAIZE-GRAIN,AOM_000649;AOM_001313,retain_distinct,,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Whole-grain maize has explicit integrity; generic maize grain does not.
+CLUSTER-MILK,AOM_000555;AOM_000556,retain_distinct,,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Whole milk has explicit composition state; generic milk does not.
+CLUSTER-RICE-GROUND,AOM_000656;AOM_006156,retain_distinct,,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Ground whole-grain rice has explicit integrity; generic rice grain ground does not.
+CLUSTER-WHEAT-GROUND,AOM_000660;AOM_002017,retain_distinct,,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Ground whole-grain wheat has explicit integrity; generic wheat grain ground does not.

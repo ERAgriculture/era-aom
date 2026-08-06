@@ -49,11 +49,11 @@ with (DATA / "approved_generated_feed_material_facets.csv").open(encoding="utf-8
     generated_material_facets = list(csv.DictReader(h))
 material_facets += generated_material_facets
 assert len(value_bindings) == 298
-assert len(facet_value_concepts) == 93
+assert len(facet_value_concepts) == 99
 assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 65
-assert len({row["concept_id"] for row in facet_value_concepts}) == 93
-assert len(material_facets) == 1606
+assert len({row["concept_id"] for row in facet_value_concepts}) == 99
+assert len(material_facets) == 1625
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_value_concepts
 }
@@ -305,6 +305,7 @@ assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 418
 for value_class in {
     "IngredientPartCategory", "IngredientPhysicalForm", "ProcessingMethod",
     "ProductRole", "IngredientConstituent", "FeedMaterialComponent", "MaterialIntegrity",
+    "FeedProductType", "CompositionState",
 }:
     assert any(binding_graph.subjects(RDF.type, URIRef("urn:era-aom:schema:" + value_class)))
 assert {
@@ -341,4 +342,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 10 facets, 1606 material assertions")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 12 facets, 1625 material assertions")
