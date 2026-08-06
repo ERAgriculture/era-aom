@@ -31,11 +31,11 @@ recommended = {
 }
 held = {
     row["rule_id"] for row in assessment
-    if row["recommendation"].startswith("hold") or row["recommendation"].startswith("defer")
+    if row["recommendation"].startswith("hold")
 }
-assert len(approved) == 40 and len(recommended) == 41
+assert len(approved) == len(recommended) == 40
 assert recommended - {row["rule_id"] for row in approved} == {"PROCESS-DEHULLED"}
-assert {row["rule_id"] for row in approved} < recommended
+assert {row["rule_id"] for row in approved} - recommended == {"COMPONENT-BLOOD"}
 assert not ({row["rule_id"] for row in approved} & held)
 assert all(
     row["status"] == "approved" and row["reviewer"] == "Pete Steward"

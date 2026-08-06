@@ -31,6 +31,7 @@ by_rule = {row["rule_id"]: row for row in rules}
 assert by_rule["PROCESS-ENSILED"]["recommendation"] == "approve-bulk"
 assert by_rule["PROCESS-GROUND"]["matched_concept_count"] == "342"
 assert by_rule["COMPONENT-GRAIN"]["recommendation"] == "approve-with-guard"
+assert by_rule["COMPONENT-BLOOD"]["recommendation"] == "defer-no-occurrences"
 for rule_id in {"FORM-CAKE", "FORM-OIL", "FORM-PULP", "FORM-MEAL", "FORM-HAY"}:
     assert by_rule[rule_id]["recommendation"] == "hold-model-gap"
 for rule_id in {"QUALITY-YELLOW", "QUALITY-RIPE"}:

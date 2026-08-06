@@ -1,0 +1,7 @@
+case_id,concept_id,source_identity,suppress_component_values,suppress_form_values,status,reviewer,review_date,evidence,rationale
+SOURCE-BLOOD,AOM_001616,Blood,Blood,,approved,Pete Steward,2026-08-06,docs/decisions/0019-feed-material-source-fallback.md,Blood is feed-material identity in Animal branch; not missing animal-source context encoded as anatomical facet.
+SOURCE-BLOOD-DRIED-GROUND-HEATED,AOM_000537,Blood,Blood,,approved,Pete Steward,2026-08-06,docs/decisions/0019-feed-material-source-fallback.md,Blood remains material identity while drying grinding and heating are independent processes.
+SOURCE-BLOOD-GROUND,AOM_000536,Blood,Blood,,approved,Pete Steward,2026-08-06,docs/decisions/0019-feed-material-source-fallback.md,Blood remains material identity while grinding is independent process.
+SOURCE-SHELL,AOM_000558,Shell,Shell,,approved,Pete Steward,2026-08-06,docs/decisions/0019-feed-material-source-fallback.md,Generic animal shell is material identity in Animal Byproduct branch; source cannot be reconstructed by stripping Shell.
+SOURCE-SHELL-GROUND,AOM_006194,Shell,Shell,,approved,Pete Steward,2026-08-06,docs/decisions/0019-feed-material-source-fallback.md,Shell remains material identity while grinding is independent process.
+SOURCE-OIL,AOM_001333,Oil,,Oil,approved,Pete Steward,2026-08-06,docs/decisions/0019-feed-material-source-fallback.md,Generic oil is material identity in Crop Product branch; not evidence for physical form.

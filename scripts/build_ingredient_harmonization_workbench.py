@@ -14,6 +14,7 @@ DEPRECATIONS = ROOT / "data/livestock-staging/approved_deprecations.csv"
 CONCEPTS = ROOT / "data/livestock-staging/concepts.csv"
 LABELS = ROOT / "data/livestock-staging/labels.csv"
 INTEGRITY_DECISIONS = ROOT / "data/livestock-staging/approved_whole_grain_integrity_decisions.csv"
+SOURCE_OVERRIDES = ROOT / "data/livestock-staging/approved_feed_material_source_overrides.csv"
 
 ALIASES = {
     "corn": "maize", "milled": "ground", "grounded": "ground",
@@ -106,6 +107,10 @@ with LABELS.open(encoding="utf-8", newline="") as handle:
     }
 with INTEGRITY_DECISIONS.open(encoding="utf-8", newline="") as handle:
     model_resolved = {row["concept_id"] for row in csv.DictReader(handle) if row["status"] == "approved"}
+with SOURCE_OVERRIDES.open(encoding="utf-8", newline="") as handle:
+    source_overrides = {
+        row["concept_id"]: row for row in csv.DictReader(handle) if row["status"] == "approved"
+    }
 deprecated = {row["deprecated_id"]: row["replacement_id"] for row in approved_deprecations}
 retained_replacements = set(deprecated.values())
 ingredient_occurrences = [
@@ -131,8 +136,16 @@ for row in rows:
     component = matches(label, COMPONENT)
     form = matches(label, FORM)
     quality = matches(label, QUALITY)
+    override = source_overrides.get(row["AOM"])
+    if override:
+        suppressed_components = set(override["suppress_component_values"].split(";")) - {""}
+        suppressed_forms = set(override["suppress_form_values"].split(";")) - {""}
+        component = [item for item in component if item[1] not in suppressed_components]
+        form = [item for item in form if item[1] not in suppressed_forms]
     ambiguity = [(term, reason) for term, reason in AMBIGUOUS.items() if f" {term} " in f" {label} "]
     base = strip_terms(label, [process, component, form, quality, [(term, term) for term, _ in ambiguity]])
+    if override:
+        base = normalize(override["source_identity"])
     reasons = [reason for _, reason in ambiguity]
     if row["L6"] in STRUCTURAL_L6:
         reasons.append("structural metadata concept, not feed-material identity")
@@ -167,6 +180,7 @@ for row in rows:
             "approved_deprecated" if row["AOM"] in deprecated else
             "approved_retained_replacement" if row["AOM"] in retained_replacements else
             "approved_model_resolution" if row["AOM"] in model_resolved else
+            "approved_source_override" if row["AOM"] in source_overrides else
             "unreviewed"
         ),
         "status": "proposed-not-applied", "rule_version": "1.0.0",

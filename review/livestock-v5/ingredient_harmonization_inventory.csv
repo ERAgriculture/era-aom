@@ -4,8 +4,8 @@ AOM_000532,Ingredient part,Ingredient part,ingredient part,,,,,ingredient part||
 AOM_000533,Ingredient species,Ingredient species,ingredient species,,,,,ingredient species||||,high,retain_atomic_candidate,"structural metadata concept, not feed-material identity",present,unreviewed,proposed-not-applied,1.0.0
 AOM_000534,Ingredient proportion,Ingredient proportion,ingredient proportion,,,,,ingredient proportion||||,high,retain_atomic_candidate,"structural metadata concept, not feed-material identity",present,unreviewed,proposed-not-applied,1.0.0
 AOM_000535,Ingredient source,Ingredient source,ingredient source,,,,,ingredient source||||,high,retain_atomic_candidate,"structural metadata concept, not feed-material identity",missing,unreviewed,proposed-not-applied,1.0.0
-AOM_000536,Blood Ground,Animal,,Blood,Grinding,,,|Blood|Grinding||,low,expert_exception,no source identity remains after decomposition,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_000537,Blood Dried Ground Heated,Animal,,Blood,Drying;Grinding;Heating,,,|Blood|Drying;Grinding;Heating||,low,expert_exception,no source identity remains after decomposition,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_000536,Blood Ground,Animal,blood,,Grinding,,,blood||Grinding||,high,rule_application_candidate,,missing,approved_source_override,proposed-not-applied,1.0.0
+AOM_000537,Blood Dried Ground Heated,Animal,blood,,Drying;Grinding;Heating,,,blood||Drying;Grinding;Heating||,high,rule_application_candidate,,missing,approved_source_override,proposed-not-applied,1.0.0
 AOM_000538,Bone Ash,Animal Byproduct,bone ash,,,,,bone ash||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000539,Bone Ground,Animal Byproduct,bone,,Grinding,,,bone||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000540,Bone,Animal Byproduct,bone,,,,,bone||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -23,7 +23,7 @@ AOM_000554,Insect,Animal,insect,,,,,insect||||,high,retain_atomic_candidate,,mis
 AOM_000555,Whole Milk,Animal,milk,,,,,milk||||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000556,Milk,Animal,milk,,,,,milk||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000557,Oyster Shells,Animal Byproduct,oyster shells,,,,,oyster shells||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_000558,Shell,Animal Byproduct,,Shell,,,,|Shell|||,low,expert_exception,no source identity remains after decomposition,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_000558,Shell,Animal Byproduct,shell,,,,,shell||||,high,retain_atomic_candidate,,missing,approved_source_override,proposed-not-applied,1.0.0
 AOM_000559,Animal,Animal,animal,,,,,animal||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000561,Animal Manures,Animal Manures,animal manures,,,,,animal manures||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_000563,Unspecified Bran,Crop Byproduct,unspecified,Bran,,,,unspecified|Bran|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -396,7 +396,7 @@ AOM_001324,Ground whole-grain maize,Crop Product,maize,Grain,Grinding,,,maize|Gr
 AOM_001326,Whole-crop maize silage,Crop Product,crop maize,,Ensiling,,,crop maize||Ensiling||,low,expert_exception,"whole may mean whole crop, whole grain, whole organism, or physical presentation",missing,approved_retained_replacement,proposed-not-applied,1.0.0
 AOM_001331,Oat Grain,Crop Product,oat,Grain,,,,oat|Grain|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001332,Oat Ground,Crop Product,oat,,Grinding,,,oat||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_001333,Oil,Crop Product,,,,Oil,,|||Oil|,low,expert_exception,no source identity remains after decomposition,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_001333,Oil,Crop Product,oil,,,,,oil||||,high,retain_atomic_candidate,,missing,approved_source_override,proposed-not-applied,1.0.0
 AOM_001334,Pearl Millet,Crop Product,pearl millet,,,,,pearl millet||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001335,Sesame Ground,Crop Byproduct,sesame,,Grinding,,,sesame||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001336,Sesame Seed Ground,Crop Byproduct,sesame,Seed,Grinding,,,sesame|Seed|Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -624,7 +624,7 @@ AOM_001612,Azadirachta indica Leaves Dried,Forage Plants,azadirachta indica,Leaf
 AOM_001613,Barley Ground,Crop Product,barley,,Grinding,,,barley||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001614,Maize Bran,Crop Byproduct,maize,Bran,,,,maize|Bran|||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001615,Maize Sheath Ground,Crop Byproduct,maize sheath,,Grinding,,,maize sheath||Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_001616,Blood,Animal,,Blood,,,,|Blood|||,low,expert_exception,no source identity remains after decomposition,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_001616,Blood,Animal,blood,,,,,blood||||,high,retain_atomic_candidate,,missing,approved_source_override,proposed-not-applied,1.0.0
 AOM_001617,Maize Straw Dried Ground,Crop Byproduct,maize,Straw,Drying;Grinding,,,maize|Straw|Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001618,Oat Fodder,Crop Byproduct,oat fodder,,,,,oat fodder||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_001619,Rice Husk Dried Urea Treated,Crop Byproduct,rice,Husk,Drying;Urea treatment,,,rice|Husk|Drying;Urea treatment||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
@@ -1469,7 +1469,7 @@ AOM_006188,Rice Husk Fermented,Crop Byproduct,rice,Husk,Fermentation,,,rice|Husk
 AOM_006190,Rice Straw Ground,Crop Byproduct,rice,Straw,Grinding,,,rice|Straw|Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006191,Rice Straw Dried,Crop Byproduct,rice,Straw,Drying,,,rice|Straw|Drying||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006192,Rice Straw Dried Ensiled Urea Treated,Crop Byproduct,rice,Straw,Drying;Ensiling;Urea treatment,,,rice|Straw|Drying;Ensiling;Urea treatment||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
-AOM_006194,Shell Ground,Animal Byproduct,,Shell,Grinding,,,|Shell|Grinding||,low,expert_exception,no source identity remains after decomposition,missing,unreviewed,proposed-not-applied,1.0.0
+AOM_006194,Shell Ground,Animal Byproduct,shell,,Grinding,,,shell||Grinding||,high,rule_application_candidate,,missing,approved_source_override,proposed-not-applied,1.0.0
 AOM_006196,Adansonia digitata Seed Cake Decorticated Ground,Forage Plants,adansonia digitata,Seed,Grinding;Dehulling,Cake,,adansonia digitata|Seed|Grinding;Dehulling|Cake|,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006198,Cochlospermum planchonii Rhizomes Dried Ground,Forage Plants,cochlospermum planchonii rhizomes,,Drying;Grinding,,,cochlospermum planchonii rhizomes||Drying;Grinding||,high,rule_application_candidate,,missing,unreviewed,proposed-not-applied,1.0.0
 AOM_006199,Teff,Crop Byproduct,teff,,,,,teff||||,high,retain_atomic_candidate,,missing,unreviewed,proposed-not-applied,1.0.0

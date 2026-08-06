@@ -30,6 +30,9 @@ round-trip tests will be added with normalized pilot data.
 - `validate_whole_grain_integrity.py`: checks reviewed maize, wheat, and rice
   integrity decisions, labels, RDF assertions, independent grinding, and absence
   of false physical-form or generic-grain inference.
+- `validate_feed_material_source_overrides.py`: checks governed Blood, Shell,
+  and Oil identities suppress false component/form extraction while preserving
+  independent process assertions.
 - `validate_semantic_model.py`: parses OWL/SHACL, checks complete disposition
   and phase-2 binding coverage, validates RDF/JSON-LD equivalence, and proves
   valid/invalid semantic-model fixtures behave correctly.

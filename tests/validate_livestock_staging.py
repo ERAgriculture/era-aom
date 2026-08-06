@@ -35,6 +35,7 @@ component_value_holds = read("approved_ingredient_component_value_holds")
 harmonization_rules = read("approved_ingredient_harmonization_rules")
 generated_material_facets = read("approved_generated_feed_material_facets")
 whole_grain_decisions = read("approved_whole_grain_integrity_decisions")
+source_overrides = read("approved_feed_material_source_overrides")
 manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
@@ -76,6 +77,7 @@ assert len(facet_concepts) == 93
 assert len(harmonization_rules) == 40
 assert len(generated_material_facets) == 1600
 assert len(whole_grain_decisions) == 4
+assert len(source_overrides) == 6
 assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 65
 assert len(component_value_holds) == 10
@@ -103,6 +105,7 @@ assert manifest["counts"]["approved_ingredient_facet_concepts"] == 93
 assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
 assert manifest["counts"]["approved_generated_feed_material_facets"] == 1600
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
+assert manifest["counts"]["approved_feed_material_source_overrides"] == 6
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 10
