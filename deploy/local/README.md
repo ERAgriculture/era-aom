@@ -10,6 +10,13 @@ python scripts/check_browser_stack.py --attempts=90 --delay=2
 docker compose -f deploy/local/compose.yaml down
 ```
 
+After changing Skosmos configuration or custom CSS, recreate its container so
+APC does not retain parsed configuration from the prior mount state:
+
+```sh
+docker compose -f deploy/local/compose.yaml up --detach --force-recreate skosmos
+```
+
 Use `down --volumes` only when deliberately discarding local evaluation data.
 This is not public hosting: no TLS, authentication, backups, monitoring,
 institutional domain, or w3id registration. Passing local checks does not

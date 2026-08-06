@@ -7,5 +7,14 @@
   "representative_label": "Whole-grain maize",
   "search_query": "Maize",
   "expected_top_concepts": ["AOM_000001", "AOM_000106", "AOM_000358", "AOM_000846"],
-  "maximum_response_seconds": 5.0
+  "maximum_response_seconds": 5.0,
+  "representative_checks": [
+    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "Whole grain"},
+    {"concept_id": "AOM_001326", "label": "Whole-crop maize silage", "definition_contains": "Ensiling"},
+    {"concept_id": "AOM_003206", "label": "Poultry byproduct", "definition_contains": "By-product role"},
+    {"concept_id": "AOM_000748", "label": "Asperozym (Fibrolytic Enzymes)", "definition_contains": "unspecified"},
+    {"concept_id": "AOM_000693", "label": "Grass Local", "definition_contains": "unspecified"},
+    {"concept_id": "AOM_000638", "label": "Cassava Shaft", "definition_absent": true},
+    {"concept_id": "AOM_006072", "label": "Maize Whole Ensiled", "status": "deprecated", "replaced_by": "AOM_001326"}
+  ]
 }

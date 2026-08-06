@@ -23,8 +23,11 @@ assert "https://w3id.org/era-aom/graph/livestock" in text
 assert 'skosmos:customCss "resource/css/era-aom.css"' in text
 css = ROOT / "config/skosmos/era-aom.css"
 assert css.is_file() and ".prop-skos_relatedMatch" in css.read_text()
+assert "overflow-wrap: anywhere" in css.read_text()
 assert any("era-aom.css:/var/www/html/resource/css/era-aom.css:ro" in volume
            for volume in services["skosmos"]["volumes"])
+assert "#maincontent/#main-content" in " ".join(services["skosmos"]["command"])
+assert "issues/new/choose" in " ".join(services["skosmos"]["command"])
 
 production = yaml.safe_load((ROOT / "deploy/production/compose.yaml").read_text())
 production_services = production["services"]
@@ -37,5 +40,7 @@ graph = rdflib.Graph(); graph.parse(ROOT / "config/skosmos/era-aom-production.tt
 assert len(graph) > 0
 assert any("era-aom.css:/var/www/html/resource/css/era-aom.css:ro" in volume
            for volume in production_services["skosmos"]["volumes"])
+assert "#maincontent/#main-content" in " ".join(production_services["skosmos"]["command"])
+assert "issues/new/choose" in " ".join(production_services["skosmos"]["command"])
 assert "vocab.era.cgiar.org" in (ROOT / "deploy/production/Caddyfile").read_text()
 print("Deployment bundle validation passed.")
