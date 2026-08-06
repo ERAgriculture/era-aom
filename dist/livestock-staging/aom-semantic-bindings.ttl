@@ -11978,6 +11978,11 @@
 <urn:era-aom:livestock:AOM_001303> a skos:Concept, aom:FeedMaterial ;
   aom:physicalForm <urn:era-aom:livestock:AOM_101052> .
 
+<urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:livestock:AOM_001334> a skos:Concept, aom:FeedMaterial ;
+  aom:ingredientPart <urn:era-aom:livestock:AOM_101038> .
+
 <urn:era-aom:livestock:AOM_101081> a skos:Concept, aom:IngredientConstituent .
 
 <urn:era-aom:livestock:AOM_001344> a skos:Concept, aom:FeedMaterial ;
@@ -12043,10 +12048,20 @@
 <urn:era-aom:livestock:AOM_001815> a skos:Concept, aom:FeedMaterial ;
   aom:productRole <urn:era-aom:livestock:AOM_101055> .
 
+<urn:era-aom:livestock:AOM_101027> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:livestock:AOM_001818> a skos:Concept, aom:FeedMaterial ;
+  aom:ingredientPart <urn:era-aom:livestock:AOM_101027> .
+
 <urn:era-aom:livestock:AOM_101065> a skos:Concept, aom:IngredientConstituent .
 
 <urn:era-aom:livestock:AOM_001820> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientConstituent <urn:era-aom:livestock:AOM_101065> .
+
+<urn:era-aom:livestock:AOM_101059> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:livestock:AOM_001837> a skos:Concept, aom:FeedMaterial ;
+  aom:productRole <urn:era-aom:livestock:AOM_101059> .
 
 <urn:era-aom:livestock:AOM_101041> a skos:Concept, aom:IngredientPartCategory .
 
@@ -12072,6 +12087,11 @@
 
 <urn:era-aom:livestock:AOM_001880> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101122> .
+
+<urn:era-aom:livestock:AOM_101025> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:livestock:AOM_001914> a skos:Concept, aom:FeedMaterial ;
+  aom:ingredientPart <urn:era-aom:livestock:AOM_101025> .
 
 <urn:era-aom:livestock:AOM_101081> a skos:Concept, aom:IngredientConstituent .
 
@@ -12118,6 +12138,16 @@
 <urn:era-aom:livestock:AOM_002102> a skos:Concept, aom:FeedMaterial ;
   aom:physicalForm <urn:era-aom:livestock:AOM_101052> .
 
+<urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:livestock:AOM_002106> a skos:Concept, aom:FeedMaterial ;
+  aom:physicalForm <urn:era-aom:livestock:AOM_101052> .
+
+<urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:livestock:AOM_002106> a skos:Concept, aom:FeedMaterial ;
+  aom:productRole <urn:era-aom:livestock:AOM_101062> .
+
 <urn:era-aom:livestock:AOM_101028> a skos:Concept, aom:IngredientPartCategory .
 
 <urn:era-aom:livestock:AOM_002111> a skos:Concept, aom:FeedMaterial ;
@@ -12127,6 +12157,21 @@
 
 <urn:era-aom:livestock:AOM_002120> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_101123> .
+
+<urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:IngredientPhysicalForm .
+
+<urn:era-aom:livestock:AOM_002136> a skos:Concept, aom:FeedMaterial ;
+  aom:physicalForm <urn:era-aom:livestock:AOM_101052> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_002136> a skos:Concept, aom:FeedMaterial ;
+  aom:processingMethod <urn:era-aom:livestock:AOM_101070> .
+
+<urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:livestock:AOM_002136> a skos:Concept, aom:FeedMaterial ;
+  aom:productRole <urn:era-aom:livestock:AOM_101062> .
 
 <urn:era-aom:livestock:AOM_101025> a skos:Concept, aom:IngredientPartCategory .
 
