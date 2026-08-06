@@ -16,6 +16,7 @@ PUBLIC = ROOT / "review/livestock-v12/public_authority_source_scope_review.csv"
 PUBLIC_COHORT = ROOT / "review/livestock-v12/public_authority_cohort.csv"
 WORKBOOK = ROOT / "review/livestock-v13/workbook_source_scope_review.csv"
 IDENTITY = ROOT / "review/livestock-v16/identity_alias_review.csv"
+SHARED = ROOT / "review/livestock-v17/shared_page_review.csv"
 
 CORE = {"AOM_000106", "AOM_000846"}
 FEEDIPEDIA_CATEGORY = {"AOM_000628", "AOM_000644", "AOM_000683", "AOM_000701", "AOM_000735"}
@@ -81,6 +82,18 @@ IDENTITY_FACETS = {
     "AOM_003482": [("aom:ingredientPart", "AOM_101037", "Root", "sugar beet")],
     "AOM_003911": [("aom:productRole", "AOM_101059", "Residue role", "sievate")],
     "AOM_006008": [("aom:productRole", "AOM_101062", "By-product role", "manure")],
+}
+
+SHARED_PAGE_FACETS = {
+    "AOM_001334": [("aom:ingredientPart", "AOM_101038", "Seed", "grain")],
+    "AOM_001818": [("aom:ingredientPart", "AOM_101027", "Corm", "corm")],
+    "AOM_001837": [("aom:productRole", "AOM_101059", "Residue role", "mill effluent")],
+    "AOM_001914": [("aom:ingredientPart", "AOM_101025", "Cladode", "cladode")],
+    "AOM_002106": [("aom:physicalForm", "AOM_101052", "Cake form", "oil meal"),
+                    ("aom:productRole", "AOM_101062", "By-product role", "oil meal")],
+    "AOM_002136": [("aom:physicalForm", "AOM_101052", "Cake form", "cold-pressed meal"),
+                    ("aom:processingMethod", "AOM_101070", "Pressing", "cold-pressed"),
+                    ("aom:productRole", "AOM_101062", "By-product role", "meal")],
 }
 
 # Longest suffix first. Each match strips descriptor from governed source and
@@ -167,12 +180,15 @@ public = {row["concept_id"]: row for row in read(PUBLIC)}
 public_cohort = {row["concept_id"]: row for row in read(PUBLIC_COHORT)}
 workbook = {row["concept_id"]: row for row in read(WORKBOOK)}
 identity = {row["concept_id"]: row for row in read(IDENTITY)}
+shared = {row["concept_id"]: row for row in read(SHARED)}
 review_rows, facet_rows = [], []
 for item in read(COHORT):
     cid, label, route = item["concept_id"], item["preferred_label"], item["recommended_route"]
     source, facets = decompose(label)
     if cid in IDENTITY_FACETS:
         facets = IDENTITY_FACETS[cid]
+    if cid in SHARED_PAGE_FACETS:
+        facets = SHARED_PAGE_FACETS[cid]
     # These compound sources retain an uncovered component after generic suffix
     # stripping; partial decomposition would misstate governed identity.
     if cid in {"AOM_003930"}:
@@ -207,6 +223,11 @@ for item in read(COHORT):
         decision, status = "approve_identity_alias_with_explicit_facets", "approved"
         evidence = identity[cid]["evidence"]
         rationale = identity[cid]["rationale"] + " Definition adds only reviewed structured facets."
+    elif cid in shared and shared[cid]["status"] == "approved" and facets:
+        source = shared[cid]["governed_source_identity"]
+        decision, status = "approve_shared_page_material_with_explicit_facets", "approved"
+        evidence = shared[cid]["evidence"]
+        rationale = shared[cid]["rationale"] + " Definition adds only reviewed structured facets."
     if status == "held":
         if route == "research_feedipedia":
             prior = feed[cid]["decision"]
@@ -220,6 +241,10 @@ for item in read(COHORT):
             }.get(prior, "Review mapping granularity and replace discovery-only evidence.")
             if identity_hold and identity_hold["status"] == "held":
                 next_action = identity_hold["rationale"]
+            shared_hold = shared.get(cid)
+            if shared_hold and shared_hold["status"] == "held":
+                blocker = shared_hold["blocker_code"]
+                next_action = shared_hold["rationale"]
         elif route == "research_public_ontology":
             blocker = public[cid]["decision"].removeprefix("hold_")
             next_action = "Correct or narrow public mapping, then establish material component/product scope with direct authority evidence."
