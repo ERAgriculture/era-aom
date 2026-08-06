@@ -36820,6 +36820,40 @@
       }
     },
     {
+      "@id": "urn:era-aom:livestock:AOM_101073",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_001892",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:processingMethod": {
+        "@id": "urn:era-aom:livestock:AOM_101073"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101048",
+      "@type": [
+        "skos:Concept",
+        "aom:IngredientPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_001892",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:ingredientPart": {
+        "@id": "urn:era-aom:livestock:AOM_101048"
+      }
+    },
+    {
       "@id": "urn:era-aom:livestock:AOM_101025",
       "@type": [
         "skos:Concept",

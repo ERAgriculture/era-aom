@@ -12248,6 +12248,16 @@
 <urn:era-aom:livestock:AOM_001880> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101122> .
 
+<urn:era-aom:livestock:AOM_101073> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_001892> a skos:Concept, aom:FeedMaterial ;
+  aom:processingMethod <urn:era-aom:livestock:AOM_101073> .
+
+<urn:era-aom:livestock:AOM_101048> a skos:Concept, aom:IngredientPartCategory .
+
+<urn:era-aom:livestock:AOM_001892> a skos:Concept, aom:FeedMaterial ;
+  aom:ingredientPart <urn:era-aom:livestock:AOM_101048> .
+
 <urn:era-aom:livestock:AOM_101025> a skos:Concept, aom:IngredientPartCategory .
 
 <urn:era-aom:livestock:AOM_001914> a skos:Concept, aom:FeedMaterial ;
