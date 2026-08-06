@@ -2881,6 +2881,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_000339> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_000351> ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000338> ;
     skos:definition "An antiparasitic drug which is effective against Apicomplexan parasites in the genus Plasmodium. The genus contains over 200 species and includes those responsible for malaria."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -2888,9 +2889,10 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Antiplasmodial"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_64915> ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
+    era:status "deprecated" .
 
 <https://w3id.org/era-aom/livestock/AOM_000340> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_000352> ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000338> ;
     skos:definition "A drug used to treat trichomonas infections."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -2898,9 +2900,10 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Antitrichomonal"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_50685> ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
+    era:status "deprecated" .
 
 <https://w3id.org/era-aom/livestock/AOM_000341> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_000353> ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000338> ;
     skos:definition "An agent useful in the treatment or prevention of coccidiosis in man or animals."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -2908,9 +2911,10 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Coccidiostat"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_35818> ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
+    era:status "deprecated" .
 
 <https://w3id.org/era-aom/livestock/AOM_000342> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_000354> ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000338> ;
     skos:definition "A drug used to treat or prevent infections caused by protozoal organisms belonging to the suborder Trypanosomatida."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -2918,7 +2922,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Trypanocidal"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_36335> ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
+    era:status "deprecated" .
 
 <https://w3id.org/era-aom/livestock/AOM_000344> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000343> ;
@@ -2968,46 +2972,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:notation "AOM_000349" ;
     skos:prefLabel "Antiviral"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_36044> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000351> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000350> ;
-    skos:definition "An antiparasitic drug which is effective against Apicomplexan parasites in the genus Plasmodium. The genus contains over 200 species and includes those responsible for malaria."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_000351" ;
-    skos:prefLabel "Antiplasmodial"@en ;
-    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_64915> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000352> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000350> ;
-    skos:definition "A drug used to treat trichomonas infections."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_000352" ;
-    skos:prefLabel "Antitrichomonal"@en ;
-    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_50685> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000353> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000350> ;
-    skos:definition "An agent useful in the treatment or prevention of coccidiosis in man or animals."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_000353" ;
-    skos:prefLabel "Coccidiostat"@en ;
-    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_35818> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000354> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000350> ;
-    skos:definition "A drug used to treat or prevent infections caused by protozoal organisms belonging to the suborder Trypanosomatida."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_000354" ;
-    skos:prefLabel "Trypanocidal"@en ;
-    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_36335> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -6066,17 +6030,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000935> a skos:Concept ;
-    skos:altLabel "rationed grazing"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000932> ;
-    skos:definition "rationed pasture system"@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_000935" ;
-    skos:prefLabel "strip grazing"@en ;
-    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001945> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_000936> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100853> ;
     skos:definition "used to record qualitative assessments of grazing intensity or pressure (e.g. low, medium or high)"@en ;
@@ -6192,6 +6145,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_000949> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_000935> ;
     skos:altLabel "rationed grazing"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100853> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -6199,7 +6153,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Strip grazing"@en ;
     skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001945> ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
+    era:status "deprecated" .
 
 <https://w3id.org/era-aom/livestock/AOM_000950> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100853> ;
@@ -19120,6 +19074,46 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_000351> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000350> ;
+    skos:definition "An antiparasitic drug which is effective against Apicomplexan parasites in the genus Plasmodium. The genus contains over 200 species and includes those responsible for malaria."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_000351" ;
+    skos:prefLabel "Antiplasmodial"@en ;
+    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_64915> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000352> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000350> ;
+    skos:definition "A drug used to treat trichomonas infections."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_000352" ;
+    skos:prefLabel "Antitrichomonal"@en ;
+    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_50685> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000353> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000350> ;
+    skos:definition "An agent useful in the treatment or prevention of coccidiosis in man or animals."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_000353" ;
+    skos:prefLabel "Coccidiostat"@en ;
+    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_35818> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000354> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000350> ;
+    skos:definition "A drug used to treat or prevent infections caused by protozoal organisms belonging to the suborder Trypanosomatida."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_000354" ;
+    skos:prefLabel "Trypanocidal"@en ;
+    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_36335> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_000363> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000362> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19651,6 +19645,17 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:notation "AOM_000928" ;
     skos:prefLabel "precision livestock farming"@en ;
     skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0002013> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000935> a skos:Concept ;
+    skos:altLabel "rationed grazing"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000932> ;
+    skos:definition "rationed pasture system"@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_000935" ;
+    skos:prefLabel "Strip grazing"@en ;
+    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001945> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -26613,6 +26618,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_000338> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_000350> ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000331> ;
     skos:definition "Any antimicrobial drug which is used to treat or prevent protozoal infections."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -26624,7 +26630,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:prefLabel "Antiprotozoal"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_35820> ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
+    era:status "deprecated" .
 
 <https://w3id.org/era-aom/livestock/AOM_000346> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000329> ;
@@ -26637,20 +26643,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:notation "AOM_000346" ;
     skos:prefLabel "Antimicrobial"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_33281> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000350> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000346> ;
-    skos:definition "Any antimicrobial drug which is used to treat or prevent protozoal infections."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000351>,
-        <https://w3id.org/era-aom/livestock/AOM_000352>,
-        <https://w3id.org/era-aom/livestock/AOM_000353>,
-        <https://w3id.org/era-aom/livestock/AOM_000354> ;
-    skos:notation "AOM_000350" ;
-    skos:prefLabel "Antiprotozoal"@en ;
-    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_35820> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -27371,6 +27363,20 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_000150> ;
     skos:notation "AOM_000143" ;
     skos:prefLabel "Feed Processing"@en ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000350> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000346> ;
+    skos:definition "Any antimicrobial drug which is used to treat or prevent protozoal infections."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000351>,
+        <https://w3id.org/era-aom/livestock/AOM_000352>,
+        <https://w3id.org/era-aom/livestock/AOM_000353>,
+        <https://w3id.org/era-aom/livestock/AOM_000354> ;
+    skos:notation "AOM_000350" ;
+    skos:prefLabel "Antiprotozoal"@en ;
+    skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_35820> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 

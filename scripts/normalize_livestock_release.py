@@ -631,6 +631,9 @@ def main():
             "approved_ingredient_cluster_decisions": len(
                 read_governance("approved_ingredient_cluster_decisions.csv")
             ),
+            "approved_ontology_collision_decisions": len(
+                read_governance("approved_ontology_collision_decisions.csv")
+            ),
             "approved_ingredient_component_value_mappings": len(
                 read_governance("approved_ingredient_component_value_mappings.csv")
             ),

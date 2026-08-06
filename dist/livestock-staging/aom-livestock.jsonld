@@ -9128,13 +9128,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "Any antimicrobial drug which is used to treat or prevent protozoal infections.",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000331"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000350"
       },
       "skos:relatedMatch": [
         {
@@ -9154,13 +9157,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "An antiparasitic drug which is effective against Apicomplexan parasites in the genus Plasmodium. The genus contains over 200 species and includes those responsible for malaria.",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000338"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000351"
       },
       "skos:relatedMatch": [
         {
@@ -9180,13 +9186,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "A drug used to treat trichomonas infections.",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000338"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000352"
       },
       "skos:relatedMatch": [
         {
@@ -9206,13 +9215,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "An agent useful in the treatment or prevention of coccidiosis in man or animals.",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000338"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000353"
       },
       "skos:relatedMatch": [
         {
@@ -9232,13 +9244,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "A drug used to treat or prevent infections caused by protozoal organisms belonging to the suborder Trypanosomatida.",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000338"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000354"
       },
       "skos:relatedMatch": [
         {
@@ -21741,7 +21756,7 @@
       },
       "skos:notation": "AOM_000935",
       "skos:prefLabel": {
-        "@value": "strip grazing",
+        "@value": "Strip grazing",
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
@@ -22095,7 +22110,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "rationed grazing",
@@ -22104,6 +22119,9 @@
       ],
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100853"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000935"
       },
       "skos:relatedMatch": [
         {

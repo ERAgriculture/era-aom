@@ -4138,7 +4138,9 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000338">
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000350"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35820"/>
+    <era:status>deprecated</era:status>
     <skos:definition xml:lang="en">Any antimicrobial drug which is used to treat or prevent protozoal infections.</skos:definition>
     <skos:prefLabel xml:lang="en">Antiprotozoal</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -4146,7 +4148,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000331"/>
-    <era:status>unknown</era:status>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000341"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000340"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000342"/>
@@ -4161,6 +4162,18 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_006205</skos:notation>
     <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">Opuntia ficus indica Cladode Crushed</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000935">
+    <era:status>unknown</era:status>
+    <skos:prefLabel xml:lang="en">Strip grazing</skos:prefLabel>
+    <skos:altLabel xml:lang="en">rationed grazing</skos:altLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:notation>AOM_000935</skos:notation>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000932"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">rationed pasture system</skos:definition>
+    <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001945"/>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001376">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -7102,13 +7115,14 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000949">
     <skos:prefLabel xml:lang="en">Strip grazing</skos:prefLabel>
+    <era:status>deprecated</era:status>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100853"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001945"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000935"/>
     <skos:altLabel xml:lang="en">rationed grazing</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
     <skos:notation>AOM_000949</skos:notation>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000127">
@@ -12025,17 +12039,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:definition xml:lang="en">Any measurable characteristic related to the concentration of calcium in feed. Source: EOL</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100849"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000339">
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
-    <skos:notation>AOM_000339</skos:notation>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Antiplasmodial</skos:prefLabel>
-    <skos:definition xml:lang="en">An antiparasitic drug which is effective against Apicomplexan parasites in the genus Plasmodium. The genus contains over 200 species and includes those responsible for malaria.</skos:definition>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64915"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000338"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000927">
     <skos:altLabel xml:lang="en">IMTA</skos:altLabel>
@@ -17382,9 +17385,10 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:prefLabel xml:lang="en">Trypanocidal</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000354"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000338"/>
-    <era:status>unknown</era:status>
     <skos:definition xml:lang="en">A drug used to treat or prevent infections caused by protozoal organisms belonging to the suborder Trypanosomatida.</skos:definition>
+    <era:status>deprecated</era:status>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002089">
     <skos:altLabel xml:lang="en">Lucerne Pods Dried</skos:altLabel>
@@ -19104,17 +19108,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:status>unknown</era:status>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003106">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:prefLabel xml:lang="en">Acacia mearnsii Leaves</skos:prefLabel>
-    <era:status>unknown</era:status>
-    <skos:notation>AOM_003106</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:altLabel xml:lang="en">Black Wattle Leaves</skos:altLabel>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_139012"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_003105"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000885">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_000885</skos:notation>
@@ -19136,6 +19129,17 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:notation>AOM_000603</skos:notation>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100868"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003106">
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:prefLabel xml:lang="en">Acacia mearnsii Leaves</skos:prefLabel>
+    <era:status>unknown</era:status>
+    <skos:notation>AOM_003106</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:altLabel xml:lang="en">Black Wattle Leaves</skos:altLabel>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_139012"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_003105"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002215">
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -23084,12 +23088,13 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A drug used to treat trichomonas infections.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000352"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000338"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50685"/>
     <skos:prefLabel xml:lang="en">Antitrichomonal</skos:prefLabel>
     <skos:notation>AOM_000340</skos:notation>
+    <era:status>deprecated</era:status>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006038">
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -23522,10 +23527,11 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_000341</skos:notation>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000338"/>
-    <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <era:status>deprecated</era:status>
     <skos:prefLabel xml:lang="en">Coccidiostat</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000353"/>
     <skos:definition xml:lang="en">An agent useful in the treatment or prevention of coccidiosis in man or animals.</skos:definition>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35818"/>
   </rdf:Description>
@@ -25133,18 +25139,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:notation>AOM_001758</skos:notation>
     <skos:prefLabel xml:lang="en">Acacia brevispica Pods</skos:prefLabel>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001759"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000935">
-    <era:status>unknown</era:status>
-    <skos:altLabel xml:lang="en">rationed grazing</skos:altLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:notation>AOM_000935</skos:notation>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000932"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">strip grazing</skos:prefLabel>
-    <skos:definition xml:lang="en">rationed pasture system</skos:definition>
-    <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001945"/>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000404">
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -28990,6 +28984,18 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Tephrosia polystachyum Dried</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000339">
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:notation>AOM_000339</skos:notation>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000351"/>
+    <era:status>deprecated</era:status>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Antiplasmodial</skos:prefLabel>
+    <skos:definition xml:lang="en">An antiparasitic drug which is effective against Apicomplexan parasites in the genus Plasmodium. The genus contains over 200 species and includes those responsible for malaria.</skos:definition>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64915"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000338"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101014">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>

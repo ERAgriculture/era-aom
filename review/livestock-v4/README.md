@@ -26,6 +26,9 @@ Outputs:
   review planning;
 - `ontology_pref_label_collision_candidates.csv`: whole-AOM preferred-label
   collision groups after documented terminology normalization;
+- `approved_ontology_collision_decisions.csv` in staging governs all 105
+  historical groups; active audit has 98 contextual retains, one Cotton Seed
+  hold, and zero unattended groups after six verified duplicate deprecations;
 - `cereal_feed_material_review.csv`: first coherent expert-review batch, with
   hierarchy, extracted process/form terms, definition coverage, lexical
   collisions, and public mapping evidence;

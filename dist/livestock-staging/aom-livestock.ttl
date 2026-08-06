@@ -3436,9 +3436,10 @@
   skos:notation "AOM_000338" ;
   skos:prefLabel "Antiprotozoal"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "Any antimicrobial drug which is used to treat or prevent protozoal infections."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000331> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_000350> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_35820> .
 
 <urn:era-aom:livestock:AOM_000339> a skos:Concept ;
@@ -3446,9 +3447,10 @@
   skos:notation "AOM_000339" ;
   skos:prefLabel "Antiplasmodial"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "An antiparasitic drug which is effective against Apicomplexan parasites in the genus Plasmodium. The genus contains over 200 species and includes those responsible for malaria."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000338> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_000351> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_64915> .
 
 <urn:era-aom:livestock:AOM_000340> a skos:Concept ;
@@ -3456,9 +3458,10 @@
   skos:notation "AOM_000340" ;
   skos:prefLabel "Antitrichomonal"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "A drug used to treat trichomonas infections."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000338> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_000352> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_50685> .
 
 <urn:era-aom:livestock:AOM_000341> a skos:Concept ;
@@ -3466,9 +3469,10 @@
   skos:notation "AOM_000341" ;
   skos:prefLabel "Coccidiostat"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "An agent useful in the treatment or prevention of coccidiosis in man or animals."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000338> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_000353> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_35818> .
 
 <urn:era-aom:livestock:AOM_000342> a skos:Concept ;
@@ -3476,9 +3480,10 @@
   skos:notation "AOM_000342" ;
   skos:prefLabel "Trypanocidal"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "A drug used to treat or prevent infections caused by protozoal organisms belonging to the suborder Trypanosomatida."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000338> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_000354> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/CHEBI_36335> .
 
 <urn:era-aom:livestock:AOM_000343> a skos:Concept ;
@@ -8399,7 +8404,7 @@
 <urn:era-aom:livestock:AOM_000935> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000935" ;
-  skos:prefLabel "strip grazing"@en ;
+  skos:prefLabel "Strip grazing"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "rationed grazing"@en ;
@@ -8537,9 +8542,10 @@
   skos:notation "AOM_000949" ;
   skos:prefLabel "Strip grazing"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:altLabel "rationed grazing"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100853> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_000935> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0001945> .
 
 <urn:era-aom:livestock:AOM_000950> a skos:Concept ;
