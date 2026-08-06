@@ -239,7 +239,14 @@ def main():
     definitions = [(key, label, None, facet, note) for key, label, note, facet in ROOTS]
     definitions += [(key, label, parent, facet, f"Governed {facet.replace('_', ' ')} value used for ingredient-component semantics.") for key, label, parent, facet in VALUES]
     definitions += [(key, label, None, facet, note) for key, label, note, facet in EXTENSION_ROOTS]
-    definitions += [(key, label, parent, facet, f"Governed {facet.replace('_', ' ')} value used for feed-material semantics.") for key, label, parent, facet in EXTENSION_VALUES]
+    definitions += [
+        (
+            key, label, parent, facet,
+            f"Governed {facet.replace('_', ' ')} "
+            f"{'vocabulary' if parent is None else 'value'} used for feed-material semantics.",
+        )
+        for key, label, parent, facet in EXTENSION_VALUES
+    ]
     ids = {key: f"AOM_{101019 + i:06d}" for i, (key, *_rest) in enumerate(definitions)}
     root_paths = {key: f"Management/Livestock Management/Feed Characteristic/{label}" for key, label, parent, *_ in definitions if parent is None}
     new_concepts = []

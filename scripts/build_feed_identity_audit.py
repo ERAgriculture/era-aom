@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/livestock-staging/legacy_records.csv"
 CONCEPTS = ROOT / "data/livestock-staging/concepts.csv"
 LABELS = ROOT / "data/livestock-staging/labels.csv"
+DEFINITIONS = ROOT / "data/livestock-staging/definitions.csv"
 COLLISION_DECISIONS = ROOT / "data/livestock-staging/approved_ontology_collision_decisions.csv"
 OUT = ROOT / "review/livestock-v4"
 
@@ -49,6 +50,8 @@ with CONCEPTS.open(encoding="utf-8", newline="") as handle:
     governed_concepts = list(csv.DictReader(handle))
 with LABELS.open(encoding="utf-8", newline="") as handle:
     governed_labels = list(csv.DictReader(handle))
+with DEFINITIONS.open(encoding="utf-8", newline="") as handle:
+    governed_definition_ids = {row["concept_id"] for row in csv.DictReader(handle)}
 collision_decisions = {}
 if COLLISION_DECISIONS.exists():
     with COLLISION_DECISIONS.open(encoding="utf-8", newline="") as handle:
@@ -123,7 +126,7 @@ for row in rows:
         "source_context": row["L8"],
         "component_or_form_terms": ";".join(forms),
         "process_terms": ";".join(processes),
-        "definition_status": "present" if row["Description"].strip() else "missing",
+        "definition_status": "present" if row["AOM"] in governed_definition_ids else "missing",
         "lexical_collision_keys": ";".join(lexical_by_id[row["AOM"]]),
         "feedipedia": clean_external(row["Feedipedia"]),
         "agrovoc": clean_external(row["Agrovoc"]),
@@ -172,7 +175,8 @@ duplicate_label_groups = len(preferred_collision_rows)
 summary_rows = [
     {"scope": "all AOM", "quality_signal": "source rows", "count": len(source_rows), "severity": "baseline", "interpretation": "Canonical-workbook-aligned source records audited.", "next_action": "Preserve baseline."},
     {"scope": "all AOM", "quality_signal": "identified source rows", "count": len(all_rows), "severity": "high", "interpretation": "One source record lacks an AOM identifier.", "next_action": "Review unidentified source record before cutover."},
-    {"scope": "all AOM", "quality_signal": "missing definitions", "count": sum(not row["Description"].strip() for row in all_rows), "severity": "high", "interpretation": "Identity and scope cannot be reviewed reliably from labels alone.", "next_action": "Author or source definitions by domain."},
+    {"scope": "legacy source", "quality_signal": "missing source definitions", "count": sum(not row["Description"].strip() for row in all_rows), "severity": "baseline", "interpretation": "Public source rows without original definitions; preserved for provenance.", "next_action": "Do not alter source snapshot."},
+    {"scope": "active governed vocabulary", "quality_signal": "missing definitions", "count": sum(concept_id not in governed_definition_ids for concept_id in current_concepts), "severity": "high", "interpretation": "Active governed concepts without definitions after approved enrichment.", "next_action": "Prioritize remaining domain-authority research."},
     {"scope": "all AOM", "quality_signal": "normalized preferred-label collisions", "count": duplicate_label_groups, "severity": "high", "interpretation": "Potential duplicates, contextual variants, or over-normalized labels.", "next_action": "Review identity; never merge automatically."},
     {"scope": "all AOM", "quality_signal": "unresolved preferred-label collisions", "count": sum(row["status"] == "review-required" for row in preferred_collision_rows), "severity": "pass" if all(row["status"] != "review-required" for row in preferred_collision_rows) else "high", "interpretation": "Collision groups without governed disposition.", "next_action": "Review identity; never merge automatically."},
     {"scope": "feed ingredients", "quality_signal": "concepts", "count": len(rows), "severity": "baseline", "interpretation": "Feed-material review scope.", "next_action": "Review in domain batches."},
