@@ -21,7 +21,49 @@ FEEDIPEDIA_CATEGORY = {"AOM_000628", "AOM_000644", "AOM_000683", "AOM_000701", "
 FEEDIPEDIA_ALIAS = {
     "AOM_000605", "AOM_001192", "AOM_001303", "AOM_002101",
 }
-WORKBOOK_STRUCTURED = {"AOM_001930", "AOM_006200"}
+WORKBOOK_STRUCTURED = {"AOM_001880", "AOM_001930", "AOM_002120", "AOM_006200"}
+
+COMPOUND_DESCRIPTORS = {
+    "deep stacked": [("aom:processingMethod", "AOM_101123", "Stacking", "deep stacked")],
+    "protein isolate": [
+        ("aom:ingredientConstituent", "AOM_101120", "Protein constituent", "protein"),
+        ("aom:processingMethod", "AOM_101072", "Extraction", "isolate"),
+    ],
+    "steep liquor": [
+        ("aom:physicalForm", "AOM_101077", "Liquid form", "liquor"),
+        ("aom:processingMethod", "AOM_101119", "Steeping", "steep"),
+    ],
+    "flower by product": [
+        ("aom:ingredientPart", "AOM_101117", "Flower", "flower"),
+        ("aom:productRole", "AOM_101062", "By-product role", "by product"),
+    ],
+    "haulm": [
+        ("aom:ingredientPart", "AOM_101047", "Stem", "haulm"),
+        ("aom:ingredientPart", "AOM_101033", "Leaf", "haulm"),
+        ("aom:productRole", "AOM_101063", "Crop-residue role", "haulm"),
+    ],
+    "juice": [
+        ("aom:physicalForm", "AOM_101077", "Liquid form", "juice"),
+        ("aom:processingMethod", "AOM_101072", "Extraction", "juice"),
+    ],
+    "pollard": [
+        ("aom:processingMethod", "AOM_101082", "Milling", "pollard"),
+        ("aom:productRole", "AOM_101062", "By-product role", "pollard"),
+    ],
+    "vinasse": [
+        ("aom:physicalForm", "AOM_101077", "Liquid form", "vinasse"),
+        ("aom:processingMethod", "AOM_101124", "Distillation", "vinasse"),
+        ("aom:productRole", "AOM_101059", "Residue role", "vinasse"),
+    ],
+    "liver oil": [
+        ("aom:ingredientPart", "AOM_101122", "Liver", "liver"),
+        ("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil"),
+    ],
+    "hash": [
+        ("aom:physicalForm", "AOM_101075", "Mixture form", "hash"),
+        ("aom:productRole", "AOM_101062", "By-product role", "hash"),
+    ],
+}
 
 # Longest suffix first. Each match strips descriptor from governed source and
 # emits existing approved facet value; no new semantic class is invented here.
@@ -54,6 +96,9 @@ DESCRIPTORS = [
     ("cake", "aom:physicalForm", "AOM_101052", "Cake form"),
     ("binder", "aom:productRole", "AOM_101079", "Binder role"),
     ("cull", "aom:productRole", "AOM_101055", "Discard role"),
+    ("flower", "aom:ingredientPart", "AOM_101117", "Flower"),
+    ("slurry", "aom:physicalForm", "AOM_101118", "Slurry form"),
+    ("rhizomes", "aom:ingredientPart", "AOM_101121", "Rhizome"),
 ]
 
 
@@ -76,6 +121,12 @@ def decompose(label):
     while changed:
         changed = False
         folded = re.sub(r"\s+", " ", source.casefold()).strip()
+        for term, assertions in COMPOUND_DESCRIPTORS.items():
+            if folded.endswith(" " + term):
+                source = source[:-(len(term))].strip(" -")
+                found.extend(assertions); changed = True; break
+        if changed:
+            continue
         for term, prop, target, target_label in DESCRIPTORS:
             if folded.endswith(" " + term):
                 source = source[:-(len(term))].strip(" -")
@@ -103,7 +154,7 @@ for item in read(COHORT):
     source, facets = decompose(label)
     # These compound sources retain an uncovered component after generic suffix
     # stripping; partial decomposition would misstate governed identity.
-    if cid in {"AOM_003930", "AOM_006323"}:
+    if cid in {"AOM_003930"}:
         facets = []
     decision, status, evidence = "hold_expert_evidence_required", "held", ""
     rationale = "Available mapping or workbook evidence does not establish complete material identity and structured scope."

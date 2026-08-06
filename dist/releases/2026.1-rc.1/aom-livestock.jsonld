@@ -13640,6 +13640,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000811"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Chamomile” and characteristics: ingredient part — Flower."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -27470,6 +27476,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100968"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Mucuna pruriens” and characteristics: ingredient constituent — Protein constituent; processing method — Extraction."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -29325,6 +29337,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_003076"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Saccharomyces cerevisiae” and characteristics: physical form — Slurry form."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -29589,6 +29607,50 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101124",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for feed-material semantics."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101124"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Distillation"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -30413,6 +30475,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101090"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101123"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101119"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101099"
       },
       {
@@ -30450,6 +30518,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101088"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101124"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -33801,6 +33872,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100971"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Cochlospermum planchonii” and characteristics: ingredient part — Rhizome."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -43865,19 +43942,20 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000197",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101119",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000196"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Any measurable characteristic related to the concentration of lignocellulosic fraction of vegetal cell wall components in food (EOL)."
+        "@value": "Governed processing method value used for feed-material semantics."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -43887,26 +43965,18 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "AOM_000197"
+        "@value": "AOM_101119"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Acid Detergent Fibre (ADF)"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_7fb85d63"
-      },
-      {
-        "@id": "http://opendata.inra.fr/EOL/EOL_0000115"
+        "@value": "Steeping"
       }
     ],
     "urn:era:property:conceptType": [
       {
-        "@value": "legacy_aom_concept"
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -43945,6 +44015,57 @@
       {
         "@language": "en",
         "@value": "Multiparous"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000197",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000196"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Any measurable characteristic related to the concentration of lignocellulosic fraction of vegetal cell wall components in food (EOL)."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000197"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Acid Detergent Fibre (ADF)"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_7fb85d63"
+      },
+      {
+        "@id": "http://opendata.inra.fr/EOL/EOL_0000115"
       }
     ],
     "urn:era:property:conceptType": [
@@ -45477,6 +45598,50 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101120",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientConstituent",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101023"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Governed chemical constituent value used for feed-material semantics."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101120"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Protein constituent"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -47528,6 +47693,9 @@
       }
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101118"
+      },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101053"
       },
@@ -51476,6 +51644,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001166"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Opuntia ficus indica” and characteristics: physical form — Liquid form; processing method — Extraction."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -56474,6 +56648,50 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101123",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101021"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for feed-material semantics."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101123"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Stacking"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -67723,25 +67941,19 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000674",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006323",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@language": "en",
-        "@value": "Common Sunflower Oil"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000673"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000752"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “sunflower” and characteristics: ingredient constituent — Oil constituent."
+        "@value": "A feed material with governed source identity “Chamomile” and characteristics: ingredient part — Flower; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -67751,21 +67963,18 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "AOM_000674"
+        "@value": "AOM_006323"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Sunflower Oil"
+        "@value": "Chamomile Flower By Product"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4232"
-      },
-      {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_25506"
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_99037"
       }
     ],
     "urn:era:property:conceptType": [
@@ -68014,6 +68223,63 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000674",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Common Sunflower Oil"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000673"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “sunflower” and characteristics: ingredient constituent — Oil constituent."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000674"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sunflower Oil"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4232"
+      },
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_25506"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000768",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -68108,48 +68374,6 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4577"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006323",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000752"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_006323"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Chamomile Flower By Product"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_99037"
       }
     ],
     "urn:era:property:conceptType": [
@@ -73134,6 +73358,50 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101122",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPartCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for feed-material semantics."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101122"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Liver"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001065",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -73618,6 +73886,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100869"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Groundnut” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -81321,6 +81595,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100851"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Maize” and characteristics: physical form — Liquid form; processing method — Steeping."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -82336,6 +82616,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101066"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101120"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101080"
@@ -95649,6 +95932,50 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101118",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPhysicalForm",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101020"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Governed physical form value used for feed-material semantics."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101118"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Slurry form"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006077",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -100034,6 +100361,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100910"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Cassava” and characteristics: physical form — Liquid form; processing method — Distillation; product role — Residue role."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -103268,6 +103601,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100852"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Soybean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -116499,6 +116838,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100866"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Common Bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -118675,6 +119020,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100911"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Potato” and characteristics: physical form — Mixture form; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -121540,6 +121891,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001146"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Poultry Litter” and characteristics: processing method — Stacking."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -130021,6 +130378,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100865"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Chickpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -130474,6 +130837,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_003209"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Grass Pea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -142210,6 +142579,50 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101121",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPartCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for feed-material semantics."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101121"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Rhizome"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000179",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -144576,6 +144989,50 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101117",
+    "@type": [
+      "https://w3id.org/era-aom/schema/IngredientPartCategory",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for feed-material semantics."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101117"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Flower"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001880",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -144583,6 +145040,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001879"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Cod” and characteristics: ingredient constituent — Oil constituent; ingredient part — Liver."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -147462,6 +147925,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101027"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101122"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101025"
       },
       {
@@ -147477,6 +147943,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101038"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101121"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101026"
       },
       {
@@ -147484,6 +147953,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101045"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101117"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101028"

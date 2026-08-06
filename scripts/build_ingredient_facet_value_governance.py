@@ -131,11 +131,22 @@ EXTENSION_VALUES = [
     ("product_compound_feed", "Compound feed", "product_type_root", "feed_product_type"),
     ("composition_state_root", "Composition states", None, "composition_state"),
     ("composition_whole_milk", "Whole-milk composition", "composition_state_root", "composition_state"),
+    # ADR 0029 hard-tail model extensions. Append only: existing IDs remain stable.
+    ("part_flower", "Flower", "part_root", "anatomical_part"),
+    ("form_slurry", "Slurry form", "form_root", "physical_form"),
+    ("process_steeping", "Steeping", "process_root", "processing_method"),
+    ("const_protein", "Protein constituent", "constituent_root", "chemical_constituent"),
+    ("part_rhizome", "Rhizome", "part_root", "anatomical_part"),
+    ("part_liver", "Liver", "part_root", "anatomical_part"),
+    ("process_stacking", "Stacking", "process_root", "processing_method"),
+    ("process_distillation", "Distillation", "process_root", "processing_method"),
 ]
 RULE_EXTENSION_KEYS = {key for key, *_ in EXTENSION_VALUES[1:]}
 
 
 def evidence_for(key):
+    if key in {"part_flower", "form_slurry", "process_steeping", "const_protein", "part_rhizome", "part_liver", "process_stacking", "process_distillation"}:
+        return "docs/decisions/0029-semantic-model-hard-tail-extension.md"
     if key.startswith("product_") or key.startswith("composition_"):
         return "docs/decisions/0020-ingredient-semantic-closure.md"
     if key in {"integrity_root", "integrity_whole_grain"}:

@@ -42,7 +42,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2769 and len(ids) == len(known)
+assert len(ids) == 2777 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -77,10 +77,10 @@ assert all(row["reviewer"] == "Pete Steward" for row in component_classification
 assert sum(row["disposition"] == "review_single" for row in component_classifications) == 52
 assert sum(row["disposition"] == "decompose" for row in component_classifications) == 29
 assert sum(row["disposition"] == "hold" for row in component_classifications) == 2
-assert len(facet_concepts) == 99
+assert len(facet_concepts) == 107
 assert len(harmonization_rules) == 40
 assert len(generated_material_facets) == 1599
-assert len(hard_tail_material_facets) == 43
+assert len(hard_tail_material_facets) == 77
 assert len(whole_grain_decisions) == 4
 assert len(source_overrides) == 15
 assert len(component_value_mappings) == 45
@@ -114,17 +114,17 @@ assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_mapping_reviews"] == 383
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
 assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
-assert manifest["counts"]["approved_ingredient_facet_concepts"] == 99
+assert manifest["counts"]["approved_ingredient_facet_concepts"] == 107
 assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
 assert manifest["counts"]["approved_generated_feed_material_facets"] == 1599
-assert manifest["counts"]["approved_hard_tail_feed_material_facets"] == 43
+assert manifest["counts"]["approved_hard_tail_feed_material_facets"] == 77
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
 assert manifest["counts"]["approved_feed_material_source_overrides"] == 15
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 10
 assert len(label_corrections) == 12
-assert len(new_concepts) == 268
+assert len(new_concepts) == 276
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -188,7 +188,7 @@ final_mint_cases = {
 }
 assert final_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 101117)
+    f"AOM_{number:06d}" for number in range(100849, 101125)
 }
 assert {row["concept_id"] for row in id_registry} <= known
 status = {row["concept_id"]: row["status"] for row in concepts}
