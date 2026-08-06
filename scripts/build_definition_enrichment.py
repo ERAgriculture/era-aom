@@ -37,6 +37,9 @@ material_facets = read("approved_feed_material_facets.csv") + read("approved_gen
 feedipedia_scope_reviews = list(csv.DictReader(
     (ROOT / "review/livestock-v11/feedipedia_source_scope_review.csv").open(encoding="utf-8", newline="")
 ))
+public_authority_reviews = list(csv.DictReader(
+    (ROOT / "review/livestock-v12/public_authority_source_scope_review.csv").open(encoding="utf-8", newline="")
+))
 
 rows = []
 for row in new_concepts:
@@ -96,7 +99,30 @@ family_label = {
     "Crop Product": "crop-product",
     "Forage Plants": "forage-plant",
     "Other Ingredients": "other-ingredient",
+    "Probiotic": "probiotic",
 }
+
+for review in public_authority_reviews:
+    concept_id = review["concept_id"]
+    if (review["decision"] != "approve_direct_source_scope" or review["status"] != "approved"
+            or concept_id in existing or concept_id in base_ids):
+        continue
+    identity = review["governed_identity"].strip()
+    if not identity or not review["authority_uri"]:
+        raise ValueError(f"Approved public-authority scope lacks identity/evidence: {concept_id}")
+    rows.append({
+        "concept_id": concept_id, "language": "en",
+        "definition": (
+            f"A {family_label[review['ingredient_family']]} feed material with governed source identity “{identity}”. "
+            "Component, processing method, physical form, product role, integrity, composition, and constituent "
+            "are unspecified at this concept level unless separately asserted."
+        ),
+        "definition_method": "composed_from_reviewed_public_authority_source_scope",
+        "status": "approved", "reviewer": review["reviewer"], "review_date": review["review_date"],
+        "evidence": review["authority_uri"], "rationale": review["rationale"],
+    })
+
+base_ids = {row["concept_id"] for row in rows}
 for review in feedipedia_scope_reviews:
     concept_id = review["concept_id"]
     if review["status"] != "approved" or concept_id in existing or concept_id in base_ids:
