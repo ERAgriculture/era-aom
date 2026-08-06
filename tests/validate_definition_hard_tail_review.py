@@ -19,9 +19,9 @@ facets = read(DATA / "approved_hard_tail_feed_material_facets.csv")
 definitions = read(DATA / "approved_definition_enrichments.csv")
 assert len(cohort) == len(rows) == 210
 assert {row["concept_id"] for row in cohort} == {row["concept_id"] for row in rows}
-assert Counter(row["status"] for row in rows) == {"held": 55, "approved": 155}
+assert Counter(row["status"] for row in rows) == {"held": 18, "approved": 192}
 assert Counter(row["decision"] for row in rows) == {
-    "hold_expert_evidence_required": 55,
+    "hold_expert_evidence_required": 18,
     "approve_taxon_source_with_explicit_facets": 50,
     "approve_feedipedia_category_scope": 5,
     "approve_feedipedia_alias_scope": 4,
@@ -31,12 +31,12 @@ assert Counter(row["decision"] for row in rows) == {
     "approve_shared_page_material_with_explicit_facets": 6,
     "approve_workbook_model_gap_with_explicit_facets": 4,
     "approve_consolidated_authority_with_explicit_facets": 17,
-    "approve_bounded_workbook_material_scope": 54,
+    "approve_bounded_workbook_material_scope": 91,
 }
-assert len(facets) == 149
+assert len(facets) == 154
 assert Counter(row["target_property"] for row in facets) == {
-    "aom:productRole": 56, "aom:ingredientPart": 44,
-    "aom:ingredientConstituent": 17, "aom:physicalForm": 18,
+    "aom:productRole": 57, "aom:ingredientPart": 46,
+    "aom:ingredientConstituent": 19, "aom:physicalForm": 18,
     "aom:processingMethod": 14,
 }
 assert all(row["blocker_code"] and row["next_action"] for row in rows if row["status"] == "held")
@@ -50,4 +50,4 @@ assert ("AOM_003879", "AOM_101037") not in facet_pairs
 assert {("AOM_001880", "AOM_101122"), ("AOM_001880", "AOM_101081")} <= facet_pairs
 assert "AOM_001805" not in {row["feed_material_id"] for row in facets}  # plant taxon cannot establish larval biomass
 assert all(row["evidence"] for row in rows if row["decision"] == "approve_taxon_source_with_explicit_facets")
-print("Definition hard-tail review passed: 155 approved; 55 actionable holds; 149 facets")
+print("Definition hard-tail review passed: 192 approved; 18 integrity holds; 154 facets")
