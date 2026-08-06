@@ -20,6 +20,7 @@ SHARED = ROOT / "review/livestock-v17/shared_page_review.csv"
 WORKBOOK_GAPS = ROOT / "review/livestock-v18/workbook_model_gap_review.csv"
 CONSOLIDATED = ROOT / "review/livestock-v19/authority_model_review.csv"
 MATERIAL_SCOPE = ROOT / "review/livestock-v21/material_scope_review.csv"
+ONTOLOGY_INTEGRITY = ROOT / "review/livestock-v22/ontology_integrity_review.csv"
 
 CORE = {"AOM_000106", "AOM_000846"}
 FEEDIPEDIA_CATEGORY = {"AOM_000628", "AOM_000644", "AOM_000683", "AOM_000701", "AOM_000735"}
@@ -137,6 +138,11 @@ MATERIAL_SCOPE_FACETS = {
     "AOM_004255": [("aom:ingredientPart", "AOM_101038", "Seed", "seed")],
 }
 
+ONTOLOGY_INTEGRITY_FACETS = {
+    "AOM_001892": [("aom:processingMethod", "AOM_101073", "Threshing", "threshed"),
+                    ("aom:ingredientPart", "AOM_101048", "Plant top", "top")],
+}
+
 # Longest suffix first. Each match strips descriptor from governed source and
 # emits existing approved facet value; no new semantic class is invented here.
 DESCRIPTORS = [
@@ -228,6 +234,7 @@ shared = {row["concept_id"]: row for row in read(SHARED)}
 workbook_gaps = {row["concept_id"]: row for row in read(WORKBOOK_GAPS)}
 consolidated = {row["concept_id"]: row for row in read(CONSOLIDATED)}
 material_scope = {row["concept_id"]: row for row in read(MATERIAL_SCOPE)}
+ontology_integrity = {row["concept_id"]: row for row in read(ONTOLOGY_INTEGRITY)}
 review_rows, facet_rows = [], []
 for item in read(COHORT):
     cid, label, route = item["concept_id"], item["preferred_label"], item["recommended_route"]
@@ -242,6 +249,8 @@ for item in read(COHORT):
         facets = CONSOLIDATED_FACETS[cid]
     if cid in MATERIAL_SCOPE_FACETS:
         facets = MATERIAL_SCOPE_FACETS[cid]
+    if cid in ONTOLOGY_INTEGRITY_FACETS:
+        facets = ONTOLOGY_INTEGRITY_FACETS[cid]
     # These compound sources retain an uncovered component after generic suffix
     # stripping; partial decomposition would misstate governed identity.
     if cid in {"AOM_003930"}:
@@ -297,11 +306,20 @@ for item in read(COHORT):
         decision, status = "approve_bounded_workbook_material_scope", "approved"
         evidence = material_scope[cid]["evidence"]
         rationale = material_scope[cid]["rationale"]
+    elif cid in ontology_integrity and ontology_integrity[cid]["status"] == "approved":
+        source = ontology_integrity[cid]["governed_source_identity"]
+        decision, status = "approve_bounded_workbook_material_scope", "approved"
+        evidence = ontology_integrity[cid]["evidence"]
+        rationale = ontology_integrity[cid]["rationale"]
     if status == "held":
         consolidated_hold = consolidated.get(cid)
         if consolidated_hold and consolidated_hold["status"] == "held":
             blocker = consolidated_hold["blocker_code"]
             next_action = consolidated_hold["rationale"]
+        integrity_hold = ontology_integrity.get(cid)
+        if integrity_hold and integrity_hold["status"] == "held":
+            blocker = integrity_hold["blocker_code"]
+            next_action = integrity_hold["rationale"]
         if route == "research_feedipedia":
             prior = feed[cid]["decision"]
             identity_hold = identity.get(cid)
