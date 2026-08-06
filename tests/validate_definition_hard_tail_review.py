@@ -19,9 +19,9 @@ facets = read(DATA / "approved_hard_tail_feed_material_facets.csv")
 definitions = read(DATA / "approved_definition_enrichments.csv")
 assert len(cohort) == len(rows) == 210
 assert {row["concept_id"] for row in cohort} == {row["concept_id"] for row in rows}
-assert Counter(row["status"] for row in rows) == {"held": 130, "approved": 80}
+assert Counter(row["status"] for row in rows) == {"held": 126, "approved": 84}
 assert Counter(row["decision"] for row in rows) == {
-    "hold_expert_evidence_required": 130,
+    "hold_expert_evidence_required": 126,
     "approve_taxon_source_with_explicit_facets": 50,
     "approve_feedipedia_category_scope": 5,
     "approve_feedipedia_alias_scope": 4,
@@ -29,12 +29,13 @@ assert Counter(row["decision"] for row in rows) == {
     "approve_workbook_source_with_explicit_facets": 4,
     "approve_identity_alias_with_explicit_facets": 9,
     "approve_shared_page_material_with_explicit_facets": 6,
+    "approve_workbook_model_gap_with_explicit_facets": 4,
 }
-assert len(facets) == 101
+assert len(facets) == 107
 assert Counter(row["target_property"] for row in facets) == {
-    "aom:productRole": 38, "aom:ingredientPart": 32,
-    "aom:ingredientConstituent": 11, "aom:physicalForm": 12,
-    "aom:processingMethod": 8,
+    "aom:productRole": 42, "aom:ingredientPart": 32,
+    "aom:ingredientConstituent": 11, "aom:physicalForm": 13,
+    "aom:processingMethod": 9,
 }
 assert all(row["blocker_code"] and row["next_action"] for row in rows if row["status"] == "held")
 assert not any(row["blocker_code"] or row["next_action"] for row in rows if row["status"] == "approved")
@@ -47,4 +48,4 @@ assert ("AOM_003879", "AOM_101037") not in facet_pairs
 assert {("AOM_001880", "AOM_101122"), ("AOM_001880", "AOM_101081")} <= facet_pairs
 assert "AOM_001805" not in {row["feed_material_id"] for row in facets}  # plant taxon cannot establish larval biomass
 assert all(row["evidence"] for row in rows if row["decision"] == "approve_taxon_source_with_explicit_facets")
-print("Definition hard-tail review passed: 80 approved; 130 actionable holds; 101 facets")
+print("Definition hard-tail review passed: 84 approved; 126 actionable holds; 107 facets")

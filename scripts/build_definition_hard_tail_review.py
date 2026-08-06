@@ -17,6 +17,7 @@ PUBLIC_COHORT = ROOT / "review/livestock-v12/public_authority_cohort.csv"
 WORKBOOK = ROOT / "review/livestock-v13/workbook_source_scope_review.csv"
 IDENTITY = ROOT / "review/livestock-v16/identity_alias_review.csv"
 SHARED = ROOT / "review/livestock-v17/shared_page_review.csv"
+WORKBOOK_GAPS = ROOT / "review/livestock-v18/workbook_model_gap_review.csv"
 
 CORE = {"AOM_000106", "AOM_000846"}
 FEEDIPEDIA_CATEGORY = {"AOM_000628", "AOM_000644", "AOM_000683", "AOM_000701", "AOM_000735"}
@@ -94,6 +95,15 @@ SHARED_PAGE_FACETS = {
     "AOM_002136": [("aom:physicalForm", "AOM_101052", "Cake form", "cold-pressed meal"),
                     ("aom:processingMethod", "AOM_101070", "Pressing", "cold-pressed"),
                     ("aom:productRole", "AOM_101062", "By-product role", "meal")],
+}
+
+WORKBOOK_GAP_FACETS = {
+    "AOM_001486": [("aom:productRole", "AOM_101079", "Binder role", "binder")],
+    "AOM_001826": [("aom:productRole", "AOM_101079", "Binder role", "binder")],
+    "AOM_002081": [("aom:physicalForm", "AOM_101075", "Mixture form", "mixed"),
+                    ("aom:processingMethod", "AOM_101083", "Hydrolysis", "hydrolysate"),
+                    ("aom:productRole", "AOM_101062", "By-product role", "animal by-product")],
+    "AOM_003567": [("aom:productRole", "AOM_101059", "Residue role", "residue")],
 }
 
 # Longest suffix first. Each match strips descriptor from governed source and
@@ -181,6 +191,7 @@ public_cohort = {row["concept_id"]: row for row in read(PUBLIC_COHORT)}
 workbook = {row["concept_id"]: row for row in read(WORKBOOK)}
 identity = {row["concept_id"]: row for row in read(IDENTITY)}
 shared = {row["concept_id"]: row for row in read(SHARED)}
+workbook_gaps = {row["concept_id"]: row for row in read(WORKBOOK_GAPS)}
 review_rows, facet_rows = [], []
 for item in read(COHORT):
     cid, label, route = item["concept_id"], item["preferred_label"], item["recommended_route"]
@@ -189,6 +200,8 @@ for item in read(COHORT):
         facets = IDENTITY_FACETS[cid]
     if cid in SHARED_PAGE_FACETS:
         facets = SHARED_PAGE_FACETS[cid]
+    if cid in WORKBOOK_GAP_FACETS:
+        facets = WORKBOOK_GAP_FACETS[cid]
     # These compound sources retain an uncovered component after generic suffix
     # stripping; partial decomposition would misstate governed identity.
     if cid in {"AOM_003930"}:
@@ -228,6 +241,11 @@ for item in read(COHORT):
         decision, status = "approve_shared_page_material_with_explicit_facets", "approved"
         evidence = shared[cid]["evidence"]
         rationale = shared[cid]["rationale"] + " Definition adds only reviewed structured facets."
+    elif cid in workbook_gaps and workbook_gaps[cid]["status"] == "approved" and facets:
+        source = workbook_gaps[cid]["governed_source_identity"]
+        decision, status = "approve_workbook_model_gap_with_explicit_facets", "approved"
+        evidence = workbook_gaps[cid]["evidence"]
+        rationale = workbook_gaps[cid]["rationale"] + " Definition adds only reviewed structured facets."
     if status == "held":
         if route == "research_feedipedia":
             prior = feed[cid]["decision"]
@@ -249,8 +267,9 @@ for item in read(COHORT):
             blocker = public[cid]["decision"].removeprefix("hold_")
             next_action = "Correct or narrow public mapping, then establish material component/product scope with direct authority evidence."
         elif route == "research_source_workbook":
-            blocker = "workbook_identity_or_model_gap"
-            next_action = "Obtain product/domain evidence or add reviewed component/process facet before definition approval."
+            workbook_hold = workbook_gaps.get(cid)
+            blocker = workbook_hold["blocker_code"] if workbook_hold else "workbook_identity_or_model_gap"
+            next_action = workbook_hold["rationale"] if workbook_hold else "Obtain product/domain evidence or add reviewed component/process facet before definition approval."
         elif route == "research_taxon_insufficient_for_material":
             blocker = "unmodelled_derived_material_descriptor"
             next_action = "Review descriptor meaning; map to existing facet or approve new facet concept before composing definition."
