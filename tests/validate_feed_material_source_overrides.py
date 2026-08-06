@@ -18,7 +18,7 @@ overrides = read(DATA / "approved_feed_material_source_overrides.csv")
 inventory = read(REVIEW / "ingredient_harmonization_inventory.csv")
 generated = read(DATA / "approved_generated_feed_material_facets.csv")
 
-assert len(overrides) == 6
+assert len(overrides) == 12
 assert all(
     row["status"] == "approved" and row["reviewer"] == "Pete Steward"
     and row["review_date"] == "2026-08-06"
@@ -52,4 +52,10 @@ assert {
     (row["target_property"], row["target_label"])
     for row in generated if row["feed_material_id"] == "AOM_006194"
 } == {("aom:processingMethod", "Grinding")}
-print("Feed-material source override validation passed: 6 governed identities")
+assert by_id["AOM_000544"]["source_identity_candidate"] == "fish"
+assert not by_id["AOM_000544"]["form_candidates"]
+assert by_id["AOM_000678"]["source_identity_candidate"] == "cassava"
+assert by_id["AOM_001289"]["source_identity_candidate"] == "maize"
+assert by_id["AOM_003208"]["source_identity_candidate"] == "bambara groundnut"
+assert by_id["AOM_003596"]["source_identity_candidate"] == "grape"
+print("Feed-material source override validation passed: 12 governed identities")
