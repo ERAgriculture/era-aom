@@ -6,6 +6,7 @@
 <https://w3id.org/era-aom/livestock/AOM_000009> a skos:Concept ;
     skos:altLabel "Bubalus"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000005> ;
+    skos:definition "A taxonomic concept used in AOM to identify Buffalo within the Bovine classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000009" ;
     skos:prefLabel "Buffalo"@en ;
@@ -28,6 +29,7 @@
 <https://w3id.org/era-aom/livestock/AOM_000012> a skos:Concept ;
     skos:altLabel "Bos taurus X Bos indicus"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000015> ;
+    skos:definition "A taxonomic concept used in AOM to identify Taurine x Zebu Hybrid Cattle within the Cattle classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000012" ;
     skos:prefLabel "Taurine x Zebu Hybrid Cattle"@en ;
@@ -90,6 +92,7 @@
     skos:altLabel "Domestic Rabbit"@en,
         "European Rabbit"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000007> ;
+    skos:definition "A taxonomic concept used in AOM to identify Rabbit within the Rodent classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000018" ;
     skos:prefLabel "Rabbit"@en ;
@@ -133,6 +136,7 @@
         "burro"@en,
         "domestic donkey"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000008> ;
+    skos:definition "A taxonomic concept used in AOM to identify Donkey within the Equine classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000021" ;
     skos:prefLabel "Donkey"@en ;
@@ -168,6 +172,7 @@
     skos:altLabel "Domestic Duck"@en,
         "Mallard"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000024> ;
+    skos:definition "A taxonomic concept used in AOM to identify Duck within the Poultry or Game Bird classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000026" ;
     skos:prefLabel "Duck"@en ;
@@ -180,6 +185,7 @@
     skos:altLabel "Domestic Goose"@en,
         "Greylag Goose"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000024> ;
+    skos:definition "A taxonomic concept used in AOM to identify Geese within the Poultry or Game Bird classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000027" ;
     skos:prefLabel "Geese"@en ;
@@ -238,6 +244,7 @@
 <https://w3id.org/era-aom/livestock/AOM_000036> a skos:Concept ;
     skos:altLabel "Hawaiian Sea Urchin"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101017> ;
+    skos:definition "A taxonomic concept used in AOM to identify Collector Urchin within the Urchins classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000036" ;
     skos:prefLabel "Collector Urchin"@en ;
@@ -286,6 +293,7 @@
 <https://w3id.org/era-aom/livestock/AOM_000042> a skos:Concept ;
     skos:altLabel "Tilapia nilotica"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify Nile Tilapia within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000042" ;
     skos:prefLabel "Nile Tilapia"@en ;
@@ -297,6 +305,7 @@
     skos:altLabel "Chromis rendalli"@en,
         "Tilapia rendalli"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify Redbreast Tilapia within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000043" ;
     skos:prefLabel "Redbreast Tilapia"@en ;
@@ -306,6 +315,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000044> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify Mozambique x Nile Hybrid Tilapia within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000044" ;
     skos:prefLabel "Mozambique x Nile Hybrid Tilapia"@en ;
@@ -319,6 +329,7 @@
         "Mozambique Cichlid"@en,
         "Tilapia mossambica"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify Mozambique Tilapia within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000045" ;
     skos:prefLabel "Mozambique Tilapia"@en ;
@@ -328,6 +339,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000046> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify Shire Tilapia within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000046" ;
     skos:prefLabel "Shire Tilapia"@en ;
@@ -337,6 +349,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000047> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify Ningu within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000047" ;
     skos:prefLabel "Ningu"@en ;
@@ -346,6 +359,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000048> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify African Carp within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000048" ;
     skos:prefLabel "African Carp"@en ;
@@ -355,6 +369,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000049> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify Vundu Catfish within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000049" ;
     skos:prefLabel "Vundu Catfish"@en ;
@@ -364,6 +379,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000050> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify African Catfish within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000050" ;
     skos:prefLabel "African Catfish"@en ;
@@ -374,6 +390,7 @@
 <https://w3id.org/era-aom/livestock/AOM_000051> a skos:Concept ;
     skos:altLabel "Clarias isheriensis"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify Dwarf African Mud Catfish within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000051" ;
     skos:prefLabel "Dwarf African Mud Catfish"@en ;
@@ -383,6 +400,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000052> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000034> ;
+    skos:definition "A taxonomic concept used in AOM to identify African Sharptooth x African Catfish Hybrid within the Fish classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000052" ;
     skos:prefLabel "African Sharptooth x African Catfish Hybrid"@en ;
@@ -392,6 +410,7 @@
 <https://w3id.org/era-aom/livestock/AOM_000053> a skos:Concept ;
     skos:altLabel "Penaeus indicus"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000033> ;
+    skos:definition "A taxonomic concept used in AOM to identify Indian Prawn within the Crustacean classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000053" ;
     skos:prefLabel "Indian Prawn"@en ;
@@ -401,6 +420,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000054> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000038> ;
+    skos:definition "A taxonomic concept used in AOM to identify South African Abalone within the Gastropod classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000054" ;
     skos:prefLabel "South African Abalone"@en ;
@@ -411,6 +431,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000057> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000056> ;
+    skos:definition "A taxonomic concept used in AOM to identify Other Fodder within the Pasture Fodder classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000057" ;
     skos:prefLabel "Other Fodder"@en ;
@@ -419,6 +440,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000060> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000056> ;
+    skos:definition "A taxonomic concept used in AOM to identify Tree within the Pasture Fodder classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000060" ;
     skos:prefLabel "Tree"@en ;
@@ -427,6 +449,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000061> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000056> ;
+    skos:definition "A taxonomic concept used in AOM to identify Natural Vegetation within the Pasture Fodder classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000061" ;
     skos:prefLabel "Natural Vegetation"@en ;
@@ -514,6 +537,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000067> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000058> ;
+    skos:definition "A taxonomic concept used in AOM to identify Brachiaria hybrid within the Grass classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000067" ;
     skos:prefLabel "Brachiaria hybrid"@en ;
@@ -557,6 +581,7 @@
         "Schedonorus arundinaceus"@en,
         "Schedonorus phoenix"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000058> ;
+    skos:definition "A taxonomic concept used in AOM to identify Tall Fescue within the Grass classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000070" ;
     skos:prefLabel "Tall Fescue"@en ;
@@ -583,6 +608,7 @@
 <https://w3id.org/era-aom/livestock/AOM_000072> a skos:Concept ;
     skos:altLabel "Annual Ryegrass"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000058> ;
+    skos:definition "A taxonomic concept used in AOM to identify Westerwold Ryegrass within the Grass classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000072" ;
     skos:prefLabel "Westerwold Ryegrass"@en ;
@@ -685,6 +711,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000077> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000059> ;
+    skos:definition "A taxonomic concept used in AOM to identify Jointvetche within the Legume classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000077" ;
     skos:prefLabel "Jointvetche"@en ;
@@ -694,6 +721,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000078> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000062> ;
+    skos:definition "A taxonomic concept used in AOM to identify Fodder Radish within the Brassica classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000078" ;
     skos:prefLabel "Fodder Radish"@en ;
@@ -706,6 +734,7 @@
         "Khus-khus"@en,
         "Vetiveria zizanioides"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000058> ;
+    skos:definition "A taxonomic concept used in AOM to identify Vetiver Grass within the Grass classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000079" ;
     skos:prefLabel "Vetiver Grass"@en ;
@@ -715,6 +744,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000080> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000058> ;
+    skos:definition "A taxonomic concept used in AOM to identify Stipagrostis uniplumis within the Grass classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000080" ;
     skos:prefLabel "Stipagrostis uniplumis"@en ;
@@ -724,6 +754,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000081> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000058> ;
+    skos:definition "A taxonomic concept used in AOM to identify Tassel Three-awn within the Grass classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000081" ;
     skos:prefLabel "Tassel Three-awn"@en ;
@@ -734,6 +765,7 @@
 <https://w3id.org/era-aom/livestock/AOM_000082> a skos:Concept ;
     skos:altLabel "Poa squarrosa"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000058> ;
+    skos:definition "A taxonomic concept used in AOM to identify Sickle Grass within the Grass classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000082" ;
     skos:prefLabel "Sickle Grass"@en ;
@@ -758,6 +790,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000084> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000059> ;
+    skos:definition "A taxonomic concept used in AOM to identify Centrosema pascuorum within the Legume classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000084" ;
     skos:prefLabel "Centrosema pascuorum"@en ;
@@ -877,6 +910,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000091> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000058> ;
+    skos:definition "A taxonomic concept used in AOM to identify Enteropogon monostachyos within the Grass classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000091" ;
     skos:prefLabel "Enteropogon monostachyos"@en ;
@@ -976,6 +1010,7 @@
         "Chamaecrista bauhiniifolia"@en,
         "Round Leaf Cassia"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000059> ;
+    skos:definition "A taxonomic concept used in AOM to identify Chamaecrista rotundifolia within the Legume classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000097" ;
     skos:prefLabel "Chamaecrista rotundifolia"@en ;
@@ -986,6 +1021,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000098> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000059> ;
+    skos:definition "A taxonomic concept used in AOM to identify Centrosema brasilianum within the Legume classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000098" ;
     skos:prefLabel "Centrosema brasilianum"@en ;
@@ -1012,6 +1048,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000100> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000059> ;
+    skos:definition "A taxonomic concept used in AOM to identify Aeschynomene afraspera within the Legume classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000100" ;
     skos:prefLabel "Aeschynomene afraspera"@en ;
@@ -1021,6 +1058,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000101> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000059> ;
+    skos:definition "A taxonomic concept used in AOM to identify Crotalaria ochroleuca within the Legume classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000101" ;
     skos:prefLabel "Crotalaria ochroleuca"@en ;
@@ -1030,6 +1068,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000103> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000059> ;
+    skos:definition "A taxonomic concept used in AOM to identify Trifolium steudneri within the Legume classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000103" ;
     skos:prefLabel "Trifolium steudneri"@en ;
@@ -1508,6 +1547,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000171> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101000> ;
+    skos:definition "A livestock-management concept concerning Optimization of Stocking Density within Pasture Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000171" ;
     skos:prefLabel "Optimization of Stocking Density"@en ;
@@ -1534,6 +1574,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000175> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000173> ;
+    skos:definition "A livestock-management concept concerning Vaccinations within Disease Prevention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000175" ;
     skos:prefLabel "Vaccinations"@en ;
@@ -1542,6 +1583,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000176> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000173> ;
+    skos:definition "A livestock-management concept concerning Antiparasitics within Disease Prevention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000176" ;
     skos:prefLabel "Antiparasitics"@en ;
@@ -1550,6 +1592,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000177> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000173> ;
+    skos:definition "A livestock-management concept concerning Antibiotics within Disease Prevention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000177" ;
     skos:prefLabel "Antibiotics"@en ;
@@ -1558,6 +1601,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000178> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000108> ;
+    skos:definition "A livestock-management concept concerning Growth Promotor within Feed Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000178" ;
     skos:prefLabel "Growth Promotor"@en ;
@@ -1566,6 +1610,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000179> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101000> ;
+    skos:definition "A livestock-management concept concerning N-inhibitors within Pasture Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000179" ;
     skos:prefLabel "N-inhibitors"@en ;
@@ -1574,6 +1619,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000180> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100997> ;
+    skos:definition "A livestock-management concept concerning Monitoring within Animal Health."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000180" ;
     skos:prefLabel "Monitoring"@en ;
@@ -1609,6 +1655,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000187> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000190> ;
+    skos:definition "A livestock-management concept concerning Dry Matter within Measurement Method."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000187" ;
     skos:prefLabel "Dry Matter"@en ;
@@ -1617,6 +1664,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000188> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000190> ;
+    skos:definition "A livestock-management concept concerning Estimated within Measurement Method."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000188" ;
     skos:prefLabel "Estimated"@en ;
@@ -1625,6 +1673,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000189> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000190> ;
+    skos:definition "A livestock-management concept concerning Measured within Measurement Method."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000189" ;
     skos:prefLabel "Measured"@en ;
@@ -3043,6 +3092,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000370> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield- Carcass within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000370" ;
     skos:prefLabel "Meat Yield- Carcass"@en ;
@@ -3051,6 +3101,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000371> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield- Carcass Defeathered within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000371" ;
     skos:prefLabel "Meat Yield- Carcass Defeathered"@en ;
@@ -3059,6 +3110,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000372> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield-Cold Carcass within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000372" ;
     skos:prefLabel "Meat Yield-Cold Carcass"@en ;
@@ -3067,6 +3119,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000373> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield-Dressed within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000373" ;
     skos:prefLabel "Meat Yield-Dressed"@en ;
@@ -3075,6 +3128,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000374> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield-Empty Carcass Meat Yield within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000374" ;
     skos:prefLabel "Meat Yield-Empty Carcass Meat Yield"@en ;
@@ -3083,6 +3137,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000375> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield-Eviscerated within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000375" ;
     skos:prefLabel "Meat Yield-Eviscerated"@en ;
@@ -3091,6 +3146,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000376> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield-Final Body Weight within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000376" ;
     skos:prefLabel "Meat Yield-Final Body Weight"@en ;
@@ -3099,6 +3155,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000377> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield-Hot Carcass within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000377" ;
     skos:prefLabel "Meat Yield-Hot Carcass"@en ;
@@ -3107,6 +3164,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000378> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield-Non-carcass within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000378" ;
     skos:prefLabel "Meat Yield-Non-carcass"@en ;
@@ -3115,6 +3173,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000379> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000369> ;
+    skos:definition "An AOM outcome concept for recording Meat Yield-Slaughter Body within Meat Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000379" ;
     skos:prefLabel "Meat Yield-Slaughter Body"@en ;
@@ -3159,6 +3218,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000384> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000366> ;
+    skos:definition "An AOM outcome concept for recording Wool Yield within Animals."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000384" ;
     skos:prefLabel "Wool Yield"@en ;
@@ -3213,6 +3273,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000392> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000386> ;
+    skos:definition "An AOM outcome concept for recording Weaning Liveweight within Reproductive Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000392" ;
     skos:prefLabel "Weaning Liveweight"@en ;
@@ -3221,6 +3282,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000394> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000393> ;
+    skos:definition "An AOM outcome concept for recording Labour Time-Male within Labour-Time."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000394" ;
     skos:prefLabel "Labour Time-Male"@en ;
@@ -3229,6 +3291,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000395> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000393> ;
+    skos:definition "An AOM outcome concept for recording Labour Time-Female within Labour-Time."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000395" ;
     skos:prefLabel "Labour Time-Female"@en ;
@@ -3273,6 +3336,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000402> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000398> ;
+    skos:definition "An AOM outcome concept for recording Return per Unit Production within Income."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000402" ;
     skos:prefLabel "Return per Unit Production"@en ;
@@ -3281,6 +3345,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000405> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101006> ;
+    skos:definition "An AOM outcome concept for recording Total Cost per Animal within Total Cost per Asset."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000405" ;
     skos:prefLabel "Total Cost per Animal"@en ;
@@ -3289,6 +3354,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000406> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101006> ;
+    skos:definition "An AOM outcome concept for recording Total Cost per Area within Total Cost per Asset."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000406" ;
     skos:prefLabel "Total Cost per Area"@en ;
@@ -3297,6 +3363,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000407> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101007> ;
+    skos:definition "An AOM outcome concept for recording Total Cost per Unit Production within Total Cost Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000407" ;
     skos:prefLabel "Total Cost per Unit Production"@en ;
@@ -3568,6 +3635,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000448> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101005> ;
+    skos:definition "An AOM outcome concept for recording Labor Opportunity Cost within Opportunity Cost."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000448" ;
     skos:prefLabel "Labor Opportunity Cost"@en ;
@@ -3576,6 +3644,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000449> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101005> ;
+    skos:definition "An AOM outcome concept for recording Capital Opportunity Cost within Opportunity Cost."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000449" ;
     skos:prefLabel "Capital Opportunity Cost"@en ;
@@ -3584,6 +3653,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000450> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101005> ;
+    skos:definition "An AOM outcome concept for recording Land Opportunity Cost within Opportunity Cost."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000450" ;
     skos:prefLabel "Land Opportunity Cost"@en ;
@@ -3592,6 +3662,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000451> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101011> ;
+    skos:definition "An AOM outcome concept for recording Monetary Private Benefits-Sale of produce within Monetary Private Benefits-Income."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000451" ;
     skos:prefLabel "Monetary Private Benefits-Sale of produce"@en ;
@@ -3600,6 +3671,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000452> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101011> ;
+    skos:definition "An AOM outcome concept for recording Monetary Private Benefits-Sale of manure within Monetary Private Benefits-Income."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000452" ;
     skos:prefLabel "Monetary Private Benefits-Sale of manure"@en ;
@@ -3617,6 +3689,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000454> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101012> ;
+    skos:definition "An AOM outcome concept for recording Non-Monetary Private Benefits-Consumption within Non-Monetary Private Benefits."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000454" ;
     skos:prefLabel "Non-Monetary Private Benefits-Consumption"@en ;
@@ -3634,6 +3707,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000456> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101012> ;
+    skos:definition "An AOM outcome concept for recording Non-Monetary Private Benefits-Animal labour within Non-Monetary Private Benefits."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000456" ;
     skos:prefLabel "Non-Monetary Private Benefits-Animal labour"@en ;
@@ -3642,6 +3716,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000457> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101013> ;
+    skos:definition "An AOM outcome concept for recording Monetary Societal Benefits within Societal Benefits."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000457" ;
     skos:prefLabel "Monetary Societal Benefits"@en ;
@@ -3650,6 +3725,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000458> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101013> ;
+    skos:definition "An AOM outcome concept for recording Non-monetary Societal Benefits within Societal Benefits."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000458" ;
     skos:prefLabel "Non-monetary Societal Benefits"@en ;
@@ -3658,6 +3734,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000459> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Tillage within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000459" ;
     skos:prefLabel "Variable Cost-Tillage"@en ;
@@ -3666,6 +3743,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000460> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Weeding within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000460" ;
     skos:prefLabel "Variable Cost-Weeding"@en ;
@@ -3674,6 +3752,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000461> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Harvesting within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000461" ;
     skos:prefLabel "Variable Cost-Harvesting"@en ;
@@ -3682,6 +3761,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000462> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Threshing within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000462" ;
     skos:prefLabel "Variable Cost-Threshing"@en ;
@@ -3690,6 +3770,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000463> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Planting within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000463" ;
     skos:prefLabel "Variable Cost-Planting"@en ;
@@ -3923,6 +4004,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000495> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000480> ;
+    skos:definition "An AOM outcome concept for recording Bulk Density within Soil Quality."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000495" ;
     skos:prefLabel "Bulk Density"@en ;
@@ -4012,6 +4094,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000510> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000501> ;
+    skos:definition "An AOM outcome concept for recording Phosphorus Use Efficiency within Fertilizer Use Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000510" ;
     skos:prefLabel "Phosphorus Use Efficiency"@en ;
@@ -4137,6 +4220,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000528> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000526> ;
+    skos:definition "An AOM outcome concept for recording Total Biomass within Carbon Stocks."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000528" ;
     skos:prefLabel "Total Biomass"@en ;
@@ -6149,6 +6233,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000944> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100853> ;
+    skos:definition "A livestock-management concept concerning Number of fields per unit within Grazing Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000944" ;
     skos:prefLabel "Number of fields per unit"@en ;
@@ -6167,6 +6252,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000946> a skos:Concept ;
     skos:altLabel "post-stocking"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100853> ;
+    skos:definition "A livestock-management concept concerning Max sward height within Grazing Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000946" ;
     skos:prefLabel "Max sward height"@en ;
@@ -6205,6 +6291,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000950> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100853> ;
+    skos:definition "A livestock-management concept concerning Cycle length within Grazing Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000950" ;
     skos:prefLabel "Cycle length"@en ;
@@ -6213,6 +6300,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000951> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100853> ;
+    skos:definition "A livestock-management concept concerning Rest period within Grazing Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000951" ;
     skos:prefLabel "Rest period"@en ;
@@ -6231,6 +6319,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000953> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100995> ;
+    skos:definition "A livestock-management concept concerning per cycle within Grazing time."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000953" ;
     skos:prefLabel "per cycle"@en ;
@@ -6239,6 +6328,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000954> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100853> ;
+    skos:definition "A livestock-management concept concerning Number of animals within Grazing Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000954" ;
     skos:prefLabel "Number of animals"@en ;
@@ -6299,6 +6389,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:altLabel "Backgrounder Bull"@en,
         "Stocker Bull"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000974> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Intact Grower Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000969" ;
     skos:prefLabel "Intact Grower Male"@en ;
@@ -6308,6 +6399,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000970> a skos:Concept ;
     skos:altLabel "Finisher Bull"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000975> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Intact Finisher Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000970" ;
     skos:prefLabel "Intact Finisher Male"@en ;
@@ -6331,6 +6423,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Stocker Bullock"@en,
         "Stocker Steer"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000974> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Castrate Grower Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000972" ;
     skos:prefLabel "Castrate Grower Male"@en ;
@@ -6341,6 +6434,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:altLabel "Bullock Finisher"@en,
         "Steer Finisher"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000975> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Castrate Finisher Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000973" ;
     skos:prefLabel "Castrate Finisher Male"@en ;
@@ -6387,6 +6481,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:altLabel "Pregnant Ewe"@en,
         "Pregnant Female"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000985> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Gestating Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000986" ;
     skos:prefLabel "Gestating Female"@en ;
@@ -6399,6 +6494,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Suckling Ewe"@en,
         "Suckling Female"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000985> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Lactating Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000987" ;
     skos:prefLabel "Lactating Female"@en ;
@@ -6408,6 +6504,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000988> a skos:Concept ;
     skos:altLabel "Ram"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000984> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Adult Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000988" ;
     skos:prefLabel "Adult Male"@en ;
@@ -6417,6 +6514,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000991> a skos:Concept ;
     skos:altLabel "Lamb Ewe"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000990> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Lamb Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000991" ;
     skos:prefLabel "Lamb Female"@en ;
@@ -6426,6 +6524,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000993> a skos:Concept ;
     skos:altLabel "Lamb Ram"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000992> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Intact Lamb Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000993" ;
     skos:prefLabel "Intact Lamb Male"@en ;
@@ -6435,6 +6534,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000994> a skos:Concept ;
     skos:altLabel "Wether"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000992> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Castrate Lamb Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000994" ;
     skos:prefLabel "Castrate Lamb Male"@en ;
@@ -6444,6 +6544,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000996> a skos:Concept ;
     skos:altLabel "Yearling Ewe"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000995> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Yearling Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000996" ;
     skos:prefLabel "Yearling Female"@en ;
@@ -6453,6 +6554,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000998> a skos:Concept ;
     skos:altLabel "Yearling Ram"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000997> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Intact Yearling Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000998" ;
     skos:prefLabel "Intact Yearling Male"@en ;
@@ -6462,6 +6564,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000999> a skos:Concept ;
     skos:altLabel "Yearling Wether"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000997> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Castrate Yearling Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000999" ;
     skos:prefLabel "Castrate Yearling Male"@en ;
@@ -6470,6 +6573,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001003> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001002> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Gestating Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001003" ;
     skos:prefLabel "Gestating Female"@en ;
@@ -6478,6 +6582,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001004> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001002> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Lactating Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001004" ;
     skos:prefLabel "Lactating Female"@en ;
@@ -6487,6 +6592,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001005> a skos:Concept ;
     skos:altLabel "Buck"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001001> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Adult Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001005" ;
     skos:prefLabel "Adult Male"@en ;
@@ -6495,6 +6601,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001008> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001007> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Kid Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001008" ;
     skos:prefLabel "Kid Female"@en ;
@@ -6503,6 +6610,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001010> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001009> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Intact Kid Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001010" ;
     skos:prefLabel "Intact Kid Male"@en ;
@@ -6511,6 +6619,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001011> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001009> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Castrate Kid Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001011" ;
     skos:prefLabel "Castrate Kid Male"@en ;
@@ -6519,6 +6628,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001013> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001012> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Yearling Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001013" ;
     skos:prefLabel "Yearling Female"@en ;
@@ -6527,6 +6637,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001015> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001014> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Intact Yearling Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001015" ;
     skos:prefLabel "Intact Yearling Male"@en ;
@@ -6535,6 +6646,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001016> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001014> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Castrate Yearling Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001016" ;
     skos:prefLabel "Castrate Yearling Male"@en ;
@@ -6545,6 +6657,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:altLabel "Pregnant Female"@en,
         "Pregnant Sow"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001019> ;
+    skos:definition "A controlled rearing-stage category scoped to Pig; used for records classified as “Gestating Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001020" ;
     skos:prefLabel "Gestating Female"@en ;
@@ -6557,6 +6670,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Suckling Female"@en,
         "Suckling Sow"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001019> ;
+    skos:definition "A controlled rearing-stage category scoped to Pig; used for records classified as “Lactating Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001021" ;
     skos:prefLabel "Lactating Female"@en ;
@@ -6690,6 +6804,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001046> a skos:Concept ;
     skos:altLabel "Laying Hen"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001045> ;
+    skos:definition "A controlled rearing-stage category scoped to Chicken; used for records classified as “Laying Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001046" ;
     skos:prefLabel "Laying Female"@en ;
@@ -6718,6 +6833,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001053> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001050> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Male Fingerling”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001053" ;
     skos:prefLabel "Male Fingerling"@en ;
@@ -6726,6 +6842,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001054> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001051> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Male Juvenile”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001054" ;
     skos:prefLabel "Male Juvenile"@en ;
@@ -6734,6 +6851,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001055> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001052> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Male Sub-adult”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001055" ;
     skos:prefLabel "Male Sub-adult"@en ;
@@ -6742,6 +6860,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001056> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001050> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Female Fingerling”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001056" ;
     skos:prefLabel "Female Fingerling"@en ;
@@ -6750,6 +6869,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001057> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001051> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Female Juvenile”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001057" ;
     skos:prefLabel "Female Juvenile"@en ;
@@ -6758,6 +6878,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001058> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001052> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Female Sub-adult”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001058" ;
     skos:prefLabel "Female Sub-adult"@en ;
@@ -6766,6 +6887,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001060> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001059> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Adult Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001060" ;
     skos:prefLabel "Adult Male"@en ;
@@ -6774,6 +6896,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001061> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001059> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Adult Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001061" ;
     skos:prefLabel "Adult Female"@en ;
@@ -6824,6 +6947,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001072> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003110> ;
+    skos:definition "An AOM outcome concept for recording Variable Costs-Electricity within Variable Cost."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001072" ;
     skos:prefLabel "Variable Costs-Electricity"@en ;
@@ -6832,6 +6956,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001073> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003110> ;
+    skos:definition "An AOM outcome concept for recording Variable Costs-Irrigation within Variable Cost."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001073" ;
     skos:prefLabel "Variable Costs-Irrigation"@en ;
@@ -6840,6 +6965,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001075> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001074> ;
+    skos:definition "An AOM outcome concept for recording Crop Value within Value."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001075" ;
     skos:prefLabel "Crop Value"@en ;
@@ -6848,6 +6974,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001076> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001074> ;
+    skos:definition "An AOM outcome concept for recording Animal Value within Value."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001076" ;
     skos:prefLabel "Animal Value"@en ;
@@ -6856,6 +6983,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001077> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Transplanting within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001077" ;
     skos:prefLabel "Variable Cost-Transplanting"@en ;
@@ -6864,6 +6992,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001078> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Water Harvesting Structures within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001078" ;
     skos:prefLabel "Variable Cost-Water Harvesting Structures"@en ;
@@ -6872,6 +7001,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001079> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Erosion Control Structures within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001079" ;
     skos:prefLabel "Variable Cost-Erosion Control Structures"@en ;
@@ -6880,6 +7010,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001080> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Spraying within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001080" ;
     skos:prefLabel "Variable Cost-Spraying"@en ;
@@ -6888,6 +7019,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001081> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Spreading within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001081" ;
     skos:prefLabel "Variable Cost-Spreading"@en ;
@@ -6896,6 +7028,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001082> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Preparing Beds within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001082" ;
     skos:prefLabel "Variable Cost-Preparing Beds"@en ;
@@ -6904,6 +7037,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001083> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100854> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Pruning within Management Activities."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001083" ;
     skos:prefLabel "Variable Cost-Pruning"@en ;
@@ -6913,6 +7047,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001084> a skos:Concept ;
     skos:altLabel "Variable Cost-Innoculants"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101008> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Innoculants within Inputs."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001084" ;
     skos:prefLabel "Variable cost—inoculants"@en ;
@@ -6921,6 +7056,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001085> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101008> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Biopesticides within Inputs."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001085" ;
     skos:prefLabel "Variable Cost-Biopesticides"@en ;
@@ -6929,6 +7065,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001086> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101008> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost-Soil Amendments within Inputs."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001086" ;
     skos:prefLabel "Variable Cost-Soil Amendments"@en ;
@@ -6937,6 +7074,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001087> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003110> ;
+    skos:definition "An AOM outcome concept for recording Animal Bedding within Variable Cost."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001087" ;
     skos:prefLabel "Animal Bedding"@en ;
@@ -13905,6 +14043,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002210> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100849> ;
+    skos:definition "A livestock-management concept concerning Lead within Minerals."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002210" ;
     skos:prefLabel "Lead"@en ;
@@ -13913,6 +14052,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002211> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000196> ;
+    skos:definition "A livestock-management concept concerning Oxalate within Feed Chemical Composition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002211" ;
     skos:prefLabel "Oxalate"@en ;
@@ -13921,6 +14061,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002212> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000196> ;
+    skos:definition "A livestock-management concept concerning Saponin within Feed Chemical Composition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002212" ;
     skos:prefLabel "Saponin"@en ;
@@ -13929,6 +14070,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002213> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000283> ;
+    skos:definition "A livestock-management concept concerning Vitamin B3 within Vitamins."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002213" ;
     skos:prefLabel "Vitamin B3"@en ;
@@ -13937,6 +14079,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002214> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000196> ;
+    skos:definition "A livestock-management concept concerning Phytate within Feed Chemical Composition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002214" ;
     skos:prefLabel "Phytate"@en ;
@@ -14225,6 +14368,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_002507> a skos:Concept ;
     skos:altLabel "Forth trimester"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100999> ;
+    skos:definition "A livestock-management concept concerning Forth trimester within Parity."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002507" ;
     skos:prefLabel "Fourth trimester"@en ;
@@ -14233,6 +14377,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002508> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001039> ;
+    skos:definition "A controlled rearing-stage category scoped to Chicken; used for records classified as “Grower”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002508" ;
     skos:prefLabel "Grower"@en ;
@@ -14241,6 +14386,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002509> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001039> ;
+    skos:definition "A controlled rearing-stage category scoped to Chicken; used for records classified as “Finisher”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002509" ;
     skos:prefLabel "Finisher"@en ;
@@ -14267,6 +14413,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002555> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000196> ;
+    skos:definition "A livestock-management concept concerning Non-Fibrous Carbohydrates (NFC) within Feed Chemical Composition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002555" ;
     skos:prefLabel "Non-Fibrous Carbohydrates (NFC)"@en ;
@@ -14275,6 +14422,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002556> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001062> ;
+    skos:definition "A livestock-management concept concerning Digestible Non-Fibrous Carbohydrates (NFCs) within Feed Digestibility."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002556" ;
     skos:prefLabel "Digestible Non-Fibrous Carbohydrates (NFCs)"@en ;
@@ -14283,6 +14431,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002557> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001062> ;
+    skos:definition "A livestock-management concept concerning Digestible Ash within Feed Digestibility."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002557" ;
     skos:prefLabel "Digestible Ash"@en ;
@@ -14300,6 +14449,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003001> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000025> ;
+    skos:definition "A taxonomic concept used in AOM to identify Dual purpose within the Chicken classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003001" ;
     skos:prefLabel "Dual purpose"@en ;
@@ -14516,6 +14666,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003050> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003022> ;
+    skos:definition "A farming-system classification for Unspecified within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003050" ;
     skos:prefLabel "Unspecified"@en ;
@@ -14524,6 +14675,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003051> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003026> ;
+    skos:definition "A farming-system classification for Unspecified within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003051" ;
     skos:prefLabel "Unspecified"@en ;
@@ -14532,6 +14684,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003052> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000893> ;
+    skos:definition "A farming-system classification for Unspecified within the aquatic system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003052" ;
     skos:prefLabel "Unspecified"@en ;
@@ -14540,6 +14693,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003060> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000976> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Weaned Calf”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003060" ;
     skos:prefLabel "Weaned Calf"@en ;
@@ -14659,6 +14813,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003085> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000918> ;
+    skos:definition "A farming-system classification for semi-roofed yard within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003085" ;
     skos:prefLabel "semi-roofed yard"@en ;
@@ -14667,6 +14822,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003095> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000366> ;
+    skos:definition "An AOM outcome concept for recording Daily Average Weight Gain within Animals."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003095" ;
     skos:prefLabel "Daily Average Weight Gain"@en ;
@@ -14741,6 +14897,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003200> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003027> ;
+    skos:definition "A farming-system classification for shed within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003200" ;
     skos:prefLabel "shed"@en ;
@@ -15365,6 +15522,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_004006> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000300> ;
+    skos:definition "A livestock-management concept concerning AOAC (1970) within Digestibility Measurement Method."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_004006" ;
     skos:prefLabel "AOAC (1970)"@en ;
@@ -15373,6 +15531,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_004007> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000300> ;
+    skos:definition "A livestock-management concept concerning AOAC (2000) within Digestibility Measurement Method."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_004007" ;
     skos:prefLabel "AOAC (2000)"@en ;
@@ -15381,6 +15540,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_004008> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000300> ;
+    skos:definition "A livestock-management concept concerning AOAC (2005) within Digestibility Measurement Method."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_004008" ;
     skos:prefLabel "AOAC (2005)"@en ;
@@ -15389,6 +15549,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_004009> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000300> ;
+    skos:definition "A livestock-management concept concerning AOAC (2007) within Digestibility Measurement Method."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_004009" ;
     skos:prefLabel "AOAC (2007)"@en ;
@@ -19896,6 +20057,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000055> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000001> ;
+    skos:definition "A taxonomic concept used in AOM to identify Plant within the Species classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000056> ;
     skos:notation "AOM_000055" ;
@@ -19905,6 +20067,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000062> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000056> ;
+    skos:definition "A taxonomic concept used in AOM to identify Brassica within the Pasture Fodder classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000078> ;
     skos:notation "AOM_000062" ;
@@ -19918,6 +20081,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000102> a skos:Concept ;
     skos:altLabel "quarin clover"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000059> ;
+    skos:definition "A taxonomic concept used in AOM to identify Trifolium quartinianum within the Legume classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000102" ;
     skos:prefLabel "Trifolium quartinianum"@en ;
@@ -20027,6 +20191,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000363> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000362> ;
+    skos:definition "An AOM outcome concept for recording Pasture within Product Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000364> ;
     skos:notation "AOM_000363" ;
@@ -20046,6 +20211,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000476> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000475> ;
+    skos:definition "An AOM outcome concept for recording Biological within Environment."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000477> ;
     skos:notation "AOM_000476" ;
@@ -20065,6 +20231,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000479> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000475> ;
+    skos:definition "An AOM outcome concept for recording Physical within Environment."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000480> ;
     skos:notation "AOM_000479" ;
@@ -20595,6 +20762,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:altLabel "Pregnant Cow"@en,
         "Pregnant Female"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000957> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Gestating Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_002510> ;
     skos:notation "AOM_000958" ;
@@ -20608,6 +20776,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Suckling Cow"@en,
         "Suckling Female"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000957> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Lactating Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_002511> ;
     skos:notation "AOM_000959" ;
@@ -20684,6 +20853,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001065> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001062> ;
+    skos:definition "A livestock-management concept concerning Digestibility Measurement Metric within Feed Digestibility."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000285> ;
     skos:notation "AOM_001065" ;
@@ -24256,6 +24426,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000361> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000360> ;
+    skos:definition "An AOM outcome concept for recording Yield within Productivity."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000362>,
         <https://w3id.org/era-aom/livestock/AOM_000496> ;
@@ -24321,6 +24492,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000475> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000358> ;
+    skos:definition "An AOM outcome concept for recording Environment within Outcomes."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000476>,
         <https://w3id.org/era-aom/livestock/AOM_000479> ;
@@ -24331,6 +24503,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000501> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000499> ;
+    skos:definition "An AOM outcome concept for recording Fertilizer Use Efficiency within Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000502>,
         <https://w3id.org/era-aom/livestock/AOM_000510> ;
@@ -24341,6 +24514,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000503> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000502> ;
+    skos:definition "An AOM outcome concept for recording Isotopic N within Nitrogen Use Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000504>,
         <https://w3id.org/era-aom/livestock/AOM_000505> ;
@@ -24351,6 +24525,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000506> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000502> ;
+    skos:definition "An AOM outcome concept for recording Partial N Balance within Nitrogen Use Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000507>,
         <https://w3id.org/era-aom/livestock/AOM_000508> ;
@@ -24361,6 +24536,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000519> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000358> ;
+    skos:definition "An AOM outcome concept for recording Mitigation within Outcomes."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000520>,
         <https://w3id.org/era-aom/livestock/AOM_000526> ;
@@ -24645,6 +24821,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000885> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000849> ;
+    skos:definition "A farming-system classification for living environment within the aquatic system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000886>,
         <https://w3id.org/era-aom/livestock/AOM_000889> ;
@@ -24696,6 +24873,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000900> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000848> ;
+    skos:definition "A farming-system classification for living environment within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_003022>,
         <https://w3id.org/era-aom/livestock/AOM_100993> ;
@@ -24756,6 +24934,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000955> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101002> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Cattle;Buffalo”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000956>,
         <https://w3id.org/era-aom/livestock/AOM_000961> ;
@@ -24789,6 +24968,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000962> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000961> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Grower”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000965>,
         <https://w3id.org/era-aom/livestock/AOM_000974> ;
@@ -24799,6 +24979,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000963> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000961> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Finisher”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000966>,
         <https://w3id.org/era-aom/livestock/AOM_000975> ;
@@ -24809,6 +24990,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000967> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000961> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Young Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000968>,
         <https://w3id.org/era-aom/livestock/AOM_000971> ;
@@ -24819,6 +25001,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000974> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000962> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Grower Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000969>,
         <https://w3id.org/era-aom/livestock/AOM_000972> ;
@@ -24829,6 +25012,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000975> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000963> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Finisher Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000970>,
         <https://w3id.org/era-aom/livestock/AOM_000973> ;
@@ -24839,6 +25023,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000977> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000976> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Calf Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000978>,
         <https://w3id.org/era-aom/livestock/AOM_000979> ;
@@ -24849,6 +25034,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000980> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000976> ;
+    skos:definition "A controlled rearing-stage category scoped to Cattle;Buffalo; used for records classified as “Calf Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000981>,
         <https://w3id.org/era-aom/livestock/AOM_000982> ;
@@ -24859,6 +25045,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000983> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101002> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Sheep”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000984>,
         <https://w3id.org/era-aom/livestock/AOM_000989> ;
@@ -24869,6 +25056,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000984> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000983> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Adult”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000985>,
         <https://w3id.org/era-aom/livestock/AOM_000988> ;
@@ -24880,6 +25068,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 <https://w3id.org/era-aom/livestock/AOM_000985> a skos:Concept ;
     skos:altLabel "Ewe"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000984> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Adult Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000986>,
         <https://w3id.org/era-aom/livestock/AOM_000987> ;
@@ -24890,6 +25079,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000989> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000983> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Young”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000990>,
         <https://w3id.org/era-aom/livestock/AOM_000995> ;
@@ -24911,6 +25101,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000992> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000990> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Lamb Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000993>,
         <https://w3id.org/era-aom/livestock/AOM_000994> ;
@@ -24932,6 +25123,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000997> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000995> ;
+    skos:definition "A controlled rearing-stage category scoped to Sheep; used for records classified as “Yearling Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000998>,
         <https://w3id.org/era-aom/livestock/AOM_000999> ;
@@ -24942,6 +25134,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001000> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101002> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Goat”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001001>,
         <https://w3id.org/era-aom/livestock/AOM_001006> ;
@@ -24952,6 +25145,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001001> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001000> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Adult”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001002>,
         <https://w3id.org/era-aom/livestock/AOM_001005> ;
@@ -24962,6 +25156,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001002> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001001> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Adult Female”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001003>,
         <https://w3id.org/era-aom/livestock/AOM_001004> ;
@@ -24972,6 +25167,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001006> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001000> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Young”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001007>,
         <https://w3id.org/era-aom/livestock/AOM_001012> ;
@@ -24982,6 +25178,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001007> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001006> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Kid”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001008>,
         <https://w3id.org/era-aom/livestock/AOM_001009> ;
@@ -24992,6 +25189,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001009> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001007> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Kid Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001010>,
         <https://w3id.org/era-aom/livestock/AOM_001011> ;
@@ -25013,6 +25211,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001014> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001012> ;
+    skos:definition "A controlled rearing-stage category scoped to Goat; used for records classified as “Yearling Male”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001015>,
         <https://w3id.org/era-aom/livestock/AOM_001016> ;
@@ -25023,6 +25222,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001017> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101002> ;
+    skos:definition "A controlled rearing-stage category scoped to Pig; used for records classified as “Pig”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001018>,
         <https://w3id.org/era-aom/livestock/AOM_001024> ;
@@ -25033,6 +25233,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001018> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001017> ;
+    skos:definition "A controlled rearing-stage category scoped to Pig; used for records classified as “Adult”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001019>,
         <https://w3id.org/era-aom/livestock/AOM_001022> ;
@@ -25055,6 +25256,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001025> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001024> ;
+    skos:definition "A controlled rearing-stage category scoped to Pig; used for records classified as “Grower”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001029>,
         <https://w3id.org/era-aom/livestock/AOM_001034> ;
@@ -25065,6 +25267,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001026> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001024> ;
+    skos:definition "A controlled rearing-stage category scoped to Pig; used for records classified as “Finisher”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001030>,
         <https://w3id.org/era-aom/livestock/AOM_001035> ;
@@ -25089,6 +25292,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001044> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001039> ;
+    skos:definition "A controlled rearing-stage category scoped to Chicken; used for records classified as “Adult”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001045>,
         <https://w3id.org/era-aom/livestock/AOM_001047> ;
@@ -25099,6 +25303,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001048> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101002> ;
+    skos:definition "A controlled rearing-stage category scoped to Fish; used for records classified as “Fish”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001059>,
         <https://w3id.org/era-aom/livestock/AOM_101004> ;
@@ -25153,6 +25358,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001074> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000397> ;
+    skos:definition "An AOM outcome concept for recording Value within Economics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001075>,
         <https://w3id.org/era-aom/livestock/AOM_001076> ;
@@ -25163,6 +25369,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001088> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000360> ;
+    skos:definition "An AOM outcome concept for recording Animal Survival and Mortality within Productivity."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000497>,
         <https://w3id.org/era-aom/livestock/AOM_000498> ;
@@ -25173,6 +25380,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001089> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000512> ;
+    skos:definition "An AOM outcome concept for recording Feed Conversion Ratio within Feed Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000513>,
         <https://w3id.org/era-aom/livestock/AOM_000514> ;
@@ -25183,6 +25391,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001090> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000512> ;
+    skos:definition "An AOM outcome concept for recording Protein Conversion Ratio within Feed Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000515>,
         <https://w3id.org/era-aom/livestock/AOM_000516> ;
@@ -25987,6 +26196,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_003090> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101008> ;
+    skos:definition "An AOM outcome concept for recording Variable Costs-Nutrients within Inputs."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000415>,
         <https://w3id.org/era-aom/livestock/AOM_000420> ;
@@ -26783,6 +26993,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000164> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101000> ;
+    skos:definition "A livestock-management concept concerning Improved Pasture within Pasture Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000165>,
         <https://w3id.org/era-aom/livestock/AOM_000166>,
@@ -26794,6 +27005,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000190> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000196> ;
+    skos:definition "A livestock-management concept concerning Measurement Method within Feed Chemical Composition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000187>,
         <https://w3id.org/era-aom/livestock/AOM_000188>,
@@ -26805,6 +27017,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000244> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000196> ;
+    skos:definition "A livestock-management concept concerning Energy Content within Feed Chemical Composition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000241>,
         <https://w3id.org/era-aom/livestock/AOM_000242>,
@@ -26828,6 +27041,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000362> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000361> ;
+    skos:definition "An AOM outcome concept for recording Product Yield within Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000363>,
         <https://w3id.org/era-aom/livestock/AOM_000365>,
@@ -26851,6 +27065,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000439> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003110> ;
+    skos:definition "An AOM outcome concept for recording Labor Cost within Variable Cost."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000440>,
         <https://w3id.org/era-aom/livestock/AOM_000443>,
@@ -26862,6 +27077,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000502> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000501> ;
+    skos:definition "An AOM outcome concept for recording Nitrogen Use Efficiency within Fertilizer Use Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000503>,
         <https://w3id.org/era-aom/livestock/AOM_000506>,
@@ -26873,6 +27089,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000512> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000499> ;
+    skos:definition "An AOM outcome concept for recording Feed Efficiency within Efficiency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001089>,
         <https://w3id.org/era-aom/livestock/AOM_001090>,
@@ -27073,6 +27290,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000847> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000846> ;
+    skos:definition "A farming-system classification identifying the livestock livestock-system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000848>,
         <https://w3id.org/era-aom/livestock/AOM_000849>,
@@ -27084,6 +27302,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000893> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000849> ;
+    skos:definition "A farming-system classification for species associations within the aquatic system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000894>,
         <https://w3id.org/era-aom/livestock/AOM_000897>,
@@ -27756,6 +27975,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000173> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100997> ;
+    skos:definition "A livestock-management concept concerning Disease Prevention within Animal Health."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000174>,
         <https://w3id.org/era-aom/livestock/AOM_000175>,
@@ -27825,6 +28045,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000360> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000358> ;
+    skos:definition "An AOM outcome concept for recording Productivity within Outcomes."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000361>,
         <https://w3id.org/era-aom/livestock/AOM_000397>,
@@ -27850,6 +28071,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000398> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000397> ;
+    skos:definition "An AOM outcome concept for recording Income within Economics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000399>,
         <https://w3id.org/era-aom/livestock/AOM_000400>,
@@ -27862,6 +28084,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000499> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000358> ;
+    skos:definition "An AOM outcome concept for recording Efficiency within Outcomes."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000500>,
         <https://w3id.org/era-aom/livestock/AOM_000501>,
@@ -27874,6 +28097,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000526> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000519> ;
+    skos:definition "An AOM outcome concept for recording Carbon Stocks within Mitigation."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000527>,
         <https://w3id.org/era-aom/livestock/AOM_000528>,
@@ -28054,6 +28278,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000849> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000847> ;
+    skos:definition "A farming-system classification identifying the aquatic livestock-system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000855>,
         <https://w3id.org/era-aom/livestock/AOM_000865>,
@@ -28066,6 +28291,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000850> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000848> ;
+    skos:definition "A farming-system classification for production orientation within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000851>,
         <https://w3id.org/era-aom/livestock/AOM_000852>,
@@ -28108,6 +28334,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001039> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101002> ;
+    skos:definition "A controlled rearing-stage category scoped to Chicken; used for records classified as “Chicken”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001044>,
         <https://w3id.org/era-aom/livestock/AOM_002508>,
@@ -28583,6 +28810,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000403> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000397> ;
+    skos:definition "An AOM outcome concept for recording Costs within Economics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000404>,
         <https://w3id.org/era-aom/livestock/AOM_000408>,
@@ -28610,6 +28838,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000520> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000519> ;
+    skos:definition "An AOM outcome concept for recording Emissions within Mitigation."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000521>,
         <https://w3id.org/era-aom/livestock/AOM_000522>,
@@ -28714,6 +28943,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000848> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000847> ;
+    skos:definition "A farming-system classification identifying the terrestrial livestock-system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000850>,
         <https://w3id.org/era-aom/livestock/AOM_000874>,
@@ -28727,6 +28957,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000855> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000849> ;
+    skos:definition "A farming-system classification for production orientation within the aquatic system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000856>,
         <https://w3id.org/era-aom/livestock/AOM_000857>,
@@ -28769,6 +29000,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_001024> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001017> ;
+    skos:definition "A controlled rearing-stage category scoped to Pig; used for records classified as “Young”."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001025>,
         <https://w3id.org/era-aom/livestock/AOM_001026>,
@@ -28890,6 +29122,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_003003> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000108> ;
+    skos:definition "A livestock-management concept concerning Feed Addition within Feed Management."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_003005>,
         <https://w3id.org/era-aom/livestock/AOM_003006>,
@@ -29138,6 +29371,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_003026> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100993> ;
+    skos:definition "A farming-system classification for production unit structure within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000914>,
         <https://w3id.org/era-aom/livestock/AOM_003027>,
@@ -29266,6 +29500,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000397> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000360> ;
+    skos:definition "An AOM outcome concept for recording Economics within Productivity."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000398>,
         <https://w3id.org/era-aom/livestock/AOM_000403>,
@@ -29314,6 +29549,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000874> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000848> ;
+    skos:definition "A farming-system classification for rearing stage within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000875>,
         <https://w3id.org/era-aom/livestock/AOM_000876>,
@@ -29329,6 +29565,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_003022> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000900> ;
+    skos:definition "A farming-system classification for rearing or housing system within the terrestrial system context."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000901>,
         <https://w3id.org/era-aom/livestock/AOM_000902>,
@@ -29843,6 +30080,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000366> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000362> ;
+    skos:definition "An AOM outcome concept for recording Animals within Product Yield."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000367>,
         <https://w3id.org/era-aom/livestock/AOM_000368>,
@@ -29862,6 +30100,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000464> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000397> ;
+    skos:definition "An AOM outcome concept for recording Economic Performance within Economics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000465>,
         <https://w3id.org/era-aom/livestock/AOM_000466>,
@@ -30186,6 +30425,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000480> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000479> ;
+    skos:definition "An AOM outcome concept for recording Soil Quality within Physical."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000481>,
         <https://w3id.org/era-aom/livestock/AOM_000482>,
@@ -30234,6 +30474,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_003110> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000403> ;
+    skos:definition "An AOM outcome concept for recording Variable Cost within Costs."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000432>,
         <https://w3id.org/era-aom/livestock/AOM_000433>,
@@ -30359,6 +30600,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000059> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000056> ;
+    skos:definition "A taxonomic concept used in AOM to identify Legume within the Pasture Fodder classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000074>,
         <https://w3id.org/era-aom/livestock/AOM_000076>,
@@ -30477,6 +30719,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000058> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000056> ;
+    skos:definition "A taxonomic concept used in AOM to identify Grass within the Pasture Fodder classification."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000063>,
         <https://w3id.org/era-aom/livestock/AOM_000064>,

@@ -43,6 +43,7 @@ jobs:
           python tests/validate_feed_identity_audit.py
           python tests/validate_ontology_collision_governance.py
           python tests/validate_definition_enrichment.py
+          python tests/validate_definition_gap_classification.py
           python tests/validate_ingredient_harmonization_workbench.py
           python tests/validate_ingredient_rule_quality_gate.py
           python tests/validate_approved_ingredient_rule_promotion.py

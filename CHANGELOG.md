@@ -4,6 +4,10 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Classify all 888 remaining definition gaps, approve 243 hierarchy-role
+  definitions, and route 645 evidence-dependent gaps without using closed ILRI
+  identifiers.
+
 - Add 1,239 governed definitions from reviewed scope text and approved semantic
   facets, reducing active definition gaps from 2,127 to 888 without invented
   biological or nutritional claims.

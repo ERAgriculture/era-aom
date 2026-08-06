@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Build reviewed definitions from approved concept and facet governance."""
 import csv
-from collections import defaultdict
+import json
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data/livestock-staging"
 OUT = DATA / "approved_definition_enrichments.csv"
+QUEUE = ROOT / "review/livestock-v8/definition_gap_queue.csv"
 
 
 def read(name):
@@ -19,6 +21,14 @@ existing = {
     if row["source_column"] != "approved_definition_enrichment"
 }
 concepts = {row["concept_id"]: row for row in read("concepts.csv")}
+labels = {
+    row["concept_id"]: row["label"] for row in read("labels.csv")
+    if row["language"] == "en" and row["label_type"] == "pref"
+}
+mappings = defaultdict(list)
+for row in read("mappings.csv"):
+    if row["target_scheme"] != "ilri-code":
+        mappings[row["subject_id"]].append(row)
 new_concepts = read("approved_new_concepts.csv")
 inventory = {row["concept_id"]: row for row in csv.DictReader(
     (ROOT / "review/livestock-v5/ingredient_harmonization_inventory.csv").open(encoding="utf-8", newline="")
@@ -72,10 +82,104 @@ for concept_id, facets in sorted(by_material.items()):
         "rationale": "Definition states only governed source identity and approved semantic assertions; no biological or nutritional claim is inferred.",
     })
 
+base_ids = {row["concept_id"] for row in rows}
+
+
+def domain_for(path):
+    folded = path.casefold()
+    if "/feed ingredient/" in folded:
+        return "feed_material"
+    if "/rearing stage/" in folded:
+        return "rearing_stage"
+    if path.startswith("Species/"):
+        return "taxon"
+    if path.startswith("Outcomes/"):
+        return "outcome"
+    if path.startswith("Farming System/"):
+        return "farming_system"
+    if path.startswith("Management/"):
+        return "management"
+    return "core_root"
+
+
+def context_text(path, domain):
+    parts = path.split("/")
+    label = parts[-1]
+    parent = parts[-2] if len(parts) > 1 else "AOM"
+    if domain == "rearing_stage":
+        context = next((item for item in parts if item in {"Cattle;Buffalo", "Sheep", "Goat", "Pig", "Chicken", "Fish"}), "livestock system")
+        return f"A controlled rearing-stage category scoped to {context}; used for records classified as “{label}”."
+    if domain == "taxon":
+        return f"A taxonomic concept used in AOM to identify {label} within the {parent} classification."
+    if domain == "outcome":
+        return f"An AOM outcome concept for recording {label} within {parent}."
+    if domain == "management":
+        return f"A livestock-management concept concerning {label} within {parent}."
+    if domain == "farming_system":
+        system = "aquatic" if "aquatic system" in path else "terrestrial" if "terrestrial system" in path else "livestock"
+        if label.casefold() == f"{system} system":
+            return f"A farming-system classification identifying the {system} livestock-system context."
+        return f"A farming-system classification for {label} within the {system} system context."
+    raise ValueError(domain)
+
+
+gap_rows = []
+eligible_domains = {"rearing_stage", "taxon", "outcome", "management", "farming_system"}
+for concept_id, concept in sorted(concepts.items()):
+    if concept["status"] == "deprecated" or concept_id in existing or concept_id in base_ids:
+        continue
+    path = concept["derived_path"]
+    domain = domain_for(path)
+    public = mappings[concept_id]
+    schemes = sorted({row["target_scheme"] for row in public})
+    targets = sorted({row["target_uri"] or row["target_id"] for row in public if row["target_uri"] or row["target_id"]})
+    if domain in eligible_domains:
+        definition = context_text(path, domain)
+        rows.append({
+            "concept_id": concept_id, "language": "en", "definition": definition,
+            "definition_method": "composed_from_governed_hierarchy_role",
+            "status": "approved", "reviewer": "Pete Steward", "review_date": "2026-08-06",
+            "evidence": "data/livestock-staging/concepts.csv",
+            "rationale": "Definition states only approved hierarchy context and model role; no domain fact is inferred.",
+        })
+        route, status = "approved_structural_definition", "approved"
+    elif domain == "feed_material" and "feedipedia" in schemes:
+        route, status = "research_feedipedia", "research-required"
+    elif domain == "feed_material" and ({"agrovoc", "ontology"} & set(schemes)):
+        route, status = "research_public_ontology", "research-required"
+    elif domain == "feed_material" and ({"ncbi-taxonomy", "world-flora-online"} & set(schemes)):
+        route, status = "research_taxon_insufficient_for_material", "research-required"
+    elif domain == "feed_material":
+        route, status = "research_source_workbook", "research-required"
+    else:
+        route, status = "manual_core_definition", "expert-review-required"
+    gap_rows.append({
+        "concept_id": concept_id, "preferred_label": labels[concept_id],
+        "hierarchy_path": path, "domain": domain,
+        "public_mapping_schemes": ";".join(schemes),
+        "public_mapping_targets": ";".join(targets),
+        "recommended_route": route, "status": status,
+    })
+
 rows.sort(key=lambda row: row["concept_id"])
 fields = ["concept_id", "language", "definition", "definition_method", "status", "reviewer", "review_date", "evidence", "rationale"]
 with OUT.open("w", encoding="utf-8", newline="") as handle:
     writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
     writer.writeheader()
     writer.writerows(rows)
-print(f"Approved {len(rows)} definition enrichments")
+QUEUE.parent.mkdir(parents=True, exist_ok=True)
+queue_fields = ["concept_id", "preferred_label", "hierarchy_path", "domain", "public_mapping_schemes", "public_mapping_targets", "recommended_route", "status"]
+with QUEUE.open("w", encoding="utf-8", newline="") as handle:
+    writer = csv.DictWriter(handle, fieldnames=queue_fields, lineterminator="\n")
+    writer.writeheader()
+    writer.writerows(gap_rows)
+(QUEUE.parent / "definition_gap_summary.json").write_text(json.dumps({
+    "prior_active_gaps": len(gap_rows),
+    "approved_structural_definitions": sum(row["status"] == "approved" for row in gap_rows),
+    "research_required": sum(row["status"] == "research-required" for row in gap_rows),
+    "expert_review_required": sum(row["status"] == "expert-review-required" for row in gap_rows),
+    "remaining_after_approval": sum(row["status"] != "approved" for row in gap_rows),
+    "routes": dict(sorted(Counter(row["recommended_route"] for row in gap_rows).items())),
+    "closed_identifiers_used_for_routing": False,
+}, indent=2) + "\n", encoding="utf-8")
+print(f"Approved {len(rows)} definition enrichments; classified {len(gap_rows)} prior gaps")
