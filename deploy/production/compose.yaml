@@ -37,6 +37,14 @@ services:
     depends_on:
       load-release: {condition: service_completed_successfully}
       fuseki-cache: {condition: service_started}
+    command:
+      - /bin/sh
+      - -ec
+      - |
+        sed -i 's/#maincontent/#main-content/' /var/www/html/src/view/base-template.twig
+        sed -i '/id="navi3"/s|href="[^"]*"|href="https://github.com/ERAgriculture/era-aom/issues/new/choose"|' /var/www/html/src/view/base-template.twig
+        sed -i 's/{{ "Feedback" | trans }}/Contribute/' /var/www/html/src/view/base-template.twig
+        exec /usr/sbin/apache2ctl -D FOREGROUND
     expose: ["80"]
     volumes:
       - "../../config/skosmos/era-aom-production.ttl:/var/www/html/config.ttl:ro"

@@ -10,7 +10,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from rdflib import Graph
+from rdflib import Graph, URIRef
+from rdflib.namespace import DCTERMS, SKOS
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -91,7 +92,22 @@ def main():
     assert status == 200 and headers.get_content_type() == "text/html"
     assert profile["representative_label"] in html
     assert 'application/ld+json' in html
+    assert '<link href="resource/css/era-aom.css"' in html
+    assert 'id="skiptocontent"' in html and '#main-content">Skip to main</a>' in html
+    assert 'id="main-content"' in html
+    assert '<meta name="viewport"' in html
+    assert 'href="https://github.com/ERAgriculture/era-aom/issues/new/choose"' in html
+    assert '&nbsp;Contribute' in html
     results["concept_page"] = {"id": concept_id, "label": profile["representative_label"], "embedded_jsonld": True}
+
+    css_url = args.skosmos.rstrip("/") + "/resource/css/era-aom.css"
+    status, headers, css_body, elapsed = request(css_url, "text/css")
+    timings.append(elapsed)
+    css_text = css_body.decode("utf-8")
+    assert status == 200 and headers.get_content_type() == "text/css"
+    assert ".prop-skos_relatedMatch" in css_text and "overflow-wrap: anywhere" in css_text
+    results["custom_css"] = {"linked": True, "served": True, "long_mapping_wrap": True}
+    results["contribution_route"] = {"github_issue_chooser": "pass", "dead_mail_form_exposed": False}
 
     graph_url = args.fuseki + "/get?" + urllib.parse.urlencode({"graph": "https://w3id.org/era-aom/graph/livestock"})
     status, _, graph_body, elapsed = request(graph_url, "text/turtle")
@@ -100,6 +116,45 @@ def main():
     backup = Graph().parse(data=graph_body, format="turtle")
     assert len(backup) >= profile["minimum_graph_triples"], len(backup)
     results["graph_backup"] = {"triples": len(backup), "parse": "pass"}
+
+    representative_results = []
+    for check in profile["representative_checks"]:
+        cid = check["concept_id"]
+        uri = URIRef(f"https://w3id.org/era-aom/livestock/{cid}")
+        labels = {str(value) for value in backup.objects(uri, SKOS.prefLabel)}
+        definitions = [str(value) for value in backup.objects(uri, SKOS.definition)]
+        assert check["label"] in labels, (cid, labels)
+        if "definition_contains" in check:
+            assert any(check["definition_contains"] in value for value in definitions), (cid, definitions)
+        if check.get("definition_absent"):
+            assert not definitions, (cid, definitions)
+        if check.get("status"):
+            status_values = {str(value) for value in backup.objects(uri, URIRef("urn:era:property:status"))}
+            assert check["status"] in status_values, (cid, status_values)
+        if check.get("replaced_by"):
+            replacements = {str(value).rsplit("/", 1)[-1] for value in backup.objects(uri, DCTERMS.isReplacedBy)}
+            assert check["replaced_by"] in replacements, (cid, replacements)
+        concept_page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{cid}"
+        page_status, _, page_body, elapsed = request(concept_page, "text/html")
+        timings.append(elapsed)
+        page_html = page_body.decode("utf-8", errors="replace")
+        assert page_status == 200 and check["label"] in page_html and 'application/ld+json' in page_html
+        representative_results.append({"concept_id": cid, "label": check["label"], "page": "pass", "semantics": "pass"})
+    results["representative_matrix"] = representative_results
+
+    format_checks = {
+        "application/rdf+xml": "xml",
+        "text/turtle": "turtle",
+        "application/ld+json": "json-ld",
+    }
+    for media_type, rdf_format in format_checks.items():
+        data_url = api + f"/{vocid}/data?" + urllib.parse.urlencode({"uri": concept_uri, "format": media_type})
+        status, _, body, elapsed = request(data_url, media_type)
+        timings.append(elapsed)
+        assert status == 200
+        parsed = Graph().parse(data=body, format=rdf_format)
+        assert (URIRef(concept_uri), SKOS.prefLabel, None) in parsed
+    results["concept_downloads"] = {key: "parse-pass" for key in format_checks}
 
     redirect_expectations = {
         "text/turtle": "aom-livestock.ttl",
@@ -126,7 +181,7 @@ def main():
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     (output / "acceptance.json").write_text(json.dumps(results, indent=2) + "\n")
-    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Concept HTML + embedded JSON-LD: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
+    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Concept HTML + embedded JSON-LD: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
     (output / "acceptance.md").write_text("\n".join(lines))
     print(json.dumps(results, indent=2))
 

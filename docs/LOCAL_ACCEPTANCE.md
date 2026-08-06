@@ -23,6 +23,10 @@ python scripts/run_local_acceptance.py --output=acceptance-results
 docker compose -f deploy/local/compose.yaml down --volumes
 ```
 
+Use `--force-recreate skosmos` after configuration or stylesheet changes.
+Skosmos caches parsed configuration in APC; a process restart does not reliably
+invalidate a bind-mounted file whose modification key is unchanged.
+
 GitHub Actions uploads report from every run. Visual screenshots and manual
 interaction remain separate because current development machine lacks Docker and
 browser connection. Hosting-only DNS/TLS, public uptime, w3id, AgroPortal, and

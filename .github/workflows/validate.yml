@@ -47,6 +47,7 @@ jobs:
           python scripts/build_final_definition_tail_closure.py
           python scripts/build_definition_hard_tail_review.py
           python scripts/build_final_definition_tail_register.py
+          python scripts/build_release_readiness_pack.py
           python scripts/build_authority_mapping_review.py
           python scripts/build_definition_enrichment.py
           python scripts/build_feed_identity_audit.py
@@ -72,6 +73,7 @@ jobs:
           python tests/validate_ontology_integrity_closure.py
           python tests/validate_final_definition_tail_closure.py
           python tests/validate_final_definition_tail_register.py
+          python tests/validate_release_readiness_pack.py
           python tests/validate_authority_mapping_review.py
           python tests/validate_ingredient_harmonization_workbench.py
           python tests/validate_ingredient_rule_quality_gate.py
