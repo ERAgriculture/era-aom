@@ -12,27 +12,27 @@ with (REVIEW / "definition_gap_queue.csv").open(encoding="utf-8", newline="") as
     rows = list(csv.DictReader(handle))
 summary = json.loads((REVIEW / "definition_gap_summary.json").read_text())
 
-assert len(rows) == 626 and len({row["concept_id"] for row in rows}) == 626
+assert len(rows) == 453 and len({row["concept_id"] for row in rows}) == 453
 assert Counter(row["domain"] for row in rows) == {
-    "feed_material": 381, "outcome": 80, "rearing_stage": 67,
+    "feed_material": 208, "outcome": 80, "rearing_stage": 67,
     "taxon": 45, "management": 35, "farming_system": 16, "core_root": 2,
 }
 assert summary == {
-    "prior_active_gaps": 626,
+    "prior_active_gaps": 453,
     "approved_structural_definitions": 243,
-    "research_required": 381,
+    "research_required": 208,
     "expert_review_required": 2,
-    "remaining_after_approval": 383,
+    "remaining_after_approval": 210,
     "routes": {
         "approved_structural_definition": 243,
         "manual_core_definition": 2,
         "research_feedipedia": 92,
         "research_public_ontology": 22,
-        "research_source_workbook": 200,
+        "research_source_workbook": 27,
         "research_taxon_insufficient_for_material": 67,
     },
     "closed_identifiers_used_for_routing": False,
 }
 assert not any("ilri" in row["public_mapping_schemes"].casefold() or "ilri" in row["public_mapping_targets"].casefold() for row in rows)
 assert {row["preferred_label"] for row in rows if row["recommended_route"] == "manual_core_definition"} == {"Management", "Farming System"}
-print("Definition-gap classification validation passed: 626 routed; 383 remain")
+print("Definition-gap classification validation passed: 453 routed; 210 remain")
