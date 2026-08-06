@@ -7905,10 +7905,11 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001265> a skos:Concept ;
+    skos:altLabel "Ziziphus mauritiania"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000665> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001265" ;
-    skos:prefLabel "Ziziphus mauritiania"@en ;
+    skos:prefLabel "Ziziphus mauritiana"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_157914>,
         <https://www.feedipedia.org/node/12199> ;
     era:conceptType "legacy_aom_concept" ;
@@ -9187,6 +9188,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001482> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100915> ;
+    skos:definition "A feed material with governed source identity “sugar beet” and characteristics: physical form — Liquid form; processing method — Sugar processing; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001482" ;
     skos:prefLabel "Sugar Beet Molasses"@en ;
@@ -11768,6 +11770,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001845> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000594> ;
+    skos:definition "A feed material with governed source identity “barley malt” and characteristics: ingredient part — Sprout; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001845" ;
     skos:prefLabel "Malt Sprout"@en ;
@@ -21969,11 +21972,12 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001462> a skos:Concept ;
+    skos:altLabel "Cynadon dactylon"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000701> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001649> ;
     skos:notation "AOM_001462" ;
-    skos:prefLabel "Cynadon dactylon"@en ;
+    skos:prefLabel "Cynodon dactylon"@en ;
     skos:relatedMatch <https://www.feedipedia.org/node/11847> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
@@ -22495,6 +22499,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001811> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100976> ;
+    skos:definition "A feed material with governed source identity “ruminant digestive contents” and characteristics: physical form — Mixture form; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001939> ;
     skos:notation "AOM_001811" ;
@@ -23362,6 +23367,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003482> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100915> ;
+    skos:definition "A feed material with governed source identity “sugar beet” and characteristics: ingredient part — Root."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_006270> ;
     skos:notation "AOM_003482" ;
@@ -26744,6 +26750,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_003911> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100910> ;
+    skos:definition "A feed material with governed source identity “cassava” and characteristics: product role — Residue role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_006162>,
         <https://w3id.org/era-aom/livestock/AOM_006404> ;
@@ -26837,6 +26844,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:altLabel "Chicken Litter"@en,
         "Chicken Waste"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000561> ;
+    skos:definition "A feed material with governed source identity “chicken” and characteristics: product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001094>,
         <https://w3id.org/era-aom/livestock/AOM_001940> ;
@@ -27631,6 +27639,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000601> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100867> ;
+    skos:definition "A feed material with governed source identity “cowpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001754>,
         <https://w3id.org/era-aom/livestock/AOM_002018>,
@@ -28169,6 +28178,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_003072> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000667> ;
+    skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Seed."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000607>,
         <https://w3id.org/era-aom/livestock/AOM_001193> ;
@@ -29072,6 +29082,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_002166> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100916> ;
+    skos:definition "A feed material with governed source identity “sugarcane” and characteristics: product role — Residue role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_006266>,
         <https://w3id.org/era-aom/livestock/AOM_006267>,

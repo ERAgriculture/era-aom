@@ -4554,6 +4554,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100915"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “sugar beet” and characteristics: ingredient part — Root."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -25228,6 +25234,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100867"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “cowpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -40893,6 +40905,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100976"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “ruminant digestive contents” and characteristics: physical form — Mixture form; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -83342,6 +83360,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000667"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Seed."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -85402,6 +85426,12 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Cynadon dactylon"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000701"
@@ -85425,7 +85455,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Cynadon dactylon"
+        "@value": "Cynodon dactylon"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
@@ -94901,6 +94931,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100916"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “sugarcane” and characteristics: product role — Residue role."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -98142,6 +98178,60 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001482",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100915"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “sugar beet” and characteristics: physical form — Liquid form; processing method — Sugar processing; product role — By-product role."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_001482"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Sugar Beet Molasses"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3555"
+      },
+      {
+        "@id": "https://www.feedipedia.org/node/12340"
+      },
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_4889"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002129",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -98185,54 +98275,6 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3847"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001482",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100915"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_001482"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Sugar Beet Molasses"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3555"
-      },
-      {
-        "@id": "https://www.feedipedia.org/node/12340"
-      },
-      {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_4889"
       }
     ],
     "urn:era:property:conceptType": [
@@ -109074,6 +109116,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_100910"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “cassava” and characteristics: product role — Residue role."
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
@@ -115630,6 +115678,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000561"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “chicken” and characteristics: product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -123500,6 +123554,12 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000594"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “barley malt” and characteristics: ingredient part — Sprout; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -132898,6 +132958,12 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Ziziphus mauritiania"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000665"
@@ -132916,7 +132982,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Ziziphus mauritiania"
+        "@value": "Ziziphus mauritiana"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
