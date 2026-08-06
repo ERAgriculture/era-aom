@@ -25,12 +25,12 @@ assert len({row["concept_id"] for row in inventory}) == 1643
 assert len(rules) == summary["rules"] == 68
 assert len({row["rule_id"] for row in rules}) == 68
 assert len(clusters) == 7 and summary["unresolved_signature_clusters"] == 7
-assert len(exceptions) == summary["unresolved_expert_exceptions"] == 25
+assert len(exceptions) == summary["unresolved_expert_exceptions"] == 19
 assert summary["routes"] == {
     "batch_review": 10,
-    "expert_exception": 31,
-    "retain_atomic_candidate": 621,
-    "rule_application_candidate": 981,
+    "expert_exception": 25,
+    "retain_atomic_candidate": 624,
+    "rule_application_candidate": 984,
 }
 assert summary["safety"] == {
     "automatic_ontology_changes": 0,
@@ -55,6 +55,10 @@ assert "AOM_006072" not in {row["concept_id"] for row in exceptions}
 assert by_id["AOM_006500"]["process_candidates"] == "Boiling;Drying;Grinding;Dehulling;Soaking"
 assert by_id["AOM_006108"]["source_identity_candidate"] == "common bean"
 assert by_id["AOM_001313"]["governance_state"] == "approved_model_resolution"
+assert by_id["AOM_001616"]["source_identity_candidate"] == "blood"
+assert not by_id["AOM_001616"]["component_candidates"]
+assert by_id["AOM_001333"]["source_identity_candidate"] == "oil"
+assert not by_id["AOM_001333"]["form_candidates"]
 print(
     f"Ingredient harmonization workbench validation passed: {len(inventory)} concepts, "
     f"{len(rules)} rules, {len(exceptions)} unresolved exceptions"

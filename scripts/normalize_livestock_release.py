@@ -622,6 +622,9 @@ def main():
             "approved_whole_grain_integrity_decisions": len(
                 read_governance("approved_whole_grain_integrity_decisions.csv")
             ),
+            "approved_feed_material_source_overrides": len(
+                read_governance("approved_feed_material_source_overrides.csv")
+            ),
             "approved_ingredient_component_value_mappings": len(
                 read_governance("approved_ingredient_component_value_mappings.csv")
             ),

@@ -24,6 +24,13 @@ APPROVED_RULE_IDS = {
     "COMPONENT-STEM", "COMPONENT-STOVER", "COMPONENT-STRAW", "COMPONENT-TUBER",
     "COMPONENT-VINE", "FORM-BLOCK", "FORM-PELLET", "FORM-POWDER",
 }
+APPROVAL_OVERRIDES = {
+    "COMPONENT-BLOOD": {
+        "approval_scope": "approve-with-guard",
+        "required_guard": "Apply only when non-empty source identity remains; otherwise route to expert exception.",
+        "rationale": "Component terms generalize across families but may also be standalone material identities.",
+    },
+}
 
 FIELD_BY_DIMENSION = {
     "component": "component_candidates",
@@ -55,14 +62,18 @@ approved = [
 ]
 assert len(approved) == len(APPROVED_RULE_IDS) == 40
 assert {row["rule_id"] for row in approved} == APPROVED_RULE_IDS
-approved_rows = [{
-    "rule_id": row["rule_id"], "dimension": row["dimension"],
-    "source_pattern": row["source_pattern"], "normalized_value": row["normalized_value"],
-    "approval_scope": row["recommendation"], "required_guard": row["required_guard"],
-    "status": "approved", "reviewer": REVIEWER, "review_date": DATE,
-    "evidence": "review/livestock-v6/ingredient_rule_quality_assessment.csv",
-    "rationale": row["rationale"],
-} for row in approved]
+approved_rows = []
+for row in approved:
+    preserved = APPROVAL_OVERRIDES.get(row["rule_id"], {})
+    approved_rows.append({
+        "rule_id": row["rule_id"], "dimension": row["dimension"],
+        "source_pattern": row["source_pattern"], "normalized_value": row["normalized_value"],
+        "approval_scope": preserved.get("approval_scope", row["recommendation"]),
+        "required_guard": preserved.get("required_guard", row["required_guard"]),
+        "status": "approved", "reviewer": REVIEWER, "review_date": DATE,
+        "evidence": "review/livestock-v6/ingredient_rule_quality_assessment.csv",
+        "rationale": preserved.get("rationale", row["rationale"]),
+    })
 write(
     DATA / "approved_ingredient_harmonization_rules.csv", approved_rows,
     list(approved_rows[0]),
