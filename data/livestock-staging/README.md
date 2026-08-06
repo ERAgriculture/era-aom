@@ -5,6 +5,10 @@ Preferred-label identity governance lives in
 where hierarchy and model role distinguish concepts; verified duplicates use
 `approved_deprecations.csv` replacement links.
 
+Definition overlays live in `approved_definition_enrichments.csv`. They promote
+reviewed scope text or compose only approved source/facet assertions; legacy
+source descriptions remain unchanged.
+
 Generated from public AOM Livestock v2.0, DOI
 <https://doi.org/10.7910/DVN/75E7HV>.
 

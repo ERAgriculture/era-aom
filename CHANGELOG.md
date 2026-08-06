@@ -4,6 +4,10 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Add 1,239 governed definitions from reviewed scope text and approved semantic
+  facets, reducing active definition gaps from 2,127 to 888 without invented
+  biological or nutritional claims.
+
 - Govern all 105 historical preferred-label collision groups: retain 98
   context-distinct groups, deprecate six verified duplicates, preserve Cotton
   Seed as explicit hold, and correct audit inputs to use governed active labels.

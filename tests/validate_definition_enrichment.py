@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+"""Validate evidence-bounded definition enrichment."""
+import csv
+import json
+from collections import Counter
+from pathlib import Path
+
+from rdflib import Graph, SKOS, URIRef
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data/livestock-staging"
+
+
+def read(name):
+    with (DATA / name).open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+approved = read("approved_definition_enrichments.csv")
+definitions = read("definitions.csv")
+concepts = read("concepts.csv")
+assert len(approved) == 1239
+assert len({row["concept_id"] for row in approved}) == 1239
+assert Counter(row["definition_method"] for row in approved) == {
+    "composed_from_approved_semantic_facets": 971,
+    "promoted_reviewed_scope_note": 268,
+}
+assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in approved)
+assert all("governed source identity" in row["definition"] for row in approved if row["definition_method"].startswith("composed"))
+assert sum(row["source_column"] == "approved_definition_enrichment" for row in definitions) == 1239
+defined = {row["concept_id"] for row in definitions}
+active = [row for row in concepts if row["status"] != "deprecated"]
+assert sum(row["concept_id"] not in defined for row in active) == 888
+
+graph = Graph().parse(ROOT / "dist/livestock-staging/aom-livestock.ttl")
+maize = URIRef("urn:era-aom:livestock:AOM_001313")
+definition = str(next(graph.objects(maize, SKOS.definition)))
+assert "source identity “maize”" in definition and "Whole grain" in definition
+manifest = json.loads((ROOT / "dist/livestock-staging/manifest.json").read_text())
+assert manifest["counts"]["approved_definition_enrichments"] == 1239
+print("Definition enrichment validation passed: 1,239 definitions; 888 active gaps remain")

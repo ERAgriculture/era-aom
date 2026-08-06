@@ -85,6 +85,7 @@ def main():
     semantic_relations = read_governance("approved_semantic_relations.csv")
     reparentings = read_governance("approved_reparentings.csv")
     facet_concepts = read_governance("approved_ingredient_facet_concepts.csv")
+    definition_enrichments = read_governance("approved_definition_enrichments.csv")
     resolution_by_row = {row["source_row"]: row for row in identity_resolutions}
     replacement_by_key = {
         (row["source_row"], row["source_column"]): row
@@ -396,6 +397,21 @@ def main():
                 "object_id": target_id, "status": "reviewed",
             })
 
+    existing_definition_ids = {row["concept_id"] for row in definitions}
+    enrichment_ids = {row["concept_id"] for row in definition_enrichments}
+    if len(enrichment_ids) != len(definition_enrichments):
+        raise ValueError("Approved definition enrichments must have unique concept IDs")
+    if not enrichment_ids <= concept_ids or enrichment_ids & existing_definition_ids:
+        raise ValueError("Approved definition enrichment references unknown or already-defined concept")
+    for enrichment in definition_enrichments:
+        if enrichment["status"] != "approved" or not enrichment["definition"].strip():
+            raise ValueError("Definition enrichment must be approved and non-empty")
+        definitions.append({
+            "concept_id": enrichment["concept_id"], "language": enrichment["language"],
+            "definition": enrichment["definition"],
+            "source_column": "approved_definition_enrichment",
+        })
+
     for semantic_relation in semantic_relations:
         if semantic_relation["relation_type"] not in {"related"}:
             raise ValueError("Unsupported approved semantic relation type")
@@ -634,6 +650,7 @@ def main():
             "approved_ontology_collision_decisions": len(
                 read_governance("approved_ontology_collision_decisions.csv")
             ),
+            "approved_definition_enrichments": len(definition_enrichments),
             "approved_ingredient_component_value_mappings": len(
                 read_governance("approved_ingredient_component_value_mappings.csv")
             ),
