@@ -152,6 +152,7 @@ def main():
         [
             root / "data" / "livestock-staging" / "approved_feed_material_facets.csv",
             root / "data" / "livestock-staging" / "approved_generated_feed_material_facets.csv",
+            root / "data" / "livestock-staging" / "approved_hard_tail_feed_material_facets.csv",
         ],
         output / "feed-material-facets.csv",
         output / "feed-material-facets.parquet",
