@@ -37,6 +37,7 @@ jobs:
           python scripts/build_public_authority_source_review.py
           python scripts/build_workbook_source_scope_review.py
           python scripts/build_definition_hard_tail_review.py
+          python scripts/build_authority_mapping_review.py
           python scripts/build_definition_enrichment.py
           python scripts/build_feed_identity_audit.py
           python scripts/build_ingredient_harmonization_workbench.py
@@ -54,6 +55,7 @@ jobs:
           python tests/validate_public_authority_source_review.py
           python tests/validate_workbook_source_scope_review.py
           python tests/validate_definition_hard_tail_review.py
+          python tests/validate_authority_mapping_review.py
           python tests/validate_ingredient_harmonization_workbench.py
           python tests/validate_ingredient_rule_quality_gate.py
           python tests/validate_approved_ingredient_rule_promotion.py

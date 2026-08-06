@@ -86,6 +86,11 @@ def main():
     reparentings = read_governance("approved_reparentings.csv")
     facet_concepts = read_governance("approved_ingredient_facet_concepts.csv")
     definition_enrichments = read_governance("approved_definition_enrichments.csv")
+    mapping_reviews = read_governance("approved_mapping_reviews.csv")
+    mapping_review_by_key = {
+        (row["subject_id"], row["target_scheme"], row["target_uri"] or row["target_id"]): row
+        for row in mapping_reviews
+    }
     resolution_by_row = {row["source_row"]: row for row in identity_resolutions}
     replacement_by_key = {
         (row["source_row"], row["source_column"]): row
@@ -281,15 +286,18 @@ def main():
                     continue
                 target_id, target_uri, repaired = normalize_mapping(value)
                 replacement = replacement_by_key.get((row["_source_row"], column))
+                review = mapping_review_by_key.get((concept_id, scheme, target_uri or target_id))
+                if review and review["publish"] == "false":
+                    continue
                 mappings.append({
-                    "subject_id": concept_id, "mapping_relation": "relatedMatch",
+                    "subject_id": concept_id, "mapping_relation": review["mapping_relation"] if review else "relatedMatch",
                     "target_scheme": scheme, "target_id": target_id,
                     "target_uri": target_uri, "original_value": value,
                     "normalization_applied": "malformed_http_repair" if repaired else "",
-                    "evidence": replacement["evidence"] if replacement else DOI,
-                    "status": "reviewed" if replacement else "legacy-unreviewed",
+                    "evidence": review["evidence"] if review else replacement["evidence"] if replacement else DOI,
+                    "status": review["status"] if review else "reviewed" if replacement else "legacy-unreviewed",
                     "source_release": "AOM Livestock v2.0",
-                    "reviewer": replacement["reviewer"] if replacement else "",
+                    "reviewer": review["reviewer"] if review else replacement["reviewer"] if replacement else "",
                 })
         for column in PROPERTY_FIELDS:
             if row[column]:
@@ -613,6 +621,7 @@ def main():
             "mapping_assertions": len(mappings),
             "approved_identity_resolutions": len(identity_resolutions),
             "approved_mapping_replacements": len(mapping_replacements),
+            "approved_mapping_reviews": len(mapping_reviews),
             "approved_deprecations": len(deprecations),
             "approved_label_corrections": len(label_corrections),
             "approved_new_concepts": len(new_concepts),
