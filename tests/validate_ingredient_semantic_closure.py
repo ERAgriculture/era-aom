@@ -28,9 +28,9 @@ assert Counter(row["model_family"] for row in closure) == {
     "dairy_composition_state": 1,
 }
 assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in closure)
-assert len(clusters) == 7
+assert len(clusters) == 10
 assert Counter(row["decision"] for row in clusters) == {
-    "retain_distinct": 5, "deprecate_replace": 1, "hold_identity": 1,
+    "retain_distinct": 8, "deprecate_replace": 1, "hold_identity": 1,
 }
 assert any(
     row["deprecated_id"] == "AOM_001898" and row["replacement_id"] == "AOM_001459"
@@ -56,4 +56,4 @@ for row in closure:
         URIRef("urn:era-aom:schema:" + row["target_property"].split(":", 1)[1]),
         URIRef("urn:era-aom:livestock:" + row["target_concept_id"]),
     ) in graph
-print("Ingredient semantic closure validation passed: 19 model decisions; 7 cluster decisions")
+print("Ingredient semantic closure validation passed: 19 model decisions; 10 cluster decisions")

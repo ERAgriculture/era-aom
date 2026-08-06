@@ -19,10 +19,10 @@ def read(name):
 approved = read("approved_definition_enrichments.csv")
 definitions = read("definitions.csv")
 concepts = read("concepts.csv")
-assert len(approved) == 1482
-assert len({row["concept_id"] for row in approved}) == 1482
+assert len(approved) == 1488
+assert len({row["concept_id"] for row in approved}) == 1488
 assert Counter(row["definition_method"] for row in approved) == {
-    "composed_from_approved_semantic_facets": 971,
+    "composed_from_approved_semantic_facets": 977,
     "promoted_reviewed_scope_note": 268,
     "composed_from_governed_hierarchy_role": 243,
 }
@@ -31,15 +31,15 @@ assert all(
     "governed source identity" in row["definition"] for row in approved
     if row["definition_method"] == "composed_from_approved_semantic_facets"
 )
-assert sum(row["source_column"] == "approved_definition_enrichment" for row in definitions) == 1482
+assert sum(row["source_column"] == "approved_definition_enrichment" for row in definitions) == 1488
 defined = {row["concept_id"] for row in definitions}
 active = [row for row in concepts if row["status"] != "deprecated"]
-assert sum(row["concept_id"] not in defined for row in active) == 645
+assert sum(row["concept_id"] not in defined for row in active) == 639
 
 graph = Graph().parse(ROOT / "dist/livestock-staging/aom-livestock.ttl")
 maize = URIRef("urn:era-aom:livestock:AOM_001313")
 definition = str(next(graph.objects(maize, SKOS.definition)))
 assert "source identity “maize”" in definition and "Whole grain" in definition
 manifest = json.loads((ROOT / "dist/livestock-staging/manifest.json").read_text())
-assert manifest["counts"]["approved_definition_enrichments"] == 1482
-print("Definition enrichment validation passed: 1,482 definitions; 645 active gaps remain")
+assert manifest["counts"]["approved_definition_enrichments"] == 1488
+print("Definition enrichment validation passed: 1,488 definitions; 639 active gaps remain")

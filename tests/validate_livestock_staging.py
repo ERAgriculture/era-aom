@@ -77,7 +77,7 @@ assert len(facet_concepts) == 99
 assert len(harmonization_rules) == 40
 assert len(generated_material_facets) == 1599
 assert len(whole_grain_decisions) == 4
-assert len(source_overrides) == 6
+assert len(source_overrides) == 12
 assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 65
 assert len(component_value_holds) == 10
@@ -112,7 +112,7 @@ assert manifest["counts"]["approved_ingredient_facet_concepts"] == 99
 assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
 assert manifest["counts"]["approved_generated_feed_material_facets"] == 1599
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
-assert manifest["counts"]["approved_feed_material_source_overrides"] == 6
+assert manifest["counts"]["approved_feed_material_source_overrides"] == 12
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 10

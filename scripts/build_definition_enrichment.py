@@ -59,6 +59,7 @@ property_label = {
     "aom:materialIntegrity": "material integrity",
     "aom:materialComponent": "material component",
     "aom:compositionState": "composition state",
+    "aom:ingredientConstituent": "ingredient constituent",
 }
 for concept_id, facets in sorted(by_material.items()):
     if concept_id in existing or concepts[concept_id]["status"] == "deprecated":

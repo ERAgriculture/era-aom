@@ -60,7 +60,7 @@ assert {row["binding_action"] for row in value_rows} == {
 }
 assert len(facet_rows) == 99 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
 assert len(facet_holds) == 10
-assert len(material_facets) == 1625
+assert len(material_facets) == 1633
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:
