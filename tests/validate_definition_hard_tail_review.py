@@ -19,27 +19,30 @@ facets = read(DATA / "approved_hard_tail_feed_material_facets.csv")
 definitions = read(DATA / "approved_definition_enrichments.csv")
 assert len(cohort) == len(rows) == 210
 assert {row["concept_id"] for row in cohort} == {row["concept_id"] for row in rows}
-assert Counter(row["status"] for row in rows) == {"held": 161, "approved": 49}
+assert Counter(row["status"] for row in rows) == {"held": 145, "approved": 65}
 assert Counter(row["decision"] for row in rows) == {
-    "hold_expert_evidence_required": 161,
-    "approve_taxon_source_with_explicit_facets": 36,
+    "hold_expert_evidence_required": 145,
+    "approve_taxon_source_with_explicit_facets": 50,
     "approve_feedipedia_category_scope": 5,
     "approve_feedipedia_alias_scope": 4,
     "approve_core_hierarchy_scope": 2,
-    "approve_workbook_source_with_explicit_facets": 2,
+    "approve_workbook_source_with_explicit_facets": 4,
 }
-assert len(facets) == 43
+assert len(facets) == 77
 assert Counter(row["target_property"] for row in facets) == {
-    "aom:productRole": 20, "aom:ingredientPart": 10,
-    "aom:ingredientConstituent": 9, "aom:physicalForm": 3,
-    "aom:processingMethod": 1,
+    "aom:productRole": 28, "aom:ingredientPart": 24,
+    "aom:ingredientConstituent": 11, "aom:physicalForm": 8,
+    "aom:processingMethod": 6,
 }
 assert all(row["blocker_code"] and row["next_action"] for row in rows if row["status"] == "held")
 assert not any(row["blocker_code"] or row["next_action"] for row in rows if row["status"] == "approved")
 defined = {row["concept_id"] for row in definitions}
 assert {row["concept_id"] for row in rows if row["status"] == "approved"} <= defined
 assert not any("ilri" in value.casefold() for row in rows for value in row.values())
-assert "AOM_003879" not in {row["feed_material_id"] for row in facets}  # rhizome is not root
-assert "AOM_001880" not in {row["feed_material_id"] for row in facets}  # liver facet missing
+facet_pairs = {(row["feed_material_id"], row["target_concept_id"]) for row in facets}
+assert ("AOM_003879", "AOM_101121") in facet_pairs  # rhizome remains distinct from root
+assert ("AOM_003879", "AOM_101037") not in facet_pairs
+assert {("AOM_001880", "AOM_101122"), ("AOM_001880", "AOM_101081")} <= facet_pairs
+assert "AOM_001805" not in {row["feed_material_id"] for row in facets}  # plant taxon cannot establish larval biomass
 assert all(row["evidence"] for row in rows if row["decision"] == "approve_taxon_source_with_explicit_facets")
-print("Definition hard-tail review passed: 49 approved; 161 actionable holds; 43 facets")
+print("Definition hard-tail review passed: 65 approved; 145 actionable holds; 77 facets")

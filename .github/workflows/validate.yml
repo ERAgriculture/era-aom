@@ -36,13 +36,13 @@ jobs:
           python scripts/build_feedipedia_source_scope_review.py
           python scripts/build_public_authority_source_review.py
           python scripts/build_workbook_source_scope_review.py
+          python scripts/build_ingredient_facet_value_governance.py
           python scripts/build_definition_hard_tail_review.py
           python scripts/build_authority_mapping_review.py
           python scripts/build_definition_enrichment.py
           python scripts/build_feed_identity_audit.py
           python scripts/build_ingredient_harmonization_workbench.py
           python scripts/build_ingredient_rule_quality_gate.py
-          python scripts/build_ingredient_facet_value_governance.py
           python scripts/promote_approved_ingredient_rules.py
           python scripts/build_ingredient_model_gap_review.py
           python tests/validate_feed_identity_audit.py
