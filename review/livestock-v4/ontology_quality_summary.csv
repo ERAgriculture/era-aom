@@ -2,7 +2,7 @@ scope,quality_signal,count,severity,interpretation,next_action
 all AOM,source rows,2503,baseline,Canonical-workbook-aligned source records audited.,Preserve baseline.
 all AOM,identified source rows,2502,high,One source record lacks an AOM identifier.,Review unidentified source record before cutover.
 legacy source,missing source definitions,1865,baseline,Public source rows without original definitions; preserved for provenance.,Do not alter source snapshot.
-active governed vocabulary,missing definitions,888,high,Active governed concepts without definitions after approved enrichment.,Prioritize remaining domain-authority research.
+active governed vocabulary,missing definitions,645,high,Active governed concepts without definitions after approved enrichment.,Prioritize remaining domain-authority research.
 all AOM,normalized preferred-label collisions,99,high,"Potential duplicates, contextual variants, or over-normalized labels.",Review identity; never merge automatically.
 all AOM,unresolved preferred-label collisions,0,pass,Collision groups without governed disposition.,Review identity; never merge automatically.
 feed ingredients,concepts,1644,baseline,Feed-material review scope.,Review in domain batches.
