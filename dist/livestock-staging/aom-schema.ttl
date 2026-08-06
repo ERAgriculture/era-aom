@@ -50,6 +50,10 @@ aom:FeedMaterialComponent a owl:Class ;
 aom:IngredientPhysicalForm a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "ingredient physical form"@en .
+aom:MaterialIntegrity a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "material integrity"@en ;
+  rdfs:comment "Compositional integrity retained by a material independently of particle form or processing."@en .
 aom:ProcessingMethod a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "processing method"@en .
@@ -86,6 +90,8 @@ aom:ingredientPart a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPartCategory .
 aom:physicalForm a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPhysicalForm .
+aom:materialIntegrity a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:MaterialIntegrity .
 aom:processingMethod a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProcessingMethod .
 aom:productRole a owl:ObjectProperty ;

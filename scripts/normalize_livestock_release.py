@@ -619,6 +619,9 @@ def main():
             "approved_generated_feed_material_facets": len(
                 read_governance("approved_generated_feed_material_facets.csv")
             ),
+            "approved_whole_grain_integrity_decisions": len(
+                read_governance("approved_whole_grain_integrity_decisions.csv")
+            ),
             "approved_ingredient_component_value_mappings": len(
                 read_governance("approved_ingredient_component_value_mappings.csv")
             ),

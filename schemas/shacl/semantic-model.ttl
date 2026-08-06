@@ -17,6 +17,7 @@ aom:FeedMaterialShape a sh:NodeShape ;
   sh:property [ sh:path aom:materialComponent ; sh:class aom:FeedMaterialComponent ] ;
   sh:property [ sh:path aom:ingredientPart ; sh:class aom:IngredientPartCategory ] ;
   sh:property [ sh:path aom:physicalForm ; sh:class aom:IngredientPhysicalForm ] ;
+  sh:property [ sh:path aom:materialIntegrity ; sh:class aom:MaterialIntegrity ] ;
   sh:property [ sh:path aom:processingMethod ; sh:class aom:ProcessingMethod ] ;
   sh:property [ sh:path aom:productRole ; sh:class aom:ProductRole ] ;
   sh:property [ sh:path aom:ingredientConstituent ; sh:class aom:IngredientConstituent ] ;

@@ -12,6 +12,7 @@ FACET_MODEL = {
     "material_component": ("aom:materialComponent", "aom:FeedMaterialComponent"),
     "anatomical_part": ("aom:ingredientPart", "aom:IngredientPartCategory"),
     "physical_form": ("aom:physicalForm", "aom:IngredientPhysicalForm"),
+    "material_integrity": ("aom:materialIntegrity", "aom:MaterialIntegrity"),
     "processing_method": ("aom:processingMethod", "aom:ProcessingMethod"),
     "product_role": ("aom:productRole", "aom:ProductRole"),
     "chemical_constituent": ("aom:ingredientConstituent", "aom:IngredientConstituent"),
@@ -119,11 +120,15 @@ EXTENSION_VALUES = [
     ("part_straw", "Straw", "part_root", "anatomical_part"),
     ("part_vine", "Vine", "part_root", "anatomical_part"),
     ("form_pellet", "Pellet form", "form_root", "physical_form"),
+    ("integrity_root", "Material integrity values", None, "material_integrity"),
+    ("integrity_whole_grain", "Whole grain", "integrity_root", "material_integrity"),
 ]
 RULE_EXTENSION_KEYS = {key for key, *_ in EXTENSION_VALUES[1:]}
 
 
 def evidence_for(key):
+    if key in {"integrity_root", "integrity_whole_grain"}:
+        return "docs/decisions/0018-whole-grain-integrity.md"
     if key in RULE_EXTENSION_KEYS:
         return "review/livestock-v6/ingredient_rule_quality_assessment.csv"
     if key in {"material_component_root", "component_whole_crop"}:

@@ -6082,9 +6082,10 @@
 <urn:era-aom:livestock:AOM_000656> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000656" ;
-  skos:prefLabel "Whole Rice Ground"@en ;
+  skos:prefLabel "Ground whole-grain rice"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Whole Rice Ground"@en ;
   skos:altLabel "Whole Rice Milled"@en ;
   skos:altLabel "Whole Rice Meal"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100927> ;
@@ -6107,9 +6108,10 @@
 <urn:era-aom:livestock:AOM_000660> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000660" ;
-  skos:prefLabel "Wheat Whole Ground"@en ;
+  skos:prefLabel "Ground whole-grain wheat"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Wheat Whole Ground"@en ;
   skos:broader <urn:era-aom:livestock:AOM_001319> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_25511> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> ;
@@ -11606,9 +11608,10 @@
 <urn:era-aom:livestock:AOM_001313> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001313" ;
-  skos:prefLabel "Maize Whole"@en ;
+  skos:prefLabel "Whole-grain maize"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Maize Whole"@en ;
   skos:altLabel "Corn Whole"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000648> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
@@ -11717,9 +11720,10 @@
 <urn:era-aom:livestock:AOM_001324> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001324" ;
-  skos:prefLabel "Maize Whole Ground"@en ;
+  skos:prefLabel "Ground whole-grain maize"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Maize Whole Ground"@en ;
   skos:altLabel "Corn Whole Meal"@en ;
   skos:altLabel "Corn Whole Ground"@en ;
   skos:altLabel "Maize Whole Meal"@en ;
@@ -26982,3 +26986,19 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:broader <urn:era-aom:livestock:AOM_101020> .
+
+<urn:era-aom:livestock:AOM_101109> a skos:Concept, aom:MaterialIntegrity ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101109" ;
+  skos:prefLabel "Material integrity values"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101110> a skos:Concept, aom:MaterialIntegrity ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101110" ;
+  skos:prefLabel "Whole grain"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:broader <urn:era-aom:livestock:AOM_101109> .

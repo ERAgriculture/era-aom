@@ -1577,6 +1577,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101110",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/MaterialIntegrity"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:arecaceae",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -5502,6 +5509,23 @@
     "https://w3id.org/era-aom/schema/processingMethod": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101071"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001313",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/ingredientPart": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/materialIntegrity": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
       }
     ]
   },
@@ -13061,6 +13085,16 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "https://w3id.org/era-aom/schema/ingredientPart": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/materialIntegrity": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      }
+    ],
     "https://w3id.org/era-aom/schema/processingMethod": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101095"
@@ -16877,6 +16911,16 @@
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/ingredientPart": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/materialIntegrity": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      }
     ],
     "https://w3id.org/era-aom/schema/processingMethod": [
       {
@@ -24644,6 +24688,16 @@
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/ingredientPart": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/materialIntegrity": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      }
     ],
     "https://w3id.org/era-aom/schema/processingMethod": [
       {

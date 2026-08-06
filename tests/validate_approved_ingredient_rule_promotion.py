@@ -42,11 +42,11 @@ assert all(
     and row["review_date"] == "2026-08-05"
     for row in approved
 )
-assert len(generated) == 1596
+assert len(generated) == 1600
 assert manifest == {
     "rule_version": "1.0.0", "status": "approved-and-promoted",
     "reviewer": "Pete Steward", "review_date": "2026-08-05",
-    "approved_rules": 40, "generated_assertions": 1596,
+    "approved_rules": 40, "generated_assertions": 1600,
     "unapproved_rules": 28, "legacy_identifiers_preserved": True,
     "ilri_identifiers_used": False,
 }
@@ -78,8 +78,9 @@ assert by_material["AOM_001326"] == {
     ("aom:processingMethod", "Ensiling"),
 }
 assert "AOM_006072" not in by_material
-assert "AOM_001313" not in by_material
 assert ("aom:processingMethod", "Soaking") in by_material["AOM_006500"]
+assert ("aom:materialIntegrity", "Whole grain") in by_material["AOM_001313"]
+assert ("aom:ingredientPart", "Grain") in by_material["AOM_001313"]
 assert not any(row["rule_id"] == "PROCESS-DEHULLED" for row in generated)
 assert not any(row["target_label"] in {"Cake form", "Pulp form"} for row in generated)
 

@@ -91,10 +91,11 @@ for gap_id, members in sorted(grouped.items()):
 cluster_recommendation = {
     "INGCLUSTER-0001": ("deprecate-replace-review", "AOM_001459", "Corrected labels and public mappings coincide; confirm downstream references before deprecating AOM_001898."),
     "INGCLUSTER-0002": ("hold-product-role-review", "", "Cotton records share label/taxon/Feedipedia but differ in product/by-product hierarchy and CPC scope."),
-    "INGCLUSTER-0003": ("retain-distinct-pending-integrity", "", "Generic ground maize and whole-grain ground maize must not merge before integrity model."),
-    "INGCLUSTER-0004": ("retain-distinct-pending-integrity", "", "Maize source grouping and whole-grain material are different semantic levels."),
+    "INGCLUSTER-0003": ("retain-distinct-integrity-specified", "", "Whole-grain ground maize explicitly retains integrity; generic grain-ground maize does not establish it."),
+    "INGCLUSTER-0004": ("retain-distinct-integrity-specified", "", "Whole-grain maize explicitly retains integrity; generic maize grain does not establish it."),
     "INGCLUSTER-0005": ("retain-distinct-pending-composition", "", "Milk and whole milk differ by composition state, not physical form."),
-    "INGCLUSTER-0006": ("retain-distinct-pending-integrity", "", "Generic ground wheat and whole-grain ground wheat require integrity distinction."),
+    "INGCLUSTER-0006": ("retain-distinct-integrity-specified", "", "Whole-grain ground rice explicitly retains integrity; generic rice-grain ground does not establish it."),
+    "INGCLUSTER-0007": ("retain-distinct-integrity-specified", "", "Whole-grain ground wheat explicitly retains integrity; generic wheat-grain ground does not establish it."),
 }
 cluster_rows = []
 for row in clusters:
