@@ -105,7 +105,8 @@ def main():
     timings.append(elapsed)
     css_text = css_body.decode("utf-8")
     assert status == 200 and headers.get_content_type() == "text/css"
-    assert ".prop-mapping-label" in css_text and "overflow-wrap: anywhere" in css_text
+    assert ".prop-skos_relatedMatch" in css_text and ".prop-mapping-label" in css_text
+    assert ".prop-mapping-vocab" in css_text and "overflow-wrap: anywhere" in css_text
     results["custom_css"] = {"linked": True, "served": True, "long_mapping_wrap": True}
     results["contribution_route"] = {"github_issue_chooser": "pass", "dead_mail_form_exposed": False}
 

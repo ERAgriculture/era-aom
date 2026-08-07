@@ -21,6 +21,9 @@ Skosmos container. Capture desktop screenshots at normal browser zoom.
 9. Header — `Contribute` opens governed GitHub issue chooser.
 10. Keyboard — skip link moves focus to main content; search, hierarchy, and
     downloads remain reachable.
+11. Semantic relationships — applicable concept cards show explicit directional
+    predicate labels such as “has biological species”, “has processing method”,
+    and “has product role”; unrelated cards do not show feed-material predicates.
 
 Record pass/fail and screenshot filenames in release review. Any semantic
 disagreement becomes a governed proposal, not an ad hoc RDF edit.
