@@ -86,6 +86,7 @@ jobs:
           python tests/validate_maize_identity_implementation.py
           python tests/validate_feed_material_harmonization.py
           python tests/validate_maize_bran_card.py
+          python tests/validate_semantic_predicate_visibility.py
       - name: Validate semantic model and dispositions
         run: |
           python scripts/build_semantic_bindings.py

@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+"""Validate readable predicate labels and concept-specific assertion scope."""
+
+from pathlib import Path
+
+from rdflib import Graph, Literal, URIRef
+from rdflib.namespace import RDFS
+
+ROOT = Path(__file__).resolve().parents[1]
+AOM = "urn:era-aom:livestock:"
+SCHEMA = "urn:era-aom:schema:"
+
+schema = Graph().parse(ROOT / "dist/livestock-staging/aom-schema.ttl")
+bindings = Graph().parse(ROOT / "dist/livestock-staging/aom-semantic-bindings.ttl")
+
+labels = {
+    "sourceTaxon": "has biological species",
+    "materialComponent": "has material component",
+    "ingredientPart": "has ingredient part",
+    "physicalForm": "has physical form",
+    "materialIntegrity": "has material integrity",
+    "feedProductType": "has feed product type",
+    "compositionState": "has composition state",
+    "processingMethod": "has processing method",
+    "productRole": "has product role",
+    "ingredientConstituent": "has ingredient constituent",
+    "ingredientSource": "has ingredient source",
+}
+for local_name, label in labels.items():
+    assert (
+        URIRef(SCHEMA + local_name),
+        RDFS.label,
+        Literal(label, lang="en"),
+    ) in schema
+
+# Feed-specific predicates appear only when asserted; Management receives none.
+management = URIRef(AOM + "AOM_000106")
+feed_predicates = {URIRef(SCHEMA + local_name) for local_name in labels}
+assert not any(predicate in feed_predicates for predicate in bindings.predicates(management))
+
+print("Semantic predicate visibility passed: explicit labels; no Management leakage")
