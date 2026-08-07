@@ -268,7 +268,7 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceTaxon">
-    <rdfs:label xml:lang="en">source taxon</rdfs:label>
+    <rdfs:label xml:lang="en">biological species</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:comment xml:lang="en">Links feed material to a reviewed taxon IRI; does not imply SKOS identity.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>

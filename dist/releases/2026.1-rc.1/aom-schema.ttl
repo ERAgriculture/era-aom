@@ -131,7 +131,7 @@ aom:reviewedBy a owl:ObjectProperty ;
     rdfs:range aom:Reviewer .
 
 aom:sourceTaxon a owl:ObjectProperty ;
-    rdfs:label "source taxon"@en ;
+    rdfs:label "biological species"@en ;
     rdfs:comment "Links feed material to a reviewed taxon IRI; does not imply SKOS identity."@en ;
     rdfs:domain aom:FeedMaterial .
 

@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+"""Validate user-facing semantic facts for Maize Bran concept card."""
+import csv
+from pathlib import Path
+
+from rdflib import Graph, Literal, URIRef
+from rdflib.namespace import RDFS, SKOS
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data/livestock-staging"
+AOM = "urn:era-aom:livestock:"
+SCHEMA = "urn:era-aom:schema:"
+
+graph = Graph().parse(ROOT / "dist/livestock-staging/aom-semantic-bindings.ttl")
+vocab = Graph().parse(ROOT / "dist/livestock-staging/aom-livestock.ttl")
+schema = Graph().parse(ROOT / "schemas/owl/aom-semantic-model.ttl")
+maize_bran = URIRef(AOM + "AOM_001614")
+bran = URIRef(AOM + "AOM_101104")
+byproduct = URIRef(AOM + "AOM_101062")
+maize = URIRef("http://purl.obolibrary.org/obo/NCBITaxon_4577")
+
+assert (maize_bran, URIRef(SCHEMA + "materialComponent"), bran) in graph
+assert (maize_bran, URIRef(SCHEMA + "productRole"), byproduct) in graph
+assert (maize_bran, URIRef(SCHEMA + "processingMethod"), URIRef(AOM + "AOM_000838")) in graph
+assert (maize_bran, URIRef(SCHEMA + "sourceTaxon"), maize) in graph
+assert (maize, RDFS.label, Literal("Zea mays", lang="en")) in graph
+assert (URIRef(SCHEMA + "sourceTaxon"), RDFS.label, Literal("biological species", lang="en")) in schema
+assert (URIRef(SCHEMA + "ingredientPart"), RDFS.label, Literal("ingredient part", lang="en")) in schema
+assert (URIRef(SCHEMA + "productRole"), RDFS.label, Literal("product role", lang="en")) in schema
+assert "material fraction" in str(next(vocab.objects(bran, SKOS.definition))).casefold()
+assert "principal product" in str(next(vocab.objects(byproduct, SKOS.definition))).casefold()
+assert "by-product" in str(next(vocab.objects(maize_bran, SKOS.definition))).casefold()
+
+with (DATA / "approved_feed_material_external_facets.csv").open(encoding="utf-8", newline="") as handle:
+    external = list(csv.DictReader(handle))
+assert len(external) == 1 and external[0]["feed_material_id"] == "AOM_001614"
+print("Maize Bran card validation passed: species, Bran component, and by-product role")
