@@ -21,13 +21,13 @@ maize = URIRef("http://purl.obolibrary.org/obo/NCBITaxon_4577")
 
 assert (maize_bran, URIRef(SCHEMA + "materialComponent"), bran) in graph
 assert (maize_bran, URIRef(SCHEMA + "productRole"), byproduct) in graph
-assert (maize_bran, URIRef(SCHEMA + "processingMethod"), URIRef(AOM + "AOM_101082")) in graph
+assert (maize_bran, URIRef(SCHEMA + "processingMethod"), URIRef(AOM + "AOM_000838")) in graph
 assert (maize_bran, URIRef(SCHEMA + "sourceTaxon"), maize) in graph
 assert (maize, RDFS.label, Literal("Zea mays", lang="en")) in graph
 assert (URIRef(SCHEMA + "sourceTaxon"), RDFS.label, Literal("has biological species", lang="en")) in schema
 assert (URIRef(SCHEMA + "materialComponent"), RDFS.label, Literal("has material component", lang="en")) in schema
 assert (URIRef(SCHEMA + "productRole"), RDFS.label, Literal("has product role", lang="en")) in schema
-assert "outer protective tissues" in str(next(vocab.objects(bran, SKOS.definition))).casefold()
+assert "outer grain layers" in str(next(vocab.objects(bran, SKOS.definition))).casefold()
 assert "principal product" in str(next(vocab.objects(byproduct, SKOS.definition))).casefold()
 assert "by-product" in str(next(vocab.objects(maize_bran, SKOS.definition))).casefold()
 

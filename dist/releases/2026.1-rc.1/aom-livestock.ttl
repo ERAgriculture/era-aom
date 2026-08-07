@@ -4962,7 +4962,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Nigeria Grass Hay"@en,
         "Pennisetum pedicillatum"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000701> ;
-    skos:definition "A feed material with governed source identity “desho grass” and characteristics: feed product type — Hay; processing method — Drying."@en ;
+    skos:definition "A feed material with governed source identity “desho grass” and characteristics: feed product type — Hay product type; processing method — Drying."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000687" ;
     skos:prefLabel "Desho Grass Hay"@en ;
@@ -5559,7 +5559,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000832> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000832> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000826> ;
     skos:definition "Roasting refers to the process of heating animal feed to high temperatures, typically in a dry heat environment. The heat causes chemical reactions that break down complex carbohydrates and proteins, making them more easily digestible by the animal. Roasting may also reduce the presence of anti-nutritional factors and harmful microorganisms in the feed. (human validated chatGPT)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -5586,7 +5587,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000835> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000835> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000837> ;
     skos:definition "Crushing is a feed processing technique that involves the mechanical reduction of particle size in raw feed materials through the application of compressive force. This process typically uses crushers or roller mills, resulting in the rupture of cell structures and the release of nutrients, facilitating improved digestibility and nutrient availability. (HV GPT4)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -5595,7 +5597,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000838> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000838> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000837> ;
     skos:definition "Milling typically refers to the process of using rotary cutters or millstones to grind, crush, or shear feed materials into smaller particles. Milling can produce a wide range of particle sizes and is often used for producing flour or meal from grains and other feedstuffs.  (HV GPT4)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -5631,7 +5634,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000843> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000843> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000842> ;
     skos:definition "Drying is a feed processing technique that involves the removal of moisture from raw feed materials to enhance preservation, handling, and storage properties. Drying can be achieved through natural methods, such as sun or air drying, or artificial methods, including oven or forced-air drying. (HV GPT4)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -5640,7 +5644,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000844> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000844> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000842> ;
     skos:definition "Wilting is a feed processing technique that involves partial dehydration of raw feed materials, typically through natural methods like sun or air exposure. The process reduces moisture content, which can improve preservation, handling, and storage properties, particularly for forage or silage production. (HV GPT4)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -7257,7 +7262,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001105> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000558> ;
-    skos:definition "A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell."@en ;
+    skos:definition "A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell component."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001105" ;
     skos:prefLabel "Lake Shells"@en ;
@@ -7956,7 +7961,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001272> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100852> ;
-    skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell."@en ;
+    skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell component."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001272" ;
     skos:prefLabel "Soybean Shell"@en ;
@@ -13117,7 +13122,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:altLabel "Cocoa Bean Shell Dried Meal"@en,
         "Cocoa Bean Shell Dried Milled"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000617> ;
-    skos:definition "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell; processing method — Drying, Grinding."@en ;
+    skos:definition "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component; processing method — Drying, Grinding."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002011" ;
     skos:prefLabel "Cocoa Bean Shell Dried Ground"@en ;
@@ -14224,7 +14229,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_002191> a skos:Concept ;
     skos:altLabel "Fossil Shell Flour"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000781> ;
-    skos:definition "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell; processing method — Grinding."@en ;
+    skos:definition "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell component; processing method — Grinding."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002191" ;
     skos:prefLabel "Fossil Shell Ground"@en ;
@@ -14466,7 +14471,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002249> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100869> ;
-    skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell."@en ;
+    skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell component."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002249" ;
     skos:prefLabel "Groundnut Shell"@en ;
@@ -15165,7 +15170,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_003202> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_003202> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100991> ;
     skos:definition "Molasses treatment involves applying molasses to fibrous feeds such as straw, stover, or hay to enhance palatability, increase energy content, and reduce dustiness. While it does not chemically alter fiber structure like alkali treatments, molasses provides readily fermentable carbohydrates that improve feed intake and support rumen microbial activity. It is often used as a carrier for urea or minerals in treated feeds and is widely adopted in both smallholder and commercial livestock systems for its ease of use and positive impact on voluntary intake."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -16275,7 +16281,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_006049> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_002225> ;
-    skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Crushing, Drying."@en ;
+    skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Crushing, Drying."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_006049" ;
     skos:prefLabel "Cashew Shell Crushed Dried"@en ;
@@ -16285,7 +16291,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_006050> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_002225> ;
-    skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Grinding."@en ;
+    skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Grinding."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_006050" ;
     skos:prefLabel "Cashew Shell Ground"@en ;
@@ -16295,7 +16301,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_006052> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_002225> ;
-    skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Boiling, Crushing."@en ;
+    skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Boiling, Crushing."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_006052" ;
     skos:prefLabel "Cashew Shell Boiled Crushed"@en ;
@@ -19423,7 +19429,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_100848> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_100848> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000819> ;
     skos:definition "Urea treatment is a form of alkali processing in which urea is applied to low-quality fibrous feeds—such as straw or crop residues—to improve digestibility. Through enzymatic hydrolysis by urease, urea is converted into ammonia, which breaks lignocellulosic bonds and increases the nitrogen content of the feed. This method is commonly used in smallholder and mixed crop-livestock systems due to its low cost, ease of application, and dual benefit of improving both physical structure and crude protein value of the treated material."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19595,10 +19602,10 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_101040> a skos:Concept,
         aom:IngredientPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
-    skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
+    skos:definition "Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101040" ;
-    skos:prefLabel "Shell"@en ;
+    skos:prefLabel "Shell component"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -19902,16 +19909,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101071> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for ingredient-component semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101071" ;
-    skos:prefLabel "Drying"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101072> a skos:Concept,
         aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
@@ -20012,16 +20009,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101082> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for ingredient-component semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101082" ;
-    skos:prefLabel "Milling"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101083> a skos:Concept,
         aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
@@ -20052,16 +20039,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101087> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101087" ;
-    skos:prefLabel "Alkali treatment"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101088> a skos:Concept,
         aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
@@ -20069,16 +20046,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101088" ;
     skos:prefLabel "Autoclaving"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101089> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101089" ;
-    skos:prefLabel "Boiling"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20092,26 +20059,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101091> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101091" ;
-    skos:prefLabel "Crushing"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101092> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101092" ;
-    skos:prefLabel "Enzyme treatment"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101093> a skos:Concept,
         aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
@@ -20122,26 +20069,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101094> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101094" ;
-    skos:prefLabel "Fermentation"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101095> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101095" ;
-    skos:prefLabel "Grinding"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101096> a skos:Concept,
         aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
@@ -20149,26 +20076,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101096" ;
     skos:prefLabel "Heating"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101097> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101097" ;
-    skos:prefLabel "Molasses treatment"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101098> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101098" ;
-    skos:prefLabel "Roasting"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20192,40 +20099,20 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101101> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101101" ;
-    skos:prefLabel "Urea treatment"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101102> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101021> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101102" ;
-    skos:prefLabel "Wilting"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101103> a skos:Concept,
         aom:IngredientPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
-    skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
+    skos:definition "Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101103" ;
-    skos:prefLabel "Blood"@en ;
+    skos:prefLabel "Blood component"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101104> a skos:Concept,
         aom:FeedMaterialComponent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101085> ;
-    skos:definition "Outer protective tissues of a cereal grain, principally pericarp and seed coat, commonly separated as a by-product during grinding or milling."@en ;
+    skos:definition "A material fraction separated from cereal grain during milling and consisting mainly of outer grain layers with variable attached endosperm."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101104" ;
     skos:prefLabel "Bran"@en ;
@@ -20295,10 +20182,10 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_101113> a skos:Concept,
         aom:FeedProductType ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101111> ;
-    skos:definition "Governed feed product type value used for feed-material semantics."@en ;
+    skos:definition "Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101113" ;
-    skos:prefLabel "Hay"@en ;
+    skos:prefLabel "Hay product type"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20638,7 +20525,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000557> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000558> ;
-    skos:definition "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell."@en ;
+    skos:definition "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell component."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001610> ;
     skos:notation "AOM_000557" ;
@@ -20754,7 +20641,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000617> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100876> ;
-    skos:definition "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell."@en ;
+    skos:definition "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_002011> ;
     skos:notation "AOM_000617" ;
@@ -20962,7 +20849,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000830> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000830> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100990> ;
     skos:definition "Feed fermentation is a process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT)."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -20972,7 +20860,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000836> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000836> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000837> ;
     skos:definition "Grinding, usually involves the use of abrasive surfaces, such as grinding wheels or hammer mills, to reduce the size of feed particles through friction and impact. Grinding generally results in a more consistent and fine particle size compared to milling. (HV GPT4)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -25288,7 +25177,8 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000819> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000819> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100991> ;
     skos:definition "Alkali treatment is an feed processing technique that involves the application of alkaline substances to raw feed materials, primarily to enhance the digestibility of fibrous components. This process typically uses alkaline agents, such as sodium hydroxide, potassium hydroxide, or ammonia, which can solubilize hemicellulose, lignin, and other complex carbohydrates, improving the overall nutritional value of fibrous feedstuffs. (HV GPT4)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -25299,7 +25189,8 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000827> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000827> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000826> ;
     skos:definition "Feed boiling refers to the process of heating animal feed in water or steam for a specific period of time to improve its digestibility and nutritional value by reducing anti-nutritional factors, such as toxins and enzyme inhibitors, and by increasing the availability of nutrients to the animal. (Human validated chatGPT)."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -28278,7 +28169,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_002225> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100893> ;
-    skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell."@en ;
+    skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_006049>,
         <https://w3id.org/era-aom/livestock/AOM_006050>,
@@ -28897,7 +28788,8 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000820> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_000820> a skos:Concept,
+        aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100990> ;
     skos:definition "Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -29103,7 +28995,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 <https://w3id.org/era-aom/livestock/AOM_001614> a skos:Concept ;
     skos:altLabel "Corn Bran"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100851> ;
-    skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Bran; processing method — Milling; product role — By-product role."@en ;
+    skos:definition "Maize-derived feed material consisting primarily of bran separated during milling; it has by-product role and may include variable attached endosperm."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001844>,
         <https://w3id.org/era-aom/livestock/AOM_002016>,
@@ -31246,6 +31138,32 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101021> a skos:Concept,
+        aom:ProcessingMethod ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:definition "Transformations used to produce or prepare feed materials."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101068>,
+        <https://w3id.org/era-aom/livestock/AOM_101069>,
+        <https://w3id.org/era-aom/livestock/AOM_101070>,
+        <https://w3id.org/era-aom/livestock/AOM_101072>,
+        <https://w3id.org/era-aom/livestock/AOM_101073>,
+        <https://w3id.org/era-aom/livestock/AOM_101083>,
+        <https://w3id.org/era-aom/livestock/AOM_101084>,
+        <https://w3id.org/era-aom/livestock/AOM_101088>,
+        <https://w3id.org/era-aom/livestock/AOM_101090>,
+        <https://w3id.org/era-aom/livestock/AOM_101093>,
+        <https://w3id.org/era-aom/livestock/AOM_101096>,
+        <https://w3id.org/era-aom/livestock/AOM_101099>,
+        <https://w3id.org/era-aom/livestock/AOM_101100>,
+        <https://w3id.org/era-aom/livestock/AOM_101119>,
+        <https://w3id.org/era-aom/livestock/AOM_101123>,
+        <https://w3id.org/era-aom/livestock/AOM_101124> ;
+    skos:notation "AOM_101021" ;
+    skos:prefLabel "Ingredient processing methods"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_000628> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001916> ;
     skos:definition "An AOM controlled feed category for “Oil Plant ByProducts”. Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."@en ;
@@ -31562,44 +31480,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:notation "AOM_000594" ;
     skos:prefLabel "Cereal ByProducts"@en ;
     era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101021> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Transformations used to produce or prepare feed materials."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101068>,
-        <https://w3id.org/era-aom/livestock/AOM_101069>,
-        <https://w3id.org/era-aom/livestock/AOM_101070>,
-        <https://w3id.org/era-aom/livestock/AOM_101071>,
-        <https://w3id.org/era-aom/livestock/AOM_101072>,
-        <https://w3id.org/era-aom/livestock/AOM_101073>,
-        <https://w3id.org/era-aom/livestock/AOM_101082>,
-        <https://w3id.org/era-aom/livestock/AOM_101083>,
-        <https://w3id.org/era-aom/livestock/AOM_101084>,
-        <https://w3id.org/era-aom/livestock/AOM_101087>,
-        <https://w3id.org/era-aom/livestock/AOM_101088>,
-        <https://w3id.org/era-aom/livestock/AOM_101089>,
-        <https://w3id.org/era-aom/livestock/AOM_101090>,
-        <https://w3id.org/era-aom/livestock/AOM_101091>,
-        <https://w3id.org/era-aom/livestock/AOM_101092>,
-        <https://w3id.org/era-aom/livestock/AOM_101093>,
-        <https://w3id.org/era-aom/livestock/AOM_101094>,
-        <https://w3id.org/era-aom/livestock/AOM_101095>,
-        <https://w3id.org/era-aom/livestock/AOM_101096>,
-        <https://w3id.org/era-aom/livestock/AOM_101097>,
-        <https://w3id.org/era-aom/livestock/AOM_101098>,
-        <https://w3id.org/era-aom/livestock/AOM_101099>,
-        <https://w3id.org/era-aom/livestock/AOM_101100>,
-        <https://w3id.org/era-aom/livestock/AOM_101101>,
-        <https://w3id.org/era-aom/livestock/AOM_101102>,
-        <https://w3id.org/era-aom/livestock/AOM_101119>,
-        <https://w3id.org/era-aom/livestock/AOM_101123>,
-        <https://w3id.org/era-aom/livestock/AOM_101124> ;
-    skos:notation "AOM_101021" ;
-    skos:prefLabel "Ingredient processing methods"@en ;
-    era:conceptType "aom_concept" ;
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001916> a skos:Concept ;

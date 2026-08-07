@@ -22,7 +22,7 @@ assert "http://purl.org/net/Skosmos#" not in text
 assert "https://w3id.org/era-aom/graph/livestock" in text
 assert 'skosmos:customCss "resource/css/era-aom.css"' in text
 css = ROOT / "config/skosmos/era-aom.css"
-assert css.is_file() and ".prop-skos_relatedMatch" in css.read_text()
+assert css.is_file() and ".prop-mapping" in css.read_text()
 assert "overflow-wrap: anywhere" in css.read_text()
 assert any("era-aom.css:/var/www/html/resource/css/era-aom.css:ro" in volume
            for volume in services["skosmos"]["volumes"])

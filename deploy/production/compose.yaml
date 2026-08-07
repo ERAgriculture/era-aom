@@ -25,8 +25,11 @@ services:
       - -ec
       - |
         endpoint='http://fuseki:3030/skosmos/data?graph=https%3A%2F%2Fw3id.org%2Fera-aom%2Fgraph%2Flivestock'
+        first=true
         for file in aom-livestock.ttl aom-schema.ttl aom-semantic-bindings.ttl; do
-          curl --fail --retry 30 --retry-delay 2 --retry-connrefused -X POST \
+          method=POST
+          if [ "$${first}" = true ]; then method=PUT; first=false; fi
+          curl --fail --retry 30 --retry-delay 2 --retry-connrefused -X "$${method}" \
             -H 'Content-Type: text/turtle' -T "/release/$${file}" "$${endpoint}"
         done
     restart: "no"

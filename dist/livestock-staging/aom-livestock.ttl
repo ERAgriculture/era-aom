@@ -5473,7 +5473,7 @@
   skos:prefLabel "Oyster Shells"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell."@en ;
+  skos:definition "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell component."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000558> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_6563> ;
   skos:relatedMatch <https://www.feedipedia.org/node/736> .
@@ -6040,7 +6040,7 @@
   skos:prefLabel "Cocoa Bean Shell"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell."@en ;
+  skos:definition "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100876> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_24831> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3641> ;
@@ -6586,7 +6586,7 @@
   skos:altLabel "Nigeria Grass Hay"@en ;
   skos:altLabel "Cenchrus pedicellatus"@en ;
   skos:altLabel "Pennisetum pedicillatum"@en ;
-  skos:definition "A feed material with governed source identity “desho grass” and characteristics: feed product type — Hay; processing method — Drying."@en ;
+  skos:definition "A feed material with governed source identity “desho grass” and characteristics: feed product type — Hay product type; processing method — Drying."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000701> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_5676> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_281133> ;
@@ -7500,7 +7500,7 @@
   skos:definition "Acid treatment is a feed processing technique that involves the application of acidic substances to raw feed materials, aiming to improve nutrient availability, digestibility, and preservation properties. This process typically uses organic or inorganic acids, such as phosphoric, sulfuric, or citric acid, which can break down complex molecules, lower pH, and inhibit microbial growth. (HV GPT4)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100991> .
 
-<urn:era-aom:livestock:AOM_000819> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000819> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000819" ;
   skos:prefLabel "Alkali Treatment"@en ;
@@ -7509,7 +7509,7 @@
   skos:definition "Alkali treatment is an feed processing technique that involves the application of alkaline substances to raw feed materials, primarily to enhance the digestibility of fibrous components. This process typically uses alkaline agents, such as sodium hydroxide, potassium hydroxide, or ammonia, which can solubilize hemicellulose, lignin, and other complex carbohydrates, improving the overall nutritional value of fibrous feedstuffs. (HV GPT4)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100991> .
 
-<urn:era-aom:livestock:AOM_000820> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000820> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000820" ;
   skos:prefLabel "Enzyme Treatment"@en ;
@@ -7573,7 +7573,7 @@
   skos:definition "The process of applying heat to animal feed, typically through steam or direct heating, to improve its digestibility, increase nutrient availability, and reduce the presence of harmful microorganisms. This process may involve the use of various equipment, such as ovens, boilers, heaters, and dryers, and is often used in commercial feed production. (human validated chatGPT)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000845> .
 
-<urn:era-aom:livestock:AOM_000827> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000827> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000827" ;
   skos:prefLabel "Boiling"@en ;
@@ -7602,7 +7602,7 @@
   skos:definition "Indirect boiling involves using steam to indirectly heat the feed, either in a steam chamber or through the use of a steam jacketed kettle or cooker. Indirect boiling is typically used for larger-scale feed processing, such as in commercial feed mills. The steam provides gentle heating to the feed, improving its digestibility and reducing the risk of overcooking or damaging the feed. (Human validated chatGPT)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000827> .
 
-<urn:era-aom:livestock:AOM_000830> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000830" ;
   skos:prefLabel "Fermentation"@en ;
@@ -7623,7 +7623,7 @@
   skos:definition "Ensilation is a specific form of fermentation to preserve forage by packing it tightly into a silo or other airtight container and allowing it to ferment. This fermentation process creates an anaerobic environment that preserves the feed and enhances its nutritional quality by increasing the concentration of organic acids and decreasing the pH. The resulting ensiled feed can be stored for extended periods of time and used as a source of nutrition for livestock. (human validated chatGPT)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000830> .
 
-<urn:era-aom:livestock:AOM_000832> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000832> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000832" ;
   skos:prefLabel "Roasting"@en ;
@@ -7650,7 +7650,7 @@
   skos:definition "Chopping is a feed processing technique that involves the mechanical cutting or shearing of raw feed materials into smaller, uniform pieces. This process often employs choppers, knives, or cutting mills to facilitate improved handling, mixing, and feed intake characteristics. (HV GPT4)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000837> .
 
-<urn:era-aom:livestock:AOM_000835> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000835> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000835" ;
   skos:prefLabel "Crushing"@en ;
@@ -7659,7 +7659,7 @@
   skos:definition "Crushing is a feed processing technique that involves the mechanical reduction of particle size in raw feed materials through the application of compressive force. This process typically uses crushers or roller mills, resulting in the rupture of cell structures and the release of nutrients, facilitating improved digestibility and nutrient availability. (HV GPT4)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000837> .
 
-<urn:era-aom:livestock:AOM_000836> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000836" ;
   skos:prefLabel "Grinding"@en ;
@@ -7677,7 +7677,7 @@
   skos:definition "A mechanical process refers to the physical manipulation of raw feed materials using machinery in order to improve digestibility, nutrient availability, and feed handling properties, ultimately enhancing the overall efficiency of animal production systems. Key processes include grinding, mixing, pelleting, and extrusion, which alter particle size, texture, and shape to optimize feed intake and nutrient utilization by animals. (HV GPT4)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000845> .
 
-<urn:era-aom:livestock:AOM_000838> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000838> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000838" ;
   skos:prefLabel "Milling"@en ;
@@ -7722,7 +7722,7 @@
   skos:definition "Dehydration processing refers to the removal of moisture from raw feed materials to enhance preservation, handling, and storage properties. This process can occur through natural methods, such as sun or air drying, or artificial methods, including oven or forced-air drying. Dehydration processing focuses on reducing the moisture content in feedstuffs, distinguishing it from mechanical, biological, chemical, or thermal methods.(HV GPT4)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000845> .
 
-<urn:era-aom:livestock:AOM_000843> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000843" ;
   skos:prefLabel "Drying"@en ;
@@ -7731,7 +7731,7 @@
   skos:definition "Drying is a feed processing technique that involves the removal of moisture from raw feed materials to enhance preservation, handling, and storage properties. Drying can be achieved through natural methods, such as sun or air drying, or artificial methods, including oven or forced-air drying. (HV GPT4)"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000842> .
 
-<urn:era-aom:livestock:AOM_000844> a skos:Concept ;
+<urn:era-aom:livestock:AOM_000844> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000844" ;
   skos:prefLabel "Wilting"@en ;
@@ -10339,7 +10339,7 @@
   skos:prefLabel "Lake Shells"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell."@en ;
+  skos:definition "A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell component."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000558> .
 
 <urn:era-aom:livestock:AOM_001106> a skos:Concept ;
@@ -11796,7 +11796,7 @@
   skos:prefLabel "Soybean Shell"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell component."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
 
@@ -14806,7 +14806,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Bran"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Bran; processing method — Milling; product role — By-product role."@en ;
+  skos:definition "Maize-derived feed material consisting primarily of bran separated during milling; it has by-product role and may include variable attached endosperm."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_d859f064> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
@@ -18773,7 +18773,7 @@
   era:status "unknown" ;
   skos:altLabel "Cocoa Bean Shell Dried Meal"@en ;
   skos:altLabel "Cocoa Bean Shell Dried Milled"@en ;
-  skos:definition "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell; processing method — Drying, Grinding."@en ;
+  skos:definition "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component; processing method — Drying, Grinding."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000617> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_24831> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3641> ;
@@ -20120,7 +20120,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Fossil Shell Flour"@en ;
-  skos:definition "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell; processing method — Grinding."@en ;
+  skos:definition "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell component; processing method — Grinding."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
 <urn:era-aom:livestock:AOM_002192> a skos:Concept ;
@@ -20376,7 +20376,7 @@
   skos:prefLabel "Cashew Shell"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell."@en ;
+  skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100893> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_171929> .
 
@@ -20590,7 +20590,7 @@
   skos:prefLabel "Groundnut Shell"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell."@en ;
+  skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell component."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100869> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3818> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12155> .
@@ -21590,7 +21590,7 @@
   skos:definition "A feed material with governed source identity “urea salt lick” and characteristics: physical form — Block form."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000772> .
 
-<urn:era-aom:livestock:AOM_003202> a skos:Concept ;
+<urn:era-aom:livestock:AOM_003202> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_003202" ;
   skos:prefLabel "Molasses Treatment"@en ;
@@ -23439,7 +23439,7 @@
   skos:prefLabel "Cashew Shell Crushed Dried"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Crushing, Drying."@en ;
+  skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Crushing, Drying."@en ;
   skos:broader <urn:era-aom:livestock:AOM_002225> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_171929> .
 
@@ -23449,7 +23449,7 @@
   skos:prefLabel "Cashew Shell Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Grinding."@en ;
+  skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Grinding."@en ;
   skos:broader <urn:era-aom:livestock:AOM_002225> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_171929> .
 
@@ -23459,7 +23459,7 @@
   skos:prefLabel "Cashew Shell Boiled Crushed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Boiling, Crushing."@en ;
+  skos:definition "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Boiling, Crushing."@en ;
   skos:broader <urn:era-aom:livestock:AOM_002225> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_171929> .
 
@@ -26701,7 +26701,7 @@
   skos:broader <urn:era-aom:livestock:AOM_002116> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3870> .
 
-<urn:era-aom:livestock:AOM_100848> a skos:Concept ;
+<urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_100848" ;
   skos:prefLabel "Urea Treatment"@en ;
@@ -28453,10 +28453,10 @@
 <urn:era-aom:livestock:AOM_101040> a skos:Concept, aom:IngredientPartCategory ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101040" ;
-  skos:prefLabel "Shell"@en ;
+  skos:prefLabel "Shell component"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
+  skos:definition "Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101019> .
 
 <urn:era-aom:livestock:AOM_101041> a skos:Concept, aom:IngredientPartCategory ;
@@ -28729,15 +28729,6 @@
   skos:definition "Governed processing method value used for ingredient-component semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101021> .
 
-<urn:era-aom:livestock:AOM_101071> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101071" ;
-  skos:prefLabel "Drying"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
 <urn:era-aom:livestock:AOM_101072> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101072" ;
@@ -28828,15 +28819,6 @@
   skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101023> .
 
-<urn:era-aom:livestock:AOM_101082> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101082" ;
-  skos:prefLabel "Milling"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
 <urn:era-aom:livestock:AOM_101083> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101083" ;
@@ -28873,28 +28855,10 @@
   skos:definition "Governed material component value used for feed-material semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101085> .
 
-<urn:era-aom:livestock:AOM_101087> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101087" ;
-  skos:prefLabel "Alkali treatment"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
 <urn:era-aom:livestock:AOM_101088> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101088" ;
   skos:prefLabel "Autoclaving"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
-<urn:era-aom:livestock:AOM_101089> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101089" ;
-  skos:prefLabel "Boiling"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed processing method value used for feed-material semantics."@en ;
@@ -28909,24 +28873,6 @@
   skos:definition "Governed processing method value used for feed-material semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101021> .
 
-<urn:era-aom:livestock:AOM_101091> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101091" ;
-  skos:prefLabel "Crushing"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
-<urn:era-aom:livestock:AOM_101092> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101092" ;
-  skos:prefLabel "Enzyme treatment"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
 <urn:era-aom:livestock:AOM_101093> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101093" ;
@@ -28936,46 +28882,10 @@
   skos:definition "Governed processing method value used for feed-material semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101021> .
 
-<urn:era-aom:livestock:AOM_101094> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101094" ;
-  skos:prefLabel "Fermentation"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
-<urn:era-aom:livestock:AOM_101095> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101095" ;
-  skos:prefLabel "Grinding"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
 <urn:era-aom:livestock:AOM_101096> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101096" ;
   skos:prefLabel "Heating"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
-<urn:era-aom:livestock:AOM_101097> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101097" ;
-  skos:prefLabel "Molasses treatment"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
-<urn:era-aom:livestock:AOM_101098> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101098" ;
-  skos:prefLabel "Roasting"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed processing method value used for feed-material semantics."@en ;
@@ -28999,31 +28909,13 @@
   skos:definition "Governed processing method value used for feed-material semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101021> .
 
-<urn:era-aom:livestock:AOM_101101> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101101" ;
-  skos:prefLabel "Urea treatment"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
-<urn:era-aom:livestock:AOM_101102> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101102" ;
-  skos:prefLabel "Wilting"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "Governed processing method value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101021> .
-
 <urn:era-aom:livestock:AOM_101103> a skos:Concept, aom:IngredientPartCategory ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101103" ;
-  skos:prefLabel "Blood"@en ;
+  skos:prefLabel "Blood component"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
+  skos:definition "Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101019> .
 
 <urn:era-aom:livestock:AOM_101104> a skos:Concept, aom:FeedMaterialComponent ;
@@ -29032,7 +28924,7 @@
   skos:prefLabel "Bran"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Outer protective tissues of a cereal grain, principally pericarp and seed coat, commonly separated as a by-product during grinding or milling."@en ;
+  skos:definition "A material fraction separated from cereal grain during milling and consisting mainly of outer grain layers with variable attached endosperm."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101085> .
 
 <urn:era-aom:livestock:AOM_101105> a skos:Concept, aom:IngredientPartCategory ;
@@ -29110,10 +29002,10 @@
 <urn:era-aom:livestock:AOM_101113> a skos:Concept, aom:FeedProductType ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101113" ;
-  skos:prefLabel "Hay"@en ;
+  skos:prefLabel "Hay product type"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed feed product type value used for feed-material semantics."@en ;
+  skos:definition "Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101111> .
 
 <urn:era-aom:livestock:AOM_101114> a skos:Concept, aom:FeedProductType ;

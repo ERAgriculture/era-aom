@@ -154,13 +154,15 @@ for row in material_facets:
         row["target_property"]: {"@id": CONCEPT_BASE + row["target_concept_id"]},
     })
 for row in external_material_facets:
+    material = CONCEPT_BASE + row["feed_material_id"]
     graph.append({
         "@id": row["target_uri"],
         "@type": row["target_type"],
+        "skos:prefLabel": {"@value": row["target_label"], "@language": "en"},
         "rdfs:label": {"@value": row["target_label"], "@language": "en"},
     })
     graph.append({
-        "@id": CONCEPT_BASE + row["feed_material_id"],
+        "@id": material,
         "@type": ["skos:Concept", "aom:FeedMaterial"],
         row["target_property"]: {"@id": row["target_uri"]},
     })
@@ -219,13 +221,15 @@ for row in material_facets:
     )
 for row in external_material_facets:
     material = CONCEPT_BASE + row["feed_material_id"]
+    label = json.dumps(row["target_label"], ensure_ascii=False)
     ttl.append(
-        f"<{row['target_uri']}> a {row['target_type']} ;\n"
-        f"  rdfs:label {json.dumps(row['target_label'])}@en .\n"
+        f'<{row["target_uri"]}> a {row["target_type"]} ;\n'
+        f"  skos:prefLabel {label}@en ;\n"
+        f"  rdfs:label {label}@en .\n"
     )
     ttl.append(
         f"<{material}> a skos:Concept, aom:FeedMaterial ;\n"
-        f"  {row['target_property']} <{row['target_uri']}> .\n"
+        f'  {row["target_property"]} <{row["target_uri"]}> .\n'
     )
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
 print(f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings")

@@ -20,15 +20,16 @@ active = read(REVIEW / "ontology_pref_label_collision_candidates.csv")
 deprecations = read(DATA / "approved_deprecations.csv")
 summary = read(REVIEW / "ontology_quality_summary.csv")
 
-assert len(decisions) == 105
-assert len({row["collision_key"] for row in decisions}) == 105
+assert len(decisions) == 92
+assert len({row["collision_key"] for row in decisions}) == 92
 assert Counter(row["decision"] for row in decisions) == {
-    "retain_distinct": 98, "deprecate_replace": 6, "hold_identity": 1,
+    "retain_distinct": 85, "deprecate_replace": 6, "hold_identity": 1,
 }
 assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in decisions)
-assert len(active) == 99
+assert len(active) == 86
 assert Counter(row["status"] for row in active) == {
-    "approved-retain-distinct": 98, "approved-identity-hold": 1,
+    "approved-retain-distinct": 85,
+    "approved-identity-hold": 1,
 }
 assert next(row for row in active if row["collision_key"] == "cotton seed")["status"] == "approved-identity-hold"
 
@@ -39,8 +40,8 @@ assert {
     ("AOM_000342", "AOM_000354"), ("AOM_000949", "AOM_000935"),
 } <= replacement_pairs
 signals = {(row["scope"], row["quality_signal"]): int(row["count"]) for row in summary}
-assert signals[("all AOM", "normalized preferred-label collisions")] == 99
+assert signals[("all AOM", "normalized preferred-label collisions")] == 86
 assert signals[("all AOM", "unresolved preferred-label collisions")] == 0
 manifest = json.loads((ROOT / "dist/livestock-staging/manifest.json").read_text())
-assert manifest["counts"]["approved_ontology_collision_decisions"] == 105
-print("Ontology collision governance validation passed: 105 decisions; 0 unresolved")
+assert manifest["counts"]["approved_ontology_collision_decisions"] == 92
+print("Ontology collision governance validation passed: 92 decisions; 0 unresolved legacy groups")

@@ -32,7 +32,7 @@ Represent `AOM_001614` using independent facets:
 
 - `aom:sourceTaxon` → NCBI Taxonomy 4577 (`Zea mays`);
 - `aom:materialComponent` → `AOM_101104` (`Bran`);
-- `aom:processingMethod` → `AOM_101082` (`Milling`);
+- `aom:processingMethod` → existing `AOM_000838` (`Milling`);
 - `aom:productRole` → `AOM_101062` (`By-product role`).
 
 Retype `Bran` as `aom:FeedMaterialComponent`, not

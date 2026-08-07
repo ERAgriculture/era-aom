@@ -55,6 +55,7 @@ jobs:
           python scripts/promote_approved_ingredient_rules.py
           python scripts/build_definition_enrichment.py
           python scripts/build_ingredient_model_gap_review.py
+          python scripts/apply_identity_integrity_remediations.py
           python tests/validate_feed_identity_audit.py
           python tests/validate_ontology_collision_governance.py
           python tests/validate_definition_enrichment.py
@@ -81,7 +82,10 @@ jobs:
           python tests/validate_ingredient_model_gap_review.py
           python tests/validate_ingredient_semantic_closure.py
           python tests/validate_whole_grain_integrity.py
+          python tests/validate_bran_compound_model.py
           python tests/validate_feed_material_source_overrides.py
+          python scripts/build_global_identity_audit.py
+          python tests/validate_global_identity_audit.py
           python tests/validate_maize_identity_review.py
           python tests/validate_maize_identity_implementation.py
           python tests/validate_feed_material_harmonization.py

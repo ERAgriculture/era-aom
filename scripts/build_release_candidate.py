@@ -98,11 +98,7 @@ def combine_csv_and_parquet(sources, csv_target, parquet_target):
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
-    normalized_rows = [
-        {field: row.get(field, "") for field in fields}
-        for row in rows
-    ]
-    pq.write_table(pa.Table.from_pylist(normalized_rows), parquet_target, compression="zstd")
+    pq.write_table(pa.Table.from_pylist(rows), parquet_target, compression="zstd")
 
 
 def main():

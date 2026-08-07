@@ -46,7 +46,7 @@ graph = Graph().parse(DIST / "aom-semantic-bindings.ttl")
 integrity = URIRef("urn:era-aom:schema:materialIntegrity")
 whole_grain = URIRef("urn:era-aom:livestock:AOM_101110")
 grinding = URIRef("urn:era-aom:schema:processingMethod")
-grinding_value = URIRef("urn:era-aom:livestock:AOM_101095")
+grinding_value = URIRef("urn:era-aom:livestock:AOM_000836")
 physical_form = URIRef("urn:era-aom:schema:physicalForm")
 for concept_id in expected_labels:
     material = URIRef("urn:era-aom:livestock:" + concept_id)
