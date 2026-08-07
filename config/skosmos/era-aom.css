@@ -18,3 +18,24 @@
   display: block;
   max-width: 100%;
 }
+
+/* Skosmos renders mapping values asynchronously with Bootstrap columns rather
+   than the static property classes above. Stack mapping label and vocabulary
+   so long external IRIs cannot collide with source names. */
+.prop-mapping .col-lg-8 > .row {
+  display: block;
+  margin-bottom: 0.75rem !important;
+}
+
+.prop-mapping-label,
+.prop-mapping-vocab {
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.prop-mapping-label a {
+  display: block;
+  max-width: 100%;
+}
