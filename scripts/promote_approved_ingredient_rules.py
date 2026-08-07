@@ -88,6 +88,10 @@ facet_name = {
     "process": "processing_method",
     "form": "physical_form",
 }
+facet_override_by_rule = {
+    # Bran denotes material separated during milling, not an anatomical plant part.
+    "COMPONENT-BRAN": "material_component",
+}
 existing = {
     (row["feed_material_id"], row["target_property"], row["target_concept_id"])
     for row in manual_assertions
@@ -106,7 +110,10 @@ for material in inventory:
             rule["normalized_value"] + " form"
             if rule["dimension"] == "form" else rule["normalized_value"]
         )
-        target = facet_by_label[(facet_name[rule["dimension"]], lookup_label)]
+        target_facet = facet_override_by_rule.get(
+            rule["rule_id"], facet_name[rule["dimension"]]
+        )
+        target = facet_by_label[(target_facet, lookup_label)]
         triple = (material["concept_id"], target["target_property"], target["concept_id"])
         if triple in existing:
             continue

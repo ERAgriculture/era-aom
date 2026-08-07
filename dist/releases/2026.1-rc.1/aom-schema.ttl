@@ -75,6 +75,7 @@ aom:ingredientName a owl:DatatypeProperty ;
     rdfs:range xsd:string .
 
 aom:ingredientPart a owl:ObjectProperty ;
+    rdfs:label "ingredient part"@en ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:IngredientPartCategory ;
     rdfs:subPropertyOf aom:materialComponent .
@@ -105,10 +106,12 @@ aom:physicalForm a owl:ObjectProperty ;
     rdfs:range aom:IngredientPhysicalForm .
 
 aom:processingMethod a owl:ObjectProperty ;
+    rdfs:label "processing method"@en ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:ProcessingMethod .
 
 aom:productRole a owl:ObjectProperty ;
+    rdfs:label "product role"@en ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:ProductRole .
 
@@ -122,6 +125,7 @@ aom:reviewedBy a owl:ObjectProperty ;
     rdfs:range aom:Reviewer .
 
 aom:sourceTaxon a owl:ObjectProperty ;
+    rdfs:label "biological species"@en ;
     rdfs:comment "Links feed material to a reviewed taxon IRI; does not imply SKOS identity."@en ;
     rdfs:domain aom:FeedMaterial .
 
@@ -218,6 +222,7 @@ aom:Reviewer a owl:Class ;
     rdfs:subClassOf prov:Agent .
 
 aom:materialComponent a owl:ObjectProperty ;
+    rdfs:label "material component"@en ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:FeedMaterialComponent .
 

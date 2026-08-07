@@ -54,6 +54,7 @@ jobs:
           python scripts/build_ingredient_harmonization_workbench.py
           python scripts/build_ingredient_rule_quality_gate.py
           python scripts/promote_approved_ingredient_rules.py
+          python scripts/build_definition_enrichment.py
           python scripts/build_ingredient_model_gap_review.py
           python tests/validate_feed_identity_audit.py
           python tests/validate_ontology_collision_governance.py
@@ -85,6 +86,7 @@ jobs:
           python tests/validate_maize_identity_review.py
           python tests/validate_maize_identity_implementation.py
           python tests/validate_feed_material_harmonization.py
+          python tests/validate_maize_bran_card.py
       - name: Validate semantic model and dispositions
         run: |
           python scripts/build_semantic_bindings.py

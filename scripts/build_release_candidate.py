@@ -98,7 +98,11 @@ def combine_csv_and_parquet(sources, csv_target, parquet_target):
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
-    pq.write_table(pa.Table.from_pylist(rows), parquet_target, compression="zstd")
+    normalized_rows = [
+        {field: row.get(field, "") for field in fields}
+        for row in rows
+    ]
+    pq.write_table(pa.Table.from_pylist(normalized_rows), parquet_target, compression="zstd")
 
 
 def main():
@@ -153,6 +157,7 @@ def main():
             root / "data" / "livestock-staging" / "approved_feed_material_facets.csv",
             root / "data" / "livestock-staging" / "approved_generated_feed_material_facets.csv",
             root / "data" / "livestock-staging" / "approved_hard_tail_feed_material_facets.csv",
+            root / "data" / "livestock-staging" / "approved_feed_material_external_facets.csv",
         ],
         output / "feed-material-facets.csv",
         output / "feed-material-facets.parquet",

@@ -117,7 +117,8 @@ EXTENSION_VALUES = [
     ("process_urea_treatment", "Urea treatment", "process_root", "processing_method"),
     ("process_wilting", "Wilting", "process_root", "processing_method"),
     ("part_blood", "Blood", "part_root", "anatomical_part"),
-    ("part_bran", "Bran", "part_root", "anatomical_part"),
+    # Bran is a milling-derived material component, not a botanical anatomical part.
+    ("part_bran", "Bran", "material_component_root", "material_component"),
     ("part_stover", "Stover", "part_root", "anatomical_part"),
     ("part_straw", "Straw", "part_root", "anatomical_part"),
     ("part_vine", "Vine", "part_root", "anatomical_part"),

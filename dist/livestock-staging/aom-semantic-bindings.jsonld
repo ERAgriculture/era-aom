@@ -3,6 +3,7 @@
     "aom": "urn:era-aom:schema:",
     "owl": "http://www.w3.org/2002/07/owl#",
     "qudt": "http://qudt.org/schema/qudt/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sosa": "http://www.w3.org/ns/sosa/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
@@ -8243,6 +8244,40 @@
       }
     },
     {
+      "@id": "urn:era-aom:livestock:AOM_101082",
+      "@type": [
+        "skos:Concept",
+        "aom:ProcessingMethod"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_001614",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:processingMethod": {
+        "@id": "urn:era-aom:livestock:AOM_101082"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101062",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_001614",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:productRole": {
+        "@id": "urn:era-aom:livestock:AOM_101062"
+      }
+    },
+    {
       "@id": "urn:era-aom:livestock:AOM_101095",
       "@type": [
         "skos:Concept",
@@ -8433,7 +8468,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -8442,7 +8477,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -8603,7 +8638,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -8612,7 +8647,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -8654,7 +8689,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -8663,7 +8698,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -8722,7 +8757,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -8731,7 +8766,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -8739,7 +8774,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -8748,7 +8783,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -9079,7 +9114,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -9088,7 +9123,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -9113,7 +9148,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -9122,7 +9157,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -11306,7 +11341,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -11315,7 +11350,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -11459,7 +11494,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -11468,7 +11503,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -13278,7 +13313,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -13287,7 +13322,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -13448,7 +13483,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -13457,7 +13492,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -16865,7 +16900,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -16874,7 +16909,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -17324,7 +17359,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -17333,7 +17368,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -17664,7 +17699,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -17673,7 +17708,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -17936,7 +17971,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -17945,7 +17980,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -20962,7 +20997,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -20971,7 +21006,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -21013,7 +21048,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -21022,7 +21057,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -21625,7 +21660,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -21634,7 +21669,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -22866,7 +22901,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -22875,7 +22910,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -28340,7 +28375,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -28349,7 +28384,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -31179,7 +31214,7 @@
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
-        "aom:IngredientPartCategory"
+        "aom:FeedMaterialComponent"
       ]
     },
     {
@@ -31188,7 +31223,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:ingredientPart": {
+      "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
       }
     },
@@ -38041,6 +38076,24 @@
       ],
       "aom:productRole": {
         "@id": "urn:era-aom:livestock:AOM_101062"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4577",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@value": "Zea mays",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_001614",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:sourceTaxon": {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4577"
       }
     }
   ]
