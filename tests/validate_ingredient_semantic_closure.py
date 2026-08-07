@@ -42,7 +42,7 @@ for row in facets:
     by_material[row["feed_material_id"]].add((row["target_property"], row["target_concept_id"]))
 for row in closure:
     assert (row["target_property"], row["target_concept_id"]) in by_material[row["concept_id"]]
-assert ("aom:processingMethod", "AOM_101071") in by_material["AOM_000687"]
+assert ("aom:processingMethod", "AOM_000843") in by_material["AOM_000687"]
 assert not any(
     row["feed_material_id"] in {"AOM_000798", "AOM_000801", "AOM_002109", "AOM_001498"}
     and row["target_property"] == "aom:processingMethod"

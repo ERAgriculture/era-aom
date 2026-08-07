@@ -54,6 +54,7 @@ public_authority_reviews = list(csv.DictReader(
 workbook_source_reviews = list(csv.DictReader(
     (ROOT / "review/livestock-v13/workbook_source_scope_review.csv").open(encoding="utf-8", newline="")
 ))
+definition_overrides = read("approved_definition_overrides.csv")
 
 rows = []
 for row in new_concepts:
@@ -318,6 +319,12 @@ for concept_id, concept in sorted(concepts.items()):
         "recommended_route": route, "status": status,
     })
 
+override_ids = {row["concept_id"] for row in definition_overrides}
+assert len(override_ids) == len(definition_overrides)
+assert override_ids <= set(concepts) and not override_ids & existing
+rows = [row for row in rows if row["concept_id"] not in override_ids]
+rows.extend(definition_overrides)
+gap_rows = [row for row in gap_rows if row["concept_id"] not in override_ids]
 rows.sort(key=lambda row: row["concept_id"])
 fields = ["concept_id", "language", "definition", "definition_method", "status", "reviewer", "review_date", "evidence", "rationale"]
 with OUT.open("w", encoding="utf-8", newline="") as handle:

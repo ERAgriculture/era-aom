@@ -21,7 +21,7 @@ preferred_collisions = read("ontology_pref_label_collision_candidates.csv")
 assert len(lexical) == 16
 assert len(external) == 191
 assert len(cereals) == 369
-assert len(preferred_collisions) == 99
+assert len(preferred_collisions) == 86
 assert not any(row["status"] == "review-required" for row in preferred_collisions)
 assert all(row["status"] == "review-required" for row in lexical)
 assert all(row["status"] == "granularity-review-required" for row in external)

@@ -5,298 +5,309 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialIntegrity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/MaterialIntegrity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/CompositionState">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientConstituent">
+    <rdfs:label xml:lang="en">ingredient constituent</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="en">composition state</rdfs:label>
-    <rdfs:comment xml:lang="en">Governed compositional state of a feed material, independently of physical form.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientMaterial">
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/inModule">
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Module"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/physicalForm">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:label xml:lang="en">physical form</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/compositionState">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:label xml:lang="en">composition state</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/CompositionState"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedProductType">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/MappingAssertion">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">feed product type</rdfs:label>
-    <rdfs:comment xml:lang="en">Product category arising from production, formulation, or conservation, independently of physical form and processing method.</rdfs:comment>
+    <rdfs:label xml:lang="en">mapping assertion</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueClass">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientConstituent">
+    <rdfs:label xml:lang="en">ingredient constituent</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientConstituent"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema">
+    <owl:versionInfo>design-1</owl:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:description xml:lang="en">OWL model separating AOM knowledge-organization concepts from agricultural observations, feed-material records, quantities, and governance provenance.</dcterms:description>
+    <dcterms:title xml:lang="en">AOM semantic model</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueTargetProperty">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ChangeProposal">
     <rdfs:label xml:lang="en">change proposal</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/bindingAction">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/feedProductType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedProductType"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Module">
     <rdfs:label xml:lang="en">module</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ProductRole">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="en">product role</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/bindingStatus">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientSource">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientSourceCategory"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientConstituent">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">ingredient constituent</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ProcessingMethod">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="en">processing method</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedMaterialComponent">
-    <rdfs:label xml:lang="en">feed material component</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Reviewed material scope or component, including anatomical parts and collective material such as a whole crop.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientProportion">
-    <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceTaxon">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:comment xml:lang="en">Links feed material to a reviewed taxon IRI; does not imply SKOS identity.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Evidence">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">evidence</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedMaterial">
-    <rdfs:comment xml:lang="en">A material used or evaluated as feed. Source organism, part, processing method, and economic product role are modeled as facets.</rdfs:comment>
-    <rdfs:label xml:lang="en">feed material</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientPart">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/materialComponent"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/SemanticValueBinding">
-    <rdfs:label xml:lang="en">semantic value binding</rdfs:label>
-    <rdfs:comment xml:lang="en">Governed decision mapping a source controlled value to an ontology concept or explicitly holding it unresolved.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientConstituent">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientConstituent"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/MaterialIntegrity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">Compositional integrity retained by a material independently of particle form or processing.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">feed material component</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/processingMethod">
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:label xml:lang="en">processing method</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientSource">
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientSourceCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:label xml:lang="en">ingredient source</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/feedProductType">
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedProductType"/>
+    <rdfs:label xml:lang="en">feed product type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPartCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
+    <rdfs:label xml:lang="en">ingredient part category</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialIntegrity">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/MaterialIntegrity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">material integrity</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/QuantitativeObservation">
-    <rdfs:label xml:lang="en">quantitative observation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/legacyConcept">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientName">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientPart">
+    <rdfs:label xml:lang="en">ingredient part</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/materialComponent"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Reviewer">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">reviewer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/GestationalStage">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">gestational stage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/legacyComponentDescriptor">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Unmodified legacy component descriptor retained until reviewed decomposition into explicit facets.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A material used or evaluated as feed. Source organism, part, processing method, and economic product role are modeled as facets.</rdfs:comment>
+    <rdfs:label xml:lang="en">feed material</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/SemanticBinding">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">Governed migration contract connecting a legacy AOM concept to its normalized data-model use.</rdfs:comment>
     <rdfs:label xml:lang="en">semantic binding</rdfs:label>
+    <rdfs:comment xml:lang="en">Governed migration contract connecting a legacy AOM concept to its normalized data-model use.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/legacyConcept">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/quantityKind">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/physicalForm">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/processingMethod">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueBindingStatus">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/GestationalStage">
-    <rdfs:label xml:lang="en">gestational stage</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/CompositionState">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">composition state</rdfs:label>
+    <rdfs:comment xml:lang="en">Governed compositional state of a feed material, independently of physical form.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <owl:versionInfo>design-1</owl:versionInfo>
-    <dcterms:title xml:lang="en">AOM semantic model</dcterms:title>
-    <dcterms:description xml:lang="en">OWL model separating AOM knowledge-organization concepts from agricultural observations, feed-material records, quantities, and governance provenance.</dcterms:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/targetClass">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/hasIngredientComponent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedFormulation"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedFormulation">
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ProductRole">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">product role</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">feed formulation</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/targetProperty">
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/bindingAction">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/unitRequirement">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/MaterialIntegrity">
+    <rdfs:comment xml:lang="en">Compositional integrity retained by a material independently of particle form or processing.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">material integrity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialComponent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
+    <rdfs:label xml:lang="en">material component</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueTargetConcept">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/legacyComponentDescriptor">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:comment xml:lang="en">Unmodified legacy component descriptor retained until reviewed decomposition into explicit facets.</rdfs:comment>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Release">
+    <rdfs:label xml:lang="en">release</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/productRole">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ProcessingMethod">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">processing method</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPhysicalForm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ingredient physical form</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientSourceCategory">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">ingredient source category</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/supportedBy">
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Evidence"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ParityStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">parity status</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/SemanticValueBinding">
+    <rdfs:comment xml:lang="en">Governed decision mapping a source controlled value to an ontology concept or explicitly holding it unresolved.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">semantic value binding</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/QuantitativeObservation">
+    <rdfs:label xml:lang="en">quantitative observation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedProductType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Product category arising from production, formulation, or conservation, independently of physical form and processing method.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">feed product type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Evidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">evidence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedFormulation">
+    <rdfs:label xml:lang="en">feed formulation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/bindingStatus">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/releasedIn">
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Release"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Reviewer">
-    <rdfs:label xml:lang="en">reviewer</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueBindingStatus">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/compatibilityPolicy">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/supportedBy">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Evidence"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientComponent">
+    <rdfs:label xml:lang="en">ingredient component</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A feed material used in a formulation, optionally with a quantitative proportion.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientProportion">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
+    <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/targetValueClass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceTaxon">
+    <rdfs:label xml:lang="en">source taxon</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:comment xml:lang="en">Links feed material to a reviewed taxon IRI; does not imply SKOS identity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/hasIngredientComponent">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedFormulation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/bindingKind">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/targetValueClass">
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/productRole">
+    <rdfs:label xml:lang="en">product role</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPartCategory">
-    <rdfs:label xml:lang="en">ingredient part category</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueClass">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Release">
-    <rdfs:label xml:lang="en">release</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceValue">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/quantityKind">
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/targetClass">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ParityStatus">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:label xml:lang="en">parity status</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/MappingAssertion">
-    <rdfs:label xml:lang="en">mapping assertion</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientMaterial">
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/reviewedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Reviewer"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/inModule">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Module"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialComponent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/unitRequirement">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/targetProperty">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientComponent">
-    <rdfs:comment xml:lang="en">A feed material used in a formulation, optionally with a quantitative proportion.</rdfs:comment>
-    <rdfs:label xml:lang="en">ingredient component</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPhysicalForm">
-    <rdfs:label xml:lang="en">ingredient physical form</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/compatibilityPolicy">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueTargetProperty">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

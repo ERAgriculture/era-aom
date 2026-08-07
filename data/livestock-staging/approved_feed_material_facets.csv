@@ -6,8 +6,8 @@ AOM_000660,aom:materialIntegrity,AOM_101110,Whole grain,approved,Pete Steward,20
 AOM_001313,aom:materialIntegrity,AOM_101110,Whole grain,approved,Pete Steward,2026-08-05,docs/decisions/0018-whole-grain-integrity.md,Crop-product context distinguishes whole-grain maize from source maize and whole-crop silage.
 AOM_001324,aom:materialIntegrity,AOM_101110,Whole grain,approved,Pete Steward,2026-08-05,docs/decisions/0018-whole-grain-integrity.md,Whole-grain integrity and grinding are independent assertions.
 AOM_000555,aom:compositionState,AOM_101116,Whole-milk composition,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Whole milk denotes composition rather than physical wholeness.
-AOM_000687,aom:feedProductType,AOM_101113,Hay,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Hay is a conserved forage product.
-AOM_000687,aom:processingMethod,AOM_101071,Drying,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Haymaking conserves forage through drying.
+AOM_000687,aom:feedProductType,AOM_101113,Hay product type,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Hay is a conserved forage product.
+AOM_000687,aom:processingMethod,AOM_000843,Drying,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Haymaking conserves forage through drying.
 AOM_000798,aom:feedProductType,AOM_101114,Compound feed,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Named ration meal is compound feed and does not imply grinding.
 AOM_000801,aom:feedProductType,AOM_101114,Compound feed,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Named ration meal is compound feed and does not imply grinding.
 AOM_002109,aom:feedProductType,AOM_101114,Compound feed,approved,Pete Steward,2026-08-06,docs/decisions/0020-ingredient-semantic-closure.md,Named ration meal is compound feed and does not imply grinding.
@@ -36,3 +36,5 @@ AOM_003596,aom:ingredientPart,AOM_101038,Seed,approved,Pete Steward,2026-08-06,r
 AOM_000651,aom:ingredientConstituent,AOM_101081,Oil constituent,approved,Pete Steward,2026-08-06,review/livestock-v12/public_authority_source_scope_review.csv,Exact AGROVOC maize-oil identity supports oil constituent independent of physical form.
 AOM_000674,aom:ingredientConstituent,AOM_101081,Oil constituent,approved,Pete Steward,2026-08-06,review/livestock-v12/public_authority_source_scope_review.csv,Exact AGROVOC sunflower-oil identity supports oil constituent independent of physical form.
 AOM_001586,aom:ingredientConstituent,AOM_101081,Oil constituent,approved,Pete Steward,2026-08-06,review/livestock-v12/public_authority_source_scope_review.csv,Exact AGROVOC soybean-oil identity supports oil constituent independent of physical form.
+AOM_001614,aom:processingMethod,AOM_000838,Milling,approved,Pete Steward,2026-08-07,https://www.feedipedia.org/node/12280,Maize bran is separated during maize milling; reuse existing Milling process concept.
+AOM_001614,aom:productRole,AOM_101062,By-product role,approved,Pete Steward,2026-08-07,https://www.feedipedia.org/node/12280,Maize bran is a co-produced milling fraction used as feed and modeled with by-product role independently of component identity.

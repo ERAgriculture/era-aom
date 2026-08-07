@@ -27,11 +27,11 @@
   },
   "source_repository_commit": "a9714cc16b0a761082ea1dc010eb27da3a90cc97",
   "manifest_schema_version": "1.0.0",
-  "source_staging_manifest_sha256": "23538779b2ff2deb6e7453301aaa965fca36903bd49b234afe3775d2ff0e7f8d",
+  "source_staging_manifest_sha256": "0fc7a5a3c0a6ec2e9c457021cd3f74babe16cb13290fd617e701c5d8fd8a9146",
   "counts": {
-    "livestock_triples": 29320,
-    "schema_triples": 174,
-    "semantic_binding_triples": 7192
+    "livestock_triples": 29212,
+    "schema_triples": 185,
+    "semantic_binding_triples": 7198
   },
   "distributions": [
     {
@@ -46,58 +46,58 @@
     },
     {
       "path": "aom-livestock.jsonld",
-      "bytes": 3930923,
-      "sha256": "c94af7d426425ac02a57ce04198298f4bee48c81774301a6ed23c60098a7c76f"
+      "bytes": 3918041,
+      "sha256": "edf3c2f7705f4f362c6bf18e15a2869ac6204ec7eb84682f69a8a3fd918c7430"
     },
     {
       "path": "aom-livestock.rdf",
-      "bytes": 2663574,
-      "sha256": "b3e60e0ace0e2dc0e20cf37b5bb64f45ec2103ba24d2b2cbc1d209da099c8ef0"
+      "bytes": 2655252,
+      "sha256": "fe4a392d12732b71f30a501d8bd2138446b82d8dd373ea9333dd612b2aacbb99"
     },
     {
       "path": "aom-livestock.ttl",
-      "bytes": 1874976,
-      "sha256": "012e5582edb29c45073e02c5d04d33e177182eb92dfa55d63372388d5f3ba701"
+      "bytes": 1869654,
+      "sha256": "fd384eaaec880ca941277e03f238490165575015d875df745ff87b06b1e666e3"
     },
     {
       "path": "aom-schema.rdf",
-      "bytes": 20125,
-      "sha256": "b7c6be50f90513cdf19db4a7ecee31a9ef2e0e3e996f142c76f83dba5f0a1a1e"
+      "bytes": 20787,
+      "sha256": "e1930959189c5c46ea4562fac7cb1c968db694554ecc16971bf271a0f0061e18"
     },
     {
       "path": "aom-schema.ttl",
-      "bytes": 8133,
-      "sha256": "ef3da66a7eaeffcb7353a6d076082b04d0c6a5b5d199d145402de57e5a1f69e9"
+      "bytes": 8564,
+      "sha256": "ee497ea012407de83a36ae80fe222ad5870d97178c77a0e931129af22aed04d4"
     },
     {
       "path": "aom-semantic-bindings.jsonld",
-      "bytes": 875867,
-      "sha256": "eebc5f17dd8cc484e02923d07b3e32753339e1b822b4870ebeca2525e3f2db8d"
+      "bytes": 876750,
+      "sha256": "936d8e05c4869a067e6294602b8b00ce1c12157e93dd4f6ab52bb663055a9e38"
     },
     {
       "path": "aom-semantic-bindings.ttl",
-      "bytes": 404953,
-      "sha256": "de0f52fc7eab6c3e5f9b92713fe6807ff4dc359ad1df21bf8dadbe3113195ebd"
+      "bytes": 405415,
+      "sha256": "fa929213577586d06b722540925b99ae4b3ece9273cbbb853c4fe1c58b672635"
     },
     {
       "path": "edges.csv",
-      "bytes": 131425,
-      "sha256": "1a2d3d3fd43027ccdb02024a0a521fcfdf9b91e512646d8f7904fb83724cd151"
+      "bytes": 130957,
+      "sha256": "fe2a93da83c39c1b6d09187324e8951304372744d3b7ae03fcbd2356dfce5584"
     },
     {
       "path": "edges.parquet",
-      "bytes": 17459,
-      "sha256": "b828a5c84029f4693df31cf38d250c2c018c60fcd52b58eeec078e914f7135c0"
+      "bytes": 17403,
+      "sha256": "c86a36f85a90a9788d8a496605a060f11cf501f6d1a59181cc20f5de5d606f01"
     },
     {
       "path": "feed-material-facets.csv",
-      "bytes": 464438,
-      "sha256": "32056f3dba306b78f4e50b23fb9a19d54302a7db326d064df6af01c826dda763"
+      "bytes": 469001,
+      "sha256": "c9673c95e9fe7a54a763659dc3d0a7797cd586471606845c7a320c73ae76c88a"
     },
     {
       "path": "feed-material-facets.parquet",
-      "bytes": 16064,
-      "sha256": "b751c99102617635174840fdd8627fb4c4960d42f1312fc9da80561595152c28"
+      "bytes": 16423,
+      "sha256": "0a30a6d4b7429f836bb0b9ae053322120bd681692ee292711b17ec36dfca2abb"
     },
     {
       "path": "ingredient-harmonization-rules.csv",
@@ -106,8 +106,8 @@
     },
     {
       "path": "ingredient-harmonization-rules.parquet",
-      "bytes": 5604,
-      "sha256": "c35c851341f3334ddc057799a96f8ce69284700d956f9b1d9870054ff550bf91"
+      "bytes": 5560,
+      "sha256": "9a92146ead074312c97543c197ee3ca8121364e97ae82214b8dbf18c49681d34"
     },
     {
       "path": "migration-crosswalk.csv",
@@ -116,18 +116,18 @@
     },
     {
       "path": "migration-crosswalk.parquet",
-      "bytes": 4360,
-      "sha256": "8bb9ab64a8f8a29fb32275aab6ba2b21fd7620e8d959c6fb5f4753f3b475c104"
+      "bytes": 4328,
+      "sha256": "05ffafe7294af170576cc81a276ae785042e64ee0d19b38a86378084937748f1"
     },
     {
       "path": "nodes.csv",
-      "bytes": 179955,
-      "sha256": "9883b2805077e6d5f125f7e7185ebc5672dd4729d9f96278adb138416a53cdaa"
+      "bytes": 179309,
+      "sha256": "eba6320914b8833b36b4691ffdc42d67f3cf4648747a158f7ccc14acfbde3a94"
     },
     {
       "path": "nodes.parquet",
-      "bytes": 36772,
-      "sha256": "e516f1508c01f3a0c6f8447e43175766ea005d572b3495c4f2d41582a8661bb1"
+      "bytes": 36670,
+      "sha256": "710604b195f9f5e56f0c943978893b1728f8a66610520171fc3b482e68aa9cb7"
     },
     {
       "path": "release.json",

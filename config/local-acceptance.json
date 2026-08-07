@@ -1,10 +1,19 @@
 {
-  "expected_concepts": 2777,
-  "expected_hierarchy_relations": 2773,
+  "expected_concepts": 2765,
+  "expected_hierarchy_relations": 2761,
   "minimum_graph_triples": 28638,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
   "representative_label": "Whole-grain maize",
+  "compound_display_concept": "AOM_001614",
+  "compound_display_label": "Maize Bran",
+  "compound_display_facet": "Bran",
+  "compound_display_properties": [
+    {"property": "Source taxon", "value": "Zea mays"},
+    {"property": "Material component", "value": "Bran"},
+    {"property": "Processing method", "value": "Milling"},
+    {"property": "Product role", "value": "By-product role"}
+  ],
   "search_query": "Maize",
   "expected_top_concepts": ["AOM_000001", "AOM_000106", "AOM_000358", "AOM_000846"],
   "maximum_response_seconds": 5.0,

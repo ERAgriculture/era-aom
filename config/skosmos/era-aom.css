@@ -1,20 +1,25 @@
-/* Keep long external mapping IRIs readable and prevent adjacent values colliding. */
-.prop-skos_relatedMatch .property-value li,
-.prop-skos_exactMatch .property-value li,
-.prop-skos_closeMatch .property-value li,
-.prop-skos_broadMatch .property-value li,
-.prop-skos_narrowMatch .property-value li {
-  margin-bottom: 0.5rem;
+/* Mapping rows use Vue-generated .prop-mapping markup, not concept-property classes. */
+.prop-mapping .row {
+  align-items: flex-start;
+  row-gap: 0.25rem;
+}
+
+.prop-mapping-label,
+.prop-mapping-vocab {
   min-width: 0;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
 
-.prop-skos_relatedMatch .property-value a,
-.prop-skos_exactMatch .property-value a,
-.prop-skos_closeMatch .property-value a,
-.prop-skos_broadMatch .property-value a,
-.prop-skos_narrowMatch .property-value a {
+.prop-mapping-label a {
   display: block;
   max-width: 100%;
+}
+
+/* Prevent property links and long IRIs escaping their Bootstrap grid column. */
+.property-value,
+.property-value li,
+.property-value a {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }

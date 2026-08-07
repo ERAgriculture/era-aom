@@ -42,7 +42,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2777 and len(ids) == len(known)
+assert len(ids) == 2765 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -124,7 +124,7 @@ assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 10
 assert len(label_corrections) == 14
-assert len(new_concepts) == 276
+assert len(new_concepts) == 264
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -190,7 +190,17 @@ assert final_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
     f"AOM_{number:06d}" for number in range(100849, 101125)
 }
-assert {row["concept_id"] for row in id_registry} <= known
+assert {
+    row["concept_id"] for row in id_registry
+    if row["status"] != "retired-before-publication"
+} <= known
+assert {
+    row["concept_id"] for row in id_registry
+    if row["status"] == "retired-before-publication"
+} == {
+    row["generated_id"] for row in read("approved_identity_integrity_remediations")
+    if row["action"] == "reuse_existing"
+}
 status = {row["concept_id"]: row["status"] for row in concepts}
 assert status["AOM_001884"] == "deprecated"
 assert status["AOM_004000"] == "deprecated"

@@ -105,9 +105,26 @@ def main():
     timings.append(elapsed)
     css_text = css_body.decode("utf-8")
     assert status == 200 and headers.get_content_type() == "text/css"
-    assert ".prop-skos_relatedMatch" in css_text and "overflow-wrap: anywhere" in css_text
+    assert ".prop-mapping-label" in css_text and "overflow-wrap: anywhere" in css_text
     results["custom_css"] = {"linked": True, "served": True, "long_mapping_wrap": True}
     results["contribution_route"] = {"github_issue_chooser": "pass", "dead_mail_form_exposed": False}
+
+    compound_id = profile["compound_display_concept"]
+    compound_page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{compound_id}"
+    status, headers, compound_body, elapsed = request(compound_page, "text/html")
+    timings.append(elapsed)
+    compound_html = compound_body.decode("utf-8", errors="replace")
+    assert status == 200 and profile["compound_display_label"] in compound_html
+    assert all(
+        check["property"] in compound_html and check["value"] in compound_html
+        for check in profile["compound_display_properties"]
+    )
+    assert "Synonyms" in compound_html and "Corn Bran" in compound_html
+    results["compound_material_display"] = {
+        "concept": compound_id,
+        "facets": profile["compound_display_properties"],
+        "visible": True,
+    }
 
     graph_url = args.fuseki + "/get?" + urllib.parse.urlencode({"graph": "https://w3id.org/era-aom/graph/livestock"})
     status, _, graph_body, elapsed = request(graph_url, "text/turtle")

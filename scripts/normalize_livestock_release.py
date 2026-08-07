@@ -647,6 +647,12 @@ def main():
             "approved_hard_tail_feed_material_facets": len(
                 read_governance("approved_hard_tail_feed_material_facets.csv")
             ),
+            "approved_external_feed_material_facets": len(
+                read_governance("approved_external_feed_material_facets.csv")
+            ),
+            "approved_definition_overrides": len(
+                read_governance("approved_definition_overrides.csv")
+            ),
             "approved_whole_grain_integrity_decisions": len(
                 read_governance("approved_whole_grain_integrity_decisions.csv")
             ),

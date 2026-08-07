@@ -88,7 +88,7 @@ assert ("aom:compositionState", "Whole-milk composition") in by_material["AOM_00
 assert ("aom:feedProductType", "Compound feed") in by_material["AOM_000801"]
 assert ("aom:feedProductType", "Processing pulp") in by_material["AOM_001836"]
 assert by_material["AOM_000687"] >= {
-    ("aom:feedProductType", "Hay"), ("aom:processingMethod", "Drying")
+    ("aom:feedProductType", "Hay product type"), ("aom:processingMethod", "Drying")
 }
 
 families_with_candidates = {

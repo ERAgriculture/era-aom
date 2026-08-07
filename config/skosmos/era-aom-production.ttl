@@ -2,8 +2,10 @@
 @prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosmos: <http://purl.org/net/skosmos#> .
 @prefix void: <http://rdfs.org/ns/void#> .
+@prefix aom: <https://w3id.org/era-aom/schema/> .
 @prefix aomcfg: <https://w3id.org/era-aom/config/> .
 
 aomcfg:configuration a skosmos:Configuration ;
@@ -35,7 +37,24 @@ aomcfg:livestock a skosmos:Vocabulary, void:Dataset ;
   skosmos:showTopConcepts true ;
   skosmos:showStatistics true ;
   skosmos:loadExternalResources false ;
+  skosmos:propertyOrder aomcfg:eraPropertyOrder ;
+  skosmos:propertyLabelOverride [
+    skosmos:property skos:altLabel ;
+    rdfs:label "Synonyms"@en ;
+    rdfs:comment "Alternative names that retrieve this same concept."@en
+  ] ;
   skosmos:shortName "ERA-AOM Livestock" ;
   void:sparqlEndpoint <http://fuseki-cache:80/skosmos/sparql> ;
   skosmos:sparqlGraph <https://w3id.org/era-aom/graph/livestock> ;
   skosmos:mainConceptScheme <https://w3id.org/era-aom/scheme/livestock-v2> .
+
+# Skosmos' default order suppresses domain properties. Keep familiar SKOS fields,
+# then expose ERA-AOM material facets as first-class, navigable relationships.
+aomcfg:eraPropertyOrder rdf:value (
+  rdf:type dc:isReplacedBy skos:definition skos:broader skos:narrower
+  skos:related skos:altLabel
+  aom:sourceTaxon aom:ingredientSource aom:materialComponent aom:ingredientPart
+  aom:materialIntegrity aom:physicalForm aom:processingMethod
+  aom:feedProductType aom:compositionState aom:productRole aom:ingredientConstituent
+  skos:note skos:scopeNote skos:historyNote rdfs:comment dc:source
+) .
