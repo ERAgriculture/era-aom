@@ -1,6 +1,7 @@
 @prefix aom: <https://w3id.org/era-aom/schema/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -203,7 +204,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000563> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_000564> a skos:Concept,
         aom:FeedMaterial ;
@@ -241,7 +242,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000575> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_000576> a skos:Concept,
         aom:FeedMaterial ;
@@ -262,7 +263,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000580> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_000581> a skos:Concept,
         aom:FeedMaterial ;
@@ -278,11 +279,11 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000585> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_000586> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_000587> a skos:Concept,
         aom:FeedMaterial ;
@@ -399,7 +400,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000634> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_000635> a skos:Concept,
         aom:FeedMaterial ;
@@ -407,7 +408,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000639> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_000640> a skos:Concept,
         aom:FeedMaterial ;
@@ -938,7 +939,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001274> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_001276> a skos:Concept,
         aom:FeedMaterial ;
@@ -977,7 +978,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001290> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_001291> a skos:Concept,
         aom:FeedMaterial ;
@@ -1416,7 +1417,10 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001614> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
+    aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101082> ;
+    aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> ;
+    aom:sourceTaxon <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
 
 <https://w3id.org/era-aom/livestock/AOM_001615> a skos:Concept,
         aom:FeedMaterial ;
@@ -1444,7 +1448,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001622> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> ;
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101095> .
 
 <https://w3id.org/era-aom/livestock/AOM_001623> a skos:Concept,
@@ -2014,7 +2018,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001772> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_001774> a skos:Concept,
         aom:FeedMaterial ;
@@ -2111,7 +2115,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001806> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_001807> a skos:Concept,
         aom:FeedMaterial ;
@@ -2213,7 +2217,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001844> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> ;
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101095> .
 
 <https://w3id.org/era-aom/livestock/AOM_001845> a skos:Concept,
@@ -2281,7 +2285,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001883> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> ;
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101095> .
 
 <https://w3id.org/era-aom/livestock/AOM_001885> a skos:Concept,
@@ -2743,13 +2747,13 @@
 
 <https://w3id.org/era-aom/livestock/AOM_002015> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> ;
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101071>,
         <https://w3id.org/era-aom/livestock/AOM_101095> .
 
 <https://w3id.org/era-aom/livestock/AOM_002016> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> ;
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101071>,
         <https://w3id.org/era-aom/livestock/AOM_101095> .
 
@@ -2836,7 +2840,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_002039> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_002040> a skos:Concept,
         aom:FeedMaterial ;
@@ -3080,7 +3084,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_002114> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> .
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> .
 
 <https://w3id.org/era-aom/livestock/AOM_002116> a skos:Concept,
         aom:FeedMaterial ;
@@ -4200,7 +4204,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_006126> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> ;
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101071> .
 
 <https://w3id.org/era-aom/livestock/AOM_006127> a skos:Concept,
@@ -4614,7 +4618,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_006226> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101104> ;
+    aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101087>,
         <https://w3id.org/era-aom/livestock/AOM_101095> .
 
@@ -8613,6 +8617,9 @@
 <https://w3id.org/era-aom/livestock/AOM_101124> a skos:Concept,
         aom:ProcessingMethod .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_4577> a owl:Class ;
+    rdfs:label "Zea mays"@en .
+
 <https://w3id.org/era-aom/livestock/AOM_101024> a skos:Concept,
         aom:IngredientPartCategory .
 
@@ -8667,9 +8674,6 @@
 <https://w3id.org/era-aom/livestock/AOM_101066> a skos:Concept,
         aom:IngredientConstituent .
 
-<https://w3id.org/era-aom/livestock/AOM_101082> a skos:Concept,
-        aom:ProcessingMethod .
-
 <https://w3id.org/era-aom/livestock/AOM_101083> a skos:Concept,
         aom:ProcessingMethod .
 
@@ -8690,6 +8694,9 @@
 
 <https://w3id.org/era-aom/livestock/AOM_101058> a skos:Concept,
         aom:ProductRole .
+
+<https://w3id.org/era-aom/livestock/AOM_101082> a skos:Concept,
+        aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101084> a skos:Concept,
         aom:ProcessingMethod .
@@ -8794,7 +8801,7 @@
         aom:IngredientPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101104> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialComponent .
 
 <https://w3id.org/era-aom/livestock/AOM_101062> a skos:Concept,
         aom:ProductRole .

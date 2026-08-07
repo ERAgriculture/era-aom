@@ -55,7 +55,7 @@ assert len(facet_value_concepts) == 107
 assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 65
 assert len({row["concept_id"] for row in facet_value_concepts}) == 107
-assert len(material_facets) == 1790
+assert len(material_facets) == 1792
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_value_concepts
 }
@@ -344,4 +344,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 12 facets, 1790 material assertions")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 12 facets, 1792 material assertions")

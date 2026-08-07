@@ -98,6 +98,7 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceTaxon">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:comment xml:lang="en">Links feed material to a reviewed taxon IRI; does not imply SKOS identity.</rdfs:comment>
+    <rdfs:label xml:lang="en">biological species</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Evidence">
@@ -111,6 +112,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientPart">
+    <rdfs:label xml:lang="en">ingredient part</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/materialComponent"/>
@@ -155,6 +157,7 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/processingMethod">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:label xml:lang="en">processing method</rdfs:label>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueBindingStatus">
@@ -203,6 +206,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/productRole">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:label xml:lang="en">product role</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
   </rdf:Description>
@@ -274,6 +278,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
+    <rdfs:label xml:lang="en">material component</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/unitRequirement">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>

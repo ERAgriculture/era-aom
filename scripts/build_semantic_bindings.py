@@ -14,6 +14,7 @@ FACET_HOLD_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component
 MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_facets.csv"
 GENERATED_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_generated_feed_material_facets.csv"
 HARD_TAIL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_hard_tail_feed_material_facets.csv"
+EXTERNAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_external_facets.csv"
 DIST = ROOT / "dist/livestock-staging"
 CONCEPT_BASE = "urn:era-aom:livestock:"
 BINDING_BASE = "urn:era-aom:binding:"
@@ -22,6 +23,7 @@ PREFIXES = {
     "aom": "urn:era-aom:schema:",
     "owl": "http://www.w3.org/2002/07/owl#",
     "qudt": "http://qudt.org/schema/qudt/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sosa": "http://www.w3.org/ns/sosa/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -53,6 +55,8 @@ with GENERATED_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handl
     generated_material_facets = list(csv.DictReader(handle))
 with HARD_TAIL_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
     hard_tail_material_facets = list(csv.DictReader(handle))
+with EXTERNAL_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
+    external_material_facets = list(csv.DictReader(handle))
 material_facets += generated_material_facets + hard_tail_material_facets
 
 assert len(rows) == 13
@@ -63,7 +67,8 @@ assert {row["binding_action"] for row in value_rows} == {
 }
 assert len(facet_rows) == 107 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
 assert len(facet_holds) == 10
-assert len(material_facets) == 1636 + len(hard_tail_material_facets)
+assert len(material_facets) == 1638 + len(hard_tail_material_facets)
+assert len(external_material_facets) == 1
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:
@@ -148,6 +153,17 @@ for row in material_facets:
         "@type": ["skos:Concept", "aom:FeedMaterial"],
         row["target_property"]: {"@id": CONCEPT_BASE + row["target_concept_id"]},
     })
+for row in external_material_facets:
+    graph.append({
+        "@id": row["target_uri"],
+        "@type": row["target_type"],
+        "rdfs:label": {"@value": row["target_label"], "@language": "en"},
+    })
+    graph.append({
+        "@id": CONCEPT_BASE + row["feed_material_id"],
+        "@type": ["skos:Concept", "aom:FeedMaterial"],
+        row["target_property"]: {"@id": row["target_uri"]},
+    })
 
 document = {"@context": PREFIXES, "@graph": graph}
 DIST.mkdir(parents=True, exist_ok=True)
@@ -200,6 +216,16 @@ for row in material_facets:
     ttl.append(
         f"<{material}> a skos:Concept, aom:FeedMaterial ;\n"
         f"  {row['target_property']} <{target}> .\n"
+    )
+for row in external_material_facets:
+    material = CONCEPT_BASE + row["feed_material_id"]
+    ttl.append(
+        f"<{row['target_uri']}> a {row['target_type']} ;\n"
+        f"  rdfs:label {json.dumps(row['target_label'])}@en .\n"
+    )
+    ttl.append(
+        f"<{material}> a skos:Concept, aom:FeedMaterial ;\n"
+        f"  {row['target_property']} <{row['target_uri']}> .\n"
     )
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
 print(f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings")

@@ -56,14 +56,29 @@ workbook_source_reviews = list(csv.DictReader(
 ))
 
 rows = []
+definition_overrides = {
+    "AOM_101062": (
+        "A product role for material obtained alongside or remaining after production or "
+        "processing of a principal product and retained for another use, including as feed.",
+        "data/livestock-staging/legacy_records.csv;https://www.feedipedia.org/node/712",
+    ),
+    "AOM_101104": (
+        "Outer protective tissues of a cereal grain, principally pericarp and seed coat, "
+        "commonly separated as a by-product during grinding or milling.",
+        "data/livestock-staging/legacy_records.csv;https://www.feedipedia.org/node/712",
+    ),
+}
 for row in new_concepts:
     if row["concept_id"] in existing:
         continue
+    definition, evidence = definition_overrides.get(
+        row["concept_id"], (row["scope_note"], row["evidence"])
+    )
     rows.append({
         "concept_id": row["concept_id"], "language": "en",
-        "definition": row["scope_note"], "definition_method": "promoted_reviewed_scope_note",
+        "definition": definition, "definition_method": "promoted_reviewed_scope_note",
         "status": "approved", "reviewer": "Pete Steward", "review_date": "2026-08-06",
-        "evidence": row["evidence"],
+        "evidence": evidence,
         "rationale": "Reviewed concept scope text is definition-grade and promoted without semantic expansion.",
     })
 
