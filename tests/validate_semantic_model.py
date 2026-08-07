@@ -49,7 +49,7 @@ with (DATA / "approved_generated_feed_material_facets.csv").open(encoding="utf-8
     generated_material_facets = list(csv.DictReader(h))
 with (DATA / "approved_hard_tail_feed_material_facets.csv").open(encoding="utf-8", newline="") as h:
     hard_tail_material_facets = list(csv.DictReader(h))
-with (DATA / "approved_external_feed_material_facets.csv").open(encoding="utf-8", newline="") as h:
+with (DATA / "approved_feed_material_external_facets.csv").open(encoding="utf-8", newline="") as h:
     external_material_facets = list(csv.DictReader(h))
 material_facets += generated_material_facets + hard_tail_material_facets
 assert len(value_bindings) == 298

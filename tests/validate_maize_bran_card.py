@@ -31,7 +31,7 @@ assert "outer grain layers" in str(next(vocab.objects(bran, SKOS.definition))).c
 assert "principal product" in str(next(vocab.objects(byproduct, SKOS.definition))).casefold()
 assert "by-product" in str(next(vocab.objects(maize_bran, SKOS.definition))).casefold()
 
-with (DATA / "approved_external_feed_material_facets.csv").open(encoding="utf-8", newline="") as handle:
+with (DATA / "approved_feed_material_external_facets.csv").open(encoding="utf-8", newline="") as handle:
     external = list(csv.DictReader(handle))
 assert len(external) == 1 and external[0]["feed_material_id"] == "AOM_001614"
 print("Maize Bran card validation passed: species, Bran component, and by-product role")
