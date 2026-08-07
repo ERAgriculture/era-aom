@@ -1460,12 +1460,12 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000617">
     <era:status>unknown</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100876"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_24831"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3641"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11692"/>
     <skos:prefLabel xml:lang="en">Cocoa Bean Shell</skos:prefLabel>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_000617</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -2196,11 +2196,11 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:altLabel xml:lang="en">Cocoa Bean Shell Dried Milled</skos:altLabel>
     <skos:altLabel xml:lang="en">Cocoa Bean Shell Dried Meal</skos:altLabel>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell; processing method — Drying, Grinding.</skos:definition>
     <skos:prefLabel xml:lang="en">Cocoa Bean Shell Dried Ground</skos:prefLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000617"/>
     <era:status>unknown</era:status>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component; processing method — Drying, Grinding.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002240">
@@ -2986,8 +2986,8 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006052">
-    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Boiling, Crushing.</skos:definition>
     <era:status>unknown</era:status>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Boiling, Crushing.</skos:definition>
     <skos:notation>AOM_006052</skos:notation>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_171929"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -3417,12 +3417,12 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006022"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001272">
-    <skos:definition xml:lang="en">A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_001272</skos:notation>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3847"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
+    <skos:definition xml:lang="en">A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell component.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Soybean Shell</skos:prefLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100852"/>
@@ -6841,10 +6841,10 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101113">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Hay product type</skos:prefLabel>
+    <skos:definition xml:lang="en">Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay.</skos:definition>
     <rdf:type rdf:resource="https://w3id.org/era-aom/schema/FeedProductType"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_101113</skos:notation>
-    <skos:definition xml:lang="en">Governed feed product type value used for feed-material semantics.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101111"/>
     <era:conceptType>aom_concept</era:conceptType>
     <era:status>unknown</era:status>
@@ -7834,10 +7834,10 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000058"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002191">
+    <skos:definition xml:lang="en">A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell component; processing method — Grinding.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:altLabel xml:lang="en">Fossil Shell Flour</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell; processing method — Grinding.</skos:definition>
     <era:status>unknown</era:status>
     <skos:notation>AOM_002191</skos:notation>
     <skos:prefLabel xml:lang="en">Fossil Shell Ground</skos:prefLabel>
@@ -12379,7 +12379,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6563"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/736"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell component.</skos:definition>
     <skos:prefLabel xml:lang="en">Oyster Shells</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_000557</skos:notation>
@@ -15019,7 +15019,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_002225</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component.</skos:definition>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_171929"/>
@@ -16189,7 +16189,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101040">
-    <skos:definition xml:lang="en">Governed anatomical part value used for ingredient-component semantics.</skos:definition>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101019"/>
@@ -16197,6 +16196,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Shell component</skos:prefLabel>
     <skos:notation>AOM_101040</skos:notation>
+    <skos:definition xml:lang="en">Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell.</skos:definition>
     <era:conceptType>aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006397">
@@ -19148,18 +19148,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001805"/>
     <skos:definition xml:lang="en">A feed material with governed source identity “african palm larvae” and characteristics: processing method — Grinding.</skos:definition>
     <era:status>unknown</era:status>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002249">
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12155"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:notation>AOM_002249</skos:notation>
-    <skos:prefLabel xml:lang="en">Groundnut Shell</skos:prefLabel>
-    <era:status>unknown</era:status>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000393">
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -22975,11 +22963,11 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006049">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Crushing, Drying.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_006049</skos:notation>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_002225"/>
     <skos:prefLabel xml:lang="en">Cashew Shell Crushed Dried</skos:prefLabel>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Crushing, Drying.</skos:definition>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_171929"/>
@@ -23889,6 +23877,17 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:notation>AOM_000281</skos:notation>
     <skos:prefLabel xml:lang="en">Vitamin E</skos:prefLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101103">
+    <skos:notation>AOM_101103</skos:notation>
+    <skos:prefLabel xml:lang="en">Blood component</skos:prefLabel>
+    <era:conceptType>aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101019"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006272">
     <skos:notation>AOM_006272</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -24216,11 +24215,11 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001105">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell component.</skos:definition>
     <era:status>unknown</era:status>
     <skos:notation>AOM_001105</skos:notation>
     <skos:prefLabel xml:lang="en">Lake Shells</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000558"/>
   </rdf:Description>
@@ -26746,17 +26745,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:notation>AOM_002214</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101103">
-    <skos:notation>AOM_101103</skos:notation>
-    <skos:prefLabel xml:lang="en">Blood component</skos:prefLabel>
-    <era:conceptType>aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">Governed anatomical part value used for feed-material semantics.</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101019"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000410">
     <skos:definition xml:lang="en">Fixed costs related to land or buildings (excluding animal housing) may refer to either the depreciation value over time or the initial cost of purchase.</skos:definition>
@@ -30497,7 +30485,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006050">
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_171929"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Grinding.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Grinding.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_006050</skos:notation>
     <skos:prefLabel xml:lang="en">Cashew Shell Ground</skos:prefLabel>
@@ -34608,6 +34596,18 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
     <skos:notation>AOM_002051</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002249">
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
+    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12155"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>AOM_002249</skos:notation>
+    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell component.</skos:definition>
+    <skos:prefLabel xml:lang="en">Groundnut Shell</skos:prefLabel>
+    <era:status>unknown</era:status>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001509">
     <skos:notation>AOM_001509</skos:notation>

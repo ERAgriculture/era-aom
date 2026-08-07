@@ -1,12 +1,36 @@
-/* Mapping rows use Vue-generated .prop-mapping markup, not concept-property classes. */
-.prop-mapping .row {
-  align-items: flex-start;
-  row-gap: 0.25rem;
+/* Keep long external mapping IRIs readable and prevent adjacent values colliding. */
+.prop-skos_relatedMatch .property-value li,
+.prop-skos_exactMatch .property-value li,
+.prop-skos_closeMatch .property-value li,
+.prop-skos_broadMatch .property-value li,
+.prop-skos_narrowMatch .property-value li {
+  margin-bottom: 0.5rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.prop-skos_relatedMatch .property-value a,
+.prop-skos_exactMatch .property-value a,
+.prop-skos_closeMatch .property-value a,
+.prop-skos_broadMatch .property-value a,
+.prop-skos_narrowMatch .property-value a {
+  display: block;
+  max-width: 100%;
+}
+
+/* Skosmos renders mapping values asynchronously with Bootstrap columns rather
+   than the static property classes above. Stack mapping label and vocabulary
+   so long external IRIs cannot collide with source names. */
+.prop-mapping .col-lg-8 > .row {
+  display: block;
+  margin-bottom: 0.75rem !important;
 }
 
 .prop-mapping-label,
 .prop-mapping-vocab {
-  min-width: 0;
+  width: 100%;
+  max-width: 100%;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
@@ -14,12 +38,4 @@
 .prop-mapping-label a {
   display: block;
   max-width: 100%;
-}
-
-/* Prevent property links and long IRIs escaping their Bootstrap grid column. */
-.property-value,
-.property-value li,
-.property-value a {
-  min-width: 0;
-  overflow-wrap: anywhere;
 }

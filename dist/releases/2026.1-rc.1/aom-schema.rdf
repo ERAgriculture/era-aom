@@ -11,10 +11,10 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialIntegrity">
+    <rdfs:label xml:lang="en">has material integrity</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/MaterialIntegrity"/>
-    <rdfs:label xml:lang="en">material integrity</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/CompositionState">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -28,10 +28,10 @@
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/compositionState">
-    <rdfs:label xml:lang="en">composition state</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/CompositionState"/>
+    <rdfs:label xml:lang="en">has composition state</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedProductType">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -53,9 +53,9 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/feedProductType">
-    <rdfs:label xml:lang="en">feed product type</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:label xml:lang="en">has feed product type</rdfs:label>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedProductType"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Module">
@@ -73,7 +73,7 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientSource">
-    <rdfs:label xml:lang="en">ingredient source</rdfs:label>
+    <rdfs:label xml:lang="en">has ingredient source</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientSourceCategory"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -102,7 +102,7 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceTaxon">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:comment xml:lang="en">Links feed material to a reviewed taxon IRI; does not imply SKOS identity.</rdfs:comment>
-    <rdfs:label xml:lang="en">biological species</rdfs:label>
+    <rdfs:label xml:lang="en">has biological species</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Evidence">
@@ -116,10 +116,10 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientPart">
-    <rdfs:label xml:lang="en">ingredient part</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/materialComponent"/>
+    <rdfs:label xml:lang="en">has ingredient part</rdfs:label>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/SemanticValueBinding">
@@ -130,8 +130,8 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientConstituent">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientConstituent"/>
+    <rdfs:label xml:lang="en">has ingredient constituent</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">ingredient constituent</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/MaterialIntegrity">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -155,7 +155,7 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/physicalForm">
-    <rdfs:label xml:lang="en">physical form</rdfs:label>
+    <rdfs:label xml:lang="en">has physical form</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
@@ -163,7 +163,7 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/processingMethod">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:label xml:lang="en">processing method</rdfs:label>
+    <rdfs:label xml:lang="en">has processing method</rdfs:label>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueBindingStatus">
@@ -212,9 +212,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/productRole">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:label xml:lang="en">product role</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
+    <rdfs:label xml:lang="en">has product role</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientSourceCategory">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -259,6 +259,12 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:label xml:lang="en">has material component</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/quantityKind">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
@@ -279,12 +285,6 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/inModule">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Module"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialComponent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialComponent"/>
-    <rdfs:label xml:lang="en">material component</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/unitRequirement">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>

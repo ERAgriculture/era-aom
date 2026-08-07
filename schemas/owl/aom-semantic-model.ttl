@@ -90,39 +90,39 @@ aom:ingredientProportion a owl:ObjectProperty ;
   rdfs:domain aom:IngredientComponent ; rdfs:range qudt:QuantityValue .
 aom:sourceTaxon a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ;
-  rdfs:label "biological species"@en ;
+  rdfs:label "has biological species"@en ;
   rdfs:comment "Links feed material to a reviewed taxon IRI; does not imply SKOS identity."@en .
 aom:materialComponent a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:FeedMaterialComponent ;
-  rdfs:label "material component"@en .
+  rdfs:label "has material component"@en .
 aom:ingredientPart a owl:ObjectProperty ;
   rdfs:subPropertyOf aom:materialComponent ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPartCategory ;
-  rdfs:label "ingredient part"@en .
+  rdfs:label "has ingredient part"@en .
 aom:physicalForm a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPhysicalForm ;
-  rdfs:label "physical form"@en .
+  rdfs:label "has physical form"@en .
 aom:materialIntegrity a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:MaterialIntegrity ;
-  rdfs:label "material integrity"@en .
+  rdfs:label "has material integrity"@en .
 aom:feedProductType a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:FeedProductType ;
-  rdfs:label "feed product type"@en .
+  rdfs:label "has feed product type"@en .
 aom:compositionState a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:CompositionState ;
-  rdfs:label "composition state"@en .
+  rdfs:label "has composition state"@en .
 aom:processingMethod a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProcessingMethod ;
-  rdfs:label "processing method"@en .
+  rdfs:label "has processing method"@en .
 aom:productRole a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProductRole ;
-  rdfs:label "product role"@en .
+  rdfs:label "has product role"@en .
 aom:ingredientConstituent a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientConstituent ;
-  rdfs:label "ingredient constituent"@en .
+  rdfs:label "has ingredient constituent"@en .
 aom:ingredientSource a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientSourceCategory ;
-  rdfs:label "ingredient source"@en .
+  rdfs:label "has ingredient source"@en .
 aom:ingredientName a owl:DatatypeProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range xsd:string .
 aom:legacyComponentDescriptor a owl:DatatypeProperty ;
