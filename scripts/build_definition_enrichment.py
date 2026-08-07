@@ -54,17 +54,32 @@ public_authority_reviews = list(csv.DictReader(
 workbook_source_reviews = list(csv.DictReader(
     (ROOT / "review/livestock-v13/workbook_source_scope_review.csv").open(encoding="utf-8", newline="")
 ))
-definition_overrides = read("approved_definition_overrides.csv")
+approved_definition_overrides = read("approved_definition_overrides.csv")
 
 rows = []
+generated_definition_overrides = {
+    "AOM_101062": (
+        "A product role for material obtained alongside or remaining after production or "
+        "processing of a principal product and retained for another use, including as feed.",
+        "data/livestock-staging/legacy_records.csv;https://www.feedipedia.org/node/712",
+    ),
+    "AOM_101104": (
+        "Outer protective tissues of a cereal grain, principally pericarp and seed coat, "
+        "commonly separated as a by-product during grinding or milling.",
+        "data/livestock-staging/legacy_records.csv;https://www.feedipedia.org/node/712",
+    ),
+}
 for row in new_concepts:
     if row["concept_id"] in existing:
         continue
+    definition, evidence = generated_definition_overrides.get(
+        row["concept_id"], (row["scope_note"], row["evidence"])
+    )
     rows.append({
         "concept_id": row["concept_id"], "language": "en",
-        "definition": row["scope_note"], "definition_method": "promoted_reviewed_scope_note",
+        "definition": definition, "definition_method": "promoted_reviewed_scope_note",
         "status": "approved", "reviewer": "Pete Steward", "review_date": "2026-08-06",
-        "evidence": row["evidence"],
+        "evidence": evidence,
         "rationale": "Reviewed concept scope text is definition-grade and promoted without semantic expansion.",
     })
 
@@ -319,11 +334,11 @@ for concept_id, concept in sorted(concepts.items()):
         "recommended_route": route, "status": status,
     })
 
-override_ids = {row["concept_id"] for row in definition_overrides}
-assert len(override_ids) == len(definition_overrides)
+override_ids = {row["concept_id"] for row in approved_definition_overrides}
+assert len(override_ids) == len(approved_definition_overrides)
 assert override_ids <= set(concepts) and not override_ids & existing
 rows = [row for row in rows if row["concept_id"] not in override_ids]
-rows.extend(definition_overrides)
+rows.extend(approved_definition_overrides)
 gap_rows = [row for row in gap_rows if row["concept_id"] not in override_ids]
 rows.sort(key=lambda row: row["concept_id"])
 fields = ["concept_id", "language", "definition", "definition_method", "status", "reviewer", "review_date", "evidence", "rationale"]

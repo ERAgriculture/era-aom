@@ -90,7 +90,7 @@ aom:ingredientProportion a owl:ObjectProperty ;
   rdfs:domain aom:IngredientComponent ; rdfs:range qudt:QuantityValue .
 aom:sourceTaxon a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ;
-  rdfs:label "source taxon"@en ;
+  rdfs:label "biological species"@en ;
   rdfs:comment "Links feed material to a reviewed taxon IRI; does not imply SKOS identity."@en .
 aom:materialComponent a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:FeedMaterialComponent ;
