@@ -16,7 +16,7 @@ GENERATED_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_genera
 HARD_TAIL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_hard_tail_feed_material_facets.csv"
 STRUCTURAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_structural_feed_material_facets.csv"
 EXTERNAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_external_facets.csv"
-PROCESS_FORM_RELATION_SOURCE = ROOT / "data/livestock-staging/approved_process_form_relations.csv"
+PROCESS_STATE_RELATION_SOURCE = ROOT / "data/livestock-staging/approved_process_state_relations.csv"
 EXTERNAL_RESOURCE_LABEL_SOURCE = ROOT / "review/livestock-v9/feedipedia_definition_evidence.csv"
 EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE = ROOT / "data/livestock-staging/approved_external_resource_labels.csv"
 DIST = ROOT / "dist/livestock-staging"
@@ -63,8 +63,8 @@ with STRUCTURAL_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as hand
     structural_material_facets = list(csv.DictReader(handle))
 with EXTERNAL_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
     external_material_facets = list(csv.DictReader(handle))
-with PROCESS_FORM_RELATION_SOURCE.open(encoding="utf-8", newline="") as handle:
-    process_form_relations = list(csv.DictReader(handle))
+with PROCESS_STATE_RELATION_SOURCE.open(encoding="utf-8", newline="") as handle:
+    process_state_relations = list(csv.DictReader(handle))
 with EXTERNAL_RESOURCE_LABEL_SOURCE.open(encoding="utf-8", newline="") as handle:
     external_resource_label_evidence = list(csv.DictReader(handle))
 with EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE.open(encoding="utf-8", newline="") as handle:
@@ -80,14 +80,14 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 110 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
+assert len(facet_rows) == 116 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
 assert len(facet_holds) == 10
 assert len({
     (row["feed_material_id"], row["target_property"], row["target_concept_id"])
     for row in material_facets
 }) == len(material_facets)
 assert len(external_material_facets) == 3
-assert len(process_form_relations) == 1
+assert len(process_state_relations) == 2
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:
@@ -202,14 +202,14 @@ for row in external_material_facets:
         "@type": ["skos:Concept", "aom:FeedMaterial"],
         row["target_property"]: {"@id": row["target_uri"]},
     })
-for row in process_form_relations:
+for row in process_state_relations:
     process = CONCEPT_BASE + row["process_concept_id"]
-    form = CONCEPT_BASE + row["form_concept_id"]
+    result = CONCEPT_BASE + row["result_concept_id"]
     graph.append({"@id": process, "@type": ["skos:Concept", "aom:ProcessingMethod"]})
-    graph.append({"@id": form, "@type": ["skos:Concept", "aom:IngredientPhysicalForm"]})
+    graph.append({"@id": result, "@type": ["skos:Concept", row["result_class"]]})
     graph.append({
         "@id": process,
-        row["relation_property"]: {"@id": form},
+        row["relation_property"]: {"@id": result},
     })
 
 document = {"@context": PREFIXES, "@graph": graph}
@@ -282,12 +282,12 @@ for row in external_material_facets:
         f"<{material}> a skos:Concept, aom:FeedMaterial ;\n"
         f'  {row["target_property"]} <{row["target_uri"]}> .\n'
     )
-for row in process_form_relations:
+for row in process_state_relations:
     process = CONCEPT_BASE + row["process_concept_id"]
-    form = CONCEPT_BASE + row["form_concept_id"]
+    result = CONCEPT_BASE + row["result_concept_id"]
     ttl.append(f"<{process}> a skos:Concept, aom:ProcessingMethod .\n")
-    ttl.append(f"<{form}> a skos:Concept, aom:IngredientPhysicalForm .\n")
-    ttl.append(f"<{process}> {row['relation_property']} <{form}> .\n")
+    ttl.append(f"<{result}> a skos:Concept, {row['result_class']} .\n")
+    ttl.append(f"<{process}> {row['relation_property']} <{result}> .\n")
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
 print(
     f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings; "

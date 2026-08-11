@@ -35,7 +35,7 @@ for row in facets:
 assert by_material == {
     "AOM_000544": {("aom:ingredientConstituent", "AOM_101081")},
     "AOM_000642": {
-        ("aom:physicalForm", "AOM_101077"),
+        ("aom:bulkConsistency", "AOM_101077"),
         ("aom:processingMethod", "AOM_101084"),
         ("aom:productRole", "AOM_101062"),
     },

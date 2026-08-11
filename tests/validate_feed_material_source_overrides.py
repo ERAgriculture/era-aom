@@ -37,7 +37,9 @@ assert all(by_id[row["concept_id"]]["governance_state"] == "approved_source_over
 
 assert not any(
     row["feed_material_id"] in {item["concept_id"] for item in overrides}
-    and row["target_property"] in {"aom:ingredientPart", "aom:physicalForm"}
+    and row["target_property"] in {
+        "aom:ingredientPart", "aom:presentationForm", "aom:bulkConsistency"
+    }
     for row in generated
 )
 assert {

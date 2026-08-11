@@ -86,7 +86,7 @@ facet_by_label = {
 facet_name = {
     "component": "anatomical_part",
     "process": "processing_method",
-    "form": "physical_form",
+    "form": "presentation_form",
 }
 component_facet_override = {
     "Bran": "material_component",

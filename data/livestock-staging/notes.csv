@@ -259,8 +259,7 @@ AOM_101017,en,scope_note,Echinoid animal grouping used for aquatic production sp
 AOM_101018,en,scope_note,Pig and related porcine animal concepts without asserting a narrower taxonomic rank.,approved_new_concept
 AOM_101127,en,scope_note,"Rendered poultry by-products prepared as feed by cooking or sterilization, drying, and grinding.",approved_new_concept
 AOM_101019,en,scope_note,Biological structures from which feed materials derive.,approved_new_concept
-AOM_101020,en,scope_note,Physical presentations of feed materials.,approved_new_concept
-AOM_101021,en,scope_note,Transformations used to produce or prepare feed materials.,approved_new_concept
+AOM_101020,en,scope_note,"Shapes and particle presentations of feed materials, independently of moisture and bulk consistency.",approved_new_concept
 AOM_101022,en,scope_note,Economic or production roles of feed materials.,approved_new_concept
 AOM_101023,en,scope_note,Chemical substances or fractions identified in feed materials.,approved_new_concept
 AOM_101024,en,scope_note,Governed anatomical part value used for ingredient-component semantics.,approved_new_concept
@@ -288,12 +287,12 @@ AOM_101045,en,scope_note,Governed anatomical part value used for ingredient-comp
 AOM_101046,en,scope_note,Governed anatomical part value used for ingredient-component semantics.,approved_new_concept
 AOM_101047,en,scope_note,Governed anatomical part value used for ingredient-component semantics.,approved_new_concept
 AOM_101048,en,scope_note,Governed anatomical part value used for ingredient-component semantics.,approved_new_concept
-AOM_101049,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
-AOM_101050,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
-AOM_101051,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
-AOM_101052,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
-AOM_101053,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
-AOM_101054,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
+AOM_101049,en,scope_note,Governed presentation form value used for ingredient-component semantics.,approved_new_concept
+AOM_101050,en,scope_note,Governed presentation form value used for ingredient-component semantics.,approved_new_concept
+AOM_101051,en,scope_note,Governed presentation form value used for ingredient-component semantics.,approved_new_concept
+AOM_101052,en,scope_note,Governed presentation form value used for ingredient-component semantics.,approved_new_concept
+AOM_101053,en,scope_note,Governed presentation form value used for ingredient-component semantics.,approved_new_concept
+AOM_101054,en,scope_note,Moisture-reduced condition supported by an explicit drying process or material-specific evidence; no presentation form is implied.,approved_new_concept
 AOM_101055,en,scope_note,Governed product role value used for ingredient-component semantics.,approved_new_concept
 AOM_101056,en,scope_note,Governed product role value used for ingredient-component semantics.,approved_new_concept
 AOM_101057,en,scope_note,Governed product role value used for ingredient-component semantics.,approved_new_concept
@@ -313,10 +312,10 @@ AOM_101070,en,scope_note,Governed processing method value used for ingredient-co
 AOM_101072,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
 AOM_101073,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
 AOM_101074,en,scope_note,Governed anatomical part value used for ingredient-component semantics.,approved_new_concept
-AOM_101075,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
-AOM_101076,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
-AOM_101077,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
-AOM_101078,en,scope_note,Governed physical form value used for ingredient-component semantics.,approved_new_concept
+AOM_101075,en,scope_note,Governed presentation form value used for ingredient-component semantics.,approved_new_concept
+AOM_101076,en,scope_note,Governed presentation form value used for ingredient-component semantics.,approved_new_concept
+AOM_101077,en,scope_note,Flowing bulk consistency without a governed requirement for dispersed solid particles.,approved_new_concept
+AOM_101078,en,scope_note,"Moist fibrous or cellular bulk consistency, commonly semisolid; source and production process remain independently represented.",approved_new_concept
 AOM_101079,en,scope_note,Governed product role value used for ingredient-component semantics.,approved_new_concept
 AOM_101080,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
 AOM_101081,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
@@ -326,7 +325,6 @@ AOM_101085,en,scope_note,Reviewed material scopes and components that are not li
 AOM_101086,en,scope_note,Governed material component value used for feed-material semantics.,approved_new_concept
 AOM_101088,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
 AOM_101090,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
-AOM_101093,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
 AOM_101096,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
 AOM_101099,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
 AOM_101100,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
@@ -335,7 +333,7 @@ AOM_101104,en,scope_note,Governed material component value used for feed-materia
 AOM_101105,en,scope_note,Governed anatomical part value used for feed-material semantics.,approved_new_concept
 AOM_101106,en,scope_note,Governed anatomical part value used for feed-material semantics.,approved_new_concept
 AOM_101107,en,scope_note,Governed anatomical part value used for feed-material semantics.,approved_new_concept
-AOM_101108,en,scope_note,Governed physical form value used for feed-material semantics.,approved_new_concept
+AOM_101108,en,scope_note,Governed presentation form value used for feed-material semantics.,approved_new_concept
 AOM_101109,en,scope_note,Governed material integrity vocabulary used for feed-material semantics.,approved_new_concept
 AOM_101110,en,scope_note,Governed material integrity value used for feed-material semantics.,approved_new_concept
 AOM_101111,en,scope_note,Governed feed product type vocabulary used for feed-material semantics.,approved_new_concept
@@ -345,13 +343,18 @@ AOM_101114,en,scope_note,Governed feed product type value used for feed-material
 AOM_101115,en,scope_note,Governed composition state vocabulary used for feed-material semantics.,approved_new_concept
 AOM_101116,en,scope_note,Governed composition state value used for feed-material semantics.,approved_new_concept
 AOM_101117,en,scope_note,Governed anatomical part value used for feed-material semantics.,approved_new_concept
-AOM_101118,en,scope_note,Governed physical form value used for feed-material semantics.,approved_new_concept
+AOM_101118,en,scope_note,Bulk consistency in which solid particles are dispersed in a liquid continuous phase; not equivalent to an unqualified liquid.,approved_new_concept
 AOM_101119,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
 AOM_101120,en,scope_note,Governed chemical constituent value used for feed-material semantics.,approved_new_concept
 AOM_101121,en,scope_note,Governed anatomical part value used for feed-material semantics.,approved_new_concept
 AOM_101122,en,scope_note,Governed anatomical part value used for feed-material semantics.,approved_new_concept
 AOM_101123,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
 AOM_101124,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
-AOM_101125,en,scope_note,Solid feed material reduced into smaller pieces without asserting a particle-size class.,approved_new_concept
-AOM_101126,en,scope_note,Comminuted feed material described as meal; particle-size threshold remains unspecified unless separately governed.,approved_new_concept
+AOM_101125,en,scope_note,"Particle presentation produced by size reduction; bulk consistency, moisture condition, and particle-size threshold remain unspecified.",approved_new_concept
+AOM_101126,en,scope_note,Comminuted feed presentation described as meal; drying and particle-size threshold remain unspecified unless separately governed.,approved_new_concept
 AOM_101128,en,scope_note,Thermal processing of animal by-products to separate or stabilize feed materials.,approved_new_concept
+AOM_101129,en,scope_note,Feed processes whose governed objective includes reducing particle dimensions without requiring one machine or dry bulk state.,approved_new_concept
+AOM_101130,en,scope_note,Feed processes whose governed objective includes separating components or fractions of a source material.,approved_new_concept
+AOM_101131,en,scope_note,"Feed processes whose governed objective includes shaping or agglomerating material into a presentation such as pellets, flakes, or extrudates.",approved_new_concept
+AOM_101132,en,scope_note,"Bulk flow and dispersion consistencies of feed materials, independently of particle presentation and moisture condition.",approved_new_concept
+AOM_101133,en,scope_note,"Qualitative moisture conditions of feed materials, independently of particle presentation and bulk consistency.",approved_new_concept

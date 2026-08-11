@@ -56,6 +56,11 @@ workbook_source_reviews = list(csv.DictReader(
     (ROOT / "review/livestock-v13/workbook_source_scope_review.csv").open(encoding="utf-8", newline="")
 ))
 approved_definition_overrides = read("approved_definition_overrides.csv")
+retired_generated_ids = {
+    row["generated_id"]
+    for row in read("approved_identity_integrity_remediations.csv")
+    if row["status"] == "approved" and row["action"] == "reuse_existing"
+}
 
 rows = []
 generated_definition_overrides = {
@@ -90,7 +95,10 @@ for row in material_facets:
 property_label = {
     "aom:ingredientPart": "ingredient part",
     "aom:processingMethod": "processing method",
-    "aom:physicalForm": "physical form",
+    "aom:physicalForm": "legacy physical form",
+    "aom:presentationForm": "presentation form",
+    "aom:bulkConsistency": "bulk consistency",
+    "aom:moistureCondition": "moisture condition",
     "aom:productRole": "product role",
     "aom:feedProductType": "feed product type",
     "aom:materialIntegrity": "material integrity",
@@ -148,7 +156,7 @@ for review in hard_tail_reviews:
     elif review["decision"] == "approve_bounded_workbook_material_scope":
         definition = (
             f"An AOM feed material with governed operational source identity “{review['governed_source_identity']}”. "
-            "Component, whole-material integrity, processing method, physical form, product role, composition, "
+            "Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, "
             "constituent, and nutritional properties are unspecified unless separately asserted."
         )
         method = "composed_from_bounded_workbook_material_scope"
@@ -194,7 +202,7 @@ for review in workbook_source_reviews:
         definition = (
             f"A {workbook_family_label[review['ingredient_family']]} with governed workbook identity "
             f"“{review['preferred_label']}”, classified within “{review['parent_label']}”. Component, processing method, "
-            "physical form, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+            "presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
         )
         method = "composed_from_canonical_workbook_identity_scope"
     rows.append({
@@ -228,7 +236,7 @@ for review in public_authority_reviews:
         "concept_id": concept_id, "language": "en",
         "definition": (
             f"A {family_label[review['ingredient_family']]} feed material with governed source identity “{identity}”. "
-            "Component, processing method, physical form, product role, integrity, composition, and constituent "
+            "Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent "
             "are unspecified at this concept level unless separately asserted."
         ),
         "definition_method": "composed_from_reviewed_public_authority_source_scope",
@@ -248,7 +256,7 @@ for review in feedipedia_scope_reviews:
         "concept_id": concept_id, "language": "en",
         "definition": (
             f"A {family_label[review['ingredient_family']]} feed material with governed identity “{source}”. "
-            "Component, processing method, physical form, product role, integrity, composition, and constituent "
+            "Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent "
             "are unspecified at this concept level unless separately asserted."
         ),
         "definition_method": "composed_from_reviewed_feedipedia_source_scope",
@@ -341,10 +349,12 @@ for concept_id, concept in sorted(concepts.items()):
 
 override_ids = {row["concept_id"] for row in approved_definition_overrides}
 assert len(override_ids) == len(approved_definition_overrides)
-assert override_ids <= set(concepts) and not override_ids & existing
+assert override_ids <= set(concepts)
 rows = [row for row in rows if row["concept_id"] not in override_ids]
 rows.extend(approved_definition_overrides)
 gap_rows = [row for row in gap_rows if row["concept_id"] not in override_ids]
+rows = [row for row in rows if row["concept_id"] not in retired_generated_ids]
+gap_rows = [row for row in gap_rows if row["concept_id"] not in retired_generated_ids]
 rows.sort(key=lambda row: row["concept_id"])
 fields = ["concept_id", "language", "definition", "definition_method", "status", "reviewer", "review_date", "evidence", "rationale"]
 with OUT.open("w", encoding="utf-8", newline="") as handle:

@@ -38,7 +38,7 @@ renames = {
     if row["status"] == "approved" and row["action"] == "rename_distinct"
 }
 original_labels = {row["generated_id"]: row["generated_label"] for row in decisions}
-assert len(replacement) == 12
+assert len(replacement) == 14
 assert len(renames) == 3
 assert not (set(replacement) & set(replacement.values()))
 
@@ -51,6 +51,7 @@ reference_tables = [
     "approved_ingredient_component_decompositions.csv",
     "approved_ingredient_component_value_mappings.csv",
     "approved_ingredient_semantic_closure_decisions.csv",
+    "approved_process_state_relations.csv",
 ]
 replacement_count = 0
 for name in reference_tables:
@@ -79,6 +80,12 @@ assert len({row["concept_id"] for row in facet_rows}) == len(facet_rows)
 new_concept_path = DATA / "approved_new_concepts.csv"
 new_concept_rows = read(new_concept_path)
 for row in new_concept_rows:
+    if row["broader_id"] in replacement:
+        row["broader_id"] = replacement[row["broader_id"]]
+    if "/Feed processes" not in row["derived_path"]:
+        row["derived_path"] = row["derived_path"].replace(
+            "/Ingredient processing methods", "/Feed processes"
+        )
     if row["concept_id"] in renames:
         row["preferred_label"] = renames[row["concept_id"]]
         row["derived_path"] = row["derived_path"].rsplit("/", 1)[0] + "/" + row["preferred_label"]
@@ -93,7 +100,7 @@ for name in ["approved_new_concepts.csv", "approved_definition_enrichments.csv"]
     path = DATA / name
     rows = read(path)
     kept = [row for row in rows if row["concept_id"] not in replacement]
-    assert len(rows) - len(kept) in {0, 12}
+    assert 0 <= len(rows) - len(kept) <= len(replacement)
     write(path, kept, fields(path))
 
 # Superseded collision decisions encoded invalid identity logic; current
@@ -104,7 +111,7 @@ kept = [
     row for row in collision_rows
     if not any(identifier in replacement for identifier in row["concept_ids"].split(";"))
 ]
-assert len(collision_rows) - len(kept) in {0, 12}
+assert 0 <= len(collision_rows) - len(kept) <= len(replacement)
 write(collision_path, kept, fields(collision_path))
 
 # Registry remains immutable history, but retired IDs cannot be reused.

@@ -44,8 +44,8 @@ assert {row["collision_id"] for row in detail} == {row["collision_id"] for row i
 assert all(row["review_status"] in {"proposed", "approved", "hold"} for row in cohort)
 assert all(row["recommended_action"] for row in cohort)
 assert summary["reviewed_groups"] == len(cohort)
-assert summary["approved_groups"] == 91
-assert summary["held_groups"] == 2
+assert summary["approved_groups"] == 92
+assert summary["held_groups"] == 1
 assert summary["unreviewed_groups"] == 0
 assert summary["status"] == "governed_with_holds"
 assert all(
@@ -55,12 +55,12 @@ assert all(
 assert summary["duplicate_preferred_label_groups"] <= BASELINE["maximum_duplicate_preferred_label_groups"]
 assert summary["concepts_in_duplicate_groups"] <= BASELINE["maximum_concepts_in_duplicate_groups"]
 assert summary["excess_identifiers"] <= BASELINE["maximum_excess_identifiers"]
-assert len(remediations) == 16
+assert len(remediations) == 17
 assert len({row["generated_id"] for row in remediations}) == len(remediations)
 assert {row["action"] for row in remediations} == {
-    "reuse_existing", "rename_distinct", "hold_ambiguous"
+    "reuse_existing", "rename_distinct"
 }
-assert all(row["status"] in {"approved", "hold"} for row in remediations)
+assert all(row["status"] == "approved" for row in remediations)
 
 decision_by_label = {}
 for decision in decisions:

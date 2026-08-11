@@ -66,8 +66,8 @@ aomcfg:eraPropertyOrder rdf:value (
   skos:related skos:altLabel skos:exactMatch skos:closeMatch
   skos:broadMatch skos:narrowMatch skos:relatedMatch
   aom:sourceTaxon aom:ingredientSource aom:materialComponent aom:ingredientPart
-  aom:materialIntegrity aom:physicalForm aom:processingMethod
-  aom:mayResultInPhysicalForm
+  aom:materialIntegrity aom:presentationForm aom:bulkConsistency aom:moistureCondition
+  aom:processingMethod aom:mayResultInPresentationForm aom:mayResultInMoistureCondition
   aom:feedProductType aom:compositionState aom:productRole aom:ingredientConstituent
   skos:note skos:scopeNote skos:historyNote rdfs:comment dc:source
 ) .

@@ -36,7 +36,8 @@ assert Counter(row["decision"] for row in rows) == {
 assert len(facets) == 154
 assert Counter(row["target_property"] for row in facets) == {
     "aom:productRole": 57, "aom:ingredientPart": 46,
-    "aom:ingredientConstituent": 19, "aom:physicalForm": 18,
+    "aom:ingredientConstituent": 19, "aom:presentationForm": 12,
+    "aom:bulkConsistency": 6,
     "aom:processingMethod": 14,
 }
 assert all(row["blocker_code"] and row["next_action"] for row in rows if row["status"] == "held")
