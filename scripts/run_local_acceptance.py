@@ -75,6 +75,10 @@ def main():
     assert vocid in json.dumps(vocabularies), vocabularies
     search = json_get(api + f"/{vocid}/search?" + urllib.parse.urlencode({"query": profile["search_query"], "lang": "en", "maxhits": 20}), timings)
     assert profile["search_query"].lower() in json.dumps(search).lower(), search
+    notation_search = json_get(api + f"/{vocid}/search?" + urllib.parse.urlencode({"query": profile["notation_search_concept"], "lang": "en", "maxhits": 20}), timings)
+    notation_text = json.dumps(notation_search)
+    assert profile["notation_search_concept"] in notation_text, notation_search
+    assert profile["notation_search_label"] in notation_text, notation_search
     broader = json_get(api + f"/{vocid}/broader?" + urllib.parse.urlencode({"uri": concept_uri, "lang": "en"}), timings)
     assert broader is not None
     stats = json_get(api + f"/{vocid}/vocabularyStatistics?lang=en", timings)
@@ -82,7 +86,7 @@ def main():
     top_concepts = json_get(api + f"/{vocid}/topConcepts?lang=en", timings)
     top_text = json.dumps(top_concepts)
     assert all(item in top_text for item in profile["expected_top_concepts"]), top_concepts
-    results["api"] = {"vocabularies": "pass", "search": "pass", "broader": "pass", "top_concepts": "pass", "statistics": "pass"}
+    results["api"] = {"vocabularies": "pass", "search": "pass", "notation_search": "pass", "broader": "pass", "top_concepts": "pass", "statistics": "pass"}
     results["hierarchy"] = {"roots": len(profile["expected_top_concepts"]), "broader": broader_count, "narrower": narrower_count}
 
     page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{concept_id}"
