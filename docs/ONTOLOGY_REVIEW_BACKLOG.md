@@ -1,5 +1,37 @@
 # ERA-AOM ontology review backlog
 
+## Feed taxonomy axis reclassification
+
+- Status: proposed in ADR 0044; recommendation review pending
+- Priority: critical
+- Added: 2026-08-11
+
+### Problem
+
+`Supplement` and `Other Ingredients` are residual buckets mixing materials,
+formulations, additives, chemical identities, roles, placeholders, and unknown
+products. Five schema fields remain direct `Feed materials` children. Linked
+defects affect Organic Acid, Protected Fat, Elancoban, Brewhouse processing,
+component/separation hierarchy, Bran, and whole-component retention states.
+
+### Review package
+
+`review/livestock-v29/` covers 220 concepts, including every direct Feed
+materials child, all 94 Supplement descendants, all 54 Other Ingredients
+descendants, and complete implicated structural branches.
+
+### Required work
+
+1. Review and approve or amend every hold and split disposition.
+2. Implement approved product-kind migrations as complete cohorts.
+3. Move roles, chemical identities, components, processes, and states to
+   independent axes.
+4. Preserve stable IDs through deprecation and replacement links.
+5. Regenerate release artifacts, rebuild empty Fuseki storage, and rerun
+   notation search plus full Skosmos browse/card review.
+
+Do not patch named cards before cohort dispositions are approved.
+
 ## Processing-method hierarchy consolidation
 
 - Status: implemented in ADR 0042; three material-level holds remain

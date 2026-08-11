@@ -4,6 +4,10 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Add proposed ADR 0044 and a 220-concept adversarial review of Feed materials,
+  Supplement, Other Ingredients, Organic Acid, component/composition branches,
+  and separation processes; no ontology hierarchy changes applied yet.
+
 - Separate 23 formulated feeds from feed materials, classify three branch
   outliers as materials and Elancoban as an additive, retain one product-class
   hold, generalize feed-state descriptors, replace ambiguous constituent
