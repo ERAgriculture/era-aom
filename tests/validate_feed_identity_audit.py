@@ -21,8 +21,10 @@ preferred_collisions = read("ontology_pref_label_collision_candidates.csv")
 assert len(lexical) == 16
 assert len(external) == 191
 assert len(cereals) == 369
-assert len(preferred_collisions) == 86
 assert not any(row["status"] == "review-required" for row in preferred_collisions)
+assert {row["status"] for row in preferred_collisions} <= {
+    "approved-retain-distinct", "approved-identity-hold"
+}
 assert all(row["status"] == "review-required" for row in lexical)
 assert all(row["status"] == "granularity-review-required" for row in external)
 assert any({"AOM_000564", "AOM_001884"} <= set(row["concept_ids"].split(";"))
@@ -38,6 +40,7 @@ signals = {(row["scope"], row["quality_signal"]): int(row["count"]) for row in s
 assert signals[("all AOM", "source rows")] == 2503
 assert signals[("legacy source", "missing source definitions")] == 1865
 assert signals[("active governed vocabulary", "missing definitions")] == 18
+assert signals[("all AOM", "normalized preferred-label collisions")] == len(preferred_collisions)
 assert signals[("all AOM", "unresolved preferred-label collisions")] == 0
 assert signals[("cereal feed materials", "missing definitions")] == 6
 release = json.loads((ROOT / "config/releases/2026.1-rc.1.json").read_text())

@@ -1740,6 +1740,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000897"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -1794,7 +1799,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -8422,6 +8427,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000893"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
@@ -8469,7 +8479,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -8537,7 +8547,35 @@
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
+        "@value": "goatling production unit"
+      },
+      {
+        "@language": "en",
+        "@value": "larval production unit"
+      },
+      {
+        "@language": "en",
+        "@value": "chick production unit"
+      },
+      {
+        "@language": "en",
+        "@value": "lamb production unit"
+      },
+      {
+        "@language": "en",
         "@value": "fish fry production unit"
+      },
+      {
+        "@language": "en",
+        "@value": "piglet production unit"
+      },
+      {
+        "@language": "en",
+        "@value": "duckling production unit"
+      },
+      {
+        "@language": "en",
+        "@value": "calf production system"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -10891,6 +10929,9 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000849"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -11043,6 +11084,12 @@
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000146"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000820"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000147"
@@ -14572,7 +14619,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Grinding."
+        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -14663,6 +14710,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000145"
@@ -14697,7 +14749,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -15209,6 +15261,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000871"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -15254,7 +15311,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -20480,6 +20537,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000868"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -20533,7 +20595,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -21248,7 +21310,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell component."
+        "@value": "A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -32104,6 +32166,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000895"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000923"
@@ -32143,7 +32210,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -34260,7 +34327,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Crushing, Drying."
+        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Crushing, Drying."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -37258,15 +37325,14 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000850"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000849"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A farming-system classification for production orientation within the aquatic system context."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -37309,7 +37375,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -37570,7 +37636,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component."
+        "@value": "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -41528,6 +41594,9 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000849"
       }
     ],
@@ -42530,6 +42599,9 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000849"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -44841,6 +44913,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000872"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -44914,7 +44991,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -50749,7 +50826,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component; processing method — Drying, Grinding."
+        "@value": "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell; processing method — Drying, Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -57439,6 +57516,9 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000145"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
       }
     ],
@@ -62117,7 +62197,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell component."
+        "@value": "A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -62899,6 +62979,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000820"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000145"
@@ -62933,7 +63018,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -63580,7 +63665,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell component."
+        "@value": "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -63793,6 +63878,10 @@
       {
         "@language": "en",
         "@value": "Wild caught fingerling production system"
+      },
+      {
+        "@language": "en",
+        "@value": "Wild caugth fingerling production system"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -67648,57 +67737,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000900",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A farming-system classification for living environment within the terrestrial system context."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003022"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100993"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_000900"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "living environment"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006198",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -67743,6 +67781,56 @@
     "urn:era:property:status": [
       {
         "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000900",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000885"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003022"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100993"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000900"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "living environment"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "deprecated"
       }
     ]
   },
@@ -81798,15 +81886,14 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000865"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A farming-system classification for rearing stage within the terrestrial system context."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -81855,7 +81942,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -83202,6 +83289,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000870"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -83247,7 +83339,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -83767,6 +83859,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000869"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -83832,7 +83929,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -88759,6 +88856,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000894"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -88816,7 +88918,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -90055,6 +90157,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000865"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000850"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000885"
@@ -99092,7 +99197,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell."
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -101914,6 +102019,9 @@
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000145"
+      },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
       }
@@ -105797,6 +105905,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000873"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -105850,7 +105963,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -106386,6 +106499,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000867"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -106452,7 +106570,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -112560,33 +112678,19 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001700",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_002249",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@language": "en",
-        "@value": "Noug Milled Cake"
-      },
-      {
-        "@language": "en",
-        "@value": "Noug Meal Cake"
-      },
-      {
-        "@language": "en",
-        "@value": "Noug Ground Pressed"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001190"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100869"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “noug” and characteristics: processing method — Grinding."
+        "@value": "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -112596,21 +112700,21 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "AOM_001700"
+        "@value": "AOM_002249"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Noug Cake Ground"
+        "@value": "Groundnut Shell"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_12827"
+        "@id": "https://www.feedipedia.org/node/12155"
       },
       {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4230"
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3818"
       }
     ],
     "urn:era:property:conceptType": [
@@ -112721,19 +112825,33 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_002249",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001700",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Noug Milled Cake"
+      },
+      {
+        "@language": "en",
+        "@value": "Noug Meal Cake"
+      },
+      {
+        "@language": "en",
+        "@value": "Noug Ground Pressed"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100869"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001190"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell component."
+        "@value": "A feed material with governed source identity “noug” and characteristics: processing method — Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -112743,21 +112861,21 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "AOM_002249"
+        "@value": "AOM_001700"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Groundnut Shell"
+        "@value": "Noug Cake Ground"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
-        "@id": "https://www.feedipedia.org/node/12155"
+        "@id": "http://aims.fao.org/aos/agrovoc/c_12827"
       },
       {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3818"
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4230"
       }
     ],
     "urn:era:property:conceptType": [
@@ -119073,7 +119191,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay."
+        "@value": "Governed feed product type value used for feed-material semantics."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -123745,7 +123863,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell component; processing method — Grinding."
+        "@value": "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell; processing method — Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -127294,6 +127412,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000900"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000865"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000885"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000874"
       },
       {
@@ -127301,6 +127425,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000922"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000893"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -127902,7 +128029,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood."
+        "@value": "Governed anatomical part value used for feed-material semantics."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -129440,6 +129567,9 @@
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
+      },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000849"
       }
@@ -131898,6 +132028,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000898"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -131947,7 +132082,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -138165,7 +138300,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component."
+        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -140889,7 +141024,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Boiling, Crushing."
+        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Boiling, Crushing."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -143927,6 +144062,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000896"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000923"
@@ -143966,7 +144106,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },

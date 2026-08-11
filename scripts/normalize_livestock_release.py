@@ -421,7 +421,7 @@ def main():
         })
 
     for semantic_relation in semantic_relations:
-        if semantic_relation["relation_type"] not in {"related"}:
+        if semantic_relation["relation_type"] not in {"broader", "related"}:
             raise ValueError("Unsupported approved semantic relation type")
         if not {
             semantic_relation["subject_id"], semantic_relation["object_id"]
@@ -471,10 +471,10 @@ def main():
         if row["label_type"] == "alt":
             alt[row["concept_id"]].append(row["label"])
     defs = {row["concept_id"]: row["definition"] for row in definitions}
-    broader = {
-        row["subject_id"]: row["object_id"]
-        for row in relations if row["relation_type"] == "broader"
-    }
+    broader = defaultdict(list)
+    for row in relations:
+        if row["relation_type"] == "broader":
+            broader[row["subject_id"]].append(row["object_id"])
     replaced_by = {
         row["subject_id"]: row["object_id"]
         for row in relations if row["relation_type"] == "replaced_by"
@@ -513,8 +513,12 @@ def main():
             item["skos:altLabel"] = [{"@value": x, "@language": "en"} for x in alt[concept_id]]
         if concept_id in defs:
             item["skos:definition"] = {"@value": defs[concept_id], "@language": "en"}
-        if concept_id in broader:
-            item["skos:broader"] = {"@id": URI_PREFIX + broader[concept_id]}
+        broader_ids = sorted(set(broader[concept_id]))
+        if broader_ids:
+            broader_values = [{"@id": URI_PREFIX + parent_id} for parent_id in broader_ids]
+            item["skos:broader"] = (
+                broader_values[0] if len(broader_values) == 1 else broader_values
+            )
         if concept_id in replaced_by:
             item["dcterms:isReplacedBy"] = {"@id": URI_PREFIX + replaced_by[concept_id]}
         if related[concept_id]:
@@ -559,8 +563,10 @@ def main():
         terms += [f"skos:altLabel {json.dumps(x, ensure_ascii=False)}@en" for x in alt[concept_id]]
         if concept_id in defs:
             terms.append(f"skos:definition {json.dumps(defs[concept_id], ensure_ascii=False)}@en")
-        if concept_id in broader:
-            terms.append(f"skos:broader <{URI_PREFIX + broader[concept_id]}>")
+        terms += [
+            f"skos:broader <{URI_PREFIX + parent_id}>"
+            for parent_id in sorted(set(broader[concept_id]))
+        ]
         if concept_id in replaced_by:
             terms.append(f"dcterms:isReplacedBy <{URI_PREFIX + replaced_by[concept_id]}>")
         terms += [

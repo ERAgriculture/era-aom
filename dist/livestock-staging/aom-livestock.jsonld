@@ -5005,13 +5005,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000145"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000820"
       }
     },
     {
@@ -5026,13 +5029,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "Feed fermentation is a biological process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT).",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000145"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000830"
       }
     },
     {
@@ -14188,7 +14194,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell component.",
+        "@value": "A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell.",
         "@language": "en"
       },
       "skos:broader": {
@@ -15792,7 +15798,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component.",
+        "@value": "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell.",
         "@language": "en"
       },
       "skos:broader": {
@@ -19768,9 +19774,14 @@
         "@value": "Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_100990"
-      }
+      "skos:broader": [
+        {
+          "@id": "urn:era-aom:livestock:AOM_000145"
+        },
+        {
+          "@id": "urn:era-aom:livestock:AOM_100990"
+        }
+      ]
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000821",
@@ -20000,9 +20011,14 @@
         "@value": "Feed fermentation is a process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT).",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_100990"
-      }
+      "skos:broader": [
+        {
+          "@id": "urn:era-aom:livestock:AOM_000145"
+        },
+        {
+          "@id": "urn:era-aom:livestock:AOM_100990"
+        }
+      ]
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000831",
@@ -20452,9 +20468,14 @@
         "@value": "A farming-system classification for production orientation within the terrestrial system context.",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_000848"
-      }
+      "skos:broader": [
+        {
+          "@id": "urn:era-aom:livestock:AOM_000848"
+        },
+        {
+          "@id": "urn:era-aom:livestock:AOM_000849"
+        }
+      ]
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000851",
@@ -20578,13 +20599,12 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
-      "skos:definition": {
-        "@value": "A farming-system classification for production orientation within the aquatic system context.",
-        "@language": "en"
-      },
+      "era:status": "deprecated",
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000849"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000850"
       }
     },
     {
@@ -20838,9 +20858,14 @@
         "@value": "any characteristic of terrestrial unit of production related to a specific life stage rearing",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_000849"
-      },
+      "skos:broader": [
+        {
+          "@id": "urn:era-aom:livestock:AOM_000848"
+        },
+        {
+          "@id": "urn:era-aom:livestock:AOM_000849"
+        }
+      ],
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0001709"
@@ -21060,6 +21085,10 @@
         {
           "@value": "Wild caught fingerling production system",
           "@language": "en"
+        },
+        {
+          "@value": "Wild caugth fingerling production system",
+          "@language": "en"
         }
       ],
       "skos:definition": {
@@ -21091,6 +21120,34 @@
       "skos:altLabel": [
         {
           "@value": "fish fry production unit",
+          "@language": "en"
+        },
+        {
+          "@value": "goatling production unit",
+          "@language": "en"
+        },
+        {
+          "@value": "duckling production unit",
+          "@language": "en"
+        },
+        {
+          "@value": "larval production unit",
+          "@language": "en"
+        },
+        {
+          "@value": "chick production unit",
+          "@language": "en"
+        },
+        {
+          "@value": "calf production system",
+          "@language": "en"
+        },
+        {
+          "@value": "piglet production unit",
+          "@language": "en"
+        },
+        {
+          "@value": "lamb production unit",
           "@language": "en"
         }
       ],
@@ -21159,13 +21216,12 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
-      "skos:definition": {
-        "@value": "A farming-system classification for rearing stage within the terrestrial system context.",
-        "@language": "en"
-      },
+      "era:status": "deprecated",
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000848"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000865"
       }
     },
     {
@@ -21212,7 +21268,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "growing-out rearing unit",
@@ -21242,6 +21298,9 @@
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000874"
       },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000867"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0001710"
@@ -21260,7 +21319,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "growing-finishing housing system",
@@ -21282,6 +21341,9 @@
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000876"
       },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000868"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0001632"
@@ -21300,7 +21362,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "juvenile production unit",
@@ -21326,6 +21388,9 @@
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000874"
       },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000869"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0001574"
@@ -21344,7 +21409,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "domesticated fingerling production",
@@ -21357,6 +21422,9 @@
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000878"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000870"
       },
       "skos:relatedMatch": [
         {
@@ -21376,7 +21444,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "Wild caugth fingerling production system",
@@ -21389,6 +21457,9 @@
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000878"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000871"
       },
       "skos:relatedMatch": [
         {
@@ -21460,7 +21531,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "goatling production unit",
@@ -21502,6 +21573,9 @@
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000874"
       },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000872"
+      },
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0001716"
@@ -21520,7 +21594,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "pre-fattening rearing unit",
@@ -21541,6 +21615,9 @@
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000874"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000873"
       },
       "skos:relatedMatch": [
         {
@@ -21565,9 +21642,14 @@
         "@value": "A farming-system classification for living environment within the aquatic system context.",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_000849"
-      }
+      "skos:broader": [
+        {
+          "@id": "urn:era-aom:livestock:AOM_000848"
+        },
+        {
+          "@id": "urn:era-aom:livestock:AOM_000849"
+        }
+      ]
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000886",
@@ -21794,9 +21876,14 @@
         "@value": "A farming-system classification for species associations within the aquatic system context.",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_000849"
-      }
+      "skos:broader": [
+        {
+          "@id": "urn:era-aom:livestock:AOM_000848"
+        },
+        {
+          "@id": "urn:era-aom:livestock:AOM_000849"
+        }
+      ]
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000894",
@@ -21996,13 +22083,12 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
-      "skos:definition": {
-        "@value": "A farming-system classification for living environment within the terrestrial system context.",
-        "@language": "en"
-      },
+      "era:status": "deprecated",
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000848"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000885"
       }
     },
     {
@@ -22678,13 +22764,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "housing structure with partially or totally access to outdoors, an area with natural light (courtyard, pasture)",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000848"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000893"
       },
       "skos:relatedMatch": [
         {
@@ -22704,7 +22793,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "mono-species breeding system",
@@ -22721,6 +22810,9 @@
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000922"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000894"
       },
       "skos:relatedMatch": [
         {
@@ -22740,13 +22832,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "system of farming where animals are housed in a mono-species group",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000923"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000895"
       },
       "skos:relatedMatch": [
         {
@@ -22766,13 +22861,16 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:definition": {
         "@value": "system of farming where the animal is housed alone",
         "@language": "en"
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000923"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000896"
       },
       "skos:relatedMatch": [
         {
@@ -22792,7 +22890,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "poly-species rearing system",
@@ -22809,6 +22907,9 @@
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000922"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000897"
       },
       "skos:relatedMatch": [
         {
@@ -22828,7 +22929,7 @@
         "@language": "en"
       },
       "era:conceptType": "legacy_aom_concept",
-      "era:status": "unknown",
+      "era:status": "deprecated",
       "skos:altLabel": [
         {
           "@value": "IMTA",
@@ -22845,6 +22946,9 @@
       },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000926"
+      },
+      "dcterms:isReplacedBy": {
+        "@id": "urn:era-aom:livestock:AOM_000898"
       },
       "skos:relatedMatch": [
         {
@@ -27179,7 +27283,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell component.",
+        "@value": "A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell.",
         "@language": "en"
       },
       "skos:broader": {
@@ -31150,7 +31254,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell component.",
+        "@value": "A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell.",
         "@language": "en"
       },
       "skos:broader": {
@@ -50421,7 +50525,7 @@
         }
       ],
       "skos:definition": {
-        "@value": "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component; processing method — Drying, Grinding.",
+        "@value": "A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell; processing method — Drying, Grinding.",
         "@language": "en"
       },
       "skos:broader": {
@@ -54198,7 +54302,7 @@
         }
       ],
       "skos:definition": {
-        "@value": "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell component; processing method — Grinding.",
+        "@value": "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell; processing method — Grinding.",
         "@language": "en"
       },
       "skos:broader": {
@@ -54860,7 +54964,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component.",
+        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell.",
         "@language": "en"
       },
       "skos:broader": {
@@ -55422,7 +55526,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell component.",
+        "@value": "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell.",
         "@language": "en"
       },
       "skos:broader": {
@@ -62912,7 +63016,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Crushing, Drying.",
+        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Crushing, Drying.",
         "@language": "en"
       },
       "skos:broader": {
@@ -62938,7 +63042,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Grinding.",
+        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Grinding.",
         "@language": "en"
       },
       "skos:broader": {
@@ -62964,7 +63068,7 @@
       "era:conceptType": "legacy_aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Boiling, Crushing.",
+        "@value": "A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Boiling, Crushing.",
         "@language": "en"
       },
       "skos:broader": {
@@ -75888,7 +75992,7 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell.",
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
       "skos:broader": {
@@ -77112,7 +77216,7 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood.",
+        "@value": "Governed anatomical part value used for feed-material semantics.",
         "@language": "en"
       },
       "skos:broader": {
@@ -77352,7 +77456,7 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
-        "@value": "Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay.",
+        "@value": "Governed feed product type value used for feed-material semantics.",
         "@language": "en"
       },
       "skos:broader": {

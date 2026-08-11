@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Validate complete preferred-label collision governance."""
+"""Validate governed dispositions for every global label collision."""
+
 import csv
 import json
+import re
+import unicodedata
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data/livestock-staging"
-REVIEW = ROOT / "review/livestock-v4"
+REVIEW = ROOT / "review/livestock-v25"
 
 
 def read(path):
@@ -15,33 +18,60 @@ def read(path):
         return list(csv.DictReader(handle))
 
 
+def normalize_label(value):
+    value = unicodedata.normalize("NFKC", value).casefold().strip()
+    return re.sub(r"\s+", " ", value)
+
+
 decisions = read(DATA / "approved_ontology_collision_decisions.csv")
-active = read(REVIEW / "ontology_pref_label_collision_candidates.csv")
+cohort = read(REVIEW / "global_identity_collision_cohort.csv")
 deprecations = read(DATA / "approved_deprecations.csv")
-summary = read(REVIEW / "ontology_quality_summary.csv")
+summary = json.loads((REVIEW / "global_identity_collision_summary.json").read_text())
 
-assert len(decisions) == 92
-assert len({row["collision_key"] for row in decisions}) == 92
+assert len(decisions) == len(cohort) == 93
 assert Counter(row["decision"] for row in decisions) == {
-    "retain_distinct": 85, "deprecate_replace": 6, "hold_identity": 1,
+    "retain_distinct": 66,
+    "deprecate_replace": 25,
+    "hold_identity": 2,
 }
-assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in decisions)
-assert len(active) == 86
-assert Counter(row["status"] for row in active) == {
-    "approved-retain-distinct": 85,
-    "approved-identity-hold": 1,
-}
-assert next(row for row in active if row["collision_key"] == "cotton seed")["status"] == "approved-identity-hold"
+assert Counter(row["status"] for row in decisions) == {"approved": 91, "hold": 2}
+assert all(row["reviewer"] == "Pete Steward" and row["review_date"] for row in decisions)
 
-replacement_pairs = {(row["deprecated_id"], row["replacement_id"]) for row in deprecations}
-assert {
-    ("AOM_000338", "AOM_000350"), ("AOM_000339", "AOM_000351"),
-    ("AOM_000340", "AOM_000352"), ("AOM_000341", "AOM_000353"),
-    ("AOM_000342", "AOM_000354"), ("AOM_000949", "AOM_000935"),
-} <= replacement_pairs
-signals = {(row["scope"], row["quality_signal"]): int(row["count"]) for row in summary}
-assert signals[("all AOM", "normalized preferred-label collisions")] == 86
-assert signals[("all AOM", "unresolved preferred-label collisions")] == 0
+decisions_by_label = {}
+for decision in decisions:
+    label = normalize_label(decision["collision_key"])
+    assert label not in decisions_by_label
+    decisions_by_label[label] = decision
+assert set(decisions_by_label) == {row["normalized_label"] for row in cohort}
+for group in cohort:
+    decision = decisions_by_label[group["normalized_label"]]
+    assert set(decision["concept_ids"].split(";")) == set(group["concept_ids"].split(";"))
+    expected_status = "hold" if decision["decision"] == "hold_identity" else "approved"
+    assert group["review_status"] == expected_status
+
+holds = {
+    row["collision_key"] for row in decisions if row["decision"] == "hold_identity"
+}
+assert holds == {"cotton seed", "extrusion"}
+
+replacement_pairs = {
+    (row["deprecated_id"], row["replacement_id"]) for row in deprecations
+}
+for decision in decisions:
+    if decision["decision"] != "deprecate_replace":
+        continue
+    concept_ids = set(decision["concept_ids"].split(";"))
+    assert any(
+        deprecated_id in concept_ids and replacement_id == decision["retained_id"]
+        for deprecated_id, replacement_id in replacement_pairs
+    )
+
+assert summary["reviewed_groups"] == 93
+assert summary["approved_groups"] == 91
+assert summary["held_groups"] == 2
+assert summary["unreviewed_groups"] == 0
+assert summary["status"] == "governed_with_holds"
+
 manifest = json.loads((ROOT / "dist/livestock-staging/manifest.json").read_text())
-assert manifest["counts"]["approved_ontology_collision_decisions"] == 92
-print("Ontology collision governance validation passed: 92 decisions; 0 unresolved legacy groups")
+assert manifest["counts"]["approved_ontology_collision_decisions"] == len(decisions)
+print("Ontology collision governance validation passed: 93 decisions; 0 unreviewed groups")

@@ -4,6 +4,7 @@
 import csv
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,6 +25,16 @@ remediations = rows_from_data = list(csv.DictReader(
         encoding="utf-8", newline=""
     )
 ))
+decisions = list(csv.DictReader(
+    (ROOT / "data/livestock-staging/approved_ontology_collision_decisions.csv").open(
+        encoding="utf-8", newline=""
+    )
+))
+
+
+def normalize_label(value):
+    value = unicodedata.normalize("NFKC", value).casefold().strip()
+    return re.sub(r"\s+", " ", value)
 
 assert len(cohort) == summary["duplicate_preferred_label_groups"]
 assert len(detail) == summary["concepts_in_duplicate_groups"]
@@ -32,6 +43,15 @@ assert len({row["collision_id"] for row in cohort}) == len(cohort)
 assert {row["collision_id"] for row in detail} == {row["collision_id"] for row in cohort}
 assert all(row["review_status"] in {"proposed", "approved", "hold"} for row in cohort)
 assert all(row["recommended_action"] for row in cohort)
+assert summary["reviewed_groups"] == len(cohort)
+assert summary["approved_groups"] == 91
+assert summary["held_groups"] == 2
+assert summary["unreviewed_groups"] == 0
+assert summary["status"] == "governed_with_holds"
+assert all(
+    row["reviewer"] and row["review_date"]
+    for row in cohort if row["review_status"] in {"approved", "hold"}
+)
 assert summary["duplicate_preferred_label_groups"] <= BASELINE["maximum_duplicate_preferred_label_groups"]
 assert summary["concepts_in_duplicate_groups"] <= BASELINE["maximum_concepts_in_duplicate_groups"]
 assert summary["excess_identifiers"] <= BASELINE["maximum_excess_identifiers"]
@@ -41,11 +61,25 @@ assert {row["action"] for row in remediations} == {
     "reuse_existing", "rename_distinct", "hold_ambiguous"
 }
 assert all(row["status"] in {"approved", "hold"} for row in remediations)
-assert (
-    summary["reviewed_groups"]
-    + summary["applied_reuse_remediations"]
-    + summary["applied_rename_remediations"]
-) == 16
+
+decision_by_label = {}
+for decision in decisions:
+    key = normalize_label(decision["collision_key"])
+    assert key not in decision_by_label
+    decision_by_label[key] = decision
+assert len(decision_by_label) == len(cohort)
+for row in cohort:
+    decision = decision_by_label[row["normalized_label"]]
+    assert set(decision["concept_ids"].split(";")) == set(row["concept_ids"].split(";"))
+    if not row["generated_ids"]:
+        assert row["recommended_action"] == decision["decision"]
+        assert row["candidate_canonical_id"] == decision["retained_id"]
+    expected_status = (
+        "hold"
+        if decision["status"] == "hold" or decision["decision"].startswith("hold_")
+        else "approved"
+    )
+    assert row["review_status"] == expected_status
 
 if BASELINE["new_identifier_allocation_frozen"]:
     with (ROOT / "data/livestock-staging/livestock_id_registry.csv").open(
