@@ -104,7 +104,8 @@ property_label = {
     "aom:materialIntegrity": "material integrity",
     "aom:materialComponent": "material component",
     "aom:compositionState": "composition state",
-    "aom:ingredientConstituent": "ingredient constituent",
+    "aom:primaryConstituent": "primary chemical constituent",
+    "aom:ingredientConstituent": "legacy ingredient constituent",
 }
 new_concept_ids = {row["concept_id"] for row in new_concepts}
 for concept_id, facets in sorted(by_material.items()):

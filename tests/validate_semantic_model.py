@@ -56,7 +56,7 @@ with (DATA / "approved_feed_material_external_facets.csv").open(encoding="utf-8"
 material_facets += generated_material_facets + hard_tail_material_facets + structural_material_facets
 assert len(value_bindings) == 298
 assert len(facet_value_concepts) == 116
-assert len(component_value_mappings) == 45
+assert len(component_value_mappings) == 46
 assert len(component_decompositions) == 65
 assert len({row["concept_id"] for row in facet_value_concepts}) == 116
 assert len(material_facets) == 2958
@@ -310,9 +310,9 @@ observable_property = URIRef("http://www.w3.org/ns/sosa/ObservableProperty")
 assert len(set(binding_graph.subjects(RDF.type, semantic_binding))) == 13
 assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 418
 for value_class in {
-    "IngredientPartCategory", "IngredientPresentationForm",
-    "IngredientBulkConsistency", "IngredientMoistureCondition", "ProcessingMethod",
-    "ProductRole", "IngredientConstituent", "FeedMaterialComponent", "MaterialIntegrity",
+    "FeedMaterialPartCategory", "FeedPresentationForm",
+    "FeedBulkConsistency", "FeedMoistureCondition", "ProcessingMethod",
+    "ProductRole", "ChemicalConstituent", "FeedMaterialComponent", "MaterialIntegrity",
     "FeedProductType", "CompositionState",
 }:
     assert any(binding_graph.subjects(RDF.type, URIRef("urn:era-aom:schema:" + value_class)))

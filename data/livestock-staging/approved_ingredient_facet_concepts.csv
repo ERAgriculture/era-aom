@@ -1,40 +1,40 @@
 concept_id,preferred_label,facet,target_property,value_class,concept_role,status,reviewer,review_date,evidence
-AOM_101019,Ingredient anatomical parts,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_root,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101020,Ingredient presentation forms,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101019,Feed-material anatomical parts,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
+AOM_101020,Feed presentation forms,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
 AOM_000845,Feed processes,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101022,Ingredient product roles,product_role,aom:productRole,aom:ProductRole,facet_root,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101023,Ingredient constituents,chemical_constituent,aom:ingredientConstituent,aom:IngredientConstituent,facet_root,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101024,Bulb,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101025,Cladode,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101026,Cob,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101027,Corm,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101028,Fruit,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101029,Germ,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101030,Hull,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101031,Husk,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101032,Kernel,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101033,Leaf,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101034,Peel,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101035,Pod,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101036,Pseudostem,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101037,Root,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101038,Seed,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101039,Sheath,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101040,Shell component,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101041,Sprout,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101042,Stalk,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101043,Tuber,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101044,Viscera,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101045,Twig,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101046,Bark,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101047,Stem,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101048,Plant top,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101049,Block form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101050,Lick form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101051,Powder form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101052,Cake form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101053,Flake form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101054,Dried moisture condition,moisture_condition,aom:moistureCondition,aom:IngredientMoistureCondition,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101022,Feed-material product roles,product_role,aom:productRole,aom:ProductRole,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
+AOM_101023,Primary chemical constituents,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
+AOM_101024,Bulb,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101025,Cladode,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101026,Cob,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101027,Corm,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101028,Fruit,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101029,Germ,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101030,Hull,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101031,Husk,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101032,Kernel,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101033,Leaf,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101034,Peel,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101035,Pod,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101036,Pseudostem,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101037,Root,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101038,Seed,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101039,Sheath,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101040,Shell component,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101041,Sprout,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101042,Stalk,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101043,Tuber,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101044,Viscera,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101045,Twig,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101046,Bark,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101047,Stem,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101048,Plant top,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101049,Block form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101050,Lick form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101051,Powder form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101052,Cake form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101053,Flake form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101054,Dried moisture condition,moisture_condition,aom:moistureCondition,aom:FeedMoistureCondition,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
 AOM_101055,Discard role,product_role,aom:productRole,aom:ProductRole,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101056,Market-waste role,product_role,aom:productRole,aom:ProductRole,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101057,Offal role,product_role,aom:productRole,aom:ProductRole,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
@@ -44,24 +44,24 @@ AOM_101060,Milling-shorts role,product_role,aom:productRole,aom:ProductRole,face
 AOM_101061,Waste role,product_role,aom:productRole,aom:ProductRole,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101062,By-product role,product_role,aom:productRole,aom:ProductRole,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101063,Crop-residue role,product_role,aom:productRole,aom:ProductRole,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101064,Gluten constituent,chemical_constituent,aom:ingredientConstituent,aom:IngredientConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101065,Starch constituent,chemical_constituent,aom:ingredientConstituent,aom:IngredientConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101066,Fat constituent,chemical_constituent,aom:ingredientConstituent,aom:IngredientConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101067,Essential-oil constituent,chemical_constituent,aom:ingredientConstituent,aom:IngredientConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101068,Brewing,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101064,Gluten constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101065,Starch constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101066,Fat constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101067,Essential-oil constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101068,Brewhouse processing,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
 AOM_101069,Defatting,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101070,Pressing,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_000843,Drying,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101072,Extraction,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101073,Threshing,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101074,Grain,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101075,Mixed presentation,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101076,Whole form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101077,Liquid consistency,bulk_consistency,aom:bulkConsistency,aom:IngredientBulkConsistency,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101078,Pulp consistency,bulk_consistency,aom:bulkConsistency,aom:IngredientBulkConsistency,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101074,Grain,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101075,Mixed presentation,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101076,Intact presentation,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
+AOM_101077,Liquid consistency,bulk_consistency,aom:bulkConsistency,aom:FeedBulkConsistency,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101078,Pulp consistency,bulk_consistency,aom:bulkConsistency,aom:FeedBulkConsistency,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
 AOM_101079,Binder role,product_role,aom:productRole,aom:ProductRole,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101080,Ash constituent,chemical_constituent,aom:ingredientConstituent,aom:IngredientConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101081,Oil constituent,chemical_constituent,aom:ingredientConstituent,aom:IngredientConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101080,Ash constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101081,Oil constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_000838,Flour milling,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
 AOM_101083,Hydrolysis,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101084,Sugar processing,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
@@ -80,38 +80,38 @@ AOM_101096,Heating,processing_method,aom:processingMethod,aom:ProcessingMethod,f
 AOM_003202,Molasses treatment,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_000832,Roasting,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_101099,Soaking,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
-AOM_101100,Sprouting,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
+AOM_003098,Sprouting,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_100848,Urea treatment,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_000844,Wilting,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
-AOM_101103,Blood component,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
+AOM_101103,Blood component,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_101104,Bran,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
-AOM_101105,Stover,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
-AOM_101106,Straw,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
-AOM_101107,Vine,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
-AOM_101108,Pellet form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101109,Material integrity values,material_integrity,aom:materialIntegrity,aom:MaterialIntegrity,facet_root,approved,Pete Steward,2026-08-05,docs/decisions/0018-whole-grain-integrity.md
-AOM_101110,Whole grain,material_integrity,aom:materialIntegrity,aom:MaterialIntegrity,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0018-whole-grain-integrity.md
+AOM_101105,Stover,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
+AOM_101106,Straw,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
+AOM_101107,Vine,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
+AOM_101108,Pellet form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101109,Material integrity,material_integrity,aom:materialIntegrity,aom:MaterialIntegrity,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
+AOM_101110,Whole-grain integrity,material_integrity,aom:materialIntegrity,aom:MaterialIntegrity,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
 AOM_101111,Feed product types,feed_product_type,aom:feedProductType,aom:FeedProductType,facet_root,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
 AOM_101112,Processing pulp,feed_product_type,aom:feedProductType,aom:FeedProductType,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
 AOM_101113,Hay product type,feed_product_type,aom:feedProductType,aom:FeedProductType,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
 AOM_101114,Compound feed,feed_product_type,aom:feedProductType,aom:FeedProductType,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
 AOM_101115,Composition states,composition_state,aom:compositionState,aom:CompositionState,facet_root,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
 AOM_101116,Whole-milk composition,composition_state,aom:compositionState,aom:CompositionState,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
-AOM_101117,Flower,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
-AOM_101118,Slurry consistency,bulk_consistency,aom:bulkConsistency,aom:IngredientBulkConsistency,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101119,Steeping,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
-AOM_101120,Protein constituent,chemical_constituent,aom:ingredientConstituent,aom:IngredientConstituent,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
-AOM_101121,Rhizome,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
-AOM_101122,Liver,anatomical_part,aom:ingredientPart,aom:IngredientPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
+AOM_101117,Flower,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
+AOM_101118,Slurry consistency,bulk_consistency,aom:bulkConsistency,aom:FeedBulkConsistency,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101120,Protein constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
+AOM_101121,Rhizome,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
+AOM_101122,Liver,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
 AOM_101123,Stacking,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
 AOM_101124,Distillation,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
-AOM_101125,Comminuted particle form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md
-AOM_101126,Meal form,presentation_form,aom:presentationForm,aom:IngredientPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md
+AOM_101125,Comminuted particle form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md
+AOM_101126,Meal form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md
 AOM_101128,Rendering,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md
 AOM_101129,Feed particle-size reduction processes,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101130,Feed separation and fractionation processes,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101130,Feed separation processes,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
 AOM_101131,Feed shaping and agglomeration processes,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101132,Ingredient bulk consistencies,bulk_consistency,aom:bulkConsistency,aom:IngredientBulkConsistency,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101133,Ingredient moisture conditions,moisture_condition,aom:moistureCondition,aom:IngredientMoistureCondition,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
+AOM_101132,Feed bulk consistencies,bulk_consistency,aom:bulkConsistency,aom:FeedBulkConsistency,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
+AOM_101133,Feed moisture conditions,moisture_condition,aom:moistureCondition,aom:FeedMoistureCondition,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
+AOM_101134,Full-fat composition,composition_state,aom:compositionState,aom:CompositionState,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
 AOM_000831,Ensiling,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,data/livestock-staging/definitions.csv
-AOM_001510,Fresh moisture condition,moisture_condition,aom:moistureCondition,aom:IngredientMoistureCondition,facet_value,approved,Pete Steward,2026-08-05,data/livestock-staging/definitions.csv
+AOM_001510,Fresh moisture condition,moisture_condition,aom:moistureCondition,aom:FeedMoistureCondition,facet_value,approved,Pete Steward,2026-08-05,data/livestock-staging/definitions.csv

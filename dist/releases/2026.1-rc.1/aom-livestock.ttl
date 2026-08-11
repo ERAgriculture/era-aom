@@ -4328,7 +4328,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000538> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000540> ;
-    skos:definition "A feed material with governed source identity “bone” and characteristics: ingredient constituent — Ash constituent; product role — By-product role."@en ;
+    skos:definition "A feed material with governed source identity “bone” and characteristics: primary chemical constituent — Ash constituent; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000538" ;
     skos:prefLabel "Bone Ash"@en ;
@@ -4373,7 +4373,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Labrus niloticus"@en,
         "Victoria perch"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000549> ;
-    skos:definition "A feed material with governed source identity “Nile Perch Fish” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “Nile Perch Fish” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000547" ;
     skos:prefLabel "Nile Perch Fish Oil"@en ;
@@ -4646,7 +4646,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000611> a skos:Concept ;
     skos:altLabel "Soybean Oil Cake Full Fat"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100852> ;
-    skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient constituent — Fat constituent; presentation form — Cake form; processing method — Pressing; product role — By-product role."@en ;
+    skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Full-fat composition; presentation form — Cake form; processing method — Pressing; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000611" ;
     skos:prefLabel "Soybean Full Fat Cake"@en ;
@@ -4804,7 +4804,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000651> a skos:Concept ;
     skos:altLabel "Corn Oil"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
-    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “maize” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000651" ;
     skos:prefLabel "Maize Oil"@en ;
@@ -4818,7 +4818,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Whole Rice Meal"@en,
         "Whole Rice Milled"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100927> ;
-    skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Grain; material integrity — Whole grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+    skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000656" ;
     skos:prefLabel "Ground whole-grain rice"@en ;
@@ -4844,7 +4844,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000660> a skos:Concept ;
     skos:altLabel "Wheat Whole Ground"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001319> ;
-    skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Grain; material integrity — Whole grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+    skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000660" ;
     skos:prefLabel "Ground whole-grain wheat"@en ;
@@ -4897,7 +4897,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000671> a skos:Concept ;
     skos:altLabel "Palmae Oil"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100934> ;
-    skos:definition "A feed material with governed source identity “palm” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “palm” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000671" ;
     skos:prefLabel "Palm Oil"@en ;
@@ -4910,7 +4910,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000674> a skos:Concept ;
     skos:altLabel "Common Sunflower Oil"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000673> ;
-    skos:definition "A feed material with governed source identity “sunflower” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “sunflower” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000674" ;
     skos:prefLabel "Sunflower Oil"@en ;
@@ -4936,7 +4936,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000676> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000677> ;
-    skos:definition "A feed material with governed source identity “vegetable” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “vegetable” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000676" ;
     skos:prefLabel "Vegetable Oil"@en ;
@@ -4949,7 +4949,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Tapioca Starch"@en,
         "Yuca Starch"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100936> ;
-    skos:definition "A feed material with governed source identity “cassava” and characteristics: ingredient constituent — Starch constituent."@en ;
+    skos:definition "A feed material with governed source identity “cassava” and characteristics: primary chemical constituent — Starch constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000678" ;
     skos:prefLabel "Cassava Starch"@en ;
@@ -5394,7 +5394,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000798> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A feed material with governed source identity “beef survival” and characteristics: feed product type — Compound feed."@en ;
+    skos:definition "A formulated feed represented in AOM as “Beef Survival Meal”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000798" ;
     skos:prefLabel "Beef Survival Meal"@en ;
@@ -5404,7 +5404,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_000799> a skos:Concept ;
     skos:altLabel "Industrial Commercial Feed"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "An AOM controlled category for “Commercial Feed” within “Preformulated Feed”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
+    skos:definition "A formulated feed represented in AOM as “Commercial Feed”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000799" ;
     skos:prefLabel "Commercial Feed"@en ;
@@ -5413,7 +5413,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000801> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A feed material with governed source identity “dairy” and characteristics: feed product type — Compound feed."@en ;
+    skos:definition "A formulated feed represented in AOM as “Dairy Meal”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000801" ;
     skos:prefLabel "Dairy Meal"@en ;
@@ -5422,7 +5422,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000803> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000800> ;
-    skos:definition "A preformulated feed with governed workbook identity “Layer Concentrate”, classified within “Concentrate”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Layer Concentrate”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000803" ;
     skos:prefLabel "Layer Concentrate"@en ;
@@ -5431,7 +5431,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000804> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Total Mixed Ration”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Total Mixed Ration”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000804" ;
     skos:prefLabel "Total Mixed Ration"@en ;
@@ -5440,7 +5440,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000805> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000800> ;
-    skos:definition "A preformulated feed with governed workbook identity “Imported Concentrate”, classified within “Concentrate”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Imported Concentrate”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000805" ;
     skos:prefLabel "Imported Concentrate"@en ;
@@ -7532,7 +7532,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001193> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_003072> ;
-    skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “groundnut” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001193" ;
     skos:prefLabel "Groundnut Oil"@en ;
@@ -7961,7 +7961,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001289> a skos:Concept ;
     skos:altLabel "Corn Starch"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
-    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient constituent — Starch constituent."@en ;
+    skos:definition "A feed material with governed source identity “maize” and characteristics: primary chemical constituent — Starch constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001289" ;
     skos:prefLabel "Maize Starch"@en ;
@@ -8098,7 +8098,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001308> a skos:Concept ;
     skos:altLabel "Rapeseed Oil"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001309> ;
-    skos:definition "A feed material with governed source identity “canola” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “canola” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001308" ;
     skos:prefLabel "Canola Oil"@en ;
@@ -8177,7 +8177,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
         "Maize Whole Meal"@en,
         "MaizeWhole Milled"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001313> ;
-    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; material integrity — Whole grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001324" ;
     skos:prefLabel "Ground whole-grain maize"@en ;
@@ -8288,7 +8288,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001344> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100941> ;
-    skos:definition "A feed material with governed source identity “Rosemary” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “Rosemary” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001344" ;
     skos:prefLabel "Rosemary Oil"@en ;
@@ -9144,7 +9144,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001492> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000800> ;
-    skos:definition "A preformulated feed with governed workbook identity “Protein-Mineral Concentrate”, classified within “Concentrate”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Protein-Mineral Concentrate”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001492" ;
     skos:prefLabel "Protein-Mineral Concentrate"@en ;
@@ -9153,7 +9153,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001493> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000800> ;
-    skos:definition "A preformulated feed with governed workbook identity “Growers Concentrate”, classified within “Concentrate”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Growers Concentrate”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001493" ;
     skos:prefLabel "Growers Concentrate"@en ;
@@ -9162,7 +9162,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001494> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Finisher Diet”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Finisher Diet”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001494" ;
     skos:prefLabel "Finisher Diet"@en ;
@@ -9171,7 +9171,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001495> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Growers Diet”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Growers Diet”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001495" ;
     skos:prefLabel "Growers Diet"@en ;
@@ -9180,7 +9180,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001496> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Starter Diet”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Starter Diet”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001496" ;
     skos:prefLabel "Starter Diet"@en ;
@@ -9188,8 +9188,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001497> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "An AOM feed material with governed operational source identity “Megalac”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_006334> ;
+    skos:definition "A named rumen-protected fat supplement represented as a feed material; formulation use and feeding rate do not make it a complete diet."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001497" ;
     skos:prefLabel "Megalac"@en ;
@@ -9198,7 +9198,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001498> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A feed material with governed source identity “sheep” and characteristics: feed product type — Compound feed."@en ;
+    skos:definition "A formulated feed represented in AOM as “Sheep Meal”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001498" ;
     skos:prefLabel "Sheep Meal"@en ;
@@ -9206,8 +9206,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001500> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "An AOM feed material with governed operational source identity “ACTIPAL HP 1”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000781> ;
+    skos:definition "A named feed-related product represented in the source workbook as “ACTIPAL HP 1”; available evidence does not establish whether it is a feed material, formulation, or additive."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001500" ;
     skos:prefLabel "ACTIPAL HP 1"@en ;
@@ -9216,7 +9216,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001501> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "An AOM feed material with governed operational source identity “AquaNutro Abalone Grower”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “AquaNutro Abalone Grower”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001501" ;
     skos:prefLabel "AquaNutro Abalone Grower"@en ;
@@ -9225,7 +9225,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001502> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Swine Mix”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Swine Mix”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001502" ;
     skos:prefLabel "Swine Mix"@en ;
@@ -9296,7 +9296,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001510> a skos:Concept,
-        aom:IngredientMoistureCondition ;
+        aom:FeedMoistureCondition ;
     skos:altLabel "Fresh"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101133> ;
     skos:definition "A qualitative condition indicating material presented as fresh rather than governed as moisture-removed; exact moisture content remains unspecified."@en ;
@@ -9613,8 +9613,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001579> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "An AOM feed material with governed operational source identity “Elancoban”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_004433> ;
+    skos:definition "A feed additive containing monensin sodium and used for coccidiosis control under authorized conditions."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001579" ;
     skos:prefLabel "Elancoban"@en ;
@@ -9651,7 +9651,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001586> a skos:Concept ;
     skos:altLabel "Soybean Oil Cold Pressed"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001582> ;
-    skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “soybean” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001586" ;
     skos:prefLabel "Soybean Oil"@en ;
@@ -11529,7 +11529,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001820> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100938> ;
-    skos:definition "A feed material with governed source identity “Potato” and characteristics: ingredient constituent — Starch constituent."@en ;
+    skos:definition "A feed material with governed source identity “Potato” and characteristics: primary chemical constituent — Starch constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001820" ;
     skos:prefLabel "Potato Starch"@en ;
@@ -11941,7 +11941,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001880> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001879> ;
-    skos:definition "A feed material with governed source identity “Cod” and characteristics: ingredient constituent — Oil constituent; ingredient part — Liver."@en ;
+    skos:definition "A feed material with governed source identity “Cod” and characteristics: ingredient part — Liver; primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001880" ;
     skos:prefLabel "Cod Liver Oil"@en ;
@@ -13726,7 +13726,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002097> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Fish Mix”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Fish Mix”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002097" ;
     skos:prefLabel "Fish Mix"@en ;
@@ -13735,7 +13735,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002098> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Poultry Feed”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Poultry Feed”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002098" ;
     skos:prefLabel "Poultry Feed"@en ;
@@ -13836,7 +13836,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002109> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A feed material with governed source identity “layer s” and characteristics: feed product type — Compound feed."@en ;
+    skos:definition "A formulated feed represented in AOM as “Layer's Meal”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002109" ;
     skos:prefLabel "Layer's Meal"@en ;
@@ -13845,7 +13845,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002110> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Chick Mash”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Chick Mash”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_002110" ;
     skos:prefLabel "Chick Mash"@en ;
@@ -14971,12 +14971,14 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_003098> a skos:Concept ;
+<https://w3id.org/era-aom/livestock/AOM_003098> a skos:Concept,
+        aom:ProcessingMethod ;
+    skos:altLabel "Sprouted"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100990> ;
-    skos:definition "A process in which grains or seeds are soaked and germinated under controlled moisture and temperature conditions to initiate sprouting. This enhances enzymatic activity, reduces anti-nutritional factors, and increases the bioavailability of certain nutrients, making the feed more digestible and nutritionally beneficial for livestock."@en ;
+    skos:definition "A process in which grains or seeds are moistened and germinated under controlled conditions to initiate sprouting."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003098" ;
-    skos:prefLabel "Sprouted"@en ;
+    skos:prefLabel "Sprouting"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -15072,7 +15074,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_003297> a skos:Concept ;
     skos:altLabel "Corn Steep Liquor"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100851> ;
-    skos:definition "A feed material with governed source identity “Maize” and characteristics: bulk consistency — Liquid consistency; processing method — Steeping; product role — By-product role."@en ;
+    skos:definition "A feed material with governed source identity “Maize” and characteristics: bulk consistency — Liquid consistency; processing method — Soaking; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003297" ;
     skos:prefLabel "Maize Steep Liquor"@en ;
@@ -15092,7 +15094,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003495> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Growers Premix”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Growers Premix”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003495" ;
     skos:prefLabel "Growers Premix"@en ;
@@ -15245,7 +15247,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003697> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100968> ;
-    skos:definition "A feed material with governed source identity “Mucuna pruriens” and characteristics: ingredient constituent — Protein constituent; processing method — Extraction."@en ;
+    skos:definition "A feed material with governed source identity “Mucuna pruriens” and characteristics: primary chemical constituent — Protein constituent; processing method — Extraction."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003697" ;
     skos:prefLabel "Mucuna pruriens Protein Isolate"@en ;
@@ -15255,7 +15257,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003700> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100933> ;
-    skos:definition "A feed material with governed source identity “Coconut” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “Coconut” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003700" ;
     skos:prefLabel "Coconut Oil"@en ;
@@ -15323,7 +15325,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003870> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A feed material with governed source identity “rabbit” and characteristics: presentation form — Pellet form."@en ;
+    skos:definition "A formulated feed represented in AOM as “Rabbit Pellet”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003870" ;
     skos:prefLabel "Rabbit Pellet"@en ;
@@ -15608,7 +15610,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003991> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A preformulated feed with governed workbook identity “Ruminant Premix”, classified within “Preformulated Feed”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A formulated feed represented in AOM as “Ruminant Premix”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003991" ;
     skos:prefLabel "Ruminant Premix"@en ;
@@ -15626,7 +15628,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003995> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "A feed material with governed source identity “lamb and ewe” and characteristics: presentation form — Pellet form."@en ;
+    skos:definition "A formulated feed represented in AOM as “Lamb and Ewe Pellet”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_003995" ;
     skos:prefLabel "Lamb and Ewe Pellet"@en ;
@@ -15716,15 +15718,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Lentil Screening"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3864>,
         <https://www.feedipedia.org/node/12249> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_004433> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000736> ;
-    skos:definition "A feed-supplement ingredient with governed workbook identity “Anti-coccidia”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_004433" ;
-    skos:prefLabel "Anti-coccidia"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -16372,7 +16365,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_006072> a skos:Concept ;
     dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_001326> ;
     skos:altLabel "Maize Whole Silage"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_001313> ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_006072" ;
     skos:prefLabel "Maize Whole Ensiled"@en ;
@@ -17158,7 +17151,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_006154> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001870> ;
-    skos:definition "A feed material with governed source identity “prime gluten 60” and characteristics: presentation form — Comminuted particle form; processing method — Grinding."@en ;
+    skos:definition "Prime Gluten 60 feed material with governed grinding process and comminuted-particle presentation; moisture condition and particle-size threshold are unspecified."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_006154" ;
     skos:prefLabel "Prime Gluten 60 Ground"@en ;
@@ -17556,7 +17549,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_006200> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100943> ;
-    skos:definition "A feed material with governed source identity “Garlic” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “Garlic” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_006200" ;
     skos:prefLabel "Garlic Oil"@en ;
@@ -18701,15 +18694,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_006334> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000736> ;
-    skos:definition "A feed-supplement ingredient with governed workbook identity “Protected Fat”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_006334" ;
-    skos:prefLabel "Protected Fat"@en ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_006335> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000577> ;
     skos:definition "A feed material with governed source identity “rice offal” and characteristics: moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
@@ -19299,7 +19283,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101024> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19309,7 +19293,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101025> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19319,7 +19303,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101026> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19329,7 +19313,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101027> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19339,7 +19323,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101028> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19349,7 +19333,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101029> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19359,7 +19343,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101030> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19369,7 +19353,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101031> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19379,7 +19363,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101032> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19389,7 +19373,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101033> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19399,7 +19383,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101034> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19409,7 +19393,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101035> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19419,7 +19403,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101036> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19429,7 +19413,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101037> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19439,7 +19423,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101038> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19449,7 +19433,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101039> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19459,7 +19443,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101040> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19469,7 +19453,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101041> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19479,7 +19463,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101042> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19489,7 +19473,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101043> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19499,7 +19483,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101044> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19509,7 +19493,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101045> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19519,7 +19503,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101046> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19529,7 +19513,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101047> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19539,7 +19523,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101048> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19549,7 +19533,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101049> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101020> ;
     skos:definition "Governed presentation form value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19559,7 +19543,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101050> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101020> ;
     skos:definition "Governed presentation form value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19569,7 +19553,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101051> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101125> ;
     skos:definition "Governed presentation form value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19579,7 +19563,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101052> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101020> ;
     skos:definition "Governed presentation form value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19589,7 +19573,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101053> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101020> ;
     skos:definition "Governed presentation form value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19599,7 +19583,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101054> a skos:Concept,
-        aom:IngredientMoistureCondition ;
+        aom:FeedMoistureCondition ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101133> ;
     skos:definition "Moisture-reduced condition supported by an explicit drying process or material-specific evidence; no presentation form is implied."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19689,7 +19673,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101064> a skos:Concept,
-        aom:IngredientConstituent ;
+        aom:ChemicalConstituent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
     skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19699,7 +19683,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101065> a skos:Concept,
-        aom:IngredientConstituent ;
+        aom:ChemicalConstituent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
     skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19709,7 +19693,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101066> a skos:Concept,
-        aom:IngredientConstituent ;
+        aom:ChemicalConstituent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
     skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19719,7 +19703,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101067> a skos:Concept,
-        aom:IngredientConstituent ;
+        aom:ChemicalConstituent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
     skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19728,19 +19712,9 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101068> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
-    skos:definition "Governed processing method value used for ingredient-component semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101068" ;
-    skos:prefLabel "Brewing"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101069> a skos:Concept,
         aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101130> ;
     skos:definition "Governed processing method value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101069" ;
@@ -19750,7 +19724,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_101072> a skos:Concept,
         aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101130> ;
     skos:definition "Governed processing method value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101072" ;
@@ -19759,7 +19733,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101074> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19769,7 +19743,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101075> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101020> ;
     skos:definition "Governed presentation form value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19779,17 +19753,18 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101076> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
+    skos:altLabel "Whole form"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101020> ;
-    skos:definition "Governed presentation form value used for ingredient-component semantics."@en ;
+    skos:definition "Presentation in which a feed item remains visibly intact; whole-crop or whole-grain integrity is not implied."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101076" ;
-    skos:prefLabel "Whole form"@en ;
+    skos:prefLabel "Intact presentation"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101077> a skos:Concept,
-        aom:IngredientBulkConsistency ;
+        aom:FeedBulkConsistency ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101132> ;
     skos:definition "Flowing bulk consistency without a governed requirement for dispersed solid particles."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19799,7 +19774,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101078> a skos:Concept,
-        aom:IngredientBulkConsistency ;
+        aom:FeedBulkConsistency ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101132> ;
     skos:definition "Moist fibrous or cellular bulk consistency, commonly semisolid; source and production process remain independently represented."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19819,7 +19794,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101080> a skos:Concept,
-        aom:IngredientConstituent ;
+        aom:ChemicalConstituent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
     skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19829,7 +19804,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101081> a skos:Concept,
-        aom:IngredientConstituent ;
+        aom:ChemicalConstituent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
     skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19870,7 +19845,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_101088> a skos:Concept,
         aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101096> ;
     skos:definition "Governed processing method value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101088" ;
@@ -19878,38 +19853,19 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101096> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101096" ;
-    skos:prefLabel "Heating"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101099> a skos:Concept,
         aom:ProcessingMethod ;
+    skos:altLabel "Steeping"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
+    skos:definition "Moistening and softening feed materials, also called steeping, to facilitate water uptake, coat removal, cooking, germination, or reduction of some antinutritional factors."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101099" ;
     skos:prefLabel "Soaking"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101100> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101100" ;
-    skos:prefLabel "Sprouting"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101103> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19929,7 +19885,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101105> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19939,7 +19895,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101106> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19949,7 +19905,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101107> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19959,7 +19915,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101108> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101020> ;
     skos:definition "Governed presentation form value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -19970,11 +19926,12 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_101110> a skos:Concept,
         aom:MaterialIntegrity ;
+    skos:altLabel "Whole grain"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101109> ;
-    skos:definition "Governed material integrity value used for feed-material semantics."@en ;
+    skos:definition "Retention of characteristic anatomical fractions of a cereal grain independently of particle-size reduction."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101110" ;
-    skos:prefLabel "Whole grain"@en ;
+    skos:prefLabel "Whole-grain integrity"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20019,7 +19976,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101117> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -20029,7 +19986,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101118> a skos:Concept,
-        aom:IngredientBulkConsistency ;
+        aom:FeedBulkConsistency ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101132> ;
     skos:definition "Bulk consistency in which solid particles are dispersed in a liquid continuous phase; not equivalent to an unqualified liquid."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -20038,20 +19995,10 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101119> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101119" ;
-    skos:prefLabel "Steeping"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101120> a skos:Concept,
-        aom:IngredientConstituent ;
+        aom:ChemicalConstituent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
-    skos:definition "Governed chemical constituent value used for feed-material semantics."@en ;
+    skos:definition "Protein represented as a primary chemical constituent of a feed material, not as an ingredient component of a formulated feed."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101120" ;
     skos:prefLabel "Protein constituent"@en ;
@@ -20059,7 +20006,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101121> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -20069,7 +20016,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101122> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101019> ;
     skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -20088,18 +20035,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101124> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
-    skos:definition "Governed processing method value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101124" ;
-    skos:prefLabel "Distillation"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101126> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101125> ;
     skos:definition "Comminuted feed presentation described as meal; drying and particle-size threshold remain unspecified unless separately governed."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -20117,6 +20054,16 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:notation "AOM_101127" ;
     skos:prefLabel "Poultry by-product meal"@en ;
     skos:related <https://w3id.org/era-aom/livestock/AOM_000024> ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101134> a skos:Concept,
+        aom:CompositionState ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101115> ;
+    skos:definition "Composition state indicating that native fat has not been intentionally removed; it does not assert a measured fat concentration."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101134" ;
+    skos:prefLabel "Full-fat composition"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20537,7 +20484,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_000672> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100934> ;
-    skos:definition "A feed material with governed source identity “palm” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “palm” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001961> ;
     skos:notation "AOM_000672" ;
@@ -21391,7 +21338,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_001255> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_004255> ;
-    skos:definition "A feed material with governed source identity “Flaxseed” and characteristics: ingredient constituent — Oil constituent; product role — By-product role."@en ;
+    skos:definition "A feed material with governed source identity “Flaxseed” and characteristics: primary chemical constituent — Oil constituent; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_006325> ;
     skos:notation "AOM_001255" ;
@@ -21537,9 +21484,23 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_001313> a skos:Concept ;
+    skos:altLabel "Corn Whole"@en,
+        "Maize Whole"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
+    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_001324> ;
+    skos:notation "AOM_001313" ;
+    skos:prefLabel "Whole-grain maize"@en ;
+    skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577>,
+        <https://www.feedipedia.org/node/11662> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_001317> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001582> ;
-    skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient constituent — Fat constituent."@en ;
+    skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Full-fat composition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_002033> ;
     skos:notation "AOM_001317" ;
@@ -22052,16 +22013,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_001571> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000736> ;
-    skos:definition "A feed-supplement ingredient with governed workbook identity “Protein”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_001572> ;
-    skos:notation "AOM_001571" ;
-    skos:prefLabel "Protein"@en ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_001573> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000734> ;
     skos:definition "A forage-plant feed material with governed source identity “catha edulis”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified at this concept level unless separately asserted."@en ;
@@ -22470,8 +22421,8 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_001870> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "An AOM feed material with governed operational source identity “Prime Gluten 60”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_001571> ;
+    skos:definition "A named protein feed material represented as “Prime Gluten 60”; detailed composition and manufacturing process are unspecified."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_006154> ;
     skos:notation "AOM_001870" ;
@@ -22558,7 +22509,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 <https://w3id.org/era-aom/livestock/AOM_001930> a skos:Concept ;
     skos:altLabel "Trout Oil Silage"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001115> ;
-    skos:definition "A feed material with governed source identity “Trout” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “Trout” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_002245> ;
     skos:notation "AOM_001930" ;
@@ -22939,7 +22890,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_002241> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001927> ;
-    skos:definition "A feed material with governed source identity “Rainbow Trout” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “Rainbow Trout” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_002242> ;
     skos:notation "AOM_002241" ;
@@ -23558,7 +23509,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
 
 <https://w3id.org/era-aom/livestock/AOM_003978> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100910> ;
-    skos:definition "A feed material with governed source identity “Cassava” and characteristics: ingredient constituent — Starch constituent; product role — Residue role."@en ;
+    skos:definition "A feed material with governed source identity “Cassava” and characteristics: primary chemical constituent — Starch constituent; product role — Residue role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_006163> ;
     skos:notation "AOM_003978" ;
@@ -23659,6 +23610,16 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:prefLabel "Flaxseed"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4006>,
         <https://www.feedipedia.org/node/12262> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_004433> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000736> ;
+    skos:definition "A feed-supplement ingredient with governed workbook identity “Anti-coccidia”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_001579> ;
+    skos:notation "AOM_004433" ;
+    skos:prefLabel "Anti-coccidia"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -23785,6 +23746,16 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:notation "AOM_006160" ;
     skos:prefLabel "Brewers By-Product"@en ;
     skos:relatedMatch <https://www.feedipedia.org/node/11893> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_006334> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000736> ;
+    skos:definition "A feed-supplement ingredient with governed workbook identity “Protected Fat”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_001497> ;
+    skos:notation "AOM_006334" ;
+    skos:prefLabel "Protected Fat"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -24563,6 +24534,18 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101068> a skos:Concept,
+        aom:ProcessingMethod ;
+    skos:altLabel "Brewing"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000826>,
+        <https://w3id.org/era-aom/livestock/AOM_101130> ;
+    skos:definition "Mashing, lautering, boiling, or related brewhouse operations represented separately from microbial fermentation."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101068" ;
+    skos:prefLabel "Brewhouse processing"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_101070> a skos:Concept,
         aom:ProcessingMethod ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000837>,
@@ -24596,25 +24579,37 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101109> a skos:Concept,
-        aom:MaterialIntegrity ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Governed material integrity vocabulary used for feed-material semantics."@en ;
+<https://w3id.org/era-aom/livestock/AOM_101096> a skos:Concept,
+        aom:ProcessingMethod ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000826> ;
+    skos:definition "Governed processing method value used for feed-material semantics."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101110> ;
-    skos:notation "AOM_101109" ;
-    skos:prefLabel "Material integrity values"@en ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101088> ;
+    skos:notation "AOM_101096" ;
+    skos:prefLabel "Heating"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101115> a skos:Concept,
-        aom:CompositionState ;
+<https://w3id.org/era-aom/livestock/AOM_101109> a skos:Concept,
+        aom:MaterialIntegrity ;
+    skos:altLabel "Material integrity values"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Governed composition state vocabulary used for feed-material semantics."@en ;
+    skos:definition "Compositional or anatomical integrity retained by a feed material independently of particle presentation and processing."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101116> ;
-    skos:notation "AOM_101115" ;
-    skos:prefLabel "Composition states"@en ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101110> ;
+    skos:notation "AOM_101109" ;
+    skos:prefLabel "Material integrity"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101124> a skos:Concept,
+        aom:ProcessingMethod ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000826>,
+        <https://w3id.org/era-aom/livestock/AOM_101130> ;
+    skos:definition "Governed processing method value used for feed-material semantics."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101124" ;
+    skos:prefLabel "Distillation"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -24924,7 +24919,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000544> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000549> ;
-    skos:definition "A feed material with governed source identity “fish” and characteristics: ingredient constituent — Oil constituent."@en ;
+    skos:definition "A feed material with governed source identity “fish” and characteristics: primary chemical constituent — Oil constituent."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_002007>,
         <https://w3id.org/era-aom/livestock/AOM_002008> ;
@@ -26095,21 +26090,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_001313> a skos:Concept ;
-    skos:altLabel "Corn Whole"@en,
-        "Maize Whole"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
-    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; material integrity — Whole grain."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_001324>,
-        <https://w3id.org/era-aom/livestock/AOM_006072> ;
-    skos:notation "AOM_001313" ;
-    skos:prefLabel "Whole-grain maize"@en ;
-    skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577>,
-        <https://www.feedipedia.org/node/11662> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_001314> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000667> ;
     skos:definition "A feed material with governed source identity “pigeon pea” and characteristics: product role — By-product role."@en ;
@@ -26276,6 +26256,17 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:prefLabel "Adansonia digitata"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_69109>,
         <https://www.feedipedia.org/node/11821> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_001571> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000736> ;
+    skos:definition "A feed-supplement ingredient with governed workbook identity “Protein”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_001572>,
+        <https://w3id.org/era-aom/livestock/AOM_001870> ;
+    skos:notation "AOM_001571" ;
+    skos:prefLabel "Protein"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -27409,8 +27400,20 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101115> a skos:Concept,
+        aom:CompositionState ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:definition "Governed composition state vocabulary used for feed-material semantics."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101116>,
+        <https://w3id.org/era-aom/livestock/AOM_101134> ;
+    skos:notation "AOM_101115" ;
+    skos:prefLabel "Composition states"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_101125> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101020> ;
     skos:definition "Particle presentation produced by size reduction; bulk consistency, moisture condition, and particle-size threshold remain unspecified."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
@@ -27434,14 +27437,15 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101133> a skos:Concept,
-        aom:IngredientMoistureCondition ;
+        aom:FeedMoistureCondition ;
+    skos:altLabel "Ingredient moisture conditions"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Qualitative moisture conditions of feed materials, independently of particle presentation and bulk consistency."@en ;
+    skos:definition "Qualitative moisture conditions applicable to feed materials or formulated feeds independently of particle presentation and bulk consistency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001510>,
         <https://w3id.org/era-aom/livestock/AOM_101054> ;
     skos:notation "AOM_101133" ;
-    skos:prefLabel "Ingredient moisture conditions"@en ;
+    skos:prefLabel "Feed moisture conditions"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -28497,15 +28501,16 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101132> a skos:Concept,
-        aom:IngredientBulkConsistency ;
+        aom:FeedBulkConsistency ;
+    skos:altLabel "Ingredient bulk consistencies"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Bulk flow and dispersion consistencies of feed materials, independently of particle presentation and moisture condition."@en ;
+    skos:definition "Bulk flow and dispersion consistencies applicable to feed materials or formulated feeds independently of particle presentation and moisture condition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_101077>,
         <https://w3id.org/era-aom/livestock/AOM_101078>,
         <https://w3id.org/era-aom/livestock/AOM_101118> ;
     skos:notation "AOM_101132" ;
-    skos:prefLabel "Ingredient bulk consistencies"@en ;
+    skos:prefLabel "Feed bulk consistencies"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -28850,7 +28855,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_000800> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001491> ;
-    skos:definition "An AOM controlled category for “Concentrate” within “Preformulated Feed”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
+    skos:definition "A formulated feed represented in AOM as “Concentrate”. Ingredient composition, proportions, target species or stage, completeness, and nutritional properties are unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000803>,
         <https://w3id.org/era-aom/livestock/AOM_000805>,
@@ -28858,21 +28863,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_001493> ;
     skos:notation "AOM_000800" ;
     skos:prefLabel "Concentrate"@en ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000826> a skos:Concept ;
-    skos:altLabel "Feed Heating"@en,
-        "Thermal Process"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
-    skos:definition "A feed process whose mechanism includes controlled heat transfer to material."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000827>,
-        <https://w3id.org/era-aom/livestock/AOM_000832>,
-        <https://w3id.org/era-aom/livestock/AOM_000833>,
-        <https://w3id.org/era-aom/livestock/AOM_101128> ;
-    skos:notation "AOM_000826" ;
-    skos:prefLabel "Thermal feed processes"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -29768,8 +29758,9 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 
 <https://w3id.org/era-aom/livestock/AOM_101022> a skos:Concept,
         aom:ProductRole ;
+    skos:altLabel "Ingredient product roles"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Economic or production roles of feed materials."@en ;
+    skos:definition "Economic or production roles of feed materials, including product and by-product roles."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_101055>,
         <https://w3id.org/era-aom/livestock/AOM_101056>,
@@ -29777,7 +29768,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_101062>,
         <https://w3id.org/era-aom/livestock/AOM_101079> ;
     skos:notation "AOM_101022" ;
-    skos:prefLabel "Ingredient product roles"@en ;
+    skos:prefLabel "Feed-material product roles"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -29808,21 +29799,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_101090> ;
     skos:notation "AOM_101129" ;
     skos:prefLabel "Feed particle-size reduction processes"@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101130> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
-    skos:definition "Feed processes whose governed objective includes separating components or fractions of a source material."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000838>,
-        <https://w3id.org/era-aom/livestock/AOM_003097>,
-        <https://w3id.org/era-aom/livestock/AOM_101070>,
-        <https://w3id.org/era-aom/livestock/AOM_101073>,
-        <https://w3id.org/era-aom/livestock/AOM_101128> ;
-    skos:notation "AOM_101130" ;
-    skos:prefLabel "Feed separation and fractionation processes"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -30180,6 +30156,24 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_000826> a skos:Concept ;
+    skos:altLabel "Feed Heating"@en,
+        "Thermal Process"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
+    skos:definition "A feed process whose mechanism includes controlled heat transfer to material."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000827>,
+        <https://w3id.org/era-aom/livestock/AOM_000832>,
+        <https://w3id.org/era-aom/livestock/AOM_000833>,
+        <https://w3id.org/era-aom/livestock/AOM_101068>,
+        <https://w3id.org/era-aom/livestock/AOM_101096>,
+        <https://w3id.org/era-aom/livestock/AOM_101124>,
+        <https://w3id.org/era-aom/livestock/AOM_101128> ;
+    skos:notation "AOM_000826" ;
+    skos:prefLabel "Thermal feed processes"@en ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_000865> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000848>,
         <https://w3id.org/era-aom/livestock/AOM_000849> ;
@@ -30309,9 +30303,10 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101023> a skos:Concept,
-        aom:IngredientConstituent ;
+        aom:ChemicalConstituent ;
+    skos:altLabel "Ingredient constituents"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Chemical substances or fractions identified in feed materials."@en ;
+    skos:definition "Chemical substances or chemically defined fractions that primarily characterize feed materials; these are not ingredient components of formulated feeds."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_101064>,
         <https://w3id.org/era-aom/livestock/AOM_101065>,
@@ -30321,7 +30316,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_101081>,
         <https://w3id.org/era-aom/livestock/AOM_101120> ;
     skos:notation "AOM_101023" ;
-    skos:prefLabel "Ingredient constituents"@en ;
+    skos:prefLabel "Primary chemical constituents"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -30469,9 +30464,10 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101020> a skos:Concept,
-        aom:IngredientPresentationForm ;
+        aom:FeedPresentationForm ;
+    skos:altLabel "Ingredient presentation forms"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Shapes and particle presentations of feed materials, independently of moisture and bulk consistency."@en ;
+    skos:definition "Shapes and particle presentations applicable to feed materials or formulated feeds independently of moisture and bulk consistency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_101049>,
         <https://w3id.org/era-aom/livestock/AOM_101050>,
@@ -30482,7 +30478,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_101108>,
         <https://w3id.org/era-aom/livestock/AOM_101125> ;
     skos:notation "AOM_101020" ;
-    skos:prefLabel "Ingredient presentation forms"@en ;
+    skos:prefLabel "Feed presentation forms"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -30621,6 +30617,26 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101130> a skos:Concept,
+        aom:ProcessingMethod ;
+    skos:altLabel "Feed separation and fractionation processes"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
+    skos:definition "Feed processes whose objective includes separating components or fractions of a source material."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000838>,
+        <https://w3id.org/era-aom/livestock/AOM_003097>,
+        <https://w3id.org/era-aom/livestock/AOM_101068>,
+        <https://w3id.org/era-aom/livestock/AOM_101069>,
+        <https://w3id.org/era-aom/livestock/AOM_101070>,
+        <https://w3id.org/era-aom/livestock/AOM_101072>,
+        <https://w3id.org/era-aom/livestock/AOM_101073>,
+        <https://w3id.org/era-aom/livestock/AOM_101124>,
+        <https://w3id.org/era-aom/livestock/AOM_101128> ;
+    skos:notation "AOM_101130" ;
+    skos:prefLabel "Feed separation processes"@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_000120> a skos:Concept ;
     skos:altLabel "dietary supplementation"@en,
         "nutritional supplementation"@en,
@@ -30684,29 +30700,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471>,
         <http://purl.obolibrary.org/obo/NCBITaxon_4577>,
         <https://www.feedipedia.org/node/12873> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000648> a skos:Concept ;
-    skos:altLabel "Corn"@en,
-        "Snap Corn"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000662> ;
-    skos:definition "A crop-product feed material with governed identity “maize”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified at this concept level unless separately asserted."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000570>,
-        <https://w3id.org/era-aom/livestock/AOM_000649>,
-        <https://w3id.org/era-aom/livestock/AOM_000651>,
-        <https://w3id.org/era-aom/livestock/AOM_001289>,
-        <https://w3id.org/era-aom/livestock/AOM_001313>,
-        <https://w3id.org/era-aom/livestock/AOM_001326>,
-        <https://w3id.org/era-aom/livestock/AOM_001674>,
-        <https://w3id.org/era-aom/livestock/AOM_002108>,
-        <https://w3id.org/era-aom/livestock/AOM_002119> ;
-    skos:notation "AOM_000648" ;
-    skos:prefLabel "Maize"@en ;
-    skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_12332>,
-        <http://purl.obolibrary.org/obo/NCBITaxon_4577>,
-        <https://www.feedipedia.org/node/11662> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -30824,6 +30817,30 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_003101> ;
     skos:notation "AOM_000464" ;
     skos:prefLabel "Economic Performance"@en ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000648> a skos:Concept ;
+    skos:altLabel "Corn"@en,
+        "Snap Corn"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000662> ;
+    skos:definition "A crop-product feed material with governed identity “maize”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified at this concept level unless separately asserted."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000570>,
+        <https://w3id.org/era-aom/livestock/AOM_000649>,
+        <https://w3id.org/era-aom/livestock/AOM_000651>,
+        <https://w3id.org/era-aom/livestock/AOM_001289>,
+        <https://w3id.org/era-aom/livestock/AOM_001313>,
+        <https://w3id.org/era-aom/livestock/AOM_001326>,
+        <https://w3id.org/era-aom/livestock/AOM_001674>,
+        <https://w3id.org/era-aom/livestock/AOM_002108>,
+        <https://w3id.org/era-aom/livestock/AOM_002119>,
+        <https://w3id.org/era-aom/livestock/AOM_006072> ;
+    skos:notation "AOM_000648" ;
+    skos:prefLabel "Maize"@en ;
+    skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_12332>,
+        <http://purl.obolibrary.org/obo/NCBITaxon_4577>,
+        <https://www.feedipedia.org/node/11662> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -30973,6 +30990,29 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032>,
         <http://purl.obolibrary.org/obo/NCBITaxon_4530>,
         <https://www.feedipedia.org/node/11646> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000845> a skos:Concept,
+        aom:ProcessingMethod ;
+    skos:altLabel "Feed Process"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:definition "A process applied to feed material to change its dimensions presentation composition moisture preservation state or separated fractions."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000826>,
+        <https://w3id.org/era-aom/livestock/AOM_000837>,
+        <https://w3id.org/era-aom/livestock/AOM_000842>,
+        <https://w3id.org/era-aom/livestock/AOM_100990>,
+        <https://w3id.org/era-aom/livestock/AOM_100991>,
+        <https://w3id.org/era-aom/livestock/AOM_101083>,
+        <https://w3id.org/era-aom/livestock/AOM_101084>,
+        <https://w3id.org/era-aom/livestock/AOM_101099>,
+        <https://w3id.org/era-aom/livestock/AOM_101123>,
+        <https://w3id.org/era-aom/livestock/AOM_101129>,
+        <https://w3id.org/era-aom/livestock/AOM_101130>,
+        <https://w3id.org/era-aom/livestock/AOM_101131> ;
+    skos:notation "AOM_000845" ;
+    skos:prefLabel "Feed processes"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -31260,33 +31300,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000328> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000107> ;
-    skos:definition "any measurable, observable or declared characteristic related to elements or set of elements, with nutritional purposes"@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000196>,
-        <https://w3id.org/era-aom/livestock/AOM_000321>,
-        <https://w3id.org/era-aom/livestock/AOM_000326>,
-        <https://w3id.org/era-aom/livestock/AOM_000327>,
-        <https://w3id.org/era-aom/livestock/AOM_000845>,
-        <https://w3id.org/era-aom/livestock/AOM_001062>,
-        <https://w3id.org/era-aom/livestock/AOM_100850>,
-        <https://w3id.org/era-aom/livestock/AOM_101019>,
-        <https://w3id.org/era-aom/livestock/AOM_101020>,
-        <https://w3id.org/era-aom/livestock/AOM_101022>,
-        <https://w3id.org/era-aom/livestock/AOM_101023>,
-        <https://w3id.org/era-aom/livestock/AOM_101085>,
-        <https://w3id.org/era-aom/livestock/AOM_101109>,
-        <https://w3id.org/era-aom/livestock/AOM_101111>,
-        <https://w3id.org/era-aom/livestock/AOM_101115>,
-        <https://w3id.org/era-aom/livestock/AOM_101132>,
-        <https://w3id.org/era-aom/livestock/AOM_101133> ;
-    skos:notation "AOM_000328" ;
-    skos:prefLabel "Feed Characteristic"@en ;
-    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000065> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_000628> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001916> ;
     skos:definition "A feed material with governed source identity “Oil Plant ByProducts” and characteristics: product role — By-product role."@en ;
@@ -31343,40 +31356,67 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000845> a skos:Concept,
-        aom:ProcessingMethod ;
-    skos:altLabel "Feed Process"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "A process applied to feed material to change its dimensions presentation composition moisture preservation state or separated fractions."@en ;
+<https://w3id.org/era-aom/livestock/AOM_000328> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000107> ;
+    skos:definition "any measurable, observable or declared characteristic related to elements or set of elements, with nutritional purposes"@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000826>,
-        <https://w3id.org/era-aom/livestock/AOM_000837>,
-        <https://w3id.org/era-aom/livestock/AOM_000842>,
-        <https://w3id.org/era-aom/livestock/AOM_100990>,
-        <https://w3id.org/era-aom/livestock/AOM_100991>,
-        <https://w3id.org/era-aom/livestock/AOM_101068>,
-        <https://w3id.org/era-aom/livestock/AOM_101069>,
-        <https://w3id.org/era-aom/livestock/AOM_101072>,
-        <https://w3id.org/era-aom/livestock/AOM_101083>,
-        <https://w3id.org/era-aom/livestock/AOM_101084>,
-        <https://w3id.org/era-aom/livestock/AOM_101088>,
-        <https://w3id.org/era-aom/livestock/AOM_101096>,
-        <https://w3id.org/era-aom/livestock/AOM_101099>,
-        <https://w3id.org/era-aom/livestock/AOM_101100>,
-        <https://w3id.org/era-aom/livestock/AOM_101119>,
-        <https://w3id.org/era-aom/livestock/AOM_101123>,
-        <https://w3id.org/era-aom/livestock/AOM_101124>,
-        <https://w3id.org/era-aom/livestock/AOM_101129>,
-        <https://w3id.org/era-aom/livestock/AOM_101130>,
-        <https://w3id.org/era-aom/livestock/AOM_101131> ;
-    skos:notation "AOM_000845" ;
-    skos:prefLabel "Feed processes"@en ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000196>,
+        <https://w3id.org/era-aom/livestock/AOM_000321>,
+        <https://w3id.org/era-aom/livestock/AOM_000326>,
+        <https://w3id.org/era-aom/livestock/AOM_000327>,
+        <https://w3id.org/era-aom/livestock/AOM_000845>,
+        <https://w3id.org/era-aom/livestock/AOM_001062>,
+        <https://w3id.org/era-aom/livestock/AOM_001491>,
+        <https://w3id.org/era-aom/livestock/AOM_100850>,
+        <https://w3id.org/era-aom/livestock/AOM_101019>,
+        <https://w3id.org/era-aom/livestock/AOM_101020>,
+        <https://w3id.org/era-aom/livestock/AOM_101022>,
+        <https://w3id.org/era-aom/livestock/AOM_101023>,
+        <https://w3id.org/era-aom/livestock/AOM_101085>,
+        <https://w3id.org/era-aom/livestock/AOM_101109>,
+        <https://w3id.org/era-aom/livestock/AOM_101111>,
+        <https://w3id.org/era-aom/livestock/AOM_101115>,
+        <https://w3id.org/era-aom/livestock/AOM_101132>,
+        <https://w3id.org/era-aom/livestock/AOM_101133> ;
+    skos:notation "AOM_000328" ;
+    skos:prefLabel "Feed Characteristic"@en ;
+    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000065> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_001491> a skos:Concept ;
+    skos:altLabel "Preformulated Feed"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:definition "A category for formulated feeds, including diets, rations, compound feeds, premixes, concentrates, mashes, and mixes; component feed materials and their proportions require separate assertions."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000798>,
+        <https://w3id.org/era-aom/livestock/AOM_000799>,
+        <https://w3id.org/era-aom/livestock/AOM_000800>,
+        <https://w3id.org/era-aom/livestock/AOM_000801>,
+        <https://w3id.org/era-aom/livestock/AOM_000804>,
+        <https://w3id.org/era-aom/livestock/AOM_001494>,
+        <https://w3id.org/era-aom/livestock/AOM_001495>,
+        <https://w3id.org/era-aom/livestock/AOM_001496>,
+        <https://w3id.org/era-aom/livestock/AOM_001498>,
+        <https://w3id.org/era-aom/livestock/AOM_001501>,
+        <https://w3id.org/era-aom/livestock/AOM_001502>,
+        <https://w3id.org/era-aom/livestock/AOM_002097>,
+        <https://w3id.org/era-aom/livestock/AOM_002098>,
+        <https://w3id.org/era-aom/livestock/AOM_002109>,
+        <https://w3id.org/era-aom/livestock/AOM_002110>,
+        <https://w3id.org/era-aom/livestock/AOM_003495>,
+        <https://w3id.org/era-aom/livestock/AOM_003870>,
+        <https://w3id.org/era-aom/livestock/AOM_003991>,
+        <https://w3id.org/era-aom/livestock/AOM_003995> ;
+    skos:notation "AOM_001491" ;
+    skos:prefLabel "Formulated feeds"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_100850> a skos:Concept ;
+    skos:altLabel "Feed ingredient"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Component or constituent used in animal feed."@en ;
+    skos:definition "A category for feed materials used directly for oral animal feeding or as materials in formulated feeds; source, component, process, form, integrity, composition, and product role require explicit assertions."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000531>,
         <https://w3id.org/era-aom/livestock/AOM_000532>,
@@ -31391,7 +31431,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_000807>,
         <https://w3id.org/era-aom/livestock/AOM_000809>,
         <https://w3id.org/era-aom/livestock/AOM_000811>,
-        <https://w3id.org/era-aom/livestock/AOM_001491>,
         <https://w3id.org/era-aom/livestock/AOM_001916>,
         <https://w3id.org/era-aom/livestock/AOM_003076>,
         <https://w3id.org/era-aom/livestock/AOM_003100>,
@@ -31399,7 +31438,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_100921>,
         <https://w3id.org/era-aom/livestock/AOM_100976> ;
     skos:notation "AOM_100850" ;
-    skos:prefLabel "Feed ingredient"@en ;
+    skos:prefLabel "Feed materials"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -31431,38 +31470,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:notation "AOM_000549" ;
     skos:prefLabel "Fish"@en ;
     skos:relatedMatch <https://www.feedipedia.org/node/11685> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_001491> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_100850> ;
-    skos:definition "An AOM controlled category for “Preformulated Feed” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000798>,
-        <https://w3id.org/era-aom/livestock/AOM_000799>,
-        <https://w3id.org/era-aom/livestock/AOM_000800>,
-        <https://w3id.org/era-aom/livestock/AOM_000801>,
-        <https://w3id.org/era-aom/livestock/AOM_000804>,
-        <https://w3id.org/era-aom/livestock/AOM_001494>,
-        <https://w3id.org/era-aom/livestock/AOM_001495>,
-        <https://w3id.org/era-aom/livestock/AOM_001496>,
-        <https://w3id.org/era-aom/livestock/AOM_001497>,
-        <https://w3id.org/era-aom/livestock/AOM_001498>,
-        <https://w3id.org/era-aom/livestock/AOM_001500>,
-        <https://w3id.org/era-aom/livestock/AOM_001501>,
-        <https://w3id.org/era-aom/livestock/AOM_001502>,
-        <https://w3id.org/era-aom/livestock/AOM_001579>,
-        <https://w3id.org/era-aom/livestock/AOM_001870>,
-        <https://w3id.org/era-aom/livestock/AOM_002097>,
-        <https://w3id.org/era-aom/livestock/AOM_002098>,
-        <https://w3id.org/era-aom/livestock/AOM_002109>,
-        <https://w3id.org/era-aom/livestock/AOM_002110>,
-        <https://w3id.org/era-aom/livestock/AOM_003495>,
-        <https://w3id.org/era-aom/livestock/AOM_003870>,
-        <https://w3id.org/era-aom/livestock/AOM_003991>,
-        <https://w3id.org/era-aom/livestock/AOM_003995> ;
-    skos:notation "AOM_001491" ;
-    skos:prefLabel "Preformulated Feed"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -31567,40 +31574,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000781> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_100850> ;
-    skos:definition "An AOM controlled category for “Other Ingredients” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000745>,
-        <https://w3id.org/era-aom/livestock/AOM_000747>,
-        <https://w3id.org/era-aom/livestock/AOM_000753>,
-        <https://w3id.org/era-aom/livestock/AOM_000780>,
-        <https://w3id.org/era-aom/livestock/AOM_000782>,
-        <https://w3id.org/era-aom/livestock/AOM_000783>,
-        <https://w3id.org/era-aom/livestock/AOM_001507>,
-        <https://w3id.org/era-aom/livestock/AOM_001824>,
-        <https://w3id.org/era-aom/livestock/AOM_001825>,
-        <https://w3id.org/era-aom/livestock/AOM_001832>,
-        <https://w3id.org/era-aom/livestock/AOM_001865>,
-        <https://w3id.org/era-aom/livestock/AOM_001866>,
-        <https://w3id.org/era-aom/livestock/AOM_001867>,
-        <https://w3id.org/era-aom/livestock/AOM_001868>,
-        <https://w3id.org/era-aom/livestock/AOM_001869>,
-        <https://w3id.org/era-aom/livestock/AOM_001917>,
-        <https://w3id.org/era-aom/livestock/AOM_001921>,
-        <https://w3id.org/era-aom/livestock/AOM_001922>,
-        <https://w3id.org/era-aom/livestock/AOM_002191>,
-        <https://w3id.org/era-aom/livestock/AOM_003172>,
-        <https://w3id.org/era-aom/livestock/AOM_003203>,
-        <https://w3id.org/era-aom/livestock/AOM_006241>,
-        <https://w3id.org/era-aom/livestock/AOM_006349>,
-        <https://w3id.org/era-aom/livestock/AOM_100987>,
-        <https://w3id.org/era-aom/livestock/AOM_100988> ;
-    skos:notation "AOM_000781" ;
-    skos:prefLabel "Other Ingredients"@en ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_000594> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001916> ;
     skos:definition "A feed material with governed source identity “cereal byproducts” and characteristics: product role — By-product role."@en ;
@@ -31633,6 +31606,41 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_100864> ;
     skos:notation "AOM_000594" ;
     skos:prefLabel "Cereal ByProducts"@en ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000781> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_100850> ;
+    skos:definition "An AOM controlled category for “Other Ingredients” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000745>,
+        <https://w3id.org/era-aom/livestock/AOM_000747>,
+        <https://w3id.org/era-aom/livestock/AOM_000753>,
+        <https://w3id.org/era-aom/livestock/AOM_000780>,
+        <https://w3id.org/era-aom/livestock/AOM_000782>,
+        <https://w3id.org/era-aom/livestock/AOM_000783>,
+        <https://w3id.org/era-aom/livestock/AOM_001500>,
+        <https://w3id.org/era-aom/livestock/AOM_001507>,
+        <https://w3id.org/era-aom/livestock/AOM_001824>,
+        <https://w3id.org/era-aom/livestock/AOM_001825>,
+        <https://w3id.org/era-aom/livestock/AOM_001832>,
+        <https://w3id.org/era-aom/livestock/AOM_001865>,
+        <https://w3id.org/era-aom/livestock/AOM_001866>,
+        <https://w3id.org/era-aom/livestock/AOM_001867>,
+        <https://w3id.org/era-aom/livestock/AOM_001868>,
+        <https://w3id.org/era-aom/livestock/AOM_001869>,
+        <https://w3id.org/era-aom/livestock/AOM_001917>,
+        <https://w3id.org/era-aom/livestock/AOM_001921>,
+        <https://w3id.org/era-aom/livestock/AOM_001922>,
+        <https://w3id.org/era-aom/livestock/AOM_002191>,
+        <https://w3id.org/era-aom/livestock/AOM_003172>,
+        <https://w3id.org/era-aom/livestock/AOM_003203>,
+        <https://w3id.org/era-aom/livestock/AOM_006241>,
+        <https://w3id.org/era-aom/livestock/AOM_006349>,
+        <https://w3id.org/era-aom/livestock/AOM_100987>,
+        <https://w3id.org/era-aom/livestock/AOM_100988> ;
+    skos:notation "AOM_000781" ;
+    skos:prefLabel "Other Ingredients"@en ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -31675,9 +31683,10 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101019> a skos:Concept,
-        aom:IngredientPartCategory ;
+        aom:FeedMaterialPartCategory ;
+    skos:altLabel "Ingredient anatomical parts"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Biological structures from which feed materials derive."@en ;
+    skos:definition "Biological structures represented as components of feed materials."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_101024>,
         <https://w3id.org/era-aom/livestock/AOM_101025>,
@@ -31713,7 +31722,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_101121>,
         <https://w3id.org/era-aom/livestock/AOM_101122> ;
     skos:notation "AOM_101019" ;
-    skos:prefLabel "Ingredient anatomical parts"@en ;
+    skos:prefLabel "Feed-material anatomical parts"@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 

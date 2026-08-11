@@ -164,7 +164,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000538> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101080> ;
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101080> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
 
 <https://w3id.org/era-aom/livestock/AOM_000539> a skos:Concept,
@@ -184,7 +184,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000544> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_000545> a skos:Concept,
         aom:FeedMaterial ;
@@ -192,7 +192,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000547> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_000550> a skos:Concept,
         aom:FeedMaterial ;
@@ -425,7 +425,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000611> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101066> ;
+    aom:compositionState <https://w3id.org/era-aom/livestock/AOM_101134> ;
     aom:presentationForm <https://w3id.org/era-aom/livestock/AOM_101052> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101070> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
@@ -536,7 +536,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000651> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_000655> a skos:Concept,
         aom:FeedMaterial ;
@@ -576,15 +576,15 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000671> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_000672> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_000674> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_000675> a skos:Concept,
         aom:FeedMaterial ;
@@ -594,11 +594,11 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000676> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_000678> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101065> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101065> .
 
 <https://w3id.org/era-aom/livestock/AOM_000679> a skos:Concept,
         aom:FeedMaterial ;
@@ -688,12 +688,27 @@
     aom:presentationForm <https://w3id.org/era-aom/livestock/AOM_101049> .
 
 <https://w3id.org/era-aom/livestock/AOM_000798> a skos:Concept,
-        aom:FeedMaterial ;
+        aom:FeedFormulation ;
     aom:feedProductType <https://w3id.org/era-aom/livestock/AOM_101114> .
 
+<https://w3id.org/era-aom/livestock/AOM_000799> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_000800> a skos:Concept,
+        aom:FeedFormulation .
+
 <https://w3id.org/era-aom/livestock/AOM_000801> a skos:Concept,
-        aom:FeedMaterial ;
+        aom:FeedFormulation ;
     aom:feedProductType <https://w3id.org/era-aom/livestock/AOM_101114> .
+
+<https://w3id.org/era-aom/livestock/AOM_000803> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_000804> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_000805> a skos:Concept,
+        aom:FeedFormulation .
 
 <https://w3id.org/era-aom/livestock/AOM_001094> a skos:Concept,
         aom:FeedMaterial ;
@@ -963,7 +978,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001193> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_001195> a skos:Concept,
         aom:FeedMaterial ;
@@ -1056,7 +1071,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001255> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> ;
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
 
 <https://w3id.org/era-aom/livestock/AOM_001256> a skos:Concept,
@@ -1186,7 +1201,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001289> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101065> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101065> .
 
 <https://w3id.org/era-aom/livestock/AOM_001290> a skos:Concept,
         aom:FeedMaterial ;
@@ -1271,7 +1286,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001308> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_001311> a skos:Concept,
         aom:FeedMaterial ;
@@ -1293,7 +1308,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001317> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101066> .
+    aom:compositionState <https://w3id.org/era-aom/livestock/AOM_101134> .
 
 <https://w3id.org/era-aom/livestock/AOM_001318> a skos:Concept,
         aom:FeedMaterial ;
@@ -1375,7 +1390,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001344> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_001345> a skos:Concept,
         aom:FeedMaterial ;
@@ -1534,9 +1549,33 @@
         aom:FeedMaterial ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101079> .
 
+<https://w3id.org/era-aom/livestock/AOM_001492> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_001493> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_001494> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_001495> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_001496> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_001497> a skos:Concept,
+        aom:FeedMaterial .
+
 <https://w3id.org/era-aom/livestock/AOM_001498> a skos:Concept,
-        aom:FeedMaterial ;
+        aom:FeedFormulation ;
     aom:feedProductType <https://w3id.org/era-aom/livestock/AOM_101114> .
+
+<https://w3id.org/era-aom/livestock/AOM_001501> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_001502> a skos:Concept,
+        aom:FeedFormulation .
 
 <https://w3id.org/era-aom/livestock/AOM_001525> a skos:Concept,
         aom:FeedMaterial ;
@@ -1593,6 +1632,9 @@
         aom:FeedMaterial ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101059> .
 
+<https://w3id.org/era-aom/livestock/AOM_001579> a skos:Concept,
+        aom:FeedAdditive .
+
 <https://w3id.org/era-aom/livestock/AOM_001581> a skos:Concept,
         aom:FeedMaterial ;
     aom:moistureCondition <https://w3id.org/era-aom/livestock/AOM_101054> ;
@@ -1606,7 +1648,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001586> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_001590> a skos:Concept,
         aom:FeedMaterial ;
@@ -2660,7 +2702,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001820> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101065> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101065> .
 
 <https://w3id.org/era-aom/livestock/AOM_001822> a skos:Concept,
         aom:FeedMaterial ;
@@ -2787,6 +2829,9 @@
     aom:presentationForm <https://w3id.org/era-aom/livestock/AOM_101125> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_000836> .
 
+<https://w3id.org/era-aom/livestock/AOM_001870> a skos:Concept,
+        aom:FeedMaterial .
+
 <https://w3id.org/era-aom/livestock/AOM_001876> a skos:Concept,
         aom:FeedMaterial ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
@@ -2798,8 +2843,8 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001880> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> ;
-    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101122> .
+    aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101122> ;
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_001881> a skos:Concept,
         aom:FeedMaterial ;
@@ -2967,7 +3012,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001930> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_001931> a skos:Concept,
         aom:FeedMaterial ;
@@ -3787,6 +3832,12 @@
         <https://w3id.org/era-aom/livestock/AOM_000843> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
 
+<https://w3id.org/era-aom/livestock/AOM_002097> a skos:Concept,
+        aom:FeedFormulation .
+
+<https://w3id.org/era-aom/livestock/AOM_002098> a skos:Concept,
+        aom:FeedFormulation .
+
 <https://w3id.org/era-aom/livestock/AOM_002100> a skos:Concept,
         aom:FeedMaterial ;
     aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101033> .
@@ -3838,8 +3889,11 @@
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101090> .
 
 <https://w3id.org/era-aom/livestock/AOM_002109> a skos:Concept,
-        aom:FeedMaterial ;
+        aom:FeedFormulation ;
     aom:feedProductType <https://w3id.org/era-aom/livestock/AOM_101114> .
+
+<https://w3id.org/era-aom/livestock/AOM_002110> a skos:Concept,
+        aom:FeedFormulation .
 
 <https://w3id.org/era-aom/livestock/AOM_002111> a skos:Concept,
         aom:FeedMaterial ;
@@ -4076,7 +4130,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_002241> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_002242> a skos:Concept,
         aom:FeedMaterial ;
@@ -4200,7 +4254,7 @@
 <https://w3id.org/era-aom/livestock/AOM_003297> a skos:Concept,
         aom:FeedMaterial ;
     aom:bulkConsistency <https://w3id.org/era-aom/livestock/AOM_101077> ;
-    aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101119> ;
+    aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101099> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
 
 <https://w3id.org/era-aom/livestock/AOM_003482> a skos:Concept,
@@ -4212,6 +4266,9 @@
         aom:FeedMaterial ;
     aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
+
+<https://w3id.org/era-aom/livestock/AOM_003495> a skos:Concept,
+        aom:FeedFormulation .
 
 <https://w3id.org/era-aom/livestock/AOM_003545> a skos:Concept,
         aom:FeedMaterial ;
@@ -4281,12 +4338,12 @@
 
 <https://w3id.org/era-aom/livestock/AOM_003697> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101120> ;
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101120> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101072> .
 
 <https://w3id.org/era-aom/livestock/AOM_003700> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_003703> a skos:Concept,
         aom:FeedMaterial ;
@@ -4314,7 +4371,7 @@
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
 
 <https://w3id.org/era-aom/livestock/AOM_003870> a skos:Concept,
-        aom:FeedMaterial ;
+        aom:FeedFormulation ;
     aom:presentationForm <https://w3id.org/era-aom/livestock/AOM_101108> .
 
 <https://w3id.org/era-aom/livestock/AOM_003879> a skos:Concept,
@@ -4500,7 +4557,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_003978> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101065> ;
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101065> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101059> .
 
 <https://w3id.org/era-aom/livestock/AOM_003981> a skos:Concept,
@@ -4511,8 +4568,11 @@
         aom:FeedMaterial ;
     aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101033> .
 
+<https://w3id.org/era-aom/livestock/AOM_003991> a skos:Concept,
+        aom:FeedFormulation .
+
 <https://w3id.org/era-aom/livestock/AOM_003995> a skos:Concept,
-        aom:FeedMaterial ;
+        aom:FeedFormulation ;
     aom:presentationForm <https://w3id.org/era-aom/livestock/AOM_101108> .
 
 <https://w3id.org/era-aom/livestock/AOM_003997> a skos:Concept,
@@ -4703,7 +4763,7 @@
 <https://w3id.org/era-aom/livestock/AOM_006034> a skos:Concept,
         aom:FeedMaterial ;
     aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101074> ;
-    aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101100> .
+    aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_003098> .
 
 <https://w3id.org/era-aom/livestock/AOM_006035> a skos:Concept,
         aom:FeedMaterial ;
@@ -5591,7 +5651,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_006200> a skos:Concept,
         aom:FeedMaterial ;
-    aom:ingredientConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
+    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101081> .
 
 <https://w3id.org/era-aom/livestock/AOM_006201> a skos:Concept,
         aom:FeedMaterial ;
@@ -6028,7 +6088,7 @@
     aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_000831>,
         <https://w3id.org/era-aom/livestock/AOM_000844>,
-        <https://w3id.org/era-aom/livestock/AOM_101100> ;
+        <https://w3id.org/era-aom/livestock/AOM_003098> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
 
 <https://w3id.org/era-aom/livestock/AOM_006290> a skos:Concept,
@@ -6542,15 +6602,15 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:ash> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Ash" ;
-    aom:targetValueClass aom:IngredientConstituent ;
+    aom:targetValueClass aom:ChemicalConstituent ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101080> ;
-    aom:valueTargetProperty aom:ingredientConstituent .
+    aom:valueTargetProperty aom:primaryConstituent .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:bean-cake:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Bean Cake" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -6566,7 +6626,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:bean-shell:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Bean Shell" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101040> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6589,7 +6649,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:block> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Block" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101049> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -6629,7 +6689,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:bulb> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Bulb" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101024> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6637,7 +6697,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:cake:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Cake" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -6661,7 +6721,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:cladode> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Cladode" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101025> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6669,7 +6729,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:cob> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Cob" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101026> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6677,7 +6737,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:corm> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Corm" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101027> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6693,7 +6753,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:flakes-defatted:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Flakes Defatted" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101053> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -6709,23 +6769,31 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:fruits> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Fruits" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101028> ;
     aom:valueTargetProperty aom:ingredientPart .
 
+<https://w3id.org/era-aom/value-binding/ingredient-component:full-fat> a aom:SemanticValueBinding ;
+    aom:bindingAction "map_to_existing" ;
+    aom:sourceValue "Full Fat" ;
+    aom:targetValueClass aom:CompositionState ;
+    aom:valueBindingStatus "approved" ;
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101134> ;
+    aom:valueTargetProperty aom:compositionState .
+
 <https://w3id.org/era-aom/value-binding/ingredient-component:full-fat-cake:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Full Fat Cake" ;
-    aom:targetValueClass aom:IngredientConstituent ;
+    aom:targetValueClass aom:CompositionState ;
     aom:valueBindingStatus "approved" ;
-    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101066> ;
-    aom:valueTargetProperty aom:ingredientConstituent .
+    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101134> ;
+    aom:valueTargetProperty aom:compositionState .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:full-fat-cake:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Full Fat Cake" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -6738,17 +6806,10 @@
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101070> ;
     aom:valueTargetProperty aom:processingMethod .
 
-<https://w3id.org/era-aom/value-binding/ingredient-component:full-fat:hold> a aom:SemanticValueBinding ;
-    aom:bindingAction "hold_ambiguous" ;
-    aom:sourceValue "Full Fat" ;
-    aom:targetValueClass xsd:string ;
-    aom:valueBindingStatus "approved" ;
-    aom:valueTargetProperty aom:legacyComponentDescriptor .
-
 <https://w3id.org/era-aom/value-binding/ingredient-component:germ> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Germ" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101029> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6756,15 +6817,15 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:gluten> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Gluten" ;
-    aom:targetValueClass aom:IngredientConstituent ;
+    aom:targetValueClass aom:ChemicalConstituent ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101064> ;
-    aom:valueTargetProperty aom:ingredientConstituent .
+    aom:valueTargetProperty aom:primaryConstituent .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:grain> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Grain" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101074> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6772,7 +6833,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:hash:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Hash" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101075> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -6788,7 +6849,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:haulm:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Haulm" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101047> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6796,7 +6857,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:haulm:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Haulm" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6812,7 +6873,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:hay:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Hay" ;
-    aom:targetValueClass aom:IngredientMoistureCondition ;
+    aom:targetValueClass aom:FeedMoistureCondition ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101054> ;
     aom:valueTargetProperty aom:moistureCondition .
@@ -6835,7 +6896,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:hull> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Hull" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101030> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6843,7 +6904,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:husk> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Husk" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101031> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6859,7 +6920,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:juice:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Juice" ;
-    aom:targetValueClass aom:IngredientBulkConsistency ;
+    aom:targetValueClass aom:FeedBulkConsistency ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101077> ;
     aom:valueTargetProperty aom:bulkConsistency .
@@ -6875,7 +6936,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:kernel> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Kernel" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101032> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6883,7 +6944,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:kernel-cake:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Kernel Cake" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101032> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6891,7 +6952,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:kernel-cake:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Kernel Cake" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -6907,7 +6968,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:leaves> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Leaves" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6915,7 +6976,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:leaves-and-soft-twig:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Leaves and Soft Twig" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6923,7 +6984,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:leaves-and-soft-twig:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Leaves and Soft Twig" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101045> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6931,7 +6992,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:leaves-and-twigs:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Leaves and Twigs" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6939,7 +7000,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:leaves-and-twigs:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Leaves and Twigs" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101045> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6947,7 +7008,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:leaves-cake:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Leaves Cake" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6955,7 +7016,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:leaves-cake:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Leaves Cake" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -6971,7 +7032,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:leaves-extract:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Leaves Extract" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -6987,7 +7048,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:lick> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Lick" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101050> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -7025,7 +7086,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:mix> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Mix" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101075> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -7033,7 +7094,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:molasses:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Molasses" ;
-    aom:targetValueClass aom:IngredientBulkConsistency ;
+    aom:targetValueClass aom:FeedBulkConsistency ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101077> ;
     aom:valueTargetProperty aom:bulkConsistency .
@@ -7065,10 +7126,10 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:oil> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Oil" ;
-    aom:targetValueClass aom:IngredientConstituent ;
+    aom:targetValueClass aom:ChemicalConstituent ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101081> ;
-    aom:valueTargetProperty aom:ingredientConstituent .
+    aom:valueTargetProperty aom:primaryConstituent .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:oil-crude:hold> a aom:SemanticValueBinding ;
     aom:bindingAction "hold_ambiguous" ;
@@ -7080,7 +7141,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:peel> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Peel" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101034> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7088,7 +7149,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:peel-essential-oil:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Peel Essential Oil" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101034> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7096,10 +7157,10 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:peel-essential-oil:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Peel Essential Oil" ;
-    aom:targetValueClass aom:IngredientConstituent ;
+    aom:targetValueClass aom:ChemicalConstituent ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101067> ;
-    aom:valueTargetProperty aom:ingredientConstituent .
+    aom:valueTargetProperty aom:primaryConstituent .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:peel-essential-oil:3> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
@@ -7112,7 +7173,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:peels> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Peels" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101034> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7120,7 +7181,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:pods> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Pods" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101035> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7128,7 +7189,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:pods-husk:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Pods Husk" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101035> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7136,7 +7197,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:pods-husk:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Pods Husk" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101031> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7144,7 +7205,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:powder> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Powder" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101051> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -7160,7 +7221,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:pseudo-stem> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Pseudo-stem" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101036> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7168,7 +7229,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:pulp:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Pulp" ;
-    aom:targetValueClass aom:IngredientBulkConsistency ;
+    aom:targetValueClass aom:FeedBulkConsistency ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101078> ;
     aom:valueTargetProperty aom:bulkConsistency .
@@ -7192,7 +7253,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:root> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Root" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101037> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7200,7 +7261,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:root-bark:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Root Bark" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101037> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7208,7 +7269,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:root-bark:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Root Bark" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101046> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7216,7 +7277,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:seed> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Seed" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7224,7 +7285,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:seed-cake:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Seed Cake" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7232,7 +7293,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:seed-cake:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Seed Cake" ;
-    aom:targetValueClass aom:IngredientPresentationForm ;
+    aom:targetValueClass aom:FeedPresentationForm ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101052> ;
     aom:valueTargetProperty aom:presentationForm .
@@ -7248,7 +7309,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:seed-hull:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Seed Hull" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7256,7 +7317,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:seed-hull:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Seed Hull" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101030> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7264,7 +7325,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:seed-kernel:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Seed Kernel" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7272,7 +7333,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:seed-kernel:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Seed Kernel" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101032> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7280,7 +7341,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:seeds> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Seeds" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101038> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7295,7 +7356,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:sheath> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Sheath" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101039> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7303,7 +7364,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:shell> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Shell" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101040> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7311,7 +7372,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:shells> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Shells" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101040> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7335,7 +7396,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:sprout> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Sprout" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101041> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7343,7 +7404,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:stalk> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Stalk" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101042> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7351,7 +7412,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:stalks> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Stalks" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101042> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7359,15 +7420,15 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:starch> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Starch" ;
-    aom:targetValueClass aom:IngredientConstituent ;
+    aom:targetValueClass aom:ChemicalConstituent ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101065> ;
-    aom:valueTargetProperty aom:ingredientConstituent .
+    aom:valueTargetProperty aom:primaryConstituent .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:stover:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Stover" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101047> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7375,7 +7436,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:stover:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Stover" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7391,7 +7452,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:straw:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Straw" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101047> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7399,7 +7460,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:straw:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Straw" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101033> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7407,7 +7468,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:straw:3> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Straw" ;
-    aom:targetValueClass aom:IngredientMoistureCondition ;
+    aom:targetValueClass aom:FeedMoistureCondition ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101054> ;
     aom:valueTargetProperty aom:moistureCondition .
@@ -7423,7 +7484,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:threshed-top:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
     aom:sourceValue "Threshed Top" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101048> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7439,7 +7500,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:tops> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Tops" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101048> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7447,7 +7508,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:tuber> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Tuber" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101043> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -7462,7 +7523,7 @@
 <https://w3id.org/era-aom/value-binding/ingredient-component:viscera> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;
     aom:sourceValue "Viscera" ;
-    aom:targetValueClass aom:IngredientPartCategory ;
+    aom:targetValueClass aom:FeedMaterialPartCategory ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101044> ;
     aom:valueTargetProperty aom:ingredientPart .
@@ -10389,34 +10450,34 @@
         sosa:ObservableProperty .
 
 <https://w3id.org/era-aom/livestock/AOM_101029> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101036> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101044> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101046> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101050> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_101053> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_101064> a skos:Concept,
-        aom:IngredientConstituent .
+        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_101067> a skos:Concept,
-        aom:IngredientConstituent .
+        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_101068> a skos:Concept,
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101078> a skos:Concept,
-        aom:IngredientBulkConsistency .
+        aom:FeedBulkConsistency .
 
 <https://w3id.org/era-aom/livestock/AOM_101086> a skos:Concept,
         aom:FeedMaterialComponent .
@@ -10431,19 +10492,16 @@
         aom:CompositionState .
 
 <https://w3id.org/era-aom/livestock/AOM_101118> a skos:Concept,
-        aom:IngredientBulkConsistency .
-
-<https://w3id.org/era-aom/livestock/AOM_101119> a skos:Concept,
-        aom:ProcessingMethod .
+        aom:FeedBulkConsistency .
 
 <https://w3id.org/era-aom/livestock/AOM_101120> a skos:Concept,
-        aom:IngredientConstituent .
+        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_101121> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101122> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101123> a skos:Concept,
         aom:ProcessingMethod .
@@ -10462,26 +10520,29 @@
     rdfs:label "Gallus gallus"@en ;
     skos:prefLabel "Gallus gallus"@en .
 
+<https://w3id.org/era-aom/livestock/AOM_003098> a skos:Concept,
+        aom:ProcessingMethod .
+
 <https://w3id.org/era-aom/livestock/AOM_101024> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101027> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101039> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101041> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101042> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101045> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101051> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_101056> a skos:Concept,
         aom:ProductRole .
@@ -10493,19 +10554,16 @@
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101080> a skos:Concept,
-        aom:IngredientConstituent .
-
-<https://w3id.org/era-aom/livestock/AOM_101100> a skos:Concept,
-        aom:ProcessingMethod .
+        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_101108> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_101117> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101126> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_000833> a skos:Concept,
         aom:ProcessingMethod .
@@ -10514,13 +10572,10 @@
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101025> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101030> a skos:Concept,
-        aom:IngredientPartCategory .
-
-<https://w3id.org/era-aom/livestock/AOM_101066> a skos:Concept,
-        aom:IngredientConstituent .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101083> a skos:Concept,
         aom:ProcessingMethod .
@@ -10532,10 +10587,10 @@
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101048> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101049> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_101058> a skos:Concept,
         aom:ProductRole .
@@ -10544,13 +10599,16 @@
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101105> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101110> a skos:Concept,
         aom:MaterialIntegrity .
 
 <https://w3id.org/era-aom/livestock/AOM_101114> a skos:Concept,
         aom:FeedProductType .
+
+<https://w3id.org/era-aom/livestock/AOM_101134> a skos:Concept,
+        aom:CompositionState .
 
 <https://w3id.org/era-aom/livestock/AOM_101055> a skos:Concept,
         aom:ProductRole .
@@ -10559,40 +10617,40 @@
         aom:ProductRole .
 
 <https://w3id.org/era-aom/livestock/AOM_101065> a skos:Concept,
-        aom:IngredientConstituent .
+        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_101072> a skos:Concept,
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101075> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_101079> a skos:Concept,
         aom:ProductRole .
 
-<https://w3id.org/era-aom/livestock/AOM_101099> a skos:Concept,
-        aom:ProcessingMethod .
-
 <https://w3id.org/era-aom/livestock/AOM_101026> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101037> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
+
+<https://w3id.org/era-aom/livestock/AOM_101099> a skos:Concept,
+        aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_000820> a skos:Concept,
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101028> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101061> a skos:Concept,
         aom:ProductRole .
 
 <https://w3id.org/era-aom/livestock/AOM_101077> a skos:Concept,
-        aom:IngredientBulkConsistency .
+        aom:FeedBulkConsistency .
 
 <https://w3id.org/era-aom/livestock/AOM_101043> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101069> a skos:Concept,
         aom:ProcessingMethod .
@@ -10610,43 +10668,43 @@
         aom:ProductRole .
 
 <https://w3id.org/era-aom/livestock/AOM_101107> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_000832> a skos:Concept,
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101047> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101112> a skos:Concept,
         aom:FeedProductType .
 
 <https://w3id.org/era-aom/livestock/AOM_101040> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101059> a skos:Concept,
         aom:ProductRole .
 
 <https://w3id.org/era-aom/livestock/AOM_101052> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_000827> a skos:Concept,
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101032> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101081> a skos:Concept,
-        aom:IngredientConstituent .
+        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_101031> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101104> a skos:Concept,
         aom:FeedMaterialComponent .
 
 <https://w3id.org/era-aom/livestock/AOM_101034> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_000830> a skos:Concept,
         aom:ProcessingMethod .
@@ -10655,10 +10713,10 @@
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101074> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101035> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_000835> a skos:Concept,
         aom:ProcessingMethod .
@@ -10667,19 +10725,19 @@
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101106> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_000831> a skos:Concept,
         aom:ProcessingMethod .
 
 <https://w3id.org/era-aom/livestock/AOM_101038> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101033> a skos:Concept,
-        aom:IngredientPartCategory .
+        aom:FeedMaterialPartCategory .
 
 <https://w3id.org/era-aom/livestock/AOM_101125> a skos:Concept,
-        aom:IngredientPresentationForm .
+        aom:FeedPresentationForm .
 
 <https://w3id.org/era-aom/livestock/AOM_000836> a skos:Concept,
         aom:ProcessingMethod ;
@@ -10690,7 +10748,7 @@
     aom:mayResultInMoistureCondition <https://w3id.org/era-aom/livestock/AOM_101054> .
 
 <https://w3id.org/era-aom/livestock/AOM_101054> a skos:Concept,
-        aom:IngredientMoistureCondition .
+        aom:FeedMoistureCondition .
 
 <https://w3id.org/era-aom/livestock/AOM_101062> a skos:Concept,
         aom:ProductRole .

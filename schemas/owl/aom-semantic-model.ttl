@@ -26,10 +26,20 @@ aom:SemanticValueBinding a owl:Class ;
   rdfs:label "semantic value binding"@en ;
   rdfs:comment "Governed decision mapping a source controlled value to an ontology concept or explicitly holding it unresolved."@en .
 
+aom:Feed a owl:Class ;
+  rdfs:label "feed"@en ;
+  rdfs:comment "A material, formulation, or additive represented for animal feeding."@en .
 aom:FeedMaterial a owl:Class ;
+  rdfs:subClassOf aom:Feed ;
   rdfs:label "feed material"@en ;
   rdfs:comment "A material used or evaluated as feed. Source organism, part, processing method, and economic product role are modeled as facets."@en .
-aom:FeedFormulation a owl:Class ; rdfs:label "feed formulation"@en .
+aom:FeedFormulation a owl:Class ;
+  rdfs:subClassOf aom:Feed ;
+  rdfs:label "feed formulation"@en ;
+  rdfs:comment "A feed represented as a formulated mixture or ration; component materials and proportions require explicit assertions."@en .
+aom:FeedAdditive a owl:Class ;
+  rdfs:subClassOf aom:Feed ;
+  rdfs:label "feed additive"@en .
 aom:IngredientComponent a owl:Class ;
   rdfs:label "ingredient component"@en ;
   rdfs:comment "A feed material used in a formulation, optionally with a quantitative proportion."@en .
@@ -39,30 +49,50 @@ aom:QuantitativeObservation a owl:Class ;
 aom:ProductRole a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "product role"@en .
-aom:IngredientPartCategory a owl:Class ;
+aom:FeedMaterialPartCategory a owl:Class ;
   rdfs:subClassOf aom:FeedMaterialComponent ;
   rdfs:subClassOf skos:Concept ;
-  rdfs:label "ingredient part category"@en .
+  rdfs:label "feed-material part category"@en .
+aom:IngredientPartCategory a owl:Class ;
+  rdfs:subClassOf aom:FeedMaterialPartCategory ;
+  rdfs:label "ingredient part category"@en ;
+  owl:deprecated true .
 aom:FeedMaterialComponent a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "feed material component"@en ;
   rdfs:comment "Reviewed material scope or component, including anatomical parts and collective material such as a whole crop."@en .
-aom:IngredientPhysicalForm a owl:Class ;
+aom:FeedPhysicalDescriptor a owl:Class ;
   rdfs:subClassOf skos:Concept ;
-  rdfs:label "ingredient physical descriptor"@en ;
+  rdfs:label "feed physical descriptor"@en ;
   rdfs:comment "Compatibility superclass for independently governed presentation, bulk-consistency, and moisture-condition descriptors."@en .
-aom:IngredientPresentationForm a owl:Class ;
-  rdfs:subClassOf aom:IngredientPhysicalForm ;
-  rdfs:label "ingredient presentation form"@en ;
+aom:FeedPresentationForm a owl:Class ;
+  rdfs:subClassOf aom:FeedPhysicalDescriptor ;
+  rdfs:label "feed presentation form"@en ;
   rdfs:comment "Shape or particle presentation independently of bulk consistency and moisture condition."@en .
-aom:IngredientBulkConsistency a owl:Class ;
-  rdfs:subClassOf aom:IngredientPhysicalForm ;
-  rdfs:label "ingredient bulk consistency"@en ;
+aom:FeedBulkConsistency a owl:Class ;
+  rdfs:subClassOf aom:FeedPhysicalDescriptor ;
+  rdfs:label "feed bulk consistency"@en ;
   rdfs:comment "Bulk flow or dispersion consistency independently of particle presentation and moisture condition."@en .
-aom:IngredientMoistureCondition a owl:Class ;
-  rdfs:subClassOf aom:IngredientPhysicalForm ;
-  rdfs:label "ingredient moisture condition"@en ;
+aom:FeedMoistureCondition a owl:Class ;
+  rdfs:subClassOf aom:FeedPhysicalDescriptor ;
+  rdfs:label "feed moisture condition"@en ;
   rdfs:comment "Qualitative moisture condition independently of presentation and bulk consistency."@en .
+aom:IngredientPhysicalForm a owl:Class ;
+  rdfs:subClassOf aom:FeedPhysicalDescriptor ;
+  rdfs:label "ingredient physical descriptor"@en ;
+  owl:deprecated true .
+aom:IngredientPresentationForm a owl:Class ;
+  rdfs:subClassOf aom:FeedPresentationForm ;
+  rdfs:label "ingredient presentation form"@en ;
+  owl:deprecated true .
+aom:IngredientBulkConsistency a owl:Class ;
+  rdfs:subClassOf aom:FeedBulkConsistency ;
+  rdfs:label "ingredient bulk consistency"@en ;
+  owl:deprecated true .
+aom:IngredientMoistureCondition a owl:Class ;
+  rdfs:subClassOf aom:FeedMoistureCondition ;
+  rdfs:label "ingredient moisture condition"@en ;
+  owl:deprecated true .
 aom:MaterialIntegrity a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "material integrity"@en ;
@@ -78,9 +108,13 @@ aom:CompositionState a owl:Class ;
 aom:ProcessingMethod a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "processing method"@en .
-aom:IngredientConstituent a owl:Class ;
+aom:ChemicalConstituent a owl:Class ;
   rdfs:subClassOf skos:Concept ;
-  rdfs:label "ingredient constituent"@en .
+  rdfs:label "chemical constituent"@en .
+aom:IngredientConstituent a owl:Class ;
+  rdfs:subClassOf aom:ChemicalConstituent ;
+  rdfs:label "ingredient constituent"@en ;
+  owl:deprecated true .
 aom:ParityStatus a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "parity status"@en .
@@ -110,58 +144,64 @@ aom:materialComponent a owl:ObjectProperty ;
   rdfs:label "has material component"@en .
 aom:ingredientPart a owl:ObjectProperty ;
   rdfs:subPropertyOf aom:materialComponent ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPartCategory ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:FeedMaterialPartCategory ;
   rdfs:label "has ingredient part"@en .
 aom:physicalForm a owl:ObjectProperty ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPhysicalForm ;
+  rdfs:domain aom:Feed ; rdfs:range aom:FeedPhysicalDescriptor ;
   rdfs:label "has physical descriptor"@en ;
   rdfs:comment "Deprecated compatibility property; use presentationForm, bulkConsistency, or moistureCondition."@en ;
   owl:deprecated true .
 aom:presentationForm a owl:ObjectProperty ;
   rdfs:subPropertyOf aom:physicalForm ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientPresentationForm ;
+  rdfs:domain aom:Feed ; rdfs:range aom:FeedPresentationForm ;
   rdfs:label "has presentation form"@en .
 aom:bulkConsistency a owl:ObjectProperty ;
   rdfs:subPropertyOf aom:physicalForm ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientBulkConsistency ;
+  rdfs:domain aom:Feed ; rdfs:range aom:FeedBulkConsistency ;
   rdfs:label "has bulk consistency"@en .
 aom:moistureCondition a owl:ObjectProperty ;
   rdfs:subPropertyOf aom:physicalForm ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientMoistureCondition ;
+  rdfs:domain aom:Feed ; rdfs:range aom:FeedMoistureCondition ;
   rdfs:label "has moisture condition"@en .
 aom:materialIntegrity a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:MaterialIntegrity ;
   rdfs:label "has material integrity"@en .
 aom:feedProductType a owl:ObjectProperty ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range aom:FeedProductType ;
+  rdfs:domain aom:Feed ; rdfs:range aom:FeedProductType ;
   rdfs:label "has feed product type"@en .
 aom:compositionState a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:CompositionState ;
   rdfs:label "has composition state"@en .
 aom:processingMethod a owl:ObjectProperty ;
-  rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProcessingMethod ;
+  rdfs:domain aom:Feed ; rdfs:range aom:ProcessingMethod ;
   rdfs:label "has processing method"@en .
 aom:mayResultInPhysicalForm a owl:ObjectProperty ;
-  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:IngredientPhysicalForm ;
+  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:FeedPhysicalDescriptor ;
   rdfs:label "may result in physical descriptor"@en ;
   rdfs:comment "Deprecated compatibility property; use an axis-specific process-result property."@en ;
   owl:deprecated true .
 aom:mayResultInPresentationForm a owl:ObjectProperty ;
   rdfs:subPropertyOf aom:mayResultInPhysicalForm ;
-  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:IngredientPresentationForm ;
+  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:FeedPresentationForm ;
   rdfs:label "may result in presentation form"@en ;
   rdfs:comment "Links a processing method to a possible presentation without asserting that every use has that result or a narrower subtype."@en .
 aom:mayResultInMoistureCondition a owl:ObjectProperty ;
   rdfs:subPropertyOf aom:mayResultInPhysicalForm ;
-  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:IngredientMoistureCondition ;
+  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:FeedMoistureCondition ;
   rdfs:label "may result in moisture condition"@en ;
   rdfs:comment "Links a processing method to a possible moisture condition without asserting that every material undergoing that process has that result."@en .
 aom:productRole a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProductRole ;
   rdfs:label "has product role"@en .
+aom:primaryConstituent a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:ChemicalConstituent ;
+  rdfs:label "has primary chemical constituent"@en ;
+  rdfs:comment "Identifies a chemically defined constituent central to material identity; it does not represent an ingredient in a formulated feed."@en .
 aom:ingredientConstituent a owl:ObjectProperty ;
+  rdfs:subPropertyOf aom:primaryConstituent ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientConstituent ;
-  rdfs:label "has ingredient constituent"@en .
+  rdfs:label "has ingredient constituent"@en ;
+  owl:deprecated true .
 aom:ingredientSource a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:IngredientSourceCategory ;
   rdfs:label "has ingredient source"@en .

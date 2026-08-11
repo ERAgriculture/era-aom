@@ -42,7 +42,7 @@ assert source_scope | (facet_composed & approved_source_scope) == approved_sourc
 oil_ids = {"AOM_000651", "AOM_000674", "AOM_001586"}
 assert {
     row["feed_material_id"] for row in facets
-    if row["target_property"] == "aom:ingredientConstituent"
+    if row["target_property"] == "aom:primaryConstituent"
     and row["target_concept_id"] == "AOM_101081"
 } >= oil_ids
 assert oil_ids <= {row["concept_id"] for row in definitions}

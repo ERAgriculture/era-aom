@@ -2943,7 +2943,8 @@ AOM_001498,en,pref,Sheep Meal,L7
 AOM_001496,en,pref,Starter Diet,L7
 AOM_001502,en,pref,Swine Mix,L7
 AOM_000804,en,pref,Total Mixed Ration,L7
-AOM_001491,en,pref,Preformulated Feed,L6
+AOM_001491,en,pref,Formulated feeds,approved_label_correction
+AOM_001491,en,alt,Preformulated Feed,L6
 AOM_006340,en,pref,Propionibacterium freudenreinchi,L7
 AOM_001420,en,pref,Saccharomyces cerevisiae,L7
 AOM_001420,en,alt,Brewers Yeast,Synonym
@@ -3172,7 +3173,8 @@ AOM_000831,en,alt,Ensilation,L7
 AOM_000831,en,alt,Silage Process,Synonym
 AOM_000831,en,alt,Ensiled,Synonym
 AOM_004500,en,pref,Inoculation,L6
-AOM_003098,en,pref,Sprouted,L6
+AOM_003098,en,pref,Sprouting,approved_label_correction
+AOM_003098,en,alt,Sprouted,L6
 AOM_000818,en,pref,Acid Treatment,L6
 AOM_000819,en,pref,Alkali Treatment,L6
 AOM_000817,en,pref,Ammonia Treatment,L7
@@ -4137,7 +4139,7 @@ AOM_000060,en,pref,Tree,L4
 AOM_001676,en,alt,Panicum maximum Dried,approved_identity_resolution
 AOM_001676,en,alt,Panicum maximum hay,approved_identity_resolution
 AOM_100849,en,pref,Mineral content,approved_new_concept
-AOM_100850,en,pref,Feed ingredient,approved_new_concept
+AOM_100850,en,pref,Feed materials,approved_new_concept
 AOM_100851,en,pref,Maize by-products,approved_new_concept
 AOM_100852,en,pref,Soybean by-products,approved_new_concept
 AOM_100853,en,pref,Grazing management,approved_new_concept
@@ -4307,10 +4309,10 @@ AOM_101016,en,pref,Gender-equity outcomes,approved_new_concept
 AOM_101017,en,pref,Sea urchins,approved_new_concept
 AOM_101018,en,pref,Porcine animals,approved_new_concept
 AOM_101127,en,pref,Poultry by-product meal,approved_new_concept
-AOM_101019,en,pref,Ingredient anatomical parts,approved_new_concept
-AOM_101020,en,pref,Ingredient presentation forms,approved_new_concept
-AOM_101022,en,pref,Ingredient product roles,approved_new_concept
-AOM_101023,en,pref,Ingredient constituents,approved_new_concept
+AOM_101019,en,pref,Feed-material anatomical parts,approved_new_concept
+AOM_101020,en,pref,Feed presentation forms,approved_new_concept
+AOM_101022,en,pref,Feed-material product roles,approved_new_concept
+AOM_101023,en,pref,Primary chemical constituents,approved_new_concept
 AOM_101024,en,pref,Bulb,approved_new_concept
 AOM_101025,en,pref,Cladode,approved_new_concept
 AOM_101026,en,pref,Cob,approved_new_concept
@@ -4355,14 +4357,14 @@ AOM_101064,en,pref,Gluten constituent,approved_new_concept
 AOM_101065,en,pref,Starch constituent,approved_new_concept
 AOM_101066,en,pref,Fat constituent,approved_new_concept
 AOM_101067,en,pref,Essential-oil constituent,approved_new_concept
-AOM_101068,en,pref,Brewing,approved_new_concept
+AOM_101068,en,pref,Brewhouse processing,approved_new_concept
 AOM_101069,en,pref,Defatting,approved_new_concept
 AOM_101070,en,pref,Pressing,approved_new_concept
 AOM_101072,en,pref,Extraction,approved_new_concept
 AOM_101073,en,pref,Threshing,approved_new_concept
 AOM_101074,en,pref,Grain,approved_new_concept
 AOM_101075,en,pref,Mixed presentation,approved_new_concept
-AOM_101076,en,pref,Whole form,approved_new_concept
+AOM_101076,en,pref,Intact presentation,approved_new_concept
 AOM_101077,en,pref,Liquid consistency,approved_new_concept
 AOM_101078,en,pref,Pulp consistency,approved_new_concept
 AOM_101079,en,pref,Binder role,approved_new_concept
@@ -4376,15 +4378,14 @@ AOM_101088,en,pref,Autoclaving,approved_new_concept
 AOM_101090,en,pref,Cracking,approved_new_concept
 AOM_101096,en,pref,Heating,approved_new_concept
 AOM_101099,en,pref,Soaking,approved_new_concept
-AOM_101100,en,pref,Sprouting,approved_new_concept
 AOM_101103,en,pref,Blood component,approved_new_concept
 AOM_101104,en,pref,Bran,approved_new_concept
 AOM_101105,en,pref,Stover,approved_new_concept
 AOM_101106,en,pref,Straw,approved_new_concept
 AOM_101107,en,pref,Vine,approved_new_concept
 AOM_101108,en,pref,Pellet form,approved_new_concept
-AOM_101109,en,pref,Material integrity values,approved_new_concept
-AOM_101110,en,pref,Whole grain,approved_new_concept
+AOM_101109,en,pref,Material integrity,approved_new_concept
+AOM_101110,en,pref,Whole-grain integrity,approved_new_concept
 AOM_101111,en,pref,Feed product types,approved_new_concept
 AOM_101112,en,pref,Processing pulp,approved_new_concept
 AOM_101113,en,pref,Hay product type,approved_new_concept
@@ -4393,7 +4394,6 @@ AOM_101115,en,pref,Composition states,approved_new_concept
 AOM_101116,en,pref,Whole-milk composition,approved_new_concept
 AOM_101117,en,pref,Flower,approved_new_concept
 AOM_101118,en,pref,Slurry consistency,approved_new_concept
-AOM_101119,en,pref,Steeping,approved_new_concept
 AOM_101120,en,pref,Protein constituent,approved_new_concept
 AOM_101121,en,pref,Rhizome,approved_new_concept
 AOM_101122,en,pref,Liver,approved_new_concept
@@ -4403,10 +4403,24 @@ AOM_101125,en,pref,Comminuted particle form,approved_new_concept
 AOM_101126,en,pref,Meal form,approved_new_concept
 AOM_101128,en,pref,Rendering,approved_new_concept
 AOM_101129,en,pref,Feed particle-size reduction processes,approved_new_concept
-AOM_101130,en,pref,Feed separation and fractionation processes,approved_new_concept
+AOM_101130,en,pref,Feed separation processes,approved_new_concept
 AOM_101131,en,pref,Feed shaping and agglomeration processes,approved_new_concept
-AOM_101132,en,pref,Ingredient bulk consistencies,approved_new_concept
-AOM_101133,en,pref,Ingredient moisture conditions,approved_new_concept
+AOM_101132,en,pref,Feed bulk consistencies,approved_new_concept
+AOM_101133,en,pref,Feed moisture conditions,approved_new_concept
+AOM_101134,en,pref,Full-fat composition,approved_new_concept
+AOM_100850,en,alt,Feed ingredient,approved_label_addition
+AOM_101019,en,alt,Ingredient anatomical parts,approved_label_addition
+AOM_101020,en,alt,Ingredient presentation forms,approved_label_addition
+AOM_101022,en,alt,Ingredient product roles,approved_label_addition
+AOM_101023,en,alt,Ingredient constituents,approved_label_addition
+AOM_101068,en,alt,Brewing,approved_label_addition
+AOM_101076,en,alt,Whole form,approved_label_addition
+AOM_101099,en,alt,Steeping,approved_label_addition
+AOM_101109,en,alt,Material integrity values,approved_label_addition
+AOM_101110,en,alt,Whole grain,approved_label_addition
+AOM_101130,en,alt,Feed separation and fractionation processes,approved_label_addition
+AOM_101132,en,alt,Ingredient bulk consistencies,approved_label_addition
+AOM_101133,en,alt,Ingredient moisture conditions,approved_label_addition
 AOM_001326,en,alt,Maize Whole Ensiled,approved_deprecation
 AOM_001326,en,alt,Maize Whole Silage,approved_deprecation
 AOM_000564,en,alt,Brewers By-Product,approved_deprecation

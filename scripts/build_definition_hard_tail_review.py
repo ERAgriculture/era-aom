@@ -33,7 +33,7 @@ WORKBOOK_STRUCTURED = {"AOM_001880", "AOM_001930", "AOM_002120", "AOM_006200"}
 COMPOUND_DESCRIPTORS = {
     "deep stacked": [("aom:processingMethod", "AOM_101123", "Stacking", "deep stacked")],
     "protein isolate": [
-        ("aom:ingredientConstituent", "AOM_101120", "Protein constituent", "protein"),
+        ("aom:primaryConstituent", "AOM_101120", "Protein constituent", "protein"),
         ("aom:processingMethod", "AOM_101072", "Extraction", "isolate"),
     ],
     "steep liquor": [
@@ -64,7 +64,7 @@ COMPOUND_DESCRIPTORS = {
     ],
     "liver oil": [
         ("aom:ingredientPart", "AOM_101122", "Liver", "liver"),
-        ("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil"),
+        ("aom:primaryConstituent", "AOM_101081", "Oil constituent", "oil"),
     ],
     "hash": [
         ("aom:presentationForm", "AOM_101075", "Mixed presentation", "hash"),
@@ -111,7 +111,7 @@ WORKBOOK_GAP_FACETS = {
 }
 
 CONSOLIDATED_FACETS = {
-    "AOM_000611": [("aom:ingredientConstituent", "AOM_101066", "Fat constituent", "full fat"),
+    "AOM_000611": [("aom:compositionState", "AOM_101134", "Full-fat composition", "full fat"),
                     ("aom:presentationForm", "AOM_101052", "Cake form", "cake"),
                     ("aom:processingMethod", "AOM_101070", "Pressing", "cake")],
     "AOM_001675": [("aom:ingredientPart", "AOM_101047", "Stem", "stalk")],
@@ -123,15 +123,15 @@ CONSOLIDATED_FACETS = {
 }
 
 MATERIAL_SCOPE_FACETS = {
-    "AOM_000538": [("aom:ingredientConstituent", "AOM_101080", "Ash constituent", "ash")],
+    "AOM_000538": [("aom:primaryConstituent", "AOM_101080", "Ash constituent", "ash")],
     "AOM_000571": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
     "AOM_000577": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
     "AOM_000578": [("aom:processingMethod", "AOM_101082", "Flour milling", "polish"),
                     ("aom:productRole", "AOM_101062", "By-product role", "polish")],
     "AOM_000589": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
     "AOM_000603": COMPOUND_DESCRIPTORS["haulm"],
-    "AOM_000671": [("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil")],
-    "AOM_001317": [("aom:ingredientConstituent", "AOM_101066", "Fat constituent", "full fat")],
+    "AOM_000671": [("aom:primaryConstituent", "AOM_101081", "Oil constituent", "oil")],
+    "AOM_001317": [("aom:compositionState", "AOM_101134", "Full-fat composition", "full fat")],
     "AOM_001373": [("aom:productRole", "AOM_101079", "Binder role", "binder hierarchy")],
     "AOM_002107": [("aom:ingredientPart", "AOM_101038", "Seed", "bean")],
     "AOM_002218": COMPOUND_DESCRIPTORS["haulm"],
@@ -146,8 +146,8 @@ ONTOLOGY_INTEGRITY_FACETS = {
 
 FINAL_TAIL_FACETS = {
     "AOM_000664": [("aom:ingredientPart", "AOM_101028", "Fruit", "avocado")],
-    "AOM_000672": [("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil")],
-    "AOM_000676": [("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil")],
+    "AOM_000672": [("aom:primaryConstituent", "AOM_101081", "Oil constituent", "oil")],
+    "AOM_000676": [("aom:primaryConstituent", "AOM_101081", "Oil constituent", "oil")],
     "AOM_003172": [("aom:productRole", "AOM_101061", "Waste role", "waste")],
 }
 
@@ -180,8 +180,8 @@ DESCRIPTORS = [
     ("hull", "aom:ingredientPart", "AOM_101030", "Hull"),
     ("tops", "aom:ingredientPart", "AOM_101048", "Plant top"),
     ("nut", "aom:ingredientPart", "AOM_101038", "Seed"),
-    ("starch", "aom:ingredientConstituent", "AOM_101065", "Starch constituent"),
-    ("oil", "aom:ingredientConstituent", "AOM_101081", "Oil constituent"),
+    ("starch", "aom:primaryConstituent", "AOM_101065", "Starch constituent"),
+    ("oil", "aom:primaryConstituent", "AOM_101081", "Oil constituent"),
     ("cake", "aom:presentationForm", "AOM_101052", "Cake form"),
     ("binder", "aom:productRole", "AOM_101079", "Binder role"),
     ("cull", "aom:productRole", "AOM_101055", "Discard role"),

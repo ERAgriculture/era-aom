@@ -1,6 +1,6 @@
 {
-  "expected_concepts": 2772,
-  "expected_hierarchy_relations": 2787,
+  "expected_concepts": 2771,
+  "expected_hierarchy_relations": 2788,
   "minimum_graph_triples": 28638,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
@@ -20,7 +20,9 @@
   "expected_top_concepts": ["AOM_000001", "AOM_000106", "AOM_000358", "AOM_000846"],
   "maximum_response_seconds": 5.0,
   "representative_checks": [
-    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "Whole grain"},
+    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "Whole-grain integrity"},
+    {"concept_id": "AOM_100850", "label": "Feed materials", "definition_contains": "formulated feeds"},
+    {"concept_id": "AOM_001491", "label": "Formulated feeds", "definition_contains": "component feed materials"},
     {"concept_id": "AOM_001326", "label": "Whole-crop maize silage", "definition_contains": "Ensiling"},
     {"concept_id": "AOM_003206", "label": "Poultry by-products", "definition_contains": "By-product role"},
     {"concept_id": "AOM_101127", "label": "Poultry by-product meal", "definition_contains": "drying"},

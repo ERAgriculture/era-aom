@@ -55,7 +55,7 @@ assert all(
 assert summary["duplicate_preferred_label_groups"] <= BASELINE["maximum_duplicate_preferred_label_groups"]
 assert summary["concepts_in_duplicate_groups"] <= BASELINE["maximum_concepts_in_duplicate_groups"]
 assert summary["excess_identifiers"] <= BASELINE["maximum_excess_identifiers"]
-assert len(remediations) == 17
+assert len(remediations) == 19
 assert len({row["generated_id"] for row in remediations}) == len(remediations)
 assert {row["action"] for row in remediations} == {
     "reuse_existing", "rename_distinct"

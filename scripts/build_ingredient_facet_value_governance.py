@@ -10,24 +10,24 @@ DATE = "2026-08-05"
 REVIEWER = "Pete Steward"
 FACET_MODEL = {
     "material_component": ("aom:materialComponent", "aom:FeedMaterialComponent"),
-    "anatomical_part": ("aom:ingredientPart", "aom:IngredientPartCategory"),
-    "presentation_form": ("aom:presentationForm", "aom:IngredientPresentationForm"),
-    "bulk_consistency": ("aom:bulkConsistency", "aom:IngredientBulkConsistency"),
-    "moisture_condition": ("aom:moistureCondition", "aom:IngredientMoistureCondition"),
+    "anatomical_part": ("aom:ingredientPart", "aom:FeedMaterialPartCategory"),
+    "presentation_form": ("aom:presentationForm", "aom:FeedPresentationForm"),
+    "bulk_consistency": ("aom:bulkConsistency", "aom:FeedBulkConsistency"),
+    "moisture_condition": ("aom:moistureCondition", "aom:FeedMoistureCondition"),
     "material_integrity": ("aom:materialIntegrity", "aom:MaterialIntegrity"),
     "feed_product_type": ("aom:feedProductType", "aom:FeedProductType"),
     "composition_state": ("aom:compositionState", "aom:CompositionState"),
     "processing_method": ("aom:processingMethod", "aom:ProcessingMethod"),
     "product_role": ("aom:productRole", "aom:ProductRole"),
-    "chemical_constituent": ("aom:ingredientConstituent", "aom:IngredientConstituent"),
+    "chemical_constituent": ("aom:primaryConstituent", "aom:ChemicalConstituent"),
 }
 
 ROOTS = [
-    ("part_root", "Ingredient anatomical parts", "Biological structures from which feed materials derive.", "anatomical_part"),
-    ("form_root", "Ingredient presentation forms", "Shapes and particle presentations of feed materials, independently of moisture and bulk consistency.", "presentation_form"),
+    ("part_root", "Feed-material anatomical parts", "Biological structures represented as components of feed materials.", "anatomical_part"),
+    ("form_root", "Feed presentation forms", "Shapes and particle presentations of feeds, independently of moisture and bulk consistency.", "presentation_form"),
     ("process_root", "Feed processes", "Transformations used to produce, preserve, separate, or prepare feed materials.", "processing_method"),
-    ("role_root", "Ingredient product roles", "Economic or production roles of feed materials.", "product_role"),
-    ("constituent_root", "Ingredient constituents", "Chemical substances or fractions identified in feed materials.", "chemical_constituent"),
+    ("role_root", "Feed-material product roles", "Economic or production roles of feed materials.", "product_role"),
+    ("constituent_root", "Primary chemical constituents", "Chemical substances or chemically defined fractions that primarily characterize feed materials.", "chemical_constituent"),
 ]
 
 VALUES = [
@@ -75,7 +75,7 @@ VALUES = [
     ("const_starch", "Starch constituent", "constituent_root", "chemical_constituent"),
     ("const_fat", "Fat constituent", "constituent_root", "chemical_constituent"),
     ("const_essential_oil", "Essential-oil constituent", "constituent_root", "chemical_constituent"),
-    ("process_brewing", "Brewing", "process_root", "processing_method"),
+    ("process_brewing", "Brewhouse processing", "process_root", "processing_method"),
     ("process_defatting", "Defatting", "process_root", "processing_method"),
     ("process_pressing", "Pressing", "process_root", "processing_method"),
     ("process_drying", "Drying", "process_root", "processing_method"),
@@ -83,7 +83,7 @@ VALUES = [
     ("process_threshing", "Threshing", "process_root", "processing_method"),
     ("part_grain", "Grain", "part_root", "anatomical_part"),
     ("form_mixture", "Mixed presentation", "form_root", "presentation_form"),
-    ("form_whole", "Whole form", "form_root", "presentation_form"),
+    ("form_whole", "Intact presentation", "form_root", "presentation_form"),
     ("form_liquid", "Liquid consistency", "bulk_root", "bulk_consistency"),
     ("form_pulp", "Pulp consistency", "bulk_root", "bulk_consistency"),
     ("role_binder", "Binder role", "role_root", "product_role"),
@@ -125,8 +125,8 @@ EXTENSION_VALUES = [
     ("part_straw", "Straw", "part_root", "anatomical_part"),
     ("part_vine", "Vine", "part_root", "anatomical_part"),
     ("form_pellet", "Pellet form", "form_root", "presentation_form"),
-    ("integrity_root", "Material integrity values", None, "material_integrity"),
-    ("integrity_whole_grain", "Whole grain", "integrity_root", "material_integrity"),
+    ("integrity_root", "Material integrity", None, "material_integrity"),
+    ("integrity_whole_grain", "Whole-grain integrity", "integrity_root", "material_integrity"),
     # ADR 0020 closes ambiguous pulp, hay, formulated-meal, and whole-milk cases.
     ("product_type_root", "Feed product types", None, "feed_product_type"),
     ("product_processing_pulp", "Processing pulp", "product_type_root", "feed_product_type"),
@@ -147,10 +147,11 @@ EXTENSION_VALUES = [
     ("form_meal", "Meal form", "form_comminuted", "presentation_form"),
     ("process_rendering", "Rendering", "process_root", "processing_method"),
     ("process_particle_reduction", "Feed particle-size reduction processes", "process_root", "processing_method"),
-    ("process_separation", "Feed separation and fractionation processes", "process_root", "processing_method"),
+    ("process_separation", "Feed separation processes", "process_root", "processing_method"),
     ("process_shaping", "Feed shaping and agglomeration processes", "process_root", "processing_method"),
-    ("bulk_root", "Ingredient bulk consistencies", None, "bulk_consistency"),
-    ("moisture_root", "Ingredient moisture conditions", None, "moisture_condition"),
+    ("bulk_root", "Feed bulk consistencies", None, "bulk_consistency"),
+    ("moisture_root", "Feed moisture conditions", None, "moisture_condition"),
+    ("composition_full_fat", "Full-fat composition", "composition_state_root", "composition_state"),
 ]
 RULE_EXTENSION_KEYS = {key for key, *_ in EXTENSION_VALUES[1:]}
 NEW_0041_KEYS = {"form_comminuted", "form_meal", "process_rendering"}
@@ -164,6 +165,14 @@ REVIEW_0042_KEYS = {
     "form_liquid", "form_pulp", "form_pellet", "form_slurry",
     "form_comminuted", "form_meal", "process_milling", *NEW_0042_KEYS,
 }
+NEW_0043_KEYS = {"composition_full_fat"}
+REVIEW_0043_KEYS = {
+    "part_root", "form_root", "role_root", "constituent_root",
+    "process_brewing", "form_whole", "integrity_root",
+    "integrity_whole_grain", "process_separation", "bulk_root",
+    "moisture_root", *NEW_0043_KEYS,
+}
+CURRENT_REVIEW_KEYS = REVIEW_0042_KEYS | REVIEW_0043_KEYS | NEW_0041_KEYS
 ID_OVERRIDES = {
     "process_rendering": "AOM_101128",
     "process_particle_reduction": "AOM_101129",
@@ -171,6 +180,7 @@ ID_OVERRIDES = {
     "process_shaping": "AOM_101131",
     "bulk_root": "AOM_101132",
     "moisture_root": "AOM_101133",
+    "composition_full_fat": "AOM_101134",
 }
 NOTE_OVERRIDES = {
     "form_comminuted": "Particle presentation produced by size reduction; bulk consistency, moisture condition, and particle-size threshold remain unspecified.",
@@ -185,10 +195,16 @@ NOTE_OVERRIDES = {
     "form_liquid": "Flowing bulk consistency without a governed requirement for dispersed solid particles.",
     "form_slurry": "Bulk consistency in which solid particles are dispersed in a liquid continuous phase; not equivalent to an unqualified liquid.",
     "form_pulp": "Moist fibrous or cellular bulk consistency, commonly semisolid; source and production process remain independently represented.",
+    "form_whole": "Presentation in which a feed item remains visibly intact; whole-crop or whole-grain integrity is not implied.",
+    "integrity_whole_grain": "Retention of the characteristic anatomical fractions of a cereal grain, independently of particle-size reduction.",
+    "process_brewing": "Mashing, lautering, boiling, or related brewhouse operations; microbial fermentation remains a separate biological process.",
+    "composition_full_fat": "Composition state indicating that native fat has not been intentionally removed; it does not assert a measured fat concentration.",
 }
 
 
 def evidence_for(key):
+    if key in REVIEW_0043_KEYS:
+        return "docs/decisions/0043-feed-formulation-and-descriptor-model.md"
     if key in NEW_0041_KEYS:
         return "docs/decisions/0041-feed-material-structural-model.md"
     if key in REVIEW_0042_KEYS:
@@ -227,6 +243,7 @@ ATOMIC = {
     "Viscera": "part_viscera", "Waste": "role_waste",
     "Ash": "const_ash", "Binder": "role_binder", "Grain": "part_grain",
     "Manure": "role_waste", "Mix": "form_mixture", "Oil": "const_oil",
+    "Full Fat": "composition_full_fat",
     "Shell": "part_shell", "Shells": "part_shell", "Sludge": "role_processing_waste",
     "Tops": "part_top",
 }
@@ -236,7 +253,7 @@ DECOMPOSITIONS = {
     "Bean Shell": ["part_shell"],
     "Brewers Grain": ["process_brewing", "role_byproduct"],
     "Flakes Defatted": ["form_flake", "process_defatting"],
-    "Full Fat Cake": ["const_fat", "form_cake", "process_pressing"],
+    "Full Fat Cake": ["composition_full_fat", "form_cake", "process_pressing"],
     "Hay": ["form_dried", "process_drying"],
     "Kernel Cake": ["part_kernel", "form_cake", "process_pressing"],
     "Leaves and Soft Twig": ["part_leaf", "part_twig"],
@@ -264,7 +281,6 @@ DECOMPOSITIONS = {
 
 HOLDS = {
     "Beans": "May denote whole material identity or seed; no audited occurrence resolves scope.",
-    "Full Fat": "Compositional state cannot be represented truthfully as mere fat-constituent identity.",
     "Heads": "Source-only mapping cannot distinguish audited shrimp heads from possible plant reproductive heads.",
     "Litter": "May denote bedding, poultry excreta mixture, or material identity; no audited occurrence resolves scope.",
     "Meal": "Audited value is a named complete ration, not evidence for ground physical form or extraction residue.",
@@ -336,17 +352,17 @@ def main():
             "case_id": "FACETVAL-" + key.upper(), "concept_id": ids[key],
             "preferred_label": label, "scope_note": NOTE_OVERRIDES.get(key, note), "broader_id": parent_id,
             "hierarchy_level": level, "derived_path": path, "child_ids": "",
-            "reviewer": REVIEWER, "review_date": "2026-08-11" if key in REVIEW_0042_KEYS or key in NEW_0041_KEYS else DATE,
+            "reviewer": REVIEWER, "review_date": "2026-08-11" if key in CURRENT_REVIEW_KEYS else DATE,
             "evidence": evidence_for(key),
             "rationale": "Dedicated facet value prevents reuse of equal labels from incompatible AOM branches.",
         })
     new_registry = [{
-        "concept_id": ids[key], "allocated_on": "2026-08-11" if key in NEW_0041_KEYS or key in NEW_0042_KEYS else DATE,
+        "concept_id": ids[key], "allocated_on": "2026-08-11" if key in CURRENT_REVIEW_KEYS else DATE,
         "status": "allocated",
         "preferred_label": label, "case_id": "FACETVAL-" + key.upper(), "allocator": REVIEWER,
         "allocation_basis": (
             "Sequential governed allocation in ADR 0041 structural vocabulary; full collision audit verified unused."
-            if key in NEW_0041_KEYS or key in NEW_0042_KEYS else
+            if key in NEW_0041_KEYS or key in NEW_0042_KEYS or key in NEW_0043_KEYS else
             "Sequential governed allocation above AOM_101018 for ingredient facet value vocabulary; verified unused."
         ),
     } for key, label, *_ in definitions]
@@ -362,7 +378,7 @@ def main():
             "target_property": target_property, "value_class": value_class,
             "concept_role": "facet_root" if parent is None else "facet_value",
             "status": "approved", "reviewer": REVIEWER,
-            "review_date": "2026-08-11" if key in REVIEW_0042_KEYS or key in NEW_0041_KEYS else DATE,
+            "review_date": "2026-08-11" if key in CURRENT_REVIEW_KEYS else DATE,
             "evidence": evidence_for(key),
         })
     for concept_id, label, facet in EXISTING_VALUES:
