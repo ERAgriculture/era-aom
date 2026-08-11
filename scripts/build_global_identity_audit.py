@@ -69,6 +69,7 @@ facet_sources = [
     "approved_feed_material_facets.csv",
     "approved_generated_feed_material_facets.csv",
     "approved_hard_tail_feed_material_facets.csv",
+    "approved_structural_feed_material_facets.csv",
 ]
 uses = defaultdict(list)
 for name in facet_sources:

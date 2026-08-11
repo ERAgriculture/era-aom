@@ -22,6 +22,7 @@ labels = {
     "feedProductType": "has feed product type",
     "compositionState": "has composition state",
     "processingMethod": "has processing method",
+    "mayResultInPhysicalForm": "may result in physical form",
     "productRole": "has product role",
     "ingredientConstituent": "has ingredient constituent",
     "ingredientSource": "has ingredient source",

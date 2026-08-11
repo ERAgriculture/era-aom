@@ -56,6 +56,9 @@ jobs:
           python scripts/build_definition_enrichment.py
           python scripts/build_ingredient_model_gap_review.py
           python scripts/apply_identity_integrity_remediations.py
+          python scripts/build_feed_material_structural_review.py
+          python scripts/build_definition_enrichment.py
+          python scripts/normalize_livestock_release.py data/livestock-staging/legacy_records.csv .
           python tests/validate_feed_identity_audit.py
           python tests/validate_ontology_collision_governance.py
           python tests/validate_definition_enrichment.py
@@ -91,6 +94,7 @@ jobs:
           python tests/validate_feed_material_harmonization.py
           python tests/validate_maize_bran_card.py
           python tests/validate_semantic_predicate_visibility.py
+          python tests/validate_feed_material_structural_review.py
       - name: Validate semantic model and dispositions
         run: |
           python scripts/build_semantic_bindings.py

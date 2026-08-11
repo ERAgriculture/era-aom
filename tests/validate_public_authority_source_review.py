@@ -30,9 +30,15 @@ source_scope = {
     row["concept_id"] for row in definitions
     if row["definition_method"] == "composed_from_reviewed_public_authority_source_scope"
 }
-assert source_scope == {
+approved_source_scope = {
     row["concept_id"] for row in rows if row["decision"] == "approve_direct_source_scope"
 }
+facet_composed = {
+    row["concept_id"] for row in definitions
+    if row["definition_method"] == "composed_from_approved_semantic_facets"
+}
+assert source_scope <= approved_source_scope
+assert source_scope | (facet_composed & approved_source_scope) == approved_source_scope
 oil_ids = {"AOM_000651", "AOM_000674", "AOM_001586"}
 assert {
     row["feed_material_id"] for row in facets

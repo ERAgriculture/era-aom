@@ -30,8 +30,12 @@ assert (URIRef(SCHEMA + "productRole"), RDFS.label, Literal("has product role", 
 assert "outer grain layers" in str(next(vocab.objects(bran, SKOS.definition))).casefold()
 assert "principal product" in str(next(vocab.objects(byproduct, SKOS.definition))).casefold()
 assert "by-product" in str(next(vocab.objects(maize_bran, SKOS.definition))).casefold()
+feedipedia = URIRef("https://www.feedipedia.org/node/12280")
+assert (maize_bran, SKOS.relatedMatch, feedipedia) in vocab
+assert (feedipedia, RDFS.label, Literal("Maize bran", lang="en")) in graph
 
 with (DATA / "approved_feed_material_external_facets.csv").open(encoding="utf-8", newline="") as handle:
     external = list(csv.DictReader(handle))
-assert len(external) == 1 and external[0]["feed_material_id"] == "AOM_001614"
-print("Maize Bran card validation passed: species, Bran component, and by-product role")
+assert len(external) == 3
+assert any(row["feed_material_id"] == "AOM_001614" for row in external)
+print("Maize Bran card validation passed: source link, species, Bran component, and by-product role")

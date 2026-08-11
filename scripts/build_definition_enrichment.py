@@ -44,6 +44,7 @@ material_facets = (
     read("approved_feed_material_facets.csv")
     + read("approved_generated_feed_material_facets.csv")
     + read("approved_hard_tail_feed_material_facets.csv")
+    + read("approved_structural_feed_material_facets.csv")
 )
 feedipedia_scope_reviews = list(csv.DictReader(
     (ROOT / "review/livestock-v11/feedipedia_source_scope_review.csv").open(encoding="utf-8", newline="")
@@ -97,8 +98,12 @@ property_label = {
     "aom:compositionState": "composition state",
     "aom:ingredientConstituent": "ingredient constituent",
 }
+new_concept_ids = {row["concept_id"] for row in new_concepts}
 for concept_id, facets in sorted(by_material.items()):
-    if concept_id in existing or concepts[concept_id]["status"] == "deprecated":
+    if (
+        concept_id in existing or concept_id in new_concept_ids
+        or concepts[concept_id]["status"] == "deprecated"
+    ):
         continue
     source = hard_tail_by_id.get(concept_id, {}).get(
         "governed_source_identity", inventory[concept_id]["source_identity_candidate"]
@@ -120,7 +125,7 @@ for concept_id, facets in sorted(by_material.items()):
         "evidence": (
             "data/livestock-staging/approved_hard_tail_feed_material_facets.csv"
             if concept_id in hard_tail_by_id else
-            "data/livestock-staging/approved_feed_material_facets.csv;data/livestock-staging/approved_generated_feed_material_facets.csv"
+            "data/livestock-staging/approved_feed_material_facets.csv;data/livestock-staging/approved_generated_feed_material_facets.csv;data/livestock-staging/approved_structural_feed_material_facets.csv"
         ),
         "rationale": "Definition states only governed source identity and approved semantic assertions; no biological or nutritional claim is inferred.",
     })

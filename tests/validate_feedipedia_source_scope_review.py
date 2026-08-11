@@ -34,6 +34,11 @@ generated = {
     row["concept_id"] for row in definitions
     if row["definition_method"] == "composed_from_reviewed_feedipedia_source_scope"
 }
-assert generated == approved
+facet_composed = {
+    row["concept_id"] for row in definitions
+    if row["definition_method"] == "composed_from_approved_semantic_facets"
+}
+assert generated <= approved
+assert generated | (facet_composed & approved) == approved
 assert not any("ilri" in value.casefold() for row in rows for value in row.values())
 print("Feedipedia source-scope validation passed: 101 approved; 92 held")

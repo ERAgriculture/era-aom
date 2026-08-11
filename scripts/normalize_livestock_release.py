@@ -80,6 +80,7 @@ def main():
     mapping_replacements = read_governance("approved_mapping_replacements.csv")
     deprecations = read_governance("approved_deprecations.csv")
     label_corrections = read_governance("approved_label_corrections.csv")
+    label_suppressions = read_governance("approved_label_suppressions.csv")
     new_concepts = read_governance("approved_new_concepts.csv")
     id_registry = read_governance("livestock_id_registry.csv")
     semantic_relations = read_governance("approved_semantic_relations.csv")
@@ -87,6 +88,7 @@ def main():
     facet_concepts = read_governance("approved_ingredient_facet_concepts.csv")
     definition_enrichments = read_governance("approved_definition_enrichments.csv")
     mapping_reviews = read_governance("approved_mapping_reviews.csv")
+    mapping_additions = read_governance("approved_mapping_additions.csv")
     mapping_review_by_key = {
         (row["subject_id"], row["target_scheme"], row["target_uri"] or row["target_id"]): row
         for row in mapping_reviews
@@ -341,11 +343,10 @@ def main():
                 })
 
     concept_ids = {row["concept_id"] for row in concepts}
+    new_concept_ids = {row["concept_id"] for row in new_concepts}
+    known_concept_ids = concept_ids | new_concept_ids
     for new_concept in new_concepts:
         concept_id = new_concept["concept_id"]
-        parent_id = new_concept["broader_id"]
-        if parent_id not in concept_ids:
-            raise ValueError(f"New concept parent is unknown: {parent_id}")
         concepts.append({
             "concept_id": concept_id, "scheme_id": SCHEME_ID,
             "module": "aom-livestock", "concept_type": "aom_concept",
@@ -364,6 +365,16 @@ def main():
                 "note_type": "scope_note", "note": new_concept["scope_note"],
                 "source_column": "approved_new_concept",
             })
+        sources.append({
+            "concept_id": concept_id, "source_release": "AOM curation",
+            "source_row": "", "source_doi": new_concept["evidence"],
+        })
+    concept_ids = known_concept_ids
+    for new_concept in new_concepts:
+        concept_id = new_concept["concept_id"]
+        parent_id = new_concept["broader_id"]
+        if parent_id not in concept_ids:
+            raise ValueError(f"New concept parent is unknown: {parent_id}")
         relations.append({
             "subject_id": concept_id, "relation_type": "broader",
             "object_id": parent_id, "status": "reviewed",
@@ -381,11 +392,6 @@ def main():
                 "subject_id": child_id, "relation_type": "broader",
                 "object_id": concept_id, "status": "reviewed",
             })
-        sources.append({
-            "concept_id": concept_id, "source_release": "AOM curation",
-            "source_row": "", "source_doi": new_concept["evidence"],
-        })
-        concept_ids.add(concept_id)
 
     for reparenting in reparentings:
         target_id = reparenting["target_parent_id"]
@@ -449,6 +455,60 @@ def main():
                     "source_column": "approved_deprecation",
                 })
 
+    suppression_keys = {
+        (row["concept_id"], row["label_type"], row["label"].casefold())
+        for row in label_suppressions
+    }
+    if len(suppression_keys) != len(label_suppressions):
+        raise ValueError("Approved label suppressions must be unique")
+    matched_suppressions = {
+        (row["concept_id"], row["label_type"], row["label"].casefold())
+        for row in labels
+        if (row["concept_id"], row["label_type"], row["label"].casefold())
+        in suppression_keys
+    }
+    if matched_suppressions != suppression_keys:
+        raise ValueError("Approved label suppression references missing normalized label")
+    labels = [
+        row for row in labels
+        if (row["concept_id"], row["label_type"], row["label"].casefold())
+        not in suppression_keys
+    ]
+
+    allowed_mapping_relations = {
+        "exactMatch", "closeMatch", "broadMatch", "narrowMatch", "relatedMatch"
+    }
+    mapping_keys = {
+        (row["subject_id"], row["mapping_relation"], row["target_scheme"],
+         row["target_uri"] or row["target_id"])
+        for row in mappings
+    }
+    for addition in mapping_additions:
+        if addition["subject_id"] not in concept_ids:
+            raise ValueError("Approved mapping addition references unknown concept")
+        if addition["mapping_relation"] not in allowed_mapping_relations:
+            raise ValueError("Approved mapping addition uses unsupported SKOS relation")
+        key = (
+            addition["subject_id"], addition["mapping_relation"],
+            addition["target_scheme"], addition["target_uri"] or addition["target_id"],
+        )
+        if key in mapping_keys:
+            raise ValueError("Approved mapping addition duplicates normalized mapping")
+        mapping_keys.add(key)
+        mappings.append({
+            "subject_id": addition["subject_id"],
+            "mapping_relation": addition["mapping_relation"],
+            "target_scheme": addition["target_scheme"],
+            "target_id": addition["target_id"],
+            "target_uri": addition["target_uri"],
+            "original_value": addition["original_value"],
+            "normalization_applied": "approved_mapping_addition",
+            "evidence": addition["evidence"],
+            "status": addition["status"],
+            "source_release": addition["source_release"],
+            "reviewer": addition["reviewer"],
+        })
+
     schemes = [{
         "scheme_id": SCHEME_ID, "module": "aom-livestock",
         "preferred_label": "AOM Livestock v2 staging", "language": "en",
@@ -489,10 +549,10 @@ def main():
     }
     concept_type = {row["concept_id"]: row["concept_type"] for row in concepts}
     facet_value_class = {row["concept_id"]: row["value_class"] for row in facet_concepts}
-    mapped = defaultdict(list)
+    mapped = defaultdict(lambda: defaultdict(list))
     for row in mappings:
         if row["target_uri"]:
-            mapped[row["subject_id"]].append(row["target_uri"])
+            mapped[row["subject_id"]][row["mapping_relation"]].append(row["target_uri"])
 
     graph = [{
         "@id": SCHEME_URI, "@type": "skos:ConceptScheme",
@@ -526,8 +586,10 @@ def main():
                 {"@id": URI_PREFIX + target_id}
                 for target_id in sorted(set(related[concept_id]))
             ]
-        if mapped[concept_id]:
-            item["skos:relatedMatch"] = [{"@id": x} for x in sorted(set(mapped[concept_id]))]
+        for relation, targets in sorted(mapped[concept_id].items()):
+            item[f"skos:{relation}"] = [
+                {"@id": target} for target in sorted(set(targets))
+            ]
         graph.append(item)
     dist_dir.mkdir(parents=True, exist_ok=True)
     jsonld = {
@@ -573,7 +635,11 @@ def main():
             f"skos:related <{URI_PREFIX + target_id}>"
             for target_id in sorted(set(related[concept_id]))
         ]
-        terms += [f"skos:relatedMatch <{x}>" for x in sorted(set(mapped[concept_id]))]
+        terms += [
+            f"skos:{relation} <{target}>"
+            for relation, targets in sorted(mapped[concept_id].items())
+            for target in sorted(set(targets))
+        ]
         ttl.append(f"<{URI_PREFIX + concept_id}> " + " ;\n  ".join(terms) + " .\n")
     (dist_dir / "aom-livestock.ttl").write_text("\n".join(ttl), encoding="utf-8")
 
@@ -628,8 +694,10 @@ def main():
             "approved_identity_resolutions": len(identity_resolutions),
             "approved_mapping_replacements": len(mapping_replacements),
             "approved_mapping_reviews": len(mapping_reviews),
+            "approved_mapping_additions": len(mapping_additions),
             "approved_deprecations": len(deprecations),
             "approved_label_corrections": len(label_corrections),
+            "approved_label_suppressions": len(label_suppressions),
             "approved_new_concepts": len(new_concepts),
             "registered_livestock_ids": len(id_registry),
             "approved_semantic_relations": len(semantic_relations),
@@ -652,6 +720,9 @@ def main():
             ),
             "approved_hard_tail_feed_material_facets": len(
                 read_governance("approved_hard_tail_feed_material_facets.csv")
+            ),
+            "approved_structural_feed_material_facets": len(
+                read_governance("approved_structural_feed_material_facets.csv")
             ),
             "approved_feed_material_external_facets": len(
                 read_governance("approved_feed_material_external_facets.csv")
