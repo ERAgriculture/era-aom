@@ -31,10 +31,10 @@ summary = json.loads((REVIEW / "global_identity_collision_summary.json").read_te
 assert len(decisions) == len(cohort) == 93
 assert Counter(row["decision"] for row in decisions) == {
     "retain_distinct": 66,
-    "deprecate_replace": 25,
-    "hold_identity": 2,
+    "deprecate_replace": 26,
+    "hold_identity": 1,
 }
-assert Counter(row["status"] for row in decisions) == {"approved": 91, "hold": 2}
+assert Counter(row["status"] for row in decisions) == {"approved": 92, "hold": 1}
 assert all(row["reviewer"] == "Pete Steward" and row["review_date"] for row in decisions)
 
 decisions_by_label = {}
@@ -52,7 +52,7 @@ for group in cohort:
 holds = {
     row["collision_key"] for row in decisions if row["decision"] == "hold_identity"
 }
-assert holds == {"cotton seed", "extrusion"}
+assert holds == {"cotton seed"}
 
 replacement_pairs = {
     (row["deprecated_id"], row["replacement_id"]) for row in deprecations
@@ -67,8 +67,8 @@ for decision in decisions:
     )
 
 assert summary["reviewed_groups"] == 93
-assert summary["approved_groups"] == 91
-assert summary["held_groups"] == 2
+assert summary["approved_groups"] == 92
+assert summary["held_groups"] == 1
 assert summary["unreviewed_groups"] == 0
 assert summary["status"] == "governed_with_holds"
 

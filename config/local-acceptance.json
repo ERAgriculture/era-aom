@@ -1,6 +1,6 @@
 {
-  "expected_concepts": 2769,
-  "expected_hierarchy_relations": 2771,
+  "expected_concepts": 2772,
+  "expected_hierarchy_relations": 2787,
   "minimum_graph_triples": 28638,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
@@ -11,7 +11,7 @@
   "compound_display_properties": [
     {"property": "Has biological species", "value": "Zea mays"},
     {"property": "Has material component", "value": "Bran"},
-    {"property": "Has processing method", "value": "Milling"},
+    {"property": "Has processing method", "value": "Flour milling"},
     {"property": "Has product role", "value": "By-product role"}
   ],
   "search_query": "Maize",
@@ -22,8 +22,8 @@
     {"concept_id": "AOM_001326", "label": "Whole-crop maize silage", "definition_contains": "Ensiling"},
     {"concept_id": "AOM_003206", "label": "Poultry by-products", "definition_contains": "By-product role"},
     {"concept_id": "AOM_101127", "label": "Poultry by-product meal", "definition_contains": "drying"},
-    {"concept_id": "AOM_001679", "label": "Maize Grain Ground", "definition_contains": "Comminuted solid form"},
-    {"concept_id": "AOM_001096", "label": "Chicken Ground", "definition_contains": "Comminuted solid form"},
+    {"concept_id": "AOM_001679", "label": "Maize Grain Ground", "definition_contains": "Comminuted particle form"},
+    {"concept_id": "AOM_001096", "label": "Chicken Ground", "definition_contains": "Comminuted particle form"},
     {"concept_id": "AOM_001938", "label": "Chicken Offal Dried Ground", "definition_contains": "Meal form"},
     {"concept_id": "AOM_001616", "label": "Blood", "definition_contains": "By-product role"},
     {"concept_id": "AOM_000748", "label": "Asperozym (Fibrolytic Enzymes)", "definition_contains": "unspecified"},

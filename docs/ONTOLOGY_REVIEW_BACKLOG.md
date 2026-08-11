@@ -2,7 +2,7 @@
 
 ## Processing-method hierarchy consolidation
 
-- Status: pending review
+- Status: implemented in ADR 0042; three material-level holds remain
 - Priority: high
 - Added: 2026-08-07
 
@@ -34,21 +34,22 @@ concepts (`AOM_000833` thermal and `AOM_000841` mechanical), requiring
 polyhierarchy or another explicit modelling decision rather than label-only
 deduplication.
 
-### Required work
+### Completed work
 
-1. Inventory every new processing facet against legacy process concepts,
-   definitions, hierarchy, workbook use, and feed-material assertions.
-2. Classify each pair as exact duplicate, narrower/broader, related, or truly
-   distinct.
-3. Prefer one canonical processing-method concept per meaning. Preserve stable
-   legacy IDs where semantics are sound; add explicit mappings and replacement
-   crosswalks for retired duplicates.
-4. Preserve useful biological/chemical/mechanical/thermal hierarchy. Support
-   polyhierarchy where one process legitimately belongs to multiple groups.
-5. Migrate generated feed-material assertions and ingestion crosswalks without
-   changing source records.
-6. Validate no duplicate preferred process identities remain and document
-   decision in ADR before release cutover.
+1. Reused `AOM_000845` as canonical process root and removed generated parallel
+   root from active release.
+2. Resolved Extrusion to canonical `AOM_000833` with thermal, mechanical, and
+   shaping parents; deprecated duplicate `AOM_000841`.
+3. Added particle-reduction, separation/fractionation, and
+   shaping/agglomeration objective branches while retaining mechanism branches.
+4. Split presentation, bulk consistency, and moisture condition into independent
+   predicates and hierarchies.
+5. Migrated governed assertions and recorded full review under
+   `review/livestock-v27/`.
+
+Remaining holds: `AOM_001961`, `AOM_002008`, and `AOM_006004` retain Grinding
+but receive no automatic comminuted-particle presentation until source evidence
+resolves their ground-fluid contradiction.
 
 Do not merge concepts automatically from labels alone. Existing definitions
 include scope differences and some source text still needs authority review.

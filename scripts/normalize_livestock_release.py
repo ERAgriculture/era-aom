@@ -85,6 +85,7 @@ def main():
     id_registry = read_governance("livestock_id_registry.csv")
     semantic_relations = read_governance("approved_semantic_relations.csv")
     reparentings = read_governance("approved_reparentings.csv")
+    hierarchy_revisions = read_governance("approved_hierarchy_revisions.csv")
     facet_concepts = read_governance("approved_ingredient_facet_concepts.csv")
     definition_enrichments = read_governance("approved_definition_enrichments.csv")
     mapping_reviews = read_governance("approved_mapping_reviews.csv")
@@ -413,6 +414,15 @@ def main():
 
     existing_definition_ids = {row["concept_id"] for row in definitions}
     enrichment_ids = {row["concept_id"] for row in definition_enrichments}
+    replacement_definition_ids = {
+        row["concept_id"] for row in definition_enrichments
+        if row["definition_method"].endswith("_replacement")
+    }
+    definitions = [
+        row for row in definitions
+        if row["concept_id"] not in replacement_definition_ids
+    ]
+    existing_definition_ids -= replacement_definition_ids
     if len(enrichment_ids) != len(definition_enrichments):
         raise ValueError("Approved definition enrichments must have unique concept IDs")
     if not enrichment_ids <= concept_ids or enrichment_ids & existing_definition_ids:
@@ -439,6 +449,37 @@ def main():
             "object_id": semantic_relation["object_id"],
             "status": "reviewed",
         })
+
+    relation_keys = {
+        (row["subject_id"], row["relation_type"], row["object_id"])
+        for row in relations
+    }
+    for revision in hierarchy_revisions:
+        if revision["status"] != "approved":
+            raise ValueError("Hierarchy revision must be approved")
+        if not {revision["child_id"], revision["add_parent_id"]} <= concept_ids:
+            raise ValueError("Hierarchy revision references unknown concept")
+        remove_parent_id = revision["remove_parent_id"]
+        if remove_parent_id:
+            remove_key = (revision["child_id"], "broader", remove_parent_id)
+            if remove_key not in relation_keys:
+                raise ValueError(f"Hierarchy revision removal is absent: {remove_key}")
+            relations = [
+                row for row in relations
+                if (row["subject_id"], row["relation_type"], row["object_id"])
+                != remove_key
+            ]
+            relation_keys.remove(remove_key)
+        add_key = (revision["child_id"], "broader", revision["add_parent_id"])
+        if add_key in relation_keys:
+            raise ValueError(f"Hierarchy revision addition already exists: {add_key}")
+        relations.append({
+            "subject_id": revision["child_id"],
+            "relation_type": "broader",
+            "object_id": revision["add_parent_id"],
+            "status": "reviewed",
+        })
+        relation_keys.add(add_key)
 
     for deprecation in deprecations:
         deprecated_id = deprecation["deprecated_id"]
@@ -702,6 +743,7 @@ def main():
             "registered_livestock_ids": len(id_registry),
             "approved_semantic_relations": len(semantic_relations),
             "approved_reparentings": len(reparentings),
+            "approved_hierarchy_revisions": len(hierarchy_revisions),
             "approved_semantic_bindings": len(
                 read_governance("approved_semantic_bindings.csv")
             ),

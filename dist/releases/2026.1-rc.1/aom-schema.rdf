@@ -10,11 +10,34 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/physicalForm">
+    <rdfs:comment xml:lang="en">Deprecated compatibility property; use presentationForm, bulkConsistency, or moistureCondition.</rdfs:comment>
+    <rdfs:label xml:lang="en">has physical descriptor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/mayResultInPhysicalForm">
+    <rdfs:label xml:lang="en">may result in physical descriptor</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    <rdfs:comment xml:lang="en">Deprecated compatibility property; use an axis-specific process-result property.</rdfs:comment>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/materialIntegrity">
     <rdfs:label xml:lang="en">has material integrity</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/MaterialIntegrity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/moistureCondition">
+    <rdfs:label xml:lang="en">has moisture condition</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientMoistureCondition"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/physicalForm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/CompositionState">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -32,6 +55,12 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/CompositionState"/>
     <rdfs:label xml:lang="en">has composition state</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPresentationForm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ingredient presentation form</rdfs:label>
+    <rdfs:comment xml:lang="en">Shape or particle presentation independently of bulk consistency and moisture condition.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedProductType">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -57,13 +86,6 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:label xml:lang="en">has feed product type</rdfs:label>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedProductType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/mayResultInPhysicalForm">
-    <rdfs:comment xml:lang="en">Links a processing method to a possible broad result form without asserting that every use has that form or a narrower particle-size subtype.</rdfs:comment>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
-    <rdfs:label xml:lang="en">may result in physical form</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Module">
     <rdfs:label xml:lang="en">module</rdfs:label>
@@ -151,21 +173,36 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPhysicalForm">
+    <rdfs:comment xml:lang="en">Compatibility superclass for independently governed presentation, bulk-consistency, and moisture-condition descriptors.</rdfs:comment>
+    <rdfs:label xml:lang="en">ingredient physical descriptor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/SemanticBinding">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Governed migration contract connecting a legacy AOM concept to its normalized data-model use.</rdfs:comment>
     <rdfs:label xml:lang="en">semantic binding</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/mayResultInPresentationForm">
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/mayResultInPhysicalForm"/>
+    <rdfs:comment xml:lang="en">Links a processing method to a possible presentation without asserting that every use has that result or a narrower subtype.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
+    <rdfs:label xml:lang="en">may result in presentation form</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPresentationForm"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/legacyConcept">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/physicalForm">
-    <rdfs:label xml:lang="en">has physical form</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/bulkConsistency">
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientBulkConsistency"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/physicalForm"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
+    <rdfs:label xml:lang="en">has bulk consistency</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/processingMethod">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -198,6 +235,14 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedFormulation"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/mayResultInMoistureCondition">
+    <rdfs:comment xml:lang="en">Links a processing method to a possible moisture condition without asserting that every material undergoing that process has that result.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">may result in moisture condition</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientMoistureCondition"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/mayResultInPhysicalForm"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedFormulation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">feed formulation</rdfs:label>
@@ -206,16 +251,22 @@
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueTargetConcept">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientBulkConsistency">
+    <rdfs:label xml:lang="en">ingredient bulk consistency</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
+    <rdfs:comment xml:lang="en">Bulk flow or dispersion consistency independently of particle presentation and moisture condition.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/legacyComponentDescriptor">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:comment xml:lang="en">Unmodified legacy component descriptor retained until reviewed decomposition into explicit facets.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueTargetConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/productRole">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
@@ -251,6 +302,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/presentationForm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPresentationForm"/>
+    <rdfs:label xml:lang="en">has presentation form</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/physicalForm"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPartCategory">
     <rdfs:label xml:lang="en">ingredient part category</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -260,6 +318,12 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Release">
     <rdfs:label xml:lang="en">release</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientMoistureCondition">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
+    <rdfs:comment xml:lang="en">Qualitative moisture condition independently of presentation and bulk consistency.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ingredient moisture condition</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceValue">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -301,11 +365,6 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientComponent">
     <rdfs:comment xml:lang="en">A feed material used in a formulation, optionally with a quantitative proportion.</rdfs:comment>
     <rdfs:label xml:lang="en">ingredient component</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPhysicalForm">
-    <rdfs:label xml:lang="en">ingredient physical form</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/compatibilityPolicy">

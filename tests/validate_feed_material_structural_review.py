@@ -30,17 +30,25 @@ summary = json.loads((REVIEW / "feed_material_structural_summary.json").read_tex
 
 assert len(cohort) == 1643 == summary["reviewed_feed_materials"]
 assert len({row["concept_id"] for row in cohort}) == len(cohort)
-assert len(facets) == 763 == summary["generated_assertions"]
+assert len(facets) == 1159 == summary["generated_assertions"]
 assert Counter(row["rule_id"] for row in facets) == {
-    "STRUCT-FORM-GRINDING": 341,
+    "STRUCT-FORM-GRINDING": 338,
+    "STRUCT-MOISTURE-BLOOD-EVIDENCE": 1,
+    "STRUCT-MOISTURE-DRYING": 398,
     "STRUCT-ROLE-BLOOD": 3,
     "STRUCT-ROLE-LEGACY-BYPRODUCT": 419,
 }
 assert Counter(row["form_disposition"] for row in cohort) == {
-    "approved_comminuted_form": 341,
-    "approved_existing_specific_form": 26,
-    "held_meal_without_process_evidence": 5,
-    "not_in_form_cohort": 1271,
+    "approved_comminuted_form": 338,
+    "approved_existing_specific_form": 19,
+    "held_grinding_bulk_state_conflict": 3,
+    "held_meal_without_process_evidence": 7,
+    "not_in_form_cohort": 1276,
+}
+assert Counter(row["moisture_disposition"] for row in cohort) == {
+    "approved_dried_from_blood_meal_evidence": 1,
+    "approved_dried_from_process": 398,
+    "not_in_moisture_cohort": 1244,
 }
 assert Counter(row["role_disposition"] for row in cohort) == {
     "approved_blood_byproduct": 3,
@@ -54,17 +62,23 @@ structural = {
     (row["feed_material_id"], row["target_property"], row["target_concept_id"])
     for row in facets
 }
-assert ("AOM_001679", "aom:physicalForm", "AOM_101125") in structural
-assert ("AOM_001096", "aom:physicalForm", "AOM_101125") in structural
+assert ("AOM_001679", "aom:presentationForm", "AOM_101125") in structural
+assert ("AOM_001096", "aom:presentationForm", "AOM_101125") in structural
+assert ("AOM_000536", "aom:moistureCondition", "AOM_101054") in structural
 assert ("AOM_001616", "aom:productRole", "AOM_101062") in structural
 assert ("AOM_000536", "aom:productRole", "AOM_101062") in structural
-assert not any(row["feed_material_id"] == "AOM_001938" for row in facets)
+assert not any(
+    row["feed_material_id"] == "AOM_001938"
+    and row["target_concept_id"] == "AOM_101126"
+    for row in facets
+)
 assert {
     (row["feed_material_id"], row["target_property"], row["target_concept_id"])
     for row in manual_facets
 } >= {
-    ("AOM_001938", "aom:physicalForm", "AOM_101126"),
-    ("AOM_101127", "aom:physicalForm", "AOM_101126"),
+    ("AOM_001938", "aom:presentationForm", "AOM_101126"),
+    ("AOM_101127", "aom:presentationForm", "AOM_101126"),
+    ("AOM_101127", "aom:moistureCondition", "AOM_101054"),
     ("AOM_101127", "aom:processingMethod", "AOM_000836"),
     ("AOM_101127", "aom:processingMethod", "AOM_000843"),
     ("AOM_101127", "aom:processingMethod", "AOM_101128"),
@@ -97,7 +111,7 @@ assert (concept("AOM_101127"), SKOS.narrowMatch,
         URIRef("https://www.feedipedia.org/node/12911")) in livestock
 assert (concept("AOM_001614"), SKOS.relatedMatch,
         URIRef("https://www.feedipedia.org/node/12280")) in livestock
-assert (concept("AOM_000836"), URIRef(SCHEMA + "mayResultInPhysicalForm"),
+assert (concept("AOM_000836"), URIRef(SCHEMA + "mayResultInPresentationForm"),
         concept("AOM_101125")) in bindings
 assert (URIRef("https://www.feedipedia.org/node/12280"), RDFS.label,
         Literal("Maize bran", lang="en")) in bindings
@@ -114,4 +128,4 @@ assert "poultry by-products" in poultry_labels
 assert "chicken offal" not in poultry_labels
 assert "poultry by-product meal" not in poultry_labels
 
-print("Feed-material structural review passed: 1,643 materials; 763 assertions; 335 Feedipedia resources")
+print("Feed-material structural review passed: 1,643 materials; 1,159 assertions; 335 Feedipedia resources")

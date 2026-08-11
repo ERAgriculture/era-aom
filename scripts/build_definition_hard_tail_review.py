@@ -37,7 +37,7 @@ COMPOUND_DESCRIPTORS = {
         ("aom:processingMethod", "AOM_101072", "Extraction", "isolate"),
     ],
     "steep liquor": [
-        ("aom:physicalForm", "AOM_101077", "Liquid form", "liquor"),
+        ("aom:bulkConsistency", "AOM_101077", "Liquid consistency", "liquor"),
         ("aom:processingMethod", "AOM_101119", "Steeping", "steep"),
     ],
     "flower by product": [
@@ -50,15 +50,15 @@ COMPOUND_DESCRIPTORS = {
         ("aom:productRole", "AOM_101063", "Crop-residue role", "haulm"),
     ],
     "juice": [
-        ("aom:physicalForm", "AOM_101077", "Liquid form", "juice"),
+        ("aom:bulkConsistency", "AOM_101077", "Liquid consistency", "juice"),
         ("aom:processingMethod", "AOM_101072", "Extraction", "juice"),
     ],
     "pollard": [
-        ("aom:processingMethod", "AOM_101082", "Milling", "pollard"),
+        ("aom:processingMethod", "AOM_101082", "Flour milling", "pollard"),
         ("aom:productRole", "AOM_101062", "By-product role", "pollard"),
     ],
     "vinasse": [
-        ("aom:physicalForm", "AOM_101077", "Liquid form", "vinasse"),
+        ("aom:bulkConsistency", "AOM_101077", "Liquid consistency", "vinasse"),
         ("aom:processingMethod", "AOM_101124", "Distillation", "vinasse"),
         ("aom:productRole", "AOM_101059", "Residue role", "vinasse"),
     ],
@@ -67,18 +67,18 @@ COMPOUND_DESCRIPTORS = {
         ("aom:ingredientConstituent", "AOM_101081", "Oil constituent", "oil"),
     ],
     "hash": [
-        ("aom:physicalForm", "AOM_101075", "Mixture form", "hash"),
+        ("aom:presentationForm", "AOM_101075", "Mixed presentation", "hash"),
         ("aom:productRole", "AOM_101062", "By-product role", "hash"),
     ],
     "molasses": [
-        ("aom:physicalForm", "AOM_101077", "Liquid form", "molasses"),
+        ("aom:bulkConsistency", "AOM_101077", "Liquid consistency", "molasses"),
         ("aom:processingMethod", "AOM_101084", "Sugar processing", "molasses"),
         ("aom:productRole", "AOM_101062", "By-product role", "molasses"),
     ],
 }
 
 IDENTITY_FACETS = {
-    "AOM_001811": [("aom:physicalForm", "AOM_101075", "Mixture form", "rumen contents"),
+    "AOM_001811": [("aom:presentationForm", "AOM_101075", "Mixed presentation", "rumen contents"),
                     ("aom:productRole", "AOM_101062", "By-product role", "rumen contents")],
     "AOM_001845": [("aom:ingredientPart", "AOM_101041", "Sprout", "malt sprout"),
                     ("aom:productRole", "AOM_101062", "By-product role", "malt sprout")],
@@ -94,9 +94,9 @@ SHARED_PAGE_FACETS = {
     "AOM_001818": [("aom:ingredientPart", "AOM_101027", "Corm", "corm")],
     "AOM_001837": [("aom:productRole", "AOM_101059", "Residue role", "mill effluent")],
     "AOM_001914": [("aom:ingredientPart", "AOM_101025", "Cladode", "cladode")],
-    "AOM_002106": [("aom:physicalForm", "AOM_101052", "Cake form", "oil meal"),
+    "AOM_002106": [("aom:presentationForm", "AOM_101052", "Cake form", "oil meal"),
                     ("aom:productRole", "AOM_101062", "By-product role", "oil meal")],
-    "AOM_002136": [("aom:physicalForm", "AOM_101052", "Cake form", "cold-pressed meal"),
+    "AOM_002136": [("aom:presentationForm", "AOM_101052", "Cake form", "cold-pressed meal"),
                     ("aom:processingMethod", "AOM_101070", "Pressing", "cold-pressed"),
                     ("aom:productRole", "AOM_101062", "By-product role", "meal")],
 }
@@ -104,7 +104,7 @@ SHARED_PAGE_FACETS = {
 WORKBOOK_GAP_FACETS = {
     "AOM_001486": [("aom:productRole", "AOM_101079", "Binder role", "binder")],
     "AOM_001826": [("aom:productRole", "AOM_101079", "Binder role", "binder")],
-    "AOM_002081": [("aom:physicalForm", "AOM_101075", "Mixture form", "mixed"),
+    "AOM_002081": [("aom:presentationForm", "AOM_101075", "Mixed presentation", "mixed"),
                     ("aom:processingMethod", "AOM_101083", "Hydrolysis", "hydrolysate"),
                     ("aom:productRole", "AOM_101062", "By-product role", "animal by-product")],
     "AOM_003567": [("aom:productRole", "AOM_101059", "Residue role", "residue")],
@@ -112,12 +112,12 @@ WORKBOOK_GAP_FACETS = {
 
 CONSOLIDATED_FACETS = {
     "AOM_000611": [("aom:ingredientConstituent", "AOM_101066", "Fat constituent", "full fat"),
-                    ("aom:physicalForm", "AOM_101052", "Cake form", "cake"),
+                    ("aom:presentationForm", "AOM_101052", "Cake form", "cake"),
                     ("aom:processingMethod", "AOM_101070", "Pressing", "cake")],
     "AOM_001675": [("aom:ingredientPart", "AOM_101047", "Stem", "stalk")],
-    "AOM_001846": [("aom:processingMethod", "AOM_101082", "Milling", "pollard"),
+    "AOM_001846": [("aom:processingMethod", "AOM_101082", "Flour milling", "pollard"),
                     ("aom:productRole", "AOM_101062", "By-product role", "pollard")],
-    "AOM_006003": [("aom:physicalForm", "AOM_101077", "Liquid form", "molasses"),
+    "AOM_006003": [("aom:bulkConsistency", "AOM_101077", "Liquid consistency", "molasses"),
                     ("aom:processingMethod", "AOM_101084", "Sugar processing", "molasses"),
                     ("aom:productRole", "AOM_101062", "By-product role", "molasses")],
 }
@@ -126,7 +126,7 @@ MATERIAL_SCOPE_FACETS = {
     "AOM_000538": [("aom:ingredientConstituent", "AOM_101080", "Ash constituent", "ash")],
     "AOM_000571": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
     "AOM_000577": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
-    "AOM_000578": [("aom:processingMethod", "AOM_101082", "Milling", "polish"),
+    "AOM_000578": [("aom:processingMethod", "AOM_101082", "Flour milling", "polish"),
                     ("aom:productRole", "AOM_101062", "By-product role", "polish")],
     "AOM_000589": [("aom:productRole", "AOM_101057", "Offal role", "offal")],
     "AOM_000603": COMPOUND_DESCRIPTORS["haulm"],
@@ -182,11 +182,11 @@ DESCRIPTORS = [
     ("nut", "aom:ingredientPart", "AOM_101038", "Seed"),
     ("starch", "aom:ingredientConstituent", "AOM_101065", "Starch constituent"),
     ("oil", "aom:ingredientConstituent", "AOM_101081", "Oil constituent"),
-    ("cake", "aom:physicalForm", "AOM_101052", "Cake form"),
+    ("cake", "aom:presentationForm", "AOM_101052", "Cake form"),
     ("binder", "aom:productRole", "AOM_101079", "Binder role"),
     ("cull", "aom:productRole", "AOM_101055", "Discard role"),
     ("flower", "aom:ingredientPart", "AOM_101117", "Flower"),
-    ("slurry", "aom:physicalForm", "AOM_101118", "Slurry form"),
+    ("slurry", "aom:bulkConsistency", "AOM_101118", "Slurry consistency"),
     ("rhizomes", "aom:ingredientPart", "AOM_101121", "Rhizome"),
 ]
 

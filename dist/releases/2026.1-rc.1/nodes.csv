@@ -1904,7 +1904,7 @@ AOM_000323,particle size,aom-concept,aom-livestock,staging
 AOM_000324,physical form,aom-concept,aom-livestock,staging
 AOM_000325,water retention capacity,aom-concept,aom-livestock,staging
 AOM_000327,feed preservative content,aom-concept,aom-livestock,staging
-AOM_000845,Feed Process,aom-concept,aom-livestock,staging
+AOM_000845,Feed processes,aom-concept,aom-livestock,staging
 AOM_000820,Enzyme Treatment,aom-concept,aom-livestock,staging
 AOM_006824,Fibrolytic Treatment,aom-concept,aom-livestock,staging
 AOM_000824,Amylase Treatment,aom-concept,aom-livestock,staging
@@ -1921,20 +1921,20 @@ AOM_000819,Alkali Treatment,aom-concept,aom-livestock,staging
 AOM_000817,Ammonia Treatment,aom-concept,aom-livestock,staging
 AOM_100848,Urea Treatment,aom-concept,aom-livestock,staging
 AOM_003202,Molasses Treatment,aom-concept,aom-livestock,staging
-AOM_000842,Dehydration Process,aom-concept,aom-livestock,staging
+AOM_000842,Moisture-removal feed processes,aom-concept,aom-livestock,staging
 AOM_000843,Drying,aom-concept,aom-livestock,staging
-AOM_001510,Fresh,aom-concept,aom-livestock,staging
+AOM_001510,Fresh moisture condition,aom-concept,aom-livestock,staging
 AOM_000844,Wilting,aom-concept,aom-livestock,staging
-AOM_000837,Mechanical Process,aom-concept,aom-livestock,staging
+AOM_000837,Mechanical feed processes,aom-concept,aom-livestock,staging
 AOM_000834,Chopping,aom-concept,aom-livestock,staging
 AOM_000835,Crushing,aom-concept,aom-livestock,staging
-AOM_003097,Decorticated,aom-concept,aom-livestock,staging
-AOM_000841,Extrusion,aom-concept,aom-livestock,staging
+AOM_003097,Decortication,aom-concept,aom-livestock,staging
+AOM_000841,Extrusion,aom-concept,aom-livestock,deprecated
 AOM_000836,Grinding,aom-concept,aom-livestock,staging
-AOM_000839,Hammer Milling,aom-concept,aom-livestock,staging
-AOM_000838,Milling,aom-concept,aom-livestock,staging
+AOM_000839,Hammer milling,aom-concept,aom-livestock,staging
+AOM_000838,Flour milling,aom-concept,aom-livestock,staging
 AOM_000840,Pelleting,aom-concept,aom-livestock,staging
-AOM_000826,Thermal Process,aom-concept,aom-livestock,staging
+AOM_000826,Thermal feed processes,aom-concept,aom-livestock,staging
 AOM_000827,Boiling,aom-concept,aom-livestock,staging
 AOM_000828,Direct Boiling,aom-concept,aom-livestock,staging
 AOM_000829,Indirect Boiling,aom-concept,aom-livestock,staging
@@ -2672,8 +2672,7 @@ AOM_101017,Sea urchins,aom-concept,aom-livestock,staging
 AOM_101018,Porcine animals,aom-concept,aom-livestock,staging
 AOM_101127,Poultry by-product meal,aom-concept,aom-livestock,staging
 AOM_101019,Ingredient anatomical parts,aom-concept,aom-livestock,staging
-AOM_101020,Ingredient physical forms,aom-concept,aom-livestock,staging
-AOM_101021,Ingredient processing methods,aom-concept,aom-livestock,staging
+AOM_101020,Ingredient presentation forms,aom-concept,aom-livestock,staging
 AOM_101022,Ingredient product roles,aom-concept,aom-livestock,staging
 AOM_101023,Ingredient constituents,aom-concept,aom-livestock,staging
 AOM_101024,Bulb,aom-concept,aom-livestock,staging
@@ -2706,7 +2705,7 @@ AOM_101050,Lick form,aom-concept,aom-livestock,staging
 AOM_101051,Powder form,aom-concept,aom-livestock,staging
 AOM_101052,Cake form,aom-concept,aom-livestock,staging
 AOM_101053,Flake form,aom-concept,aom-livestock,staging
-AOM_101054,Dried form,aom-concept,aom-livestock,staging
+AOM_101054,Dried moisture condition,aom-concept,aom-livestock,staging
 AOM_101055,Discard role,aom-concept,aom-livestock,staging
 AOM_101056,Market-waste role,aom-concept,aom-livestock,staging
 AOM_101057,Offal role,aom-concept,aom-livestock,staging
@@ -2726,10 +2725,10 @@ AOM_101070,Pressing,aom-concept,aom-livestock,staging
 AOM_101072,Extraction,aom-concept,aom-livestock,staging
 AOM_101073,Threshing,aom-concept,aom-livestock,staging
 AOM_101074,Grain,aom-concept,aom-livestock,staging
-AOM_101075,Mixture form,aom-concept,aom-livestock,staging
+AOM_101075,Mixed presentation,aom-concept,aom-livestock,staging
 AOM_101076,Whole form,aom-concept,aom-livestock,staging
-AOM_101077,Liquid form,aom-concept,aom-livestock,staging
-AOM_101078,Pulp form,aom-concept,aom-livestock,staging
+AOM_101077,Liquid consistency,aom-concept,aom-livestock,staging
+AOM_101078,Pulp consistency,aom-concept,aom-livestock,staging
 AOM_101079,Binder role,aom-concept,aom-livestock,staging
 AOM_101080,Ash constituent,aom-concept,aom-livestock,staging
 AOM_101081,Oil constituent,aom-concept,aom-livestock,staging
@@ -2739,7 +2738,6 @@ AOM_101085,Feed material components,aom-concept,aom-livestock,staging
 AOM_101086,Whole crop,aom-concept,aom-livestock,staging
 AOM_101088,Autoclaving,aom-concept,aom-livestock,staging
 AOM_101090,Cracking,aom-concept,aom-livestock,staging
-AOM_101093,Extrusion,aom-concept,aom-livestock,staging
 AOM_101096,Heating,aom-concept,aom-livestock,staging
 AOM_101099,Soaking,aom-concept,aom-livestock,staging
 AOM_101100,Sprouting,aom-concept,aom-livestock,staging
@@ -2758,13 +2756,18 @@ AOM_101114,Compound feed,aom-concept,aom-livestock,staging
 AOM_101115,Composition states,aom-concept,aom-livestock,staging
 AOM_101116,Whole-milk composition,aom-concept,aom-livestock,staging
 AOM_101117,Flower,aom-concept,aom-livestock,staging
-AOM_101118,Slurry form,aom-concept,aom-livestock,staging
+AOM_101118,Slurry consistency,aom-concept,aom-livestock,staging
 AOM_101119,Steeping,aom-concept,aom-livestock,staging
 AOM_101120,Protein constituent,aom-concept,aom-livestock,staging
 AOM_101121,Rhizome,aom-concept,aom-livestock,staging
 AOM_101122,Liver,aom-concept,aom-livestock,staging
 AOM_101123,Stacking,aom-concept,aom-livestock,staging
 AOM_101124,Distillation,aom-concept,aom-livestock,staging
-AOM_101125,Comminuted solid form,aom-concept,aom-livestock,staging
+AOM_101125,Comminuted particle form,aom-concept,aom-livestock,staging
 AOM_101126,Meal form,aom-concept,aom-livestock,staging
 AOM_101128,Rendering,aom-concept,aom-livestock,staging
+AOM_101129,Feed particle-size reduction processes,aom-concept,aom-livestock,staging
+AOM_101130,Feed separation and fractionation processes,aom-concept,aom-livestock,staging
+AOM_101131,Feed shaping and agglomeration processes,aom-concept,aom-livestock,staging
+AOM_101132,Ingredient bulk consistencies,aom-concept,aom-livestock,staging
+AOM_101133,Ingredient moisture conditions,aom-concept,aom-livestock,staging

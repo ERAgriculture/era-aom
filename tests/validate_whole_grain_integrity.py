@@ -47,7 +47,7 @@ integrity = URIRef("urn:era-aom:schema:materialIntegrity")
 whole_grain = URIRef("urn:era-aom:livestock:AOM_101110")
 grinding = URIRef("urn:era-aom:schema:processingMethod")
 grinding_value = URIRef("urn:era-aom:livestock:AOM_000836")
-physical_form = URIRef("urn:era-aom:schema:physicalForm")
+presentation_form = URIRef("urn:era-aom:schema:presentationForm")
 for concept_id in expected_labels:
     material = URIRef("urn:era-aom:livestock:" + concept_id)
     assert (material, integrity, whole_grain) in graph
@@ -55,17 +55,17 @@ for concept_id in {"AOM_000656", "AOM_000660", "AOM_001324"}:
     material = URIRef("urn:era-aom:livestock:" + concept_id)
     assert (material, grinding, grinding_value) in graph
     assert (
-        material, physical_form,
+        material, presentation_form,
         URIRef("urn:era-aom:livestock:AOM_101125")
     ) in graph
 assert not any(graph.objects(
-    URIRef("urn:era-aom:livestock:AOM_001313"), physical_form
+    URIRef("urn:era-aom:livestock:AOM_001313"), presentation_form
 ))
 assert not any(
     value == URIRef("urn:era-aom:livestock:AOM_101076")
     for concept_id in expected_labels
     for value in graph.objects(
-        URIRef("urn:era-aom:livestock:" + concept_id), physical_form
+        URIRef("urn:era-aom:livestock:" + concept_id), presentation_form
     )
 )
 assert not any(graph.objects(URIRef("urn:era-aom:livestock:AOM_000649"), integrity))

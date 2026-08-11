@@ -1,0 +1,19 @@
+case_id,child_id,remove_parent_id,add_parent_id,status,reviewer,review_date,evidence,rationale
+STATE-FRESH-MOISTURE,AOM_001510,AOM_000842,AOM_101133,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,"Fresh is a material condition, not a moisture-removal process."
+PROCESS-CRACKING-PARTICLE,AOM_101090,AOM_000845,AOM_101129,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Cracking primarily reduces particle dimensions.
+PROCESS-PRESSING-SEPARATION,AOM_101070,AOM_000845,AOM_101130,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Pressing separates liquid and retained fractions through pressure.
+PROCESS-THRESHING-SEPARATION,AOM_101073,AOM_000845,AOM_101130,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Threshing separates grain or seed from other plant material.
+PROCESS-RENDERING-THERMAL,AOM_101128,AOM_000845,AOM_000826,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Rendering uses governed heat treatment and separation.
+PROCESS-CHOPPING-PARTICLE,AOM_000834,,AOM_101129,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Chopping cuts material into smaller pieces.
+PROCESS-CRUSHING-PARTICLE,AOM_000835,,AOM_101129,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Crushing reduces particle dimensions using pressure.
+PROCESS-GRINDING-PARTICLE,AOM_000836,,AOM_101129,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Grinding or milling reduces particle size in dry or wet processing.
+PROCESS-FLOUR-MILLING-PARTICLE,AOM_000838,,AOM_101129,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Flour milling includes particle reduction.
+PROCESS-FLOUR-MILLING-SEPARATION,AOM_000838,,AOM_101130,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,"Flour milling separates flour, bran, and intermediate fractions."
+PROCESS-DECORTICATION-SEPARATION,AOM_003097,,AOM_101130,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Decortication separates an outer covering from retained material.
+PROCESS-PELLETING-SHAPING,AOM_000840,,AOM_101131,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Pelleting agglomerates material through a die.
+PROCESS-EXTRUSION-MECHANICAL,AOM_000833,,AOM_000837,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Extrusion is thermo-mechanical.
+PROCESS-EXTRUSION-SHAPING,AOM_000833,,AOM_101131,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Extrusion shapes material through a die.
+PROCESS-CRACKING-MECHANICAL,AOM_101090,,AOM_000837,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Cracking uses mechanical force.
+PROCESS-PRESSING-MECHANICAL,AOM_101070,,AOM_000837,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Pressing uses mechanical pressure.
+PROCESS-THRESHING-MECHANICAL,AOM_101073,,AOM_000837,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,Threshing uses mechanical separation.
+PROCESS-RENDERING-SEPARATION,AOM_101128,,AOM_101130,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md,"Rendering separates stabilized protein, fat, and water fractions."

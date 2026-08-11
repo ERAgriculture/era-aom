@@ -2,7 +2,7 @@
 
 ## Status
 
-Accepted — 2026-08-11
+Accepted — 2026-08-11; physical-state axis design superseded by ADR 0042
 
 ## Context
 

@@ -36,6 +36,9 @@ Classify all 93 groups as follows:
   and CPC granularity review. Extrusion needs domain review to distinguish its
   legacy thermal and mechanical concepts from the governed processing facet.
 
+ADR 0042 subsequently resolves Extrusion as one thermo-mechanical shaping
+process. Cotton Seed remains the sole identity hold.
+
 For every deprecated duplicate, retain its stable identifier, source record,
 legacy labels, and `dcterms:isReplacedBy` crosswalk. Do not mint replacement
 identifiers.

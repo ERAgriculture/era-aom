@@ -1,6 +1,8 @@
 {
   "assertions_by_rule": {
-    "STRUCT-FORM-GRINDING": 341,
+    "STRUCT-FORM-GRINDING": 338,
+    "STRUCT-MOISTURE-BLOOD-EVIDENCE": 1,
+    "STRUCT-MOISTURE-DRYING": 398,
     "STRUCT-ROLE-BLOOD": 3,
     "STRUCT-ROLE-LEGACY-BYPRODUCT": 419
   },
@@ -9,12 +11,18 @@
     "held_label_not_cached": 158
   },
   "form_dispositions": {
-    "approved_comminuted_form": 341,
-    "approved_existing_specific_form": 26,
-    "held_meal_without_process_evidence": 5,
-    "not_in_form_cohort": 1271
+    "approved_comminuted_form": 338,
+    "approved_existing_specific_form": 19,
+    "held_grinding_bulk_state_conflict": 3,
+    "held_meal_without_process_evidence": 7,
+    "not_in_form_cohort": 1276
   },
-  "generated_assertions": 763,
+  "generated_assertions": 1159,
+  "moisture_dispositions": {
+    "approved_dried_from_blood_meal_evidence": 1,
+    "approved_dried_from_process": 398,
+    "not_in_moisture_cohort": 1244
+  },
   "reviewed_feed_materials": 1643,
   "role_dispositions": {
     "approved_blood_byproduct": 3,

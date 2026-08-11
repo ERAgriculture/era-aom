@@ -3157,7 +3157,8 @@ AOM_000323,en,pref,particle size,L5
 AOM_000324,en,pref,physical form,L5
 AOM_000325,en,pref,water retention capacity,L5
 AOM_000327,en,pref,feed preservative content,L4
-AOM_000845,en,pref,Feed Process,L4
+AOM_000845,en,pref,Feed processes,approved_label_correction
+AOM_000845,en,alt,Feed Process,L4
 AOM_000820,en,pref,Enzyme Treatment,approved_deprecation
 AOM_006824,en,pref,Fibrolytic Treatment,L7
 AOM_000824,en,pref,Amylase Treatment,L7
@@ -3177,27 +3178,33 @@ AOM_000819,en,pref,Alkali Treatment,L6
 AOM_000817,en,pref,Ammonia Treatment,L7
 AOM_100848,en,pref,Urea Treatment,L7
 AOM_003202,en,pref,Molasses Treatment,L6
-AOM_000842,en,pref,Dehydration Process,L5
+AOM_000842,en,pref,Moisture-removal feed processes,approved_label_correction
+AOM_000842,en,alt,Dehydration Process,L5
 AOM_000843,en,pref,Drying,L6
-AOM_001510,en,pref,Fresh,L6
+AOM_001510,en,pref,Fresh moisture condition,approved_label_correction
+AOM_001510,en,alt,Fresh,L6
 AOM_000844,en,pref,Wilting,L6
-AOM_000837,en,pref,Mechanical Process,L5
+AOM_000837,en,pref,Mechanical feed processes,approved_label_correction
+AOM_000837,en,alt,Mechanical Process,L5
 AOM_000834,en,pref,Chopping,L6
 AOM_000835,en,pref,Crushing,L6
-AOM_003097,en,pref,Decorticated,L6
+AOM_003097,en,pref,Decortication,approved_label_correction
+AOM_003097,en,alt,Decorticated,L6
 AOM_000841,en,pref,Extrusion,L6
 AOM_000836,en,pref,Grinding,L6
-AOM_000839,en,pref,Hammer Milling,L7
-AOM_000838,en,pref,Milling,L6
+AOM_000839,en,pref,Hammer milling,approved_label_correction
+AOM_000838,en,pref,Flour milling,approved_label_correction
+AOM_000838,en,alt,Milling,L6
 AOM_000840,en,pref,Pelleting,L6
-AOM_000826,en,pref,Thermal Process,L5
+AOM_000826,en,pref,Thermal feed processes,approved_label_correction
+AOM_000826,en,alt,Thermal Process,L5
 AOM_000826,en,alt,Feed Heating,Synonym
 AOM_000827,en,pref,Boiling,L6
 AOM_000828,en,pref,Direct Boiling,L7
 AOM_000829,en,pref,Indirect Boiling,L7
 AOM_000829,en,alt,Steaming,Synonym
 AOM_000829,en,alt,Steamed Feed,Synonym
-AOM_000833,en,pref,Extrusion,L6
+AOM_000833,en,pref,Extrusion,approved_deprecation
 AOM_000832,en,pref,Roasting,L6
 AOM_000108,en,pref,Feed Management,L3
 AOM_000109,en,pref,Diet Change,L4
@@ -4301,8 +4308,7 @@ AOM_101017,en,pref,Sea urchins,approved_new_concept
 AOM_101018,en,pref,Porcine animals,approved_new_concept
 AOM_101127,en,pref,Poultry by-product meal,approved_new_concept
 AOM_101019,en,pref,Ingredient anatomical parts,approved_new_concept
-AOM_101020,en,pref,Ingredient physical forms,approved_new_concept
-AOM_101021,en,pref,Ingredient processing methods,approved_new_concept
+AOM_101020,en,pref,Ingredient presentation forms,approved_new_concept
 AOM_101022,en,pref,Ingredient product roles,approved_new_concept
 AOM_101023,en,pref,Ingredient constituents,approved_new_concept
 AOM_101024,en,pref,Bulb,approved_new_concept
@@ -4335,7 +4341,7 @@ AOM_101050,en,pref,Lick form,approved_new_concept
 AOM_101051,en,pref,Powder form,approved_new_concept
 AOM_101052,en,pref,Cake form,approved_new_concept
 AOM_101053,en,pref,Flake form,approved_new_concept
-AOM_101054,en,pref,Dried form,approved_new_concept
+AOM_101054,en,pref,Dried moisture condition,approved_new_concept
 AOM_101055,en,pref,Discard role,approved_new_concept
 AOM_101056,en,pref,Market-waste role,approved_new_concept
 AOM_101057,en,pref,Offal role,approved_new_concept
@@ -4355,10 +4361,10 @@ AOM_101070,en,pref,Pressing,approved_new_concept
 AOM_101072,en,pref,Extraction,approved_new_concept
 AOM_101073,en,pref,Threshing,approved_new_concept
 AOM_101074,en,pref,Grain,approved_new_concept
-AOM_101075,en,pref,Mixture form,approved_new_concept
+AOM_101075,en,pref,Mixed presentation,approved_new_concept
 AOM_101076,en,pref,Whole form,approved_new_concept
-AOM_101077,en,pref,Liquid form,approved_new_concept
-AOM_101078,en,pref,Pulp form,approved_new_concept
+AOM_101077,en,pref,Liquid consistency,approved_new_concept
+AOM_101078,en,pref,Pulp consistency,approved_new_concept
 AOM_101079,en,pref,Binder role,approved_new_concept
 AOM_101080,en,pref,Ash constituent,approved_new_concept
 AOM_101081,en,pref,Oil constituent,approved_new_concept
@@ -4368,7 +4374,6 @@ AOM_101085,en,pref,Feed material components,approved_new_concept
 AOM_101086,en,pref,Whole crop,approved_new_concept
 AOM_101088,en,pref,Autoclaving,approved_new_concept
 AOM_101090,en,pref,Cracking,approved_new_concept
-AOM_101093,en,pref,Extrusion,approved_new_concept
 AOM_101096,en,pref,Heating,approved_new_concept
 AOM_101099,en,pref,Soaking,approved_new_concept
 AOM_101100,en,pref,Sprouting,approved_new_concept
@@ -4387,16 +4392,21 @@ AOM_101114,en,pref,Compound feed,approved_new_concept
 AOM_101115,en,pref,Composition states,approved_new_concept
 AOM_101116,en,pref,Whole-milk composition,approved_new_concept
 AOM_101117,en,pref,Flower,approved_new_concept
-AOM_101118,en,pref,Slurry form,approved_new_concept
+AOM_101118,en,pref,Slurry consistency,approved_new_concept
 AOM_101119,en,pref,Steeping,approved_new_concept
 AOM_101120,en,pref,Protein constituent,approved_new_concept
 AOM_101121,en,pref,Rhizome,approved_new_concept
 AOM_101122,en,pref,Liver,approved_new_concept
 AOM_101123,en,pref,Stacking,approved_new_concept
 AOM_101124,en,pref,Distillation,approved_new_concept
-AOM_101125,en,pref,Comminuted solid form,approved_new_concept
+AOM_101125,en,pref,Comminuted particle form,approved_new_concept
 AOM_101126,en,pref,Meal form,approved_new_concept
 AOM_101128,en,pref,Rendering,approved_new_concept
+AOM_101129,en,pref,Feed particle-size reduction processes,approved_new_concept
+AOM_101130,en,pref,Feed separation and fractionation processes,approved_new_concept
+AOM_101131,en,pref,Feed shaping and agglomeration processes,approved_new_concept
+AOM_101132,en,pref,Ingredient bulk consistencies,approved_new_concept
+AOM_101133,en,pref,Ingredient moisture conditions,approved_new_concept
 AOM_001326,en,alt,Maize Whole Ensiled,approved_deprecation
 AOM_001326,en,alt,Maize Whole Silage,approved_deprecation
 AOM_000564,en,alt,Brewers By-Product,approved_deprecation
