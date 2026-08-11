@@ -20,8 +20,10 @@ quarantine, gaps, legacy = read("quarantine"), read("hierarchy_gaps"), read("leg
 resolutions = read("approved_identity_resolutions")
 replacements = read("approved_mapping_replacements")
 mapping_reviews = read("approved_mapping_reviews")
+mapping_additions = read("approved_mapping_additions")
 deprecations = read("approved_deprecations")
 label_corrections = read("approved_label_corrections")
+label_suppressions = read("approved_label_suppressions")
 new_concepts = read("approved_new_concepts")
 id_registry = read("livestock_id_registry")
 semantic_relations = read("approved_semantic_relations")
@@ -36,13 +38,14 @@ component_value_holds = read("approved_ingredient_component_value_holds")
 harmonization_rules = read("approved_ingredient_harmonization_rules")
 generated_material_facets = read("approved_generated_feed_material_facets")
 hard_tail_material_facets = read("approved_hard_tail_feed_material_facets")
+structural_material_facets = read("approved_structural_feed_material_facets")
 whole_grain_decisions = read("approved_whole_grain_integrity_decisions")
 source_overrides = read("approved_feed_material_source_overrides")
 manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2765 and len(ids) == len(known)
+assert len(ids) == 2769 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -58,6 +61,8 @@ assert {row["target_id"] for row in reviewed} == {
 }
 assert all(row["reviewer"] == "Pete Steward" for row in reviewed)
 assert len(mapping_reviews) == 383
+assert len(mapping_additions) == 2
+assert {row["mapping_relation"] for row in mapping_additions} == {"exactMatch", "narrowMatch"}
 assert len(reviewed_related) == 344 and len(review_held) == 12
 assert all(row["reviewer"] == "Pete Steward" for row in reviewed_related + review_held)
 assert all(row["status"] == "legacy-unreviewed" and row["reviewer"] == "" for row in mappings if row["status"] == "legacy-unreviewed")
@@ -77,10 +82,11 @@ assert all(row["reviewer"] == "Pete Steward" for row in component_classification
 assert sum(row["disposition"] == "review_single" for row in component_classifications) == 52
 assert sum(row["disposition"] == "decompose" for row in component_classifications) == 29
 assert sum(row["disposition"] == "hold" for row in component_classifications) == 2
-assert len(facet_concepts) == 107
+assert len(facet_concepts) == 110
 assert len(harmonization_rules) == 40
 assert len(generated_material_facets) == 1599
 assert len(hard_tail_material_facets) == 154
+assert len(structural_material_facets) == 763
 assert len(whole_grain_decisions) == 4
 assert len(source_overrides) == 15
 assert len(component_value_mappings) == 45
@@ -133,17 +139,19 @@ assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_mapping_reviews"] == 383
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
 assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
-assert manifest["counts"]["approved_ingredient_facet_concepts"] == 107
+assert manifest["counts"]["approved_ingredient_facet_concepts"] == 110
 assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
 assert manifest["counts"]["approved_generated_feed_material_facets"] == 1599
 assert manifest["counts"]["approved_hard_tail_feed_material_facets"] == 154
+assert manifest["counts"]["approved_structural_feed_material_facets"] == 763
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
 assert manifest["counts"]["approved_feed_material_source_overrides"] == 15
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 10
-assert len(label_corrections) == 14
-assert len(new_concepts) == 264
+assert len(label_corrections) == 15
+assert len(label_suppressions) == 6
+assert len(new_concepts) == 268
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -207,7 +215,7 @@ final_mint_cases = {
 }
 assert final_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 101125)
+    f"AOM_{number:06d}" for number in range(100849, 101129)
 }
 assert {
     row["concept_id"] for row in id_registry
@@ -295,7 +303,7 @@ assert new_by_case["PARENT-227"]["derived_path"] == (
     "Outcomes/Productivity/Economics/Costs/Variable Cost/"
     "Management activity variable cost"
 )
-assert len(semantic_relations) == 27
+assert len(semantic_relations) == 30
 assert {
     (row["subject_id"], row["relation_type"], row["object_id"])
     for row in relations if row["relation_type"] == "related"
@@ -311,6 +319,9 @@ assert {
     ("AOM_100869", "related", "AOM_003072"),
     ("AOM_100873", "related", "AOM_002226"),
     ("AOM_100874", "related", "AOM_001314"),
+    ("AOM_100983", "related", "AOM_000025"),
+    ("AOM_003206", "related", "AOM_000024"),
+    ("AOM_101127", "related", "AOM_000024"),
 }
 assert {
     ("AOM_000820", "AOM_000145"),
@@ -386,6 +397,7 @@ assert corrected_labels == {
     "AOM_002507": "Fourth trimester",
     "AOM_001084": "Variable cost—inoculants",
     "AOM_000831": "Ensiling",
+    "AOM_003206": "Poultry by-products",
 }
 for correction in label_corrections:
     assert any(
@@ -436,8 +448,10 @@ assert manifest["counts"]["hierarchy_gaps"] == len(gaps)
 assert manifest["counts"]["mapping_assertions"] == len(mappings)
 assert manifest["counts"]["approved_identity_resolutions"] == len(resolutions)
 assert manifest["counts"]["approved_mapping_replacements"] == len(replacements)
+assert manifest["counts"]["approved_mapping_additions"] == len(mapping_additions)
 assert manifest["counts"]["approved_deprecations"] == len(deprecations)
 assert manifest["counts"]["approved_label_corrections"] == len(label_corrections)
+assert manifest["counts"]["approved_label_suppressions"] == len(label_suppressions)
 assert manifest["counts"]["approved_new_concepts"] == len(new_concepts)
 assert manifest["counts"]["registered_livestock_ids"] == len(id_registry)
 assert manifest["counts"]["approved_semantic_relations"] == len(semantic_relations)

@@ -1,6 +1,6 @@
 {
-  "expected_concepts": 2765,
-  "expected_hierarchy_relations": 2767,
+  "expected_concepts": 2769,
+  "expected_hierarchy_relations": 2771,
   "minimum_graph_triples": 28638,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
@@ -20,10 +20,15 @@
   "representative_checks": [
     {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "Whole grain"},
     {"concept_id": "AOM_001326", "label": "Whole-crop maize silage", "definition_contains": "Ensiling"},
-    {"concept_id": "AOM_003206", "label": "Poultry byproduct", "definition_contains": "By-product role"},
+    {"concept_id": "AOM_003206", "label": "Poultry by-products", "definition_contains": "By-product role"},
+    {"concept_id": "AOM_101127", "label": "Poultry by-product meal", "definition_contains": "drying"},
+    {"concept_id": "AOM_001679", "label": "Maize Grain Ground", "definition_contains": "Comminuted solid form"},
+    {"concept_id": "AOM_001096", "label": "Chicken Ground", "definition_contains": "Comminuted solid form"},
+    {"concept_id": "AOM_001938", "label": "Chicken Offal Dried Ground", "definition_contains": "Meal form"},
+    {"concept_id": "AOM_001616", "label": "Blood", "definition_contains": "By-product role"},
     {"concept_id": "AOM_000748", "label": "Asperozym (Fibrolytic Enzymes)", "definition_contains": "unspecified"},
     {"concept_id": "AOM_000693", "label": "Grass Local", "definition_contains": "unspecified"},
-    {"concept_id": "AOM_000638", "label": "Cassava Shaft", "definition_absent": true},
+    {"concept_id": "AOM_000638", "label": "Cassava Shaft", "definition_contains": "By-product role"},
     {"concept_id": "AOM_006072", "label": "Maize Whole Ensiled", "status": "deprecated", "replaced_by": "AOM_001326"}
   ]
 }

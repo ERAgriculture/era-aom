@@ -106,6 +106,12 @@ aom:materialIntegrity a owl:ObjectProperty ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:MaterialIntegrity .
 
+aom:mayResultInPhysicalForm a owl:ObjectProperty ;
+    rdfs:label "may result in physical form"@en ;
+    rdfs:comment "Links a processing method to a possible broad result form without asserting that every use has that form or a narrower particle-size subtype."@en ;
+    rdfs:domain aom:ProcessingMethod ;
+    rdfs:range aom:IngredientPhysicalForm .
+
 aom:physicalForm a owl:ObjectProperty ;
     rdfs:label "has physical form"@en ;
     rdfs:domain aom:FeedMaterial ;
@@ -196,10 +202,6 @@ aom:IngredientPartCategory a owl:Class ;
     rdfs:subClassOf skos:Concept,
         aom:FeedMaterialComponent .
 
-aom:IngredientPhysicalForm a owl:Class ;
-    rdfs:label "ingredient physical form"@en ;
-    rdfs:subClassOf skos:Concept .
-
 aom:IngredientSourceCategory a owl:Class ;
     rdfs:label "ingredient source category"@en ;
     rdfs:subClassOf skos:Concept .
@@ -211,10 +213,6 @@ aom:MaterialIntegrity a owl:Class ;
 
 aom:Module a owl:Class ;
     rdfs:label "module"@en .
-
-aom:ProcessingMethod a owl:Class ;
-    rdfs:label "processing method"@en ;
-    rdfs:subClassOf skos:Concept .
 
 aom:ProductRole a owl:Class ;
     rdfs:label "product role"@en ;
@@ -235,6 +233,14 @@ aom:materialComponent a owl:ObjectProperty ;
 aom:FeedMaterialComponent a owl:Class ;
     rdfs:label "feed material component"@en ;
     rdfs:comment "Reviewed material scope or component, including anatomical parts and collective material such as a whole crop."@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:IngredientPhysicalForm a owl:Class ;
+    rdfs:label "ingredient physical form"@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:ProcessingMethod a owl:Class ;
+    rdfs:label "processing method"@en ;
     rdfs:subClassOf skos:Concept .
 
 aom:IngredientComponent a owl:Class ;

@@ -47,6 +47,7 @@ reference_tables = [
     "approved_feed_material_facets.csv",
     "approved_generated_feed_material_facets.csv",
     "approved_hard_tail_feed_material_facets.csv",
+    "approved_structural_feed_material_facets.csv",
     "approved_ingredient_component_decompositions.csv",
     "approved_ingredient_component_value_mappings.csv",
     "approved_ingredient_semantic_closure_decisions.csv",

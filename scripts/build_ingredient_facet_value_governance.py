@@ -56,19 +56,19 @@ VALUES = [
     ("part_top", "Plant top", "part_root", "anatomical_part"),
     ("form_block", "Block form", "form_root", "physical_form"),
     ("form_lick", "Lick form", "form_root", "physical_form"),
-    ("form_powder", "Powder form", "form_root", "physical_form"),
+    ("form_powder", "Powder form", "form_comminuted", "physical_form"),
     ("form_cake", "Cake form", "form_root", "physical_form"),
     ("form_flake", "Flake form", "form_root", "physical_form"),
     ("form_dried", "Dried form", "form_root", "physical_form"),
     ("role_discard", "Discard role", "role_root", "product_role"),
     ("role_market_waste", "Market-waste role", "role_root", "product_role"),
-    ("role_offal", "Offal role", "role_root", "product_role"),
-    ("role_processing_waste", "Processing-waste role", "role_root", "product_role"),
-    ("role_residue", "Residue role", "role_root", "product_role"),
-    ("role_shorts", "Milling-shorts role", "role_root", "product_role"),
+    ("role_offal", "Offal role", "role_byproduct", "product_role"),
+    ("role_processing_waste", "Processing-waste role", "role_byproduct", "product_role"),
+    ("role_residue", "Residue role", "role_byproduct", "product_role"),
+    ("role_shorts", "Milling-shorts role", "role_byproduct", "product_role"),
     ("role_waste", "Waste role", "role_root", "product_role"),
     ("role_byproduct", "By-product role", "role_root", "product_role"),
-    ("role_crop_residue", "Crop-residue role", "role_root", "product_role"),
+    ("role_crop_residue", "Crop-residue role", "role_byproduct", "product_role"),
     ("const_gluten", "Gluten constituent", "constituent_root", "chemical_constituent"),
     ("const_starch", "Starch constituent", "constituent_root", "chemical_constituent"),
     ("const_fat", "Fat constituent", "constituent_root", "chemical_constituent"),
@@ -141,11 +141,23 @@ EXTENSION_VALUES = [
     ("part_liver", "Liver", "part_root", "anatomical_part"),
     ("process_stacking", "Stacking", "process_root", "processing_method"),
     ("process_distillation", "Distillation", "process_root", "processing_method"),
+    ("form_comminuted", "Comminuted solid form", "form_root", "physical_form"),
+    ("form_meal", "Meal form", "form_comminuted", "physical_form"),
+    ("process_rendering", "Rendering", "process_root", "processing_method"),
 ]
 RULE_EXTENSION_KEYS = {key for key, *_ in EXTENSION_VALUES[1:]}
+STRUCTURAL_KEYS = {"form_comminuted", "form_meal", "process_rendering"}
+ID_OVERRIDES = {"process_rendering": "AOM_101128"}
+NOTE_OVERRIDES = {
+    "form_comminuted": "Solid feed material reduced into smaller pieces without asserting a particle-size class.",
+    "form_meal": "Comminuted feed material described as meal; particle-size threshold remains unspecified unless separately governed.",
+    "process_rendering": "Thermal processing of animal by-products to separate or stabilize feed materials.",
+}
 
 
 def evidence_for(key):
+    if key in STRUCTURAL_KEYS:
+        return "docs/decisions/0041-feed-material-structural-model.md"
     if key in {"part_flower", "form_slurry", "process_steeping", "const_protein", "part_rhizome", "part_liver", "process_stacking", "process_distillation"}:
         return "docs/decisions/0029-semantic-model-hard-tail-extension.md"
     if key.startswith("product_") or key.startswith("composition_"):
@@ -247,7 +259,7 @@ def main():
     registry = read(registry_path)
     concepts = [row for row in concepts if not row["case_id"].startswith("FACETVAL-")]
     registry = [row for row in registry if not row["case_id"].startswith("FACETVAL-")]
-    assert registry[-1]["concept_id"] == "AOM_101018"
+    assert any(row["concept_id"] == "AOM_101018" for row in registry)
     definitions = [(key, label, None, facet, note) for key, label, note, facet in ROOTS]
     definitions += [(key, label, parent, facet, f"Governed {facet.replace('_', ' ')} value used for ingredient-component semantics.") for key, label, parent, facet in VALUES]
     definitions += [(key, label, None, facet, note) for key, label, note, facet in EXTENSION_ROOTS]
@@ -259,24 +271,48 @@ def main():
         )
         for key, label, parent, facet in EXTENSION_VALUES
     ]
-    ids = {key: f"AOM_{101019 + i:06d}" for i, (key, *_rest) in enumerate(definitions)}
-    root_paths = {key: f"Management/Livestock Management/Feed Characteristic/{label}" for key, label, parent, *_ in definitions if parent is None}
+    ids = {
+        key: ID_OVERRIDES.get(key, f"AOM_{101019 + i:06d}")
+        for i, (key, *_rest) in enumerate(definitions)
+    }
+    assert len(set(ids.values())) == len(ids)
+    assert not set(ids.values()) & {row["concept_id"] for row in concepts}
+    definition_by_key = {
+        key: (label, parent) for key, label, parent, *_rest in definitions
+    }
+
+    def path_for(key):
+        label, parent = definition_by_key[key]
+        if parent is None:
+            return f"Management/Livestock Management/Feed Characteristic/{label}"
+        return f"{path_for(parent)}/{label}"
+
+    def level_for(key):
+        _label, parent = definition_by_key[key]
+        return 4 if parent is None else level_for(parent) + 1
+
     new_concepts = []
     for key, label, parent, facet, note in definitions:
         parent_id = "AOM_000328" if parent is None else ids[parent]
-        level = "4" if parent is None else "5"
-        path = root_paths[key] if parent is None else f"{root_paths[parent]}/{label}"
+        level = str(level_for(key))
+        path = path_for(key)
         new_concepts.append({
             "case_id": "FACETVAL-" + key.upper(), "concept_id": ids[key],
-            "preferred_label": label, "scope_note": note, "broader_id": parent_id,
+            "preferred_label": label, "scope_note": NOTE_OVERRIDES.get(key, note), "broader_id": parent_id,
             "hierarchy_level": level, "derived_path": path, "child_ids": "",
-            "reviewer": REVIEWER, "review_date": DATE, "evidence": evidence_for(key),
+            "reviewer": REVIEWER, "review_date": "2026-08-11" if key in STRUCTURAL_KEYS else DATE,
+            "evidence": evidence_for(key),
             "rationale": "Dedicated facet value prevents reuse of equal labels from incompatible AOM branches.",
         })
     new_registry = [{
-        "concept_id": ids[key], "allocated_on": DATE, "status": "allocated",
+        "concept_id": ids[key], "allocated_on": "2026-08-11" if key in STRUCTURAL_KEYS else DATE,
+        "status": "allocated",
         "preferred_label": label, "case_id": "FACETVAL-" + key.upper(), "allocator": REVIEWER,
-        "allocation_basis": "Sequential governed allocation above AOM_101018 for ingredient facet value vocabulary; verified unused.",
+        "allocation_basis": (
+            "Sequential governed allocation in ADR 0041 structural vocabulary; full collision audit verified unused."
+            if key in STRUCTURAL_KEYS else
+            "Sequential governed allocation above AOM_101018 for ingredient facet value vocabulary; verified unused."
+        ),
     } for key, label, *_ in definitions]
     write(concepts_path, list(concepts[0]), concepts + new_concepts)
     write(registry_path, list(registry[0]), registry + new_registry)
@@ -289,7 +325,8 @@ def main():
             "concept_id": ids[key], "preferred_label": label, "facet": facet,
             "target_property": target_property, "value_class": value_class,
             "concept_role": "facet_root" if parent is None else "facet_value",
-            "status": "approved", "reviewer": REVIEWER, "review_date": DATE,
+            "status": "approved", "reviewer": REVIEWER,
+            "review_date": "2026-08-11" if key in STRUCTURAL_KEYS else DATE,
             "evidence": evidence_for(key),
         })
     for concept_id, label, facet in EXISTING_VALUES:

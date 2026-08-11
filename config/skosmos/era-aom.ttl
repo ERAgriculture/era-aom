@@ -42,6 +42,18 @@ aomcfg:livestock a skosmos:Vocabulary, void:Dataset ;
     rdfs:label "Synonyms"@en ;
     rdfs:comment "Alternative names that retrieve this same concept."@en
   ] ;
+  skosmos:propertyLabelOverride [
+    skosmos:property skos:relatedMatch ;
+    rdfs:label "Related external resources"@en
+  ] ;
+  skosmos:propertyLabelOverride [
+    skosmos:property skos:exactMatch ;
+    rdfs:label "Equivalent external concepts"@en
+  ] ;
+  skosmos:propertyLabelOverride [
+    skosmos:property skos:narrowMatch ;
+    rdfs:label "Narrower external resources"@en
+  ] ;
   skosmos:shortName "ERA-AOM Livestock" ;
   void:sparqlEndpoint <http://fuseki-cache:80/skosmos/sparql> ;
   skosmos:sparqlGraph <https://w3id.org/era-aom/graph/livestock> ;
@@ -51,9 +63,11 @@ aomcfg:livestock a skosmos:Vocabulary, void:Dataset ;
 # then expose ERA-AOM material facets as first-class, navigable relationships.
 aomcfg:eraPropertyOrder rdf:value (
   rdf:type dc:isReplacedBy skos:definition skos:broader skos:narrower
-  skos:related skos:altLabel
+  skos:related skos:altLabel skos:exactMatch skos:closeMatch
+  skos:broadMatch skos:narrowMatch skos:relatedMatch
   aom:sourceTaxon aom:ingredientSource aom:materialComponent aom:ingredientPart
   aom:materialIntegrity aom:physicalForm aom:processingMethod
+  aom:mayResultInPhysicalForm
   aom:feedProductType aom:compositionState aom:productRole aom:ingredientConstituent
   skos:note skos:scopeNote skos:historyNote rdfs:comment dc:source
 ) .

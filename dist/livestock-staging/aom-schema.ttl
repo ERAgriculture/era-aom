@@ -114,6 +114,10 @@ aom:compositionState a owl:ObjectProperty ;
 aom:processingMethod a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProcessingMethod ;
   rdfs:label "has processing method"@en .
+aom:mayResultInPhysicalForm a owl:ObjectProperty ;
+  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:IngredientPhysicalForm ;
+  rdfs:label "may result in physical form"@en ;
+  rdfs:comment "Links a processing method to a possible broad result form without asserting that every use has that form or a narrower particle-size subtype."@en .
 aom:productRole a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProductRole ;
   rdfs:label "has product role"@en .

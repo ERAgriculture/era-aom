@@ -58,6 +58,13 @@
     <rdfs:label xml:lang="en">has feed product type</rdfs:label>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedProductType"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/mayResultInPhysicalForm">
+    <rdfs:comment xml:lang="en">Links a processing method to a possible broad result form without asserting that every use has that form or a narrower particle-size subtype.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
+    <rdfs:label xml:lang="en">may result in physical form</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientPhysicalForm"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Module">
     <rdfs:label xml:lang="en">module</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>

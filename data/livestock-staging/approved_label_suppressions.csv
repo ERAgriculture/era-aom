@@ -1,0 +1,7 @@
+case_id,concept_id,label,label_type,reviewer,review_date,evidence,rationale
+FEED-STRUCT-POULTRY-MEAL-ALT,AOM_003206,Poultry by-product meal,alt,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md,Processed meal is narrower material identity and now has dedicated concept.
+FEED-STRUCT-POULTRY-OFFAL-MEAL-ALT,AOM_003206,poultry offal meal,alt,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md,Processed meal is narrower material identity and now has dedicated concept.
+FEED-STRUCT-POULTRY-MEAL-SHORT-ALT,AOM_003206,poultry meal,alt,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md,Processed meal is narrower material identity and now has dedicated concept.
+FEED-STRUCT-POULTRY-VISCERA-MEAL-ALT,AOM_003206,poultry viscera meal,alt,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md,Processed meal is narrower material identity and now has dedicated concept.
+FEED-STRUCT-CHICKEN-OFFAL-ALT,AOM_003206,chicken offal,alt,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md,Chicken-specific offal must not alias generic poultry by-products.
+FEED-STRUCT-CHICKEN-BYPRODUCT-MEAL-ALT,AOM_003206,chicken by-product meal,alt,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md,Chicken-specific processed material must not alias generic poultry by-products.

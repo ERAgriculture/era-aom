@@ -26,7 +26,7 @@ def main():
             status, content_type, body = get(url, "application/sparql-results+json")
             assert status == 200 and content_type == "application/sparql-results+json"
             count = int(json.loads(body)["results"]["bindings"][0]["count"]["value"])
-            assert count == 2765, count
+            assert count == 2769, count
             status, content_type, _ = get(args.skosmos + "/en/", "text/html")
             assert status == 200 and content_type == "text/html"
             print(json.dumps({"concepts": count, "fuseki": "pass", "skosmos": "pass"}, indent=2))

@@ -14,7 +14,11 @@ FACET_HOLD_SOURCE = ROOT / "data/livestock-staging/approved_ingredient_component
 MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_facets.csv"
 GENERATED_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_generated_feed_material_facets.csv"
 HARD_TAIL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_hard_tail_feed_material_facets.csv"
+STRUCTURAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_structural_feed_material_facets.csv"
 EXTERNAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_external_facets.csv"
+PROCESS_FORM_RELATION_SOURCE = ROOT / "data/livestock-staging/approved_process_form_relations.csv"
+EXTERNAL_RESOURCE_LABEL_SOURCE = ROOT / "review/livestock-v9/feedipedia_definition_evidence.csv"
+EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE = ROOT / "data/livestock-staging/approved_external_resource_labels.csv"
 DIST = ROOT / "dist/livestock-staging"
 CONCEPT_BASE = "urn:era-aom:livestock:"
 BINDING_BASE = "urn:era-aom:binding:"
@@ -55,9 +59,20 @@ with GENERATED_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handl
     generated_material_facets = list(csv.DictReader(handle))
 with HARD_TAIL_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
     hard_tail_material_facets = list(csv.DictReader(handle))
+with STRUCTURAL_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
+    structural_material_facets = list(csv.DictReader(handle))
 with EXTERNAL_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle:
     external_material_facets = list(csv.DictReader(handle))
-material_facets += generated_material_facets + hard_tail_material_facets
+with PROCESS_FORM_RELATION_SOURCE.open(encoding="utf-8", newline="") as handle:
+    process_form_relations = list(csv.DictReader(handle))
+with EXTERNAL_RESOURCE_LABEL_SOURCE.open(encoding="utf-8", newline="") as handle:
+    external_resource_label_evidence = list(csv.DictReader(handle))
+with EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE.open(encoding="utf-8", newline="") as handle:
+    external_resource_label_overrides = list(csv.DictReader(handle))
+material_facets += (
+    generated_material_facets + hard_tail_material_facets
+    + structural_material_facets
+)
 
 assert len(rows) == 13
 assert len({row["legacy_concept_id"] for row in rows}) == 13
@@ -65,10 +80,14 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 107 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
+assert len(facet_rows) == 110 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
 assert len(facet_holds) == 10
-assert len(material_facets) == 1638 + len(hard_tail_material_facets)
-assert len(external_material_facets) == 1
+assert len({
+    (row["feed_material_id"], row["target_property"], row["target_concept_id"])
+    for row in material_facets
+}) == len(material_facets)
+assert len(external_material_facets) == 3
+assert len(process_form_relations) == 1
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:
@@ -141,6 +160,23 @@ for row in all_value_rows:
             graph.append({"@id": target, "@type": ["skos:Concept", row["value_class"]]})
     graph.append(binding)
 
+external_resource_labels = {}
+for row in external_resource_label_evidence:
+    if row["http_status"] != "200" or not row["page_heading"]:
+        continue
+    for uri in {row["feedipedia_url"], row["final_url"]} - {""}:
+        existing_label = external_resource_labels.setdefault(uri, row["page_heading"])
+        if existing_label != row["page_heading"]:
+            raise ValueError(f"Conflicting external resource labels for {uri}")
+for row in external_resource_label_overrides:
+    external_resource_labels[row["target_uri"]] = row["target_label"]
+for uri, label in sorted(external_resource_labels.items()):
+    graph.append({
+        "@id": uri,
+        "skos:prefLabel": {"@value": label, "@language": "en"},
+        "rdfs:label": {"@value": label, "@language": "en"},
+    })
+
 for row in material_facets:
     material = CONCEPT_BASE + row["feed_material_id"]
     facet = facet_by_id[row["target_concept_id"]]
@@ -165,6 +201,15 @@ for row in external_material_facets:
         "@id": material,
         "@type": ["skos:Concept", "aom:FeedMaterial"],
         row["target_property"]: {"@id": row["target_uri"]},
+    })
+for row in process_form_relations:
+    process = CONCEPT_BASE + row["process_concept_id"]
+    form = CONCEPT_BASE + row["form_concept_id"]
+    graph.append({"@id": process, "@type": ["skos:Concept", "aom:ProcessingMethod"]})
+    graph.append({"@id": form, "@type": ["skos:Concept", "aom:IngredientPhysicalForm"]})
+    graph.append({
+        "@id": process,
+        row["relation_property"]: {"@id": form},
     })
 
 document = {"@context": PREFIXES, "@graph": graph}
@@ -210,6 +255,12 @@ for row in all_value_rows:
             ttl.append(f"<{target}> a skos:Concept, {row['value_class']} .\n")
     identifier = VALUE_BINDING_BASE + row["identifier"]
     ttl.append(f"<{identifier}> " + " ;\n  ".join(terms) + " .\n")
+for uri, label in sorted(external_resource_labels.items()):
+    label_text = json.dumps(label, ensure_ascii=False)
+    ttl.append(
+        f"<{uri}> skos:prefLabel {label_text}@en ;\n"
+        f"  rdfs:label {label_text}@en .\n"
+    )
 for row in material_facets:
     material = CONCEPT_BASE + row["feed_material_id"]
     target = CONCEPT_BASE + row["target_concept_id"]
@@ -231,5 +282,14 @@ for row in external_material_facets:
         f"<{material}> a skos:Concept, aom:FeedMaterial ;\n"
         f'  {row["target_property"]} <{row["target_uri"]}> .\n'
     )
+for row in process_form_relations:
+    process = CONCEPT_BASE + row["process_concept_id"]
+    form = CONCEPT_BASE + row["form_concept_id"]
+    ttl.append(f"<{process}> a skos:Concept, aom:ProcessingMethod .\n")
+    ttl.append(f"<{form}> a skos:Concept, aom:IngredientPhysicalForm .\n")
+    ttl.append(f"<{process}> {row['relation_property']} <{form}> .\n")
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
-print(f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings")
+print(
+    f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings; "
+    f"{len(material_facets)} material facets and {len(external_resource_labels)} external labels"
+)

@@ -51,10 +51,23 @@ physical_form = URIRef("urn:era-aom:schema:physicalForm")
 for concept_id in expected_labels:
     material = URIRef("urn:era-aom:livestock:" + concept_id)
     assert (material, integrity, whole_grain) in graph
-    assert not any(graph.objects(material, physical_form))
 for concept_id in {"AOM_000656", "AOM_000660", "AOM_001324"}:
     material = URIRef("urn:era-aom:livestock:" + concept_id)
     assert (material, grinding, grinding_value) in graph
+    assert (
+        material, physical_form,
+        URIRef("urn:era-aom:livestock:AOM_101125")
+    ) in graph
+assert not any(graph.objects(
+    URIRef("urn:era-aom:livestock:AOM_001313"), physical_form
+))
+assert not any(
+    value == URIRef("urn:era-aom:livestock:AOM_101076")
+    for concept_id in expected_labels
+    for value in graph.objects(
+        URIRef("urn:era-aom:livestock:" + concept_id), physical_form
+    )
+)
 assert not any(graph.objects(URIRef("urn:era-aom:livestock:AOM_000649"), integrity))
 assert not any(graph.objects(URIRef("urn:era-aom:livestock:AOM_001326"), integrity))
 print("Whole-grain integrity validation passed: 4 reviewed cereal materials")
