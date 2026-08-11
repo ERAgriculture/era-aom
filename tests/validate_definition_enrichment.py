@@ -19,13 +19,13 @@ def read(name):
 approved = read("approved_definition_enrichments.csv")
 definitions = read("definitions.csv")
 concepts = read("concepts.csv")
-assert len(approved) == 2105
-assert len({row["concept_id"] for row in approved}) == 2105
+assert len(approved) == 2102
+assert len({row["concept_id"] for row in approved}) == 2102
 assert Counter(row["definition_method"] for row in approved) == {
     "composed_from_approved_semantic_facets": 1092,
     "composed_from_bounded_workbook_material_scope": 72,
     "promoted_reviewed_scope_note": 262,
-    "composed_from_governed_hierarchy_role": 243,
+    "composed_from_governed_hierarchy_role": 240,
     "composed_from_reviewed_feedipedia_source_scope": 101,
     "composed_from_reviewed_public_authority_source_scope": 152,
     "composed_from_canonical_workbook_identity_scope": 134,
@@ -39,7 +39,7 @@ assert all(
     "governed source identity" in row["definition"] for row in approved
     if row["definition_method"] == "composed_from_approved_semantic_facets"
 )
-assert sum(row["source_column"] == "approved_definition_enrichment" for row in definitions) == 2105
+assert sum(row["source_column"] == "approved_definition_enrichment" for row in definitions) == 2102
 defined = {row["concept_id"] for row in definitions}
 active = [row for row in concepts if row["status"] != "deprecated"]
 assert sum(row["concept_id"] not in defined for row in active) == 18
@@ -49,5 +49,5 @@ maize = URIRef("urn:era-aom:livestock:AOM_001313")
 definition = str(next(graph.objects(maize, SKOS.definition)))
 assert "source identity “maize”" in definition and "Whole grain" in definition
 manifest = json.loads((ROOT / "dist/livestock-staging/manifest.json").read_text())
-assert manifest["counts"]["approved_definition_enrichments"] == 2105
-print("Definition enrichment validation passed: 2,105 definitions; 18 active integrity holds remain")
+assert manifest["counts"]["approved_definition_enrichments"] == 2102
+print("Definition enrichment validation passed: 2,102 definitions; 18 active integrity holds remain")

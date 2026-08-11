@@ -6,7 +6,7 @@ ephemeral local containers and CI before requesting CGIAR infrastructure.
 Acceptance harness exercises:
 
 - exact 2,777-concept SPARQL count;
-- exact four-root hierarchy and 2,773 symmetric broader/narrower pairs;
+- exact 2,765-concept, four-root hierarchy and 2,767 symmetric broader/narrower pairs;
 - Skosmos vocabulary discovery, search, hierarchy, and statistics APIs;
 - representative concept page and embedded JSON-LD;
 - named-graph Turtle export as parseable backup evidence;

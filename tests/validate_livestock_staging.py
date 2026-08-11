@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import csv
 import json
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -67,7 +67,7 @@ assert {row["resolved_concept_id"] for row in resolutions} == {
     "AOM_006275", "AOM_001676",
 }
 assert len(replacements) == 3
-assert len(deprecations) == 10
+assert len(deprecations) == 28
 assert len(semantic_bindings) == 13
 assert len(semantic_value_bindings) == 298
 assert len(component_classifications) == 83
@@ -95,10 +95,11 @@ assert ({row["source_value"] for row in component_value_mappings} |
         {row["source_value"] for row in component_value_holds}) == {
             row["source_value"] for row in component_classifications
         }
-assert {
+expected_deprecations = {
     (row["deprecated_id"], row["replacement_id"])
     for row in deprecations
-} == {
+}
+assert expected_deprecations == {
     ("AOM_001884", "AOM_000564"),
     ("AOM_004000", "AOM_003960"),
     ("AOM_006072", "AOM_001326"),
@@ -109,6 +110,24 @@ assert {
     ("AOM_000341", "AOM_000353"),
     ("AOM_000342", "AOM_000354"),
     ("AOM_000949", "AOM_000935"),
+    ("AOM_000146", "AOM_000820"),
+    ("AOM_000147", "AOM_000830"),
+    ("AOM_000855", "AOM_000850"),
+    ("AOM_000874", "AOM_000865"),
+    ("AOM_000876", "AOM_000867"),
+    ("AOM_000877", "AOM_000868"),
+    ("AOM_000878", "AOM_000869"),
+    ("AOM_000879", "AOM_000870"),
+    ("AOM_000880", "AOM_000871"),
+    ("AOM_000883", "AOM_000872"),
+    ("AOM_000884", "AOM_000873"),
+    ("AOM_000900", "AOM_000885"),
+    ("AOM_000922", "AOM_000893"),
+    ("AOM_000923", "AOM_000894"),
+    ("AOM_000924", "AOM_000895"),
+    ("AOM_000925", "AOM_000896"),
+    ("AOM_000926", "AOM_000897"),
+    ("AOM_000927", "AOM_000898"),
 }
 assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_mapping_reviews"] == 383
@@ -207,7 +226,8 @@ assert status["AOM_004000"] == "deprecated"
 assert status["AOM_006072"] == "deprecated"
 assert status["AOM_001898"] == "deprecated"
 assert all(status[concept_id] == "deprecated" for concept_id in {
-    "AOM_000338", "AOM_000339", "AOM_000340", "AOM_000341", "AOM_000342", "AOM_000949"
+    deprecated_id
+    for deprecated_id, replacement_id in expected_deprecations
 })
 brewers_pref = next(
     row["label"] for row in labels
@@ -223,18 +243,8 @@ assert {
     (row["subject_id"], row["relation_type"], row["object_id"])
     for row in relations
     if row["relation_type"] == "replaced_by"
-} == {
-    ("AOM_001884", "replaced_by", "AOM_000564"),
-    ("AOM_004000", "replaced_by", "AOM_003960"),
-    ("AOM_006072", "replaced_by", "AOM_001326"),
-    ("AOM_001898", "replaced_by", "AOM_001459"),
-    ("AOM_000338", "replaced_by", "AOM_000350"),
-    ("AOM_000339", "replaced_by", "AOM_000351"),
-    ("AOM_000340", "replaced_by", "AOM_000352"),
-    ("AOM_000341", "replaced_by", "AOM_000353"),
-    ("AOM_000342", "replaced_by", "AOM_000354"),
-    ("AOM_000949", "replaced_by", "AOM_000935"),
-}
+} == {(deprecated_id, "replaced_by", replacement_id)
+      for deprecated_id, replacement_id in expected_deprecations}
 mineral_children = set(new_by_case["PARENT-006"]["child_ids"].split(";"))
 assert {
     row["subject_id"] for row in relations
@@ -285,7 +295,7 @@ assert new_by_case["PARENT-227"]["derived_path"] == (
     "Outcomes/Productivity/Economics/Costs/Variable Cost/"
     "Management activity variable cost"
 )
-assert len(semantic_relations) == 21
+assert len(semantic_relations) == 27
 assert {
     (row["subject_id"], row["relation_type"], row["object_id"])
     for row in relations if row["relation_type"] == "related"
@@ -302,6 +312,34 @@ assert {
     ("AOM_100873", "related", "AOM_002226"),
     ("AOM_100874", "related", "AOM_001314"),
 }
+assert {
+    ("AOM_000820", "AOM_000145"),
+    ("AOM_000830", "AOM_000145"),
+    ("AOM_000865", "AOM_000848"),
+    ("AOM_000893", "AOM_000848"),
+    ("AOM_000885", "AOM_000848"),
+    ("AOM_000850", "AOM_000849"),
+} <= broader_triples
+staging_graph = json.loads((DIST / "aom-livestock.jsonld").read_text())["@graph"]
+staging_nodes = {
+    row["@id"].rsplit(":", 1)[-1]: row
+    for row in staging_graph if "@id" in row
+}
+expected_polyhierarchies = {
+    "AOM_000820": {"AOM_000145", "AOM_100990"},
+    "AOM_000830": {"AOM_000145", "AOM_100990"},
+    "AOM_000850": {"AOM_000848", "AOM_000849"},
+    "AOM_000865": {"AOM_000848", "AOM_000849"},
+    "AOM_000885": {"AOM_000848", "AOM_000849"},
+    "AOM_000893": {"AOM_000848", "AOM_000849"},
+}
+for concept_id, expected_parents in expected_polyhierarchies.items():
+    actual_parents = staging_nodes[concept_id]["skos:broader"]
+    assert isinstance(actual_parents, list)
+    assert {
+        value["@id"].rsplit(":", 1)[-1]
+        for value in actual_parents
+    } == expected_parents
 assert len(reparentings) == 64
 for reparenting in reparentings:
     children = set(reparenting["child_ids"].split(";"))
@@ -372,23 +410,28 @@ assert approved_aliases == {"Panicum maximum Dried", "Panicum maximum hay"}
 assert all(row["disposition"] == "review_and_mint_or_map_parent" for row in gaps)
 pref = Counter(row["concept_id"] for row in labels if row["label_type"] == "pref")
 assert set(pref) == known and all(count == 1 for count in pref.values())
-parents = {
-    row["subject_id"]: row["object_id"]
-    for row in relations if row["relation_type"] == "broader"
-}
-for start in ids:
-    seen, current = set(), start
-    while current in parents:
-        current = parents[current]
-        assert current not in seen, f"Hierarchy cycle from {start}"
-        seen.add(current)
+parents = defaultdict(set)
+for row in relations:
+    if row["relation_type"] == "broader":
+        parents[row["subject_id"]].add(row["object_id"])
+for concept_id in ids:
+    pending = [(concept_id, {concept_id})]
+    while pending:
+        current_id, path = pending.pop()
+        for parent_id in parents[current_id]:
+            assert parent_id not in path, f"Hierarchy cycle from {concept_id}"
+            pending.append((parent_id, path | {parent_id}))
 assert manifest["status"] == "staging-not-canonical"
 assert manifest["identifier_policy"]["rdf_uri_status"] == "provisional-staging-only"
 assert manifest["counts"]["source_records"] == len(legacy)
 assert manifest["counts"]["published_staging_concepts"] == len(concepts)
-assert manifest["counts"]["hierarchy_relations"] == len(parents)
-assert manifest["counts"]["replacement_relations"] == 10
-assert manifest["counts"]["semantic_relations"] == len(semantic_relations)
+assert manifest["counts"]["hierarchy_relations"] == sum(
+    row["relation_type"] == "broader" for row in relations
+)
+assert manifest["counts"]["replacement_relations"] == len(expected_deprecations)
+assert manifest["counts"]["semantic_relations"] == sum(
+    row["relation_type"] == "related" for row in semantic_relations
+)
 assert manifest["counts"]["hierarchy_gaps"] == len(gaps)
 assert manifest["counts"]["mapping_assertions"] == len(mappings)
 assert manifest["counts"]["approved_identity_resolutions"] == len(resolutions)

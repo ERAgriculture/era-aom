@@ -56,8 +56,8 @@ collision_decisions = {}
 if COLLISION_DECISIONS.exists():
     with COLLISION_DECISIONS.open(encoding="utf-8", newline="") as handle:
         collision_decisions = {
-            row["collision_key"]: row for row in csv.DictReader(handle)
-            if row["status"] == "approved"
+            normalized(row["collision_key"]): row for row in csv.DictReader(handle)
+            if row["status"] in {"approved", "hold"}
         }
 all_rows = [row for row in source_rows if row["AOM"]]
 rows = [row for row in all_rows if row["L5"] == "Feed Ingredient"]

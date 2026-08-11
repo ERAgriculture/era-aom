@@ -58,6 +58,13 @@ remediations = {
     row["generated_id"]: row
     for row in read_csv("approved_identity_integrity_remediations.csv")
 }
+decision_rows = read_csv("approved_ontology_collision_decisions.csv")
+decisions_by_label = {}
+for row in decision_rows:
+    key = normalize_label(row["collision_key"])
+    if key in decisions_by_label:
+        raise ValueError(f"Duplicate identity-collision decision key: {key}")
+    decisions_by_label[key] = row
 facet_sources = [
     "approved_feed_material_facets.csv",
     "approved_generated_feed_material_facets.csv",
@@ -88,13 +95,41 @@ for index, (normalized, ids) in enumerate(sorted(groups.items()), start=1):
         candidate = ""
         rationale = "Inherited concepts share preferred label; retain separately only with evidence-backed semantic distinction."
     reviewed = [remediations[cid] for cid in generated if cid in remediations]
+    decision = decisions_by_label.get(normalized)
     if generated and len(reviewed) == len(generated):
         recommendation = ";".join(sorted({row["action"] for row in reviewed}))
         candidate = ";".join(sorted(filter(None, (row["canonical_id"] for row in reviewed))))
         review_status = "approved" if all(row["status"] == "approved" for row in reviewed) else "hold"
         rationale = " ".join(row["rationale"] for row in reviewed)
+        reviewer = ";".join(sorted({row["reviewer"] for row in reviewed}))
+        review_date = ";".join(sorted({row["review_date"] for row in reviewed}))
+    elif decision and set(decision["concept_ids"].split(";")) == set(ids):
+        recommendation = decision["decision"]
+        candidate = decision["retained_id"]
+        review_status = (
+            "hold"
+            if decision["status"] == "hold" or decision["decision"].startswith("hold_")
+            else "approved"
+            if decision["status"] == "approved"
+            else "proposed"
+        )
+        rationale = decision["rationale"]
+        reviewer = decision["reviewer"]
+        review_date = decision["review_date"]
+    elif decision:
+        recommendation = "review_decision_drift"
+        candidate = ""
+        review_status = "proposed"
+        rationale = (
+            "Existing collision decision does not cover the current concept set: "
+            + decision["concept_ids"]
+        )
+        reviewer = ""
+        review_date = ""
     else:
         review_status = "proposed"
+        reviewer = ""
+        review_date = ""
     cohort.append({
         "collision_id": f"IDENTITY-{index:03d}",
         "normalized_label": normalized,
@@ -106,8 +141,8 @@ for index, (normalized, ids) in enumerate(sorted(groups.items()), start=1):
         "recommended_action": recommendation,
         "candidate_canonical_id": candidate,
         "review_status": review_status,
-        "reviewer": ";".join(sorted({row["reviewer"] for row in reviewed})),
-        "review_date": ";".join(sorted({row["review_date"] for row in reviewed})),
+        "reviewer": reviewer,
+        "review_date": review_date,
         "rationale": rationale,
     })
     collision_id = cohort[-1]["collision_id"]
@@ -138,6 +173,9 @@ summary = {
     "excess_identifiers": len(detail) - len(cohort),
     "generated_vs_inherited_groups": sum(bool(row["generated_ids"] and row["inherited_ids"]) for row in cohort),
     "reviewed_groups": sum(row["review_status"] in {"approved", "hold"} for row in cohort),
+    "approved_groups": sum(row["review_status"] == "approved" for row in cohort),
+    "held_groups": sum(row["review_status"] == "hold" for row in cohort),
+    "unreviewed_groups": sum(row["review_status"] == "proposed" for row in cohort),
     "applied_reuse_remediations": sum(
         row["action"] == "reuse_existing" and row["status"] == "approved"
         and row["generated_id"] not in concepts
@@ -148,8 +186,12 @@ summary = {
         and label_by_id.get(row["generated_id"]) == row["replacement_label"]
         for row in remediations.values()
     ),
-    "status": "review_required",
 }
+summary["status"] = (
+    "review_required" if summary["unreviewed_groups"]
+    else "governed_with_holds" if summary["held_groups"]
+    else "governed"
+)
 
 write_csv(OUT / "global_identity_collision_cohort.csv", list(cohort[0]), cohort)
 write_csv(OUT / "global_identity_collision_detail.csv", list(detail[0]), detail)

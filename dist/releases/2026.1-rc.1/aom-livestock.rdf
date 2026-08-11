@@ -588,6 +588,19 @@
     <skos:definition xml:lang="en">A feed material with governed source identity “sugar beet” and characteristics: feed product type — Processing pulp.</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006271"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000880">
+    <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001582"/>
+    <skos:altLabel xml:lang="en">Wild caugth fingerling production system</skos:altLabel>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000871"/>
+    <era:status>deprecated</era:status>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000878"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>AOM_000880</skos:notation>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:prefLabel xml:lang="en">wild caught juvenile</skos:prefLabel>
+    <skos:definition xml:lang="en">unit dedicated to the production of young animal feeding by himself (weaned animal or yolk sac resorption stage) and which can be transfered in pregrowing unit or growing unit. The animal is originating from the natural environment</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001859">
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3553"/>
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_6670"/>
@@ -1460,12 +1473,12 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000617">
     <era:status>unknown</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100876"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_24831"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3641"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11692"/>
     <skos:prefLabel xml:lang="en">Cocoa Bean Shell</skos:prefLabel>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_000617</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -2115,13 +2128,14 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100890"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000924">
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000895"/>
     <skos:definition xml:lang="en">system of farming where animals are housed in a mono-species group</skos:definition>
     <skos:notation>AOM_000924</skos:notation>
+    <era:status>deprecated</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000923"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">group-housing</skos:prefLabel>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001608"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
@@ -2196,11 +2210,11 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:altLabel xml:lang="en">Cocoa Bean Shell Dried Milled</skos:altLabel>
     <skos:altLabel xml:lang="en">Cocoa Bean Shell Dried Meal</skos:altLabel>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell; processing method — Drying, Grinding.</skos:definition>
     <skos:prefLabel xml:lang="en">Cocoa Bean Shell Dried Ground</skos:prefLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000617"/>
     <era:status>unknown</era:status>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cocoa bean” and characteristics: ingredient part — Shell component; processing method — Drying, Grinding.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002240">
@@ -2986,8 +3000,8 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006052">
+    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Boiling, Crushing.</skos:definition>
     <era:status>unknown</era:status>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Boiling, Crushing.</skos:definition>
     <skos:notation>AOM_006052</skos:notation>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_171929"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -3417,12 +3431,12 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006022"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001272">
+    <skos:definition xml:lang="en">A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_001272</skos:notation>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3847"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
-    <skos:definition xml:lang="en">A feed material with governed source identity “soybean” and characteristics: ingredient part — Shell component.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Soybean Shell</skos:prefLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100852"/>
@@ -4203,21 +4217,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000855">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">production orientation</skos:prefLabel>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A farming-system classification for production orientation within the aquatic system context.</skos:definition>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000849"/>
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:notation>AOM_000855</skos:notation>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000858"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000862"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000857"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000861"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000856"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006275">
     <skos:relatedMatch rdf:resource="https://www.worldfloraonline.org/taxon/wfo-0000883036"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/413"/>
@@ -4231,6 +4230,21 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:altLabel xml:lang="en">Panicum antidotale hay</skos:altLabel>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000346">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A substance that kills or slows the growth of microorganisms, including bacteria, viruses, fungi and protozoans.</skos:definition>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000329"/>
+    <era:status>unknown</era:status>
+    <skos:notation>AOM_000346</skos:notation>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:prefLabel xml:lang="en">Antimicrobial</skos:prefLabel>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33281"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000350"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000348"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000349"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000347"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001094">
     <era:status>unknown</era:status>
@@ -4256,21 +4270,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:prefLabel xml:lang="en">Kid Male</skos:prefLabel>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001011"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001010"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000346">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A substance that kills or slows the growth of microorganisms, including bacteria, viruses, fungi and protozoans.</skos:definition>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000329"/>
-    <era:status>unknown</era:status>
-    <skos:notation>AOM_000346</skos:notation>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:prefLabel xml:lang="en">Antimicrobial</skos:prefLabel>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33281"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000350"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000348"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000349"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000347"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000480">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000479"/>
@@ -5397,9 +5396,10 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000879">
     <skos:notation>AOM_000879</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
     <skos:definition xml:lang="en">unit dedicated to the production of young animal feeding by himself (weaned animal or yolk sac resorption stage) and which can be transfered in pregrowing unit or growing unit. The animal is initially produced on a farm</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000878"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000870"/>
+    <era:status>deprecated</era:status>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001584"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -6841,10 +6841,10 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101113">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Hay product type</skos:prefLabel>
-    <skos:definition xml:lang="en">Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay.</skos:definition>
     <rdf:type rdf:resource="https://w3id.org/era-aom/schema/FeedProductType"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_101113</skos:notation>
+    <skos:definition xml:lang="en">Governed feed product type value used for feed-material semantics.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101111"/>
     <era:conceptType>aom_concept</era:conceptType>
     <era:status>unknown</era:status>
@@ -7161,7 +7161,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:altLabel xml:lang="en">Pregnant Female</skos:altLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000883">
-    <era:status>unknown</era:status>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000872"/>
     <skos:altLabel xml:lang="en">lamb production unit</skos:altLabel>
     <skos:altLabel xml:lang="en">fish fry production unit</skos:altLabel>
     <skos:altLabel xml:lang="en">piglet production unit</skos:altLabel>
@@ -7172,6 +7172,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:altLabel xml:lang="en">chick production unit</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_000883</skos:notation>
+    <era:status>deprecated</era:status>
     <skos:prefLabel xml:lang="en">newborn</skos:prefLabel>
     <skos:definition xml:lang="en">unit dedicated to the production of newborn animal before weaning (mammal) or until hatching (fish, chicken)</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -7834,10 +7835,10 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000058"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002191">
-    <skos:definition xml:lang="en">A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell component; processing method — Grinding.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:altLabel xml:lang="en">Fossil Shell Flour</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell; processing method — Grinding.</skos:definition>
     <era:status>unknown</era:status>
     <skos:notation>AOM_002191</skos:notation>
     <skos:prefLabel xml:lang="en">Fossil Shell Ground</skos:prefLabel>
@@ -8077,10 +8078,11 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000922">
     <skos:notation>AOM_000922</skos:notation>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001648"/>
-    <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">species associations</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <era:status>deprecated</era:status>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000893"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000848"/>
     <skos:definition xml:lang="en">housing structure with partially or totally access to outdoors, an area with natural light (courtyard, pasture)</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -9394,15 +9396,16 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000923">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:definition xml:lang="en">system of farming which rears only one type of animal species in the same production unit</skos:definition>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000894"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000922"/>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001507"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">mono-species</skos:prefLabel>
     <skos:altLabel xml:lang="en">mono-species breeding system</skos:altLabel>
     <skos:altLabel xml:lang="en">monoculture rearing system</skos:altLabel>
     <skos:notation>AOM_000923</skos:notation>
+    <era:status>deprecated</era:status>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000925"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000924"/>
   </rdf:Description>
@@ -10871,12 +10874,13 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001506"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000922"/>
-    <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">multi-species</skos:prefLabel>
     <skos:definition xml:lang="en">system of farming which uses multiple species in the same rearing structure occupying different ecological niches of the medium to optimize production, with or without trophic interrelationship</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:altLabel xml:lang="en">poly-species rearing system</skos:altLabel>
     <skos:altLabel xml:lang="en">polyculture rearing system</skos:altLabel>
+    <era:status>deprecated</era:status>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000897"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000927"/>
   </rdf:Description>
@@ -11475,6 +11479,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:definition xml:lang="en">unit dedicated to the production of young animal feeding by himself (weaned animal or yolk sac resorption stage) and which can be transfered in pregrowing unit or growing unit. The animal is originating from the natural environment.Newborn-&gt;Juvenile-&gt;Pregrowout-&gt;Grower-&gt;Finisher</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:altLabel xml:lang="en">Wild caught fingerling production system</skos:altLabel>
+    <skos:altLabel xml:lang="en">Wild caugth fingerling production system</skos:altLabel>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001582"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000869"/>
     <skos:notation>AOM_000871</skos:notation>
@@ -12102,18 +12107,19 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006007"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000878">
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000869"/>
     <skos:prefLabel xml:lang="en">juvenile</skos:prefLabel>
     <skos:altLabel xml:lang="en">weaned animal rearing unit</skos:altLabel>
     <skos:altLabel xml:lang="en">juvenile production unit</skos:altLabel>
     <skos:altLabel xml:lang="en">fingerling production</skos:altLabel>
     <skos:altLabel xml:lang="en">fry production</skos:altLabel>
+    <era:status>deprecated</era:status>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000874"/>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001574"/>
     <skos:notation>AOM_000878</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
     <skos:definition xml:lang="en">unit dedicated to the production of young animal feeding by himself (weaned animal or yolk sac resorption stage) and which can be transfered in pregrowing unit or growing unit. The animal comes from the natural environment or produced in a farm</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000879"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000880"/>
@@ -12228,13 +12234,13 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000874">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
     <skos:notation>AOM_000874</skos:notation>
+    <era:status>deprecated</era:status>
     <skos:prefLabel xml:lang="en">rearing stage</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000848"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000865"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A farming-system classification for rearing stage within the terrestrial system context.</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000881"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000875"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000882"/>
@@ -12364,6 +12370,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_000893</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000849"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000848"/>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:definition xml:lang="en">A farming-system classification for species associations within the aquatic system context.</skos:definition>
@@ -12379,7 +12386,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6563"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/736"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell component.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “oyster” and characteristics: ingredient part — Shell.</skos:definition>
     <skos:prefLabel xml:lang="en">Oyster Shells</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_000557</skos:notation>
@@ -13329,13 +13336,14 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:altLabel xml:lang="en">IMTA</skos:altLabel>
     <skos:altLabel xml:lang="en">Integrated multi-trophic aquaculture</skos:altLabel>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001516"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000898"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000926"/>
     <skos:definition xml:lang="en">system of farming which provides the by-products (including waste) from one animal species (aquatic or terrestrial) as inputs for another species (animal, plant or aquatic) in the same production unit</skos:definition>
-    <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">integrated system</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_000927</skos:notation>
+    <era:status>deprecated</era:status>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000196">
@@ -13794,12 +13802,13 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000884">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
     <skos:altLabel xml:lang="en">pregrowing rearing unit</skos:altLabel>
     <skos:altLabel xml:lang="en">on-growing rearing unit</skos:altLabel>
     <skos:altLabel xml:lang="en">pre-fattening rearing unit</skos:altLabel>
     <skos:definition xml:lang="en">pre-growout rearing unit</skos:definition>
+    <era:status>deprecated</era:status>
     <skos:notation>AOM_000884</skos:notation>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000873"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001725"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -15019,7 +15028,7 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_002225</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell.</skos:definition>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_171929"/>
@@ -15190,6 +15199,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000850">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000848"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000849"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">production orientation</skos:prefLabel>
     <skos:definition xml:lang="en">A farming-system classification for production orientation within the terrestrial system context.</skos:definition>
@@ -15688,13 +15698,14 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000146">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000820"/>
     <skos:definition xml:lang="en">Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)</skos:definition>
+    <era:status>deprecated</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000145"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_000146</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:prefLabel xml:lang="en">Enzyme Treatment</skos:prefLabel>
-    <era:status>unknown</era:status>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001769">
     <skos:definition xml:lang="en">A feed material with governed source identity “leucaena pallida” and characteristics: ingredient part — Leaf.</skos:definition>
@@ -16189,6 +16200,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101040">
+    <skos:definition xml:lang="en">Governed anatomical part value used for ingredient-component semantics.</skos:definition>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101019"/>
@@ -16196,7 +16208,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Shell component</skos:prefLabel>
     <skos:notation>AOM_101040</skos:notation>
-    <skos:definition xml:lang="en">Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell.</skos:definition>
     <era:conceptType>aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006397">
@@ -18539,6 +18550,21 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000714"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000713"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000855">
+    <era:status>deprecated</era:status>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">production orientation</skos:prefLabel>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000849"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000850"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:notation>AOM_000855</skos:notation>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000858"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000862"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000857"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000861"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000856"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_100885">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>aom_concept</era:conceptType>
@@ -19149,6 +19175,18 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:definition xml:lang="en">A feed material with governed source identity “african palm larvae” and characteristics: processing method — Grinding.</skos:definition>
     <era:status>unknown</era:status>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002249">
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
+    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12155"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>AOM_002249</skos:notation>
+    <skos:prefLabel xml:lang="en">Groundnut Shell</skos:prefLabel>
+    <era:status>unknown</era:status>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000393">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_000393</skos:notation>
@@ -19198,14 +19236,15 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:definition xml:lang="en">A feed material with governed source identity “mucuna pruriens” and characteristics: ingredient part — Seed; processing method — Boiling, Drying, Grinding.</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000876">
-    <era:status>unknown</era:status>
     <skos:altLabel xml:lang="en">fattening rearing unit</skos:altLabel>
     <skos:altLabel xml:lang="en">animal grower production unit</skos:altLabel>
     <skos:altLabel xml:lang="en">growing-out rearing unit</skos:altLabel>
     <skos:altLabel xml:lang="en">ongrowing rearing unit</skos:altLabel>
     <skos:altLabel xml:lang="en">grower rearing unit</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <era:status>deprecated</era:status>
     <skos:notation>AOM_000876</skos:notation>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000867"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000874"/>
@@ -19383,6 +19422,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Fermentation</skos:prefLabel>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000145"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100990"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
@@ -20258,10 +20298,11 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000865">
     <skos:prefLabel xml:lang="en">rearing stage</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000848"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000849"/>
     <skos:definition xml:lang="en">any characteristic of terrestrial unit of production related to a specific life stage rearing</skos:definition>
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001709"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000849"/>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_000865</skos:notation>
@@ -20952,9 +20993,10 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_000885</skos:notation>
     <era:status>unknown</era:status>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000848"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000849"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000849"/>
     <skos:prefLabel xml:lang="en">living environment</skos:prefLabel>
     <skos:definition xml:lang="en">A farming-system classification for living environment within the aquatic system context.</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000889"/>
@@ -21318,6 +21360,24 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006205"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001915"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_002056"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000848">
+    <era:status>unknown</era:status>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A farming-system classification identifying the terrestrial livestock-system context.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000847"/>
+    <skos:notation>AOM_000848</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:prefLabel xml:lang="en">terrestrial system</skos:prefLabel>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000850"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000900"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000865"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000885"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000874"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000932"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000922"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000893"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001167">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001166"/>
@@ -22963,11 +23023,11 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006049">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Crushing, Drying.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_006049</skos:notation>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_002225"/>
     <skos:prefLabel xml:lang="en">Cashew Shell Crushed Dried</skos:prefLabel>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Crushing, Drying.</skos:definition>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_171929"/>
@@ -23877,17 +23937,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:notation>AOM_000281</skos:notation>
     <skos:prefLabel xml:lang="en">Vitamin E</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101103">
-    <skos:notation>AOM_101103</skos:notation>
-    <skos:prefLabel xml:lang="en">Blood component</skos:prefLabel>
-    <era:conceptType>aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood.</skos:definition>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101019"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006272">
     <skos:notation>AOM_006272</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -24215,11 +24264,11 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001105">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell component.</skos:definition>
     <era:status>unknown</era:status>
     <skos:notation>AOM_001105</skos:notation>
     <skos:prefLabel xml:lang="en">Lake Shells</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Lake Shells” and characteristics: ingredient part — Shell.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000558"/>
   </rdf:Description>
@@ -24387,6 +24436,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
     <skos:notation>AOM_000820</skos:notation>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000145"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100990"/>
     <skos:definition xml:lang="en">Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000824"/>
@@ -24761,6 +24811,18 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:prefLabel xml:lang="en">ACTIPAL HP 1</skos:prefLabel>
     <skos:notation>AOM_001500</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000925">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <era:status>deprecated</era:status>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000923"/>
+    <skos:prefLabel xml:lang="en">individual housing</skos:prefLabel>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:definition xml:lang="en">system of farming where the animal is housed alone</skos:definition>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000896"/>
+    <skos:notation>AOM_000925</skos:notation>
+    <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001634"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001787">
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_38414"/>
@@ -26008,10 +26070,11 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:altLabel xml:lang="en">growing-finishing housing system</skos:altLabel>
     <skos:altLabel xml:lang="en">fattening housing system</skos:altLabel>
     <skos:altLabel xml:lang="en">broiler housing system</skos:altLabel>
-    <era:status>unknown</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000876"/>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000868"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:definition xml:lang="en">unit dedicated to the production of animal in growing-finishing phase until the slaughtering which come from the natural environment or produced in a farm.</skos:definition>
+    <era:status>deprecated</era:status>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001128">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000718"/>
@@ -26038,6 +26101,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000893"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000855"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000865"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000850"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000885"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001982">
@@ -26745,6 +26809,17 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:notation>AOM_002214</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101103">
+    <skos:notation>AOM_101103</skos:notation>
+    <skos:prefLabel xml:lang="en">Blood component</skos:prefLabel>
+    <era:conceptType>aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/IngredientPartCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Governed anatomical part value used for feed-material semantics.</skos:definition>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101019"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000410">
     <skos:definition xml:lang="en">Fixed costs related to land or buildings (excluding animal housing) may refer to either the depreciation value over time or the initial cost of purchase.</skos:definition>
@@ -28017,21 +28092,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:status>unknown</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_003172"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000848">
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A farming-system classification identifying the terrestrial livestock-system context.</skos:definition>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000847"/>
-    <skos:notation>AOM_000848</skos:notation>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:prefLabel xml:lang="en">terrestrial system</skos:prefLabel>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000850"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000900"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000874"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000932"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000922"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000969">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Intact Grower Male</skos:prefLabel>
@@ -29113,18 +29173,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000718"/>
     <skos:notation>AOM_003909</skos:notation>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006135"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000900">
-    <skos:definition xml:lang="en">A farming-system classification for living environment within the terrestrial system context.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000848"/>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:notation>AOM_000900</skos:notation>
-    <skos:prefLabel xml:lang="en">living environment</skos:prefLabel>
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_003022"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_100993"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000273">
     <skos:notation>AOM_000273</skos:notation>
@@ -30485,7 +30533,7 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006050">
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_171929"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell component; processing method — Grinding.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cashew” and characteristics: ingredient part — Shell; processing method — Grinding.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_006050</skos:notation>
     <skos:prefLabel xml:lang="en">Cashew Shell Ground</skos:prefLabel>
@@ -30729,10 +30777,11 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006113"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000147">
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000830"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Fermentation</skos:prefLabel>
+    <era:status>deprecated</era:status>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_000147</skos:notation>
     <skos:definition xml:lang="en">Feed fermentation is a biological process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT).</skos:definition>
@@ -30943,6 +30992,8 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000146"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000830"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000820"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000147"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001080">
@@ -32789,18 +32840,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100856"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000880">
-    <era:status>unknown</era:status>
-    <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001582"/>
-    <skos:altLabel xml:lang="en">Wild caugth fingerling production system</skos:altLabel>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000878"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:notation>AOM_000880</skos:notation>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:prefLabel xml:lang="en">wild caught juvenile</skos:prefLabel>
-    <skos:definition xml:lang="en">unit dedicated to the production of young animal feeding by himself (weaned animal or yolk sac resorption stage) and which can be transfered in pregrowing unit or growing unit. The animal is originating from the natural environment</skos:definition>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006148">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001889"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -33273,6 +33312,14 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000872">
+    <skos:altLabel xml:lang="en">goatling production unit</skos:altLabel>
+    <skos:altLabel xml:lang="en">larval production unit</skos:altLabel>
+    <skos:altLabel xml:lang="en">chick production unit</skos:altLabel>
+    <skos:altLabel xml:lang="en">lamb production unit</skos:altLabel>
+    <skos:altLabel xml:lang="en">fish fry production unit</skos:altLabel>
+    <skos:altLabel xml:lang="en">piglet production unit</skos:altLabel>
+    <skos:altLabel xml:lang="en">duckling production unit</skos:altLabel>
+    <skos:altLabel xml:lang="en">calf production system</skos:altLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">newborn</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -33282,7 +33329,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001716"/>
     <era:status>unknown</era:status>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:altLabel xml:lang="en">fish fry production unit</skos:altLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001634">
     <skos:prefLabel xml:lang="en">Chloris gayana Dried Wilted</skos:prefLabel>
@@ -34290,17 +34336,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:prefLabel xml:lang="en">Acacia etbaica Fruits Dried</skos:prefLabel>
     <skos:definition xml:lang="en">A feed material with governed source identity “acacia etbaica fruits” and characteristics: processing method — Drying.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000925">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000923"/>
-    <skos:prefLabel xml:lang="en">individual housing</skos:prefLabel>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">system of farming where the animal is housed alone</skos:definition>
-    <skos:notation>AOM_000925</skos:notation>
-    <era:status>unknown</era:status>
-    <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001634"/>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000936">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -34342,6 +34377,18 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:status>unknown</era:status>
     <skos:definition xml:lang="en">A livestock-management concept concerning Optimization of Stocking Density within Pasture Management.</skos:definition>
     <skos:notation>AOM_000171</skos:notation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000900">
+    <era:status>deprecated</era:status>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000848"/>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:notation>AOM_000900</skos:notation>
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/era-aom/livestock/AOM_000885"/>
+    <skos:prefLabel xml:lang="en">living environment</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_003022"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_100993"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001757">
     <era:status>unknown</era:status>
@@ -34596,18 +34643,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
     <skos:notation>AOM_002051</skos:notation>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002249">
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12155"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:notation>AOM_002249</skos:notation>
-    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: ingredient part — Shell component.</skos:definition>
-    <skos:prefLabel xml:lang="en">Groundnut Shell</skos:prefLabel>
-    <era:status>unknown</era:status>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001509">
     <skos:notation>AOM_001509</skos:notation>

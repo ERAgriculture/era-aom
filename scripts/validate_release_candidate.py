@@ -2,6 +2,7 @@
 """Validate ERA-AOM release semantics, packaging, and browser contracts."""
 
 import argparse
+import csv
 import hashlib
 import json
 from collections import defaultdict
@@ -18,6 +19,11 @@ def sha256(path):
 
 def graph(path):
     return Graph().parse(path)
+
+
+def csv_row_count(path):
+    with path.open(encoding="utf-8", newline="") as handle:
+        return sum(1 for row in csv.DictReader(handle))
 
 
 def main():
@@ -112,17 +118,23 @@ def main():
     crosswalk = pq.read_table(release / "migration-crosswalk.parquet")
     rules = pq.read_table(release / "ingredient-harmonization-rules.parquet")
     material_facets = pq.read_table(release / "feed-material-facets.parquet")
-    assert nodes.num_rows == 2765 and edges.num_rows == 2792
-    assert crosswalk.num_rows == 10
+    staging_nodes = csv_row_count(root / "dist" / "livestock-staging" / "nodes.csv")
+    staging_edges = csv_row_count(root / "dist" / "livestock-staging" / "edges.csv")
+    with (root / "data" / "livestock-staging" / "approved_deprecations.csv").open(
+        encoding="utf-8", newline=""
+    ) as handle:
+        expected_crosswalk = {
+            (row["deprecated_id"], row["replacement_id"])
+            for row in csv.DictReader(handle)
+        }
+    assert nodes.num_rows == staging_nodes == 2765
+    assert edges.num_rows == staging_edges
+    assert crosswalk.num_rows == len(expected_crosswalk)
     assert rules.num_rows == 40 and material_facets.num_rows == 1793
-    assert ("AOM_006072", "AOM_001326") in set(zip(
+    assert set(zip(
         crosswalk.column("deprecated_id").to_pylist(),
         crosswalk.column("replacement_id").to_pylist(),
-    ))
-    assert ("AOM_001898", "AOM_001459") in set(zip(
-        crosswalk.column("deprecated_id").to_pylist(),
-        crosswalk.column("replacement_id").to_pylist(),
-    ))
+    )) == expected_crosswalk
     assert pq.read_schema(release / "nodes.parquet").names == [
         "node_id", "label", "node_type", "module", "status"
     ]
