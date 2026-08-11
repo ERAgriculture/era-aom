@@ -29,6 +29,7 @@ labels = {
     "mayResultInPresentationForm": "may result in presentation form",
     "mayResultInMoistureCondition": "may result in moisture condition",
     "productRole": "has product role",
+    "primaryConstituent": "has primary chemical constituent",
     "ingredientConstituent": "has ingredient constituent",
     "ingredientSource": "has ingredient source",
 }

@@ -33,14 +33,14 @@ for row in facets:
             (row["target_property"], row["target_concept_id"])
         )
 assert by_material == {
-    "AOM_000544": {("aom:ingredientConstituent", "AOM_101081")},
+    "AOM_000544": {("aom:primaryConstituent", "AOM_101081")},
     "AOM_000642": {
         ("aom:bulkConsistency", "AOM_101077"),
         ("aom:processingMethod", "AOM_101084"),
         ("aom:productRole", "AOM_101062"),
     },
-    "AOM_000678": {("aom:ingredientConstituent", "AOM_101065")},
-    "AOM_001289": {("aom:ingredientConstituent", "AOM_101065")},
+    "AOM_000678": {("aom:primaryConstituent", "AOM_101065")},
+    "AOM_001289": {("aom:primaryConstituent", "AOM_101065")},
     "AOM_003208": {("aom:productRole", "AOM_101062")},
     "AOM_003596": {("aom:ingredientPart", "AOM_101038")},
 }

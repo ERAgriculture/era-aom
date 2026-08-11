@@ -79,7 +79,7 @@ assert by_material["AOM_001326"] == {
 }
 assert "AOM_006072" not in by_material
 assert ("aom:processingMethod", "Soaking") in by_material["AOM_006500"]
-assert ("aom:materialIntegrity", "Whole grain") in by_material["AOM_001313"]
+assert ("aom:materialIntegrity", "Whole-grain integrity") in by_material["AOM_001313"]
 assert ("aom:ingredientPart", "Grain") in by_material["AOM_001313"]
 assert not any(row["rule_id"] == "PROCESS-DEHULLED" for row in generated)
 assert not any(row["target_label"] in {"Cake form", "Pulp form"} for row in generated)

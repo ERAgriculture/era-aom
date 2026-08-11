@@ -27,11 +27,11 @@
   },
   "source_repository_commit": "a9714cc16b0a761082ea1dc010eb27da3a90cc97",
   "manifest_schema_version": "1.0.0",
-  "source_staging_manifest_sha256": "4d75cffd5b150e22afefeb0ab475c5f763ccacfb06bfc7fced4a45e2383893f8",
+  "source_staging_manifest_sha256": "333656613590f110c2248af796743af1113d61aca144e29c2c10b14e2feae040",
   "counts": {
-    "livestock_triples": 29359,
-    "schema_triples": 233,
-    "semantic_binding_triples": 8821
+    "livestock_triples": 29369,
+    "schema_triples": 273,
+    "semantic_binding_triples": 8860
   },
   "distributions": [
     {
@@ -46,58 +46,58 @@
     },
     {
       "path": "aom-livestock.jsonld",
-      "bytes": 3996294,
-      "sha256": "9cc071882bcfa1f757d3ce21c3c9ecfa031a1858c34efc4ea6b4462c64e3ce4c"
+      "bytes": 3997046,
+      "sha256": "6427a09810b33d17cb820713bdc8f2929d6ca7236e5c6db77b6cc228ff3ac4bb"
     },
     {
       "path": "aom-livestock.rdf",
-      "bytes": 2728825,
-      "sha256": "5b2533fb5326fae65446f51ef7d79f013a9df30205d4b1588b37a4bc4def90a4"
+      "bytes": 2728658,
+      "sha256": "185f7fc8c027aeb2683838d49f89f66fedd1aa73cd8725911b1ca98c56a7c064"
     },
     {
       "path": "aom-livestock.ttl",
-      "bytes": 1939475,
-      "sha256": "cfe919d23ab1fbee98e1e50e247dc5e43536c5d5920e37e2c35420a34b5ecdc7"
+      "bytes": 1939133,
+      "sha256": "0d7931842633f3ab1b24b3fc6fd6df0d931616a2d30d4d8f98461a9232135044"
     },
     {
       "path": "aom-schema.rdf",
-      "bytes": 26292,
-      "sha256": "6f2ced48cac23e1b3114ebd338fb9b57d4f9bcd5e05e02b1488d82c5c68646fc"
+      "bytes": 30522,
+      "sha256": "e8bf29d5bff89141d0f65e08f2555c3ec7bb3b5a4daf56176921f9ab2f501fde"
     },
     {
       "path": "aom-schema.ttl",
-      "bytes": 11475,
-      "sha256": "0d08222411290996615775335fd6608fdd1cb6616cc3b6402cd829a706ae94b3"
+      "bytes": 13218,
+      "sha256": "3b5bc17c0cfe14ef639ee2edb4eb4f0997991169ca2044c56a7f35199a96930d"
     },
     {
       "path": "aom-semantic-bindings.jsonld",
-      "bytes": 1121284,
-      "sha256": "a45313b1f7b7750b80236aa623c6d62fd46217b4f2280d145701245c345cb88a"
+      "bytes": 1125072,
+      "sha256": "60df1b8863207856606af3db1f3b9b5c974cea7a0535d3d47ab4a151bc2dd053"
     },
     {
       "path": "aom-semantic-bindings.ttl",
-      "bytes": 524165,
-      "sha256": "23243102f36d297fce9c44dbad4649cffacae22990704b8b09b3bda5527c8986"
+      "bytes": 525909,
+      "sha256": "cb1b80b99840e7fa06b0fe55f92113671e6fe50e682800a777b0ee44df5cce90"
     },
     {
       "path": "edges.csv",
-      "bytes": 132894,
-      "sha256": "a06bd5d57548996f9d50d34b1aee0e4588d45f1abe51d41e028e6d079cddca6f"
+      "bytes": 132878,
+      "sha256": "02d9a19eb80ff4f28126f61a9a7a2d451b018709e7aa780ffb5773df8895aea4"
     },
     {
       "path": "edges.parquet",
-      "bytes": 17689,
-      "sha256": "6728dcd081caf6c1fc781c6f5819601e8120c823dbb82e4849d8e0e7c0ca0514"
+      "bytes": 17730,
+      "sha256": "ec6509e7c618c18c53ae3c5969c83234627458d393dcaaa083719e6dbb31d88e"
     },
     {
       "path": "feed-material-facets.csv",
-      "bytes": 904575,
-      "sha256": "44207ac9a854ec8541baaa04cf7eb3719e68f1892ed84047d10c836360e61d28"
+      "bytes": 904545,
+      "sha256": "7f54bd00b8d1033db73fe256144533ef4239c56c313642b4984c059602c51011"
     },
     {
       "path": "feed-material-facets.parquet",
-      "bytes": 21880,
-      "sha256": "c67211385bd1fbeae066720159a41cef43443affd17c25e5ec16fdcf38695aa8"
+      "bytes": 21852,
+      "sha256": "9ec9a1ae524621174d69ddc020343a96bf4a08fc2a29705ce3fdfc9f9d688ccc"
     },
     {
       "path": "ingredient-harmonization-rules.csv",
@@ -121,13 +121,13 @@
     },
     {
       "path": "nodes.csv",
-      "bytes": 179996,
-      "sha256": "93392a2947bf15edf41e4f438f15570f9e7dd3af513f789f5fa00e6affebd796"
+      "bytes": 179952,
+      "sha256": "58afb13fe80d7e2395c3fb19aee76a588326ce2c2f2995e0dfb4b0b9c82a9e58"
     },
     {
       "path": "nodes.parquet",
-      "bytes": 36895,
-      "sha256": "ebcf30604eb930ccfec0c522118b757430bbed21afeef5b63f2b8f0303cf0047"
+      "bytes": 36897,
+      "sha256": "dda6cd5964821e97f9194265e5913293ec48a74f05a28641db42863e31be16a0"
     },
     {
       "path": "release.json",

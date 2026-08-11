@@ -38,7 +38,7 @@ assert summary == {
     "reviewed_material_state_concepts": 18,
     "unresolved_cases": ["AOM_001961", "AOM_002008", "AOM_006004"],
 }
-assert len(hierarchy_revisions) == 18
+assert len(hierarchy_revisions) == 32
 assert len(process_results) == 2
 assert len(state_review) == 18
 assert len(grinding_review) == 343
@@ -144,10 +144,10 @@ for identifier in drying_materials:
     ) in bindings
 
 facet_classes = {
-    "AOM_101125": "IngredientPresentationForm",
-    "AOM_101077": "IngredientBulkConsistency",
-    "AOM_101054": "IngredientMoistureCondition",
-    "AOM_001510": "IngredientMoistureCondition",
+    "AOM_101125": "FeedPresentationForm",
+    "AOM_101077": "FeedBulkConsistency",
+    "AOM_101054": "FeedMoistureCondition",
+    "AOM_001510": "FeedMoistureCondition",
 }
 for identifier, class_name in facet_classes.items():
     assert (
@@ -168,4 +168,4 @@ for identifier in {
 }:
     assert "GPT4" not in definitions[identifier]
 
-print("Process/material-state review passed: 18 hierarchy revisions; 3 explicit holds")
+print("Process/material-state review passed: 32 hierarchy revisions; 3 explicit holds")

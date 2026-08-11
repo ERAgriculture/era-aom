@@ -38,7 +38,18 @@ renames = {
     if row["status"] == "approved" and row["action"] == "rename_distinct"
 }
 original_labels = {row["generated_id"]: row["generated_label"] for row in decisions}
-assert len(replacement) == 14
+canonical_labels = {
+    row["generated_id"]: row["replacement_label"]
+    for row in decisions
+    if row["status"] == "approved" and row["action"] == "reuse_existing"
+    and row["replacement_label"]
+}
+canonical_label_by_id = {
+    replacement[generated_id]: label
+    for generated_id, label in canonical_labels.items()
+}
+assert len(canonical_label_by_id) == len(canonical_labels)
+assert len(replacement) == 16
 assert len(renames) == 3
 assert not (set(replacement) & set(replacement.values()))
 
@@ -58,8 +69,11 @@ for name in reference_tables:
     path = DATA / name
     rows = read(path)
     for row in rows:
-        if row.get("target_concept_id") in renames and "target_label" in row:
-            row["target_label"] = renames[row["target_concept_id"]]
+        original_target_id = row.get("target_concept_id")
+        if original_target_id in renames and "target_label" in row:
+            row["target_label"] = renames[original_target_id]
+        if original_target_id in canonical_labels and "target_label" in row:
+            row["target_label"] = canonical_labels[original_target_id]
         for key, value in row.items():
             if value in replacement:
                 row[key] = replacement[value]
@@ -74,6 +88,20 @@ for row in facet_rows:
         row["concept_id"] = replacement[row["concept_id"]]
     if row["concept_id"] in renames:
         row["preferred_label"] = renames[row["concept_id"]]
+    if row["concept_id"] in canonical_label_by_id:
+        row["preferred_label"] = canonical_label_by_id[row["concept_id"]]
+deduplicated = {}
+for row in facet_rows:
+    concept_id = row["concept_id"]
+    if concept_id in deduplicated:
+        existing = deduplicated[concept_id]
+        assert all(
+            existing[key] == row[key]
+            for key in ("facet", "target_property", "value_class", "concept_role")
+        )
+        continue
+    deduplicated[concept_id] = row
+facet_rows = list(deduplicated.values())
 write(facet_path, facet_rows, fields(facet_path))
 assert len({row["concept_id"] for row in facet_rows}) == len(facet_rows)
 

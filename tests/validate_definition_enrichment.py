@@ -22,18 +22,19 @@ concepts = read("concepts.csv")
 assert len(approved) == 2129
 assert len({row["concept_id"] for row in approved}) == 2129
 assert Counter(row["definition_method"] for row in approved) == {
-    "composed_from_approved_semantic_facets": 1129,
-    "composed_from_bounded_workbook_material_scope": 67,
-    "promoted_reviewed_scope_note": 269,
+    "composed_from_approved_semantic_facets": 1122,
+    "composed_from_bounded_workbook_material_scope": 62,
+    "promoted_reviewed_scope_note": 254,
     "composed_from_governed_hierarchy_role": 240,
     "composed_from_reviewed_feedipedia_source_scope": 85,
     "composed_from_reviewed_public_authority_source_scope": 151,
-    "composed_from_canonical_workbook_identity_scope": 131,
-    "composed_from_canonical_workbook_category_scope": 35,
+    "composed_from_canonical_workbook_identity_scope": 117,
+    "composed_from_canonical_workbook_category_scope": 32,
     "composed_from_reviewed_feedipedia_category_scope": 3,
     "composed_from_governed_core_hierarchy_scope": 2,
     "composed_from_reviewed_compound_model": 3,
     "authority_definition_replacement": 14,
+    "feed_structure_definition_replacement": 44,
 }
 assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in approved)
 assert all(
@@ -48,7 +49,7 @@ assert sum(row["concept_id"] not in defined for row in active) == 12
 graph = Graph().parse(ROOT / "dist/livestock-staging/aom-livestock.ttl")
 maize = URIRef("urn:era-aom:livestock:AOM_001313")
 definition = str(next(graph.objects(maize, SKOS.definition)))
-assert "source identity “maize”" in definition and "Whole grain" in definition
+assert "source identity “maize”" in definition and "Whole-grain integrity" in definition
 manifest = json.loads((ROOT / "dist/livestock-staging/manifest.json").read_text())
 assert manifest["counts"]["approved_definition_enrichments"] == 2129
 print("Definition enrichment validation passed: 2,129 definitions; 12 active integrity holds remain")

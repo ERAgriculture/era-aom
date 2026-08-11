@@ -12,14 +12,14 @@ ex:maizeBran a aom:FeedMaterial ;
   aom:physicalForm ex:mealForm ;
   aom:processingMethod ex:milling ;
   aom:productRole ex:byproductRole ;
-  aom:ingredientConstituent ex:starch ;
+  aom:primaryConstituent ex:starch ;
   aom:sourceTaxon <https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4577> .
 
-ex:grainPart a aom:IngredientPartCategory .
-ex:mealForm a aom:IngredientPhysicalForm .
+ex:grainPart a aom:FeedMaterialPartCategory .
+ex:mealForm a aom:FeedPhysicalDescriptor .
 ex:milling a aom:ProcessingMethod .
 ex:byproductRole a aom:ProductRole .
-ex:starch a aom:IngredientConstituent .
+ex:starch a aom:ChemicalConstituent .
 
 ex:component a aom:IngredientComponent ;
   aom:ingredientMaterial ex:maizeBran ;

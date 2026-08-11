@@ -23,12 +23,14 @@ mapping_reviews = read("approved_mapping_reviews")
 mapping_additions = read("approved_mapping_additions")
 deprecations = read("approved_deprecations")
 label_corrections = read("approved_label_corrections")
+label_additions = read("approved_label_additions")
 label_suppressions = read("approved_label_suppressions")
 new_concepts = read("approved_new_concepts")
 id_registry = read("livestock_id_registry")
 semantic_relations = read("approved_semantic_relations")
 reparentings = read("approved_reparentings")
 hierarchy_revisions = read("approved_hierarchy_revisions")
+formulation_classifications = read("approved_feed_formulation_classifications")
 semantic_bindings = read("approved_semantic_bindings")
 semantic_value_bindings = read("approved_semantic_value_bindings")
 component_classifications = read("approved_ingredient_component_classifications")
@@ -46,7 +48,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2772 and len(ids) == len(known)
+assert len(ids) == 2771 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -90,9 +92,9 @@ assert len(hard_tail_material_facets) == 154
 assert len(structural_material_facets) == 1159
 assert len(whole_grain_decisions) == 4
 assert len(source_overrides) == 15
-assert len(component_value_mappings) == 45
+assert len(component_value_mappings) == 46
 assert len(component_decompositions) == 65
-assert len(component_value_holds) == 10
+assert len(component_value_holds) == 9
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_concepts
 }
@@ -146,15 +148,17 @@ assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
 assert manifest["counts"]["approved_generated_feed_material_facets"] == 1599
 assert manifest["counts"]["approved_hard_tail_feed_material_facets"] == 154
 assert manifest["counts"]["approved_structural_feed_material_facets"] == 1159
-assert manifest["counts"]["approved_hierarchy_revisions"] == 18
+assert manifest["counts"]["approved_hierarchy_revisions"] == 32
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
 assert manifest["counts"]["approved_feed_material_source_overrides"] == 15
-assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 45
+assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 46
 assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
-assert manifest["counts"]["approved_ingredient_component_value_holds"] == 10
-assert len(label_corrections) == 23
+assert manifest["counts"]["approved_ingredient_component_value_holds"] == 9
+assert manifest["counts"]["approved_feed_formulation_classifications"] == 29
+assert len(label_corrections) == 25
+assert len(label_additions) == 13
 assert len(label_suppressions) == 6
-assert len(new_concepts) == 271
+assert len(new_concepts) == 270
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -218,7 +222,7 @@ final_mint_cases = {
 }
 assert final_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 101134)
+    f"AOM_{number:06d}" for number in range(100849, 101135)
 }
 assert {
     row["concept_id"] for row in id_registry
@@ -270,7 +274,11 @@ ingredient_children = set(new_by_case["PARENT-007"]["child_ids"].split(";"))
 assert {
     row["subject_id"] for row in relations
     if row["relation_type"] == "broader" and row["object_id"] == "AOM_100850"
-} >= ingredient_children
+} >= ingredient_children - {"AOM_001491"}
+assert not any(
+    row["subject_id"] == "AOM_001491" and row["object_id"] == "AOM_100850"
+    for row in relations if row["relation_type"] == "broader"
+)
 assert ("AOM_100850", "broader", "AOM_000328") in {
     (row["subject_id"], row["relation_type"], row["object_id"])
     for row in relations
@@ -349,6 +357,8 @@ expected_polyhierarchies = {
     "AOM_000833": {"AOM_000826", "AOM_000837", "AOM_101131"},
     "AOM_000838": {"AOM_000837", "AOM_101129", "AOM_101130"},
     "AOM_101128": {"AOM_000826", "AOM_101130"},
+    "AOM_101124": {"AOM_000826", "AOM_101130"},
+    "AOM_101068": {"AOM_000826", "AOM_101130"},
 }
 for concept_id, expected_parents in expected_polyhierarchies.items():
     actual_parents = staging_nodes[concept_id]["skos:broader"]
@@ -358,7 +368,8 @@ for concept_id, expected_parents in expected_polyhierarchies.items():
         for value in actual_parents
     } == expected_parents
 assert len(reparentings) == 64
-assert len(hierarchy_revisions) == 18
+assert len(hierarchy_revisions) == 32
+assert len(formulation_classifications) == 29
 for reparenting in reparentings:
     children = set(reparenting["child_ids"].split(";"))
     assert {
@@ -413,6 +424,8 @@ assert corrected_labels == {
     "AOM_000839": "Hammer milling",
     "AOM_003097": "Decortication",
     "AOM_001510": "Fresh moisture condition",
+    "AOM_001491": "Formulated feeds",
+    "AOM_003098": "Sprouting",
 }
 for correction in label_corrections:
     if correction["old_label"].casefold() != correction["new_label"].casefold():
@@ -467,6 +480,7 @@ assert manifest["counts"]["approved_mapping_replacements"] == len(replacements)
 assert manifest["counts"]["approved_mapping_additions"] == len(mapping_additions)
 assert manifest["counts"]["approved_deprecations"] == len(deprecations)
 assert manifest["counts"]["approved_label_corrections"] == len(label_corrections)
+assert manifest["counts"]["approved_label_additions"] == len(label_additions)
 assert manifest["counts"]["approved_label_suppressions"] == len(label_suppressions)
 assert manifest["counts"]["approved_new_concepts"] == len(new_concepts)
 assert manifest["counts"]["registered_livestock_ids"] == len(id_registry)

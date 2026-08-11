@@ -4,6 +4,11 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Separate 23 formulated feeds from feed materials, classify three branch
+  outliers as materials and Elancoban as an additive, retain one product-class
+  hold, generalize feed-state descriptors, replace ambiguous constituent
+  semantics, and complete linked process/whole-term review under ADR 0043.
+
 - Classify all 888 remaining definition gaps, approve 243 hierarchy-role
   definitions, and route 645 evidence-dependent gaps without using closed ILRI
   identifiers.
@@ -26,8 +31,8 @@ All notable vocabulary changes will be recorded here.
   checksums, Skosmos configuration, bulk proposal validation, and explicit
   publication/rollback gates.
 
-- Closed ingredient facet governance across all 83 descriptors with 45 atomic
-  mappings, 65 composite assertions, and ten explicit holds.
+- Closed ingredient facet governance across all 83 descriptors with 46 atomic
+  mappings, 65 composite assertions, and nine explicit holds.
 
 - Create repository and Phase 0 workbook inventory.
 - Normalize `prac` and `out` into pilot concept, annotation, relation,

@@ -36,7 +36,8 @@ assert Counter(row["decision"] for row in rows) == {
 assert len(facets) == 154
 assert Counter(row["target_property"] for row in facets) == {
     "aom:productRole": 57, "aom:ingredientPart": 46,
-    "aom:ingredientConstituent": 19, "aom:presentationForm": 12,
+    "aom:primaryConstituent": 17, "aom:compositionState": 2,
+    "aom:presentationForm": 12,
     "aom:bulkConsistency": 6,
     "aom:processingMethod": 14,
 }

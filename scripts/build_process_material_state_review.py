@@ -80,7 +80,7 @@ result_rows = [
         "process_concept_id": "AOM_000836",
         "relation_property": "aom:mayResultInPresentationForm",
         "result_concept_id": "AOM_101125",
-        "result_class": "aom:IngredientPresentationForm",
+        "result_class": "aom:FeedPresentationForm",
         "status": "approved",
         "reviewer": REVIEWER,
         "review_date": DATE,
@@ -92,7 +92,7 @@ result_rows = [
         "process_concept_id": "AOM_000843",
         "relation_property": "aom:mayResultInMoistureCondition",
         "result_concept_id": "AOM_101054",
-        "result_class": "aom:IngredientMoistureCondition",
+        "result_class": "aom:FeedMoistureCondition",
         "status": "approved",
         "reviewer": REVIEWER,
         "review_date": DATE,
@@ -107,7 +107,7 @@ write(
 )
 
 facet_specs = [
-    ("AOM_101020", "Ingredient presentation forms", "presentation_form", "retained_root", "Presentation axis excludes moisture and bulk consistency."),
+    ("AOM_101020", "Feed presentation forms", "presentation_form", "retained_root", "Presentation axis excludes moisture and bulk consistency."),
     ("AOM_101049", "Block form", "presentation_form", "retained_value", "Block is shaped presentation."),
     ("AOM_101050", "Lick form", "presentation_form", "retained_value", "Lick is shaped presentation."),
     ("AOM_101051", "Powder form", "presentation_form", "retained_value", "Powder is particle presentation; exact threshold remains unspecified."),
@@ -115,15 +115,15 @@ facet_specs = [
     ("AOM_101053", "Flake form", "presentation_form", "retained_value", "Flake is shaped presentation."),
     ("AOM_101054", "Dried moisture condition", "moisture_condition", "moved_axis", "Dried describes moisture condition, not shape."),
     ("AOM_101075", "Mixed presentation", "presentation_form", "retained_value", "Mixed describes presentation; composition remains separate."),
-    ("AOM_101076", "Whole form", "presentation_form", "retained_value", "Whole describes intact presentation; material integrity remains independently governed."),
+    ("AOM_101076", "Intact presentation", "presentation_form", "retained_value", "Intact describes visible presentation; material integrity remains independently governed."),
     ("AOM_101077", "Liquid consistency", "bulk_consistency", "moved_axis", "Liquid describes bulk flow consistency."),
     ("AOM_101078", "Pulp consistency", "bulk_consistency", "moved_axis", "Pulp describes moist fibrous or cellular bulk consistency."),
     ("AOM_101108", "Pellet form", "presentation_form", "retained_value", "Pellet is shaped presentation."),
     ("AOM_101118", "Slurry consistency", "bulk_consistency", "moved_axis", "Slurry requires dispersed solids in a liquid continuous phase."),
     ("AOM_101125", "Comminuted particle form", "presentation_form", "renamed_scope", "Comminuted particles do not entail dry solid bulk state."),
     ("AOM_101126", "Meal form", "presentation_form", "retained_value", "Meal does not globally entail drying."),
-    (BULK_ROOT, "Ingredient bulk consistencies", "bulk_consistency", "new_root", "Separates bulk flow and dispersion semantics."),
-    (MOISTURE_ROOT, "Ingredient moisture conditions", "moisture_condition", "new_root", "Separates moisture semantics."),
+    (BULK_ROOT, "Feed bulk consistencies", "bulk_consistency", "new_root", "Separates bulk flow and dispersion semantics."),
+    (MOISTURE_ROOT, "Feed moisture conditions", "moisture_condition", "new_root", "Separates moisture semantics."),
     ("AOM_001510", "Fresh moisture condition", "moisture_condition", "reclassified_legacy", "Fresh is condition rather than dehydration process."),
 ]
 facet_rows = [{

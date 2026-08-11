@@ -17,6 +17,7 @@ HARD_TAIL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_hard_t
 STRUCTURAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_structural_feed_material_facets.csv"
 EXTERNAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_external_facets.csv"
 PROCESS_STATE_RELATION_SOURCE = ROOT / "data/livestock-staging/approved_process_state_relations.csv"
+FORMULATION_CLASSIFICATION_SOURCE = ROOT / "data/livestock-staging/approved_feed_formulation_classifications.csv"
 EXTERNAL_RESOURCE_LABEL_SOURCE = ROOT / "review/livestock-v9/feedipedia_definition_evidence.csv"
 EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE = ROOT / "data/livestock-staging/approved_external_resource_labels.csv"
 DIST = ROOT / "dist/livestock-staging"
@@ -65,6 +66,8 @@ with EXTERNAL_MATERIAL_FACET_SOURCE.open(encoding="utf-8", newline="") as handle
     external_material_facets = list(csv.DictReader(handle))
 with PROCESS_STATE_RELATION_SOURCE.open(encoding="utf-8", newline="") as handle:
     process_state_relations = list(csv.DictReader(handle))
+with FORMULATION_CLASSIFICATION_SOURCE.open(encoding="utf-8", newline="") as handle:
+    formulation_classifications = list(csv.DictReader(handle))
 with EXTERNAL_RESOURCE_LABEL_SOURCE.open(encoding="utf-8", newline="") as handle:
     external_resource_label_evidence = list(csv.DictReader(handle))
 with EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE.open(encoding="utf-8", newline="") as handle:
@@ -80,14 +83,40 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 116 and len(facet_mappings) == 45 and len(facet_decompositions) == 65
-assert len(facet_holds) == 10
+assert len(facet_rows) == 116 and len(facet_mappings) == 46 and len(facet_decompositions) == 65
+assert len(facet_holds) == 9
 assert len({
     (row["feed_material_id"], row["target_property"], row["target_concept_id"])
     for row in material_facets
 }) == len(material_facets)
 assert len(external_material_facets) == 3
 assert len(process_state_relations) == 2
+assert len(formulation_classifications) == 29
+classification_by_id = {
+    row["concept_id"]: row for row in formulation_classifications
+}
+assert len(classification_by_id) == len(formulation_classifications)
+assert {
+    row["semantic_class"] for row in formulation_classifications
+    if row["semantic_class"]
+} == {"aom:FeedMaterial", "aom:FeedFormulation", "aom:FeedAdditive"}
+assert all(
+    row["status"] == "approved" or (
+        row["status"] == "hold" and not row["semantic_class"]
+    )
+    for row in formulation_classifications
+)
+semantic_class_by_id = {
+    row["concept_id"]: row["semantic_class"]
+    for row in formulation_classifications if row["semantic_class"]
+}
+assert list(semantic_class_by_id.values()).count("aom:FeedFormulation") == 23
+
+
+def feed_class(concept_id):
+    if concept_id in classification_by_id and not classification_by_id[concept_id]["semantic_class"]:
+        raise ValueError(f"Unclassified feed-branch hold has semantic facets: {concept_id}")
+    return semantic_class_by_id.get(concept_id, "aom:FeedMaterial")
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
 facet_value_rows = []
 for row in facet_mappings:
@@ -121,6 +150,11 @@ for row in value_rows:
 all_value_rows = value_rows + facet_value_rows
 
 graph = []
+for concept_id, semantic_class in sorted(semantic_class_by_id.items()):
+    graph.append({
+        "@id": CONCEPT_BASE + concept_id,
+        "@type": ["skos:Concept", semantic_class],
+    })
 for row in rows:
     concept_uri = CONCEPT_BASE + row["legacy_concept_id"]
     binding = {
@@ -186,7 +220,7 @@ for row in material_facets:
     })
     graph.append({
         "@id": material,
-        "@type": ["skos:Concept", "aom:FeedMaterial"],
+        "@type": ["skos:Concept", feed_class(row["feed_material_id"])],
         row["target_property"]: {"@id": CONCEPT_BASE + row["target_concept_id"]},
     })
 for row in external_material_facets:
@@ -199,7 +233,7 @@ for row in external_material_facets:
     })
     graph.append({
         "@id": material,
-        "@type": ["skos:Concept", "aom:FeedMaterial"],
+        "@type": ["skos:Concept", feed_class(row["feed_material_id"])],
         row["target_property"]: {"@id": row["target_uri"]},
     })
 for row in process_state_relations:
@@ -219,6 +253,10 @@ DIST.mkdir(parents=True, exist_ok=True)
 )
 
 ttl = [*(f"@prefix {key}: <{value}> ." for key, value in PREFIXES.items()), ""]
+for concept_id, semantic_class in sorted(semantic_class_by_id.items()):
+    ttl.append(
+        f"<{CONCEPT_BASE + concept_id}> a skos:Concept, {semantic_class} .\n"
+    )
 for row in rows:
     concept_uri = CONCEPT_BASE + row["legacy_concept_id"]
     terms = [
@@ -267,7 +305,7 @@ for row in material_facets:
     facet = facet_by_id[row["target_concept_id"]]
     ttl.append(f"<{target}> a skos:Concept, {facet['value_class']} .\n")
     ttl.append(
-        f"<{material}> a skos:Concept, aom:FeedMaterial ;\n"
+        f"<{material}> a skos:Concept, {feed_class(row['feed_material_id'])} ;\n"
         f"  {row['target_property']} <{target}> .\n"
     )
 for row in external_material_facets:
@@ -279,7 +317,7 @@ for row in external_material_facets:
         f"  rdfs:label {label}@en .\n"
     )
     ttl.append(
-        f"<{material}> a skos:Concept, aom:FeedMaterial ;\n"
+        f"<{material}> a skos:Concept, {feed_class(row['feed_material_id'])} ;\n"
         f'  {row["target_property"]} <{row["target_uri"]}> .\n'
     )
 for row in process_state_relations:

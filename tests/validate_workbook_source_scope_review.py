@@ -37,8 +37,12 @@ facet_composed = {
     row["concept_id"] for row in definitions
     if row["definition_method"] == "composed_from_approved_semantic_facets"
 }
+structure_replaced = {
+    row["concept_id"] for row in definitions
+    if row["definition_method"] == "feed_structure_definition_replacement"
+}
 assert defined <= approved
-assert defined | (facet_composed & approved) == approved
+assert defined | (facet_composed & approved) | (structure_replaced & approved) == approved
 assert all(row["workbook_sha256"] == "f834c4f7837927774499eff4340c912784a3db10c2e19bd5d75a7f753df41438" for row in cohort)
 assert not any("ilri" in value.casefold() for row in rows for value in row.values())
 print("Canonical-workbook source review passed: 173 approved; 27 held")

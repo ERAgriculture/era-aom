@@ -15,18 +15,29 @@ aom:FeedMaterialShape a sh:NodeShape ;
   sh:property [ sh:path aom:sourceTaxon ; sh:nodeKind sh:IRI ] ;
   sh:property [ sh:path aom:legacyComponentDescriptor ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path aom:materialComponent ; sh:class aom:FeedMaterialComponent ] ;
-  sh:property [ sh:path aom:ingredientPart ; sh:class aom:IngredientPartCategory ] ;
-  sh:property [ sh:path aom:physicalForm ; sh:class aom:IngredientPhysicalForm ] ;
-  sh:property [ sh:path aom:presentationForm ; sh:class aom:IngredientPresentationForm ] ;
-  sh:property [ sh:path aom:bulkConsistency ; sh:class aom:IngredientBulkConsistency ] ;
-  sh:property [ sh:path aom:moistureCondition ; sh:class aom:IngredientMoistureCondition ] ;
+  sh:property [ sh:path aom:ingredientPart ; sh:class aom:FeedMaterialPartCategory ] ;
+  sh:property [ sh:path aom:physicalForm ; sh:class aom:FeedPhysicalDescriptor ] ;
+  sh:property [ sh:path aom:presentationForm ; sh:class aom:FeedPresentationForm ] ;
+  sh:property [ sh:path aom:bulkConsistency ; sh:class aom:FeedBulkConsistency ] ;
+  sh:property [ sh:path aom:moistureCondition ; sh:class aom:FeedMoistureCondition ] ;
   sh:property [ sh:path aom:materialIntegrity ; sh:class aom:MaterialIntegrity ] ;
   sh:property [ sh:path aom:feedProductType ; sh:class aom:FeedProductType ] ;
   sh:property [ sh:path aom:compositionState ; sh:class aom:CompositionState ] ;
   sh:property [ sh:path aom:processingMethod ; sh:class aom:ProcessingMethod ] ;
   sh:property [ sh:path aom:productRole ; sh:class aom:ProductRole ] ;
+  sh:property [ sh:path aom:primaryConstituent ; sh:class aom:ChemicalConstituent ] ;
   sh:property [ sh:path aom:ingredientConstituent ; sh:class aom:IngredientConstituent ] ;
   sh:property [ sh:path aom:ingredientSource ; sh:class aom:IngredientSourceCategory ] .
+
+aom:FeedFormulationShape a sh:NodeShape ;
+  sh:targetClass aom:FeedFormulation ;
+  sh:property [ sh:path aom:hasIngredientComponent ; sh:class aom:IngredientComponent ] ;
+  sh:property [ sh:path aom:physicalForm ; sh:class aom:FeedPhysicalDescriptor ] ;
+  sh:property [ sh:path aom:presentationForm ; sh:class aom:FeedPresentationForm ] ;
+  sh:property [ sh:path aom:bulkConsistency ; sh:class aom:FeedBulkConsistency ] ;
+  sh:property [ sh:path aom:moistureCondition ; sh:class aom:FeedMoistureCondition ] ;
+  sh:property [ sh:path aom:feedProductType ; sh:class aom:FeedProductType ] ;
+  sh:property [ sh:path aom:processingMethod ; sh:class aom:ProcessingMethod ] .
 
 aom:IngredientComponentShape a sh:NodeShape ;
   sh:targetClass aom:IngredientComponent ;

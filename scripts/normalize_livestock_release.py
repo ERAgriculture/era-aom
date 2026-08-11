@@ -80,6 +80,7 @@ def main():
     mapping_replacements = read_governance("approved_mapping_replacements.csv")
     deprecations = read_governance("approved_deprecations.csv")
     label_corrections = read_governance("approved_label_corrections.csv")
+    label_additions = read_governance("approved_label_additions.csv")
     label_suppressions = read_governance("approved_label_suppressions.csv")
     new_concepts = read_governance("approved_new_concepts.csv")
     id_registry = read_governance("livestock_id_registry.csv")
@@ -371,6 +372,32 @@ def main():
             "source_row": "", "source_doi": new_concept["evidence"],
         })
     concept_ids = known_concept_ids
+    addition_keys = {
+        (row["concept_id"], row["language"], row["label_type"], row["label"].casefold())
+        for row in label_additions
+    }
+    if len(addition_keys) != len(label_additions):
+        raise ValueError("Approved label additions must be unique")
+    if not {row["concept_id"] for row in label_additions} <= concept_ids:
+        raise ValueError("Approved label addition references unknown concept")
+    label_keys = {
+        (row["concept_id"], row["language"], row["label"].casefold())
+        for row in labels
+    }
+    for addition in label_additions:
+        if addition["status"] != "approved" or addition["label_type"] not in {"alt", "hidden"}:
+            raise ValueError("Label addition must be approved alt or hidden label")
+        key = (addition["concept_id"], addition["language"], addition["label"].casefold())
+        if key in label_keys:
+            raise ValueError(f"Approved label addition duplicates normalized label: {key}")
+        label_keys.add(key)
+        labels.append({
+            "concept_id": addition["concept_id"],
+            "language": addition["language"],
+            "label_type": addition["label_type"],
+            "label": addition["label"],
+            "source_column": "approved_label_addition",
+        })
     for new_concept in new_concepts:
         concept_id = new_concept["concept_id"]
         parent_id = new_concept["broader_id"]
@@ -738,12 +765,16 @@ def main():
             "approved_mapping_additions": len(mapping_additions),
             "approved_deprecations": len(deprecations),
             "approved_label_corrections": len(label_corrections),
+            "approved_label_additions": len(label_additions),
             "approved_label_suppressions": len(label_suppressions),
             "approved_new_concepts": len(new_concepts),
             "registered_livestock_ids": len(id_registry),
             "approved_semantic_relations": len(semantic_relations),
             "approved_reparentings": len(reparentings),
             "approved_hierarchy_revisions": len(hierarchy_revisions),
+            "approved_feed_formulation_classifications": len(
+                read_governance("approved_feed_formulation_classifications.csv")
+            ),
             "approved_semantic_bindings": len(
                 read_governance("approved_semantic_bindings.csv")
             ),
