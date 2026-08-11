@@ -21,6 +21,7 @@ assert "http://purl.org/net/skosmos#" in text
 assert "http://purl.org/net/Skosmos#" not in text
 assert "https://w3id.org/era-aom/graph/livestock" in text
 assert 'skosmos:customCss "resource/css/era-aom.css"' in text
+assert "skosmos:searchByNotation true" in text
 css = ROOT / "config/skosmos/era-aom.css"
 assert css.is_file() and ".prop-mapping" in css.read_text()
 assert "overflow-wrap: anywhere" in css.read_text()
@@ -38,6 +39,7 @@ assert "ports" not in production_services["skosmos"]
 assert production_services["proxy"]["ports"] == ["80:80", "443:443", "443:443/udp"]
 graph = rdflib.Graph(); graph.parse(ROOT / "config/skosmos/era-aom-production.ttl", format="turtle")
 assert len(graph) > 0
+assert "skosmos:searchByNotation true" in (ROOT / "config/skosmos/era-aom-production.ttl").read_text()
 assert any("era-aom.css:/var/www/html/resource/css/era-aom.css:ro" in volume
            for volume in production_services["skosmos"]["volumes"])
 assert "#maincontent/#main-content" in " ".join(production_services["skosmos"]["command"])
