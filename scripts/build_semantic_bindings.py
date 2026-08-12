@@ -18,6 +18,10 @@ STRUCTURAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_struc
 EXTERNAL_MATERIAL_FACET_SOURCE = ROOT / "data/livestock-staging/approved_feed_material_external_facets.csv"
 PROCESS_STATE_RELATION_SOURCE = ROOT / "data/livestock-staging/approved_process_state_relations.csv"
 FORMULATION_CLASSIFICATION_SOURCE = ROOT / "data/livestock-staging/approved_feed_formulation_classifications.csv"
+TAXONOMY_CLASSIFICATION_SOURCE = ROOT / "data/livestock-staging/approved_feed_taxonomy_classifications.csv"
+CONCEPT_TYPE_SOURCE = ROOT / "data/livestock-staging/approved_concept_semantic_types.csv"
+FEED_ROLE_SOURCE = ROOT / "data/livestock-staging/approved_feed_role_assertions.csv"
+COMPONENT_RETENTION_SOURCE = ROOT / "data/livestock-staging/approved_component_retention_relations.csv"
 EXTERNAL_RESOURCE_LABEL_SOURCE = ROOT / "review/livestock-v9/feedipedia_definition_evidence.csv"
 EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE = ROOT / "data/livestock-staging/approved_external_resource_labels.csv"
 DIST = ROOT / "dist/livestock-staging"
@@ -68,6 +72,14 @@ with PROCESS_STATE_RELATION_SOURCE.open(encoding="utf-8", newline="") as handle:
     process_state_relations = list(csv.DictReader(handle))
 with FORMULATION_CLASSIFICATION_SOURCE.open(encoding="utf-8", newline="") as handle:
     formulation_classifications = list(csv.DictReader(handle))
+with TAXONOMY_CLASSIFICATION_SOURCE.open(encoding="utf-8", newline="") as handle:
+    taxonomy_classifications = list(csv.DictReader(handle))
+with CONCEPT_TYPE_SOURCE.open(encoding="utf-8", newline="") as handle:
+    concept_semantic_types = list(csv.DictReader(handle))
+with FEED_ROLE_SOURCE.open(encoding="utf-8", newline="") as handle:
+    feed_role_assertions = list(csv.DictReader(handle))
+with COMPONENT_RETENTION_SOURCE.open(encoding="utf-8", newline="") as handle:
+    component_retention_relations = list(csv.DictReader(handle))
 with EXTERNAL_RESOURCE_LABEL_SOURCE.open(encoding="utf-8", newline="") as handle:
     external_resource_label_evidence = list(csv.DictReader(handle))
 with EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE.open(encoding="utf-8", newline="") as handle:
@@ -83,7 +95,7 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 116 and len(facet_mappings) == 46 and len(facet_decompositions) == 65
+assert len(facet_rows) == 124 and len(facet_mappings) == 46 and len(facet_decompositions) == 64
 assert len(facet_holds) == 9
 assert len({
     (row["feed_material_id"], row["target_property"], row["target_concept_id"])
@@ -92,29 +104,30 @@ assert len({
 assert len(external_material_facets) == 3
 assert len(process_state_relations) == 2
 assert len(formulation_classifications) == 29
-classification_by_id = {
-    row["concept_id"]: row for row in formulation_classifications
-}
-assert len(classification_by_id) == len(formulation_classifications)
+assert len(taxonomy_classifications) == 220
+classification_by_id = {row["concept_id"]: row for row in formulation_classifications}
+classification_by_id.update({row["concept_id"]: row for row in taxonomy_classifications})
 assert {
-    row["semantic_class"] for row in formulation_classifications
+    row["semantic_class"] for row in classification_by_id.values()
     if row["semantic_class"]
-} == {"aom:FeedMaterial", "aom:FeedFormulation", "aom:FeedAdditive"}
-assert all(
-    row["status"] == "approved" or (
-        row["status"] == "hold" and not row["semantic_class"]
-    )
-    for row in formulation_classifications
-)
+} == {"aom:Feed", "aom:FeedMaterial", "aom:FeedFormulation", "aom:FeedAdditive"}
+assert all(row["status"] in {"approved", "hold", "reviewed"} for row in classification_by_id.values())
 semantic_class_by_id = {
     row["concept_id"]: row["semantic_class"]
-    for row in formulation_classifications if row["semantic_class"]
+    for row in classification_by_id.values() if row["semantic_class"]
 }
-assert list(semantic_class_by_id.values()).count("aom:FeedFormulation") == 23
+concept_type_by_id = {
+    row["concept_id"]: row["semantic_class"]
+    for row in concept_semantic_types
+}
+assert len(concept_type_by_id) == len(concept_semantic_types)
+assert list(semantic_class_by_id.values()).count("aom:FeedFormulation") == 39
 
 
 def feed_class(concept_id):
     if concept_id in classification_by_id and not classification_by_id[concept_id]["semantic_class"]:
+        if concept_id in concept_type_by_id:
+            return concept_type_by_id[concept_id]
         raise ValueError(f"Unclassified feed-branch hold has semantic facets: {concept_id}")
     return semantic_class_by_id.get(concept_id, "aom:FeedMaterial")
 facet_by_id = {row["concept_id"]: row for row in facet_rows}
@@ -154,6 +167,16 @@ for concept_id, semantic_class in sorted(semantic_class_by_id.items()):
     graph.append({
         "@id": CONCEPT_BASE + concept_id,
         "@type": ["skos:Concept", semantic_class],
+    })
+for row in concept_semantic_types:
+    graph.append({
+        "@id": CONCEPT_BASE + row["concept_id"],
+        "@type": ["skos:Concept", row["semantic_class"]],
+    })
+for row in facet_rows:
+    graph.append({
+        "@id": CONCEPT_BASE + row["concept_id"],
+        "@type": ["skos:Concept", row["value_class"]],
     })
 for row in rows:
     concept_uri = CONCEPT_BASE + row["legacy_concept_id"]
@@ -245,6 +268,23 @@ for row in process_state_relations:
         "@id": process,
         row["relation_property"]: {"@id": result},
     })
+for row in feed_role_assertions:
+    role = CONCEPT_BASE + row["role_concept_id"]
+    graph.append({"@id": role, "@type": ["skos:Concept", row["role_class"]]})
+    graph.append({
+        "@id": CONCEPT_BASE + row["subject_id"],
+        "@type": "skos:Concept",
+        row["relation_property"]: {"@id": role},
+    })
+for row in component_retention_relations:
+    state = CONCEPT_BASE + row["state_concept_id"]
+    retained = CONCEPT_BASE + row["retained_concept_id"]
+    graph.append({"@id": state, "@type": ["skos:Concept", "aom:ComponentRetentionState"]})
+    graph.append({"@id": retained, "@type": ["skos:Concept", row["retained_class"]]})
+    graph.append({
+        "@id": state,
+        row["relation_property"]: {"@id": retained},
+    })
 
 document = {"@context": PREFIXES, "@graph": graph}
 DIST.mkdir(parents=True, exist_ok=True)
@@ -256,6 +296,14 @@ ttl = [*(f"@prefix {key}: <{value}> ." for key, value in PREFIXES.items()), ""]
 for concept_id, semantic_class in sorted(semantic_class_by_id.items()):
     ttl.append(
         f"<{CONCEPT_BASE + concept_id}> a skos:Concept, {semantic_class} .\n"
+    )
+for row in concept_semantic_types:
+    ttl.append(
+        f"<{CONCEPT_BASE + row['concept_id']}> a skos:Concept, {row['semantic_class']} .\n"
+    )
+for row in facet_rows:
+    ttl.append(
+        f"<{CONCEPT_BASE + row['concept_id']}> a skos:Concept, {row['value_class']} .\n"
     )
 for row in rows:
     concept_uri = CONCEPT_BASE + row["legacy_concept_id"]
@@ -326,6 +374,17 @@ for row in process_state_relations:
     ttl.append(f"<{process}> a skos:Concept, aom:ProcessingMethod .\n")
     ttl.append(f"<{result}> a skos:Concept, {row['result_class']} .\n")
     ttl.append(f"<{process}> {row['relation_property']} <{result}> .\n")
+for row in feed_role_assertions:
+    subject = CONCEPT_BASE + row["subject_id"]
+    role = CONCEPT_BASE + row["role_concept_id"]
+    ttl.append(f"<{role}> a skos:Concept, {row['role_class']} .\n")
+    ttl.append(f"<{subject}> a skos:Concept ;\n  {row['relation_property']} <{role}> .\n")
+for row in component_retention_relations:
+    state = CONCEPT_BASE + row["state_concept_id"]
+    retained = CONCEPT_BASE + row["retained_concept_id"]
+    ttl.append(f"<{state}> a skos:Concept, aom:ComponentRetentionState .\n")
+    ttl.append(f"<{retained}> a skos:Concept, {row['retained_class']} .\n")
+    ttl.append(f"<{state}> {row['relation_property']} <{retained}> .\n")
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
 print(
     f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings; "

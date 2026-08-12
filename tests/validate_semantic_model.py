@@ -55,10 +55,10 @@ with (DATA / "approved_feed_material_external_facets.csv").open(encoding="utf-8"
     external_material_facets = list(csv.DictReader(h))
 material_facets += generated_material_facets + hard_tail_material_facets + structural_material_facets
 assert len(value_bindings) == 298
-assert len(facet_value_concepts) == 116
+assert len(facet_value_concepts) == 124
 assert len(component_value_mappings) == 46
-assert len(component_decompositions) == 65
-assert len({row["concept_id"] for row in facet_value_concepts}) == 116
+assert len(component_decompositions) == 64
+assert len({row["concept_id"] for row in facet_value_concepts}) == 124
 assert len(material_facets) == 2958
 assert len(external_material_facets) == 3
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
@@ -308,12 +308,13 @@ semantic_value_binding = URIRef("urn:era-aom:schema:SemanticValueBinding")
 ingredient_source_category = URIRef("urn:era-aom:schema:IngredientSourceCategory")
 observable_property = URIRef("http://www.w3.org/ns/sosa/ObservableProperty")
 assert len(set(binding_graph.subjects(RDF.type, semantic_binding))) == 13
-assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 418
+assert len(set(binding_graph.subjects(RDF.type, semantic_value_binding))) == 417
 for value_class in {
     "FeedMaterialPartCategory", "FeedPresentationForm",
     "FeedBulkConsistency", "FeedMoistureCondition", "ProcessingMethod",
-    "ProductRole", "ChemicalConstituent", "FeedMaterialComponent", "MaterialIntegrity",
-    "FeedProductType", "CompositionState",
+    "FeedRole", "ProductRole", "FeedFunctionalRole", "ExperimentalFeedRole",
+    "FeedChemicalEntity", "ChemicalSubstance", "ChemicalConstituent",
+    "FeedMaterialComponent", "ComponentRetentionState", "FeedProductType",
 }:
     assert any(binding_graph.subjects(RDF.type, URIRef("urn:era-aom:schema:" + value_class)))
 assert {
@@ -329,7 +330,7 @@ assert (whole_crop_maize_silage, RDF.type, URIRef("urn:era-aom:schema:FeedMateri
 assert not any(binding_graph.objects(
     whole_crop_maize_silage, URIRef("urn:era-aom:schema:physicalForm")
 ))
-assert (whole_crop_maize_silage, URIRef("urn:era-aom:schema:materialComponent"),
+assert (whole_crop_maize_silage, URIRef("urn:era-aom:schema:compositionState"),
         URIRef("urn:era-aom:livestock:AOM_101086")) in binding_graph
 assert (whole_crop_maize_silage, URIRef("urn:era-aom:schema:processingMethod"),
         URIRef("urn:era-aom:livestock:AOM_000831")) in binding_graph
@@ -350,4 +351,4 @@ assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 418 value bindings, 16 facets, 2,961 material assertions")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 417 value bindings, 18 facets, 2,961 material assertions")

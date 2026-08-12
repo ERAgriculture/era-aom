@@ -1,5 +1,12 @@
 [
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000750",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedAdditive"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001803",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -338,7 +345,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -352,6 +359,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000755",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -600,20 +614,10 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001675",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000753",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
-    ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101047"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/productRole": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
-      }
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -646,6 +650,23 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101099"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001675",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ],
+    "https://w3id.org/era-aom/schema/ingredientPart": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101047"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/productRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
     ]
   },
@@ -803,6 +824,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001866",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -969,6 +997,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_002200",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:straw:4",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -1002,6 +1037,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/productRole"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006125",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -1212,7 +1254,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_006239",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/Feed"
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
       {
@@ -1626,7 +1668,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -1957,6 +1999,18 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000746",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/experimentalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101151"
+      }
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/12709",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -1977,7 +2031,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -2088,6 +2142,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101145",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006115",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2105,7 +2166,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -2200,7 +2261,18 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101110",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/MaterialIntegrity"
+      "https://w3id.org/era-aom/schema/ComponentRetentionState"
+    ],
+    "https://w3id.org/era-aom/schema/retainsMaterialComponent": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101153"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101029"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101104"
+      }
     ]
   },
   {
@@ -2276,6 +2348,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001838",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001633",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -2307,6 +2386,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101148",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProductRole",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -2365,6 +2451,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000791",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -2435,8 +2528,8 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001870",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -2690,7 +2783,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -2732,6 +2825,25 @@
     "https://w3id.org/era-aom/schema/productRole": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000758",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001423",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
       }
     ]
   },
@@ -2849,7 +2961,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -3045,6 +3157,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101076",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedPresentationForm",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/11650",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -3138,8 +3257,13 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002070",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
       {
@@ -3363,6 +3487,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000787",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/11725",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -3507,6 +3638,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000756",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -4402,7 +4540,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -4460,8 +4598,8 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000783",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
       {
@@ -4599,7 +4737,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -4733,6 +4871,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003203",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/Feed"
     ]
   },
   {
@@ -5180,6 +5325,23 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006179",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/presentationForm": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101125"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processingMethod": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:cynadon-dactylon",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -5221,7 +5383,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -5249,24 +5411,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101106",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006179",
-    "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "https://w3id.org/era-aom/schema/presentationForm": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101125"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
-      }
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
     ]
   },
   {
@@ -5507,7 +5652,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -5704,6 +5849,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101059"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001368",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -6204,6 +6356,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101143",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001892",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -6296,7 +6455,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -6333,6 +6492,14 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101033"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001433",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedAdditive",
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -6862,6 +7029,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001487",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001669",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -7029,6 +7203,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001773",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001705",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -7048,6 +7229,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000843"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000754",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -7099,6 +7287,13 @@
       {
         "@id": "http://qudt.org/schema/qudt/QuantityValue"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101144",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -7165,6 +7360,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000809",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002043",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -7204,6 +7406,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101033"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101133",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMoistureCondition"
     ]
   },
   {
@@ -7300,6 +7509,20 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000766",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001417",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001944",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -7354,14 +7577,14 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "https://w3id.org/era-aom/schema/compositionState": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      }
+    ],
     "https://w3id.org/era-aom/schema/ingredientPart": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/materialIntegrity": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
       }
     ]
   },
@@ -7371,7 +7594,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -7662,6 +7885,25 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001503",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101130",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001969",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -7779,6 +8021,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001372",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -8223,6 +8472,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000794",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedFormulation"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001848",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -8608,6 +8864,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101115",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ComponentRetentionState"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006158",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -8712,6 +8975,13 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000760",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -8890,7 +9160,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -9275,6 +9545,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001865",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:atractylis-cancellata",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -9337,6 +9614,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101033"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001418",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -9492,7 +9776,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -9843,7 +10127,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -10279,6 +10563,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101131",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006329",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -10461,6 +10752,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001872",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/Feed"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:vigna-unguiculata",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -10577,7 +10875,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_001375",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/Feed"
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
       {
@@ -10639,6 +10937,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001428",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -10704,6 +11009,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101149",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedFunctionalRole"
     ]
   },
   {
@@ -11417,6 +11729,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001577",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ChemicalConstituent"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:ensete-ventricosum",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -11623,6 +11942,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006241",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006151",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -11715,6 +12041,20 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001505",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001369",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -12346,6 +12686,28 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006002",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ],
+    "https://w3id.org/era-aom/schema/materialComponent": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101105"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processingMethod": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100848"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/productRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006201",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -12362,28 +12724,6 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000843"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/productRole": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006002",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
-    ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101105"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100848"
       }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
@@ -12890,7 +13230,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -12929,6 +13269,14 @@
         "@language": "en",
         "@value": "Ryegrass (Lolium spp.)"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000739",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "https://w3id.org/era-aom/schema/FeedAdditive",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -13079,7 +13427,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -13712,6 +14060,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101020",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedPresentationForm",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001100",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -13996,7 +14351,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -14128,6 +14483,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000763",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/Feed"
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/12329",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -14198,6 +14560,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001378",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000605",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -14212,6 +14581,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006389",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -14561,7 +14937,7 @@
     ],
     "https://w3id.org/era-aom/schema/targetValueClass": [
       {
-        "@id": "https://w3id.org/era-aom/schema/CompositionState"
+        "@id": "https://w3id.org/era-aom/schema/ComponentRetentionState"
       }
     ],
     "https://w3id.org/era-aom/schema/valueBindingStatus": [
@@ -14586,7 +14962,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -14600,6 +14976,14 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000740",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedAdditive",
+      "https://w3id.org/era-aom/schema/ChemicalSubstance"
     ]
   },
   {
@@ -14623,7 +15007,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -14653,7 +15037,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -14909,6 +15293,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000795",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:straw:2",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -14942,6 +15333,20 @@
       {
         "@id": "https://w3id.org/era-aom/schema/ingredientPart"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006331",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/Feed"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000790",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -15027,7 +15432,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -15063,6 +15468,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001377",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedAdditive"
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/11829",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -15095,7 +15508,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -15114,6 +15527,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001922",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -15306,6 +15726,14 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000738",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedAdditive"
     ]
   },
   {
@@ -15758,7 +16186,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -15851,7 +16279,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -15992,6 +16420,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000770",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001094",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -16021,6 +16456,13 @@
         "@language": "en",
         "@value": "African yam bean (Sphenostylis stenocarpa), foliage, fresh"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101085",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
     ]
   },
   {
@@ -16157,7 +16599,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -16323,6 +16765,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101114"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001834",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -16797,6 +17246,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006349",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:panicum-maximum",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -16963,7 +17419,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -17291,12 +17747,19 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003747",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedAdditive",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006181",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -17355,6 +17818,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101066",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ChemicalConstituent"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000951",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -17410,13 +17880,6 @@
         "@language": "en",
         "@value": "Beet root, sugar type, fresh"
       }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_101068",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProcessingMethod"
     ]
   },
   {
@@ -17763,14 +18226,14 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "https://w3id.org/era-aom/schema/compositionState": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      }
+    ],
     "https://w3id.org/era-aom/schema/ingredientPart": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/materialIntegrity": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
       }
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
@@ -17926,7 +18389,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006114",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/FeedAdditive",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
@@ -18019,7 +18482,12 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101134",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/CompositionState"
+      "https://w3id.org/era-aom/schema/ComponentRetentionState"
+    ],
+    "https://w3id.org/era-aom/schema/retainsChemicalConstituent": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101066"
+      }
     ]
   },
   {
@@ -18148,6 +18616,18 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000743",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006276",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -18172,6 +18652,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_100988",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -18496,15 +18983,10 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006089",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000777",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
-    ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000831"
-      }
     ]
   },
   {
@@ -18534,6 +19016,18 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006089",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ],
+    "https://w3id.org/era-aom/schema/processingMethod": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000831"
       }
     ]
   },
@@ -18676,7 +19170,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -18755,6 +19249,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001415",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:pithecellobium-dulce",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -18826,7 +19327,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -18853,7 +19354,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -18875,6 +19376,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000845",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -18916,7 +19424,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_003172",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/productRole": [
@@ -18948,7 +19456,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -19173,7 +19681,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006154",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
@@ -19310,7 +19818,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001997",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
@@ -19361,6 +19869,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_100976",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:lippia-javanica",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -19407,6 +19922,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101146",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedChemicalEntity"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006323",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -19424,14 +19946,14 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000674",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101116",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/ComponentRetentionState",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/primaryConstituent": [
+    "https://w3id.org/era-aom/schema/retainsChemicalConstituent": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101081"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101066"
       }
     ]
   },
@@ -19448,10 +19970,17 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_101116",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001571",
     "@type": [
-      "https://w3id.org/era-aom/schema/CompositionState",
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ChemicalConstituent"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000768",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -19463,6 +19992,18 @@
     "https://w3id.org/era-aom/schema/processingMethod": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101090"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000674",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ],
+    "https://w3id.org/era-aom/schema/primaryConstituent": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101081"
       }
     ]
   },
@@ -19613,6 +20154,13 @@
         "@language": "en",
         "@value": "Macadamia (Macadamia integrifolia) oil cake"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001869",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -20149,6 +20697,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001831",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101056",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -20574,12 +21129,19 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001067",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006142",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -20597,6 +21159,18 @@
     "https://w3id.org/era-aom/schema/productRole": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001504",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
       }
     ]
   },
@@ -20767,12 +21341,19 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101152",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFunctionalRole",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006301",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -21584,6 +22165,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101150",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ExperimentalFeedRole",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001109",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -21827,13 +22415,26 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001373",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001069",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -21870,6 +22471,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/ingredientPart"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001832",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -21935,6 +22543,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000843"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001572",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -22100,6 +22715,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101033"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101147",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -22598,7 +23220,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -22872,6 +23494,18 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001490",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000632",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -22963,6 +23597,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003889",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000628",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -22992,14 +23633,14 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
+    "https://w3id.org/era-aom/schema/compositionState": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      }
+    ],
     "https://w3id.org/era-aom/schema/ingredientPart": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/materialIntegrity": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
       }
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
@@ -23105,6 +23746,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001921",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001954",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -23161,6 +23809,20 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001839",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000737",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -23314,7 +23976,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -23411,7 +24073,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -23439,7 +24101,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -23574,6 +24236,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101023",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ChemicalConstituent"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001311",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -23621,64 +24290,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:brewers-grain:1",
-    "@type": [
-      "https://w3id.org/era-aom/schema/SemanticValueBinding"
-    ],
-    "https://w3id.org/era-aom/schema/bindingAction": [
-      {
-        "@value": "decompose_to_existing"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/sourceValue": [
-      {
-        "@value": "Brewers Grain"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/targetValueClass": [
-      {
-        "@id": "https://w3id.org/era-aom/schema/ProcessingMethod"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueBindingStatus": [
-      {
-        "@value": "approved"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueTargetConcept": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101068"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueTargetProperty": [
-      {
-        "@id": "https://w3id.org/era-aom/schema/processingMethod"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001197",
-    "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000835"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/productRole": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:annona-senegalensis",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -23715,9 +24326,38 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001197",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/materialComponent": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processingMethod": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000835"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/productRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101054",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMoistureCondition",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000735",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
@@ -23857,6 +24497,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100848"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001371",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -24150,6 +24797,25 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101129",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001374",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001623",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -24275,7 +24941,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -24501,6 +25167,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101151",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ExperimentalFeedRole"
     ]
   },
   {
@@ -24945,6 +25618,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101022",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedRole"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:eragotris-tremula",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -25049,6 +25729,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000748",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedAdditive"
     ]
   },
   {
@@ -25464,12 +26151,19 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000789",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006302",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -25514,7 +26208,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_003201",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/FeedFormulation",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
@@ -25767,12 +26461,26 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000808",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ChemicalSubstance"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101153",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_003692",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -26106,7 +26814,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -26205,6 +26913,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000765",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006075",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -26224,8 +26939,13 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001826",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
       {
@@ -26641,6 +27361,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003878",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedAdditive",
+      "https://w3id.org/era-aom/schema/ChemicalSubstance"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101080",
     "@type": [
       "https://w3id.org/era-aom/schema/ChemicalConstituent",
@@ -26669,6 +27397,13 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001506",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -26921,7 +27656,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101105"
       }
@@ -26930,6 +27665,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000561",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -27440,6 +28182,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_100921",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001177",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -27802,6 +28551,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000774",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -28284,6 +29040,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001825",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001361",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -28337,7 +29100,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -29131,7 +29894,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -29140,6 +29903,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000759",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -29213,6 +29983,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000772",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -29575,6 +30352,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000788",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:juglans-regia",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -29757,6 +30541,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001068",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ChemicalSubstance",
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:bothriochloa-insculpta",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -29931,7 +30723,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -30331,8 +31123,13 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002071",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
     ],
     "https://w3id.org/era-aom/schema/moistureCondition": [
       {
@@ -30535,8 +31332,13 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002091",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
       {
@@ -30578,6 +31380,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003577",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -30688,7 +31497,7 @@
     ],
     "https://w3id.org/era-aom/schema/targetValueClass": [
       {
-        "@id": "https://w3id.org/era-aom/schema/CompositionState"
+        "@id": "https://w3id.org/era-aom/schema/ComponentRetentionState"
       }
     ],
     "https://w3id.org/era-aom/schema/valueBindingStatus": [
@@ -30889,7 +31698,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -30957,8 +31766,8 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000764",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/FeedFormulation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
       {
@@ -31013,7 +31822,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -31167,6 +31976,14 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001749",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedAdditive",
+      "https://w3id.org/era-aom/schema/ChemicalSubstance"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002040",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -31232,7 +32049,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -32485,7 +33302,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -32869,7 +33686,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -32894,6 +33711,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001827",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -33079,7 +33903,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -33277,6 +34101,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000757",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -33674,14 +34505,14 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "https://w3id.org/era-aom/schema/compositionState": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      }
+    ],
     "https://w3id.org/era-aom/schema/ingredientPart": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101074"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/materialIntegrity": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
       }
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
@@ -33735,7 +34566,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -33811,6 +34642,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101132",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedBulkConsistency"
     ]
   },
   {
@@ -34181,6 +35019,20 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003760",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001066",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/12149",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -34384,7 +35236,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -34568,7 +35420,12 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_002072",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
+      "https://w3id.org/era-aom/schema/ChemicalSubstance"
+    ],
+    "https://w3id.org/era-aom/schema/experimentalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101151"
+      }
     ],
     "https://w3id.org/era-aom/schema/presentationForm": [
       {
@@ -34866,6 +35723,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101111",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedProductType",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:meal:hold",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -34893,23 +35757,6 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/legacyComponentDescriptor"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001297",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
-    ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101039"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/productRole": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
     ]
   },
@@ -34970,7 +35817,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -34981,6 +35828,23 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000831"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/productRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001297",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ],
+    "https://w3id.org/era-aom/schema/ingredientPart": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101039"
       }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
@@ -35049,6 +35913,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001510",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMoistureCondition"
     ]
   },
   {
@@ -35140,6 +36011,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001431",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedFormulation"
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/11544",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -35215,7 +36093,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -35437,6 +36315,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000749",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedAdditive"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101042",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -35563,8 +36448,13 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001486",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
       {
@@ -35685,6 +36575,18 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000744",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006359",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -35702,7 +36604,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -35940,6 +36842,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101103",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:lemna-minor",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -35976,10 +36885,22 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000780",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001994",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/functionalRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
     ],
     "https://w3id.org/era-aom/schema/moistureCondition": [
       {
@@ -36262,6 +37183,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003749",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedAdditive",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001937",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -36287,6 +37215,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001367",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -36374,7 +37309,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -36675,6 +37610,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001427",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006500",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -36815,7 +37757,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101086",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
+      "https://w3id.org/era-aom/schema/ComponentRetentionState"
     ]
   },
   {
@@ -36988,6 +37930,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001578",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:centrosema-pubescens",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -37082,7 +38031,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/materialComponent": [
+    "https://w3id.org/era-aom/schema/compositionState": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101086"
       }
@@ -37168,6 +38117,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000559",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:albizia-gummifera",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -37219,6 +38175,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001867",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001698",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -37233,6 +38196,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000835"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001370",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -37285,7 +38255,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006101",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/moistureCondition": [
@@ -37332,6 +38302,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000782",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006293",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -37358,6 +38335,13 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003829",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -37404,9 +38388,31 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000778",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006090",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
+    ],
+    "https://w3id.org/era-aom/schema/processingMethod": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000844"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000835"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006240",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "https://w3id.org/era-aom/schema/moistureCondition": [
@@ -37432,21 +38438,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006090",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
-    ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000844"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000835"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000569",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -37464,6 +38455,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001868",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002207",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -37473,6 +38471,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101033"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001824",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -37996,7 +39001,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101079",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProductRole"
+      "https://w3id.org/era-aom/schema/FeedFunctionalRole"
     ]
   },
   {
@@ -38318,7 +39323,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -38442,7 +39447,7 @@
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -38484,6 +39489,13 @@
         "@language": "en",
         "@value": "Soybean, aerial part, fresh"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003994",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedAdditive",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -38736,6 +39748,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101099"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001376",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -39073,6 +40092,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000776",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006052",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -39258,7 +40284,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -40453,6 +41479,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101154",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006016",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -40597,7 +41630,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101105"
       }
@@ -40680,7 +41713,7 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
       }
@@ -40747,7 +41780,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101105",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
     ]
   },
   {
@@ -40838,12 +41871,19 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003084",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedFormulation"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001219",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "https://w3id.org/era-aom/schema/ingredientPart": [
+    "https://w3id.org/era-aom/schema/materialComponent": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101105"
       }
@@ -40920,6 +41960,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001500",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -41035,7 +42082,7 @@
     ],
     "https://w3id.org/era-aom/schema/targetValueClass": [
       {
-        "@id": "https://w3id.org/era-aom/schema/ProductRole"
+        "@id": "https://w3id.org/era-aom/schema/FeedFunctionalRole"
       }
     ],
     "https://w3id.org/era-aom/schema/valueBindingStatus": [
@@ -41050,7 +42097,7 @@
     ],
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
-        "@id": "https://w3id.org/era-aom/schema/productRole"
+        "@id": "https://w3id.org/era-aom/schema/functionalRole"
       }
     ]
   },
@@ -41082,6 +42129,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001509",
+    "@type": [
+      "https://w3id.org/era-aom/schema/Feed",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -41172,6 +42226,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101019",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
     ]
   }
 ]

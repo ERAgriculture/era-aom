@@ -1,8 +1,10 @@
 # ADR 0044: Reclassify feed taxonomy by independent axes
 
-- Status: proposed
+- Status: accepted for staging
 - Date: 2026-08-11
-- Reviewer: pending
+- Approved: 2026-08-12
+- Reviewer: Pete Steward
+- Method: [Feed taxonomy governance](../methods/feed-taxonomy-governance.md)
 
 ## Context
 
@@ -18,7 +20,7 @@ all descendants of both catch-all branches, Organic Acid and Fumaric Acid, and
 all implicated component, integrity, composition-state, and separation-process
 branches. Row-level dispositions are published under `review/livestock-v29/`.
 
-## Proposed Decision
+## Decision
 
 1. Keep Feed materials, Formulated feeds, and Feed additives as sibling product
    kinds.
@@ -74,8 +76,24 @@ branches. Row-level dispositions are published under `review/livestock-v29/`.
 
 - This ADR supersedes ADR 0043 decisions about Protected Fat, Anti-coccidia,
   Protein, Brewhouse processing, Whole-grain integrity, and composition-state
-  placement if accepted.
-- No semantic change occurs while status remains proposed.
-- Implementation must use complete approved cohorts, deprecate rather than
-  delete stable IDs, preserve all unresolved holds, rebuild release artifacts
-  and empty Fuseki storage, and repeat Skosmos review before publication.
+  placement.
+- Evidence-supported decisions are implemented as one governed cohort; evidence-
+  dependent rows remain explicit holds with broad or no semantic class.
+- Implementation uses complete approved cohorts, deprecates rather than deletes
+  stable IDs, preserves all unresolved holds, rebuilds release artifacts and
+  empty Fuseki storage, and repeats Skosmos review before publication.
+
+## Implementation record
+
+- 220 recommendation rows received implementation dispositions: 67
+  `implemented`, 81 `implemented-structural`, 66 `hold`, and six
+  `outside-scope`.
+- 21 collision-audited concepts were allocated as `AOM_101135` through
+  `AOM_101155`; rejected generated IDs `AOM_101068` and `AOM_101109` remain
+  reserved as `retired-before-publication`.
+- Eight source concepts were retired, 16 explicit role relations and five
+  positive component-retention relations were added, and 13 evidence sources
+  were recorded with supported claims and limitations.
+- Deterministic regeneration, 45 Python validators, RDF format parity, SHACL,
+  release validation, clean-volume Fuseki load, 19-card Skosmos acceptance, and
+  exact notation search passed on 2026-08-12.

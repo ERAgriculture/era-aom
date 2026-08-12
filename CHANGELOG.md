@@ -4,9 +4,13 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
-- Add proposed ADR 0044 and a 220-concept adversarial review of Feed materials,
-  Supplement, Other Ingredients, Organic Acid, component/composition branches,
-  and separation processes; no ontology hierarchy changes applied yet.
+- Implement accepted ADR 0044 across all 220 reviewed feed-taxonomy concepts:
+  classify 67 evidence-supported rows, apply 81 structural dispositions, preserve
+  66 explicit evidence holds and six outside-scope rows, allocate 21
+  collision-audited concepts, retire eight source concepts, reserve two rejected
+  generated IDs, add 16 role assertions and five positive component-retention
+  relations, and publish method, authority comparison, evidence register,
+  decision register, regenerated release artifacts, and clean Skosmos acceptance.
 
 - Separate 23 formulated feeds from feed materials, classify three branch
   outliers as materials and Elancoban as an additive, retain one product-class

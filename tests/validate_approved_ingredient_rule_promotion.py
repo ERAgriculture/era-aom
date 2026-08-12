@@ -74,12 +74,12 @@ for row in generated + manual:
 assert by_material["AOM_000536"] == {("aom:processingMethod", "Grinding")}
 assert ("aom:processingMethod", "Grinding") in by_material["AOM_001324"]
 assert by_material["AOM_001326"] == {
-    ("aom:materialComponent", "Whole crop"),
+    ("aom:compositionState", "Whole-crop composition"),
     ("aom:processingMethod", "Ensiling"),
 }
 assert "AOM_006072" not in by_material
 assert ("aom:processingMethod", "Soaking") in by_material["AOM_006500"]
-assert ("aom:materialIntegrity", "Whole-grain integrity") in by_material["AOM_001313"]
+assert ("aom:compositionState", "Whole-grain composition") in by_material["AOM_001313"]
 assert ("aom:ingredientPart", "Grain") in by_material["AOM_001313"]
 assert not any(row["rule_id"] == "PROCESS-DEHULLED" for row in generated)
 assert not any(row["target_label"] in {"Cake form", "Pulp form"} for row in generated)

@@ -12,6 +12,7 @@ REVIEW = ROOT / "review/livestock-v28"
 DATE = "2026-08-11"
 REVIEWER = "Pete Steward"
 ADR = "docs/decisions/0043-feed-formulation-and-descriptor-model.md"
+SUMMARY_PATH = REVIEW / "feed_structure_summary.json"
 EU_FEED = "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R0767"
 EU_PROCESS = "https://eur-lex.europa.eu/eli/reg/2013/68/oj/eng"
 CDC_AUTOCLAVE = "https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/steam-sterilization.html"
@@ -44,6 +45,17 @@ def upsert(path, key, additions):
     assert len(addition_keys) == len(additions)
     rows = [row for row in rows if row[key] not in addition_keys]
     write(path, fields(path), rows + additions)
+
+
+frozen_review_summary = None
+if SUMMARY_PATH.exists() and "Status: accepted for staging" in (ROOT / ADR).read_text():
+    candidate_summary = json.loads(SUMMARY_PATH.read_text())
+    if (
+        candidate_summary.get("descriptor_concepts") == 116
+        and candidate_summary.get("process_concepts") == 33
+        and candidate_summary.get("whole_term_concepts") == 12
+    ):
+        frozen_review_summary = candidate_summary
 
 
 formulation_ids = {
@@ -246,7 +258,7 @@ hierarchy_rows = [{
 hierarchy_path = DATA / "approved_hierarchy_revisions.csv"
 existing_hierarchy = [
     row for row in read(hierarchy_path)
-    if not row["case_id"].startswith(("FEED-MODEL-", "PROCESS-HEATING-", "PROCESS-AUTOCLAVING-", "PROCESS-DEFATTING-", "PROCESS-EXTRACTION-", "PROCESS-DISTILLATION-", "PROCESS-BREWHOUSE-"))
+    if not row["case_id"].startswith(("FEED-MODEL-", "FEED-TAXONOMY-", "PROCESS-HEATING-", "PROCESS-AUTOCLAVING-", "PROCESS-DEFATTING-", "PROCESS-EXTRACTION-", "PROCESS-DISTILLATION-", "PROCESS-BREWHOUSE-"))
 ]
 write(hierarchy_path, fields(hierarchy_path), existing_hierarchy + hierarchy_rows)
 assert len(existing_hierarchy + hierarchy_rows) == 32
@@ -408,11 +420,6 @@ whole_rows = [{
 } for concept_id in whole_ids]
 assert len(whole_rows) == 12
 
-write(REVIEW / "feed_formulation_review.csv", list(classification_rows[0]), classification_rows)
-write(REVIEW / "chemical_constituent_assertion_review.csv", list(constituent_review[0]), constituent_review)
-write(REVIEW / "feed_descriptor_review.csv", list(descriptor_rows[0]), descriptor_rows)
-write(REVIEW / "feed_process_review.csv", list(process_rows[0]), process_rows)
-write(REVIEW / "whole_term_review.csv", list(whole_rows[0]), whole_rows)
 summary = {
     "formulation_cohort": len(classification_rows),
     "formulation_dispositions": dict(sorted(Counter(row["disposition"] for row in classification_rows).items())),
@@ -425,7 +432,15 @@ summary = {
     "explicit_holds": ["AOM_001500"],
 }
 REVIEW.mkdir(parents=True, exist_ok=True)
-(REVIEW / "feed_structure_summary.json").write_text(
-    json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-)
-print(json.dumps(summary, indent=2, sort_keys=True))
+if frozen_review_summary is None:
+    write(REVIEW / "feed_formulation_review.csv", list(classification_rows[0]), classification_rows)
+    write(REVIEW / "chemical_constituent_assertion_review.csv", list(constituent_review[0]), constituent_review)
+    write(REVIEW / "feed_descriptor_review.csv", list(descriptor_rows[0]), descriptor_rows)
+    write(REVIEW / "feed_process_review.csv", list(process_rows[0]), process_rows)
+    write(REVIEW / "whole_term_review.csv", list(whole_rows[0]), whole_rows)
+    SUMMARY_PATH.write_text(
+        json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    print(json.dumps(summary, indent=2, sort_keys=True))
+else:
+    print(json.dumps({**frozen_review_summary, "artifact_status": "frozen-approved-evidence"}, indent=2, sort_keys=True))

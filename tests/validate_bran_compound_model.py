@@ -28,7 +28,15 @@ relation = next(
     row for row in rows("relations.csv")
     if row["subject_id"] == "AOM_101104" and row["relation_type"] == "broader"
 )
-assert relation["object_id"] == "AOM_101085"
+assert relation["object_id"] == "AOM_101144"
+broader = {
+    (row["subject_id"], row["object_id"])
+    for row in rows("relations.csv") if row["relation_type"] == "broader"
+}
+assert {
+    ("AOM_101144", "AOM_101143"),
+    ("AOM_101143", "AOM_101085"),
+} <= broader
 
 graph = Graph().parse(DIST / "aom-semantic-bindings.ttl")
 schema = "urn:era-aom:schema:"

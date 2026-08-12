@@ -27,7 +27,8 @@ assert (maize, RDFS.label, Literal("Zea mays", lang="en")) in graph
 assert (URIRef(SCHEMA + "sourceTaxon"), RDFS.label, Literal("has biological species", lang="en")) in schema
 assert (URIRef(SCHEMA + "materialComponent"), RDFS.label, Literal("has material component", lang="en")) in schema
 assert (URIRef(SCHEMA + "productRole"), RDFS.label, Literal("has product role", lang="en")) in schema
-assert "outer grain layers" in str(next(vocab.objects(bran, SKOS.definition))).casefold()
+bran_definition = str(next(vocab.objects(bran, SKOS.definition))).casefold()
+assert "milling fraction" in bran_definition and "endosperm" in bran_definition
 assert "principal product" in str(next(vocab.objects(byproduct, SKOS.definition))).casefold()
 assert "by-product" in str(next(vocab.objects(maize_bran, SKOS.definition))).casefold()
 feedipedia = URIRef("https://www.feedipedia.org/node/12280")

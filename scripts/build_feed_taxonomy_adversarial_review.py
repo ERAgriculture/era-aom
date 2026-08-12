@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import csv
 import json
+import sys
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
@@ -9,6 +10,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "livestock-staging"
 OUT = ROOT / "review" / "livestock-v29"
+REVIEW_PATH = OUT / "feed_taxonomy_adversarial_review.csv"
+SUMMARY_PATH = OUT / "feed_taxonomy_adversarial_summary.json"
+RECOMMENDATIONS_PATH = OUT / "RECOMMENDATIONS.md"
 
 FEED_MATERIALS = "AOM_100850"
 SUPPLEMENT = "AOM_000736"
@@ -38,6 +42,16 @@ class Recommendation:
 def rows(path):
     with path.open(newline="") as handle:
         return list(csv.DictReader(handle))
+
+
+if REVIEW_PATH.exists() and RECOMMENDATIONS_PATH.exists() and "implemented through the governed livestock-v30" in RECOMMENDATIONS_PATH.read_text():
+    frozen_rows = rows(REVIEW_PATH)
+    frozen_summary = json.loads(SUMMARY_PATH.read_text())
+    assert len(frozen_rows) == 220
+    assert len({row["concept_id"] for row in frozen_rows}) == 220
+    assert frozen_summary["reviewed_concepts"] == 220
+    print(json.dumps({**frozen_summary, "artifact_status": "frozen-approved-evidence"}, indent=2))
+    sys.exit(0)
 
 
 labels = {

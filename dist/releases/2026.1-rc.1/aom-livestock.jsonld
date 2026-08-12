@@ -599,6 +599,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101151"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
@@ -613,11 +618,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000746"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -638,7 +638,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -859,7 +859,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “barley” and characteristics: ingredient part — Straw; processing method — Fermentation; product role — By-product role."
+        "@value": "A feed material with governed source identity “barley” and characteristics: material component — Straw; processing method — Fermentation; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -955,7 +955,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -1499,7 +1499,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -2071,9 +2071,6 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101124"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101068"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000832"
       },
       {
@@ -2379,7 +2376,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -2854,7 +2851,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -3132,7 +3129,7 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101023"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101135"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000326"
@@ -3147,13 +3144,10 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101133"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101115"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101146"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101111"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101109"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101020"
@@ -3174,10 +3168,10 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000327"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001491"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001491"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -3536,7 +3530,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -4588,15 +4582,21 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Protected Fat"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed-supplement ingredient with governed workbook identity “Protected Fat”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        "@value": "Feed-material category for fat products whose rumen protection is supported by product or process evidence; drying, physical form, and feeding rate require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -4617,7 +4617,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Protected Fat"
+        "@value": "Rumen-protected fat feed materials"
       }
     ],
     "urn:era:property:conceptType": [
@@ -5776,7 +5776,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -7105,13 +7105,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Grouping for processed-food residues; processing state remains represented by narrower feed-material concepts."
+        "@value": "Feed-material category for former foodstuffs and processed-food production residues used as feed; product or waste role remains explicit."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -7128,9 +7128,6 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001838"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001831"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -7371,7 +7368,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000747"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -7425,7 +7422,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -7519,6 +7516,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101145",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Animal-derived body substances represented as feed-material components without treating them as connected anatomical structures."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101103"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101145"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Animal body substances"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -7852,7 +7898,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “unspecified” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “unspecified” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -8183,9 +8229,13 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101110",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/MaterialIntegrity"
+      "https://w3id.org/era-aom/schema/ComponentRetentionState"
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Whole-grain integrity"
+      },
       {
         "@language": "en",
         "@value": "Whole grain"
@@ -8193,13 +8243,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101109"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101115"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Retention of characteristic anatomical fractions of a cereal grain independently of particle-size reduction."
+        "@value": "Component-retention state in which bran, germ, and endosperm remain in characteristic proportions independently of particle-size reduction."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -8215,7 +8265,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Whole-grain integrity"
+        "@value": "Whole-grain composition"
       }
     ],
     "urn:era:property:conceptType": [
@@ -9051,6 +9101,79 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101148",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProductRole",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101022"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Economic or production roles borne by feed materials, including product, by-product, residue, and waste roles."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101057"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101055"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101059"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101056"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101058"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101061"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101060"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101063"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101148"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed product roles"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_100980",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -9212,7 +9335,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101141"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -9506,7 +9629,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001571"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -10224,7 +10347,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “spent rice” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “spent rice” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -10329,7 +10452,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -10650,7 +10773,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -11046,7 +11169,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -12201,7 +12324,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -12772,11 +12895,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001067"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -14142,7 +14260,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101138"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -15511,7 +15629,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “millet” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “millet” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -15921,7 +16039,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001491"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -16381,7 +16499,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat lime treated” and characteristics: ingredient part — Straw; processing method — Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “wheat lime treated” and characteristics: material component — Straw; processing method — Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -16695,6 +16813,54 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003203",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed ingredient with governed workbook identity “Wood Ash”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006179"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_003203"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Wood Ash"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001701",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -16739,54 +16905,6 @@
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_560018"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_003203",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A feed ingredient with governed workbook identity “Wood Ash”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006179"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_003203"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Wood Ash"
       }
     ],
     "urn:era:property:conceptType": [
@@ -17928,18 +18046,18 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101106",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterialPartCategory",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101154"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed anatomical part value used for feed-material semantics."
+        "@value": "Composite crop-residue component consisting mainly of dried cereal or legume stems and leaves after harvest; not one anatomical structure."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -17982,7 +18100,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -18805,7 +18923,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “finger millet” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “finger millet” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -19480,7 +19598,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -21315,6 +21433,55 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101143",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Material components or fractions produced or recovered through processing rather than one anatomical structure."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101144"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101143"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Processed material fractions"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001892",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -21525,7 +21692,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Ensiling, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Ensiling, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -23161,7 +23328,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -23863,7 +24030,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001415"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101140"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -23982,6 +24149,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101144",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101143"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Cereal-grain material fractions separated or recovered during milling, including bran and related fractions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101104"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101144"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Cereal milling fractions"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -24184,7 +24400,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -24869,7 +25085,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101140"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -25221,7 +25437,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity."
+        "@value": "A feed material with governed source identity “maize” and characteristics: composition state — Whole-grain composition; ingredient part — Grain."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -25283,7 +25499,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “trifolium alexandrinum” and characteristics: ingredient part — Straw."
+        "@value": "A feed material with governed source identity “trifolium alexandrinum” and characteristics: material component — Straw."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -25377,7 +25593,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -26321,7 +26537,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -26428,6 +26644,120 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101139",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Mineral substances or products represented as feed materials; chemical composition and authorization as an additive require separate assertions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001427"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001370"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001371"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000755"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001487"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000768"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006125"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000772"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001369"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001746"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000753"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000758"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003760"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000760"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001368"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001378"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001367"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_002191"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000777"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000757"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001372"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_002074"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006124"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101139"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Mineral feed materials"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101130",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -26437,6 +26767,10 @@
       {
         "@language": "en",
         "@value": "Feed separation and fractionation processes"
+      },
+      {
+        "@language": "en",
+        "@value": "Feed separation processes"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -26447,7 +26781,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Feed processes whose objective includes separating components or fractions of a source material."
+        "@value": "Feed processes whose objective includes removing, separating, or recovering a material component or fraction."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -26472,12 +26806,6 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101070"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101068"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101128"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101073"
       },
       {
@@ -26492,7 +26820,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Feed separation processes"
+        "@value": "Feed component separation processes"
       }
     ],
     "urn:era:property:conceptType": [
@@ -26845,7 +27173,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -28568,7 +28896,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000795"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101155"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -29337,84 +29665,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000745",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "An AOM controlled category for “Binder” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000743"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001373"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001486"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001503"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001423"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001490"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001826"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_002091"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001504"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001374"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000744"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_000745"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Binder"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000438",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -29454,6 +29704,54 @@
     "urn:era:property:status": [
       {
         "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000745",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "An AOM controlled category for “Binder” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000745"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Binder"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "deprecated"
       }
     ]
   },
@@ -30113,17 +30411,23 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101115",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/CompositionState"
+      "https://w3id.org/era-aom/schema/ComponentRetentionState"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Composition states"
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000196"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed composition state vocabulary used for feed-material semantics."
+        "@value": "Composition states defined by positive retention of native material components or chemical constituents."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -30137,6 +30441,12 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101134"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101086"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -30147,7 +30457,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Composition states"
+        "@value": "Native-component retention states"
       }
     ],
     "urn:era:property:conceptType": [
@@ -30939,7 +31249,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -30951,11 +31261,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003760"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -31545,7 +31850,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -32437,7 +32742,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -33495,7 +33800,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “unspecified” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “unspecified” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -34634,7 +34939,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -34651,7 +34956,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “trifolium alexandrinum” and characteristics: ingredient part — Straw; processing method — Urea treatment."
+        "@value": "A feed material with governed source identity “trifolium alexandrinum” and characteristics: material component — Straw; processing method — Urea treatment."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -35332,15 +35637,21 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Mineral"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An AOM controlled category for “Mineral” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+        "@value": "Editorial grouping for former mineral-supplement terms whose chemical identity, product kind, or additive authorization remains unresolved."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -35350,16 +35661,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006125"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000772"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001418"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001369"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000754"
@@ -35374,12 +35676,6 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000756"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000758"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000760"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000778"
       },
       {
@@ -35389,28 +35685,7 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000774"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001368"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001378"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001415"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000766"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001367"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000764"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000777"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000757"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001067"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001506"
@@ -35419,34 +35694,13 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001417"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001372"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000763"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000770"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001427"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_006331"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001370"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001371"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000755"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001487"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000768"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001872"
@@ -35463,7 +35717,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Mineral"
+        "@value": "Unresolved mineral classifications"
       }
     ],
     "urn:era:property:conceptType": [
@@ -36430,7 +36684,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101138"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -36856,7 +37110,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000795"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101155"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -37054,6 +37308,58 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101149",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFunctionalRole",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101022"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Functions borne by substances or products in feed, represented independently of their material, formulation, additive, or chemical identity."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101152"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101149"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed functional roles"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -39175,7 +39481,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101023"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -39656,7 +39962,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -39748,7 +40054,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -39969,7 +40275,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101141"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -40203,19 +40509,19 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001369",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101155",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001491"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed-supplement ingredient with governed workbook identity “Calcium Bicarbonate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        "@value": "Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -40223,20 +40529,34 @@
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000794"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001431"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000795"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001428"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "AOM_001369"
+        "@value": "AOM_101155"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Calcium Bicarbonate"
+        "@value": "Mineral and vitamin complementary feeds"
       }
     ],
     "urn:era:property:conceptType": [
       {
-        "@value": "legacy_aom_concept"
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -40276,6 +40596,49 @@
       {
         "@language": "en",
         "@value": "Molasses Treatment"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001369",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed-supplement ingredient with governed workbook identity “Calcium Bicarbonate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_001369"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Calcium Bicarbonate"
       }
     ],
     "urn:era:property:conceptType": [
@@ -41670,7 +42033,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101137"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -42924,6 +43287,63 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006002",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Corn Stover Urea Treated"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006001"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Stover; processing method — Urea treatment; product role — By-product role."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_006002"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Maize Stover Urea Treated"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_a40b4471"
+      },
+      {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4577"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006201",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -42953,63 +43373,6 @@
       {
         "@language": "en",
         "@value": "Khat Leftover Crushed Dried"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006002",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@language": "en",
-        "@value": "Corn Stover Urea Treated"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006001"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Stover; processing method — Urea treatment; product role — By-product role."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_006002"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Maize Stover Urea Treated"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_a40b4471"
-      },
-      {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4577"
       }
     ],
     "urn:era:property:conceptType": [
@@ -44804,7 +45167,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “finger millet” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “finger millet” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -45503,7 +45866,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Ensiling, Grinding, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Ensiling, Grinding, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -46875,6 +47238,60 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101136",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101135"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Feed-additive category for vitamins, trace-element compounds, amino acids, urea, and related authorized nutritional additive groups."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001749"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000737"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101136"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Nutritional feed additives"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006025",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -46972,6 +47389,54 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000325",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000326"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "any measurable or observable characteristic related to the capacity of food (or diet) to retain water"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000325"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "water retention capacity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://opendata.inra.fr/EOL/EOL_0000167"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000035",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -47014,54 +47479,6 @@
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
         "@id": "http://purl.obolibrary.org/obo/FOODON_03411433"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000325",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000326"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "any measurable or observable characteristic related to the capacity of food (or diet) to retain water"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_000325"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "water retention capacity"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://opendata.inra.fr/EOL/EOL_0000167"
       }
     ],
     "urn:era:property:conceptType": [
@@ -47141,49 +47558,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006094",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000701"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A forage feed material with governed workbook identity “Eragrostis racemosa”, classified within “Cereal and Grass Forages”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_006094"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Eragrostis racemosa"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000469",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -47213,6 +47587,49 @@
       {
         "@language": "en",
         "@value": "Cost Benefit Ratio (VCGR)"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006094",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000701"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A forage feed material with governed workbook identity “Eragrostis racemosa”, classified within “Cereal and Grass Forages”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_006094"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Eragrostis racemosa"
       }
     ],
     "urn:era:property:conceptType": [
@@ -47271,7 +47688,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -48525,7 +48942,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101137"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -49212,7 +49629,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “pea” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “pea” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -49764,7 +50181,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -49916,7 +50333,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -51651,7 +52068,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -51702,7 +52119,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “wheat” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -51753,7 +52170,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “wheat” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -52460,31 +52877,26 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Mixture"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101155"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An AOM controlled category for “Mixture” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+        "@value": "Formulated mineral and vitamin feed mixtures; individual components and proportions require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001431"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001428"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000794"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -52495,7 +52907,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Mixture"
+        "@value": "Mineral and vitamin feed mixtures"
       }
     ],
     "urn:era:property:conceptType": [
@@ -52656,7 +53068,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -53058,7 +53470,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; processing method — Crushing; product role — By-product role."
+        "@value": "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; processing method — Crushing; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -53480,7 +53892,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -53528,7 +53940,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -54086,7 +54498,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean” and characteristics: composition state — Full-fat composition; presentation form — Cake form; processing method — Pressing; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean” and characteristics: composition state — Native-fat-retained composition; presentation form — Cake form; processing method — Pressing; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -55733,7 +56145,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Molasses treatment, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Molasses treatment, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -55848,7 +56260,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -56291,7 +56703,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Reviewed material scopes and components that are not limited to anatomical parts."
+        "@value": "Anatomical structures, processed fractions, body substances, or collective material scopes represented as components of feed materials."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -56301,10 +56713,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101086"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101143"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101104"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101154"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101145"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -56337,7 +56755,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101022"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -56349,23 +56767,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101058"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101059"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101060"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101057"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101063"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -56633,7 +57034,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Alkali treatment, Drying; product role — By-product role."
+        "@value": "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Alkali treatment, Drying; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -57363,7 +57764,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -59157,7 +59558,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -59640,7 +60041,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Molasses treatment, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Molasses treatment, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -60211,7 +60612,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100853"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -61073,7 +61474,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; processing method — Ensiling; product role — By-product role."
+        "@value": "A feed material with governed source identity “wheat” and characteristics: material component — Straw; processing method — Ensiling; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -61396,59 +61797,6 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_101068",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProcessingMethod"
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@language": "en",
-        "@value": "Brewing"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Mashing, lautering, boiling, or related brewhouse operations represented separately from microbial fermentation."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_101068"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Brewhouse processing"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -62019,6 +62367,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001501"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000783"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101141"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001502"
       },
       {
@@ -62032,6 +62386,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_003870"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101140"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_003995"
@@ -62058,10 +62415,16 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001495"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003577"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_002109"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000804"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101155"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001496"
@@ -62237,7 +62600,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."
+        "@value": "A feed material with governed source identity “rice” and characteristics: composition state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -62828,7 +63191,13 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101134",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/CompositionState"
+      "https://w3id.org/era-aom/schema/ComponentRetentionState"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Full-fat composition"
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
@@ -62838,7 +63207,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Composition state indicating that native fat has not been intentionally removed; it does not assert a measured fat concentration."
+        "@value": "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -62854,7 +63223,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Full-fat composition"
+        "@value": "Native-fat-retained composition"
       }
     ],
     "urn:era:property:conceptType": [
@@ -63385,7 +63754,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -63727,15 +64096,21 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Untreated organic-waste feed materials"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Grouping for untreated organic waste; processing state remains represented by narrower feed-material concepts."
+        "@value": "Editorial grouping for untreated organic-waste source terms whose safety and regulatory suitability as feed remain unresolved."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -63759,7 +64134,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Untreated organic-waste feed materials"
+        "@value": "Untreated organic-waste feed classification holds"
       }
     ],
     "urn:era:property:conceptType": [
@@ -64609,7 +64984,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -65151,6 +65526,162 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101142",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Editorial grouping for active source terms whose feed product kind, chemical identity, intended use, safety, or regulatory class remains unresolved; membership asserts no feed-material, formulation, or additive class."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001500"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001572"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001831"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003203"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001867"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001504"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000790"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000744"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001376"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001374"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001870"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001825"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001834"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000788"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000782"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000743"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001373"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001486"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001921"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001869"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001503"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001423"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001490"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000780"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001824"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003172"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100988"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000811"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001868"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000789"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000787"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001826"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003889"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_002091"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101142"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed classification holds"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001890",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -65173,7 +65704,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “groundnut” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -65318,7 +65849,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -65661,7 +66192,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101140"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -65673,11 +66204,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001773"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -65926,7 +66452,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “barley” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
+        "@value": "A feed material with governed source identity “barley” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -66035,7 +66561,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -66195,7 +66721,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Fermentation, Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Fermentation, Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -66591,7 +67117,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -66824,7 +67350,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -67043,6 +67569,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000262"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101115"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000190"
@@ -68572,6 +69101,57 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101146",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Chemical substances and constituent categories used to describe feed identity or composition independently of feed product kind or additive function."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101023"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101146"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed chemical entities"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006323",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -68622,8 +69202,8 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101116",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/CompositionState"
+      "https://w3id.org/era-aom/schema/ComponentRetentionState",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
@@ -68713,7 +69293,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101023"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -68725,14 +69305,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001572"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001870"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -68920,7 +69492,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -69723,7 +70295,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -71188,7 +71760,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100987"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -71232,7 +71804,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101022"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -72428,7 +73000,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000756"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -72591,7 +73163,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “oat” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
+        "@value": "A feed material with governed source identity “oat” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -72636,7 +73208,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -72965,6 +73537,56 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101152",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedFunctionalRole",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Unspecified Filler"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101149"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Functional role borne by a material or product used to add bulk or carrier mass; bearer identity requires a separate assertion."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101152"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Filler role"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000432",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -73063,7 +73685,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -74205,13 +74827,10 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000532"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003100"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001832"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003076"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100987"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000534"
@@ -74223,13 +74842,10 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000735"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006334"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100976"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000809"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000533"
@@ -74238,19 +74854,28 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000531"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000811"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006241"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006389"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006349"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001922"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100989"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000535"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000807"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100921"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100921"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001866"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -75936,6 +76561,55 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101150",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ExperimentalFeedRole",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101022"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Roles borne by substances or products because of their use in an experimental design or measurement method."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101151"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101150"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed experimental roles"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002299",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -76814,7 +77488,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -76981,15 +77655,21 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Starch"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed ingredient with governed workbook identity “Starch”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        "@value": "Starch represented as a feed material; Starch constituent remains a separate chemical-constituent concept."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -77005,7 +77685,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Starch"
+        "@value": "Starch feed material"
       }
     ],
     "urn:era:property:conceptType": [
@@ -77443,7 +78123,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001571"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -78515,6 +79195,66 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101147",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101146"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001865"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001068"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006389"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000746"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000809"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101147"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed chemical substances"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_100886",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -79474,7 +80214,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000757"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -79632,7 +80372,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “teff” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “teff” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -80635,7 +81375,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -80783,7 +81523,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -81026,6 +81766,57 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101138",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101135"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Feed-additive category for substances or preparations used for technological functions in feed, including preservation and contaminant reduction where authorized."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006339"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001091"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101138"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Technological feed additives"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000660",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -81044,7 +81835,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."
+        "@value": "A feed material with governed source identity “wheat” and characteristics: composition state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -81398,7 +82189,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -81737,7 +82528,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101141"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -81780,7 +82571,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101136"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -82393,7 +83184,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -82720,7 +83511,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “teff” and characteristics: ingredient part — Straw; processing method — Ensiling, Fermentation, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “teff” and characteristics: material component — Straw; processing method — Ensiling, Fermentation, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -82819,7 +83610,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “teff” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
+        "@value": "A feed material with governed source identity “teff” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -83071,13 +83862,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101146"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Chemical substances or chemically defined fractions that primarily characterize feed materials; these are not ingredient components of formulated feeds."
+        "@value": "Chemical substances or chemically defined fractions asserted as primary constituents of feed materials."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -83099,6 +83890,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101064"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001571"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101066"
       },
       {
@@ -83106,6 +83900,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101080"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001577"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -83475,7 +84272,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “teff” and characteristics: ingredient part — Straw; processing method — Crushing; product role — By-product role."
+        "@value": "A feed material with governed source identity “teff” and characteristics: material component — Straw; processing method — Crushing; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -84034,7 +84831,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -84912,7 +85709,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -85205,15 +86002,21 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Other Ingredients"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An AOM controlled category for “Other Ingredients” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+        "@value": "Deprecated legacy Other Ingredients catch-all; resolved descendants moved to evidence-backed axes and unresolved descendants routed to explicit holds."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -85229,76 +86032,10 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000780"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001824"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003172"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100988"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001500"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001866"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001507"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003203"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001832"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100987"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001825"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001867"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006349"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000782"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000783"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000747"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006241"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001869"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000753"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001921"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001865"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001922"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001868"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_002191"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -85309,7 +86046,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Other Ingredients"
+        "@value": "Unresolved other-ingredient classifications"
       }
     ],
     "urn:era:property:conceptType": [
@@ -85319,7 +86056,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -85456,7 +86193,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; processing method — Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “wheat” and characteristics: material component — Straw; processing method — Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -86261,6 +86998,56 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101151",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ExperimentalFeedRole"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Digestibility Marker"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101150"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Experimental role borne by a marker substance used to estimate digestibility or passage without making marker function its chemical identity."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101151"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Digestibility-marker role"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -88046,12 +88833,16 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101022",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProductRole"
+      "https://w3id.org/era-aom/schema/FeedRole"
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
         "@value": "Ingredient product roles"
+      },
+      {
+        "@language": "en",
+        "@value": "Feed-material product roles"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -88062,7 +88853,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Economic or production roles of feed materials, including product and by-product roles."
+        "@value": "Product, functional, or experimental roles borne by feed-related materials, products, or substances independently of identity."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -88072,19 +88863,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101149"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101055"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101056"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101061"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101150"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -88095,7 +88880,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Feed-material product roles"
+        "@value": "Feed roles"
       }
     ],
     "urn:era:property:conceptType": [
@@ -88751,13 +89536,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101144"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A material fraction separated from cereal grain during milling and consisting mainly of outer grain layers with variable attached endosperm."
+        "@value": "Cereal outer-layer milling fraction with variable attached endosperm; represented as a processed material fraction."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -89320,7 +90105,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -89369,7 +90154,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; processing method — Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; processing method — Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -89517,15 +90302,21 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Microalgae supplements"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Grouping for microalgae; processing state remains represented by narrower feed-material concepts."
+        "@value": "Feed materials derived from microalgal biomass; source taxon and processing remain explicit."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -89546,7 +90337,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Microalgae supplements"
+        "@value": "Microalgal feed materials"
       }
     ],
     "urn:era:property:conceptType": [
@@ -89624,7 +90415,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000772"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101140"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -90659,6 +91450,50 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101153",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Seed tissue that stores nutrient reserves and forms a retained component of whole cereal grain."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101153"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Endosperm"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_003692",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -90671,7 +91506,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; processing method — Molasses treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; processing method — Molasses treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -92464,7 +93299,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “oat” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “oat” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -92811,7 +93646,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000764"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101140"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -92854,7 +93689,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -93496,15 +94331,21 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Anti-coccidia"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101135"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed-supplement ingredient with governed workbook identity “Anti-coccidia”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        "@value": "Feed-additive category for coccidiostats and histomonostats under applicable authorization conditions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -93525,7 +94366,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Anti-coccidia"
+        "@value": "Coccidiostats and histomonostats"
       }
     ],
     "urn:era:property:conceptType": [
@@ -93589,7 +94430,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101137"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -93878,6 +94719,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000944"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003100"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000949"
       },
       {
@@ -93935,7 +94779,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -94813,61 +95657,6 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_101109",
-    "@type": [
-      "https://w3id.org/era-aom/schema/MaterialIntegrity",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@language": "en",
-        "@value": "Material integrity values"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Compositional or anatomical integrity retained by a feed material independently of particle presentation and processing."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101110"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_101109"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Material integrity"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -96018,7 +96807,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Stover; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Stover; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -97935,7 +98724,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001370"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -98720,7 +99509,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101022"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -100057,7 +100846,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -100415,7 +101204,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “wheat” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -100473,7 +101262,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000757"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -103097,7 +103886,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -103512,7 +104301,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -103524,14 +104313,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003084"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003201"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -104531,7 +105312,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -104623,7 +105404,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -105092,7 +105873,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -105675,7 +106456,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; processing method — Ensiling, Fermentation; product role — By-product role."
+        "@value": "A feed material with governed source identity “wheat” and characteristics: material component — Straw; processing method — Ensiling, Fermentation; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -106252,6 +107033,72 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101140",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001491"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Formulated complementary feeds whose governed identity is a mineral block, lick, salt lick, or mineral mixture."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003084"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000765"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003201"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001773"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000766"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000764"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001415"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101140"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Mineral complementary feeds"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -107990,7 +108837,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -108177,7 +109024,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001491"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -109421,54 +110268,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000764",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A feed material with governed source identity “mineral” and characteristics: presentation form — Block form."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000765"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_000764"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Mineral Block"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006328",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -109481,7 +110280,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -109503,6 +110302,49 @@
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4558"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000764",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101140"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “mineral” and characteristics: presentation form — Block form."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000764"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Mineral Block"
       }
     ],
     "urn:era:property:conceptType": [
@@ -109875,7 +110717,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “panicum maximum” and characteristics: ingredient part — Straw."
+        "@value": "A feed material with governed source identity “panicum maximum” and characteristics: material component — Straw."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -110662,7 +111504,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101136"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -110858,7 +111700,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -110986,7 +111828,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -112869,6 +113711,60 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101137",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101135"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Feed-additive category for substances or preparations used to affect animal performance, digestibility, or gut flora under authorized conditions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003076"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000751"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000807"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101137"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Zootechnical feed additives"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006167",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -114527,6 +115423,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://purl.org/dc/terms/isReplacedBy": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101152"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
@@ -114561,7 +115462,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -115772,7 +116673,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Fermentation, Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Fermentation, Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -117335,7 +118236,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Crushing, Drying, Fermentation; product role — By-product role."
+        "@value": "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Crushing, Drying, Fermentation; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -117942,7 +118843,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “common bean” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “common bean” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -118786,7 +119687,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -118798,14 +119699,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_002074"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001746"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -120249,7 +121142,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."
+        "@value": "A feed material with governed source identity “maize” and characteristics: composition state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -120724,7 +121617,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Ensiling, Fermentation; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Ensiling, Fermentation; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -122146,6 +123039,49 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003760",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed-supplement ingredient with governed workbook identity “Lime Slaked”, classified within “Lime”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_003760"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Lime Slaked"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001273",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -122181,49 +123117,6 @@
       {
         "@language": "en",
         "@value": "Unspecified Crop Residue"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_003760",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000760"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A feed-supplement ingredient with governed workbook identity “Lime Slaked”, classified within “Lime”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_003760"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Lime Slaked"
       }
     ],
     "urn:era:property:conceptType": [
@@ -122880,7 +123773,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -123450,6 +124343,63 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101135",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Feed products intentionally added for a technological, sensory, nutritional, zootechnical, coccidiostatic, or histomonostatic function; authorization conditions require dated regulatory evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101137"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101136"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_004433"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101138"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101135"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed additives"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -124091,7 +125041,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101136"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -124107,34 +125057,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001505"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000789"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000791"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000787"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000790"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001376"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001834"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000788"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001375"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001839"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -124391,7 +125314,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -124494,7 +125417,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -125293,7 +126216,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000795"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101155"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -125598,7 +126521,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “barley” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “barley” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -125982,9 +126905,6 @@
       "https://w3id.org/era-aom/schema/ProcessingMethod"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
-      },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
       }
@@ -127155,7 +128075,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -127562,7 +128482,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -127659,7 +128579,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “millet” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “millet” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -128169,6 +129089,60 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101141",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001491"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Multi-component vitamin preparations represented as premixtures or complementary feeds rather than single vitamin substances."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001839"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001505"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000791"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101141"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Vitamin premixtures and complementary feeds"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001009",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -128606,18 +129580,18 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101103",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterialPartCategory",
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101145"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood."
+        "@value": "Animal body substance represented as a feed-material component; distinct from Blood feed material."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -128709,70 +129683,26 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Supplement"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An AOM controlled category for “Supplement” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+        "@value": "Deprecated legacy Supplement catch-all; resolved descendants moved to feed-material, formulation, additive, or chemical axes and unresolved descendants routed to explicit holds."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001068"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003889"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_004433"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001571"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003577"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006334"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001749"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100989"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006339"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001577"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000795"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000751"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001091"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000737"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -128783,7 +129713,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Supplement"
+        "@value": "Unresolved supplement classifications"
       }
     ],
     "urn:era:property:conceptType": [
@@ -128793,7 +129723,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -128852,7 +129782,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -129164,7 +130094,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -130478,7 +131408,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -130676,7 +131606,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101022"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -130892,7 +131822,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean” and characteristics: ingredient part — Straw; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean” and characteristics: material component — Straw; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -132211,7 +133141,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -132783,18 +133713,24 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101086",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterialComponent",
+      "https://w3id.org/era-aom/schema/ComponentRetentionState",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Whole crop"
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101115"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed material component value used for feed-material semantics."
+        "@value": "Composition state indicating retention of the harvested whole-crop scope rather than one component part."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -132810,7 +133746,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Whole crop"
+        "@value": "Whole-crop composition"
       }
     ],
     "urn:era:property:conceptType": [
@@ -133371,7 +134307,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “crop maize” and characteristics: material component — Whole crop; processing method — Ensiling."
+        "@value": "A feed material with governed source identity “crop maize” and characteristics: composition state — Whole-crop composition; processing method — Ensiling."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -133995,7 +134931,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -134320,7 +135256,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -134332,11 +135268,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006124"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -134970,7 +135901,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -135611,7 +136542,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -135865,7 +136796,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -137297,12 +138228,18 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101079",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProductRole"
+      "https://w3id.org/era-aom/schema/FeedFunctionalRole",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Binder"
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101022"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101149"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -138241,7 +139178,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding, Urea treatment; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding, Urea treatment; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -139111,7 +140048,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment, Wilting; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment, Wilting; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -139984,7 +140921,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000793"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -142045,7 +142982,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “trifolium alexandrinum” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying."
+        "@value": "A feed material with governed source identity “trifolium alexandrinum” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -145440,7 +146377,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean” and characteristics: composition state — Full-fat composition."
+        "@value": "A feed material with governed source identity “soybean” and characteristics: composition state — Native-fat-retained composition."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -145590,6 +146527,58 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101154",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Collective crop-residue components such as straw or stover that contain multiple anatomical structures."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101105"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101154"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Composite crop-residue components"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -146012,7 +147001,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: ingredient part — Stover; processing method — Ensiling; product role — By-product role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: material component — Stover; processing method — Ensiling; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -146337,7 +147326,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; processing method — Ensiling; product role — By-product role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: material component — Straw; processing method — Ensiling; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -146607,17 +147596,17 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101105",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+      "https://w3id.org/era-aom/schema/FeedMaterialComponent"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101019"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101154"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed anatomical part value used for feed-material semantics."
+        "@value": "Composite crop-residue component remaining after grain or seed harvest; not one anatomical structure."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -147033,7 +148022,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000772"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101140"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -147092,7 +148081,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “lablab purpureus” and characteristics: ingredient part — Stover."
+        "@value": "A feed material with governed source identity “lablab purpureus” and characteristics: material component — Stover."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -147553,7 +148542,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -148785,7 +149774,7 @@
     ],
     "urn:era:property:status": [
       {
-        "@value": "unknown"
+        "@value": "deprecated"
       }
     ]
   },
@@ -148799,17 +149788,21 @@
       {
         "@language": "en",
         "@value": "Ingredient anatomical parts"
+      },
+      {
+        "@language": "en",
+        "@value": "Feed-material anatomical parts"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101085"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Biological structures represented as components of feed materials."
+        "@value": "Biological anatomical structures represented as components of feed materials."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -148826,6 +149819,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101107"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101153"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101032"
@@ -148894,19 +149890,10 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101028"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101106"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101103"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101047"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101033"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101105"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101046"
@@ -148926,7 +149913,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Feed-material anatomical parts"
+        "@value": "Anatomical components"
       }
     ],
     "urn:era:property:conceptType": [

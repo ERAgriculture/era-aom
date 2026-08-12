@@ -23,6 +23,7 @@ def read(path):
 
 summary = json.loads((REVIEW / "feed_structure_summary.json").read_text())
 classifications = read(DATA / "approved_feed_formulation_classifications.csv")
+taxonomy_classifications = read(DATA / "approved_feed_taxonomy_classifications.csv")
 constituents = read(REVIEW / "chemical_constituent_assertion_review.csv")
 descriptors = read(REVIEW / "feed_descriptor_review.csv")
 processes = read(REVIEW / "feed_process_review.csv")
@@ -66,16 +67,20 @@ assert str(vocabulary.value(concept("AOM_001491"), SKOS.prefLabel)) == "Formulat
 assert broader("AOM_001491", "AOM_000328")
 assert not broader("AOM_001491", "AOM_100850")
 for child, parent in {
-    "AOM_001500": "AOM_000781",
+    "AOM_001500": "AOM_101142",
     "AOM_001579": "AOM_004433",
     "AOM_001497": "AOM_006334",
-    "AOM_001870": "AOM_001571",
-    "AOM_006072": "AOM_000648",
+    "AOM_001870": "AOM_101142",
 }.items():
     assert broader(child, parent)
+assert str(vocabulary.value(concept("AOM_006072"), URIRef("urn:era:property:status"))) == "deprecated"
 
 formulation_ids = {
     row["concept_id"] for row in classifications
+    if row["semantic_class"] == "aom:FeedFormulation"
+}
+formulation_ids |= {
+    row["concept_id"] for row in taxonomy_classifications
     if row["semantic_class"] == "aom:FeedFormulation"
 }
 typed_formulations = {
@@ -83,9 +88,10 @@ typed_formulations = {
     for subject in bindings.subjects(RDF.type, schema("FeedFormulation"))
 }
 assert typed_formulations == formulation_ids
-for identifier in {"AOM_001497", "AOM_001870", "AOM_006154"}:
-    assert (concept(identifier), RDF.type, schema("FeedMaterial")) in bindings
+assert (concept("AOM_001497"), RDF.type, schema("FeedMaterial")) in bindings
+assert (concept("AOM_006154"), RDF.type, schema("Feed")) in bindings
 assert (concept("AOM_001579"), RDF.type, schema("FeedAdditive")) in bindings
+assert (concept("AOM_001870"), RDF.type, schema("Feed")) in bindings
 for class_name in {"FeedMaterial", "FeedFormulation", "FeedAdditive"}:
     assert (concept("AOM_001500"), RDF.type, schema(class_name)) not in bindings
 
@@ -103,7 +109,7 @@ for child, parent in {
     assert broader(child, parent)
 for parent in {"AOM_101130", "AOM_000826"}:
     assert broader("AOM_101124", parent)
-    assert broader("AOM_101068", parent)
+assert not any(vocabulary.triples((concept("AOM_101068"), None, None)))
 assert broader("AOM_000830", "AOM_100990")
 assert not any(vocabulary.triples((concept("AOM_101100"), None, None)))
 assert not any(vocabulary.triples((concept("AOM_101119"), None, None)))
@@ -112,8 +118,8 @@ assert str(vocabulary.value(concept("AOM_101099"), SKOS.prefLabel)) == "Soaking"
 assert any(str(label) == "Steeping" for label in vocabulary.objects(concept("AOM_101099"), SKOS.altLabel))
 
 assert str(vocabulary.value(concept("AOM_101076"), SKOS.prefLabel)) == "Intact presentation"
-assert str(vocabulary.value(concept("AOM_101110"), SKOS.prefLabel)) == "Whole-grain integrity"
-assert (concept("AOM_101134"), RDF.type, schema("CompositionState")) in bindings
+assert str(vocabulary.value(concept("AOM_101110"), SKOS.prefLabel)) == "Whole-grain composition"
+assert (concept("AOM_101134"), RDF.type, schema("ComponentRetentionState")) in bindings
 for identifier, class_name in {
     "AOM_101020": "FeedPresentationForm",
     "AOM_101132": "FeedBulkConsistency",

@@ -79,6 +79,7 @@ def main():
     identity_resolutions = read_governance("approved_identity_resolutions.csv")
     mapping_replacements = read_governance("approved_mapping_replacements.csv")
     deprecations = read_governance("approved_deprecations.csv")
+    retirements = read_governance("approved_concept_retirements.csv")
     label_corrections = read_governance("approved_label_corrections.csv")
     label_additions = read_governance("approved_label_additions.csv")
     label_suppressions = read_governance("approved_label_suppressions.csv")
@@ -101,11 +102,12 @@ def main():
         for row in mapping_replacements
     }
     deprecation_by_id = {row["deprecated_id"]: row for row in deprecations}
+    retirement_by_id = {row["concept_id"]: row for row in retirements}
     retained_by_id = {row["replacement_id"]: row for row in deprecations}
     label_correction_by_id = {
         row["concept_id"]: row for row in label_corrections
     }
-    resolved_path_ids = set(deprecation_by_id) | set(retained_by_id)
+    resolved_path_ids = set(deprecation_by_id) | set(retained_by_id) | set(retirement_by_id)
 
     raw_source = source.read_bytes()
     try:
@@ -144,8 +146,12 @@ def main():
     if not {key[0] for key in replacement_by_key} <= source_rows:
         raise ValueError("Approved mapping replacement references unknown source row")
     source_ids = {row["AOM"] for row in records}
-    if not (set(deprecation_by_id) | set(retained_by_id)) <= source_ids:
-        raise ValueError("Approved deprecation references unknown concept ID")
+    if not set(deprecation_by_id) <= source_ids:
+        raise ValueError("Approved deprecation references unknown deprecated concept ID")
+    if len(retirement_by_id) != len(retirements) or not set(retirement_by_id) <= source_ids:
+        raise ValueError("Approved retirement references unknown or duplicate source concept ID")
+    if set(retirement_by_id) & set(deprecation_by_id):
+        raise ValueError("Concept cannot be both deprecated with replacement and retired without replacement")
     if len(label_correction_by_id) != len(label_corrections):
         raise ValueError("Approved label corrections must have unique concept IDs")
     if not set(label_correction_by_id) <= source_ids:
@@ -154,6 +160,8 @@ def main():
     new_ids = {row["concept_id"] for row in new_concepts}
     if len(new_ids) != len(new_concepts) or not new_ids <= registered_ids:
         raise ValueError("Every new concept must have one registered unique identifier")
+    if not set(retained_by_id) <= source_ids | new_ids:
+        raise ValueError("Approved deprecation replacement references unknown concept ID")
     if new_ids & source_ids:
         raise ValueError("New concept identifier collides with legacy source")
 
@@ -228,7 +236,8 @@ def main():
         concepts.append({
             "concept_id": concept_id, "scheme_id": SCHEME_ID,
             "module": "aom-livestock", "concept_type": "legacy_aom_concept",
-            "notation": concept_id, "status": "deprecated" if deprecation else "staging",
+            "notation": concept_id,
+            "status": "deprecated" if deprecation or concept_id in retirement_by_id else "staging",
             "hierarchy_level": row["_level"], "derived_path": row["_path"],
             "source_row": row["_source_row"],
         })
@@ -764,6 +773,7 @@ def main():
             "approved_mapping_reviews": len(mapping_reviews),
             "approved_mapping_additions": len(mapping_additions),
             "approved_deprecations": len(deprecations),
+            "approved_concept_retirements": len(retirements),
             "approved_label_corrections": len(label_corrections),
             "approved_label_additions": len(label_additions),
             "approved_label_suppressions": len(label_suppressions),
@@ -774,6 +784,18 @@ def main():
             "approved_hierarchy_revisions": len(hierarchy_revisions),
             "approved_feed_formulation_classifications": len(
                 read_governance("approved_feed_formulation_classifications.csv")
+            ),
+            "approved_feed_taxonomy_classifications": len(
+                read_governance("approved_feed_taxonomy_classifications.csv")
+            ),
+            "approved_concept_semantic_types": len(
+                read_governance("approved_concept_semantic_types.csv")
+            ),
+            "approved_feed_role_assertions": len(
+                read_governance("approved_feed_role_assertions.csv")
+            ),
+            "approved_component_retention_relations": len(
+                read_governance("approved_component_retention_relations.csv")
             ),
             "approved_semantic_bindings": len(
                 read_governance("approved_semantic_bindings.csv")
