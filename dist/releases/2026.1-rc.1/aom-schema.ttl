@@ -16,6 +16,10 @@
 aom:ChangeProposal a owl:Class ;
     rdfs:label "change proposal"@en .
 
+aom:ChemicalSubstance a owl:Class ;
+    rdfs:label "chemical substance"@en ;
+    rdfs:subClassOf aom:FeedChemicalEntity .
+
 aom:FeedAdditive a owl:Class ;
     rdfs:label "feed additive"@en ;
     rdfs:subClassOf aom:Feed .
@@ -82,15 +86,20 @@ aom:compatibilityPolicy a owl:DatatypeProperty ;
     rdfs:domain aom:SemanticBinding ;
     rdfs:range xsd:string .
 
-aom:compositionState a owl:ObjectProperty ;
-    rdfs:label "has composition state"@en ;
-    rdfs:domain aom:FeedMaterial ;
-    rdfs:range aom:CompositionState .
+aom:experimentalRole a owl:ObjectProperty ;
+    rdfs:label "has experimental role"@en ;
+    rdfs:range aom:ExperimentalFeedRole ;
+    rdfs:subPropertyOf aom:role .
 
 aom:feedProductType a owl:ObjectProperty ;
     rdfs:label "has feed product type"@en ;
     rdfs:domain aom:Feed ;
     rdfs:range aom:FeedProductType .
+
+aom:functionalRole a owl:ObjectProperty ;
+    rdfs:label "has functional role"@en ;
+    rdfs:range aom:FeedFunctionalRole ;
+    rdfs:subPropertyOf aom:role .
 
 aom:hasIngredientComponent a owl:ObjectProperty ;
     rdfs:domain aom:FeedFormulation ;
@@ -141,7 +150,9 @@ aom:legacyConcept a owl:ObjectProperty ;
 aom:materialIntegrity a owl:ObjectProperty ;
     rdfs:label "has material integrity"@en ;
     rdfs:domain aom:FeedMaterial ;
-    rdfs:range aom:MaterialIntegrity .
+    rdfs:range aom:MaterialIntegrity ;
+    rdfs:subPropertyOf aom:compositionState ;
+    owl:deprecated true .
 
 aom:mayResultInMoistureCondition a owl:ObjectProperty ;
     rdfs:label "may result in moisture condition"@en ;
@@ -177,13 +188,24 @@ aom:processingMethod a owl:ObjectProperty ;
 aom:productRole a owl:ObjectProperty ;
     rdfs:label "has product role"@en ;
     rdfs:domain aom:FeedMaterial ;
-    rdfs:range aom:ProductRole .
+    rdfs:range aom:ProductRole ;
+    rdfs:subPropertyOf aom:role .
 
 aom:quantityKind a owl:ObjectProperty ;
     rdfs:domain aom:SemanticBinding .
 
 aom:releasedIn a owl:ObjectProperty ;
     rdfs:range aom:Release .
+
+aom:retainsChemicalConstituent a owl:ObjectProperty ;
+    rdfs:label "retains chemical constituent"@en ;
+    rdfs:domain aom:ComponentRetentionState ;
+    rdfs:range aom:ChemicalConstituent .
+
+aom:retainsMaterialComponent a owl:ObjectProperty ;
+    rdfs:label "retains material component"@en ;
+    rdfs:domain aom:ComponentRetentionState ;
+    rdfs:range aom:FeedMaterialComponent .
 
 aom:reviewedBy a owl:ObjectProperty ;
     rdfs:range aom:Reviewer .
@@ -228,19 +250,22 @@ aom:valueTargetConcept a owl:ObjectProperty ;
 aom:valueTargetProperty a owl:ObjectProperty ;
     rdfs:domain aom:SemanticValueBinding .
 
-aom:CompositionState a owl:Class ;
-    rdfs:label "composition state"@en ;
-    rdfs:comment "Governed compositional state of a feed material, independently of physical form."@en ;
-    rdfs:subClassOf skos:Concept .
-
 aom:Evidence a owl:Class ;
     rdfs:label "evidence"@en ;
     rdfs:subClassOf prov:Entity .
+
+aom:ExperimentalFeedRole a owl:Class ;
+    rdfs:label "experimental feed role"@en ;
+    rdfs:subClassOf aom:FeedRole .
 
 aom:FeedFormulation a owl:Class ;
     rdfs:label "feed formulation"@en ;
     rdfs:comment "A feed represented as a formulated mixture or ration; component materials and proportions require explicit assertions."@en ;
     rdfs:subClassOf aom:Feed .
+
+aom:FeedFunctionalRole a owl:Class ;
+    rdfs:label "feed functional role"@en ;
+    rdfs:subClassOf aom:FeedRole .
 
 aom:FeedProductType a owl:Class ;
     rdfs:label "feed product type"@en ;
@@ -258,15 +283,18 @@ aom:IngredientSourceCategory a owl:Class ;
 
 aom:MaterialIntegrity a owl:Class ;
     rdfs:label "material integrity"@en ;
-    rdfs:comment "Compositional integrity retained by a material independently of particle form or processing."@en ;
-    rdfs:subClassOf skos:Concept .
+    rdfs:comment "Deprecated compatibility class; use component-retention state."@en ;
+    rdfs:subClassOf skos:Concept,
+        aom:ComponentRetentionState ;
+    owl:deprecated true .
 
 aom:Module a owl:Class ;
     rdfs:label "module"@en .
 
 aom:ProductRole a owl:Class ;
     rdfs:label "product role"@en ;
-    rdfs:subClassOf skos:Concept .
+    rdfs:subClassOf skos:Concept,
+        aom:FeedRole .
 
 aom:Release a owl:Class ;
     rdfs:label "release"@en .
@@ -274,6 +302,11 @@ aom:Release a owl:Class ;
 aom:Reviewer a owl:Class ;
     rdfs:label "reviewer"@en ;
     rdfs:subClassOf prov:Agent .
+
+aom:compositionState a owl:ObjectProperty ;
+    rdfs:label "has composition state"@en ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:CompositionState .
 
 aom:materialComponent a owl:ObjectProperty ;
     rdfs:label "has material component"@en ;
@@ -286,8 +319,9 @@ aom:primaryConstituent a owl:ObjectProperty ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:ChemicalConstituent .
 
-aom:ChemicalConstituent a owl:Class ;
-    rdfs:label "chemical constituent"@en ;
+aom:CompositionState a owl:Class ;
+    rdfs:label "composition state"@en ;
+    rdfs:comment "Governed compositional state of a feed material, independently of physical form."@en ;
     rdfs:subClassOf skos:Concept .
 
 aom:FeedBulkConsistency a owl:Class ;
@@ -295,9 +329,9 @@ aom:FeedBulkConsistency a owl:Class ;
     rdfs:comment "Bulk flow or dispersion consistency independently of particle presentation and moisture condition."@en ;
     rdfs:subClassOf aom:FeedPhysicalDescriptor .
 
-aom:FeedMaterialComponent a owl:Class ;
-    rdfs:label "feed material component"@en ;
-    rdfs:comment "Reviewed material scope or component, including anatomical parts and collective material such as a whole crop."@en ;
+aom:FeedChemicalEntity a owl:Class ;
+    rdfs:label "feed chemical entity"@en ;
+    rdfs:comment "Chemical identity encountered in feed data independently of product kind, role, or additive authorization."@en ;
     rdfs:subClassOf skos:Concept .
 
 aom:FeedMaterialPartCategory a owl:Class ;
@@ -311,6 +345,21 @@ aom:mayResultInPhysicalForm a owl:ObjectProperty ;
     rdfs:domain aom:ProcessingMethod ;
     rdfs:range aom:FeedPhysicalDescriptor ;
     owl:deprecated true .
+
+aom:ChemicalConstituent a owl:Class ;
+    rdfs:label "chemical constituent"@en ;
+    rdfs:subClassOf skos:Concept,
+        aom:FeedChemicalEntity .
+
+aom:ComponentRetentionState a owl:Class ;
+    rdfs:label "component-retention state"@en ;
+    rdfs:comment "Composition state defined through positive retention of native material components or chemical constituents."@en ;
+    rdfs:subClassOf aom:CompositionState .
+
+aom:FeedMaterialComponent a owl:Class ;
+    rdfs:label "feed material component"@en ;
+    rdfs:comment "Reviewed material scope or component, including anatomical parts and collective material such as a whole crop."@en ;
+    rdfs:subClassOf skos:Concept .
 
 aom:FeedMoistureCondition a owl:Class ;
     rdfs:label "feed moisture condition"@en ;
@@ -332,6 +381,15 @@ aom:physicalForm a owl:ObjectProperty ;
     rdfs:domain aom:Feed ;
     rdfs:range aom:FeedPhysicalDescriptor ;
     owl:deprecated true .
+
+aom:role a owl:ObjectProperty ;
+    rdfs:label "has feed role"@en ;
+    rdfs:range aom:FeedRole .
+
+aom:FeedRole a owl:Class ;
+    rdfs:label "feed role"@en ;
+    rdfs:comment "Role borne by a feed-related material, product, substance, or formulation independently of its identity."@en ;
+    rdfs:subClassOf skos:Concept .
 
 aom:ProcessingMethod a owl:Class ;
     rdfs:label "processing method"@en ;

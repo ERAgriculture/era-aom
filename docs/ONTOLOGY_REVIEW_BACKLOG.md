@@ -2,7 +2,7 @@
 
 ## Feed taxonomy axis reclassification
 
-- Status: proposed in ADR 0044; recommendation review pending
+- Status: implemented in accepted ADR 0044; 66 evidence holds remain governed
 - Priority: critical
 - Added: 2026-08-11
 
@@ -20,17 +20,21 @@ component/separation hierarchy, Bran, and whole-component retention states.
 materials child, all 94 Supplement descendants, all 54 Other Ingredients
 descendants, and complete implicated structural branches.
 
-### Required work
+### Completed work
 
-1. Review and approve or amend every hold and split disposition.
-2. Implement approved product-kind migrations as complete cohorts.
-3. Move roles, chemical identities, components, processes, and states to
-   independent axes.
-4. Preserve stable IDs through deprecation and replacement links.
-5. Regenerate release artifacts, rebuild empty Fuseki storage, and rerun
-   notation search plus full Skosmos browse/card review.
+1. Reviewed and implemented all 220 row-level dispositions as one governed
+   cohort, retaining 66 explicit evidence-dependent holds.
+2. Separated feed materials, formulations, additives, chemicals, roles,
+   components, processes, and composition states.
+3. Retired eight published source concepts through compatibility policy and
+   reserved two rejected generated identifiers without reuse.
+4. Published method, authority comparison, evidence register, decision record,
+   implementation register, and deterministic validation.
+5. Regenerated release artifacts, rebuilt empty Fuseki storage, and passed
+   exact notation search plus full local Skosmos acceptance.
 
-Do not patch named cards before cohort dispositions are approved.
+Remaining holds require evidence types recorded in the v30 implementation
+register; they must not be resolved by hierarchy inheritance alone.
 
 ## Processing-method hierarchy consolidation
 
@@ -88,7 +92,7 @@ include scope differences and some source text still needs authority review.
 
 ## Ingredient-part hierarchy consolidation
 
-- Status: pending review
+- Status: structural root implemented in ADR 0044; biological subhierarchy review remains
 - Priority: high
 - Added: 2026-08-07
 
@@ -109,21 +113,26 @@ is a source-specific feed material while Husk is a reusable material-part
 value. Such pairs require an explicit `aom:materialComponent` assertion, not
 identity merging.
 
-### Required work
+### Completed work
 
-1. Audit `AOM_000532`, its intended scope, workbook fields, and current uses.
-2. Compare every `AOM_101019` child with all legacy AOM identities and external
+1. Retired `AOM_000532` as a browse concept while preserving its schema-binding
+   compatibility record.
+2. Placed `AOM_101019 Anatomical components` under one governed
+   `AOM_101085 Feed material components` architecture.
+3. Separated cereal milling fractions, animal body substances, and composite
+   crop-residue components from anatomical structures.
+4. Added global collision checks before generated concept allocation.
+
+### Remaining work
+
+1. Compare every `AOM_101019` child with all legacy AOM identities and external
    anatomical authorities—not preferred labels alone.
-3. Reuse or extend `AOM_000532` if scope review confirms it as canonical root;
-   otherwise document exact distinction between roots.
-4. Consolidate genuine duplicates with replacement crosswalks while preserving
+2. Consolidate genuine duplicates with replacement crosswalks while preserving
    stable identifiers and source records.
-5. Keep source-specific feed materials separate; link them to generic component
+3. Keep source-specific feed materials separate; link them to generic component
    values through explicit predicates.
-6. Build useful plant/animal component hierarchy rather than one flat list,
+4. Build useful plant/animal component hierarchy rather than one flat list,
    including polyhierarchy where biologically valid.
-7. Add collision tests preventing allocation of a facet concept before legacy
-   identity review.
 
 Do not deprecate or merge any concept until workbook occurrence, definition,
 hierarchy, and downstream assertion impact are reviewed.

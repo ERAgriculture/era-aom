@@ -33,6 +33,13 @@ for row in read("mappings.csv"):
         if row["status"] not in {"reviewed-related", "review-held"}:
             definition_grade_mappings[row["subject_id"]].append(row)
 new_concepts = read("approved_new_concepts.csv")
+for row in new_concepts:
+    concepts.setdefault(row["concept_id"], {
+        "concept_id": row["concept_id"],
+        "status": "staging",
+        "derived_path": row["derived_path"],
+    })
+    labels.setdefault(row["concept_id"], row["preferred_label"])
 inventory = {row["concept_id"]: row for row in csv.DictReader(
     (ROOT / "review/livestock-v5/ingredient_harmonization_inventory.csv").open(encoding="utf-8", newline="")
 )}
@@ -60,6 +67,11 @@ retired_generated_ids = {
     row["generated_id"]
     for row in read("approved_identity_integrity_remediations.csv")
     if row["status"] == "approved" and row["action"] == "reuse_existing"
+}
+retired_generated_ids |= {
+    row["concept_id"]
+    for row in read("livestock_id_registry.csv")
+    if row["status"] == "retired-before-publication"
 }
 
 rows = []

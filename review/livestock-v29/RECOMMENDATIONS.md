@@ -1,6 +1,7 @@
 # Feed taxonomy adversarial review recommendations
 
-Status: recommendation package; no ontology hierarchy changes applied yet.
+Status: approved 2026-08-12; implemented through the governed livestock-v30
+cohort. This file remains the pre-implementation recommendation record.
 
 ## Scope
 

@@ -38,7 +38,7 @@ assert summary == {
     "reviewed_material_state_concepts": 18,
     "unresolved_cases": ["AOM_001961", "AOM_002008", "AOM_006004"],
 }
-assert len(hierarchy_revisions) == 32
+assert len(hierarchy_revisions) == 128
 assert len(process_results) == 2
 assert len(state_review) == 18
 assert len(grinding_review) == 343
@@ -64,8 +64,10 @@ for parent in {"AOM_000837", "AOM_101129", "AOM_101130"}:
     assert broader("AOM_000838", parent)
 for child in {"AOM_000834", "AOM_000835", "AOM_000836", "AOM_101090"}:
     assert broader(child, "AOM_101129")
-for child in {"AOM_003097", "AOM_101070", "AOM_101073", "AOM_101128"}:
+for child in {"AOM_003097", "AOM_101070", "AOM_101073"}:
     assert broader(child, "AOM_101130")
+assert broader("AOM_101128", "AOM_000826")
+assert not broader("AOM_101128", "AOM_101130")
 assert broader("AOM_000840", "AOM_101131")
 
 assert broader("AOM_101054", "AOM_101133")
@@ -168,4 +170,4 @@ for identifier in {
 }:
     assert "GPT4" not in definitions[identifier]
 
-print("Process/material-state review passed: 32 hierarchy revisions; 3 explicit holds")
+print("Process/material-state review passed: 128 hierarchy revisions; 3 explicit holds")

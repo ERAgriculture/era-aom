@@ -5209,7 +5209,7 @@
   skos:notation "AOM_000531" ;
   skos:prefLabel "Ingredient name"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:altLabel "Raw material name"@en ;
   skos:definition "any characteristics related to food raw material name- e.g. wheat flour, soybean meal"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> ;
@@ -5220,7 +5220,7 @@
   skos:notation "AOM_000532" ;
   skos:prefLabel "Ingredient part"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:altLabel "Raw material part"@en ;
   skos:definition "any measurable or observable characteristics related to the part of the food raw material entering in the composition of animal diet- e.g. bran, starch, beet…"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> ;
@@ -5231,7 +5231,7 @@
   skos:notation "AOM_000533" ;
   skos:prefLabel "Ingredient species"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:altLabel "Raw material species"@en ;
   skos:definition "any characteristics related to the botanical species of food raw material e.g. maize (Zea mays), peruvian anchoveta (Engraulis ringens), etc"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> ;
@@ -5242,7 +5242,7 @@
   skos:notation "AOM_000534" ;
   skos:prefLabel "Ingredient proportion"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:altLabel "Raw material proportion"@en ;
   skos:definition "any measurable or declared characteristics related to the proportion of food raw material in animal diet- e.g. 0.6 corn grain"@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> ;
@@ -5253,7 +5253,7 @@
   skos:notation "AOM_000535" ;
   skos:prefLabel "Ingredient source"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:altLabel "Raw material source"@en ;
   skos:definition "An AOM controlled category for “Ingredient source” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
@@ -5610,7 +5610,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Straw"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
@@ -5682,7 +5682,7 @@
   skos:prefLabel "Rice Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100861> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -5709,7 +5709,7 @@
   skos:altLabel "Milo Straw"@en ;
   skos:altLabel "Broomcorn Straw"@en ;
   skos:altLabel "Sorghum Threshed Tops"@en ;
-  skos:definition "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100863> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4558> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12618> .
@@ -5720,7 +5720,7 @@
   skos:prefLabel "Unspecified Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “unspecified” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “unspecified” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000594> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_7441> .
 
@@ -5730,7 +5730,7 @@
   skos:prefLabel "Barley Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “barley” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “barley” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100856> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_15941> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
@@ -5971,7 +5971,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Soybean Oil Cake Full Fat"@en ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Full-fat composition; presentation form — Cake form; processing method — Pressing; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Native-fat-retained composition; presentation form — Cake form; processing method — Pressing; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16043> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
@@ -6298,7 +6298,7 @@
   skos:altLabel "Whole Rice Ground"@en ;
   skos:altLabel "Whole Rice Milled"@en ;
   skos:altLabel "Whole Rice Meal"@en ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: composition state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100927> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_25500> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> .
@@ -6324,7 +6324,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Wheat Whole Ground"@en ;
-  skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+  skos:definition "A feed material with governed source identity “wheat” and characteristics: composition state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001319> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_25511> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> ;
@@ -6938,11 +6938,12 @@
 <urn:era-aom:livestock:AOM_000736> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000736" ;
-  skos:prefLabel "Supplement"@en ;
+  skos:prefLabel "Unresolved supplement classifications"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "An AOM controlled category for “Supplement” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  era:status "deprecated" ;
+  skos:altLabel "Supplement"@en ;
+  skos:definition "Deprecated legacy Supplement catch-all; resolved descendants moved to feed-material, formulation, additive, or chemical axes and unresolved descendants routed to explicit holds."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000737> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -6951,7 +6952,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Amino Acid” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101136> .
 
 <urn:era-aom:livestock:AOM_000738> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -6993,7 +6994,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Carboxymethyl Cellulose”, classified within “Binder”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000744> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7002,16 +7003,17 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Cement”, classified within “Binder”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000745> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000745" ;
   skos:prefLabel "Binder"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "An AOM controlled category for “Binder” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_000781> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_101079> .
 
 <urn:era-aom:livestock:AOM_000746> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7021,16 +7023,17 @@
   era:status "unknown" ;
   skos:altLabel "Chromic Oxide"@en ;
   skos:definition "A feed ingredient with governed workbook identity “Chromium Oxide”, classified within “Digestibility Marker”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000747> .
+  skos:broader <urn:era-aom:livestock:AOM_101147> .
 
 <urn:era-aom:livestock:AOM_000747> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000747" ;
   skos:prefLabel "Digestibility Marker"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "An AOM controlled category for “Digestibility Marker” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_000781> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_101151> .
 
 <urn:era-aom:livestock:AOM_000748> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7067,7 +7070,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "Enzyme supplements that are activated in the digestive system of an animal after ingestion. Enzymes that are involved in the pre-treatment of raw feed materials (which aims to enhance nutrient availability and digestibility before consumption by animals) should not be classified as supplements as they are a form of biological feed processing."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101137> .
 
 <urn:era-aom:livestock:AOM_000752> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7088,7 +7091,7 @@
   skos:altLabel "Baking Soda"@en ;
   skos:altLabel "Koek Soda"@en ;
   skos:definition "A feed ingredient with governed workbook identity “Bicarbonate of Soda”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_000754> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7106,7 +7109,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Chalk”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_000756> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7124,7 +7127,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Dicalcium Phosphate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_000758> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7134,7 +7137,7 @@
   era:status "unknown" ;
   skos:altLabel "Iodized Salt"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Iodated Salt”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_000759> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7156,7 +7159,7 @@
   skos:altLabel "Limestone"@en ;
   skos:altLabel "Unslacked Lime"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Lime”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_000763> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7174,7 +7177,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed material with governed source identity “mineral” and characteristics: presentation form — Block form."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_000765> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7183,7 +7186,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM feed material with governed operational source identity “Maclik”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000764> .
+  skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_000766> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7192,7 +7195,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Mineral Lick”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_000768> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7201,7 +7204,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Monocalcium Phosphate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_000770> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7224,7 +7227,7 @@
   skos:altLabel "Salt Course"@en ;
   skos:altLabel "Salt Lick"@en ;
   skos:definition "A feed ingredient with governed workbook identity “Salt”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_000774> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7251,7 +7254,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Tricalcium Phosphate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_000778> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7265,11 +7268,12 @@
 <urn:era-aom:livestock:AOM_000779> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000779" ;
-  skos:prefLabel "Mineral"@en ;
+  skos:prefLabel "Unresolved mineral classifications"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "An AOM controlled category for “Mineral” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:altLabel "Mineral"@en ;
+  skos:definition "Editorial grouping for former mineral-supplement terms whose chemical identity, product kind, or additive authorization remains unresolved."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000780> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7278,16 +7282,17 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Lecithin”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000781> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000781" ;
-  skos:prefLabel "Other Ingredients"@en ;
+  skos:prefLabel "Unresolved other-ingredient classifications"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
-  skos:definition "An AOM controlled category for “Other Ingredients” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  era:status "deprecated" ;
+  skos:altLabel "Other Ingredients"@en ;
+  skos:definition "Deprecated legacy Other Ingredients catch-all; resolved descendants moved to evidence-backed axes and unresolved descendants routed to explicit holds."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000782> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7296,7 +7301,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Antitoxins” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000783> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7306,7 +7311,7 @@
   era:status "unknown" ;
   skos:altLabel "Urea Molasses Multi-nutrient Block"@en ;
   skos:definition "A feed material with governed source identity “molasses urea” and characteristics: presentation form — Block form."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> ;
+  skos:broader <urn:era-aom:livestock:AOM_001491> ;
   skos:relatedMatch <https://www.feedipedia.org/node/564> .
 
 <urn:era-aom:livestock:AOM_000787> a skos:Concept ;
@@ -7316,7 +7321,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "2-hydroxy-N,N,N-trimethylethanaminium"@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000788> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7326,7 +7331,7 @@
   era:status "unknown" ;
   skos:altLabel "Cobalamin"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin B12”, classified within “Vitamin”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000789> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7336,7 +7341,7 @@
   era:status "unknown" ;
   skos:altLabel "Ascorbic Acid"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin C”, classified within “Vitamin”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000790> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7346,7 +7351,7 @@
   era:status "unknown" ;
   skos:altLabel "Tocopherol"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin E”, classified within “Vitamin”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000791> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7356,7 +7361,7 @@
   era:status "unknown" ;
   skos:altLabel "Vitamins"@en ;
   skos:definition "An AOM controlled category for “Vitamin Mix” within “Vitamin”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101141> .
 
 <urn:era-aom:livestock:AOM_000793> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7365,7 +7370,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Vitamin” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101136> .
 
 <urn:era-aom:livestock:AOM_000794> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7375,16 +7380,17 @@
   era:status "unknown" ;
   skos:altLabel "Minerals and Vitamins Premix"@en ;
   skos:definition "An AOM controlled category for “Minerals and Vitamins Mix” within “Mixture”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000795> .
+  skos:broader <urn:era-aom:livestock:AOM_101155> .
 
 <urn:era-aom:livestock:AOM_000795> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000795" ;
-  skos:prefLabel "Mixture"@en ;
+  skos:prefLabel "Mineral and vitamin feed mixtures"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "An AOM controlled category for “Mixture” within “Supplement”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:altLabel "Mixture"@en ;
+  skos:definition "Formulated mineral and vitamin feed mixtures; individual components and proportions require separate assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101155> .
 
 <urn:era-aom:livestock:AOM_000798> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7457,7 +7463,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Prebiotic” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101137> .
 
 <urn:era-aom:livestock:AOM_000808> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7475,7 +7481,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Essential Fatty Acid” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101147> .
 
 <urn:era-aom:livestock:AOM_000811> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -7484,7 +7490,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Herb or Extract” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000817> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -10050,7 +10056,7 @@
   skos:altLabel "Cupric Sulfate"@en ;
   skos:altLabel "Cupric Sulphate Anhydrous"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Copper Sulfate Anhydrous”, classified within “Copper”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000756> .
+  skos:broader <urn:era-aom:livestock:AOM_000779> .
 
 <urn:era-aom:livestock:AOM_001068> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -10059,7 +10065,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Pseudovitamin”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101147> .
 
 <urn:era-aom:livestock:AOM_001069> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -10264,7 +10270,7 @@
   era:status "unknown" ;
   skos:altLabel "Anti-aflatoxin"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Anti-mycotoxin”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101138> .
 
 <urn:era-aom:livestock:AOM_001094> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -11079,7 +11085,7 @@
   skos:prefLabel "Common Bean Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “common bean” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “common bean” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100866> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3885> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12006> .
@@ -11248,7 +11254,7 @@
   skos:prefLabel "Teff Straw Crushed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “teff” and characteristics: ingredient part — Straw; processing method — Crushing; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “teff” and characteristics: material component — Straw; processing method — Crushing; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_003102> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_110835> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12694> .
@@ -11427,7 +11433,7 @@
   era:status "unknown" ;
   skos:altLabel "Dolichos lablab Stover"@en ;
   skos:altLabel "Lablab Stover"@en ;
-  skos:definition "A feed material with governed source identity “lablab purpureus” and characteristics: ingredient part — Stover."@en ;
+  skos:definition "A feed material with governed source identity “lablab purpureus” and characteristics: material component — Stover."@en ;
   skos:broader <urn:era-aom:livestock:AOM_002204> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_35936> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12193> .
@@ -11622,7 +11628,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Berseem Straw"@en ;
-  skos:definition "A feed material with governed source identity “trifolium alexandrinum” and characteristics: ingredient part — Straw."@en ;
+  skos:definition "A feed material with governed source identity “trifolium alexandrinum” and characteristics: material component — Straw."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001240> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_97006> .
 
@@ -11753,7 +11759,7 @@
   skos:prefLabel "Wheat Straw Dried Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “wheat” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001887> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> .
@@ -11830,7 +11836,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Soybean Stover"@en ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/19916> .
@@ -11966,7 +11972,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Garden Pea Straw"@en ;
-  skos:definition "A feed material with governed source identity “pea” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “pea” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100873> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3888> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12929> .
@@ -12013,7 +12019,7 @@
   skos:prefLabel "Millet Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “millet” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “millet” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100859> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
@@ -12242,7 +12248,7 @@
   era:status "unknown" ;
   skos:altLabel "Maize Whole"@en ;
   skos:altLabel "Corn Whole"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: composition state — Whole-grain composition; ingredient part — Grain."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000648> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11662> .
@@ -12275,7 +12281,7 @@
   skos:prefLabel "Soybean Full Fat"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Full-fat composition."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Native-fat-retained composition."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001582> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_14477> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
@@ -12368,7 +12374,7 @@
   skos:altLabel "Maize Whole Meal"@en ;
   skos:altLabel "Corn Whole Milled"@en ;
   skos:altLabel "MaizeWhole Milled"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; material integrity — Whole-grain integrity; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: composition state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001313> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11662> .
@@ -12385,7 +12391,7 @@
   skos:altLabel "Maize Silage"@en ;
   skos:altLabel "Maize Whole Ensiled"@en ;
   skos:altLabel "Maize Whole Silage"@en ;
-  skos:definition "A feed material with governed source identity “crop maize” and characteristics: material component — Whole crop; processing method — Ensiling."@en ;
+  skos:definition "A feed material with governed source identity “crop maize” and characteristics: composition state — Whole-crop composition; processing method — Ensiling."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000648> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/13883> .
@@ -12710,7 +12716,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Ammonium Chloride”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001368> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12719,7 +12725,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Ammonium Sulphate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001369> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12728,7 +12734,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium Bicarbonate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001370> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12737,7 +12743,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium Carbonate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001371> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12746,7 +12752,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium Oxide”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001372> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12755,7 +12761,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Calcium Phosphate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001373> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12764,7 +12770,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed material with governed source identity “cellulose” and characteristics: product role — Binder role."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12423> .
 
 <urn:era-aom:livestock:AOM_001374> a skos:Concept ;
@@ -12774,7 +12780,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Gelatin”, classified within “Binder”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001375> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12793,7 +12799,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Dexapanthenol”, classified within “Vitamin”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001377> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -12813,7 +12819,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Magnesium Oxide”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001379> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13093,7 +13099,7 @@
   skos:prefLabel "Panicum maximum Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “panicum maximum” and characteristics: ingredient part — Straw."@en ;
+  skos:definition "A feed material with governed source identity “panicum maximum” and characteristics: material component — Straw."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001407> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_59788> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11523> .
@@ -13163,7 +13169,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Mineral Mix”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_001417> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13234,7 +13240,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Bentonite”, classified within “Binder”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001427> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13243,7 +13249,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Potassium Carbonate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001428> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13255,7 +13261,7 @@
   skos:altLabel "Minerals and Salt Block"@en ;
   skos:altLabel "Minerals and Salt Mix"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Minerals and Salt”, classified within “Mixture”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000795> .
+  skos:broader <urn:era-aom:livestock:AOM_101155> .
 
 <urn:era-aom:livestock:AOM_001431> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13265,7 +13271,7 @@
   era:status "unknown" ;
   skos:altLabel "Minerals and Urea Lick"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Minerals and Urea Mix”, classified within “Mixture”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000795> .
+  skos:broader <urn:era-aom:livestock:AOM_101155> .
 
 <urn:era-aom:livestock:AOM_001433> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13759,7 +13765,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed material with governed source identity “Lignobond” and characteristics: product role — Binder role."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001487> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13768,7 +13774,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Sodium Sulfate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001490> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13777,7 +13783,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Trimethyl Cellulose”, classified within “Binder”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001491> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13859,7 +13865,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A named feed-related product represented in the source workbook as “ACTIPAL HP 1”; available evidence does not establish whether it is a feed material, formulation, or additive."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001501> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13886,7 +13892,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Polyethylene”, classified within “Binder”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001504> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13895,7 +13901,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Polyethylene glycol”, classified within “Binder”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001505> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13904,7 +13910,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Polyvitamins”, classified within “Vitamin”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101141> .
 
 <urn:era-aom:livestock:AOM_001506> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -13921,7 +13927,7 @@
   skos:notation "AOM_001507" ;
   skos:prefLabel "Unspecified"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "An AOM controlled category for “Unspecified” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000781> .
 
@@ -14478,7 +14484,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Protein”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101023> .
 
 <urn:era-aom:livestock:AOM_001572> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -14487,7 +14493,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Casein”, classified within “Protein”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_001571> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001573> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -14526,7 +14532,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Carbohydrate”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101023> .
 
 <urn:era-aom:livestock:AOM_001578> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -14892,7 +14898,7 @@
   era:status "unknown" ;
   skos:altLabel "Corn Straw Dried Milled"@en ;
   skos:altLabel "Corn Straw Dried Meal"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
@@ -14975,7 +14981,7 @@
   skos:prefLabel "Wheat Straw Lime Treated Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “wheat lime treated” and characteristics: ingredient part — Straw; processing method — Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “wheat lime treated” and characteristics: material component — Straw; processing method — Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001887> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> .
@@ -15549,7 +15555,7 @@
   era:status "unknown" ;
   skos:altLabel "Corn Straw Ground"@en ;
   skos:altLabel "Corn Straw Meal"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
@@ -15562,7 +15568,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Straw Dried Ensiled Ground Urea Treated"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Ensiling, Grinding, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Ensiling, Grinding, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -15574,7 +15580,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Straw Dried"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
@@ -15587,7 +15593,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Coren Straw Urea Treated"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -15600,7 +15606,7 @@
   era:status "unknown" ;
   skos:altLabel "Corn Straw Milled Urea Treated"@en ;
   skos:altLabel "Corn Straw Meal Urea Treated"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -16202,7 +16208,7 @@
   skos:altLabel "Dicalcium Phosphate Dried Meal"@en ;
   skos:altLabel "Dicalcium Phosphate Dried Milled"@en ;
   skos:definition "A feed material with governed source identity “dicalcium phosphate” and characteristics: moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000757> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_001749> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -16214,7 +16220,7 @@
   skos:altLabel "Urea Block"@en ;
   skos:altLabel "urea Dried Ground"@en ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Urea”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101136> .
 
 <urn:era-aom:livestock:AOM_001750> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -16225,7 +16231,7 @@
   skos:altLabel "Wheat Stover"@en ;
   skos:altLabel "Wheat Straw Meal"@en ;
   skos:altLabel "Wheat Straw Milled"@en ;
-  skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “wheat” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001887> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> ;
@@ -16237,7 +16243,7 @@
   skos:prefLabel "Wheat Straw Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; processing method — Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “wheat” and characteristics: material component — Straw; processing method — Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001887> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> .
@@ -16476,7 +16482,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Trace-elements Mix”, classified within “Mineral Mix”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_001415> .
+  skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_001774> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17005,7 +17011,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Wood Charcoal”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001825> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17014,7 +17020,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Olaquindox”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001826> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17023,7 +17029,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed material with governed source identity “ChemBind” and characteristics: product role — Binder role."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001827> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17063,16 +17069,17 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM feed material with governed operational source identity “Vitalite”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100987> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001832> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_001832" ;
-  skos:prefLabel "Starch"@en ;
+  skos:prefLabel "Starch feed material"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed ingredient with governed workbook identity “Starch”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:altLabel "Starch"@en ;
+  skos:definition "Starch represented as a feed material; Starch constituent remains a separate chemical-constituent concept."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_001834> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17081,7 +17088,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin D3”, classified within “Vitamin”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001835> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17091,7 +17098,7 @@
   era:status "unknown" ;
   skos:altLabel "Oat Stover"@en ;
   skos:altLabel "Oat Stubble"@en ;
-  skos:definition "A feed material with governed source identity “oat” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “oat” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100860> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4498> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12389> .
@@ -17136,7 +17143,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Vitamin AD3E”, classified within “Vitamin”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000793> .
+  skos:broader <urn:era-aom:livestock:AOM_101141> .
 
 <urn:era-aom:livestock:AOM_001840> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17406,7 +17413,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Free Gossypol”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101147> .
 
 <urn:era-aom:livestock:AOM_001866> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17416,7 +17423,7 @@
   era:status "unknown" ;
   skos:altLabel "Glycerin"@en ;
   skos:definition "A feed ingredient with governed workbook identity “Glycerol”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_001867> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17425,7 +17432,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Sand”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001868> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17434,7 +17441,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM feed material with governed operational source identity “Toxynil”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001869> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17443,7 +17450,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Waste Activated Sludge”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001870> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17452,7 +17459,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A named protein feed material represented as “Prime Gluten 60”; detailed composition and manufacturing process are unspecified."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_001571> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001871> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17599,7 +17606,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Straw Ensiled Urea Treated"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -17610,7 +17617,7 @@
   skos:prefLabel "Wheat Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “wheat” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100864> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> ;
@@ -17648,7 +17655,7 @@
   era:status "unknown" ;
   skos:altLabel "Peanut Straw"@en ;
   skos:altLabel "Goober Straw"@en ;
-  skos:definition "A feed material with governed source identity “groundnut” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “groundnut” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100869> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_35679> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3818> .
@@ -17906,9 +17913,10 @@
   skos:notation "AOM_001917" ;
   skos:prefLabel "Unspecified Filler"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "An AOM controlled category for “Unspecified Filler” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_000781> ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_101152> .
 
 <urn:era-aom:livestock:AOM_001918> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17937,7 +17945,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM feed material with governed operational source identity “Vitalyte”. Component, whole-material integrity, processing method, presentation form, bulk consistency, moisture condition, product role, composition, constituent, and nutritional properties are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001922> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17946,7 +17954,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Water”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_001923> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19459,7 +19467,7 @@
   skos:altLabel "Dicalcium Phosphate Milled"@en ;
   skos:altLabel "Dicalcium Phosphate Meal"@en ;
   skos:definition "A feed material with governed source identity “dicalcium phosphate” and characteristics: presentation form — Comminuted particle form; processing method — Grinding."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000757> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_002077> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19535,7 +19543,7 @@
   skos:prefLabel "Spent Rice Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “spent rice” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “spent rice” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> .
@@ -19608,7 +19616,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed material with governed source identity “Cassava” and characteristics: product role — Binder role."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000745> ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3983> .
 
 <urn:era-aom:livestock:AOM_002092> a skos:Concept ;
@@ -19856,7 +19864,7 @@
   skos:prefLabel "Sorghum Straw Alkali Treated Dried"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Alkali treatment, Drying; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Alkali treatment, Drying; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000581> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4558> .
 
@@ -20168,7 +20176,7 @@
   era:status "unknown" ;
   skos:altLabel "Fossil Shell Flour"@en ;
   skos:definition "A feed material with governed source identity “fossil” and characteristics: ingredient part — Shell component; presentation form — Comminuted particle form; processing method — Grinding."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_002192> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21398,7 +21406,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Probiotic” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101137> .
 
 <urn:era-aom:livestock:AOM_003077> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21470,7 +21478,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Phosphate Salt Lick”, classified within “Salt”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000772> .
+  skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_003085> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21527,7 +21535,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Grazing” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_100853> .
 
 <urn:era-aom:livestock:AOM_003101> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21544,7 +21552,7 @@
   skos:prefLabel "Teff Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “teff” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “teff” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_006199> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_110835> ;
   skos:relatedMatch <https://www.feedipedia.org/node/22526> .
@@ -21619,7 +21627,7 @@
   era:status "unknown" ;
   skos:altLabel "Kitchen Waste"@en ;
   skos:definition "A feed material with governed source identity “Food Waste” and characteristics: product role — Waste role."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> ;
   skos:relatedMatch <https://www.feedipedia.org/node/614> .
 
 <urn:era-aom:livestock:AOM_003200> a skos:Concept ;
@@ -21638,7 +21646,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed material with governed source identity “urea salt lick” and characteristics: presentation form — Block form."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000772> .
+  skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_003202> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21656,7 +21664,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Wood Ash”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_003206> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21908,7 +21916,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Commercial Protein Supplement”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_001491> .
 
 <urn:era-aom:livestock:AOM_003582> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -21999,7 +22007,7 @@
   skos:prefLabel "Rice Straw Molasses Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; processing method — Molasses treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; processing method — Molasses treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -22079,7 +22087,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Lime Slaked”, classified within “Lime”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000760> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_003815> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -22189,7 +22197,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Bole Soil”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_003890> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -22873,7 +22881,7 @@
   skos:prefLabel "Finger Millet Straw"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “finger millet” and characteristics: ingredient part — Straw; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “finger millet” and characteristics: material component — Straw; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100858> .
 
 <urn:era-aom:livestock:AOM_004006> a skos:Concept ;
@@ -22946,11 +22954,12 @@
 <urn:era-aom:livestock:AOM_004433> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_004433" ;
-  skos:prefLabel "Anti-coccidia"@en ;
+  skos:prefLabel "Coccidiostats and histomonostats"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed-supplement ingredient with governed workbook identity “Anti-coccidia”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:altLabel "Anti-coccidia"@en ;
+  skos:definition "Feed-additive category for coccidiostats and histomonostats under applicable authorization conditions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101135> .
 
 <urn:era-aom:livestock:AOM_004500> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -22978,7 +22987,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Stover"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Stover; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Stover; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100851> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
@@ -22991,7 +23000,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Stover Urea Treated"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Stover; processing method — Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Stover; processing method — Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_006001> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -23326,7 +23335,7 @@
   skos:prefLabel "Barley Straw Fermented"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “barley” and characteristics: ingredient part — Straw; processing method — Fermentation; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “barley” and characteristics: material component — Straw; processing method — Fermentation; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000584> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_15941> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
@@ -23379,7 +23388,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Barley Straw Hay"@en ;
-  skos:definition "A feed material with governed source identity “barley” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “barley” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000584> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_15941> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
@@ -23403,7 +23412,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Berseem Straw Hay"@en ;
-  skos:definition "A feed material with governed source identity “trifolium alexandrinum” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying."@en ;
+  skos:definition "A feed material with governed source identity “trifolium alexandrinum” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001241> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_97006> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11852> .
@@ -23764,7 +23773,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Stover Silage"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Stover; processing method — Ensiling; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Stover; processing method — Ensiling; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_006001> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -24257,7 +24266,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed material with governed source identity “calcium carbonate” and characteristics: presentation form — Comminuted particle form; processing method — Grinding."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_001370> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_006125> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -24266,7 +24275,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Magnesium Sulfate”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000779> .
+  skos:broader <urn:era-aom:livestock:AOM_101139> .
 
 <urn:era-aom:livestock:AOM_006126> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -24333,7 +24342,7 @@
   skos:prefLabel "Millet Straw Ensiled Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “millet” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “millet” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001291> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -24423,7 +24432,7 @@
   era:status "unknown" ;
   skos:altLabel "Oat Stover Hay"@en ;
   skos:altLabel "Oat Stubble Hay"@en ;
-  skos:definition "A feed material with governed source identity “oat” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “oat” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001835> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4498> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12389> .
@@ -24633,7 +24642,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Straw Ensiled Urea Treated Wilted"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment, Wilting; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment, Wilting; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -24736,7 +24745,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Corn Straw Ensiled Fermented"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Ensiling, Fermentation; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Ensiling, Fermentation; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -24801,7 +24810,7 @@
   skos:prefLabel "Wheat Straw Ensiled"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; processing method — Ensiling; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “wheat” and characteristics: material component — Straw; processing method — Ensiling; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001887> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> .
@@ -24884,7 +24893,7 @@
   skos:prefLabel "Rice Straw Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -24896,7 +24905,7 @@
   skos:prefLabel "Rice Straw Dried"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -24908,7 +24917,7 @@
   skos:prefLabel "Rice Straw Dried Ensiled Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Ensiling, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Ensiling, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -25012,7 +25021,7 @@
   skos:prefLabel "Wheat Straw Ensiled Fermented"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “wheat” and characteristics: ingredient part — Straw; processing method — Ensiling, Fermentation; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “wheat” and characteristics: material component — Straw; processing method — Ensiling, Fermentation; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001887> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16066> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> .
@@ -25344,7 +25353,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Unspecified Yeast” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_006242> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -25361,7 +25370,7 @@
   skos:prefLabel "Unspecified Straw Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “unspecified” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “unspecified” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000582> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_7441> .
 
@@ -25466,7 +25475,7 @@
   skos:prefLabel "Teff Straw Ensiled Fermented Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “teff” and characteristics: ingredient part — Straw; processing method — Ensiling, Fermentation, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “teff” and characteristics: material component — Straw; processing method — Ensiling, Fermentation, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_003102> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_110835> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12694> .
@@ -25477,7 +25486,7 @@
   skos:prefLabel "Teff Straw Dried"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “teff” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “teff” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_003102> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_110835> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12694> .
@@ -25818,7 +25827,7 @@
   skos:prefLabel "Rice Straw Ensiled Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -25830,7 +25839,7 @@
   skos:prefLabel "Rice Straw Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; processing method — Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; processing method — Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -25842,7 +25851,7 @@
   skos:prefLabel "Rice Straw Dried Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -25854,7 +25863,7 @@
   skos:prefLabel "Rice Straw Fermented Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; presentation form — Comminuted particle form; processing method — Fermentation, Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; presentation form — Comminuted particle form; processing method — Fermentation, Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -25955,7 +25964,7 @@
   skos:prefLabel "Sorghum Straw Crushed"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; processing method — Crushing; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; processing method — Crushing; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000581> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4558> .
 
@@ -25965,7 +25974,7 @@
   skos:prefLabel "Sorghum Straw Crushed Dried Fermented"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Crushing, Drying, Fermentation; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Crushing, Drying, Fermentation; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000581> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4558> .
 
@@ -26011,7 +26020,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Soybean Stover Dried"@en ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001271> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/19916> .
@@ -26032,7 +26041,7 @@
   skos:prefLabel "Trifolium alexandrinum Straw Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “trifolium alexandrinum” and characteristics: ingredient part — Straw; processing method — Urea treatment."@en ;
+  skos:definition "A feed material with governed source identity “trifolium alexandrinum” and characteristics: material component — Straw; processing method — Urea treatment."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001241> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_97006> .
 
@@ -26082,7 +26091,7 @@
   skos:prefLabel "Sorghum Straw Dried Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “sorghum” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “sorghum” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000581> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4558> .
 
@@ -26108,11 +26117,12 @@
 <urn:era-aom:livestock:AOM_006334> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_006334" ;
-  skos:prefLabel "Protected Fat"@en ;
+  skos:prefLabel "Rumen-protected fat feed materials"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed-supplement ingredient with governed workbook identity “Protected Fat”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:altLabel "Protected Fat"@en ;
+  skos:definition "Feed-material category for fat products whose rumen protection is supported by product or process evidence; drying, physical form, and feeding rate require separate assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_006335> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -26130,7 +26140,7 @@
   skos:prefLabel "Rice Straw Dried Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -26142,7 +26152,7 @@
   skos:prefLabel "Rice Straw Dried Fermented Ground"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Fermentation, Grinding; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Fermentation, Grinding; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -26166,7 +26176,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed-supplement ingredient with governed workbook identity “Anti fungi”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:broader <urn:era-aom:livestock:AOM_101138> .
 
 <urn:era-aom:livestock:AOM_006340> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -26213,7 +26223,7 @@
   skos:prefLabel "Soybean Straw Dried Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001271> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/19916> .
@@ -26255,7 +26265,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Pleurotus ostreatus”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_006350> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -26483,7 +26493,7 @@
   skos:prefLabel "Finger Millet Straw Ensiled Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “finger millet” and characteristics: ingredient part — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “finger millet” and characteristics: material component — Straw; processing method — Ensiling, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_004005> .
 
 <urn:era-aom:livestock:AOM_006375> a skos:Concept ;
@@ -26554,7 +26564,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Organic Acid” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101147> .
 
 <urn:era-aom:livestock:AOM_006395> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -26572,7 +26582,7 @@
   skos:prefLabel "Soybean Straw Dried Molasses Treated Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: ingredient part — Straw; moisture condition — Dried moisture condition; processing method — Drying, Molasses treatment, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: material component — Straw; moisture condition — Dried moisture condition; processing method — Drying, Molasses treatment, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001271> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
   skos:relatedMatch <https://www.feedipedia.org/node/19916> .
@@ -26583,7 +26593,7 @@
   skos:prefLabel "Maize Straw Molasses Treated Urea Treated"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Straw; processing method — Molasses treatment, Urea treatment; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: material component — Straw; processing method — Molasses treatment, Urea treatment; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000572> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_a40b4471> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> .
@@ -26699,7 +26709,7 @@
   skos:prefLabel "Rice Straw Ensiled"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: ingredient part — Straw; processing method — Ensiling; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: material component — Straw; processing method — Ensiling; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000579> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16032> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> ;
@@ -28031,26 +28041,28 @@
   skos:prefLabel "Processed food by-products"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Grouping for processed-food residues; processing state remains represented by narrower feed-material concepts."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:definition "Feed-material category for former foodstuffs and processed-food production residues used as feed; product or waste role remains explicit."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_100988> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_100988" ;
-  skos:prefLabel "Untreated organic-waste feed materials"@en ;
+  skos:prefLabel "Untreated organic-waste feed classification holds"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Grouping for untreated organic waste; processing state remains represented by narrower feed-material concepts."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000781> .
+  skos:altLabel "Untreated organic-waste feed materials"@en ;
+  skos:definition "Editorial grouping for untreated organic-waste source terms whose safety and regulatory suitability as feed remain unresolved."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_100989> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_100989" ;
-  skos:prefLabel "Microalgae supplements"@en ;
+  skos:prefLabel "Microalgal feed materials"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Grouping for microalgae; processing state remains represented by narrower feed-material concepts."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000736> .
+  skos:altLabel "Microalgae supplements"@en ;
+  skos:definition "Feed materials derived from microalgal biomass; source taxon and processing remain explicit."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_100990> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28316,12 +28328,13 @@
 <urn:era-aom:livestock:AOM_101019> a skos:Concept, aom:FeedMaterialPartCategory ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101019" ;
-  skos:prefLabel "Feed-material anatomical parts"@en ;
+  skos:prefLabel "Anatomical components"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Ingredient anatomical parts"@en ;
-  skos:definition "Biological structures represented as components of feed materials."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000328> .
+  skos:altLabel "Feed-material anatomical parts"@en ;
+  skos:definition "Biological anatomical structures represented as components of feed materials."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101085> .
 
 <urn:era-aom:livestock:AOM_101020> a skos:Concept, aom:FeedPresentationForm ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28333,14 +28346,15 @@
   skos:definition "Shapes and particle presentations applicable to feed materials or formulated feeds independently of moisture and bulk consistency."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000328> .
 
-<urn:era-aom:livestock:AOM_101022> a skos:Concept, aom:ProductRole ;
+<urn:era-aom:livestock:AOM_101022> a skos:Concept, aom:FeedRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101022" ;
-  skos:prefLabel "Feed-material product roles"@en ;
+  skos:prefLabel "Feed roles"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Ingredient product roles"@en ;
-  skos:definition "Economic or production roles of feed materials, including product and by-product roles."@en ;
+  skos:altLabel "Feed-material product roles"@en ;
+  skos:definition "Product, functional, or experimental roles borne by feed-related materials, products, or substances independently of identity."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000328> .
 
 <urn:era-aom:livestock:AOM_101023> a skos:Concept, aom:ChemicalConstituent ;
@@ -28350,8 +28364,8 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Ingredient constituents"@en ;
-  skos:definition "Chemical substances or chemically defined fractions that primarily characterize feed materials; these are not ingredient components of formulated feeds."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000328> .
+  skos:definition "Chemical substances or chemically defined fractions asserted as primary constituents of feed materials."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101146> .
 
 <urn:era-aom:livestock:AOM_101024> a skos:Concept, aom:FeedMaterialPartCategory ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28639,7 +28653,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101022> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101056> a skos:Concept, aom:ProductRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28648,7 +28662,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101022> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101057> a skos:Concept, aom:ProductRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28657,7 +28671,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101062> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101058> a skos:Concept, aom:ProductRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28666,7 +28680,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101062> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101059> a skos:Concept, aom:ProductRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28675,7 +28689,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101062> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101060> a skos:Concept, aom:ProductRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28684,7 +28698,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101062> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101061> a skos:Concept, aom:ProductRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28693,7 +28707,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101022> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28702,7 +28716,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "A product role for material obtained alongside or remaining after production or processing of a principal product and retained for another use, including as feed."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101022> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101063> a skos:Concept, aom:ProductRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28711,7 +28725,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101062> .
+  skos:broader <urn:era-aom:livestock:AOM_101148> .
 
 <urn:era-aom:livestock:AOM_101064> a skos:Concept, aom:ChemicalConstituent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28748,17 +28762,6 @@
   era:status "unknown" ;
   skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101023> .
-
-<urn:era-aom:livestock:AOM_101068> a skos:Concept, aom:ProcessingMethod ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101068" ;
-  skos:prefLabel "Brewhouse processing"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:altLabel "Brewing"@en ;
-  skos:definition "Mashing, lautering, boiling, or related brewhouse operations represented separately from microbial fermentation."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000826> ;
-  skos:broader <urn:era-aom:livestock:AOM_101130> .
 
 <urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28844,14 +28847,15 @@
   skos:definition "Moist fibrous or cellular bulk consistency, commonly semisolid; source and production process remain independently represented."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101132> .
 
-<urn:era-aom:livestock:AOM_101079> a skos:Concept, aom:ProductRole ;
+<urn:era-aom:livestock:AOM_101079> a skos:Concept, aom:FeedFunctionalRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101079" ;
   skos:prefLabel "Binder role"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Binder"@en ;
   skos:definition "Governed product role value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101022> .
+  skos:broader <urn:era-aom:livestock:AOM_101149> .
 
 <urn:era-aom:livestock:AOM_101080> a skos:Concept, aom:ChemicalConstituent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28895,17 +28899,18 @@
   skos:prefLabel "Feed material components"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Reviewed material scopes and components that are not limited to anatomical parts."@en ;
+  skos:definition "Anatomical structures, processed fractions, body substances, or collective material scopes represented as components of feed materials."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000328> .
 
-<urn:era-aom:livestock:AOM_101086> a skos:Concept, aom:FeedMaterialComponent ;
+<urn:era-aom:livestock:AOM_101086> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101086" ;
-  skos:prefLabel "Whole crop"@en ;
+  skos:prefLabel "Whole-crop composition"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed material component value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101085> .
+  skos:altLabel "Whole crop"@en ;
+  skos:definition "Composition state indicating retention of the harvested whole-crop scope rather than one component part."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101115> .
 
 <urn:era-aom:livestock:AOM_101088> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28945,14 +28950,14 @@
   skos:definition "Moistening and softening feed materials, also called steeping, to facilitate water uptake, coat removal, cooking, germination, or reduction of some antinutritional factors."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000845> .
 
-<urn:era-aom:livestock:AOM_101103> a skos:Concept, aom:FeedMaterialPartCategory ;
+<urn:era-aom:livestock:AOM_101103> a skos:Concept, aom:FeedMaterialComponent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101103" ;
   skos:prefLabel "Blood component"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed blood component value used for feed-material semantics; distinguished from the feed-material concept labeled Blood."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101019> .
+  skos:definition "Animal body substance represented as a feed-material component; distinct from Blood feed material."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101145> .
 
 <urn:era-aom:livestock:AOM_101104> a skos:Concept, aom:FeedMaterialComponent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28960,26 +28965,26 @@
   skos:prefLabel "Bran"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A material fraction separated from cereal grain during milling and consisting mainly of outer grain layers with variable attached endosperm."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101085> .
+  skos:definition "Cereal outer-layer milling fraction with variable attached endosperm; represented as a processed material fraction."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101144> .
 
-<urn:era-aom:livestock:AOM_101105> a skos:Concept, aom:FeedMaterialPartCategory ;
+<urn:era-aom:livestock:AOM_101105> a skos:Concept, aom:FeedMaterialComponent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101105" ;
   skos:prefLabel "Stover"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101019> .
+  skos:definition "Composite crop-residue component remaining after grain or seed harvest; not one anatomical structure."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101154> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialPartCategory ;
+<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101106" ;
   skos:prefLabel "Straw"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed anatomical part value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101019> .
+  skos:definition "Composite crop-residue component consisting mainly of dried cereal or legume stems and leaves after harvest; not one anatomical structure."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101154> .
 
 <urn:era-aom:livestock:AOM_101107> a skos:Concept, aom:FeedMaterialPartCategory ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28999,25 +29004,16 @@
   skos:definition "Governed presentation form value used for feed-material semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101020> .
 
-<urn:era-aom:livestock:AOM_101109> a skos:Concept, aom:MaterialIntegrity ;
-  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
-  skos:notation "AOM_101109" ;
-  skos:prefLabel "Material integrity"@en ;
-  era:conceptType "aom_concept" ;
-  era:status "unknown" ;
-  skos:altLabel "Material integrity values"@en ;
-  skos:definition "Compositional or anatomical integrity retained by a feed material independently of particle presentation and processing."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000328> .
-
-<urn:era-aom:livestock:AOM_101110> a skos:Concept, aom:MaterialIntegrity ;
+<urn:era-aom:livestock:AOM_101110> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101110" ;
-  skos:prefLabel "Whole-grain integrity"@en ;
+  skos:prefLabel "Whole-grain composition"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Whole grain"@en ;
-  skos:definition "Retention of characteristic anatomical fractions of a cereal grain independently of particle-size reduction."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101109> .
+  skos:altLabel "Whole-grain integrity"@en ;
+  skos:definition "Component-retention state in which bran, germ, and endosperm remain in characteristic proportions independently of particle-size reduction."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101115> .
 
 <urn:era-aom:livestock:AOM_101111> a skos:Concept, aom:FeedProductType ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29055,16 +29051,17 @@
   skos:definition "Governed feed product type value used for feed-material semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101111> .
 
-<urn:era-aom:livestock:AOM_101115> a skos:Concept, aom:CompositionState ;
+<urn:era-aom:livestock:AOM_101115> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101115" ;
-  skos:prefLabel "Composition states"@en ;
+  skos:prefLabel "Native-component retention states"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed composition state vocabulary used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000328> .
+  skos:altLabel "Composition states"@en ;
+  skos:definition "Composition states defined by positive retention of native material components or chemical constituents."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000196> .
 
-<urn:era-aom:livestock:AOM_101116> a skos:Concept, aom:CompositionState ;
+<urn:era-aom:livestock:AOM_101116> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101116" ;
   skos:prefLabel "Whole-milk composition"@en ;
@@ -29174,8 +29171,7 @@
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:definition "Thermal processing of animal by-products to separate or stabilize feed materials."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000826> ;
-  skos:broader <urn:era-aom:livestock:AOM_101130> .
+  skos:broader <urn:era-aom:livestock:AOM_000826> .
 
 <urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29189,11 +29185,12 @@
 <urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101130" ;
-  skos:prefLabel "Feed separation processes"@en ;
+  skos:prefLabel "Feed component separation processes"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Feed separation and fractionation processes"@en ;
-  skos:definition "Feed processes whose objective includes separating components or fractions of a source material."@en ;
+  skos:altLabel "Feed separation processes"@en ;
+  skos:definition "Feed processes whose objective includes removing, separating, or recovering a material component or fraction."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000845> .
 
 <urn:era-aom:livestock:AOM_101131> a skos:Concept, aom:ProcessingMethod ;
@@ -29225,11 +29222,203 @@
   skos:definition "Qualitative moisture conditions applicable to feed materials or formulated feeds independently of particle presentation and bulk consistency."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000328> .
 
-<urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:CompositionState ;
+<urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101134" ;
-  skos:prefLabel "Full-fat composition"@en ;
+  skos:prefLabel "Native-fat-retained composition"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Composition state indicating that native fat has not been intentionally removed; it does not assert a measured fat concentration."@en ;
+  skos:altLabel "Full-fat composition"@en ;
+  skos:definition "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101115> .
+
+<urn:era-aom:livestock:AOM_101135> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101135" ;
+  skos:prefLabel "Feed additives"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Feed products intentionally added for a technological, sensory, nutritional, zootechnical, coccidiostatic, or histomonostatic function; authorization conditions require dated regulatory evidence."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101136> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101136" ;
+  skos:prefLabel "Nutritional feed additives"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Feed-additive category for vitamins, trace-element compounds, amino acids, urea, and related authorized nutritional additive groups."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101135> .
+
+<urn:era-aom:livestock:AOM_101137> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101137" ;
+  skos:prefLabel "Zootechnical feed additives"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Feed-additive category for substances or preparations used to affect animal performance, digestibility, or gut flora under authorized conditions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101135> .
+
+<urn:era-aom:livestock:AOM_101138> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101138" ;
+  skos:prefLabel "Technological feed additives"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Feed-additive category for substances or preparations used for technological functions in feed, including preservation and contaminant reduction where authorized."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101135> .
+
+<urn:era-aom:livestock:AOM_101139> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101139" ;
+  skos:prefLabel "Mineral feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Mineral substances or products represented as feed materials; chemical composition and authorization as an additive require separate assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
+
+<urn:era-aom:livestock:AOM_101140> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101140" ;
+  skos:prefLabel "Mineral complementary feeds"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Formulated complementary feeds whose governed identity is a mineral block, lick, salt lick, or mineral mixture."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_001491> .
+
+<urn:era-aom:livestock:AOM_101141> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101141" ;
+  skos:prefLabel "Vitamin premixtures and complementary feeds"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Multi-component vitamin preparations represented as premixtures or complementary feeds rather than single vitamin substances."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_001491> .
+
+<urn:era-aom:livestock:AOM_101142> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101142" ;
+  skos:prefLabel "Feed classification holds"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Editorial grouping for active source terms whose feed product kind, chemical identity, intended use, safety, or regulatory class remains unresolved; membership asserts no feed-material, formulation, or additive class."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101143> a skos:Concept, aom:FeedMaterialComponent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101143" ;
+  skos:prefLabel "Processed material fractions"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Material components or fractions produced or recovered through processing rather than one anatomical structure."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101085> .
+
+<urn:era-aom:livestock:AOM_101144> a skos:Concept, aom:FeedMaterialComponent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101144" ;
+  skos:prefLabel "Cereal milling fractions"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Cereal-grain material fractions separated or recovered during milling, including bran and related fractions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101143> .
+
+<urn:era-aom:livestock:AOM_101145> a skos:Concept, aom:FeedMaterialComponent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101145" ;
+  skos:prefLabel "Animal body substances"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Animal-derived body substances represented as feed-material components without treating them as connected anatomical structures."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101085> .
+
+<urn:era-aom:livestock:AOM_101146> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101146" ;
+  skos:prefLabel "Feed chemical entities"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Chemical substances and constituent categories used to describe feed identity or composition independently of feed product kind or additive function."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .
+
+<urn:era-aom:livestock:AOM_101147> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101147" ;
+  skos:prefLabel "Feed chemical substances"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101146> .
+
+<urn:era-aom:livestock:AOM_101148> a skos:Concept, aom:ProductRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101148" ;
+  skos:prefLabel "Feed product roles"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Economic or production roles borne by feed materials, including product, by-product, residue, and waste roles."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101149> a skos:Concept, aom:FeedFunctionalRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101149" ;
+  skos:prefLabel "Feed functional roles"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Functions borne by substances or products in feed, represented independently of their material, formulation, additive, or chemical identity."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101150> a skos:Concept, aom:ExperimentalFeedRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101150" ;
+  skos:prefLabel "Feed experimental roles"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Roles borne by substances or products because of their use in an experimental design or measurement method."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101022> .
+
+<urn:era-aom:livestock:AOM_101151> a skos:Concept, aom:ExperimentalFeedRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101151" ;
+  skos:prefLabel "Digestibility-marker role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:altLabel "Digestibility Marker"@en ;
+  skos:definition "Experimental role borne by a marker substance used to estimate digestibility or passage without making marker function its chemical identity."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101150> .
+
+<urn:era-aom:livestock:AOM_101152> a skos:Concept, aom:FeedFunctionalRole ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101152" ;
+  skos:prefLabel "Filler role"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:altLabel "Unspecified Filler"@en ;
+  skos:definition "Functional role borne by a material or product used to add bulk or carrier mass; bearer identity requires a separate assertion."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101149> .
+
+<urn:era-aom:livestock:AOM_101153> a skos:Concept, aom:FeedMaterialPartCategory ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101153" ;
+  skos:prefLabel "Endosperm"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Seed tissue that stores nutrient reserves and forms a retained component of whole cereal grain."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101154> a skos:Concept, aom:FeedMaterialComponent ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101154" ;
+  skos:prefLabel "Composite crop-residue components"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Collective crop-residue components such as straw or stover that contain multiple anatomical structures."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101085> .
+
+<urn:era-aom:livestock:AOM_101155> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101155" ;
+  skos:prefLabel "Mineral and vitamin complementary feeds"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_001491> .

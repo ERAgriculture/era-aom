@@ -39,7 +39,10 @@ facet_composed = {
 }
 structure_replaced = {
     row["concept_id"] for row in definitions
-    if row["definition_method"] == "feed_structure_definition_replacement"
+    if row["definition_method"] in {
+        "feed_structure_definition_replacement",
+        "feed_taxonomy_axis_definition_replacement",
+    }
 }
 assert defined <= approved
 assert defined | (facet_composed & approved) | (structure_replaced & approved) == approved

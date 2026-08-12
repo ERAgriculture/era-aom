@@ -35,7 +35,7 @@ assert {
     (row["target_property"], row["target_concept_id"])
     for row in facets if row["feed_material_id"] == "AOM_001326"
 } == {
-    ("aom:materialComponent", "AOM_101086"),
+    ("aom:compositionState", "AOM_101086"),
     ("aom:processingMethod", "AOM_000831"),
 }
 assert not any(row["feed_material_id"] == "AOM_006072" for row in facets)

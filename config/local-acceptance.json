@@ -1,7 +1,7 @@
 {
-  "expected_concepts": 2771,
-  "expected_hierarchy_relations": 2788,
-  "minimum_graph_triples": 28638,
+  "expected_concepts": 2790,
+  "expected_hierarchy_relations": 2805,
+  "minimum_graph_triples": 29564,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
   "representative_label": "Whole-grain maize",
@@ -20,7 +20,7 @@
   "expected_top_concepts": ["AOM_000001", "AOM_000106", "AOM_000358", "AOM_000846"],
   "maximum_response_seconds": 5.0,
   "representative_checks": [
-    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "Whole-grain integrity"},
+    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "Whole-grain composition"},
     {"concept_id": "AOM_100850", "label": "Feed materials", "definition_contains": "formulated feeds"},
     {"concept_id": "AOM_001491", "label": "Formulated feeds", "definition_contains": "component feed materials"},
     {"concept_id": "AOM_001326", "label": "Whole-crop maize silage", "definition_contains": "Ensiling"},
@@ -33,6 +33,11 @@
     {"concept_id": "AOM_000748", "label": "Asperozym (Fibrolytic Enzymes)", "definition_contains": "unspecified"},
     {"concept_id": "AOM_000693", "label": "Grass Local", "definition_contains": "unspecified"},
     {"concept_id": "AOM_000638", "label": "Cassava Shaft", "definition_contains": "By-product role"},
-    {"concept_id": "AOM_006072", "label": "Maize Whole Ensiled", "status": "deprecated", "replaced_by": "AOM_001326"}
+    {"concept_id": "AOM_006072", "label": "Maize Whole Ensiled", "status": "deprecated", "replaced_by": "AOM_001326"},
+    {"concept_id": "AOM_101135", "label": "Feed additives", "definition_contains": "intentionally added"},
+    {"concept_id": "AOM_101142", "label": "Feed classification holds", "definition_contains": "unresolved"},
+    {"concept_id": "AOM_101104", "label": "Bran", "definition_contains": "milling fraction"},
+    {"concept_id": "AOM_101110", "label": "Whole-grain composition", "definition_contains": "bran, germ, and endosperm"},
+    {"concept_id": "AOM_101130", "label": "Feed component separation processes", "definition_contains": "removing"}
   ]
 }

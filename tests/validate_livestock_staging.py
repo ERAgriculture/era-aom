@@ -22,6 +22,7 @@ replacements = read("approved_mapping_replacements")
 mapping_reviews = read("approved_mapping_reviews")
 mapping_additions = read("approved_mapping_additions")
 deprecations = read("approved_deprecations")
+retirements = read("approved_concept_retirements")
 label_corrections = read("approved_label_corrections")
 label_additions = read("approved_label_additions")
 label_suppressions = read("approved_label_suppressions")
@@ -31,6 +32,10 @@ semantic_relations = read("approved_semantic_relations")
 reparentings = read("approved_reparentings")
 hierarchy_revisions = read("approved_hierarchy_revisions")
 formulation_classifications = read("approved_feed_formulation_classifications")
+taxonomy_classifications = read("approved_feed_taxonomy_classifications")
+concept_semantic_types = read("approved_concept_semantic_types")
+feed_role_assertions = read("approved_feed_role_assertions")
+component_retention_relations = read("approved_component_retention_relations")
 semantic_bindings = read("approved_semantic_bindings")
 semantic_value_bindings = read("approved_semantic_value_bindings")
 component_classifications = read("approved_ingredient_component_classifications")
@@ -48,7 +53,7 @@ manifest = json.loads((DIST / "manifest.json").read_text())
 ids = [row["concept_id"] for row in concepts]
 known = set(ids)
 assert len(legacy) == 2503
-assert len(ids) == 2771 and len(ids) == len(known)
+assert len(ids) == 2790 and len(ids) == len(known)
 assert "AOM_006275" in known
 assert "duplicate_concept_id" not in {row["reason"] for row in quarantine}
 assert "duplicate_derived_path" in {row["reason"] for row in quarantine}
@@ -75,7 +80,12 @@ assert {row["resolved_concept_id"] for row in resolutions} == {
     "AOM_006275", "AOM_001676",
 }
 assert len(replacements) == 3
-assert len(deprecations) == 29
+assert len(deprecations) == 32
+assert len(retirements) == 8
+assert len(taxonomy_classifications) == 220
+assert len(concept_semantic_types) == 21
+assert len(feed_role_assertions) == 16
+assert len(component_retention_relations) == 5
 assert len(semantic_bindings) == 13
 assert len(semantic_value_bindings) == 298
 assert len(component_classifications) == 83
@@ -85,7 +95,7 @@ assert all(row["reviewer"] == "Pete Steward" for row in component_classification
 assert sum(row["disposition"] == "review_single" for row in component_classifications) == 52
 assert sum(row["disposition"] == "decompose" for row in component_classifications) == 29
 assert sum(row["disposition"] == "hold" for row in component_classifications) == 2
-assert len(facet_concepts) == 116
+assert len(facet_concepts) == 124
 assert len(harmonization_rules) == 40
 assert len(generated_material_facets) == 1599
 assert len(hard_tail_material_facets) == 154
@@ -93,7 +103,7 @@ assert len(structural_material_facets) == 1159
 assert len(whole_grain_decisions) == 4
 assert len(source_overrides) == 15
 assert len(component_value_mappings) == 46
-assert len(component_decompositions) == 65
+assert len(component_decompositions) == 64
 assert len(component_value_holds) == 9
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_concepts
@@ -138,27 +148,35 @@ assert expected_deprecations == {
     ("AOM_000926", "AOM_000897"),
     ("AOM_000927", "AOM_000898"),
     ("AOM_000841", "AOM_000833"),
+    ("AOM_000745", "AOM_101079"),
+    ("AOM_000747", "AOM_101151"),
+    ("AOM_001917", "AOM_101152"),
 }
 assert manifest["counts"]["approved_semantic_bindings"] == 13
 assert manifest["counts"]["approved_mapping_reviews"] == 383
 assert manifest["counts"]["approved_semantic_value_bindings"] == 298
 assert manifest["counts"]["approved_ingredient_component_classifications"] == 83
-assert manifest["counts"]["approved_ingredient_facet_concepts"] == 116
+assert manifest["counts"]["approved_ingredient_facet_concepts"] == 124
 assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
 assert manifest["counts"]["approved_generated_feed_material_facets"] == 1599
 assert manifest["counts"]["approved_hard_tail_feed_material_facets"] == 154
 assert manifest["counts"]["approved_structural_feed_material_facets"] == 1159
-assert manifest["counts"]["approved_hierarchy_revisions"] == 32
+assert manifest["counts"]["approved_hierarchy_revisions"] == 128
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
 assert manifest["counts"]["approved_feed_material_source_overrides"] == 15
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 46
-assert manifest["counts"]["approved_ingredient_component_decompositions"] == 65
+assert manifest["counts"]["approved_ingredient_component_decompositions"] == 64
 assert manifest["counts"]["approved_ingredient_component_value_holds"] == 9
 assert manifest["counts"]["approved_feed_formulation_classifications"] == 29
-assert len(label_corrections) == 25
-assert len(label_additions) == 13
+assert manifest["counts"]["approved_feed_taxonomy_classifications"] == 220
+assert manifest["counts"]["approved_concept_semantic_types"] == 21
+assert manifest["counts"]["approved_feed_role_assertions"] == 16
+assert manifest["counts"]["approved_component_retention_relations"] == 5
+assert manifest["counts"]["approved_concept_retirements"] == 8
+assert len(label_corrections) == 32
+assert len(label_additions) == 20
 assert len(label_suppressions) == 6
-assert len(new_concepts) == 270
+assert len(new_concepts) == 289
 new_by_case = {row["case_id"]: row for row in new_concepts}
 assert {
     "PARENT-006", "PARENT-007", "PARENT-036", "PARENT-078", "PARENT-200",
@@ -222,7 +240,7 @@ final_mint_cases = {
 }
 assert final_mint_cases <= set(new_by_case)
 assert {row["concept_id"] for row in id_registry} == {
-    f"AOM_{number:06d}" for number in range(100849, 101135)
+    f"AOM_{number:06d}" for number in range(100849, 101156)
 }
 assert {
     row["concept_id"] for row in id_registry
@@ -234,7 +252,7 @@ assert {
 } == {
     row["generated_id"] for row in read("approved_identity_integrity_remediations")
     if row["action"] == "reuse_existing"
-}
+} | {"AOM_101068", "AOM_101109"}
 status = {row["concept_id"]: row["status"] for row in concepts}
 assert status["AOM_001884"] == "deprecated"
 assert status["AOM_004000"] == "deprecated"
@@ -244,6 +262,7 @@ assert all(status[concept_id] == "deprecated" for concept_id in {
     deprecated_id
     for deprecated_id, replacement_id in expected_deprecations
 })
+assert all(status[row["concept_id"]] == "deprecated" for row in retirements)
 brewers_pref = next(
     row["label"] for row in labels
     if row["concept_id"] == "AOM_000564" and row["label_type"] == "pref"
@@ -271,10 +290,14 @@ assert ("AOM_100849", "broader", "AOM_000196") in {
 }
 assert not any(row["child_id"] in mineral_children for row in gaps)
 ingredient_children = set(new_by_case["PARENT-007"]["child_ids"].split(";"))
+moved_ingredient_children = {
+    row["child_id"] for row in hierarchy_revisions
+    if row["remove_parent_id"] == "AOM_100850"
+}
 assert {
     row["subject_id"] for row in relations
     if row["relation_type"] == "broader" and row["object_id"] == "AOM_100850"
-} >= ingredient_children - {"AOM_001491"}
+} >= ingredient_children - moved_ingredient_children
 assert not any(
     row["subject_id"] == "AOM_001491" and row["object_id"] == "AOM_100850"
     for row in relations if row["relation_type"] == "broader"
@@ -356,9 +379,7 @@ expected_polyhierarchies = {
     "AOM_000893": {"AOM_000848", "AOM_000849"},
     "AOM_000833": {"AOM_000826", "AOM_000837", "AOM_101131"},
     "AOM_000838": {"AOM_000837", "AOM_101129", "AOM_101130"},
-    "AOM_101128": {"AOM_000826", "AOM_101130"},
     "AOM_101124": {"AOM_000826", "AOM_101130"},
-    "AOM_101068": {"AOM_000826", "AOM_101130"},
 }
 for concept_id, expected_parents in expected_polyhierarchies.items():
     actual_parents = staging_nodes[concept_id]["skos:broader"]
@@ -367,16 +388,21 @@ for concept_id, expected_parents in expected_polyhierarchies.items():
         value["@id"].rsplit(":", 1)[-1]
         for value in actual_parents
     } == expected_parents
+assert staging_nodes["AOM_101128"]["skos:broader"]["@id"].endswith("AOM_000826")
 assert len(reparentings) == 64
-assert len(hierarchy_revisions) == 32
+assert len(hierarchy_revisions) == 128
 assert len(formulation_classifications) == 29
 for reparenting in reparentings:
     children = set(reparenting["child_ids"].split(";"))
+    subsequently_moved = {
+        row["child_id"] for row in hierarchy_revisions
+        if row["remove_parent_id"] == reparenting["target_parent_id"]
+    }
     assert {
         row["subject_id"] for row in relations
         if row["relation_type"] == "broader"
         and row["object_id"] == reparenting["target_parent_id"]
-    } >= children
+    } >= children - subsequently_moved
     assert not any(row["child_id"] in children for row in gaps)
 assert new_by_case["PARENT-099"]["broader_id"] == "AOM_000615"
 assert new_by_case["PARENT-099"]["preferred_label"] == "African yam bean by-products"
@@ -426,6 +452,13 @@ assert corrected_labels == {
     "AOM_001510": "Fresh moisture condition",
     "AOM_001491": "Formulated feeds",
     "AOM_003098": "Sprouting",
+    "AOM_000736": "Unresolved supplement classifications",
+    "AOM_000779": "Unresolved mineral classifications",
+    "AOM_000781": "Unresolved other-ingredient classifications",
+    "AOM_000795": "Mineral and vitamin feed mixtures",
+    "AOM_001832": "Starch feed material",
+    "AOM_004433": "Coccidiostats and histomonostats",
+    "AOM_006334": "Rumen-protected fat feed materials",
 }
 for correction in label_corrections:
     if correction["old_label"].casefold() != correction["new_label"].casefold():

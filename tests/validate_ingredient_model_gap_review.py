@@ -21,7 +21,7 @@ summary = json.loads((REVIEW / "ingredient_model_gap_summary.json").read_text())
 
 assert summary == {
     "remaining_exceptions": 0, "model_gap_families": 0,
-    "remaining_signature_clusters": 1, "governed_label_overrides": 17,
+    "remaining_signature_clusters": 1, "governed_label_overrides": 24,
     "high_confidence_deprecation_reviews": 0, "automatic_identity_changes": 0,
 }
 assert not gaps
@@ -29,7 +29,7 @@ assert len(clusters) == 1
 assert clusters[0]["recommendation"] == "hold-product-role-review"
 assert clusters[0]["approval_status"] == "approved-hold"
 by_id = {row["concept_id"]: row for row in labels}
-assert len(labels) == 17
+assert len(labels) == 24
 assert by_id["AOM_001491"]["governed_preferred_label"] == "Formulated feeds"
 assert by_id["AOM_006500"]["impact"] == "decomposition-changed"
 assert "Decorticated" in by_id["AOM_006500"]["governed_preferred_label"]

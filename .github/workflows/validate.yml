@@ -60,6 +60,7 @@ jobs:
           python scripts/build_process_material_state_review.py
           python scripts/build_feed_formulation_structural_review.py
           python scripts/build_feed_taxonomy_adversarial_review.py
+          python scripts/build_feed_taxonomy_axis_implementation.py
           python scripts/build_definition_enrichment.py
           python scripts/normalize_livestock_release.py data/livestock-staging/legacy_records.csv .
           python tests/validate_feed_identity_audit.py
@@ -101,6 +102,7 @@ jobs:
           python tests/validate_process_material_state_review.py
           python tests/validate_feed_formulation_structural_review.py
           python tests/validate_feed_taxonomy_adversarial_review.py
+          python tests/validate_feed_taxonomy_axis_implementation.py
       - name: Validate semantic model and dispositions
         run: |
           python scripts/build_semantic_bindings.py
