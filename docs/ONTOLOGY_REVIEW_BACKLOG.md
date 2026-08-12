@@ -32,6 +32,10 @@ descendants, and complete implicated structural branches.
    implementation register, and deterministic validation.
 5. Regenerated release artifacts, rebuilt empty Fuseki storage, and passed
    exact notation search plus full local Skosmos acceptance.
+6. Reopened product-role hierarchy after visual review; separated sibling
+   By-product and Waste branches, nested seven role specializations, and
+   recorded ten row-level role decisions with waste/by-product authority
+   evidence.
 
 Remaining holds require evidence types recorded in the v30 implementation
 register; they must not be resolved by hierarchy inheritance alone.

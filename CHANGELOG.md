@@ -4,6 +4,12 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Correct Feed product roles after Skosmos adversarial review: keep By-product
+  and Waste as sibling roles, nest offal/residue/milling/crop-residue
+  specializations beneath By-product, nest discarded/market/processing-waste
+  specializations beneath Waste, preserve prior labels as alternatives, and add
+  a ten-concept evidence register with regulatory scope limits.
+
 - Implement accepted ADR 0044 across all 220 reviewed feed-taxonomy concepts:
   classify 67 evidence-supported rows, apply 81 structural dispositions, preserve
   66 explicit evidence holds and six outside-scope rows, allocate 21

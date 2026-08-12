@@ -174,7 +174,7 @@ assert manifest["counts"]["approved_feed_role_assertions"] == 16
 assert manifest["counts"]["approved_component_retention_relations"] == 5
 assert manifest["counts"]["approved_concept_retirements"] == 8
 assert len(label_corrections) == 32
-assert len(label_additions) == 20
+assert len(label_additions) == 25
 assert len(label_suppressions) == 6
 assert len(new_concepts) == 289
 new_by_case = {row["case_id"]: row for row in new_concepts}

@@ -663,7 +663,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100918"/>
     <skos:prefLabel xml:lang="en">Cabbage Discards</skos:prefLabel>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cabbage” and characteristics: product role — Discard role.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cabbage” and characteristics: product role — Discarded-material waste role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -1050,6 +1050,17 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000196"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003927">
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:prefLabel xml:lang="en">Cowpea Residue</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Cowpea” and characteristics: product role — Production-residue by-product role.</skos:definition>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3917"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100867"/>
+    <skos:notation>AOM_003927</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001890">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:notation>AOM_001890</skos:notation>
@@ -1089,6 +1100,18 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:status>unknown</era:status>
     <skos:notation>AOM_006076</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002192">
+    <skos:notation>AOM_002192</skos:notation>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100985"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:prefLabel xml:lang="en">Fish Offal</skos:prefLabel>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7898"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Fish” and characteristics: product role — Offal by-product role.</skos:definition>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006100"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000010">
     <skos:altLabel xml:lang="en">Arabian Camel</skos:altLabel>
@@ -1447,7 +1470,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000577">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “rice” and characteristics: product role — Offal role.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “rice” and characteristics: product role — Offal by-product role.</skos:definition>
     <skos:notation>AOM_000577</skos:notation>
     <skos:prefLabel xml:lang="en">Rice Offal</skos:prefLabel>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -1921,9 +1944,9 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001143"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000591">
+    <skos:definition xml:lang="en">A feed material with governed source identity “Wheat” and characteristics: product role — Milling by-product role.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100864"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Wheat” and characteristics: product role — Milling-shorts role.</skos:definition>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4565"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
@@ -3663,21 +3686,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:definition xml:lang="en">A feed-supplement ingredient with governed workbook identity “Lime”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000601">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:notation>AOM_000601</skos:notation>
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/17446"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3917"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cowpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100867"/>
-    <skos:prefLabel xml:lang="en">Cowpea Haulm</skos:prefLabel>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006078"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_002018"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001754"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001932">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A feed material with governed source identity “housefly maggot” and characteristics: moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding.</skos:definition>
@@ -4105,7 +4113,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:definition xml:lang="en">Control is a farmer not storing fodder for the dry seasons and either having to buy in fodder or try and subsist on whatever is available in the environment.</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003917">
-    <skos:definition xml:lang="en">A feed material with governed source identity “Cassava” and characteristics: bulk consistency — Liquid consistency; processing method — Distillation; product role — Residue role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3983"/>
     <skos:altLabel xml:lang="en">Cassava Vinasse Meal</skos:altLabel>
@@ -4114,6 +4121,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:prefLabel xml:lang="en">Cassava Vinasse</skos:prefLabel>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100910"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Cassava” and characteristics: bulk consistency — Liquid consistency; processing method — Distillation; product role — Production-residue by-product role.</skos:definition>
     <skos:notation>AOM_003917</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -4411,10 +4419,13 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>aom_concept</era:conceptType>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">Governed product role value used for ingredient-component semantics.</skos:definition>
     <skos:prefLabel xml:lang="en">Waste role</skos:prefLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
+    <skos:definition xml:lang="en">Product-status role borne by material identified as waste or discarded. Waste remains distinct from by-product status and does not establish eligibility for feed.</skos:definition>
     <skos:notation>AOM_101061</skos:notation>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101055"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101056"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101058"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_100939">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_001916"/>
@@ -5525,17 +5536,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101059">
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:prefLabel xml:lang="en">Residue role</skos:prefLabel>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
-    <skos:definition xml:lang="en">Governed product role value used for ingredient-component semantics.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
-    <skos:notation>AOM_101059</skos:notation>
-    <era:conceptType>aom_concept</era:conceptType>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001251">
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3983"/>
     <skos:prefLabel xml:lang="en">Cassava Waste</skos:prefLabel>
@@ -5907,15 +5907,16 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001192"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101057">
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
-    <skos:prefLabel xml:lang="en">Offal role</skos:prefLabel>
-    <skos:definition xml:lang="en">Governed product role value used for ingredient-component semantics.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
     <skos:notation>AOM_101057</skos:notation>
+    <skos:prefLabel xml:lang="en">Offal by-product role</skos:prefLabel>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101062"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:conceptType>aom_concept</era:conceptType>
     <era:status>unknown</era:status>
+    <skos:definition xml:lang="en">By-product role borne by material described in source terminology as offal; exact animal or crop-derived material identity and component require separate assertions.</skos:definition>
+    <skos:altLabel xml:lang="en">Offal role</skos:altLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001888">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -7019,13 +7020,13 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_5514"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/15497"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4710"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “oil palm processing” and characteristics: product role — Residue role.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100934"/>
     <era:status>unknown</era:status>
     <skos:notation>AOM_001837</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Palm Oil Sludge</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “oil palm processing” and characteristics: product role — Production-residue by-product role.</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002109">
     <skos:prefLabel xml:lang="en">Layer's Meal</skos:prefLabel>
@@ -7132,8 +7133,8 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Date Cull</skos:prefLabel>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Date” and characteristics: product role — Discard role.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Date” and characteristics: product role — Discarded-material waste role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_001815</skos:notation>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001816"/>
@@ -7372,7 +7373,7 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_42345"/>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Date” and characteristics: product role — Discard role.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Date” and characteristics: product role — Discarded-material waste role.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_006086</skos:notation>
     <skos:prefLabel xml:lang="en">Date Discards</skos:prefLabel>
@@ -8699,18 +8700,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001346"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_002124"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006169">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: product role — Residue role.</skos:definition>
-    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_35679"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
-    <era:status>unknown</era:status>
-    <skos:prefLabel xml:lang="en">Groundnut Residue</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:notation>AOM_006169</skos:notation>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000151">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:prefLabel xml:lang="en">Herd Management</skos:prefLabel>
@@ -9023,17 +9012,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101019"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101060">
-    <skos:notation>AOM_101060</skos:notation>
-    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <era:conceptType>aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:prefLabel xml:lang="en">Milling-shorts role</skos:prefLabel>
-    <skos:definition xml:lang="en">Governed product role value used for ingredient-component semantics.</skos:definition>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000616">
     <skos:prefLabel xml:lang="en">Canola Cake</skos:prefLabel>
     <skos:altLabel xml:lang="en">Canola Oil Cake</skos:altLabel>
@@ -9183,6 +9161,18 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006136"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006341"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006343"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101055">
+    <skos:notation>AOM_101055</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
+    <skos:definition xml:lang="en">Waste role borne by material described as discarded or culled; lawful recovery or eligibility for feed requires separate evidence.</skos:definition>
+    <skos:altLabel xml:lang="en">Discard role</skos:altLabel>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101061"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <era:conceptType>aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:prefLabel xml:lang="en">Discarded-material waste role</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006281">
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12859"/>
@@ -10276,10 +10266,10 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001881"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000614">
+    <skos:definition xml:lang="en">A feed material with governed source identity “Soybean” and characteristics: product role — Production-residue by-product role.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:prefLabel xml:lang="en">Soybean Residue</skos:prefLabel>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Soybean” and characteristics: product role — Residue role.</skos:definition>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3847"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
@@ -10438,18 +10428,11 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:status>unknown</era:status>
     <era:conceptType>aom_concept</era:conceptType>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">Economic or production-status roles borne by feed materials. By-product and waste roles are sibling categories; material identity, component, process, and legal eligibility for feed remain separate.</skos:definition>
     <skos:notation>AOM_101148</skos:notation>
-    <skos:definition xml:lang="en">Economic or production roles borne by feed materials, including product, by-product, residue, and waste roles.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101022"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101057"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101055"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101059"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101056"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101058"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101061"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101060"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101062"/>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101063"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101136">
     <era:status>unknown</era:status>
@@ -10760,9 +10743,13 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:conceptType>aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A product role for material obtained alongside or remaining after production or processing of a principal product and retained for another use, including as feed.</skos:definition>
+    <skos:definition xml:lang="en">Product role borne by a secondary output obtained alongside or remaining after production or processing of a principal product and retained for another use. Material identity and lawful feed use require separate assertions.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
     <skos:notation>AOM_101062</skos:notation>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101059"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101060"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101057"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_101063"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000095">
     <skos:altLabel xml:lang="en">Indian Hemp</skos:altLabel>
@@ -11117,6 +11104,18 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:definition xml:lang="en">a farm building used for housing livestock, storing machinery or crops etc</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_003027"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101063">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
+    <skos:notation>AOM_101063</skos:notation>
+    <era:conceptType>aom_concept</era:conceptType>
+    <skos:definition xml:lang="en">By-product role borne by crop residue retained after harvest or processing for another use; anatomical or composite component identity remains separate.</skos:definition>
+    <skos:prefLabel xml:lang="en">Crop-residue by-product role</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Crop-residue role</skos:altLabel>
+    <era:status>unknown</era:status>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101062"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000395">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000393"/>
@@ -11457,17 +11456,6 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:notation>AOM_000827</skos:notation>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000829"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000828"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101055">
-    <skos:notation>AOM_101055</skos:notation>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
-    <skos:prefLabel xml:lang="en">Discard role</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:conceptType>aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <skos:definition xml:lang="en">Governed product role value used for ingredient-component semantics.</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001408">
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
@@ -11830,10 +11818,10 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:status>unknown</era:status>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000667"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “legume” and characteristics: product role — Production-residue by-product role.</skos:definition>
     <skos:prefLabel xml:lang="en">Legume Residue</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A feed material with governed source identity “legume” and characteristics: product role — Residue role.</skos:definition>
     <skos:notation>AOM_001817</skos:notation>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001087">
@@ -12474,8 +12462,8 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_000589</skos:notation>
     <era:status>unknown</era:status>
-    <skos:definition xml:lang="en">A feed material with governed source identity “wheat” and characteristics: product role — Offal role.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “wheat” and characteristics: product role — Offal by-product role.</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001623"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001454">
@@ -12550,6 +12538,17 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000196"/>
     <skos:definition xml:lang="en">any measurable characteristic related to the concentration of water (CHEBI:15377) in feed</skos:definition>
     <era:status>unknown</era:status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101058">
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:definition xml:lang="en">Waste role borne by material identified as waste from a processing operation; processing origin alone does not establish lawful feed use.</skos:definition>
+    <era:status>unknown</era:status>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101061"/>
+    <skos:notation>AOM_101058</skos:notation>
+    <skos:prefLabel xml:lang="en">Processing-waste role</skos:prefLabel>
+    <era:conceptType>aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000543">
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -13252,12 +13251,12 @@ This method enables the evaluation of nutrient digestibility by analyzing the ch
     <era:status>unknown</era:status>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000571">
+    <skos:definition xml:lang="en">A feed material with governed source identity “maize” and characteristics: product role — Offal by-product role.</skos:definition>
     <skos:notation>AOM_000571</skos:notation>
     <skos:prefLabel xml:lang="en">Maize Offal</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100851"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A feed material with governed source identity “maize” and characteristics: product role — Offal role.</skos:definition>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12280"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4577"/>
     <skos:altLabel xml:lang="en">Corn Offal</skos:altLabel>
@@ -14362,17 +14361,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     <era:status>unknown</era:status>
     <skos:definition xml:lang="en">Governed presentation form value used for ingredient-component semantics.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101058">
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:status>unknown</era:status>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
-    <skos:definition xml:lang="en">Governed product role value used for ingredient-component semantics.</skos:definition>
-    <skos:notation>AOM_101058</skos:notation>
-    <skos:prefLabel xml:lang="en">Processing-waste role</skos:prefLabel>
-    <era:conceptType>aom_concept</era:conceptType>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003028">
     <skos:relatedMatch rdf:resource="http://opendata.inra.fr/EOL/EOL_0001902"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -15454,7 +15442,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_001439</skos:notation>
-    <skos:definition xml:lang="en">A feed material with governed source identity “beetroot” and characteristics: product role — Discard role.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “beetroot” and characteristics: product role — Discarded-material waste role.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100909"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001952"/>
   </rdf:Description>
@@ -15512,17 +15500,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101056">
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <era:conceptType>aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <skos:notation>AOM_101056</skos:notation>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
-    <skos:definition xml:lang="en">Governed product role value used for ingredient-component semantics.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
-    <skos:prefLabel xml:lang="en">Market-waste role</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001279">
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4182"/>
@@ -15802,11 +15779,11 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:definition xml:lang="en">A feed material with governed source identity “linseed” and characteristics: presentation form — Comminuted particle form; processing method — Grinding; product role — By-product role.</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002218">
-    <skos:definition xml:lang="en">A feed material with governed source identity “mung bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
     <skos:notation>AOM_002218</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:prefLabel xml:lang="en">Mung Bean Haulm</skos:prefLabel>
     <era:status>unknown</era:status>
+    <skos:definition xml:lang="en">A feed material with governed source identity “mung bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_002217"/>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/12351"/>
@@ -15998,7 +15975,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_003978</skos:notation>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Cassava” and characteristics: primary chemical constituent — Starch constituent; product role — Residue role.</skos:definition>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Cassava” and characteristics: primary chemical constituent — Starch constituent; product role — Production-residue by-product role.</skos:definition>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3983"/>
     <era:status>unknown</era:status>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006163"/>
@@ -17864,6 +17841,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003210">
+    <skos:definition xml:lang="en">A feed material with governed source identity “Grass Pea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role.</skos:definition>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:prefLabel xml:lang="en">Grass Pea Haulm</skos:prefLabel>
@@ -17871,7 +17849,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3860"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:notation>AOM_003210</skos:notation>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Grass Pea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:altLabel xml:lang="en">Indian Pea Haulm</skos:altLabel>
   </rdf:Description>
@@ -18255,6 +18232,18 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:notation>AOM_001704</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006169">
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:relatedMatch rdf:resource="http://aims.fao.org/aos/agrovoc/c_35679"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
+    <era:status>unknown</era:status>
+    <skos:prefLabel xml:lang="en">Groundnut Residue</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “groundnut” and characteristics: product role — Production-residue by-product role.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>AOM_006169</skos:notation>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001158">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:altLabel xml:lang="en">Khaya senegalensis Hay</skos:altLabel>
@@ -18336,9 +18325,9 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_00205">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Soybean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_00205</skos:notation>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Soybean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role.</skos:definition>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3847"/>
     <era:status>unknown</era:status>
     <skos:prefLabel xml:lang="en">Soybean Haulm</skos:prefLabel>
@@ -19808,6 +19797,21 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000718"/>
     <skos:notation>AOM_002224</skos:notation>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000601">
+    <skos:definition xml:lang="en">A feed material with governed source identity “cowpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role.</skos:definition>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:notation>AOM_000601</skos:notation>
+    <era:status>unknown</era:status>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/17446"/>
+    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3917"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100867"/>
+    <skos:prefLabel xml:lang="en">Cowpea Haulm</skos:prefLabel>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006078"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_002018"/>
+    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001754"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001278">
     <skos:prefLabel xml:lang="en">Sheanut Cake</skos:prefLabel>
     <skos:relatedMatch rdf:resource="https://www.feedipedia.org/node/11599"/>
@@ -20158,7 +20162,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000604">
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3818"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Groundnut” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
     <skos:altLabel xml:lang="en">Peanut Haulms</skos:altLabel>
     <skos:altLabel xml:lang="en">Goober Haulms</skos:altLabel>
     <skos:prefLabel xml:lang="en">Groundnut Haulm</skos:prefLabel>
@@ -20166,6 +20169,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100869"/>
     <era:status>unknown</era:status>
     <skos:notation>AOM_000604</skos:notation>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Groundnut” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006110"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006111"/>
@@ -20470,6 +20474,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_000524"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002166">
+    <skos:definition xml:lang="en">A feed material with governed source identity “sugarcane” and characteristics: product role — Production-residue by-product role.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Sugarcane Bagasse</skos:prefLabel>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4547"/>
@@ -20478,7 +20483,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100916"/>
     <era:status>unknown</era:status>
-    <skos:definition xml:lang="en">A feed material with governed source identity “sugarcane” and characteristics: product role — Residue role.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006266"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006268"/>
@@ -21120,9 +21124,9 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_000603</skos:notation>
+    <skos:definition xml:lang="en">A feed material with governed source identity “fava bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100868"/>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “fava bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003106">
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -22429,6 +22433,17 @@ D = Proportion of the total nutrient in the diet supplied by the test feed</skos
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4146"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:definition xml:lang="en">A feed material with governed source identity “noug” and characteristics: moisture condition — Dried moisture condition; processing method — Drying; product role — By-product role.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101056">
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <era:conceptType>aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:notation>AOM_101056</skos:notation>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
+    <skos:definition xml:lang="en">Waste role borne by material removed from a market or retail stream; material identity, safety, and eligibility for feed remain separate.</skos:definition>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101061"/>
+    <skos:prefLabel xml:lang="en">Market-waste role</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_006229">
     <skos:notation>AOM_006229</skos:notation>
@@ -25104,6 +25119,18 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101060">
+    <skos:notation>AOM_101060</skos:notation>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <era:conceptType>aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101062"/>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:prefLabel xml:lang="en">Milling by-product role</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Milling-shorts role</skos:altLabel>
+    <skos:definition xml:lang="en">By-product role borne by a secondary milling output such as shorts; milling fraction identity and processing method remain separate.</skos:definition>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000373">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Meat Yield-Dressed</skos:prefLabel>
@@ -25454,8 +25481,8 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100910"/>
     <skos:notation>AOM_003911</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cassava” and characteristics: product role — Residue role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cassava” and characteristics: product role — Production-residue by-product role.</skos:definition>
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006162"/>
@@ -25937,11 +25964,11 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_39367"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Rosemary” and characteristics: product role — Production-residue by-product role.</skos:definition>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100941"/>
     <skos:notation>AOM_003887</skos:notation>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Rosemary” and characteristics: product role — Residue role.</skos:definition>
     <skos:prefLabel xml:lang="en">Rosemary Residues</skos:prefLabel>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006327"/>
   </rdf:Description>
@@ -26599,13 +26626,13 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:conceptType>legacy_aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001258">
-    <skos:definition xml:lang="en">A feed material with governed source identity “Common Bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100866"/>
     <skos:prefLabel xml:lang="en">Common Bean Haulm</skos:prefLabel>
     <skos:notation>AOM_001258</skos:notation>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3885"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Common Bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001948"/>
@@ -27807,17 +27834,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <era:status>unknown</era:status>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003927">
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <skos:prefLabel xml:lang="en">Cowpea Residue</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3917"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Cowpea” and characteristics: product role — Residue role.</skos:definition>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100867"/>
-    <skos:notation>AOM_003927</skos:notation>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001514">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000701"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -28018,9 +28034,9 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001181">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <era:status>unknown</era:status>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Chickpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role.</skos:definition>
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3917"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Chickpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role.</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Chickpea Haulm</skos:prefLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100865"/>
@@ -28601,17 +28617,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:prefLabel xml:lang="en">Sheep Meal</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101063">
-    <skos:definition xml:lang="en">Governed product role value used for ingredient-component semantics.</skos:definition>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
-    <skos:notation>AOM_101063</skos:notation>
-    <era:conceptType>aom_concept</era:conceptType>
-    <skos:prefLabel xml:lang="en">Crop-residue role</skos:prefLabel>
-    <era:status>unknown</era:status>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101148"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002216">
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:definition xml:lang="en">A forage-plant feed material with governed source identity “andropogon appendiculatus”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified at this concept level unless separately asserted.</skos:definition>
@@ -29103,18 +29108,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:definition xml:lang="en">An AOM outcome concept for recording Meat Yield- Carcass Defeathered within Meat Yield.</skos:definition>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_002192">
-    <skos:notation>AOM_002192</skos:notation>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100985"/>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Fish” and characteristics: product role — Offal role.</skos:definition>
-    <skos:prefLabel xml:lang="en">Fish Offal</skos:prefLabel>
-    <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_7898"/>
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <era:status>unknown</era:status>
-    <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_006100"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_000671">
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100934"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
@@ -29499,6 +29492,18 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000190"/>
     <skos:prefLabel xml:lang="en">Dry Matter</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101059">
+    <era:status>unknown</era:status>
+    <skos:altLabel xml:lang="en">Residue role</skos:altLabel>
+    <skos:prefLabel xml:lang="en">Production-residue by-product role</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_101062"/>
+    <skos:definition xml:lang="en">By-product role borne by a secondary residue retained from production or processing for another use; exact residue identity requires a separate assertion.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/era-aom/schema/ProductRole"/>
+    <skos:notation>AOM_101059</skos:notation>
+    <era:conceptType>aom_concept</era:conceptType>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_101041">
     <skos:notation>AOM_101041</skos:notation>
@@ -30858,9 +30863,9 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003928">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Sesame” and characteristics: product role — Residue role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100902"/>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Sesame” and characteristics: product role — Production-residue by-product role.</skos:definition>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4182"/>
     <skos:notation>AOM_003928</skos:notation>
     <era:status>unknown</era:status>
@@ -32242,6 +32247,16 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <era:status>unknown</era:status>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003567">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:notation>AOM_003567</skos:notation>
+    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100857"/>
+    <era:conceptType>legacy_aom_concept</era:conceptType>
+    <era:status>unknown</era:status>
+    <skos:definition xml:lang="en">A feed material with governed source identity “cheka” and characteristics: product role — Production-residue by-product role.</skos:definition>
+    <skos:prefLabel xml:lang="en">Cheka Residue</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001935">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000556"/>
@@ -32520,9 +32535,9 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
     <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_123405"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:definition xml:lang="en">A feed material with governed source identity “Catha edulis” and characteristics: product role — Residue role.</skos:definition>
     <era:conceptType>legacy_aom_concept</era:conceptType>
     <skos:notation>AOM_001574</skos:notation>
+    <skos:definition xml:lang="en">A feed material with governed source identity “Catha edulis” and characteristics: product role — Production-residue by-product role.</skos:definition>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001741"/>
     <skos:narrower rdf:resource="https://w3id.org/era-aom/livestock/AOM_001628"/>
   </rdf:Description>
@@ -35127,16 +35142,6 @@ Crude fat and crude lipid are often used interchangeably to refer to the same me
     <skos:prefLabel xml:lang="en">histidine</skos:prefLabel>
     <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_000199"/>
     <era:conceptType>legacy_aom_concept</era:conceptType>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_003567">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:notation>AOM_003567</skos:notation>
-    <skos:broader rdf:resource="https://w3id.org/era-aom/livestock/AOM_100857"/>
-    <era:conceptType>legacy_aom_concept</era:conceptType>
-    <skos:definition xml:lang="en">A feed material with governed source identity “cheka” and characteristics: product role — Residue role.</skos:definition>
-    <era:status>unknown</era:status>
-    <skos:prefLabel xml:lang="en">Cheka Residue</skos:prefLabel>
-    <skos:inScheme rdf:resource="https://w3id.org/era-aom/scheme/livestock-v2"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/livestock/AOM_001531">
     <skos:definition xml:lang="en">A feed material with governed source identity “psophocarpus scandens” and characteristics: ingredient part — Leaf.</skos:definition>

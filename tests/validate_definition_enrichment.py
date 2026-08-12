@@ -24,7 +24,7 @@ assert len({row["concept_id"] for row in approved}) == 2148
 assert Counter(row["definition_method"] for row in approved) == {
     "composed_from_approved_semantic_facets": 1122,
     "composed_from_bounded_workbook_material_scope": 62,
-    "promoted_reviewed_scope_note": 244,
+    "promoted_reviewed_scope_note": 236,
     "composed_from_governed_hierarchy_role": 240,
     "composed_from_reviewed_feedipedia_source_scope": 85,
     "composed_from_reviewed_public_authority_source_scope": 151,
@@ -32,10 +32,10 @@ assert Counter(row["definition_method"] for row in approved) == {
     "composed_from_canonical_workbook_category_scope": 28,
     "composed_from_reviewed_feedipedia_category_scope": 3,
     "composed_from_governed_core_hierarchy_scope": 2,
-    "composed_from_reviewed_compound_model": 2,
+    "composed_from_reviewed_compound_model": 1,
     "authority_definition_replacement": 14,
     "feed_structure_definition_replacement": 37,
-    "feed_taxonomy_axis_definition_replacement": 44,
+    "feed_taxonomy_axis_definition_replacement": 53,
 }
 assert all(row["status"] == "approved" and row["reviewer"] == "Pete Steward" for row in approved)
 assert all(
