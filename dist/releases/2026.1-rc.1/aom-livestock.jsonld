@@ -169,7 +169,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “oil palm processing” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “oil palm processing” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -2121,7 +2121,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “maize” and characteristics: product role — Offal role."
+        "@value": "A feed material with governed source identity “maize” and characteristics: product role — Offal by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -3781,7 +3781,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Catha edulis” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “Catha edulis” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -3904,7 +3904,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “beetroot” and characteristics: product role — Discard role."
+        "@value": "A feed material with governed source identity “beetroot” and characteristics: product role — Discarded-material waste role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -8123,7 +8123,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cabbage” and characteristics: product role — Discard role."
+        "@value": "A feed material with governed source identity “cabbage” and characteristics: product role — Discarded-material waste role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -9114,7 +9114,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Economic or production roles borne by feed materials, including product, by-product, residue, and waste roles."
+        "@value": "Economic or production-status roles borne by feed materials. By-product and waste roles are sibling categories; material identity, component, process, and legal eligibility for feed remain separate."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -9124,31 +9124,10 @@
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101057"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101055"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101059"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101056"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101058"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101061"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101060"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101063"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -18680,7 +18659,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Wheat” and characteristics: product role — Milling-shorts role."
+        "@value": "A feed material with governed source identity “Wheat” and characteristics: product role — Milling by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -19179,7 +19158,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “wheat” and characteristics: product role — Offal role."
+        "@value": "A feed material with governed source identity “wheat” and characteristics: product role — Offal by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -19442,6 +19421,54 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003927",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100867"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “Cowpea” and characteristics: product role — Production-residue by-product role."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_003927"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Cowpea Residue"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3917"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001565",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -19471,54 +19498,6 @@
       {
         "@language": "en",
         "@value": "Vallisneria aethiopica"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_003927",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100867"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A feed material with governed source identity “Cowpea” and characteristics: product role — Residue role."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_003927"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Cowpea Residue"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3917"
       }
     ],
     "urn:era:property:conceptType": [
@@ -25555,7 +25534,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cheka” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “cheka” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -25591,15 +25570,21 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProductRole"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Crop-residue role"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed product role value used for ingredient-component semantics."
+        "@value": "By-product role borne by crop residue retained after harvest or processing for another use; anatomical or composite component identity remains separate."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -25615,7 +25600,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Crop-residue role"
+        "@value": "Crop-residue by-product role"
       }
     ],
     "urn:era:property:conceptType": [
@@ -25749,7 +25734,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cowpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+        "@value": "A feed material with governed source identity “cowpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -39960,15 +39945,21 @@
       "https://w3id.org/era-aom/schema/ProductRole",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Milling-shorts role"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed product role value used for ingredient-component semantics."
+        "@value": "By-product role borne by a secondary milling output such as shorts; milling fraction identity and processing method remain separate."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -39984,7 +39975,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Milling-shorts role"
+        "@value": "Milling by-product role"
       }
     ],
     "urn:era:property:conceptType": [
@@ -42993,7 +42984,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Date” and characteristics: product role — Discard role."
+        "@value": "A feed material with governed source identity “Date” and characteristics: product role — Discarded-material waste role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -51378,7 +51369,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Sesame” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “Sesame” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -53419,7 +53410,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “groundnut” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “groundnut” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -56761,12 +56752,26 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A product role for material obtained alongside or remaining after production or processing of a principal product and retained for another use, including as feed."
+        "@value": "Product role borne by a secondary output obtained alongside or remaining after production or processing of a principal product and retained for another use. Material identity and lawful feed use require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101059"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101060"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101057"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101063"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -59081,7 +59086,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Cassava” and characteristics: primary chemical constituent — Starch constituent; product role — Residue role."
+        "@value": "A feed material with governed source identity “Cassava” and characteristics: primary chemical constituent — Starch constituent; product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -65847,15 +65852,21 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProductRole"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Residue role"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed product role value used for ingredient-component semantics."
+        "@value": "By-product role borne by a secondary residue retained from production or processing for another use; exact residue identity requires a separate assertion."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -65871,7 +65882,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Residue role"
+        "@value": "Production-residue by-product role"
       }
     ],
     "urn:era:property:conceptType": [
@@ -67632,7 +67643,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “mung bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+        "@value": "A feed material with governed source identity “mung bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -71804,13 +71815,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101061"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed product role value used for ingredient-component semantics."
+        "@value": "Waste role borne by material removed from a market or retail stream; material identity, safety, and eligibility for feed remain separate."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -75139,7 +75150,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Groundnut” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+        "@value": "A feed material with governed source identity “Groundnut” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -83709,7 +83720,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “fava bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+        "@value": "A feed material with governed source identity “fava bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -91153,7 +91164,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Soybean” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “Soybean” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -94779,13 +94790,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101061"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed product role value used for ingredient-component semantics."
+        "@value": "Waste role borne by material identified as waste from a processing operation; processing origin alone does not establish lawful feed use."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -96402,7 +96413,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “sugarcane” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “sugarcane” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -99515,12 +99526,23 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed product role value used for ingredient-component semantics."
+        "@value": "Product-status role borne by material identified as waste or discarded. Waste remains distinct from by-product status and does not establish eligibility for feed."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101055"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101056"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101058"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -101848,7 +101870,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Cassava” and characteristics: bulk consistency — Liquid consistency; processing method — Distillation; product role — Residue role."
+        "@value": "A feed material with governed source identity “Cassava” and characteristics: bulk consistency — Liquid consistency; processing method — Distillation; product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -105048,7 +105070,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Soybean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+        "@value": "A feed material with governed source identity “Soybean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -105402,15 +105424,21 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProductRole"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Offal role"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed product role value used for ingredient-component semantics."
+        "@value": "By-product role borne by material described in source terminology as offal; exact animal or crop-derived material identity and component require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -105426,7 +105454,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Offal role"
+        "@value": "Offal by-product role"
       }
     ],
     "urn:era:property:conceptType": [
@@ -110607,7 +110635,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “cassava” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “cassava” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -111927,7 +111955,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Fish” and characteristics: product role — Offal role."
+        "@value": "A feed material with governed source identity “Fish” and characteristics: product role — Offal by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -118492,7 +118520,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Common Bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+        "@value": "A feed material with governed source identity “Common Bean” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -123348,7 +123376,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “legume” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “legume” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -131604,15 +131632,21 @@
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProductRole"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Discard role"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101148"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101061"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed product role value used for ingredient-component semantics."
+        "@value": "Waste role borne by material described as discarded or culled; lawful recovery or eligibility for feed requires separate evidence."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -131628,7 +131662,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Discard role"
+        "@value": "Discarded-material waste role"
       }
     ],
     "urn:era:property:conceptType": [
@@ -132187,7 +132221,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Chickpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+        "@value": "A feed material with governed source identity “Chickpea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -132648,7 +132682,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Grass Pea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue role."
+        "@value": "A feed material with governed source identity “Grass Pea” and characteristics: ingredient part — Leaf, Stem; product role — Crop-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -133821,7 +133855,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Rosemary” and characteristics: product role — Residue role."
+        "@value": "A feed material with governed source identity “Rosemary” and characteristics: product role — Production-residue by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -145004,7 +145038,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “rice” and characteristics: product role — Offal role."
+        "@value": "A feed material with governed source identity “rice” and characteristics: product role — Offal by-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -146740,7 +146774,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “Date” and characteristics: product role — Discard role."
+        "@value": "A feed material with governed source identity “Date” and characteristics: product role — Discarded-material waste role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [

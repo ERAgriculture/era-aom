@@ -18,6 +18,8 @@ METHOD = "docs/methods/feed-taxonomy-governance.md"
 EU_FEED = "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R0767"
 EU_ADDITIVES = "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32003R1831"
 EU_CATALOGUE = "https://eur-lex.europa.eu/eli/reg/2013/68/oj/eng"
+EU_WASTE = "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008L0098"
+EU_ANIMAL_BYPRODUCTS = "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1069"
 AGROVOC_ADDITIVES = "https://agrovoc.fao.org/browse/agrovoc/en/page/c_2827"
 AGROVOC_SUPPLEMENTS = "https://agrovoc.fao.org/browse/agrovoc/en/page/c_33996"
 AGROVOC_ORGANIC_ACIDS = "https://agrovoc.fao.org/browse/agrovoc/en/page/c_5383"
@@ -80,7 +82,7 @@ new_specs = [
     ("FEED-TAXONOMY-BODY-SUBSTANCES", "AOM_101145", "Animal body substances", "Animal-derived body substances represented as feed-material components without treating them as connected anatomical structures.", "AOM_101085"),
     ("FEED-TAXONOMY-CHEMICAL-ROOT", "AOM_101146", "Feed chemical entities", "Chemical substances and constituent categories used to describe feed identity or composition independently of feed product kind or additive function.", "AOM_000328"),
     ("FEED-TAXONOMY-CHEMICAL-SUBSTANCES", "AOM_101147", "Feed chemical substances", "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions.", "AOM_101146"),
-    ("FEED-TAXONOMY-ROLE-PRODUCT", "AOM_101148", "Feed product roles", "Economic or production roles borne by feed materials, including product, by-product, residue, and waste roles.", "AOM_101022"),
+    ("FEED-TAXONOMY-ROLE-PRODUCT", "AOM_101148", "Feed product roles", "Economic or production-status roles borne by feed materials. By-product and waste roles are sibling categories; material identity, component, process, and legal eligibility for feed remain separate.", "AOM_101022"),
     ("FEED-TAXONOMY-ROLE-FUNCTIONAL", "AOM_101149", "Feed functional roles", "Functions borne by substances or products in feed, represented independently of their material, formulation, additive, or chemical identity.", "AOM_101022"),
     ("FEED-TAXONOMY-ROLE-EXPERIMENTAL", "AOM_101150", "Feed experimental roles", "Roles borne by substances or products because of their use in an experimental design or measurement method.", "AOM_101022"),
     ("FEED-TAXONOMY-ROLE-MARKER", "AOM_101151", "Digestibility-marker role", "Experimental role borne by a marker substance used to estimate digestibility or passage without making marker function its chemical identity.", "AOM_101150"),
@@ -115,6 +117,15 @@ generated_updates = {
     "AOM_100989": ("Microalgal feed materials", "Feed materials derived from microalgal biomass; source taxon and processing remain explicit.", "AOM_100850"),
     "AOM_101019": ("Anatomical components", "Biological anatomical structures represented as components of feed materials.", "AOM_101085"),
     "AOM_101022": ("Feed roles", "Product, functional, or experimental roles borne by feed-related materials, products, or substances independently of identity.", "AOM_000328"),
+    "AOM_101055": ("Discarded-material waste role", "Waste role borne by material described as discarded or culled; lawful recovery or eligibility for feed requires separate evidence.", "AOM_101061"),
+    "AOM_101056": ("Market-waste role", "Waste role borne by material removed from a market or retail stream; material identity, safety, and eligibility for feed remain separate.", "AOM_101061"),
+    "AOM_101057": ("Offal by-product role", "By-product role borne by material described in source terminology as offal; exact animal or crop-derived material identity and component require separate assertions.", "AOM_101062"),
+    "AOM_101058": ("Processing-waste role", "Waste role borne by material identified as waste from a processing operation; processing origin alone does not establish lawful feed use.", "AOM_101061"),
+    "AOM_101059": ("Production-residue by-product role", "By-product role borne by a secondary residue retained from production or processing for another use; exact residue identity requires a separate assertion.", "AOM_101062"),
+    "AOM_101060": ("Milling by-product role", "By-product role borne by a secondary milling output such as shorts; milling fraction identity and processing method remain separate.", "AOM_101062"),
+    "AOM_101061": ("Waste role", "Product-status role borne by material identified as waste or discarded. Waste remains distinct from by-product status and does not establish eligibility for feed.", "AOM_101148"),
+    "AOM_101062": ("By-product role", "Product role borne by a secondary output obtained alongside or remaining after production or processing of a principal product and retained for another use. Material identity and lawful feed use require separate assertions.", "AOM_101148"),
+    "AOM_101063": ("Crop-residue by-product role", "By-product role borne by crop residue retained after harvest or processing for another use; anatomical or composite component identity remains separate.", "AOM_101062"),
     "AOM_101023": ("Primary chemical constituents", "Chemical substances or chemically defined fractions asserted as primary constituents of feed materials.", "AOM_101146"),
     "AOM_101085": ("Feed material components", "Anatomical structures, processed fractions, body substances, or collective material scopes represented as components of feed materials.", "AOM_000328"),
     "AOM_101086": ("Whole-crop composition", "Composition state indicating retention of the harvested whole-crop scope rather than one component part.", "AOM_101115"),
@@ -127,6 +138,9 @@ generated_updates = {
     "AOM_101130": ("Feed component separation processes", "Feed processes whose objective includes removing, separating, or recovering a material component or fraction.", "AOM_000845"),
     "AOM_101134": ("Native-fat-retained composition", "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted.", "AOM_101115"),
 }
+for concept_id, (label, _, _) in generated_updates.items():
+    collisions = all_labels.get(label.casefold(), set()) - {concept_id}
+    assert not collisions, (concept_id, label, collisions)
 for concept_id, (label, scope, parent) in generated_updates.items():
     row = new_by_id[concept_id]
     row.update({
@@ -146,7 +160,6 @@ product_role_ids = {
 } - {"AOM_101022", "AOM_101079"} - allocated_ids
 for concept_id in product_role_ids:
     row = new_by_id[concept_id]
-    row["broader_id"] = "AOM_101148"
     row["derived_path"] = f"Governed feed taxonomy/Feed roles/Feed product roles/{row['preferred_label']}"
 for concept_id in {"AOM_101079"}:
     row = new_by_id[concept_id]
@@ -234,6 +247,11 @@ aliases = [
     ("AOM_100989", "Microalgae supplements"),
     ("AOM_101019", "Feed-material anatomical parts"),
     ("AOM_101022", "Feed-material product roles"),
+    ("AOM_101055", "Discard role"),
+    ("AOM_101057", "Offal role"),
+    ("AOM_101059", "Residue role"),
+    ("AOM_101060", "Milling-shorts role"),
+    ("AOM_101063", "Crop-residue role"),
     ("AOM_101086", "Whole crop"),
     ("AOM_101110", "Whole-grain integrity"),
     ("AOM_101115", "Composition states"),
@@ -463,7 +481,14 @@ for concept_id, values in facet_updates.items():
     row.update({"review_date": DATE, "evidence": ADR})
 for row in facet_rows:
     if row["concept_id"] in product_role_ids:
-        row.update({"facet": "product_role", "target_property": "aom:productRole", "value_class": "aom:ProductRole"})
+        row.update({
+            "preferred_label": generated_updates[row["concept_id"]][0],
+            "facet": "product_role",
+            "target_property": "aom:productRole",
+            "value_class": "aom:ProductRole",
+            "review_date": DATE,
+            "evidence": ADR,
+        })
 
 new_facet_rows = [
     ("AOM_101143", "Processed material fractions", "material_component", "aom:materialComponent", "aom:FeedMaterialComponent", "facet_root"),
@@ -496,7 +521,17 @@ decomposition_rows = [
     row for row in read(decomposition_path)
     if row["target_concept_id"] not in {"AOM_101068", "AOM_101109"}
 ]
+for row in decomposition_rows:
+    if row["target_concept_id"] in generated_updates:
+        row["target_label"] = generated_updates[row["target_concept_id"]][0]
 write(decomposition_path, fieldnames(decomposition_path), decomposition_rows)
+
+mapping_path = DATA / "approved_ingredient_component_value_mappings.csv"
+mapping_rows = read(mapping_path)
+for row in mapping_rows:
+    if row["target_concept_id"] in generated_updates:
+        row["target_label"] = generated_updates[row["target_concept_id"]][0]
+write(mapping_path, fieldnames(mapping_path), mapping_rows)
 
 material_tables = [
     "approved_feed_material_facets.csv",
@@ -511,6 +546,11 @@ target_updates = {
     "AOM_101106": ("aom:materialComponent", "Straw"),
     "AOM_101110": ("aom:compositionState", "Whole-grain composition"),
     "AOM_101134": ("aom:compositionState", "Native-fat-retained composition"),
+    **{
+        concept_id: ("aom:productRole", label)
+        for concept_id, (label, _, _) in generated_updates.items()
+        if concept_id in product_role_ids
+    },
 }
 for name in material_tables:
     path = DATA / name
@@ -552,6 +592,32 @@ for concept_id in ["AOM_000746", "AOM_002072"]:
         "rationale": "Digestibility-marker use is experimental role independent of chromium-oxide chemical identity and processing state.",
     })
 write(DATA / "approved_feed_role_assertions.csv", list(role_assertions[0]), role_assertions)
+
+role_review_specs = [
+    ("AOM_101148", "Feed product roles", "Feed product roles", "AOM_101022", f"{EU_WASTE};{ADR};{METHOD}", "Separate product-status roles from material, component, process, functional, and experimental axes."),
+    ("AOM_101062", "By-product role", "By-product role", "AOM_101148", f"{EU_WASTE};{EU_CATALOGUE};{ADR};{METHOD}", "Keep by-product and waste as sibling roles; secondary role does not replace material identity."),
+    ("AOM_101061", "Waste role", "Waste role", "AOM_101148", f"{EU_WASTE};{ADR};{METHOD}", "Waste status is not a subtype of by-product status and does not establish feed eligibility."),
+    ("AOM_101055", "Discard role", "Discarded-material waste role", "AOM_101061", f"{EU_WASTE};era_master_sheet.xlsx#AOM;{ADR};{METHOD}", "Discard terminology belongs beneath waste role; source material identity remains separate."),
+    ("AOM_101056", "Market-waste role", "Market-waste role", "AOM_101061", f"{EU_WASTE};era_master_sheet.xlsx#AOM;{ADR};{METHOD}", "Market waste is a source-specific waste specialization, not a by-product subtype."),
+    ("AOM_101058", "Processing-waste role", "Processing-waste role", "AOM_101061", f"{EU_WASTE};era_master_sheet.xlsx#AOM;{ADR};{METHOD}", "Processing waste remains under waste unless evidence supports by-product status."),
+    ("AOM_101057", "Offal role", "Offal by-product role", "AOM_101062", f"{EU_ANIMAL_BYPRODUCTS};era_master_sheet.xlsx#AOM;{ADR};{METHOD}", "Offal wording identifies secondary-output role; exact animal or crop material identity must remain separate."),
+    ("AOM_101059", "Residue role", "Production-residue by-product role", "AOM_101062", f"{EU_CATALOGUE};era_master_sheet.xlsx#AOM;{ADR};{METHOD}", "Residues retained as feed are modeled as by-product roles while residue identity and process provenance remain separate."),
+    ("AOM_101060", "Milling-shorts role", "Milling by-product role", "AOM_101062", f"{EU_CATALOGUE};era_master_sheet.xlsx#AOM;{ADR};{METHOD}", "Shorts is a milling-fraction identity; role assertion records only secondary-output status."),
+    ("AOM_101063", "Crop-residue role", "Crop-residue by-product role", "AOM_101062", f"{EU_CATALOGUE};era_master_sheet.xlsx#AOM;{ADR};{METHOD}", "Crop-residue component identity remains independent from secondary-output role."),
+]
+role_review_rows = [{
+    "concept_id": concept_id,
+    "previous_label": previous_label,
+    "approved_label": approved_label,
+    "semantic_axis": "product_role",
+    "target_parent_id": parent_id,
+    "status": "approved",
+    "reviewer": REVIEWER,
+    "review_date": DATE,
+    "evidence": evidence,
+    "rationale": rationale,
+} for concept_id, previous_label, approved_label, parent_id, evidence, rationale in role_review_specs]
+write(REVIEW / "feed_product_role_review.csv", list(role_review_rows[0]), role_review_rows)
 
 retention_relations = [
     ("FEED-TAXONOMY-WHOLE-GRAIN-BRAN", "AOM_101110", "aom:retainsMaterialComponent", "AOM_101104", "aom:FeedMaterialComponent", "Whole-grain composition positively retains bran."),
@@ -689,6 +755,8 @@ evidence_rows = [
     ("EV-FEED-PRODUCT-KINDS", "Regulation (EC) No 767/2009", "regulation", EU_FEED, "Separates feed materials, compound feeds, complete feeds, and complementary feeds.", "Does not classify every legacy AOM product label."),
     ("EV-FEED-ADDITIVE-CATEGORIES", "Regulation (EC) No 1831/2003", "regulation", EU_ADDITIVES, "Defines technological, sensory, nutritional, zootechnical, coccidiostat, and histomonostat additive categories.", "Authorization remains substance, preparation, use, species, and date specific."),
     ("EV-FEED-MATERIAL-CATALOGUE", "Commission Regulation (EU) No 68/2013", "regulation", EU_CATALOGUE, "Supports mineral feed materials, glycerine, former foodstuffs, and processing definitions.", "Catalogue inclusion does not prove identity for ambiguous brands or waste streams."),
+    ("EV-WASTE-BYPRODUCT-DISTINCTION", "Directive 2008/98/EC on waste", "regulation", EU_WASTE, "Distinguishes qualifying by-products from waste and defines waste around discard status.", "Legal status is jurisdictional and fact-specific; a source label alone cannot establish compliance."),
+    ("EV-ANIMAL-BYPRODUCTS", "Regulation (EC) No 1069/2009", "regulation", EU_ANIMAL_BYPRODUCTS, "Defines animal by-products and derived products separately from generic waste and material identity.", "Does not cover plant offal terminology or authorize a material for feed."),
     ("EV-AGROVOC-ADDITIVES", "AGROVOC feed additives", "authority vocabulary", AGROVOC_ADDITIVES, "Separates feed-additive use from ordinary feed consumption.", "Broad vocabulary scope does not replace regulatory authorization."),
     ("EV-AGROVOC-SUPPLEMENTS", "AGROVOC supplements", "authority vocabulary", AGROVOC_SUPPLEMENTS, "Defines supplement by use with another feed, supporting role/formulation treatment rather than material identity.", "Does not classify every product called supplement."),
     ("EV-AGROVOC-ORGANIC-ACIDS", "AGROVOC organic acids", "authority vocabulary", AGROVOC_ORGANIC_ACIDS, "Places organic acids on a chemical identity axis.", "Intended additive function requires separate evidence."),
@@ -739,6 +807,7 @@ summary = {
     "source_concept_retirements": len(retirement_rows),
     "generated_ids_retired_before_publication": ["AOM_101068", "AOM_101109"],
     "role_assertions": len(role_assertions),
+    "product_role_concepts_reviewed": len(role_review_rows),
     "component_retention_relations": len(retention_rows),
     "concept_semantic_types": len(semantic_type_rows),
     "evidence_sources": len(evidence_register),

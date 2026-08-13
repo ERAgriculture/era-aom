@@ -13,6 +13,7 @@ and accepted [ADR 0044](../../docs/decisions/0044-feed-taxonomy-axis-reclassific
 ## Outputs
 
 - [220-row implementation register](feed_taxonomy_implementation_register.csv)
+- [feed product-role review](feed_product_role_review.csv)
 - [implementation summary](feed_taxonomy_implementation_summary.json)
 - [evidence register](evidence_register.csv)
 - governed source tables and generated ontology distributions

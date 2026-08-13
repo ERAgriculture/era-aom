@@ -6,6 +6,10 @@
 - Reviewer: Pete Steward
 - Method: [Feed taxonomy governance](../methods/feed-taxonomy-governance.md)
 
+Amended 2026-08-12 after Skosmos review: waste and by-product are sibling
+roles. Narrower source-specific roles now nest under the correct branch while
+material and component identities remain separate.
+
 ## Context
 
 Skosmos review after ADR 0043 exposed a larger structural defect. `Supplement`
@@ -51,6 +55,11 @@ branches. Row-level dispositions are published under `review/livestock-v29/`.
 11. Retire Material integrity; rename Whole-grain integrity to Whole-grain
     composition; represent whole-grain, whole-milk, and full-fat states using
     positive native-component retention semantics.
+12. Structure Feed product roles around sibling By-product and Waste branches.
+    Place offal, production-residue, milling, and crop-residue role
+    specializations beneath By-product; place discarded-material, market-waste,
+    and processing-waste roles beneath Waste. Do not use role hierarchy as
+    material, component, process, or legal feed-eligibility identity.
 
 ## Evidence
 
@@ -60,6 +69,12 @@ branches. Row-level dispositions are published under `review/livestock-v29/`.
   defines authority categories for feed additives.
 - [Commission Regulation (EU) 68/2013](https://eur-lex.europa.eu/eli/reg/2013/68/oj/eng)
   defines feed materials and feed-processing terms.
+- [Directive 2008/98/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008L0098)
+  distinguishes qualifying by-products from waste and defines waste around
+  discard status.
+- [Regulation (EC) 1069/2009](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1069)
+  defines animal by-products and derived products without replacing exact
+  material identity or feed-safety decisions.
 - [AGROVOC feed additives](https://agrovoc.fao.org/browse/agrovoc/en/page/c_2827),
   [supplements](https://agrovoc.fao.org/browse/agrovoc/en/page/c_33996), and
   [organic acids](https://agrovoc.fao.org/browse/agrovoc/en/page/c_5383)
@@ -92,8 +107,9 @@ branches. Row-level dispositions are published under `review/livestock-v29/`.
   `AOM_101155`; rejected generated IDs `AOM_101068` and `AOM_101109` remain
   reserved as `retired-before-publication`.
 - Eight source concepts were retired, 16 explicit role relations and five
-  positive component-retention relations were added, and 13 evidence sources
-  were recorded with supported claims and limitations.
+  positive component-retention relations were added. Ten product-role concepts
+  received a separate adversarial review, and 15 evidence sources were recorded
+  with supported claims and limitations.
 - Deterministic regeneration, 45 Python validators, RDF format parity, SHACL,
   release validation, clean-volume Fuseki load, 19-card Skosmos acceptance, and
   exact notation search passed on 2026-08-12.

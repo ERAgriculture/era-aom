@@ -112,6 +112,10 @@ Before allocating an ID:
 - Regulation 1831/2003 separates additive categories by principal function and
   requires authorization under specific conditions.
 - Regulation 68/2013 provides feed-material and process catalogue evidence.
+- Directive 2008/98/EC distinguishes qualifying by-products from waste; waste
+  and by-product roles therefore remain siblings rather than one hierarchy.
+- Regulation 1069/2009 defines animal by-products and derived products but does
+  not classify plant offal terminology or itself authorize feed use.
 - AGROVOC distinguishes feed additives, supplements as use with another feed,
   and organic acids as chemical compounds.
 - FoodOn separates material, anatomy, chemical, quality, and process facets and
@@ -128,6 +132,7 @@ Implementation publishes:
 
 - [source recommendation register](../../review/livestock-v29/feed_taxonomy_adversarial_review.csv);
 - [implementation register](../../review/livestock-v30/feed_taxonomy_implementation_register.csv);
+- [feed product-role review](../../review/livestock-v30/feed_product_role_review.csv);
 - [evidence register](../../review/livestock-v30/evidence_register.csv);
 - [implementation summary](../../review/livestock-v30/feed_taxonomy_implementation_summary.json);
 - governed staging CSVs under `data/livestock-staging/`;
