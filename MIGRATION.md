@@ -26,6 +26,13 @@ Phase-3 ingredient-component decomposition is defined in
 Raw descriptors remain authoritative migration evidence until each facet
 assertion receives reviewed value governance.
 
+Ingredient descriptor lifecycle and browser behavior are governed by
+[`docs/decisions/0046-ingredient-descriptor-lifecycle-and-browser-deprecation.md`](docs/decisions/0046-ingredient-descriptor-lifecycle-and-browser-deprecation.md).
+Ontology implementation preserves `AOM_000531` through `AOM_000535` as
+resolvable deprecated identifiers but removes them from active hierarchy.
+Their normalized predicate scopes changed in the ontology contract; pipeline
+cutover remains a separate reviewed migration and must retain rollback parity.
+
 Public packaging candidate `2026.1-rc.1` proves deterministic multi-format
 generation and local semantic validation. Live namespace, Skosmos, AgroPortal,
 named-reviewer, and canonical-cutover gates remain open; see

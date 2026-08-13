@@ -103,6 +103,7 @@ jobs:
           python tests/validate_feed_formulation_structural_review.py
           python tests/validate_feed_taxonomy_adversarial_review.py
           python tests/validate_feed_taxonomy_axis_implementation.py
+          python tests/validate_ingredient_descriptor_lifecycle_implementation.py
       - name: Validate semantic model and dispositions
         run: |
           python scripts/build_semantic_bindings.py

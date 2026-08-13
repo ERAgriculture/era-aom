@@ -120,7 +120,9 @@ aom:ingredientMaterial a owl:ObjectProperty ;
     rdfs:range aom:FeedMaterial .
 
 aom:ingredientName a owl:DatatypeProperty ;
-    rdfs:domain aom:FeedMaterial ;
+    rdfs:label "has source ingredient label"@en ;
+    rdfs:comment "Preserves row-local source text for an ingredient occurrence; canonical feed-material naming uses skos:prefLabel."@en ;
+    rdfs:domain aom:IngredientComponent ;
     rdfs:range xsd:string .
 
 aom:ingredientPart a owl:ObjectProperty ;
@@ -130,17 +132,27 @@ aom:ingredientPart a owl:ObjectProperty ;
     rdfs:subPropertyOf aom:materialComponent .
 
 aom:ingredientProportion a owl:ObjectProperty ;
+    rdfs:label "has ingredient proportion"@en ;
+    rdfs:comment "Quantifies one ingredient component within a formulation or diet; the quantity value requires a ratio unit and the component requires an explicit composition basis."@en ;
     rdfs:domain aom:IngredientComponent ;
     rdfs:range qudt:QuantityValue .
 
+aom:ingredientProportionBasis a owl:DatatypeProperty ;
+    rdfs:label "has ingredient proportion basis"@en ;
+    rdfs:comment "Declares the denominator or reference basis for ingredient proportion, such as total as-fed diet mass or total dry-matter diet mass."@en ;
+    rdfs:domain aom:IngredientComponent ;
+    rdfs:range xsd:string .
+
 aom:ingredientSource a owl:ObjectProperty ;
-    rdfs:label "has ingredient source"@en ;
-    rdfs:domain aom:FeedMaterial ;
+    rdfs:label "has acquisition source"@en ;
+    rdfs:comment "Links an ingredient occurrence to an acquisition or procurement category such as on-farm or purchased; it does not define biological source or canonical feed-material identity."@en ;
+    rdfs:domain aom:IngredientComponent ;
     rdfs:range aom:IngredientSourceCategory .
 
 aom:legacyComponentDescriptor a owl:DatatypeProperty ;
-    rdfs:comment "Unmodified legacy component descriptor retained until reviewed decomposition into explicit facets."@en ;
-    rdfs:domain aom:FeedMaterial ;
+    rdfs:label "has legacy component descriptor"@en ;
+    rdfs:comment "Unmodified source descriptor retained as compatibility provenance until reviewed decomposition into explicit component, form, process, role, and constituent facets; hide outside migration review views."@en ;
+    rdfs:domain aom:IngredientComponent ;
     rdfs:range xsd:string .
 
 aom:legacyConcept a owl:ObjectProperty ;
@@ -211,8 +223,8 @@ aom:reviewedBy a owl:ObjectProperty ;
     rdfs:range aom:Reviewer .
 
 aom:sourceTaxon a owl:ObjectProperty ;
-    rdfs:label "has biological species"@en ;
-    rdfs:comment "Links feed material to a reviewed taxon IRI; does not imply SKOS identity."@en ;
+    rdfs:label "has source taxon"@en ;
+    rdfs:comment "Links a canonical feed material to a reviewed source-taxon IRI at its supported rank; provisional source-row claims require separate provenance and do not imply SKOS identity."@en ;
     rdfs:domain aom:FeedMaterial .
 
 aom:sourceValue a owl:DatatypeProperty ;
@@ -371,10 +383,6 @@ aom:FeedPresentationForm a owl:Class ;
     rdfs:comment "Shape or particle presentation independently of bulk consistency and moisture condition."@en ;
     rdfs:subClassOf aom:FeedPhysicalDescriptor .
 
-aom:IngredientComponent a owl:Class ;
-    rdfs:label "ingredient component"@en ;
-    rdfs:comment "A feed material used in a formulation, optionally with a quantitative proportion."@en .
-
 aom:physicalForm a owl:ObjectProperty ;
     rdfs:label "has physical descriptor"@en ;
     rdfs:comment "Deprecated compatibility property; use presentationForm, bulkConsistency, or moistureCondition."@en ;
@@ -404,16 +412,20 @@ aom:SemanticValueBinding a owl:Class ;
     rdfs:label "semantic value binding"@en ;
     rdfs:comment "Governed decision mapping a source controlled value to an ontology concept or explicitly holding it unresolved."@en .
 
+aom:IngredientComponent a owl:Class ;
+    rdfs:label "ingredient component"@en ;
+    rdfs:comment "A feed material used in a formulation, optionally with a quantitative proportion."@en .
+
 aom:Feed a owl:Class ;
     rdfs:label "feed"@en ;
     rdfs:comment "A material, formulation, or additive represented for animal feeding."@en .
-
-aom:SemanticBinding a owl:Class ;
-    rdfs:label "semantic binding"@en ;
-    rdfs:comment "Governed migration contract connecting a legacy AOM concept to its normalized data-model use."@en .
 
 aom:FeedMaterial a owl:Class ;
     rdfs:label "feed material"@en ;
     rdfs:comment "A material used or evaluated as feed. Source organism, part, processing method, and economic product role are modeled as facets."@en ;
     rdfs:subClassOf aom:Feed .
+
+aom:SemanticBinding a owl:Class ;
+    rdfs:label "semantic binding"@en ;
+    rdfs:comment "Governed migration contract connecting a legacy AOM concept to its normalized data-model use."@en .
 

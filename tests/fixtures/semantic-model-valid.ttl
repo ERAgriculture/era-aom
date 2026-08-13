@@ -1,13 +1,12 @@
 @prefix aom: <urn:era-aom:schema:> .
 @prefix ex: <urn:era-aom:test:> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ex:maizeBran a aom:FeedMaterial ;
-  aom:ingredientName "Maize bran" ;
-  aom:legacyComponentDescriptor "Bran" ;
   aom:ingredientPart ex:grainPart ;
   aom:physicalForm ex:mealForm ;
   aom:processingMethod ex:milling ;
@@ -23,11 +22,18 @@ ex:starch a aom:ChemicalConstituent .
 
 ex:component a aom:IngredientComponent ;
   aom:ingredientMaterial ex:maizeBran ;
+  aom:ingredientName "Maize bran" ;
+  aom:legacyComponentDescriptor "Bran" ;
+  aom:ingredientSource ex:purchased ;
+  aom:ingredientProportionBasis "total as-fed diet mass" ;
   aom:ingredientProportion [
     a qudt:QuantityValue ;
+    qudt:hasQuantityKind quantitykind:DimensionlessRatio ;
     qudt:numericValue "25.0"^^xsd:decimal ;
     qudt:unit unit:PERCENT
   ] .
+
+ex:purchased a aom:IngredientSourceCategory .
 
 ex:swardHeightObservation a aom:QuantitativeObservation ;
   sosa:observedProperty ex:targetSwardHeight ;

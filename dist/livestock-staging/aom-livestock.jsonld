@@ -2,6 +2,7 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
     "aom": "urn:era-aom:schema:",
     "era": "urn:era:property:"
   },
@@ -93,6 +94,10 @@
       ],
       "skos:definition": {
         "@value": "A terrestrial animal species is a group of animals that can interbreed and produce fertile offspring and predominantly inhabit the land.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used LLM BARD",
         "@language": "en"
       },
       "skos:broader": {
@@ -1904,6 +1909,10 @@
         "@value": "A taxonomic concept used in AOM to identify Grass within the Pasture Fodder classification.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "FOODON term: Grass (animal feed)",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000056"
       },
@@ -2056,6 +2065,10 @@
       ],
       "skos:definition": {
         "@value": "Elephant grass (Pennisetum purpureum Schumach.) is a major tropical grass. It is one of the highest yielding tropical grasses. It is a very versatile species that can be grown under a wide range of conditions and systems: dry or wet conditions, smallholder or larger scale agriculture. It is a valuable forage and very popular throughout the tropics, notably in cut-and-carry systems (Mannetje, 1992; FAO, 2015). [Feedipedia]",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Higher level 'Brachiaria' available in OLS",
         "@language": "en"
       },
       "skos:broader": {
@@ -4454,6 +4467,10 @@
         "@value": "An experimental diet contains more vitamin (NCIT_C944) supplements than a control diet.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Management/Livestock Management/Feed Characteristic/Feed Chemical Composition/Vitamins",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000120"
       },
@@ -4478,6 +4495,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "An experimental diet contains more mineral supplements than a control diet.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Management/Livestock Management/Feed Characteristic/Feed Chemical Composition/Minerals",
         "@language": "en"
       },
       "skos:broader": {
@@ -4520,6 +4541,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "An experimental diet contains more amino acid (CHEBI_33709) supplements than a control diet.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Management/Livestock Management/Feed Characteristic/Feed Chemical Composition/Minerals/Amino Acids",
         "@language": "en"
       },
       "skos:broader": {
@@ -4779,6 +4804,10 @@
         "@value": "A diet is modified by adding new ingredients to a control diet.   A simple case is grazing only compared to grazing plus additional feed.  Another case is adding a new ingredient to a control feed which is not already included in that control.  In experiments where feed provision is limited the total amount of feed provided to an animal should increase as a result of feed addition. In experiments where feed is provided ad libitum or to satiation the proximate composition the changed diet should show the proportion of ingredients all decline the same amount relative to the control. For example, a control diet is 2 kg hay (proportion = 0.66) and 1 kg maize (0.33) and an experimental diet adds 3 kg of cotton seed cake (3/6 = 0.5) so hay becomes (2/6= 0.33), maize becomes (1/6 =0.167), in this case the control ingredients have decreased the same relative amount (50%). If some diet items decrease relatively more than others, this may indicate substitution.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "It can be difficult to tell addition from substitution if looking only at proximate diet composition tables, we must also consider how much of the diet is being fed (and not just in terms of weight, between treatments diets could be fed to provide a similar amount of energy or protein, or to cost the same).\nWe can consider the following case likely to be feed addition: 1) a new ingredient is added to a control diet to form an experimental diet; 2) these diets are fed ad-libitum or to satiation or more of the experimental diet is fed than the control; and 3) the proximate composition of the experimenal diet shows the proportion of control ingredient all decrease the same relative amount to accomodate the new ingredients. It should not be the case that one control diet element decreases relatively more than others in the experimental diet, this may indicate substitution.  If in experimental diets the proportion of one diet ingredient decreases and the other remain constant relative to the control, then this is highly likely to be substitution.\nWe should think of addition and substitution as a continuum and not a binary classification.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000109"
       }
@@ -4798,6 +4827,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "In substitution-based experiments, certain ingredients in a control diet are replaced with different ingredients in an experimental diet. Typically, both the control and experimental diets are provided in equal weights or with equivalent amounts of energy and/or protein.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "The assigment of control vs treatment in substitution comparisons is subjective, therefore the substitution should be described according to their experimental framing by the authors.\n\nWhen looking at proximate diet composition tables it can be difficult to tell addition from substitution. We can consider the following case to be feed addition: 1) a new ingredient is added to a control diet to form an experimental diet; 2) these diets are fed ad-libitum or to satiation or more of the experimental diet is fed than the control; and 3) the proximate composition of the experimenal diet shows the proportion of control ingredient all decrease the same relative amount to accomodate the new ingredients. It should not be the case that one control diet element decreases relatively more than others in the experimental diet, this may indicate substitution.  If in experimental diets the proportion of one diet ingredient decreases and the other remain constant relative to the control, then this is highly likely to be substitution. One should think of addition and substitution as a continuum and not a binary classification.",
         "@language": "en"
       },
       "skos:broader": {
@@ -5010,6 +5043,7 @@
         "@value": "Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000145"
       },
@@ -5034,6 +5068,7 @@
         "@value": "Feed fermentation is a biological process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT).",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000145"
       },
@@ -5172,6 +5207,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "A local or otherwise unimproved animal breed.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "A control for improved breeds/hybrid and cross breeds.",
         "@language": "en"
       },
       "skos:broader": {
@@ -9375,6 +9414,7 @@
         "@value": "Any antimicrobial drug which is used to treat or prevent protozoal infections.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000331"
       },
@@ -9404,6 +9444,7 @@
         "@value": "An antiparasitic drug which is effective against Apicomplexan parasites in the genus Plasmodium. The genus contains over 200 species and includes those responsible for malaria.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000338"
       },
@@ -9433,6 +9474,7 @@
         "@value": "A drug used to treat trichomonas infections.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000338"
       },
@@ -9462,6 +9504,7 @@
         "@value": "An agent useful in the treatment or prevention of coccidiosis in man or animals.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000338"
       },
@@ -9491,6 +9534,7 @@
         "@value": "A drug used to treat or prevent infections caused by protozoal organisms belonging to the suborder Trypanosomatida.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000338"
       },
@@ -10044,6 +10088,10 @@
         "@value": "The land equivalent ratio describes the relative land area required under sole cropping (monoculture) to produce the same yield as under intercropping (polyculture).",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "We do not accept LER for practice A vs practice B (e.g. mulch vs no-mulch as this yield A/yield B, which we calculated as the response ratio).",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000362"
       }
@@ -10107,6 +10155,10 @@
         "@value": "Specific Growth Rate (SGR) is typically measured as the change in body weight of an animal over a specified time period, divided by the number of days in that period. For example, if an animal weighed 100 kg at the beginning of a 30-day period and weighed 120 kg at the end of that period, the SGR would be calculated as follows: SGR = (120 kg - 100 kg) ÷ 30 days = 0.67 kg/day.  This indicates that the animal gained an average of 0.67 kg per day during the 30-day period.  (human validated chatGPT)",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Please try to standardise to g per animal per day (g/individual/day). Default unit is unit/individual (e.g kg/cow) unless otherwise stated. Values for this outcome can be negative (the animal loses weight) or positive.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000366"
       }
@@ -10126,6 +10178,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "The total weight of the animal or meat parts of it.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "For meat yield of offspring (e.g. offtake of lambs in a ewe-lamb pastture system, use the reproductive yield/offspring meat yield outcome)",
         "@language": "en"
       },
       "skos:broader": {
@@ -10359,6 +10415,10 @@
         "@value": "Amount of milk produced. Please provide the amount of milk produced, rather than expressing the change in milk yield relative to a reference value.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Please try and standardise to litres per animal per day (l/individual/day).",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000366"
       }
@@ -10420,6 +10480,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Egg yields, such as number of eggs per hen(s) per day(s).",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Please try and standardise units to eggs per one individual per day. (eggs/individual/day).",
         "@language": "en"
       },
       "skos:broader": {
@@ -10700,6 +10764,10 @@
         "@value": "Return to Labour or Labour Productivity. This may be expressed as income/day labour, income/area or production/day labour.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Make sure units are carefully recorded and this is not the cost of labour, which should be recorded under Economics: Cost of Labour outcome.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101014"
       }
@@ -10763,6 +10831,10 @@
         "@value": "Total income, revenue or returns without consideration of costs.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Please standardize area denominators to ha where possible..",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000398"
       }
@@ -10784,6 +10856,10 @@
         "@value": "Net returns = income - total costs. Values for this outcome can be negative or positive.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Please standardize area denominators to ha where possible.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000398"
       }
@@ -10803,6 +10879,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Gross margin = revenue - variable costs. Values for this outcome can be negative or positive.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Please standardize area denominators to ha where possible.",
         "@language": "en"
       },
       "skos:broader": {
@@ -10866,6 +10946,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Total production costs per, for example, unit land or unit product.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Please standardize area denominators to ha where possible.",
         "@language": "en"
       },
       "skos:broader": {
@@ -10950,6 +11034,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Cost that are constant whatever the amount of goods produced, for example land rental costs.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Please standardize area denominators to ha where possible.",
         "@language": "en"
       },
       "skos:broader": {
@@ -11090,6 +11178,10 @@
         "@value": "Cost of fertilizer.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "The total variable cost can include labour, but record the individual cost of labour using the \"Labour Cost\" subindicator.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003090"
       }
@@ -11111,6 +11203,10 @@
         "@value": "Cost of inorganic fertilizer.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "The total variable cost can include labour, but record the individual cost of labour using the \"Labour Cost\" subindicator.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000415"
       }
@@ -11130,6 +11226,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Cost of organic fertilizer.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "The total variable cost can include labour, but record the individual cost of labour using the \"Labour Cost\" subindicator.",
         "@language": "en"
       },
       "skos:broader": {
@@ -11529,6 +11629,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Labor input per activity, if not specified whether hired workers or family. If specified  use \"Family labor input\" or \"Hired labor input\". Family labor, usuall unpaid working days or hours. Hired labor, workers that are paid for working time.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Please standardize area denominators to ha where possible.",
         "@language": "en"
       },
       "skos:broader": {
@@ -12161,6 +12265,10 @@
         "@value": "Net Present Value = the value in the present of a sum of money, in contrast to some future value it will have when it has been invested at compound interest.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000464"
       }
@@ -12201,6 +12309,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Return on investment is the gain or loss relative to the amount invested.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "This is usually presented as a ratio, please convert any % values to proportions.",
         "@language": "en"
       },
       "skos:broader": {
@@ -12476,6 +12588,10 @@
         "@value": "Change in soil organic carbon (SOC) over time compared to a baseline condition at the beginning of the experiment.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "All treatments should have the same baseline conditions, if the baseline is more complex than this then contact Pete.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000480"
       }
@@ -12495,6 +12611,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Stock or concentration of soil nitrogen exact nature of the nitrogen is not clear (i.e. it is unknown if it is total, available, nitrate or ammonium) or is some other measure of nitrogen.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Do not include % change data as compared to a baseline.",
         "@language": "en"
       },
       "skos:broader": {
@@ -12518,6 +12638,10 @@
         "@value": "Stock or concentration of nitrogen in the soil reported as total nitrogen (TN).",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Do not include % change data as compared to a baseline.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000480"
       }
@@ -12537,6 +12661,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Stock or concentration of nitrogen in the soil reported as available nitrogen (NO3 + NH4).",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Do not include % change data as compared to a baseline.",
         "@language": "en"
       },
       "skos:broader": {
@@ -12560,6 +12688,10 @@
         "@value": "Stock or concentration of nitrogen in the soil reported as nitrate (NO3).",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Do not include % change data as compared to a baseline.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000480"
       }
@@ -12579,6 +12711,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Stock or concentration of nitrogen in the soil reported as ammonium (NH4).",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Do not include % change data as compared to a baseline.",
         "@language": "en"
       },
       "skos:broader": {
@@ -12602,6 +12738,10 @@
         "@value": "Amount of water in the soil.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Do not include: water holding capacity, available water capacity, osmotic potential.\nInclude pressure details in parenthesis after units if presented , e.g. % (0.3 bar). Do not include % change data as compared to a baseline.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000480"
       }
@@ -12621,6 +12761,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "The rate of water movement into the soil.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Units should be volume/time.",
         "@language": "en"
       },
       "skos:broader": {
@@ -12644,6 +12788,10 @@
         "@value": "Soil cation exchange capacity.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Do not include % change data as compared to a baseline. Do not confuse with ECEC (effective CEC) or base saturation.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000480"
       }
@@ -12663,6 +12811,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Soil effective cation exchange capacity.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Do not include % change data as compared to a baseline. Do not confuse with CEC or base saturation.",
         "@language": "en"
       },
       "skos:broader": {
@@ -12707,6 +12859,10 @@
         "@value": "The variability in yields between seasons or between years.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Antilog any logged outcomes, ln(yield stablity) is often reported.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000361"
       }
@@ -12726,6 +12882,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Animal offspring that survive to production.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Do not use for plant survival.",
         "@language": "en"
       },
       "skos:broader": {
@@ -12875,6 +13035,10 @@
         "@value": "Nitrogen use efficiency of a crop product component (e.g., grain) measured using nitrogen-15 stable isotope methods. Formula =15N/N.input. The product component of the crop is used (e.g., grain).",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example).",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000503"
       }
@@ -12894,6 +13058,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Nitrogen use efficiency of aboveground biomass (the whole plant, grain + biomass) measured using nitrogen-15 stable isotope methods. Formula =15N/N.input.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example).",
         "@language": "en"
       },
       "skos:broader": {
@@ -12938,6 +13106,10 @@
         "@value": "Partial nitrogen balance of a crop product component (e.g., grain). Formula = N.product/N.input.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example).",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000506"
       }
@@ -12959,6 +13131,10 @@
         "@value": "Partial nitrogen balance for crop aboveground biomass (the whole plant, grain + biomass). Formula = N.product/N.input.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example).",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000506"
       }
@@ -12978,6 +13154,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Animal Products Only. Integration of N into production. Formula = N.retained/N.supplied.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example).",
         "@language": "en"
       },
       "skos:broader": {
@@ -13022,6 +13202,10 @@
         "@value": "Weight of output (kg) per quantity of input (kg). Can be any input and any output (other than N, P & K).",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example).",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000499"
       }
@@ -13064,6 +13248,10 @@
         "@value": "Ratio of Weight Gained to Feed Given.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "This outcome relates to animal feed experiments. This is a ratio whose value should be less than 1 (although some aquatic experiment may yield slightly >1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001089"
       }
@@ -13083,6 +13271,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Ratio of Feed Given to Weight Gained.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "This outcome relates to animal feed experiments. It is a ratio whose value should be greater than 1 (although some aquatic experiment may yield slightly <1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio.",
         "@language": "en"
       },
       "skos:broader": {
@@ -13106,6 +13298,10 @@
         "@value": "Ratio of Weight Gained to Protein Given, this is a ratio whose value should be less than 1 (although some aquatic experiment may yield slightly >1 if there are other food resources available in the water, like algae).",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "This outcome relates to animal feed experiments.  It is a ratio whose value should be less than 1 (although some aquatic experiment may yield slightly >1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001090"
       }
@@ -13125,6 +13321,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Ratio of Protein Given to Weight Gained, this is a ratio whose value should be greater than 1 (although some aquatic experiment may yield slightly <1 if there are other food resources available in the water, like algae).",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "This outcome relates to animal feed experiments. It is a ratio whose value should be greater than 1 (although some aquatic experiment may yield slightly <1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio.",
         "@language": "en"
       },
       "skos:broader": {
@@ -13232,6 +13432,10 @@
         "@value": "Emissions over time expressed as CO2 equivalent (e.g. CO2e, CO2eq or CO2-e), often expressed as emissions per area.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Note emissions per unit production should be recorded under Emissions Intensity.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000520"
       }
@@ -13316,6 +13520,10 @@
         "@value": "Emissions per unit of output (e.g. kg CO2 per kg grain). Cumulative emissions relative to production.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Emissions intensity is typically standardized radiative forcing over 100 yr time (CO2eq) for 1 or more gases added together per unit product (kg).",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000520"
       }
@@ -13356,6 +13564,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Quantity in carbon pool or stock (as total carbon or organic carbon) and reported on soil profiles of at least 30cm or more.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Please standardize area denominators to ha where possible.",
         "@language": "en"
       },
       "skos:broader": {
@@ -13400,6 +13612,10 @@
         "@value": "Stock or amount of carbon in above ground biomass.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Please standardize area denominators to ha where possible.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000526"
       }
@@ -13419,6 +13635,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Stock or amount of carbon in below ground biomass.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Do not record change from baseline here, outcomes should be the value on the sampling date.  If change from baseline data are presented consider converting to the values on the sampling date if the baseline line values are available too.\nThis is the amount carbon in soil biomass, if total carbon is presented use the Soil Carbon Stocks outcome.",
         "@language": "en"
       },
       "skos:broader": {
@@ -13448,9 +13668,11 @@
         "@value": "any characteristics related to food raw material name- e.g. wheat flour, soybean meal",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_100850"
+      "skos:historyNote": {
+        "@value": "Retired as a browse concept. Use skos:prefLabel for canonical feed-material names and aom:ingredientName for row-local source labels on aom:IngredientComponent records.",
+        "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0000351"
@@ -13480,9 +13702,11 @@
         "@value": "any measurable or observable characteristics related to the part of the food raw material entering in the composition of animal diet- e.g. bran, starch, beet…",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_100850"
+      "skos:historyNote": {
+        "@value": "Retired as a browse concept. Use reviewed material-component, presentation-form, processing-method, product-role, and constituent assertions; retain aom:legacyComponentDescriptor only as compatibility provenance on aom:IngredientComponent records.",
+        "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0000354"
@@ -13512,9 +13736,11 @@
         "@value": "any characteristics related to the botanical species of food raw material e.g. maize (Zea mays), peruvian anchoveta (Engraulis ringens), etc",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_100850"
+      "skos:historyNote": {
+        "@value": "Retired as a browse concept. Use aom:sourceTaxon for reviewed biological-source assertions on canonical aom:FeedMaterial records; preserve provisional source-row claims until material identity is resolved.",
+        "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0000353"
@@ -13544,9 +13770,11 @@
         "@value": "any measurable or declared characteristics related to the proportion of food raw material in animal diet- e.g. 0.6 corn grain",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_100850"
+      "skos:historyNote": {
+        "@value": "Retired as a browse concept. Use aom:ingredientProportion on an aom:IngredientComponent with a QUDT QuantityValue, DimensionlessRatio quantity kind, explicit unit, and declared diet-composition basis.",
+        "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:relatedMatch": [
         {
           "@id": "http://opendata.inra.fr/EOL/EOL_0000350"
@@ -13576,9 +13804,11 @@
         "@value": "An AOM controlled category for “Ingredient source” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions.",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_100850"
-      }
+      "skos:historyNote": {
+        "@value": "Retired as a browse concept. Use aom:ingredientSource for acquisition source on an aom:IngredientComponent; do not treat procurement channel as canonical feed-material identity or biological source.",
+        "@language": "en"
+      },
+      "owl:deprecated": true
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000536",
@@ -18351,9 +18581,11 @@
         "@value": "Deprecated legacy Supplement catch-all; resolved descendants moved to feed-material, formulation, additive, or chemical axes and unresolved descendants routed to explicit holds.",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_101142"
-      }
+      "skos:historyNote": {
+        "@value": "Retired as a browse concept after approved descendants moved to feed-material, formulation, additive, chemical, role, or explicit hold classifications.",
+        "@language": "en"
+      },
+      "owl:deprecated": true
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000737",
@@ -18528,6 +18760,7 @@
         "@value": "An AOM controlled category for “Binder” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000781"
       },
@@ -18579,6 +18812,7 @@
         "@value": "An AOM controlled category for “Digestibility Marker” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000781"
       },
@@ -19228,9 +19462,11 @@
         "@value": "Deprecated legacy Other Ingredients catch-all; resolved descendants moved to evidence-backed axes and unresolved descendants routed to explicit holds.",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_101142"
-      }
+      "skos:historyNote": {
+        "@value": "Retired as a browse concept after approved descendants moved to explicit product-kind, chemical, role, or hold classifications.",
+        "@language": "en"
+      },
+      "owl:deprecated": true
     },
     {
       "@id": "urn:era-aom:livestock:AOM_000782",
@@ -20369,6 +20605,7 @@
         "@value": "Extrusion is a feed processing technique that involves forcing raw feed materials through a shaped die under high pressure and temperature conditions, resulting in a continuous, uniformly shaped product. This process can alter the physical and chemical properties of feed materials, improving digestibility, nutrient availability, and palatability. Extrusion is both a thermal and mechanical process. (HV GPT4)",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000837"
       },
@@ -20711,6 +20948,7 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "deprecated",
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000849"
       },
@@ -21328,6 +21566,7 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "deprecated",
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000848"
       },
@@ -21406,6 +21645,7 @@
         "@value": "unit dedicated to the production of animal in growing phase coming from juvenile stage or pregrowing stage. The animal comes from the natural environment or produced in a farm",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000874"
       },
@@ -21449,6 +21689,7 @@
         "@value": "unit dedicated to the production of animal in growing-finishing phase until the slaughtering which come from the natural environment or produced in a farm.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000876"
       },
@@ -21496,6 +21737,7 @@
         "@value": "unit dedicated to the production of young animal feeding by himself (weaned animal or yolk sac resorption stage) and which can be transfered in pregrowing unit or growing unit. The animal comes from the natural environment or produced in a farm",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000874"
       },
@@ -21531,6 +21773,7 @@
         "@value": "unit dedicated to the production of young animal feeding by himself (weaned animal or yolk sac resorption stage) and which can be transfered in pregrowing unit or growing unit. The animal is initially produced on a farm",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000878"
       },
@@ -21566,6 +21809,7 @@
         "@value": "unit dedicated to the production of young animal feeding by himself (weaned animal or yolk sac resorption stage) and which can be transfered in pregrowing unit or growing unit. The animal is originating from the natural environment",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000878"
       },
@@ -21681,6 +21925,7 @@
         "@value": "unit dedicated to the production of newborn animal before weaning (mammal) or until hatching (fish, chicken)",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000874"
       },
@@ -21724,6 +21969,7 @@
         "@value": "pre-growout rearing unit",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000874"
       },
@@ -22195,6 +22441,7 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "deprecated",
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000848"
       },
@@ -22880,6 +23127,7 @@
         "@value": "housing structure with partially or totally access to outdoors, an area with natural light (courtyard, pasture)",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000848"
       },
@@ -22919,6 +23167,7 @@
         "@value": "system of farming which rears only one type of animal species in the same production unit",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000922"
       },
@@ -22948,6 +23197,7 @@
         "@value": "system of farming where animals are housed in a mono-species group",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000923"
       },
@@ -22977,6 +23227,7 @@
         "@value": "system of farming where the animal is housed alone",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000923"
       },
@@ -23016,6 +23267,7 @@
         "@value": "system of farming which uses multiple species in the same rearing structure occupying different ecological niches of the medium to optimize production, with or without trophic interrelationship",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000922"
       },
@@ -23055,6 +23307,7 @@
         "@value": "system of farming which provides the by-products (including waste) from one animal species (aquatic or terrestrial) as inputs for another species (animal, plant or aquatic) in the same production unit",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000926"
       },
@@ -23638,6 +23891,7 @@
           "@language": "en"
         }
       ],
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100853"
       },
@@ -27768,6 +28022,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Lupinus angustifolius",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "NA",
         "@language": "en"
       },
       "skos:broader": {
@@ -37088,9 +37346,11 @@
         "@value": "An AOM controlled category for “Unspecified” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions.",
         "@language": "en"
       },
-      "skos:broader": {
-        "@id": "urn:era-aom:livestock:AOM_000781"
-      }
+      "skos:historyNote": {
+        "@value": "Retired as a browse concept because an unspecified source value records missing data rather than a feed-material identity.",
+        "@language": "en"
+      },
+      "owl:deprecated": true
     },
     {
       "@id": "urn:era-aom:livestock:AOM_001508",
@@ -47175,6 +47435,7 @@
           "@language": "en"
         }
       ],
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
       },
@@ -47598,6 +47859,7 @@
           "@language": "en"
         }
       ],
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100945"
       },
@@ -47941,6 +48203,10 @@
         "@value": "Moringa oleifera",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "https://www.feedipedia.org/node/124",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003903"
       },
@@ -48056,6 +48322,7 @@
         "@value": "An AOM controlled category for “Unspecified Filler” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions.",
         "@language": "en"
       },
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000781"
       },
@@ -54379,6 +54646,10 @@
         "@value": "A feed material with governed source identity “bamboo” and characteristics: ingredient part — Leaf.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "NA",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100970"
       },
@@ -55983,6 +56254,10 @@
         "@value": "Phoenix dactylifera",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "https://www.feedipedia.org/node/8012",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100881"
       },
@@ -56443,6 +56718,10 @@
         "@value": "Feeds added to animal diets that come from non-woody crops usually grown for human consumption. These can be crop grain, field residues (for example maize stalks left over once the grain component has been harvested), or processing residues (for example the maize bran produced as a byproduct of milling flour). Soyabeans fit in this category as they are grown for human consumption and livestock feed.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003014"
       }
@@ -56462,6 +56741,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Feeds added to animal diets that are derived from non-woody crops grown primarily to feed to animals (e.g., alfafa or clover grown to feed to cattle) or non-woody plants harvested from non-cropped areas (e.g., forage grasses such as napier grass grown to stabilize terraces, cactus harvested from boundary fences, wild growing plants in wayside or fallows, algae, etc.).",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover.",
         "@language": "en"
       },
       "skos:broader": {
@@ -56485,6 +56768,10 @@
         "@value": "Feeds added to animal diets that are from agroforestry shrub or tree fodders or other woody plants.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003003"
       }
@@ -56504,6 +56791,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Feeds added to animal diets that are animal manures.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover.",
         "@language": "en"
       },
       "skos:broader": {
@@ -56527,6 +56818,10 @@
         "@value": "Feeds added to animal diets that are derived from animals, e.g. blood meal, fish meal, bone meal, fish oil, offals, etc.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003003"
       }
@@ -56546,6 +56841,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Feeds added to animal diets that are derived from insects.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover.",
         "@language": "en"
       },
       "skos:broader": {
@@ -56569,6 +56868,10 @@
         "@value": "Feeds added to animal diets that are non-plant, non-animal or non-manure based materials.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003003"
       }
@@ -56588,6 +56891,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Components of a basal diet fully or partially substituted for residues from crops not primarily grown for fodder, but for another purpose (e.g. consumption). These can be field residues (for example maize stalks left over once the grain component has been harvested) and or processing residues (for example the maize bran produced as a byproduct of milling flour).",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives.",
         "@language": "en"
       },
       "skos:broader": {
@@ -56611,6 +56918,10 @@
         "@value": "A diet fed to animals without additional of anything.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "A control for addition (supplementation) of feeds.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003011"
       }
@@ -56630,6 +56941,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Supplement given to animals by the farmer or deemed control by author and is",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "A control for addition (supplementation) or substitution of feeds.",
         "@language": "en"
       },
       "skos:broader": {
@@ -56653,6 +56968,10 @@
         "@value": "Components of a basal diet fully or partially substituted for residues from crops not primarily grown for fodder, but for another purpose (e.g. consumption). These can be field residues (for example maize stalks left over once the grain component has been harvested) and or processing residues (for example the maize bran produced as a byproduct of milling flour).",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003011"
       }
@@ -56672,6 +56991,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Components of a basal diet fully or partially substituted for non-woody crops grown primarily to feed to animals (e.g., alfafa or clover grown to feed to cattle) or non-woody plants harvested from non-cropped areas (e.g., forage grasses such as napier grass grown to stabilize terraces, cactus harvested from boundary fences, wild growing plants in wayside or fallows, algae, etc.). Feeds are added compared to a base practice control such as hay ad libitum only.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives.",
         "@language": "en"
       },
       "skos:broader": {
@@ -56695,6 +57018,10 @@
         "@value": "Components of a basal diet fully or partially substituted for agroforestry shrub or tree fodders (woody plants).",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003011"
       }
@@ -56714,6 +57041,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Components of a basal diet fully or partially substituted for animal manures.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives.",
         "@language": "en"
       },
       "skos:broader": {
@@ -56758,6 +57089,10 @@
         "@value": "Components of a basal diet fully or partially substituted for insect based feed.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_003018"
       }
@@ -56777,6 +57112,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Components of a basal diet fully or partially substituted with non-plant, non-animal and non-manure based materials. These typically include materials for the by-product of animal processing (e.g., bone meal or fish meal).",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives.",
         "@language": "en"
       },
       "skos:broader": {
@@ -61447,6 +61786,7 @@
       },
       "era:conceptType": "legacy_aom_concept",
       "era:status": "deprecated",
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100866"
       },
@@ -62526,6 +62866,10 @@
         "@value": "A feed material with governed source identity “bamboo” and characteristics: ingredient part — Leaf; moisture condition — Dried moisture condition; processing method — Drying.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "NA",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_002169"
       },
@@ -62550,6 +62894,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "A feed material with governed source identity “bamboo” and characteristics: ingredient part — Leaf; processing method — Wilting.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "NA",
         "@language": "en"
       },
       "skos:broader": {
@@ -63794,6 +64142,7 @@
           "@language": "en"
         }
       ],
+      "owl:deprecated": true,
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000648"
       },
@@ -67510,6 +67859,10 @@
         "@value": "A feed material with governed source identity “bamboo molasse treated” and characteristics: ingredient part — Leaf; moisture condition — Dried moisture condition; processing method — Drying, Ensiling, Urea treatment.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "NA",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_002169"
       },
@@ -69096,6 +69449,10 @@
         "@value": "Phoenix dactylifera",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "https://www.feedipedia.org/node/8012",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_002348"
       },
@@ -69123,6 +69480,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Phoenix dactylifera",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "https://www.feedipedia.org/node/8012",
         "@language": "en"
       },
       "skos:broader": {
@@ -69154,6 +69515,10 @@
         "@value": "Phoenix dactylifera",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "https://www.feedipedia.org/node/8012",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_002348"
       },
@@ -69183,6 +69548,10 @@
         "@value": "Phoenix dactylifera",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "https://www.feedipedia.org/node/8012",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_002348"
       },
@@ -69210,6 +69579,10 @@
       "era:status": "unknown",
       "skos:definition": {
         "@value": "Phoenix dactylifera",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "https://www.feedipedia.org/node/8012",
         "@language": "en"
       },
       "skos:broader": {
@@ -71931,6 +72304,10 @@
         "@value": "Lupinus albus",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "NA",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_002116"
       },
@@ -71981,6 +72358,10 @@
         "@value": "Measured mineral-element content of feed material.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Measured mineral-element content of feed material.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000196"
       }
@@ -72008,6 +72389,10 @@
         "@value": "A category for feed materials used directly for oral animal feeding or as materials in formulated feeds; source, component, process, form, integrity, composition, and product role require explicit assertions.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Products or substances used directly as feed or as materials in formulated feeds; formulations and additives remain separately classified.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000328"
       }
@@ -72026,6 +72411,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from maize production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from maize production or processing.",
         "@language": "en"
       },
@@ -72055,6 +72444,10 @@
         "@value": "Feed materials derived from soybean production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from soybean production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000615"
       },
@@ -72081,6 +72474,10 @@
         "@value": "Management of grazing intensity spatial allocation timing rest and animal use.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Management of grazing intensity spatial allocation timing rest and animal use.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000107"
       }
@@ -72099,6 +72496,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Variable cost attributable to a crop or livestock management activity.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Variable cost attributable to a crop or livestock management activity.",
         "@language": "en"
       },
@@ -72123,6 +72524,10 @@
         "@value": "Feed materials derived from baby corn production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from baby corn production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
       }
@@ -72141,6 +72546,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from barley production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from barley production or processing.",
         "@language": "en"
       },
@@ -72170,6 +72579,10 @@
         "@value": "Feed materials derived from Cheka production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Cheka production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
       }
@@ -72191,6 +72604,10 @@
         "@value": "Feed materials derived from finger millet production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from finger millet production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
       }
@@ -72209,6 +72626,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from millet production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from millet production or processing.",
         "@language": "en"
       },
@@ -72238,6 +72659,10 @@
         "@value": "Feed materials derived from oat production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from oat production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
       },
@@ -72264,6 +72689,10 @@
         "@value": "Feed materials derived from rice production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from rice production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
       }
@@ -72285,6 +72714,10 @@
         "@value": "Feed materials derived from rye production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from rye production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
       }
@@ -72303,6 +72736,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from sorghum production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from sorghum production or processing.",
         "@language": "en"
       },
@@ -72332,6 +72769,10 @@
         "@value": "Feed materials derived from wheat production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from wheat production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000594"
       },
@@ -72358,6 +72799,10 @@
         "@value": "Feed materials derived from chickpea production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from chickpea production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000615"
       }
@@ -72376,6 +72821,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from common bean production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from common bean production or processing.",
         "@language": "en"
       },
@@ -72400,6 +72849,10 @@
         "@value": "Feed materials derived from cowpea production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from cowpea production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000615"
       }
@@ -72418,6 +72871,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from fava bean production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from fava bean production or processing.",
         "@language": "en"
       },
@@ -72447,6 +72904,10 @@
         "@value": "Feed materials derived from groundnut production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from groundnut production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000615"
       },
@@ -72473,6 +72934,10 @@
         "@value": "Feed materials derived from guar bean production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from guar bean production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000615"
       }
@@ -72491,6 +72956,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from lentil production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from lentil production or processing.",
         "@language": "en"
       },
@@ -72515,6 +72984,10 @@
         "@value": "Feed materials derived from lima bean production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from lima bean production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000615"
       }
@@ -72533,6 +73006,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from pea production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from pea production or processing.",
         "@language": "en"
       },
@@ -72562,6 +73039,10 @@
         "@value": "Feed materials derived from pigeon pea production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from pigeon pea production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000615"
       },
@@ -72588,6 +73069,10 @@
         "@value": "Feed materials derived from carob production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from carob production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -72606,6 +73091,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from cocoa production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from cocoa production or processing.",
         "@language": "en"
       },
@@ -72630,6 +73119,10 @@
         "@value": "Feed materials derived from coffee production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from coffee production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -72648,6 +73141,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from khat production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from khat production or processing.",
         "@language": "en"
       },
@@ -72672,6 +73169,10 @@
         "@value": "Feed materials derived from banana production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from banana production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -72693,6 +73194,10 @@
         "@value": "Feed materials derived from citrus production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from citrus production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -72711,6 +73216,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from date production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from date production or processing.",
         "@language": "en"
       },
@@ -72740,6 +73249,10 @@
         "@value": "Feed materials derived from grape production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from grape production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -72758,6 +73271,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from jackfruit production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from jackfruit production or processing.",
         "@language": "en"
       },
@@ -72787,6 +73304,10 @@
         "@value": "Feed materials derived from mango production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from mango production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       },
@@ -72813,6 +73334,10 @@
         "@value": "Feed materials derived from marula production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from marula production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -72831,6 +73356,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from melon production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from melon production or processing.",
         "@language": "en"
       },
@@ -72855,6 +73384,10 @@
         "@value": "Feed materials derived from orange production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from orange production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -72873,6 +73406,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from papaya production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from papaya production or processing.",
         "@language": "en"
       },
@@ -72897,6 +73434,10 @@
         "@value": "Feed materials derived from plantain production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from plantain production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -72915,6 +73456,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from watermelon production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from watermelon production or processing.",
         "@language": "en"
       },
@@ -72939,6 +73484,10 @@
         "@value": "Feed materials derived from argan production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from argan production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       }
@@ -72957,6 +73506,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from canola production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from canola production or processing.",
         "@language": "en"
       },
@@ -72986,6 +73539,10 @@
         "@value": "Feed materials derived from cashew production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from cashew production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       }
@@ -73004,6 +73561,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from coconut production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from coconut production or processing.",
         "@language": "en"
       },
@@ -73028,6 +73589,10 @@
         "@value": "Feed materials derived from cotton production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from cotton production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       }
@@ -73046,6 +73611,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from hibiscus production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from hibiscus production or processing.",
         "@language": "en"
       },
@@ -73070,6 +73639,10 @@
         "@value": "Feed materials derived from jojoba production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from jojoba production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       }
@@ -73088,6 +73661,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from linseed production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from linseed production or processing.",
         "@language": "en"
       },
@@ -73117,6 +73694,10 @@
         "@value": "Feed materials derived from macadamia production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from macadamia production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       }
@@ -73135,6 +73716,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from olive production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from olive production or processing.",
         "@language": "en"
       },
@@ -73159,6 +73744,10 @@
         "@value": "Feed materials derived from palm kernel production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from palm kernel production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       }
@@ -73180,6 +73769,10 @@
         "@value": "Feed materials derived from sesame production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from sesame production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       }
@@ -73198,6 +73791,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from sheanut production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from sheanut production or processing.",
         "@language": "en"
       },
@@ -73227,6 +73824,10 @@
         "@value": "Feed materials derived from sunflower production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from sunflower production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       },
@@ -73253,6 +73854,10 @@
         "@value": "Feed materials derived from walnut production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from walnut production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000628"
       }
@@ -73271,6 +73876,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from other plant production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from other plant production or processing.",
         "@language": "en"
       },
@@ -73295,6 +73904,10 @@
         "@value": "Feed materials derived from african yam bean production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from african yam bean production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000615"
       }
@@ -73313,6 +73926,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from beet production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from beet production or processing.",
         "@language": "en"
       },
@@ -73337,6 +73954,10 @@
         "@value": "Feed materials derived from beetroot production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from beetroot production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000641"
       }
@@ -73355,6 +73976,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from cassava production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from cassava production or processing.",
         "@language": "en"
       },
@@ -73384,6 +74009,10 @@
         "@value": "Feed materials derived from potato production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from potato production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000641"
       }
@@ -73402,6 +74031,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from sweet potato production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from sweet potato production or processing.",
         "@language": "en"
       },
@@ -73431,6 +74064,10 @@
         "@value": "Feed materials derived from taro production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from taro production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000641"
       }
@@ -73449,6 +74086,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from yam production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from yam production or processing.",
         "@language": "en"
       },
@@ -73473,6 +74114,10 @@
         "@value": "Feed materials derived from sugar beet production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from sugar beet production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000644"
       }
@@ -73491,6 +74136,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from sugarcane production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from sugarcane production or processing.",
         "@language": "en"
       },
@@ -73515,6 +74164,10 @@
         "@value": "Feed materials derived from arugula production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from arugula production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -73533,6 +74186,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from cabbage production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from cabbage production or processing.",
         "@language": "en"
       },
@@ -73557,6 +74214,10 @@
         "@value": "Feed materials derived from carrot production or processing.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from carrot production or processing.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -73575,6 +74236,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from tomato production or processing.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from tomato production or processing.",
         "@language": "en"
       },
@@ -73599,6 +74264,10 @@
         "@value": "Feed-material category for primary crop products.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed-material category for primary crop products.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100850"
       }
@@ -73617,6 +74286,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from cash crops as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from cash crops as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73641,6 +74314,10 @@
         "@value": "Feed materials obtained from spices as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from spices as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100921"
       }
@@ -73659,6 +74336,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from vegetables as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from vegetables as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73683,6 +74364,10 @@
         "@value": "Feed materials obtained from cocoa as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from cocoa as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100922"
       }
@@ -73701,6 +74386,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from coffee as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from coffee as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73725,6 +74414,10 @@
         "@value": "Feed materials obtained from rice as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from rice as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000662"
       }
@@ -73743,6 +74436,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from lemon as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from lemon as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73767,6 +74464,10 @@
         "@value": "Feed materials obtained from tomato as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from tomato as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000665"
       }
@@ -73785,6 +74486,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from blue lupin as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from blue lupin as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73809,6 +74514,10 @@
         "@value": "Feed materials obtained from common bean as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from common bean as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000667"
       }
@@ -73827,6 +74536,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from winged bean as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from winged bean as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73851,6 +74564,10 @@
         "@value": "Feed materials obtained from coconut as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from coconut as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000677"
       }
@@ -73869,6 +74586,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from palm as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from palm as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73893,6 +74614,10 @@
         "@value": "Feed materials obtained from safflower as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from safflower as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000677"
       }
@@ -73911,6 +74636,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from cassava as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from cassava as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73935,6 +74664,10 @@
         "@value": "Feed materials obtained from ensete as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from ensete as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000681"
       }
@@ -73953,6 +74686,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from potato as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from potato as primary products or processed product forms.",
         "@language": "en"
       },
@@ -73977,6 +74714,10 @@
         "@value": "Feed materials obtained from black cumin as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from black cumin as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001916"
       }
@@ -73995,6 +74736,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from black cumin as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from black cumin as primary products or processed product forms.",
         "@language": "en"
       },
@@ -74019,6 +74764,10 @@
         "@value": "Feed materials obtained from rosemary as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from rosemary as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100923"
       }
@@ -74037,6 +74786,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from fluted pumpkin as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from fluted pumpkin as primary products or processed product forms.",
         "@language": "en"
       },
@@ -74061,6 +74814,10 @@
         "@value": "Feed materials obtained from garlic as primary products or processed product forms.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials obtained from garlic as primary products or processed product forms.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100924"
       }
@@ -74079,6 +74836,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials obtained from onion as primary products or processed product forms.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials obtained from onion as primary products or processed product forms.",
         "@language": "en"
       },
@@ -74103,6 +74864,10 @@
         "@value": "Feed materials derived from Bothriochloa, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Bothriochloa, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000701"
       }
@@ -74121,6 +74886,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Hordeum vulgare, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Hordeum vulgare, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74145,6 +74914,10 @@
         "@value": "Feed materials derived from Acacia auriculiformis, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Acacia auriculiformis, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74163,6 +74936,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Acioa barteri, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Acioa barteri, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74187,6 +74964,10 @@
         "@value": "Feed materials derived from Bridelia ferruginea, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Bridelia ferruginea, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74205,6 +74986,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Ceratonia siliqua, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Ceratonia siliqua, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74229,6 +75014,10 @@
         "@value": "Feed materials derived from Delonix elata, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Delonix elata, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74247,6 +75036,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Delonix regia, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Delonix regia, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74271,6 +75064,10 @@
         "@value": "Feed materials derived from Garcinia kola, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Garcinia kola, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74289,6 +75086,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Grewia similis, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Grewia similis, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74313,6 +75114,10 @@
         "@value": "Feed materials derived from Harrisonia abyssinica, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Harrisonia abyssinica, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74331,6 +75136,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Hevea brasiliensis, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Hevea brasiliensis, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74355,6 +75164,10 @@
         "@value": "Feed materials derived from Jatropha curcas, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Jatropha curcas, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74373,6 +75186,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Jatropha curcas press cake, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Jatropha curcas press cake, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74397,6 +75214,10 @@
         "@value": "Feed materials derived from Leucaena, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Leucaena, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74415,6 +75236,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Morus indica, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Morus indica, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74439,6 +75264,10 @@
         "@value": "Feed materials derived from Myrtus communis, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Myrtus communis, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74457,6 +75286,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from olive, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from olive, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74481,6 +75314,10 @@
         "@value": "Feed materials derived from Oxytenanthera abyssinica, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Oxytenanthera abyssinica, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74499,6 +75336,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Prosopis, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Prosopis, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74523,6 +75364,10 @@
         "@value": "Feed materials derived from Sesbania, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Sesbania, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74541,6 +75386,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Vitex doniana, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Vitex doniana, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74565,6 +75414,10 @@
         "@value": "Feed materials derived from Ziziphus jujuba, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Ziziphus jujuba, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000718"
       }
@@ -74586,6 +75439,10 @@
         "@value": "Feed materials derived from Mucuna pruriens protein, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Mucuna pruriens protein, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001227"
       }
@@ -74604,6 +75461,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Trifolium quartinianum, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Trifolium quartinianum, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74633,6 +75494,10 @@
         "@value": "Feed materials derived from bamboo, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from bamboo, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000734"
       }
@@ -74651,6 +75516,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Cochlospermum planchonii, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Cochlospermum planchonii, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74675,6 +75544,10 @@
         "@value": "Feed materials derived from Lantana camara, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Lantana camara, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000734"
       }
@@ -74693,6 +75566,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Mangifera indica, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Mangifera indica, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74717,6 +75594,10 @@
         "@value": "Feed materials derived from Trachyspermum ammi, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from Trachyspermum ammi, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000734"
       }
@@ -74735,6 +75616,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed materials derived from Panicum antidotale, grouped independently of plant-part and processing state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed materials derived from Panicum antidotale, grouped independently of plant-part and processing state.",
         "@language": "en"
       },
@@ -74759,6 +75644,10 @@
         "@value": "Grouping for animal-derived production and processing residues; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Grouping for animal-derived production and processing residues; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100850"
       }
@@ -74777,6 +75666,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Grouping for shrimp; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Grouping for shrimp; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
@@ -74801,6 +75694,10 @@
         "@value": "Grouping for legacy brown-fish category; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Grouping for legacy brown-fish category; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000549"
       }
@@ -74819,6 +75716,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Grouping for legacy Danish-fish category; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Grouping for legacy Danish-fish category; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
@@ -74843,6 +75744,10 @@
         "@value": "Grouping for menhaden fish; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Grouping for menhaden fish; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000549"
       }
@@ -74861,6 +75766,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Grouping for housefly larvae; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Grouping for housefly larvae; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
@@ -74885,6 +75794,10 @@
         "@value": "Grouping for Oryctes rhinoceros; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Grouping for Oryctes rhinoceros; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000554"
       }
@@ -74903,6 +75816,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Grouping for chicken-derived feed material; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Grouping for chicken-derived feed material; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
@@ -74932,6 +75849,10 @@
         "@value": "Grouping for feather-derived feed material; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Grouping for feather-derived feed material; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100976"
       }
@@ -74950,6 +75871,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Grouping for fish-processing residues; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Grouping for fish-processing residues; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
@@ -74974,6 +75899,10 @@
         "@value": "Grouping for marine-animal hydrolysates; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Grouping for marine-animal hydrolysates; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100976"
       }
@@ -74992,6 +75921,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed-material category for former foodstuffs and processed-food production residues used as feed; product or waste role remains explicit.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed-material category for former foodstuffs and processed-food production residues used as feed; product or waste role remains explicit.",
         "@language": "en"
       },
@@ -75022,6 +75955,10 @@
         "@value": "Editorial grouping for untreated organic-waste source terms whose safety and regulatory suitability as feed remain unresolved.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Editorial grouping for untreated organic-waste source terms whose safety and regulatory suitability as feed remain unresolved.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101142"
       }
@@ -75049,6 +75986,10 @@
         "@value": "Feed materials derived from microalgal biomass; source taxon and processing remain explicit.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed materials derived from microalgal biomass; source taxon and processing remain explicit.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100850"
       }
@@ -75067,6 +76008,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Grouping for biological feed processing; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Grouping for biological feed processing; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
@@ -75091,6 +76036,10 @@
         "@value": "Grouping for chemical feed processing; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Grouping for chemical feed processing; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000845"
       }
@@ -75109,6 +76058,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Grouping for feed acquisition source; processing state remains represented by narrower feed-material concepts.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Grouping for feed acquisition source; processing state remains represented by narrower feed-material concepts.",
         "@language": "en"
       },
@@ -75133,6 +76086,10 @@
         "@value": "Physical structure used to house or rear terrestrial livestock.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Physical structure used to house or rear terrestrial livestock.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000900"
       }
@@ -75151,6 +76108,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Production system dedicated to rearing animals to reproductive maturity.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Production system dedicated to rearing animals to reproductive maturity.",
         "@language": "en"
       },
@@ -75175,6 +76136,10 @@
         "@value": "Temporal frequency or duration used to describe grazing management.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Temporal frequency or duration used to describe grazing management.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_100853"
       }
@@ -75193,6 +76158,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Composition of a managed animal group by stage, sex, or genetic group.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Composition of a managed animal group by stage, sex, or genetic group.",
         "@language": "en"
       },
@@ -75217,6 +76186,10 @@
         "@value": "Practices for prevention, monitoring, and management of animal health.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Practices for prevention, monitoring, and management of animal health.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000151"
       }
@@ -75235,6 +76208,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Quantity, biomass, density, or stocking rate of animals in a production unit.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Quantity, biomass, density, or stocking rate of animals in a production unit.",
         "@language": "en"
       },
@@ -75259,6 +76236,10 @@
         "@value": "Parity and gestational-stage descriptors for managed animals; dimensions require later separation.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Parity and gestational-stage descriptors for managed animals; dimensions require later separation.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000107"
       }
@@ -75277,6 +76258,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Practices governing pasture condition, access, stocking, and fodder provision.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Practices governing pasture condition, access, stocking, and fodder provision.",
         "@language": "en"
       },
@@ -75301,6 +76286,10 @@
         "@value": "Practices and structures used to preserve fodder for later feeding.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Practices and structures used to preserve fodder for later feeding.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101000"
       }
@@ -75319,6 +76308,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Animal-source categories used to organize life-stage descriptors in livestock management.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Animal-source categories used to organize life-stage descriptors in livestock management.",
         "@language": "en"
       },
@@ -75343,6 +76336,10 @@
         "@value": "Young-life-stage classes for chickens.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Young-life-stage classes for chickens.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001039"
       }
@@ -75361,6 +76358,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Young-life-stage classes for fish.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Young-life-stage classes for fish.",
         "@language": "en"
       },
@@ -75385,6 +76386,10 @@
         "@value": "Economic value of forgone labor, capital, or land alternatives.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Economic value of forgone labor, capital, or land alternatives.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000403"
       }
@@ -75403,6 +76408,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Total cost normalized by animal or land area.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Total cost normalized by animal or land area.",
         "@language": "en"
       },
@@ -75427,6 +76436,10 @@
         "@value": "Total cost normalized by production output.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Total cost normalized by production output.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000403"
       }
@@ -75445,6 +76458,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Variable costs attributable to material inputs.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Variable costs attributable to material inputs.",
         "@language": "en"
       },
@@ -75469,6 +76486,10 @@
         "@value": "Variable costs attributable to chemical or biological pest control.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Variable costs attributable to chemical or biological pest control.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101008"
       }
@@ -75487,6 +76508,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Labor cost attributable to family labor, including sex-disaggregated measures.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Labor cost attributable to family labor, including sex-disaggregated measures.",
         "@language": "en"
       },
@@ -75511,6 +76536,10 @@
         "@value": "Monetary private benefits from produce, manure, or animal services.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Monetary private benefits from produce, manure, or animal services.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000397"
       }
@@ -75529,6 +76558,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Private benefits received through consumption, nutrient cycling, or animal labor.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Private benefits received through consumption, nutrient cycling, or animal labor.",
         "@language": "en"
       },
@@ -75553,6 +76586,10 @@
         "@value": "Monetary and non-monetary benefits accruing beyond the private producer.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Monetary and non-monetary benefits accruing beyond the private producer.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000397"
       }
@@ -75571,6 +76608,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Labor time and returns-to-labor productivity outcomes.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Labor time and returns-to-labor productivity outcomes.",
         "@language": "en"
       },
@@ -75595,6 +76636,10 @@
         "@value": "Milk-fat quantity and compositional outcomes.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Milk-fat quantity and compositional outcomes.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000366"
       }
@@ -75613,6 +76658,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Sex-disaggregated income and gender-equity outcomes.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Sex-disaggregated income and gender-equity outcomes.",
         "@language": "en"
       },
@@ -75637,6 +76686,10 @@
         "@value": "Echinoid animal grouping used for aquatic production species.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Echinoid animal grouping used for aquatic production species.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000032"
       }
@@ -75655,6 +76708,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Pig and related porcine animal concepts without asserting a narrower taxonomic rank.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Pig and related porcine animal concepts without asserting a narrower taxonomic rank.",
         "@language": "en"
       },
@@ -75692,6 +76749,10 @@
         "@value": "Biological anatomical structures represented as components of feed materials.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Biological anatomical structures represented as components of feed materials.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101085"
       }
@@ -75720,6 +76781,10 @@
       ],
       "skos:definition": {
         "@value": "Shapes and particle presentations applicable to feed materials or formulated feeds independently of moisture and bulk consistency.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Shapes and particle presentations of feeds, independently of moisture and bulk consistency.",
         "@language": "en"
       },
       "skos:broader": {
@@ -75756,6 +76821,10 @@
         "@value": "Product, functional, or experimental roles borne by feed-related materials, products, or substances independently of identity.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Product, functional, or experimental roles borne by feed-related materials, products, or substances independently of identity.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000328"
       }
@@ -75786,6 +76855,10 @@
         "@value": "Chemical substances or chemically defined fractions asserted as primary constituents of feed materials.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Chemical substances or chemically defined fractions asserted as primary constituents of feed materials.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101146"
       }
@@ -75807,6 +76880,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -75834,6 +76911,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -75855,6 +76936,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -75882,6 +76967,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -75903,6 +76992,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -75930,6 +77023,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -75951,6 +77048,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -75978,6 +77079,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -75999,6 +77104,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76026,6 +77135,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -76047,6 +77160,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76074,6 +77191,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -76095,6 +77216,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76122,6 +77247,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -76143,6 +77272,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76170,6 +77303,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -76191,6 +77328,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell.",
         "@language": "en"
       },
@@ -76218,6 +77359,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -76239,6 +77384,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76266,6 +77415,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -76287,6 +77440,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76314,6 +77471,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -76335,6 +77496,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76362,6 +77527,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -76383,6 +77552,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76410,6 +77583,10 @@
         "@value": "Governed presentation form value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed presentation form value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101020"
       }
@@ -76431,6 +77608,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed presentation form value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed presentation form value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76458,6 +77639,10 @@
         "@value": "Governed presentation form value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed presentation form value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101125"
       }
@@ -76479,6 +77664,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed presentation form value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed presentation form value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76506,6 +77695,10 @@
         "@value": "Governed presentation form value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed presentation form value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101020"
       }
@@ -76527,6 +77720,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Moisture-reduced condition supported by an explicit drying process or material-specific evidence; no presentation form is implied.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Moisture-reduced condition supported by an explicit drying process or material-specific evidence; no presentation form is implied.",
         "@language": "en"
       },
@@ -76560,6 +77757,10 @@
         "@value": "Waste role borne by material described as discarded or culled; lawful recovery or eligibility for feed requires separate evidence.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Waste role borne by material described as discarded or culled; lawful recovery or eligibility for feed requires separate evidence.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101061"
       }
@@ -76581,6 +77782,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Waste role borne by material removed from a market or retail stream; material identity, safety, and eligibility for feed remain separate.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Waste role borne by material removed from a market or retail stream; material identity, safety, and eligibility for feed remain separate.",
         "@language": "en"
       },
@@ -76614,6 +77819,10 @@
         "@value": "By-product role borne by material described in source terminology as offal; exact animal or crop-derived material identity and component require separate assertions.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "By-product role borne by material described in source terminology as offal; exact animal or crop-derived material identity and component require separate assertions.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101062"
       }
@@ -76635,6 +77844,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Waste role borne by material identified as waste from a processing operation; processing origin alone does not establish lawful feed use.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Waste role borne by material identified as waste from a processing operation; processing origin alone does not establish lawful feed use.",
         "@language": "en"
       },
@@ -76668,6 +77881,10 @@
         "@value": "By-product role borne by a secondary residue retained from production or processing for another use; exact residue identity requires a separate assertion.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "By-product role borne by a secondary residue retained from production or processing for another use; exact residue identity requires a separate assertion.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101062"
       }
@@ -76698,6 +77915,10 @@
         "@value": "By-product role borne by a secondary milling output such as shorts; milling fraction identity and processing method remain separate.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "By-product role borne by a secondary milling output such as shorts; milling fraction identity and processing method remain separate.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101062"
       }
@@ -76722,6 +77943,10 @@
         "@value": "Product-status role borne by material identified as waste or discarded. Waste remains distinct from by-product status and does not establish eligibility for feed.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Product-status role borne by material identified as waste or discarded. Waste remains distinct from by-product status and does not establish eligibility for feed.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101148"
       }
@@ -76743,6 +77968,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Product role borne by a secondary output obtained alongside or remaining after production or processing of a principal product and retained for another use. Material identity and lawful feed use require separate assertions.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Product role borne by a secondary output obtained alongside or remaining after production or processing of a principal product and retained for another use. Material identity and lawful feed use require separate assertions.",
         "@language": "en"
       },
@@ -76776,6 +78005,10 @@
         "@value": "By-product role borne by crop residue retained after harvest or processing for another use; anatomical or composite component identity remains separate.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "By-product role borne by crop residue retained after harvest or processing for another use; anatomical or composite component identity remains separate.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101062"
       }
@@ -76797,6 +78030,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed chemical constituent value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed chemical constituent value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76824,6 +78061,10 @@
         "@value": "Governed chemical constituent value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed chemical constituent value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101023"
       }
@@ -76845,6 +78086,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed chemical constituent value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed chemical constituent value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76872,6 +78117,10 @@
         "@value": "Governed chemical constituent value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed chemical constituent value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101023"
       }
@@ -76896,6 +78145,10 @@
         "@value": "Governed processing method value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed processing method value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101130"
       }
@@ -76917,6 +78170,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed processing method value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed processing method value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -76949,6 +78206,10 @@
         "@value": "Governed processing method value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed processing method value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101130"
       }
@@ -76970,6 +78231,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed processing method value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed processing method value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -77002,6 +78267,10 @@
         "@value": "Governed anatomical part value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -77023,6 +78292,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed presentation form value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed presentation form value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -77056,6 +78329,10 @@
         "@value": "Presentation in which a feed item remains visibly intact; whole-crop or whole-grain integrity is not implied.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Presentation in which a feed item remains visibly intact; whole-crop or whole-grain integrity is not implied.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101020"
       }
@@ -77080,6 +78357,10 @@
         "@value": "Flowing bulk consistency without a governed requirement for dispersed solid particles.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Flowing bulk consistency without a governed requirement for dispersed solid particles.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101132"
       }
@@ -77101,6 +78382,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Moist fibrous or cellular bulk consistency, commonly semisolid; source and production process remain independently represented.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Moist fibrous or cellular bulk consistency, commonly semisolid; source and production process remain independently represented.",
         "@language": "en"
       },
@@ -77134,6 +78419,10 @@
         "@value": "Governed product role value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed product role value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101149"
       }
@@ -77155,6 +78444,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed chemical constituent value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed chemical constituent value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -77182,6 +78475,10 @@
         "@value": "Governed chemical constituent value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed chemical constituent value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101023"
       }
@@ -77203,6 +78500,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed processing method value used for ingredient-component semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed processing method value used for ingredient-component semantics.",
         "@language": "en"
       },
@@ -77230,6 +78531,10 @@
         "@value": "Governed processing method value used for ingredient-component semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed processing method value used for ingredient-component semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000845"
       }
@@ -77251,6 +78556,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Anatomical structures, processed fractions, body substances, or collective material scopes represented as components of feed materials.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Anatomical structures, processed fractions, body substances, or collective material scopes represented as components of feed materials.",
         "@language": "en"
       },
@@ -77284,6 +78593,10 @@
         "@value": "Composition state indicating retention of the harvested whole-crop scope rather than one component part.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Composition state indicating retention of the harvested whole-crop scope rather than one component part.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101115"
       }
@@ -77308,6 +78621,10 @@
         "@value": "Governed processing method value used for feed-material semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed processing method value used for feed-material semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101096"
       }
@@ -77329,6 +78646,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed processing method value used for feed-material semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed processing method value used for feed-material semantics.",
         "@language": "en"
       },
@@ -77358,6 +78679,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed processing method value used for feed-material semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed processing method value used for feed-material semantics.",
         "@language": "en"
       },
@@ -77391,6 +78716,10 @@
         "@value": "Moistening and softening feed materials, also called steeping, to facilitate water uptake, coat removal, cooking, germination, or reduction of some antinutritional factors.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed processing method value used for feed-material semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000845"
       }
@@ -77412,6 +78741,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Animal body substance represented as a feed-material component; distinct from Blood feed material.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Animal body substance represented as a feed-material component; distinct from Blood feed material.",
         "@language": "en"
       },
@@ -77439,6 +78772,10 @@
         "@value": "Cereal outer-layer milling fraction with variable attached endosperm; represented as a processed material fraction.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Cereal outer-layer milling fraction with variable attached endosperm; represented as a processed material fraction.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101144"
       }
@@ -77460,6 +78797,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Composite crop-residue component remaining after grain or seed harvest; not one anatomical structure.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Composite crop-residue component remaining after grain or seed harvest; not one anatomical structure.",
         "@language": "en"
       },
@@ -77487,6 +78828,10 @@
         "@value": "Composite crop-residue component consisting mainly of dried cereal or legume stems and leaves after harvest; not one anatomical structure.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Composite crop-residue component consisting mainly of dried cereal or legume stems and leaves after harvest; not one anatomical structure.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101154"
       }
@@ -77511,6 +78856,10 @@
         "@value": "Governed anatomical part value used for feed-material semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for feed-material semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -77532,6 +78881,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed presentation form value used for feed-material semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed presentation form value used for feed-material semantics.",
         "@language": "en"
       },
@@ -77569,6 +78922,10 @@
         "@value": "Component-retention state in which bran, germ, and endosperm remain in characteristic proportions independently of particle-size reduction.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Component-retention state in which bran, germ, and endosperm remain in characteristic proportions independently of particle-size reduction.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101115"
       }
@@ -77590,6 +78947,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed feed product type vocabulary used for feed-material semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed feed product type vocabulary used for feed-material semantics.",
         "@language": "en"
       },
@@ -77617,6 +78978,10 @@
         "@value": "Governed feed product type value used for feed-material semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed feed product type value used for feed-material semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101111"
       }
@@ -77641,6 +79006,10 @@
         "@value": "Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101111"
       }
@@ -77662,6 +79031,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed feed product type value used for feed-material semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed feed product type value used for feed-material semantics.",
         "@language": "en"
       },
@@ -77695,6 +79068,10 @@
         "@value": "Composition states defined by positive retention of native material components or chemical constituents.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Composition states defined by positive retention of native material components or chemical constituents.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000196"
       }
@@ -77716,6 +79093,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed composition state value used for feed-material semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed composition state value used for feed-material semantics.",
         "@language": "en"
       },
@@ -77743,6 +79124,10 @@
         "@value": "Governed anatomical part value used for feed-material semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for feed-material semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -77764,6 +79149,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Bulk consistency in which solid particles are dispersed in a liquid continuous phase; not equivalent to an unqualified liquid.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Bulk consistency in which solid particles are dispersed in a liquid continuous phase; not equivalent to an unqualified liquid.",
         "@language": "en"
       },
@@ -77791,6 +79180,10 @@
         "@value": "Protein represented as a primary chemical constituent of a feed material, not as an ingredient component of a formulated feed.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed chemical constituent value used for feed-material semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101023"
       }
@@ -77812,6 +79205,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed anatomical part value used for feed-material semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed anatomical part value used for feed-material semantics.",
         "@language": "en"
       },
@@ -77839,6 +79236,10 @@
         "@value": "Governed anatomical part value used for feed-material semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed anatomical part value used for feed-material semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101019"
       }
@@ -77863,6 +79264,10 @@
         "@value": "Governed processing method value used for feed-material semantics.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Governed processing method value used for feed-material semantics.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000845"
       }
@@ -77884,6 +79289,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Governed processing method value used for feed-material semantics.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Governed processing method value used for feed-material semantics.",
         "@language": "en"
       },
@@ -77916,6 +79325,10 @@
         "@value": "Particle presentation produced by size reduction; bulk consistency, moisture condition, and particle-size threshold remain unspecified.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Particle presentation produced by size reduction; bulk consistency, moisture condition, and particle-size threshold remain unspecified.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101020"
       }
@@ -77940,6 +79353,10 @@
         "@value": "Comminuted feed presentation described as meal; drying and particle-size threshold remain unspecified unless separately governed.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Comminuted feed presentation described as meal; drying and particle-size threshold remain unspecified unless separately governed.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101125"
       }
@@ -77958,6 +79375,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Rendered poultry by-products prepared as feed by cooking or sterilization, drying, and grinding.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Rendered poultry by-products prepared as feed by cooking or sterilization, drying, and grinding.",
         "@language": "en"
       },
@@ -78000,6 +79421,10 @@
         "@value": "Thermal processing of animal by-products to separate or stabilize feed materials.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Thermal processing of animal by-products to separate or stabilize feed materials.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000826"
       }
@@ -78021,6 +79446,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed processes whose governed objective includes reducing particle dimensions without requiring one machine or dry bulk state.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed processes whose governed objective includes reducing particle dimensions without requiring one machine or dry bulk state.",
         "@language": "en"
       },
@@ -78058,6 +79487,10 @@
         "@value": "Feed processes whose objective includes removing, separating, or recovering a material component or fraction.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed processes whose objective includes removing, separating, or recovering a material component or fraction.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000845"
       }
@@ -78079,6 +79512,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed processes whose governed objective includes shaping or agglomerating material into a presentation such as pellets, flakes, or extrudates.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed processes whose governed objective includes shaping or agglomerating material into a presentation such as pellets, flakes, or extrudates.",
         "@language": "en"
       },
@@ -78112,6 +79549,10 @@
         "@value": "Bulk flow and dispersion consistencies applicable to feed materials or formulated feeds independently of particle presentation and moisture condition.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Bulk flow and dispersion consistencies of feed materials, independently of particle presentation and moisture condition.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000328"
       }
@@ -78140,6 +79581,10 @@
       ],
       "skos:definition": {
         "@value": "Qualitative moisture conditions applicable to feed materials or formulated feeds independently of particle presentation and bulk consistency.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Qualitative moisture conditions of feed materials, independently of particle presentation and bulk consistency.",
         "@language": "en"
       },
       "skos:broader": {
@@ -78172,6 +79617,10 @@
         "@value": "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101115"
       }
@@ -78190,6 +79639,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed products intentionally added for a technological, sensory, nutritional, zootechnical, coccidiostatic, or histomonostatic function; authorization conditions require dated regulatory evidence.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed products intentionally added for a technological, sensory, nutritional, zootechnical, coccidiostatic, or histomonostatic function; authorization conditions require dated regulatory evidence.",
         "@language": "en"
       },
@@ -78214,6 +79667,10 @@
         "@value": "Feed-additive category for vitamins, trace-element compounds, amino acids, urea, and related authorized nutritional additive groups.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed-additive category for vitamins, trace-element compounds, amino acids, urea, and related authorized nutritional additive groups.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101135"
       }
@@ -78232,6 +79689,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Feed-additive category for substances or preparations used to affect animal performance, digestibility, or gut flora under authorized conditions.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Feed-additive category for substances or preparations used to affect animal performance, digestibility, or gut flora under authorized conditions.",
         "@language": "en"
       },
@@ -78256,6 +79717,10 @@
         "@value": "Feed-additive category for substances or preparations used for technological functions in feed, including preservation and contaminant reduction where authorized.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Feed-additive category for substances or preparations used for technological functions in feed, including preservation and contaminant reduction where authorized.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101135"
       }
@@ -78274,6 +79739,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Mineral substances or products represented as feed materials; chemical composition and authorization as an additive require separate assertions.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Mineral substances or products represented as feed materials; chemical composition and authorization as an additive require separate assertions.",
         "@language": "en"
       },
@@ -78298,6 +79767,10 @@
         "@value": "Formulated complementary feeds whose governed identity is a mineral block, lick, salt lick, or mineral mixture.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Formulated complementary feeds whose governed identity is a mineral block, lick, salt lick, or mineral mixture.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001491"
       }
@@ -78319,6 +79792,10 @@
         "@value": "Multi-component vitamin preparations represented as premixtures or complementary feeds rather than single vitamin substances.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Multi-component vitamin preparations represented as premixtures or complementary feeds rather than single vitamin substances.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_001491"
       }
@@ -78337,6 +79814,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Editorial grouping for active source terms whose feed product kind, chemical identity, intended use, safety, or regulatory class remains unresolved; membership asserts no feed-material, formulation, or additive class.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Editorial grouping for active source terms whose feed product kind, chemical identity, intended use, safety, or regulatory class remains unresolved; membership asserts no feed-material, formulation, or additive class.",
         "@language": "en"
       },
@@ -78364,6 +79845,10 @@
         "@value": "Material components or fractions produced or recovered through processing rather than one anatomical structure.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Material components or fractions produced or recovered through processing rather than one anatomical structure.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101085"
       }
@@ -78385,6 +79870,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Cereal-grain material fractions separated or recovered during milling, including bran and related fractions.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Cereal-grain material fractions separated or recovered during milling, including bran and related fractions.",
         "@language": "en"
       },
@@ -78412,6 +79901,10 @@
         "@value": "Animal-derived body substances represented as feed-material components without treating them as connected anatomical structures.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Animal-derived body substances represented as feed-material components without treating them as connected anatomical structures.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101085"
       }
@@ -78433,6 +79926,10 @@
         "@value": "Chemical substances and constituent categories used to describe feed identity or composition independently of feed product kind or additive function.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Chemical substances and constituent categories used to describe feed identity or composition independently of feed product kind or additive function.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_000328"
       }
@@ -78451,6 +79948,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions.",
         "@language": "en"
       },
@@ -78478,6 +79979,10 @@
         "@value": "Economic or production-status roles borne by feed materials. By-product and waste roles are sibling categories; material identity, component, process, and legal eligibility for feed remain separate.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Economic or production-status roles borne by feed materials. By-product and waste roles are sibling categories; material identity, component, process, and legal eligibility for feed remain separate.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101022"
       }
@@ -78502,6 +80007,10 @@
         "@value": "Functions borne by substances or products in feed, represented independently of their material, formulation, additive, or chemical identity.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Functions borne by substances or products in feed, represented independently of their material, formulation, additive, or chemical identity.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101022"
       }
@@ -78523,6 +80032,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Roles borne by substances or products because of their use in an experimental design or measurement method.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Roles borne by substances or products because of their use in an experimental design or measurement method.",
         "@language": "en"
       },
@@ -78556,6 +80069,10 @@
         "@value": "Experimental role borne by a marker substance used to estimate digestibility or passage without making marker function its chemical identity.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Experimental role borne by a marker substance used to estimate digestibility or passage without making marker function its chemical identity.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101150"
       }
@@ -78586,6 +80103,10 @@
         "@value": "Functional role borne by a material or product used to add bulk or carrier mass; bearer identity requires a separate assertion.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Functional role borne by a material or product used to add bulk or carrier mass; bearer identity requires a separate assertion.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101149"
       }
@@ -78607,6 +80128,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Seed tissue that stores nutrient reserves and forms a retained component of whole cereal grain.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Seed tissue that stores nutrient reserves and forms a retained component of whole cereal grain.",
         "@language": "en"
       },
@@ -78634,6 +80159,10 @@
         "@value": "Collective crop-residue components such as straw or stover that contain multiple anatomical structures.",
         "@language": "en"
       },
+      "skos:scopeNote": {
+        "@value": "Collective crop-residue components such as straw or stover that contain multiple anatomical structures.",
+        "@language": "en"
+      },
       "skos:broader": {
         "@id": "urn:era-aom:livestock:AOM_101085"
       }
@@ -78652,6 +80181,10 @@
       "era:conceptType": "aom_concept",
       "era:status": "unknown",
       "skos:definition": {
+        "@value": "Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components.",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
         "@value": "Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components.",
         "@language": "en"
       },

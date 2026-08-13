@@ -12,9 +12,9 @@
 <https://w3id.org/era-aom/binding/AOM_000531> a aom:SemanticBinding ;
     aom:bindingKind "property" ;
     aom:bindingStatus "approved" ;
-    aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+    aom:compatibilityPolicy "retain_predicate_uri_as_row_local_source_label_until_consumer_cutover" ;
     aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000531> ;
-    aom:targetClass aom:FeedMaterial ;
+    aom:targetClass aom:IngredientComponent ;
     aom:targetProperty aom:ingredientName ;
     aom:unitRequirement "not_applicable" ;
     aom:valueClass xsd:string .
@@ -22,9 +22,9 @@
 <https://w3id.org/era-aom/binding/AOM_000532> a aom:SemanticBinding ;
     aom:bindingKind "property" ;
     aom:bindingStatus "approved" ;
-    aom:compatibilityPolicy "preserve_raw_descriptor_until_reviewed_facet_decomposition" ;
+    aom:compatibilityPolicy "preserve_raw_descriptor_as_review_only_provenance_until_facet_decomposition" ;
     aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000532> ;
-    aom:targetClass aom:FeedMaterial ;
+    aom:targetClass aom:IngredientComponent ;
     aom:targetProperty aom:legacyComponentDescriptor ;
     aom:unitRequirement "not_applicable" ;
     aom:valueClass xsd:string .
@@ -41,9 +41,9 @@
 <https://w3id.org/era-aom/binding/AOM_000534> a aom:SemanticBinding ;
     aom:bindingKind "quantified_component" ;
     aom:bindingStatus "approved" ;
-    aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+    aom:compatibilityPolicy "require_explicit_unit_and_composition_basis_during_consumer_cutover" ;
     aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000534> ;
-    aom:quantityKind <http://qudt.org/vocab/quantitykind/Dimensionless> ;
+    aom:quantityKind <http://qudt.org/vocab/quantitykind/DimensionlessRatio> ;
     aom:targetClass aom:IngredientComponent ;
     aom:targetProperty aom:ingredientProportion ;
     aom:unitRequirement "required" ;
@@ -52,9 +52,9 @@
 <https://w3id.org/era-aom/binding/AOM_000535> a aom:SemanticBinding ;
     aom:bindingKind "property" ;
     aom:bindingStatus "approved" ;
-    aom:compatibilityPolicy "dual_publish_legacy_identifier_until_consumer_cutover" ;
+    aom:compatibilityPolicy "retain_predicate_uri_as_acquisition_source_until_consumer_cutover" ;
     aom:legacyConcept <https://w3id.org/era-aom/livestock/AOM_000535> ;
-    aom:targetClass aom:FeedMaterial ;
+    aom:targetClass aom:IngredientComponent ;
     aom:targetProperty aom:ingredientSource ;
     aom:unitRequirement "not_applicable" .
 

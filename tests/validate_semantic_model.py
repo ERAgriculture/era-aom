@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 
 from pyshacl import validate
-from rdflib import Graph, URIRef
-from rdflib.namespace import RDF
+from rdflib import Graph, Literal, URIRef
+from rdflib.namespace import RDF, RDFS
 
 ROOT = Path(__file__).resolve().parents[1]
 OWL = ROOT / "schemas/owl/aom-semantic-model.ttl"
@@ -78,9 +78,32 @@ assert all(
     for row in bindings if row["binding_kind"] in {"quantified_component", "observable_property"}
 )
 ingredient_part_binding = next(row for row in bindings if row["legacy_concept_id"] == "AOM_000532")
+binding_by_id = {row["legacy_concept_id"]: row for row in bindings}
+assert binding_by_id["AOM_000531"]["target_class"] == "aom:IngredientComponent"
 assert ingredient_part_binding["target_property"] == "aom:legacyComponentDescriptor"
+assert ingredient_part_binding["target_class"] == "aom:IngredientComponent"
 assert ingredient_part_binding["value_class"] == "xsd:string"
-assert ingredient_part_binding["compatibility_policy"] == "preserve_raw_descriptor_until_reviewed_facet_decomposition"
+assert ingredient_part_binding["compatibility_policy"] == "preserve_raw_descriptor_as_review_only_provenance_until_facet_decomposition"
+assert binding_by_id["AOM_000533"]["target_class"] == "aom:FeedMaterial"
+assert binding_by_id["AOM_000534"]["quantity_kind_uri"] == "http://qudt.org/vocab/quantitykind/DimensionlessRatio"
+assert binding_by_id["AOM_000535"]["target_class"] == "aom:IngredientComponent"
+
+schema_terms = {
+    "ingredientName": ("IngredientComponent", "has source ingredient label"),
+    "legacyComponentDescriptor": ("IngredientComponent", "has legacy component descriptor"),
+    "sourceTaxon": ("FeedMaterial", "has source taxon"),
+    "ingredientProportion": ("IngredientComponent", "has ingredient proportion"),
+    "ingredientProportionBasis": ("IngredientComponent", "has ingredient proportion basis"),
+    "ingredientSource": ("IngredientComponent", "has acquisition source"),
+}
+for property_name, (domain_name, label) in schema_terms.items():
+    property_uri = URIRef(f"urn:era-aom:schema:{property_name}")
+    assert (
+        property_uri,
+        RDFS.domain,
+        URIRef(f"urn:era-aom:schema:{domain_name}"),
+    ) in ontology
+    assert (property_uri, RDFS.label, Literal(label, lang="en")) in ontology
 
 with (FACET_REVIEW / "ingredient_component_facets.csv").open(encoding="utf-8", newline="") as h:
     facets = list(csv.DictReader(h))
@@ -343,12 +366,18 @@ valid_graph = Graph().parse(FIXTURES / "semantic-model-valid.ttl")
 invalid_graph = Graph().parse(FIXTURES / "semantic-model-invalid.ttl")
 invalid_value_binding_graph = Graph().parse(FIXTURES / "semantic-value-binding-invalid.ttl")
 invalid_facet_graph = Graph().parse(FIXTURES / "semantic-facet-invalid.ttl")
+invalid_proportion_graph = Graph().parse(FIXTURES / "semantic-proportion-invalid.ttl")
+invalid_proportion_kind_graph = Graph().parse(FIXTURES / "semantic-proportion-kind-invalid.ttl")
 valid_result, _, _ = validate(valid_graph, shacl_graph=shapes, ont_graph=ontology)
 invalid_result, _, _ = validate(invalid_graph, shacl_graph=shapes, ont_graph=ontology)
 invalid_value_binding_result, _, _ = validate(invalid_value_binding_graph, shacl_graph=shapes, ont_graph=ontology)
 invalid_facet_result, _, _ = validate(invalid_facet_graph, shacl_graph=shapes, ont_graph=ontology)
+invalid_proportion_result, _, _ = validate(invalid_proportion_graph, shacl_graph=shapes, ont_graph=ontology)
+invalid_proportion_kind_result, _, _ = validate(invalid_proportion_kind_graph, shacl_graph=shapes, ont_graph=ontology)
 assert valid_result
 assert not invalid_result
 assert not invalid_value_binding_result
 assert not invalid_facet_result
+assert not invalid_proportion_result
+assert not invalid_proportion_kind_result
 print("Semantic model validation passed: 50 dispositions; 13 structural, 417 value bindings, 18 facets, 2,961 material assertions")

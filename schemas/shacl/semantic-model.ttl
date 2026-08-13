@@ -1,5 +1,6 @@
 @prefix aom: <urn:era-aom:schema:> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
@@ -7,13 +8,7 @@
 
 aom:FeedMaterialShape a sh:NodeShape ;
   sh:targetClass aom:FeedMaterial ;
-  sh:property [
-    sh:path aom:ingredientName ;
-    sh:maxCount 1 ;
-    sh:datatype xsd:string
-  ] ;
   sh:property [ sh:path aom:sourceTaxon ; sh:nodeKind sh:IRI ] ;
-  sh:property [ sh:path aom:legacyComponentDescriptor ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path aom:materialComponent ; sh:class aom:FeedMaterialComponent ] ;
   sh:property [ sh:path aom:ingredientPart ; sh:class aom:FeedMaterialPartCategory ] ;
   sh:property [ sh:path aom:physicalForm ; sh:class aom:FeedPhysicalDescriptor ] ;
@@ -26,8 +21,7 @@ aom:FeedMaterialShape a sh:NodeShape ;
   sh:property [ sh:path aom:processingMethod ; sh:class aom:ProcessingMethod ] ;
   sh:property [ sh:path aom:productRole ; sh:class aom:ProductRole ] ;
   sh:property [ sh:path aom:primaryConstituent ; sh:class aom:ChemicalConstituent ] ;
-  sh:property [ sh:path aom:ingredientConstituent ; sh:class aom:IngredientConstituent ] ;
-  sh:property [ sh:path aom:ingredientSource ; sh:class aom:IngredientSourceCategory ] .
+  sh:property [ sh:path aom:ingredientConstituent ; sh:class aom:IngredientConstituent ] .
 
 aom:FeedFormulationShape a sh:NodeShape ;
   sh:targetClass aom:FeedFormulation ;
@@ -46,11 +40,32 @@ aom:IngredientComponentShape a sh:NodeShape ;
     sh:minCount 1 ; sh:maxCount 1 ;
     sh:class aom:FeedMaterial
   ] ;
+  sh:property [ sh:path aom:ingredientName ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path aom:legacyComponentDescriptor ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path aom:ingredientSource ; sh:class aom:IngredientSourceCategory ] ;
+  sh:or (
+    [ sh:property [ sh:path aom:ingredientProportion ; sh:maxCount 0 ] ;
+      sh:property [ sh:path aom:ingredientProportionBasis ; sh:maxCount 0 ] ]
+    [ sh:property [
+        sh:path aom:ingredientProportion ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:class qudt:QuantityValue ;
+        sh:node aom:IngredientProportionValueShape
+      ] ;
+      sh:property [
+        sh:path aom:ingredientProportionBasis ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype xsd:string
+      ] ]
+  ) .
+
+aom:IngredientProportionValueShape a sh:NodeShape ;
+  sh:class qudt:QuantityValue ;
+  sh:node aom:QuantityValueShape ;
   sh:property [
-    sh:path aom:ingredientProportion ;
-    sh:maxCount 1 ;
-    sh:class qudt:QuantityValue ;
-    sh:node aom:QuantityValueShape
+    sh:path qudt:hasQuantityKind ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:hasValue quantitykind:DimensionlessRatio
   ] .
 
 aom:QuantitativeObservationShape a sh:NodeShape ;
