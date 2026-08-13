@@ -36,6 +36,9 @@ round-trip tests will be added with normalized pilot data.
 - `validate_semantic_model.py`: parses OWL/SHACL, checks complete disposition
   and phase-2 binding coverage, validates RDF/JSON-LD equivalence, and proves
   valid/invalid semantic-model fixtures behave correctly.
+- `validate_ingredient_descriptor_lifecycle_implementation.py`: checks five
+  retired descriptor cards, governed history notes, hierarchy suppression,
+  OWL/JSON-LD parity, corrected property domains, and explicit Skosmos policy.
 - `validate_global_identity_audit.py`: covers every duplicate preferred-label
   group, prevents collision regression, and freezes generated ID allocation
   while canonical-reuse/deprecation review remains open.

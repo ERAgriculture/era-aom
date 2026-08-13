@@ -14,7 +14,7 @@ schema = Graph().parse(ROOT / "dist/livestock-staging/aom-schema.ttl")
 bindings = Graph().parse(ROOT / "dist/livestock-staging/aom-semantic-bindings.ttl")
 
 labels = {
-    "sourceTaxon": "has biological species",
+    "sourceTaxon": "has source taxon",
     "materialComponent": "has material component",
     "ingredientPart": "has ingredient part",
     "physicalForm": "has physical descriptor",
@@ -31,7 +31,11 @@ labels = {
     "productRole": "has product role",
     "primaryConstituent": "has primary chemical constituent",
     "ingredientConstituent": "has ingredient constituent",
-    "ingredientSource": "has ingredient source",
+    "ingredientSource": "has acquisition source",
+    "ingredientName": "has source ingredient label",
+    "legacyComponentDescriptor": "has legacy component descriptor",
+    "ingredientProportion": "has ingredient proportion",
+    "ingredientProportionBasis": "has ingredient proportion basis",
 }
 for local_name, label in labels.items():
     assert (

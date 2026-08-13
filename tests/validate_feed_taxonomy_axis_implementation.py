@@ -102,6 +102,11 @@ assert retirement_ids == {
 }
 concept_status = {row["concept_id"]: row["status"] for row in concepts}
 assert all(concept_status[concept_id] == "deprecated" for concept_id in retirement_ids)
+assert all(row["status"] == "approved" and row["history_note"] for row in retirements)
+assert not any(
+    row["relation_type"] == "broader" and row["subject_id"] in retirement_ids
+    for row in relations
+)
 assert not any(
     row["relation_type"] == "broader"
     and row["object_id"] in retirement_ids

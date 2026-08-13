@@ -150,6 +150,8 @@ def main():
         raise ValueError("Approved deprecation references unknown deprecated concept ID")
     if len(retirement_by_id) != len(retirements) or not set(retirement_by_id) <= source_ids:
         raise ValueError("Approved retirement references unknown or duplicate source concept ID")
+    if any(row["status"] != "approved" or not row["history_note"].strip() for row in retirements):
+        raise ValueError("Concept retirement must be approved and include a history note")
     if set(retirement_by_id) & set(deprecation_by_id):
         raise ValueError("Concept cannot be both deprecated with replacement and retired without replacement")
     if len(label_correction_by_id) != len(label_corrections):
@@ -517,6 +519,19 @@ def main():
         })
         relation_keys.add(add_key)
 
+    retired_ids = set(retirement_by_id)
+    relations = [
+        row for row in relations
+        if not (row["relation_type"] == "broader" and row["subject_id"] in retired_ids)
+    ]
+    gaps = [row for row in gaps if row["child_id"] not in retired_ids]
+    for retirement in retirements:
+        notes.append({
+            "concept_id": retirement["concept_id"], "language": "en",
+            "note_type": "history_note", "note": retirement["history_note"],
+            "source_column": "approved_concept_retirement",
+        })
+
     for deprecation in deprecations:
         deprecated_id = deprecation["deprecated_id"]
         replacement_id = deprecation["replacement_id"]
@@ -608,6 +623,15 @@ def main():
         if row["label_type"] == "alt":
             alt[row["concept_id"]].append(row["label"])
     defs = {row["concept_id"]: row["definition"] for row in definitions}
+    concept_notes = defaultdict(lambda: defaultdict(list))
+    note_predicates = {
+        "scope_note": "scopeNote",
+        "history_note": "historyNote",
+    }
+    for row in notes:
+        if row["note_type"] not in note_predicates:
+            raise ValueError(f"Unsupported note type: {row['note_type']}")
+        concept_notes[row["concept_id"]][row["note_type"]].append(row["note"])
     broader = defaultdict(list)
     for row in relations:
         if row["relation_type"] == "broader":
@@ -650,6 +674,16 @@ def main():
             item["skos:altLabel"] = [{"@value": x, "@language": "en"} for x in alt[concept_id]]
         if concept_id in defs:
             item["skos:definition"] = {"@value": defs[concept_id], "@language": "en"}
+        for note_type, values in sorted(concept_notes[concept_id].items()):
+            note_values = [
+                {"@value": value, "@language": "en"}
+                for value in sorted(set(values))
+            ]
+            item[f"skos:{note_predicates[note_type]}"] = (
+                note_values[0] if len(note_values) == 1 else note_values
+            )
+        if concept_status[concept_id] == "deprecated":
+            item["owl:deprecated"] = True
         broader_ids = sorted(set(broader[concept_id]))
         if broader_ids:
             broader_values = [{"@id": URI_PREFIX + parent_id} for parent_id in broader_ids]
@@ -672,6 +706,7 @@ def main():
     jsonld = {
         "@context": {"skos": "http://www.w3.org/2004/02/skos/core#",
                      "dcterms": "http://purl.org/dc/terms/",
+                     "owl": "http://www.w3.org/2002/07/owl#",
                      "aom": "urn:era-aom:schema:",
                      "era": "urn:era:property:"},
         "@graph": graph,
@@ -683,6 +718,7 @@ def main():
     ttl = [
         "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
         "@prefix dcterms: <http://purl.org/dc/terms/> .", "",
+        "@prefix owl: <http://www.w3.org/2002/07/owl#> .", "",
         "@prefix aom: <urn:era-aom:schema:> .", "",
         "@prefix era: <urn:era:property:> .", "",
         f"<{SCHEME_URI}> a skos:ConceptScheme ;",
@@ -702,6 +738,13 @@ def main():
         terms += [f"skos:altLabel {json.dumps(x, ensure_ascii=False)}@en" for x in alt[concept_id]]
         if concept_id in defs:
             terms.append(f"skos:definition {json.dumps(defs[concept_id], ensure_ascii=False)}@en")
+        terms += [
+            f"skos:{note_predicates[note_type]} {json.dumps(value, ensure_ascii=False)}@en"
+            for note_type, values in sorted(concept_notes[concept_id].items())
+            for value in sorted(set(values))
+        ]
+        if concept_status[concept_id] == "deprecated":
+            terms.append("owl:deprecated true")
         terms += [
             f"skos:broader <{URI_PREFIX + parent_id}>"
             for parent_id in sorted(set(broader[concept_id]))

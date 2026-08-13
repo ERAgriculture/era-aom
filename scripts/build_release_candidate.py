@@ -12,7 +12,7 @@ from pathlib import Path
 
 import pyarrow as pa
 import pyarrow.parquet as pq
-from rdflib import Graph, RDF, SKOS, URIRef
+from rdflib import Graph, Literal, OWL, RDF, SKOS, URIRef
 
 
 if os.environ.get("PYTHONHASHSEED") != "0":
@@ -66,7 +66,11 @@ def materialize_browser_hierarchy(graph):
     broader = list(graph.subject_objects(SKOS.broader))
     for child, parent in broader:
         graph.add((parent, SKOS.narrower, child))
-    roots = {concept for concept in concepts if not any(graph.objects(concept, SKOS.broader))}
+    active = {
+        concept for concept in concepts
+        if (concept, OWL.deprecated, Literal(True)) not in graph
+    }
+    roots = {concept for concept in active if not any(graph.objects(concept, SKOS.broader))}
     if not roots:
         raise ValueError("Hierarchy has no root concepts")
     for root in roots:

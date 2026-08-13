@@ -23,6 +23,10 @@ row-level identity decisions live in `approved_identity_resolutions.csv`;
 reviewed mapping corrections live in `approved_mapping_replacements.csv`.
 Approved identifier deprecations and replacement links live in
 `approved_deprecations.csv`.
+Approved retirements without replacements live in
+`approved_concept_retirements.csv`. Each retains a governed history note and is
+excluded from active browse hierarchy while its stable identifier remains in
+generated RDF with `owl:deprecated true`.
 Approved preferred-label corrections live in `approved_label_corrections.csv`;
 legacy preferred labels remain published as `skos:altLabel` values.
 Approved minted concepts live in `approved_new_concepts.csv`; allocations live

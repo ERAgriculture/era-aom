@@ -1,0 +1,17 @@
+@prefix aom: <urn:era-aom:schema:> .
+@prefix ex: <urn:era-aom:test:> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:material a aom:FeedMaterial .
+
+ex:component a aom:IngredientComponent ;
+  aom:ingredientMaterial ex:material ;
+  aom:ingredientProportion [
+    a qudt:QuantityValue ;
+    qudt:hasQuantityKind quantitykind:DimensionlessRatio ;
+    qudt:numericValue "25.0"^^xsd:decimal ;
+    qudt:unit unit:PERCENT
+  ] .

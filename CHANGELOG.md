@@ -4,6 +4,12 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Implement ADR 0046 for five legacy ingredient descriptors: preserve stable
+  deprecated cards and evidence, remove approved retirements from active browse
+  hierarchy, add `owl:deprecated` and history notes, explicitly retain
+  deprecated search, correct component-level property scopes, and model
+  ingredient proportion as a QUDT dimensionless ratio with explicit basis.
+
 - Correct Feed product roles after Skosmos adversarial review: keep By-product
   and Waste as sibling roles, nest offal/residue/milling/crop-residue
   specializations beneath By-product, nest discarded/market/processing-waste

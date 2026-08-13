@@ -14,7 +14,7 @@ def read(name):
         return list(csv.DictReader(handle))
 
 
-concepts, labels = read("concepts"), read("labels")
+concepts, labels, notes = read("concepts"), read("labels"), read("notes")
 relations, mappings = read("relations"), read("mappings")
 quarantine, gaps, legacy = read("quarantine"), read("hierarchy_gaps"), read("legacy_records")
 resolutions = read("approved_identity_resolutions")
@@ -161,7 +161,7 @@ assert manifest["counts"]["approved_ingredient_harmonization_rules"] == 40
 assert manifest["counts"]["approved_generated_feed_material_facets"] == 1599
 assert manifest["counts"]["approved_hard_tail_feed_material_facets"] == 154
 assert manifest["counts"]["approved_structural_feed_material_facets"] == 1159
-assert manifest["counts"]["approved_hierarchy_revisions"] == 128
+assert manifest["counts"]["approved_hierarchy_revisions"] == 126
 assert manifest["counts"]["approved_whole_grain_integrity_decisions"] == 4
 assert manifest["counts"]["approved_feed_material_source_overrides"] == 15
 assert manifest["counts"]["approved_ingredient_component_value_mappings"] == 46
@@ -263,6 +263,16 @@ assert all(status[concept_id] == "deprecated" for concept_id in {
     for deprecated_id, replacement_id in expected_deprecations
 })
 assert all(status[row["concept_id"]] == "deprecated" for row in retirements)
+retirement_ids = {row["concept_id"] for row in retirements}
+assert {
+    row["concept_id"] for row in notes
+    if row["note_type"] == "history_note"
+    and row["source_column"] == "approved_concept_retirement"
+} == retirement_ids
+assert not any(
+    row["subject_id"] in retirement_ids and row["relation_type"] == "broader"
+    for row in relations
+)
 brewers_pref = next(
     row["label"] for row in labels
     if row["concept_id"] == "AOM_000564" and row["label_type"] == "pref"
@@ -390,7 +400,7 @@ for concept_id, expected_parents in expected_polyhierarchies.items():
     } == expected_parents
 assert staging_nodes["AOM_101128"]["skos:broader"]["@id"].endswith("AOM_000826")
 assert len(reparentings) == 64
-assert len(hierarchy_revisions) == 128
+assert len(hierarchy_revisions) == 126
 assert len(formulation_classifications) == 29
 for reparenting in reparentings:
     children = set(reparenting["child_ids"].split(";"))

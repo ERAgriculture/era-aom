@@ -6904,7 +6904,7 @@
     ],
     "https://w3id.org/era-aom/schema/compatibilityPolicy": [
       {
-        "@value": "dual_publish_legacy_identifier_until_consumer_cutover"
+        "@value": "retain_predicate_uri_as_row_local_source_label_until_consumer_cutover"
       }
     ],
     "https://w3id.org/era-aom/schema/legacyConcept": [
@@ -6914,7 +6914,7 @@
     ],
     "https://w3id.org/era-aom/schema/targetClass": [
       {
-        "@id": "https://w3id.org/era-aom/schema/FeedMaterial"
+        "@id": "https://w3id.org/era-aom/schema/IngredientComponent"
       }
     ],
     "https://w3id.org/era-aom/schema/targetProperty": [
@@ -8661,7 +8661,7 @@
     ],
     "https://w3id.org/era-aom/schema/compatibilityPolicy": [
       {
-        "@value": "preserve_raw_descriptor_until_reviewed_facet_decomposition"
+        "@value": "preserve_raw_descriptor_as_review_only_provenance_until_facet_decomposition"
       }
     ],
     "https://w3id.org/era-aom/schema/legacyConcept": [
@@ -8671,7 +8671,7 @@
     ],
     "https://w3id.org/era-aom/schema/targetClass": [
       {
-        "@id": "https://w3id.org/era-aom/schema/FeedMaterial"
+        "@id": "https://w3id.org/era-aom/schema/IngredientComponent"
       }
     ],
     "https://w3id.org/era-aom/schema/targetProperty": [
@@ -11088,7 +11088,7 @@
     ],
     "https://w3id.org/era-aom/schema/compatibilityPolicy": [
       {
-        "@value": "dual_publish_legacy_identifier_until_consumer_cutover"
+        "@value": "require_explicit_unit_and_composition_basis_during_consumer_cutover"
       }
     ],
     "https://w3id.org/era-aom/schema/legacyConcept": [
@@ -11098,7 +11098,7 @@
     ],
     "https://w3id.org/era-aom/schema/quantityKind": [
       {
-        "@id": "http://qudt.org/vocab/quantitykind/Dimensionless"
+        "@id": "http://qudt.org/vocab/quantitykind/DimensionlessRatio"
       }
     ],
     "https://w3id.org/era-aom/schema/targetClass": [
@@ -22645,7 +22645,7 @@
     ],
     "https://w3id.org/era-aom/schema/compatibilityPolicy": [
       {
-        "@value": "dual_publish_legacy_identifier_until_consumer_cutover"
+        "@value": "retain_predicate_uri_as_acquisition_source_until_consumer_cutover"
       }
     ],
     "https://w3id.org/era-aom/schema/legacyConcept": [
@@ -22655,7 +22655,7 @@
     ],
     "https://w3id.org/era-aom/schema/targetClass": [
       {
-        "@id": "https://w3id.org/era-aom/schema/FeedMaterial"
+        "@id": "https://w3id.org/era-aom/schema/IngredientComponent"
       }
     ],
     "https://w3id.org/era-aom/schema/targetProperty": [

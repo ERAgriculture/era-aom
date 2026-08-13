@@ -1,6 +1,6 @@
 {
   "expected_concepts": 2790,
-  "expected_hierarchy_relations": 2805,
+  "expected_hierarchy_relations": 2797,
   "minimum_graph_triples": 29564,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
@@ -9,7 +9,7 @@
   "compound_display_label": "Maize Bran",
   "compound_display_facet": "Bran",
   "compound_display_properties": [
-    {"property": "Has biological species", "value": "Zea mays"},
+    {"property": "Has source taxon", "value": "Zea mays"},
     {"property": "Has material component", "value": "Bran"},
     {"property": "Has processing method", "value": "Flour milling"},
     {"property": "Has product role", "value": "By-product role"}
@@ -17,6 +17,14 @@
   "search_query": "Maize",
   "notation_search_concept": "AOM_101129",
   "notation_search_label": "Feed particle-size reduction processes",
+  "retired_parent_concept": "AOM_100850",
+  "retired_descriptor_checks": [
+    {"concept_id": "AOM_000531", "label": "Ingredient name", "history_contains": "source labels"},
+    {"concept_id": "AOM_000532", "label": "Ingredient part", "history_contains": "compatibility provenance"},
+    {"concept_id": "AOM_000533", "label": "Ingredient species", "history_contains": "biological-source"},
+    {"concept_id": "AOM_000534", "label": "Ingredient proportion", "history_contains": "DimensionlessRatio"},
+    {"concept_id": "AOM_000535", "label": "Ingredient source", "history_contains": "acquisition source"}
+  ],
   "expected_top_concepts": ["AOM_000001", "AOM_000106", "AOM_000358", "AOM_000846"],
   "maximum_response_seconds": 5.0,
   "representative_checks": [

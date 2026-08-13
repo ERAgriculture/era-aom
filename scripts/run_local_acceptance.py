@@ -10,8 +10,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from rdflib import Graph, URIRef
-from rdflib.namespace import DCTERMS, SKOS
+from rdflib import Graph, Literal, URIRef
+from rdflib.namespace import DCTERMS, OWL, SKOS
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -79,14 +79,32 @@ def main():
     notation_text = json.dumps(notation_search)
     assert profile["notation_search_concept"] in notation_text, notation_search
     assert profile["notation_search_label"] in notation_text, notation_search
+    retired_search_results = []
+    for check in profile["retired_descriptor_checks"]:
+        retired_search = json_get(
+            api + f"/{vocid}/search?" + urllib.parse.urlencode({
+                "query": check["concept_id"], "lang": "en", "maxhits": 20,
+            }),
+            timings,
+        )
+        retired_text = json.dumps(retired_search)
+        assert check["concept_id"] in retired_text and check["label"] in retired_text
+        retired_search_results.append(check["concept_id"])
     broader = json_get(api + f"/{vocid}/broader?" + urllib.parse.urlencode({"uri": concept_uri, "lang": "en"}), timings)
     assert broader is not None
+    retired_parent_uri = f"https://w3id.org/era-aom/livestock/{profile['retired_parent_concept']}"
+    narrower = json_get(
+        api + f"/{vocid}/narrower?" + urllib.parse.urlencode({"uri": retired_parent_uri, "lang": "en"}),
+        timings,
+    )
+    narrower_text = json.dumps(narrower)
+    assert not any(check["concept_id"] in narrower_text for check in profile["retired_descriptor_checks"])
     stats = json_get(api + f"/{vocid}/vocabularyStatistics?lang=en", timings)
     assert str(count) in json.dumps(stats), stats
     top_concepts = json_get(api + f"/{vocid}/topConcepts?lang=en", timings)
     top_text = json.dumps(top_concepts)
     assert all(item in top_text for item in profile["expected_top_concepts"]), top_concepts
-    results["api"] = {"vocabularies": "pass", "search": "pass", "notation_search": "pass", "broader": "pass", "top_concepts": "pass", "statistics": "pass"}
+    results["api"] = {"vocabularies": "pass", "search": "pass", "notation_search": "pass", "retired_search": retired_search_results, "retired_hierarchy_exclusion": "pass", "broader": "pass", "top_concepts": "pass", "statistics": "pass"}
     results["hierarchy"] = {"roots": len(profile["expected_top_concepts"]), "broader": broader_count, "narrower": narrower_count}
 
     page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{concept_id}"
@@ -103,6 +121,24 @@ def main():
     assert 'href="https://github.com/ERAgriculture/era-aom/issues/new/choose"' in html
     assert '&nbsp;Contribute' in html
     results["concept_page"] = {"id": concept_id, "label": profile["representative_label"], "embedded_jsonld": True}
+
+    compound_id = profile["compound_display_concept"]
+    compound_page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{compound_id}"
+    compound_status, compound_headers, compound_body, elapsed = request(compound_page, "text/html")
+    timings.append(elapsed)
+    compound_html = compound_body.decode("utf-8", errors="replace")
+    assert compound_status == 200 and compound_headers.get_content_type() == "text/html"
+    assert profile["compound_display_label"] in compound_html
+    assert profile["compound_display_facet"] in compound_html
+    for property_check in profile["compound_display_properties"]:
+        assert property_check["property"] in compound_html, property_check
+        assert property_check["value"] in compound_html, property_check
+    results["compound_concept_page"] = {
+        "id": compound_id,
+        "label": profile["compound_display_label"],
+        "facet": profile["compound_display_facet"],
+        "properties": profile["compound_display_properties"],
+    }
 
     css_url = args.skosmos.rstrip("/") + "/resource/css/era-aom.css"
     status, headers, css_body, elapsed = request(css_url, "text/css")
@@ -121,6 +157,23 @@ def main():
     backup = Graph().parse(data=graph_body, format="turtle")
     assert len(backup) >= profile["minimum_graph_triples"], len(backup)
     results["graph_backup"] = {"triples": len(backup), "parse": "pass"}
+
+    retired_results = []
+    for check in profile["retired_descriptor_checks"]:
+        cid = check["concept_id"]
+        uri = URIRef(f"https://w3id.org/era-aom/livestock/{cid}")
+        assert (uri, OWL.deprecated, Literal(True)) in backup
+        assert not any(backup.objects(uri, SKOS.broader))
+        history = {str(value) for value in backup.objects(uri, SKOS.historyNote)}
+        assert any(check["history_contains"] in value for value in history), (cid, history)
+        concept_page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{cid}"
+        page_status, _, page_body, elapsed = request(concept_page, "text/html")
+        timings.append(elapsed)
+        page_html = page_body.decode("utf-8", errors="replace")
+        assert page_status == 200 and check["label"] in page_html
+        assert "This concept has been deprecated." in page_html
+        retired_results.append({"concept_id": cid, "search": "pass", "page": "deprecated-warning-pass", "history": "pass", "hierarchy": "excluded"})
+    results["retired_descriptors"] = retired_results
 
     representative_results = []
     for check in profile["representative_checks"]:
@@ -186,7 +239,7 @@ def main():
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     (output / "acceptance.json").write_text(json.dumps(results, indent=2) + "\n")
-    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Concept HTML + embedded JSON-LD: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
+    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Retired descriptor cards: {len(retired_results)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Retired descriptor exact search, warnings, history, and hierarchy exclusion: pass", "- Concept HTML + embedded JSON-LD: pass", "- Compound concept source/component/process/role display: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
     (output / "acceptance.md").write_text("\n".join(lines))
     print(json.dumps(results, indent=2))
 

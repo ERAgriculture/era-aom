@@ -13,6 +13,13 @@
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedPhysicalDescriptor"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientSource">
+    <rdfs:label xml:lang="en">has acquisition source</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientSourceCategory"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Links an ingredient occurrence to an acquisition or procurement category such as on-farm or purchased; it does not define biological source or canonical feed-material identity.</rdfs:comment>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/moistureCondition">
     <rdfs:label xml:lang="en">has moisture condition</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="https://w3id.org/era-aom/schema/physicalForm"/>
@@ -49,6 +56,13 @@
     <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     <rdfs:label xml:lang="en">ingredient presentation form</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/legacyComponentDescriptor">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
+    <rdfs:label xml:lang="en">has legacy component descriptor</rdfs:label>
+    <rdfs:comment xml:lang="en">Unmodified source descriptor retained as compatibility provenance until reviewed decomposition into explicit component, form, process, role, and constituent facets; hide outside migration review views.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueClass">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
@@ -71,12 +85,6 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientSource">
-    <rdfs:label xml:lang="en">has ingredient source</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/IngredientSourceCategory"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedMaterialPartCategory">
     <rdfs:label xml:lang="en">feed-material part category</rdfs:label>
@@ -103,9 +111,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/sourceTaxon">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdfs:label xml:lang="en">has biological species</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:comment xml:lang="en">Links feed material to a reviewed taxon IRI; does not imply SKOS identity.</rdfs:comment>
+    <rdfs:label xml:lang="en">has source taxon</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a canonical feed material to a reviewed source-taxon IRI at its supported rank; provisional source-row claims require separate provenance and do not imply SKOS identity.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/MaterialIntegrity">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -212,6 +220,8 @@
     <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Quantifies one ingredient component within a formulation or diet; the quantity value requires a ratio unit and the component requires an explicit composition basis.</rdfs:comment>
+    <rdfs:label xml:lang="en">has ingredient proportion</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ExperimentalFeedRole">
     <rdfs:label xml:lang="en">experimental feed role</rdfs:label>
@@ -281,6 +291,20 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/targetValueClass">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientProportionBasis">
+    <rdfs:comment xml:lang="en">Declares the denominator or reference basis for ingredient proportion, such as total as-fed diet mass or total dry-matter diet mass.</rdfs:comment>
+    <rdfs:label xml:lang="en">has ingredient proportion basis</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>
+    <rdfs:comment xml:lang="en">Preserves row-local source text for an ingredient occurrence; canonical feed-material naming uses skos:prefLabel.</rdfs:comment>
+    <rdfs:label xml:lang="en">has source ingredient label</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedChemicalEntity">
     <rdfs:label xml:lang="en">feed chemical entity</rdfs:label>
@@ -447,17 +471,6 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/MappingAssertion">
     <rdfs:label xml:lang="en">mapping assertion</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/legacyComponentDescriptor">
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:comment xml:lang="en">Unmodified legacy component descriptor retained until reviewed decomposition into explicit facets.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ingredientMaterial">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/IngredientComponent"/>

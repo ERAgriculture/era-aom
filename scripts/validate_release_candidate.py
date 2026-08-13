@@ -10,7 +10,7 @@ from pathlib import Path
 
 import pyarrow.parquet as pq
 from pyshacl import validate
-from rdflib import Graph, Literal, RDF, SKOS, URIRef
+from rdflib import Graph, Literal, OWL, RDF, SKOS, URIRef
 
 
 def sha256(path):
@@ -65,6 +65,18 @@ def main():
         any(isinstance(label, Literal) and label.language for label in livestock_ttl.objects(item, SKOS.prefLabel))
         for item in concepts
     )
+    status_property = URIRef("urn:era:property:status")
+    deprecated = set(livestock_ttl.subjects(status_property, Literal("deprecated")))
+    owl_deprecated = set(livestock_ttl.subjects(OWL.deprecated, Literal(True)))
+    assert deprecated == owl_deprecated
+    with (root / "data" / "livestock-staging" / "approved_concept_retirements.csv").open(
+        encoding="utf-8", newline=""
+    ) as handle:
+        retirements = list(csv.DictReader(handle))
+    retired = {URIRef(base + "livestock/" + row["concept_id"]) for row in retirements}
+    assert retired <= concepts
+    assert all(not any(livestock_ttl.objects(concept, SKOS.broader)) for concept in retired)
+    assert all(any(livestock_ttl.objects(concept, SKOS.historyNote)) for concept in retired)
 
     internal_relations = (SKOS.broader, SKOS.related)
     for relation in internal_relations:
@@ -89,10 +101,18 @@ def main():
         visit(concept)
 
     scheme = next(iter(schemes))
-    roots = {concept for concept in concepts if not any(livestock_ttl.objects(concept, SKOS.broader))}
+    active = {
+        concept for concept in concepts
+        if (concept, OWL.deprecated, Literal(True)) not in livestock_ttl
+    }
+    roots = {concept for concept in active if not any(livestock_ttl.objects(concept, SKOS.broader))}
     declared_top = set(livestock_ttl.subjects(SKOS.topConceptOf, scheme))
     assert roots == declared_top == set(livestock_ttl.objects(scheme, SKOS.hasTopConcept))
     assert len(roots) == 4
+    assert not any(
+        (concept, SKOS.topConceptOf, scheme) in livestock_ttl
+        for concept in concepts - active
+    )
     broader_pairs = set(livestock_ttl.subject_objects(SKOS.broader))
     narrower_pairs = {(child, parent) for parent, child in livestock_ttl.subject_objects(SKOS.narrower)}
     assert broader_pairs == narrower_pairs

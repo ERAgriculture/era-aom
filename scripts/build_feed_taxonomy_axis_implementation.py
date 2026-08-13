@@ -14,6 +14,7 @@ V29 = ROOT / "review" / "livestock-v29" / "feed_taxonomy_adversarial_review.csv"
 DATE = "2026-08-12"
 REVIEWER = "Pete Steward"
 ADR = "docs/decisions/0044-feed-taxonomy-axis-reclassification.md"
+LIFECYCLE_ADR = "docs/decisions/0046-ingredient-descriptor-lifecycle-and-browser-deprecation.md"
 METHOD = "docs/methods/feed-taxonomy-governance.md"
 EU_FEED = "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R0767"
 EU_ADDITIVES = "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32003R1831"
@@ -278,25 +279,51 @@ alias_rows = [{
 } for concept_id, label in aliases]
 write(label_addition_path, fieldnames(label_addition_path), existing_additions + alias_rows)
 
+retirement_specs = {
+    "AOM_000531": (
+        "Legacy schema field replaced by row-local source-label representation.",
+        "Retired as a browse concept. Use skos:prefLabel for canonical feed-material names and aom:ingredientName for row-local source labels on aom:IngredientComponent records.",
+    ),
+    "AOM_000532": (
+        "Legacy schema field replaced by reviewed material-component relations.",
+        "Retired as a browse concept. Use reviewed material-component, presentation-form, processing-method, product-role, and constituent assertions; retain aom:legacyComponentDescriptor only as compatibility provenance on aom:IngredientComponent records.",
+    ),
+    "AOM_000533": (
+        "Legacy schema field replaced by aom:sourceTaxon.",
+        "Retired as a browse concept. Use aom:sourceTaxon for reviewed biological-source assertions on canonical aom:FeedMaterial records; preserve provisional source-row claims until material identity is resolved.",
+    ),
+    "AOM_000534": (
+        "Legacy schema field replaced by quantified ingredient-component proportion.",
+        "Retired as a browse concept. Use aom:ingredientProportion on an aom:IngredientComponent with a QUDT QuantityValue, DimensionlessRatio quantity kind, explicit unit, and declared diet-composition basis.",
+    ),
+    "AOM_000535": (
+        "Legacy schema field replaced by explicit acquisition-source relations.",
+        "Retired as a browse concept. Use aom:ingredientSource for acquisition source on an aom:IngredientComponent; do not treat procurement channel as canonical feed-material identity or biological source.",
+    ),
+    "AOM_000736": (
+        "Catch-all Supplement branch emptied through approved migrations and explicit hold routing.",
+        "Retired as a browse concept after approved descendants moved to feed-material, formulation, additive, chemical, role, or explicit hold classifications.",
+    ),
+    "AOM_000781": (
+        "Catch-all Other Ingredients branch emptied through approved migrations and explicit hold routing.",
+        "Retired as a browse concept after approved descendants moved to explicit product-kind, chemical, role, or hold classifications.",
+    ),
+    "AOM_001507": (
+        "Source-data unknown value is not an ontology concept.",
+        "Retired as a browse concept because an unspecified source value records missing data rather than a feed-material identity.",
+    ),
+}
 retirement_rows = [{
     "case_id": f"FEED-TAXONOMY-RETIRE-{concept_id}",
     "concept_id": concept_id,
     "preferred_label": review_by_id[concept_id]["preferred_label"],
     "status": "approved",
     "reviewer": REVIEWER,
-    "review_date": DATE,
-    "evidence": f"{ADR};{METHOD}",
+    "review_date": "2026-08-13",
+    "evidence": f"{ADR};{LIFECYCLE_ADR};{METHOD}",
     "rationale": rationale,
-} for concept_id, rationale in {
-    "AOM_000531": "Legacy schema field replaced by aom:ingredientName.",
-    "AOM_000532": "Legacy schema field replaced by reviewed material-component relations.",
-    "AOM_000533": "Legacy schema field replaced by aom:sourceTaxon.",
-    "AOM_000534": "Legacy schema field replaced by quantified ingredient-component proportion.",
-    "AOM_000535": "Legacy schema field replaced by explicit source relations.",
-    "AOM_000736": "Catch-all Supplement branch emptied through approved migrations and explicit hold routing.",
-    "AOM_000781": "Catch-all Other Ingredients branch emptied through approved migrations and explicit hold routing.",
-    "AOM_001507": "Source-data unknown value is not an ontology concept.",
-}.items()]
+    "history_note": history_note,
+} for concept_id, (rationale, history_note) in retirement_specs.items()]
 write(DATA / "approved_concept_retirements.csv", list(retirement_rows[0]), retirement_rows)
 
 deprecation_path = DATA / "approved_deprecations.csv"
@@ -322,8 +349,6 @@ existing_deprecations += [{
 write(deprecation_path, fieldnames(deprecation_path), existing_deprecations)
 
 desired_parent = {
-    "AOM_000736": "AOM_101142",
-    "AOM_000781": "AOM_101142",
     "AOM_000779": "AOM_101142",
     "AOM_000737": "AOM_101136",
     "AOM_000751": "AOM_101137",

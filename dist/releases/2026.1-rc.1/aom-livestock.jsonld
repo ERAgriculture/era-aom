@@ -442,6 +442,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000351"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000338"
@@ -583,6 +589,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_002228"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from fava bean production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -602,6 +614,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101151"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -713,6 +731,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000564"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -790,6 +814,12 @@
       {
         "@language": "en",
         "@value": "Net Present Value"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Convert local currences to USD (present $ in units) if exchange rates are presented in the paper. Record values in non-USD currency using the ISO 4217 country currency code in the units."
       }
     ],
     "urn:era:property:conceptType": [
@@ -1024,6 +1054,12 @@
         "@value": "Starch constituent"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed chemical constituent value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -1084,6 +1120,12 @@
     "http://www.w3.org/2004/02/skos/core#related": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001202"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from barley production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -1724,6 +1766,12 @@
         "@value": "Tomato products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from tomato as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -1743,6 +1791,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000897"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -2018,6 +2072,12 @@
         "@value": "Sugar processing"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -2253,6 +2313,12 @@
       {
         "@language": "en",
         "@value": "Delonix regia forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Delonix regia, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -2577,6 +2643,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000673"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from sunflower production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -2623,6 +2695,12 @@
       {
         "@language": "en",
         "@value": "Total Cost"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please standardize area denominators to ha where possible."
       }
     ],
     "urn:era:property:conceptType": [
@@ -2806,21 +2884,28 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
         "@value": "Raw material species"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "any characteristics related to the botanical species of food raw material e.g. maize (Zea mays), peruvian anchoveta (Engraulis ringens), etc"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@language": "en",
+        "@value": "Retired as a browse concept. Use aom:sourceTaxon for reviewed biological-source assertions on canonical aom:FeedMaterial records; preserve provisional source-row claims until material identity is resolved."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -4213,6 +4298,12 @@
         "@value": "Extraction"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -4316,6 +4407,12 @@
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
         "@id": "http://purl.obolibrary.org/obo/MAXO_0010020"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Management/Livestock Management/Feed Characteristic/Feed Chemical Composition/Minerals/Amino Acids"
       }
     ],
     "urn:era:property:conceptType": [
@@ -4463,6 +4560,12 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_42345"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "https://www.feedipedia.org/node/8012"
       }
     ],
     "urn:era:property:conceptType": [
@@ -4845,6 +4948,12 @@
     "http://www.w3.org/2004/02/skos/core#related": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000025"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for chicken-derived feed material; processing state remains represented by narrower feed-material concepts."
       }
     ],
     "urn:era:property:conceptType": [
@@ -5554,6 +5663,12 @@
         "@value": "Chemical feed processes"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for chemical feed processing; processing state remains represented by narrower feed-material concepts."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -5600,6 +5715,12 @@
       {
         "@language": "en",
         "@value": "Porcine animals"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Pig and related porcine animal concepts without asserting a narrower taxonomic rank."
       }
     ],
     "urn:era:property:conceptType": [
@@ -5750,6 +5871,12 @@
       {
         "@language": "en",
         "@value": "Diet source"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for feed acquisition source; processing state remains represented by narrower feed-material concepts."
       }
     ],
     "urn:era:property:conceptType": [
@@ -6166,6 +6293,12 @@
         "@value": "Total cost per asset"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Total cost normalized by animal or land area."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -6486,6 +6619,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001314"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from pigeon pea production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -6527,6 +6666,12 @@
       {
         "@language": "en",
         "@value": "Belowground Carbon Biomass"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not record change from baseline here, outcomes should be the value on the sampling date.  If change from baseline data are presented consider converting to the values on the sampling date if the baseline line values are available too.\nThis is the amount carbon in soil biomass, if total carbon is presented use the Soil Carbon Stocks outcome."
       }
     ],
     "urn:era:property:conceptType": [
@@ -6624,6 +6769,12 @@
       {
         "@language": "en",
         "@value": "Gross Return"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please standardize area denominators to ha where possible.."
       }
     ],
     "urn:era:property:conceptType": [
@@ -6785,6 +6936,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001435"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from mango production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -6831,6 +6988,12 @@
       {
         "@language": "en",
         "@value": "Grape by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from grape production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -6946,6 +7109,12 @@
       {
         "@language": "en",
         "@value": "Marula by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from marula production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -7141,6 +7310,12 @@
         "@value": "Processed food by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed-material category for former foodstuffs and processed-food production residues used as feed; product or waste role remains explicit."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -7251,6 +7426,12 @@
       {
         "@language": "en",
         "@value": "Essential-oil constituent"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed chemical constituent value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -7562,6 +7743,12 @@
         "@value": "Animal body substances"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Animal-derived body substances represented as feed-material components without treating them as connected anatomical structures."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -7770,6 +7957,12 @@
       {
         "@language": "en",
         "@value": "Arugula by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from arugula production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -8268,6 +8461,12 @@
         "@value": "Whole-grain composition"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Component-retention state in which bran, germ, and endosperm remain in characteristic proportions independently of particle-size reduction."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -8499,6 +8698,12 @@
         "@value": "Soil Nitrogen"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not include % change data as compared to a baseline."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -8518,6 +8723,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000893"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -8770,6 +8981,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000350"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000331"
@@ -8975,6 +9192,12 @@
         "@value": "Feed Conversion Ratio (In Out)"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "This outcome relates to animal feed experiments. It is a ratio whose value should be greater than 1 (although some aquatic experiment may yield slightly <1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -9141,6 +9364,12 @@
         "@value": "Feed product roles"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Economic or production-status roles borne by feed materials. By-product and waste roles are sibling categories; material identity, component, process, and legal eligibility for feed remain separate."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -9187,6 +9416,12 @@
       {
         "@language": "en",
         "@value": "Menhaden feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for menhaden fish; processing state remains represented by narrower feed-material concepts."
       }
     ],
     "urn:era:property:conceptType": [
@@ -9410,73 +9645,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001332",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#altLabel": [
-      {
-        "@language": "en",
-        "@value": "Oat Milled"
-      },
-      {
-        "@language": "en",
-        "@value": "Oat Meal"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001895"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A feed material with governed source identity “oat” and characteristics: presentation form — Comminuted particle form; processing method — Grinding."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_001332"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Oat Ground"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "https://www.feedipedia.org/node/12391"
-      },
-      {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_c0e6f391"
-      },
-      {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4498"
-      },
-      {
-        "@id": "http://aims.fao.org/aos/agrovoc/c_34065"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000058",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -9588,6 +9756,79 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4479"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "FOODON term: Grass (animal feed)"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001332",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Oat Milled"
+      },
+      {
+        "@language": "en",
+        "@value": "Oat Meal"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001895"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “oat” and characteristics: presentation form — Comminuted particle form; processing method — Grinding."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_001332"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Oat Ground"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "https://www.feedipedia.org/node/12391"
+      },
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_c0e6f391"
+      },
+      {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4498"
+      },
+      {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_34065"
       }
     ],
     "urn:era:property:conceptType": [
@@ -9985,6 +10226,12 @@
       {
         "@language": "en",
         "@value": "Kernel"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -10616,6 +10863,12 @@
         "@value": "Ziziphus jujuba forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Ziziphus jujuba, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -10635,6 +10888,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001326"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -11510,6 +11769,12 @@
         "@value": "Cassava products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from cassava as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -11553,6 +11818,12 @@
         "@value": "Soil Available Nitrogen"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not include % change data as compared to a baseline."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -11594,6 +11865,12 @@
       {
         "@language": "en",
         "@value": "Effective Cation Exchange Capacity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not include % change data as compared to a baseline. Do not confuse with CEC or base saturation."
       }
     ],
     "urn:era:property:conceptType": [
@@ -11704,6 +11981,12 @@
       {
         "@language": "en",
         "@value": "Intact presentation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Presentation in which a feed item remains visibly intact; whole-crop or whole-grain integrity is not implied."
       }
     ],
     "urn:era:property:conceptType": [
@@ -11930,57 +12213,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001286",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100888"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A feed material with governed source identity “papaya” and characteristics: ingredient part — Leaf; product role — By-product role."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_001286"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Papaya Leaves"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3649"
-      },
-      {
-        "@id": "https://www.feedipedia.org/node/11551"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000063",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -12040,6 +12272,63 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_59786"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Higher level 'Brachiaria' available in OLS"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001286",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100888"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “papaya” and characteristics: ingredient part — Leaf; product role — By-product role."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_001286"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Papaya Leaves"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3649"
+      },
+      {
+        "@id": "https://www.feedipedia.org/node/11551"
       }
     ],
     "urn:era:property:conceptType": [
@@ -12534,6 +12823,12 @@
         "@value": "Tuber"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -12741,6 +13036,12 @@
       {
         "@language": "en",
         "@value": "Livestock abundance"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Quantity, biomass, density, or stocking rate of animals in a production unit."
       }
     ],
     "urn:era:property:conceptType": [
@@ -13027,6 +13328,12 @@
       {
         "@language": "en",
         "@value": "Animal Manures"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."
       }
     ],
     "urn:era:property:conceptType": [
@@ -13496,6 +13803,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000354"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000338"
@@ -13800,6 +14113,12 @@
       {
         "@language": "en",
         "@value": "Citrus by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from citrus production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -14436,6 +14755,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001185"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from linseed production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -14535,6 +14860,12 @@
       {
         "@language": "en",
         "@value": "Beetroot by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from beetroot production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -14739,6 +15070,12 @@
         "@value": "Bark"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -14857,6 +15194,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -15408,6 +15751,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000871"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -17259,6 +17608,12 @@
         "@value": "Garcinia kola forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Garcinia kola, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -17461,6 +17816,12 @@
       {
         "@language": "en",
         "@value": "Housefly maggot feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for housefly larvae; processing state remains represented by narrower feed-material concepts."
       }
     ],
     "urn:era:property:conceptType": [
@@ -18055,6 +18416,12 @@
         "@value": "Straw"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Composite crop-residue component consisting mainly of dried cereal or legume stems and leaves after harvest; not one anatomical structure."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -18313,6 +18680,12 @@
       {
         "@language": "en",
         "@value": "Meat Yield"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "For meat yield of offspring (e.g. offtake of lambs in a ewe-lamb pastture system, use the reproductive yield/offspring meat yield outcome)"
       }
     ],
     "urn:era:property:conceptType": [
@@ -18767,6 +19140,12 @@
     "http://www.w3.org/2004/02/skos/core#related": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001582"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from soybean production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -20208,6 +20587,12 @@
         "@value": "Autoclaving"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for feed-material semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -20632,6 +21017,12 @@
         "@value": "Basal or Conventional Diet"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "A control for addition (supplementation) of feeds."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -20702,6 +21093,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000868"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -20842,6 +21239,12 @@
       {
         "@language": "en",
         "@value": "Cocoa products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from cocoa as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -21449,6 +21852,12 @@
         "@value": "Processed material fractions"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Material components or fractions produced or recovered through processing rather than one anatomical structure."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -21594,6 +22003,12 @@
       {
         "@language": "en",
         "@value": "Safflower products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from safflower as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -22133,6 +22548,12 @@
         "@value": "Pod"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -22367,6 +22788,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000679"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from cassava production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -22416,6 +22843,12 @@
       {
         "@language": "en",
         "@value": "Tomato by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from tomato production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -22519,6 +22952,12 @@
         "@value": "Agroforestry Fodders"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -22609,6 +23048,12 @@
       {
         "@language": "en",
         "@value": "Powder form"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed presentation form value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -23190,6 +23635,12 @@
         "@value": "Compound feed"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed feed product type value used for feed-material semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -23622,6 +24073,12 @@
         "@value": "Mucuna pruriens protein products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Mucuna pruriens protein, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -23932,6 +24389,12 @@
         "@value": "Mixed presentation"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed presentation form value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -24174,6 +24637,12 @@
         "@value": "Cereal milling fractions"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Cereal-grain material fractions separated or recovered during milling, including bran and related fractions."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -24263,6 +24732,12 @@
       {
         "@language": "en",
         "@value": "Soil NH4"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not include % change data as compared to a baseline."
       }
     ],
     "urn:era:property:conceptType": [
@@ -24578,6 +25053,12 @@
       {
         "@language": "en",
         "@value": "Feed moisture conditions"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Qualitative moisture conditions of feed materials, independently of particle presentation and bulk consistency."
       }
     ],
     "urn:era:property:conceptType": [
@@ -25603,6 +26084,12 @@
         "@value": "Crop-residue by-product role"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "By-product role borne by crop residue retained after harvest or processing for another use; anatomical or composite component identity remains separate."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -25652,6 +26139,12 @@
       {
         "@language": "en",
         "@value": "Onion products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from onion as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -25708,6 +26201,12 @@
     "http://www.w3.org/2004/02/skos/core#related": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001309"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from canola production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -25818,6 +26317,12 @@
       {
         "@language": "en",
         "@value": "Danish fish feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for legacy Danish-fish category; processing state remains represented by narrower feed-material concepts."
       }
     ],
     "urn:era:property:conceptType": [
@@ -26163,6 +26668,12 @@
         "@value": "Egg Yield"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please try and standardise units to eggs per one individual per day. (eggs/individual/day)."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -26300,6 +26811,12 @@
     "http://www.w3.org/2004/02/skos/core#related": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_003072"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from groundnut production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -26731,6 +27248,12 @@
         "@value": "Mineral feed materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Mineral substances or products represented as feed materials; chemical composition and authorization as an additive require separate assertions."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -26806,6 +27329,12 @@
       {
         "@language": "en",
         "@value": "Feed component separation processes"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed processes whose objective includes removing, separating, or recovering a material component or fraction."
       }
     ],
     "urn:era:property:conceptType": [
@@ -26910,6 +27439,12 @@
       {
         "@language": "en",
         "@value": "Total Factor Productivity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."
       }
     ],
     "urn:era:property:conceptType": [
@@ -27412,6 +27947,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001311"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from date production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -27516,6 +28057,12 @@
       {
         "@language": "en",
         "@value": "Baby corn by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from baby corn production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -27636,6 +28183,12 @@
       {
         "@language": "en",
         "@value": "Sheath"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -27808,6 +28361,12 @@
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3870"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "NA"
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -27850,6 +28409,12 @@
       {
         "@language": "en",
         "@value": "Hull"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -28483,6 +29048,12 @@
         "@value": "Potato by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from potato production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -28766,6 +29337,12 @@
         "@value": "Acioa barteri forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Acioa barteri, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -28807,6 +29384,12 @@
       {
         "@language": "en",
         "@value": "Other Feed"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."
       }
     ],
     "urn:era:property:conceptType": [
@@ -29281,6 +29864,12 @@
         "@id": "https://www.feedipedia.org/node/19833"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "https://www.feedipedia.org/node/124"
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -29596,6 +30185,12 @@
         "@value": "Emissions Intensity"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Emissions intensity is typically standardized radiative forcing over 100 yr time (CO2eq) for 1 or more gases added together per unit product (kg)."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -29700,6 +30295,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101079"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -29984,6 +30585,12 @@
       {
         "@language": "en",
         "@value": "Insect Fodders"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."
       }
     ],
     "urn:era:property:conceptType": [
@@ -30333,6 +30940,12 @@
         "@value": "Distillation"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for feed-material semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -30443,6 +31056,12 @@
       {
         "@language": "en",
         "@value": "Native-component retention states"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Composition states defined by positive retention of native material components or chemical constituents."
       }
     ],
     "urn:era:property:conceptType": [
@@ -30560,6 +31179,12 @@
       {
         "@language": "en",
         "@value": "Animal rearing stage"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Animal-source categories used to organize life-stage descriptors in livestock management."
       }
     ],
     "urn:era:property:conceptType": [
@@ -30769,6 +31394,12 @@
       {
         "@language": "en",
         "@value": "Walnut by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from walnut production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -31154,6 +31785,12 @@
         "@value": "Pulp consistency"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Moist fibrous or cellular bulk consistency, commonly semisolid; source and production process remain independently represented."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -31196,6 +31833,12 @@
       {
         "@language": "en",
         "@value": "Corm"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -31301,6 +31944,12 @@
       {
         "@language": "en",
         "@value": "Cob"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -32052,6 +32701,12 @@
         "@value": "Oxytenanthera abyssinica forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Oxytenanthera abyssinica, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -32305,6 +32960,12 @@
         "@value": "Husk"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -32447,6 +33108,12 @@
         "@value": "Guar bean by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from guar bean production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -32570,6 +33237,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000895"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -33142,6 +33815,12 @@
         "@value": "Prosopis forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Prosopis, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -33355,6 +34034,12 @@
       {
         "@language": "en",
         "@value": "Banana by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from banana production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -34078,6 +34763,12 @@
         "@value": "Unimproved Breed"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "A control for improved breeds/hybrid and cross breeds."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -34617,6 +35308,12 @@
         "@value": "Rice by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from rice production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -34863,6 +35560,12 @@
         "@value": "Animal health management"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Practices for prevention, monitoring, and management of animal health."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -34879,21 +35582,28 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
         "@value": "Raw material part"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "any measurable or observable characteristics related to the part of the food raw material entering in the composition of animal diet- e.g. bran, starch, beet…"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@language": "en",
+        "@value": "Retired as a browse concept. Use reviewed material-component, presentation-form, processing-method, product-role, and constituent assertions; retain aom:legacyComponentDescriptor only as compatibility provenance on aom:IngredientComponent records."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -35014,6 +35724,12 @@
       {
         "@language": "en",
         "@value": "Cocoa by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from cocoa production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -35960,6 +36676,12 @@
         "@value": "Feed shaping and agglomeration processes"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed processes whose governed objective includes shaping or agglomerating material into a presentation such as pellets, flakes, or extrudates."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -36780,6 +37502,12 @@
         "@value": "Protein Conversion Ratio (In Out)"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "This outcome relates to animal feed experiments. It is a ratio whose value should be greater than 1 (although some aquatic experiment may yield slightly <1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -37342,6 +38070,12 @@
         "@value": "Feed functional roles"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Functions borne by substances or products in feed, represented independently of their material, formulation, additive, or chemical identity."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -37766,6 +38500,12 @@
         "@value": "Isotopic N-Above-ground Biomass"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -37818,6 +38558,12 @@
         "@value": "Comminuted particle form"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Particle presentation produced by size reduction; bulk consistency, moisture condition, and particle-size threshold remain unspecified."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -37837,6 +38583,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000850"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -37932,6 +38684,12 @@
       {
         "@language": "en",
         "@value": "Terrestrial"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Used LLM BARD"
       }
     ],
     "urn:era:property:conceptType": [
@@ -38076,6 +38834,12 @@
       {
         "@language": "en",
         "@value": "Hibiscus by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from hibiscus production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -38785,6 +39549,12 @@
         "@value": "Gluten constituent"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed chemical constituent value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -39095,6 +39865,12 @@
       {
         "@language": "en",
         "@value": "Cation Exchange Capacity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not include % change data as compared to a baseline. Do not confuse with ECEC (effective CEC) or base saturation."
       }
     ],
     "urn:era:property:conceptType": [
@@ -39448,6 +40224,12 @@
         "@value": "Argan by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from argan production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -39680,6 +40462,12 @@
     "http://www.w3.org/2004/02/skos/core#related": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000654"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from millet production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -39928,6 +40716,12 @@
         "@value": "Pest-control variable costs"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Variable costs attributable to chemical or biological pest control."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -39976,6 +40770,12 @@
       {
         "@language": "en",
         "@value": "Milling by-product role"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "By-product role borne by a secondary milling output such as shorts; milling fraction identity and processing method remain separate."
       }
     ],
     "urn:era:property:conceptType": [
@@ -40545,6 +41345,12 @@
         "@value": "Mineral and vitamin complementary feeds"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -40675,6 +41481,12 @@
         "@value": "CO2 Equivalent Emissions"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Note emissions per unit production should be recorded under Emissions Intensity."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -40724,6 +41536,12 @@
       {
         "@language": "en",
         "@value": "Grazing time"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Temporal frequency or duration used to describe grazing management."
       }
     ],
     "urn:era:property:conceptType": [
@@ -40880,6 +41698,12 @@
       {
         "@language": "en",
         "@value": "Beet by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from beet production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -41106,6 +41930,12 @@
         "@value": "Input variable costs"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Variable costs attributable to material inputs."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -41166,6 +41996,55 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000489",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000480"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Stock or concentration of nitrogen in the soil reported as nitrate (NO3)."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000489"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Soil NO3"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not include % change data as compared to a baseline."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_003239",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -41200,49 +42079,6 @@
       {
         "@language": "en",
         "@value": "Tephrosia polystachyum"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000489",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000480"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Stock or concentration of nitrogen in the soil reported as nitrate (NO3)."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_000489"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Soil NO3"
       }
     ],
     "urn:era:property:conceptType": [
@@ -41901,6 +42737,12 @@
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_58168"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "NA"
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -42343,6 +43185,12 @@
       {
         "@language": "en",
         "@value": "Isotopic N-Product"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."
       }
     ],
     "urn:era:property:conceptType": [
@@ -44001,6 +44849,12 @@
         "@value": "Mineral content"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Measured mineral-element content of feed material."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -45134,6 +45988,12 @@
         "@value": "Ensete products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from ensete as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -45434,6 +46294,12 @@
         "@value": "Ceratonia siliqua forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Ceratonia siliqua, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -45453,6 +46319,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000872"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -46032,6 +46904,12 @@
         "@value": "Crop Fodders"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -46177,6 +47055,12 @@
       {
         "@language": "en",
         "@value": "Trachyspermum ammi forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Trachyspermum ammi, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -46427,6 +47311,12 @@
       {
         "@language": "en",
         "@value": "Protein constituent"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed chemical constituent value used for feed-material semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -46772,6 +47662,12 @@
         "@value": "Leaf"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -46818,6 +47714,12 @@
       {
         "@language": "en",
         "@value": "Hevea brasiliensis forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Hevea brasiliensis, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -47271,6 +48173,12 @@
         "@value": "Nutritional feed additives"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed-additive category for vitamins, trace-element compounds, amino acids, urea, and related authorized nutritional additive groups."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -47639,21 +48547,28 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
         "@value": "Raw material source"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "An AOM controlled category for “Ingredient source” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@language": "en",
+        "@value": "Retired as a browse concept. Use aom:ingredientSource for acquisition source on an aom:IngredientComponent; do not treat procurement channel as canonical feed-material identity or biological source."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -48077,6 +48992,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000352"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000338"
@@ -48211,6 +49132,12 @@
         "@value": "Yam by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from yam production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -48313,6 +49240,12 @@
       {
         "@language": "en",
         "@value": "Pressing"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -48548,6 +49481,12 @@
       {
         "@language": "en",
         "@value": "Feed presentation forms"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Shapes and particle presentations of feeds, independently of moisture and bulk consistency."
       }
     ],
     "urn:era:property:conceptType": [
@@ -48915,6 +49854,12 @@
         "@value": "Hordeum vulgare forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Hordeum vulgare, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -49075,6 +50020,12 @@
       {
         "@language": "en",
         "@value": "Morus indica forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Morus indica, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -49443,6 +50394,12 @@
         "@value": "Coffee by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from coffee production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -49539,6 +50496,12 @@
         "@value": "Common bean products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from common bean as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -49588,6 +50551,12 @@
       {
         "@language": "en",
         "@value": "African yam bean by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from african yam bean production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -49752,6 +50721,12 @@
       {
         "@language": "en",
         "@value": "Rearing or housing structure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Physical structure used to house or rear terrestrial livestock."
       }
     ],
     "urn:era:property:conceptType": [
@@ -50551,6 +51526,12 @@
       {
         "@language": "en",
         "@value": "Fodder storage"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Practices and structures used to preserve fodder for later feeding."
       }
     ],
     "urn:era:property:conceptType": [
@@ -52611,6 +53592,12 @@
         "@value": "Vitex doniana forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Vitex doniana, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -52804,6 +53791,12 @@
         "@value": "Net Return"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please standardize area denominators to ha where possible."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -52990,6 +53983,12 @@
       {
         "@language": "en",
         "@value": "Total cost efficiency"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Total cost normalized by production output."
       }
     ],
     "urn:era:property:conceptType": [
@@ -53232,6 +54231,12 @@
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_58168"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "NA"
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -53338,6 +54343,12 @@
         "@value": "Finger millet by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from finger millet production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -53384,6 +54395,12 @@
       {
         "@language": "en",
         "@value": "Carob by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from carob production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -54286,6 +55303,12 @@
         "@value": "Taro by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from taro production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -54887,6 +55910,12 @@
         "@value": "Animal Survival"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not use for plant survival."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -55252,6 +56281,12 @@
       },
       {
         "@id": "https://www.feedipedia.org/node/12859"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "https://www.feedipedia.org/node/8012"
       }
     ],
     "urn:era:property:conceptType": [
@@ -56727,6 +57762,12 @@
         "@value": "Feed material components"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Anatomical structures, processed fractions, body substances, or collective material scopes represented as components of feed materials."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -56783,6 +57824,12 @@
       {
         "@language": "en",
         "@value": "By-product role"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Product role borne by a secondary output obtained alongside or remaining after production or processing of a principal product and retained for another use. Material identity and lawful feed use require separate assertions."
       }
     ],
     "urn:era:property:conceptType": [
@@ -57212,6 +58259,12 @@
         "@value": "Brown fish feed materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for legacy brown-fish category; processing state remains represented by narrower feed-material concepts."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -57371,6 +58424,12 @@
         "@value": "Mangifera indica forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Mangifera indica, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -57519,6 +58578,12 @@
       {
         "@language": "en",
         "@value": "Stacking"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for feed-material semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -57994,6 +59059,12 @@
         "@value": "Meal form"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Comminuted feed presentation described as meal; drying and particle-size threshold remain unspecified unless separately governed."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -58363,6 +59434,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000680"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from sweet potato production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -58404,6 +59481,12 @@
       {
         "@language": "en",
         "@value": "Soil Total Nitrogen"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not include % change data as compared to a baseline."
       }
     ],
     "urn:era:property:conceptType": [
@@ -59662,6 +60745,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001316"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from sorghum production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -59856,6 +60945,12 @@
         "@value": "Threshing"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -60022,6 +61117,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001895"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from oat production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -60114,6 +61215,12 @@
       {
         "@language": "en",
         "@value": "Conventional Supplement Use"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "A control for addition (supplementation) or substitution of feeds."
       }
     ],
     "urn:era:property:conceptType": [
@@ -61550,6 +62657,12 @@
         "@value": "Fat constituent"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed chemical constituent value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -61953,6 +63066,12 @@
       {
         "@language": "en",
         "@value": "Bothriochloa forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Bothriochloa, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -63231,6 +64350,12 @@
         "@value": "Native-fat-retained composition"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -63384,6 +64509,12 @@
       {
         "@language": "en",
         "@value": "Shrimp feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for shrimp; processing state remains represented by narrower feed-material concepts."
       }
     ],
     "urn:era:property:conceptType": [
@@ -63597,6 +64728,12 @@
         "@value": "Garlic products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from garlic as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -63616,6 +64753,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000820"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -63691,6 +64834,12 @@
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_58168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "NA"
       }
     ],
     "urn:era:property:conceptType": [
@@ -63951,6 +65100,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000102"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Trifolium quartinianum, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -64142,6 +65297,12 @@
         "@value": "Untreated organic-waste feed classification holds"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Editorial grouping for untreated organic-waste source terms whose safety and regulatory suitability as feed remain unresolved."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -64257,6 +65418,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000833"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -65586,16 +66753,10 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001870"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001825"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001834"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000736"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000788"
@@ -65673,6 +66834,12 @@
       {
         "@language": "en",
         "@value": "Feed classification holds"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Editorial grouping for active source terms whose feed product kind, chemical identity, intended use, safety, or regulatory class remains unresolved; membership asserts no feed-material, formulation, or additive class."
       }
     ],
     "urn:era:property:conceptType": [
@@ -65885,6 +67052,12 @@
         "@value": "Production-residue by-product role"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "By-product role borne by a secondary residue retained from production or processing for another use; exact residue identity requires a separate assertion."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -66079,6 +67252,12 @@
       {
         "@language": "en",
         "@value": "Apparent N Efficiency"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."
       }
     ],
     "urn:era:property:conceptType": [
@@ -67809,6 +68988,12 @@
         "@value": "Cochlospermum planchonii forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Cochlospermum planchonii, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -68020,6 +69205,12 @@
       {
         "@language": "en",
         "@value": "Papaya by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from papaya production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -68350,6 +69541,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000935"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -68423,6 +69620,12 @@
       {
         "@language": "en",
         "@value": "Soil Moisture"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Do not include: water holding capacity, available water capacity, osmotic potential.\nInclude pressure details in parenthesis after units if presented , e.g. % (0.3 bar). Do not include % change data as compared to a baseline."
       }
     ],
     "urn:era:property:conceptType": [
@@ -68631,6 +69834,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000885"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -68965,6 +70174,12 @@
         "@value": "Animal by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for animal-derived production and processing residues; processing state remains represented by narrower feed-material concepts."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -69151,6 +70366,12 @@
         "@value": "Feed chemical entities"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Chemical substances and constituent categories used to describe feed identity or composition independently of feed product kind or additive function."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -69241,6 +70462,12 @@
       {
         "@language": "en",
         "@value": "Whole-milk composition"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed composition state value used for feed-material semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -70197,6 +71424,12 @@
       {
         "@language": "en",
         "@value": "Common bean by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from common bean production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -71840,6 +73073,12 @@
         "@value": "Market-waste role"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Waste role borne by material removed from a market or retail stream; material identity, safety, and eligibility for feed remain separate."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -71940,6 +73179,12 @@
       {
         "@language": "en",
         "@value": "Delonix elata forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Delonix elata, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -72122,6 +73367,12 @@
       {
         "@language": "en",
         "@value": "Agroforestry Fodders"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."
       }
     ],
     "urn:era:property:conceptType": [
@@ -72370,6 +73621,12 @@
       {
         "@language": "en",
         "@value": "Pseudostem"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -72695,6 +73952,12 @@
       {
         "@language": "en",
         "@value": "Soaking"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for feed-material semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -73439,6 +74702,12 @@
         "@value": "Germ"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -73584,6 +74853,12 @@
       {
         "@language": "en",
         "@value": "Filler role"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Functional role borne by a material or product used to add bulk or carrier mass; bearer identity requires a separate assertion."
       }
     ],
     "urn:era:property:conceptType": [
@@ -74088,6 +75363,12 @@
         "@value": "Variable Costs- Fertilizers"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "The total variable cost can include labour, but record the individual cost of labour using the \"Labour Cost\" subindicator."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -74236,6 +75517,12 @@
       {
         "@language": "en",
         "@value": "Aboveground Carbon Biomass"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please standardize area denominators to ha where possible."
       }
     ],
     "urn:era:property:conceptType": [
@@ -74643,6 +75930,12 @@
         "@value": "Liver"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for feed-material semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -74745,6 +76038,12 @@
         "@value": "Cash crop products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from cash crops as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -74787,6 +76086,12 @@
       {
         "@language": "en",
         "@value": "Processing pulp"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed feed product type value used for feed-material semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -74835,16 +76140,10 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000559"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000532"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001832"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100987"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000534"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000561"
@@ -74857,12 +76156,6 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100976"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000533"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000531"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_006241"
@@ -74880,9 +76173,6 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000535"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100921"
       },
       {
@@ -74898,6 +76188,12 @@
       {
         "@language": "en",
         "@value": "Feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Products or substances used directly as feed or as materials in formulated feeds; formulations and additives remain separately classified."
       }
     ],
     "urn:era:property:conceptType": [
@@ -74941,6 +76237,12 @@
       {
         "@language": "en",
         "@value": "Partial N Balance-Product"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."
       }
     ],
     "urn:era:property:conceptType": [
@@ -75378,6 +76680,12 @@
       {
         "@language": "en",
         "@value": "Fruit"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -76022,6 +77330,12 @@
         "@value": "Yield Stability"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Antilog any logged outcomes, ln(yield stablity) is often reported."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -76607,6 +77921,12 @@
       {
         "@language": "en",
         "@value": "Feed experimental roles"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Roles borne by substances or products because of their use in an experimental design or measurement method."
       }
     ],
     "urn:era:property:conceptType": [
@@ -77650,6 +78970,12 @@
         "@value": "Milk-fat outcomes"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Milk-fat quantity and compositional outcomes."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -77801,6 +79127,12 @@
       {
         "@language": "en",
         "@value": "Panicum antidotale forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Panicum antidotale, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -79135,6 +80467,12 @@
         "@value": "Opportunity cost"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Economic value of forgone labor, capital, or land alternatives."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -79254,6 +80592,12 @@
         "@value": "Feed chemical substances"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -79300,6 +80644,12 @@
       {
         "@language": "en",
         "@value": "Melon by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from melon production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -79463,6 +80813,12 @@
       {
         "@language": "en",
         "@value": "Other plant by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from other plant production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -79872,6 +81228,12 @@
         "@value": "Lentil by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from lentil production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -79918,6 +81280,12 @@
       {
         "@language": "en",
         "@value": "Sea urchins"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Echinoid animal grouping used for aquatic production species."
       }
     ],
     "urn:era:property:conceptType": [
@@ -80296,6 +81664,12 @@
       {
         "@language": "en",
         "@value": "Lima bean by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from lima bean production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -80791,6 +82165,12 @@
         "@value": "Plant top"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -80837,6 +82217,12 @@
       {
         "@language": "en",
         "@value": "Coconut products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from coconut as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -80928,6 +82314,12 @@
       {
         "@language": "en",
         "@value": "Product"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."
       }
     ],
     "urn:era:property:conceptType": [
@@ -81814,6 +83206,12 @@
       {
         "@language": "en",
         "@value": "Technological feed additives"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed-additive category for substances or preparations used for technological functions in feed, including preservation and contaminant reduction where authorized."
       }
     ],
     "urn:era:property:conceptType": [
@@ -82894,6 +84292,12 @@
         "@value": "Return to Labour"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Make sure units are carefully recorded and this is not the cost of labour, which should be recorded under Economics: Cost of Labour outcome."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -83017,6 +84421,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000865"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000848"
@@ -83117,6 +84527,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_002226"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from pea production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -83159,6 +84575,12 @@
       {
         "@language": "en",
         "@value": "Block form"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed presentation form value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -83812,54 +85234,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_006185",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003926"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "A feed material with governed source identity “vitex doniana” and characteristics: ingredient part — Leaf; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_006185"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Vitex doniana Leaves Dried Ground"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
-      {
-        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_479623"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "legacy_aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101023",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -83927,9 +85301,63 @@
         "@value": "Primary chemical constituents"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Chemical substances or chemically defined fractions asserted as primary constituents of feed materials."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006185",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003926"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "A feed material with governed source identity “vitex doniana” and characteristics: ingredient part — Leaf; moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_006185"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Vitex doniana Leaves Dried Ground"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": [
+      {
+        "@id": "http://purl.obolibrary.org/obo/NCBITaxon_479623"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -84168,6 +85596,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001897"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from sheanut production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -84354,6 +85788,12 @@
         "@value": "Dried moisture condition"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Moisture-reduced condition supported by an explicit drying process or material-specific evidence; no presentation form is implied."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -84430,6 +85870,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000870"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -84624,54 +86070,6 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_100994",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000850"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Production system dedicated to rearing animals to reproductive maturity."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#inScheme": [
-      {
-        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000854"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#notation": [
-      {
-        "@value": "AOM_100994"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Reproducer production system"
-      }
-    ],
-    "urn:era:property:conceptType": [
-      {
-        "@value": "aom_concept"
-      }
-    ],
-    "urn:era:property:status": [
-      {
-        "@value": "unknown"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_100887",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -84715,6 +86113,66 @@
       {
         "@language": "en",
         "@value": "Orange by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from orange production or processing."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_100994",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000850"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Production system dedicated to rearing animals to reproductive maturity."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000854"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_100994"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Reproducer production system"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Production system dedicated to rearing animals to reproductive maturity."
       }
     ],
     "urn:era:property:conceptType": [
@@ -84822,6 +86280,12 @@
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_58168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "NA"
       }
     ],
     "urn:era:property:conceptType": [
@@ -85000,6 +86464,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000869"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -85242,6 +86712,12 @@
         "@value": "Soil Organic Carbon (Change)"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "All treatments should have the same baseline conditions, if the baseline is more complex than this then contact Pete."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -85340,6 +86816,12 @@
       {
         "@language": "en",
         "@value": "Societal benefits"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Monetary and non-monetary benefits accruing beyond the private producer."
       }
     ],
     "urn:era:property:conceptType": [
@@ -85560,6 +87042,12 @@
       {
         "@language": "en",
         "@value": "Feed particle-size reduction processes"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed processes whose governed objective includes reducing particle dimensions without requiring one machine or dry bulk state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -86013,21 +87501,28 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
         "@value": "Other Ingredients"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "Deprecated legacy Other Ingredients catch-all; resolved descendants moved to evidence-backed axes and unresolved descendants routed to explicit holds."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@language": "en",
+        "@value": "Retired as a browse concept after approved descendants moved to explicit product-kind, chemical, role, or hold classifications."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -86041,9 +87536,6 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000745"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001507"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000747"
@@ -86412,6 +87904,12 @@
       {
         "@language": "en",
         "@value": "Olive by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from olive production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -86907,6 +88405,12 @@
         "@value": "Family labor cost"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Labor cost attributable to family labor, including sex-disaggregated measures."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -87054,6 +88558,12 @@
       {
         "@language": "en",
         "@value": "Digestibility-marker role"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Experimental role borne by a marker substance used to estimate digestibility or passage without making marker function its chemical identity."
       }
     ],
     "urn:era:property:conceptType": [
@@ -88597,6 +90107,12 @@
         "@value": "Fish by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for fish-processing residues; processing state remains represented by narrower feed-material concepts."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -88755,6 +90271,12 @@
         "@value": "Labor outcomes"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Labor time and returns-to-labor productivity outcomes."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -88894,6 +90416,12 @@
         "@value": "Feed roles"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Product, functional, or experimental roles borne by feed-related materials, products, or substances independently of identity."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -89000,6 +90528,12 @@
       {
         "@language": "en",
         "@value": "Young chicken"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Young-life-stage classes for chickens."
       }
     ],
     "urn:era:property:conceptType": [
@@ -89466,6 +91000,12 @@
         "@value": "Myrtus communis forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Myrtus communis, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -89570,6 +91110,12 @@
       {
         "@language": "en",
         "@value": "Bran"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Cereal outer-layer milling fraction with variable attached endosperm; represented as a processed material fraction."
       }
     ],
     "urn:era:property:conceptType": [
@@ -90042,6 +91588,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000894"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -90239,6 +91791,12 @@
         "@value": "Twig"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -90349,6 +91907,12 @@
       {
         "@language": "en",
         "@value": "Microalgal feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from microalgal biomass; source taxon and processing remain explicit."
       }
     ],
     "urn:era:property:conceptType": [
@@ -90497,6 +92061,12 @@
       {
         "@language": "en",
         "@value": "Harrisonia abyssinica forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Harrisonia abyssinica, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -91491,6 +93061,12 @@
       {
         "@language": "en",
         "@value": "Endosperm"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Seed tissue that stores nutrient reserves and forms a retained component of whole cereal grain."
       }
     ],
     "urn:era:property:conceptType": [
@@ -92639,6 +94215,12 @@
         "@value": "Grain"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -93596,6 +95178,12 @@
         "@value": "Biological feed processes"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for biological feed processing; processing state remains represented by narrower feed-material concepts."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -93637,6 +95225,12 @@
       {
         "@language": "en",
         "@value": "Substitution"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "The assigment of control vs treatment in substitution comparisons is subjective, therefore the substitution should be described according to their experimental framing by the authors.\n\nWhen looking at proximate diet composition tables it can be difficult to tell addition from substitution. We can consider the following case to be feed addition: 1) a new ingredient is added to a control diet to form an experimental diet; 2) these diets are fed ad-libitum or to satiation or more of the experimental diet is fed than the control; and 3) the proximate composition of the experimenal diet shows the proportion of control ingredient all decrease the same relative amount to accomodate the new ingredients. It should not be the case that one control diet element decreases relatively more than others in the experimental diet, this may indicate substitution.  If in experimental diets the proportion of one diet ingredient decreases and the other remain constant relative to the control, then this is highly likely to be substitution. One should think of addition and substitution as a continuum and not a binary classification."
       }
     ],
     "urn:era:property:conceptType": [
@@ -93845,6 +95439,12 @@
         "@value": "Pasture management"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Practices governing pasture condition, access, stocking, and fodder provision."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -93891,6 +95491,12 @@
       {
         "@language": "en",
         "@value": "Lemon products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from lemon as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -94214,6 +95820,12 @@
       {
         "@language": "en",
         "@value": "Oryctes rhinoceros feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for Oryctes rhinoceros; processing state remains represented by narrower feed-material concepts."
       }
     ],
     "urn:era:property:conceptType": [
@@ -94771,6 +96383,12 @@
         "@value": "Grazing management"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Management of grazing intensity spatial allocation timing rest and animal use."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -94813,6 +96431,12 @@
       {
         "@language": "en",
         "@value": "Processing-waste role"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Waste role borne by material identified as waste from a processing operation; processing origin alone does not establish lawful feed use."
       }
     ],
     "urn:era:property:conceptType": [
@@ -95365,6 +96989,12 @@
         "@value": "Ash constituent"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed chemical constituent value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -95508,6 +97138,12 @@
         "@value": "Seed"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -95609,6 +97245,12 @@
       {
         "@language": "en",
         "@value": "Fixed Cost"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please standardize area denominators to ha where possible."
       }
     ],
     "urn:era:property:conceptType": [
@@ -95716,6 +97358,12 @@
         "@id": "https://www.feedipedia.org/node/12859"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "https://www.feedipedia.org/node/8012"
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -95811,6 +97459,12 @@
       {
         "@language": "en",
         "@value": "Sesbania forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Sesbania, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -96091,6 +97745,12 @@
       {
         "@language": "en",
         "@value": "Feed Substitution"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."
       }
     ],
     "urn:era:property:conceptType": [
@@ -96719,6 +98379,12 @@
         "@value": "Peel"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -97154,6 +98820,12 @@
         "@value": "Carrot by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from carrot production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -97311,6 +98983,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000353"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000338"
@@ -97433,6 +99111,12 @@
       {
         "@language": "en",
         "@value": "Slurry consistency"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Bulk consistency in which solid particles are dispersed in a liquid continuous phase; not equivalent to an unqualified liquid."
       }
     ],
     "urn:era:property:conceptType": [
@@ -97586,6 +99270,12 @@
       {
         "@language": "en",
         "@value": "Plantain by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from plantain production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -98014,6 +99704,12 @@
         "@value": "Reproductive status"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Parity and gestational-stage descriptors for managed animals; dimensions require later separation."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -98114,6 +99810,12 @@
         "@value": "Spice products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from spices as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -98211,6 +99913,12 @@
       {
         "@language": "en",
         "@value": "Black cumin by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from black cumin as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -98340,6 +100048,12 @@
       {
         "@language": "en",
         "@value": "Crop product"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed-material category for primary crop products."
       }
     ],
     "urn:era:property:conceptType": [
@@ -98672,6 +100386,12 @@
       {
         "@language": "en",
         "@value": "Black cumin products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from black cumin as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -99142,6 +100862,12 @@
         "@value": "Soil Carbon Stocks"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please standardize area denominators to ha where possible."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -99556,6 +101282,12 @@
         "@value": "Waste role"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Product-status role borne by material identified as waste or discarded. Waste remains distinct from by-product status and does not establish eligibility for feed."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -99875,6 +101607,12 @@
       {
         "@language": "en",
         "@value": "Acacia auriculiformis forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Acacia auriculiformis, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -100435,6 +102173,12 @@
         "@value": "Shell component"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed shell component value used for feed-material semantics; distinguished from the feed-material concept labeled Shell."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -100934,6 +102678,12 @@
       {
         "@language": "en",
         "@value": "Variable Costs- Inorganic Fertilizer"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "The total variable cost can include labour, but record the individual cost of labour using the \"Labour Cost\" subindicator."
       }
     ],
     "urn:era:property:conceptType": [
@@ -102456,6 +104206,12 @@
         "@value": "Leucaena forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Leucaena, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -102640,6 +104396,12 @@
       {
         "@language": "en",
         "@value": "Vegetable products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from vegetables as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -104021,6 +105783,12 @@
         "@value": "Jojoba by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from jojoba production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -104759,6 +106527,12 @@
         "@value": "Non Crop Fodders"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -104996,6 +106770,12 @@
       {
         "@language": "en",
         "@value": "Gross Margin"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please standardize area denominators to ha where possible."
       }
     ],
     "urn:era:property:conceptType": [
@@ -105455,6 +107235,12 @@
       {
         "@language": "en",
         "@value": "Offal by-product role"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "By-product role borne by material described in source terminology as offal; exact animal or crop-derived material identity and component require separate assertions."
       }
     ],
     "urn:era:property:conceptType": [
@@ -106856,6 +108642,12 @@
         "@id": "http://purl.obolibrary.org/obo/MAXO_0001129"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Management/Livestock Management/Feed Characteristic/Feed Chemical Composition/Vitamins"
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -107124,6 +108916,12 @@
         "@value": "Mineral complementary feeds"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Formulated complementary feeds whose governed identity is a mineral block, lick, salt lick, or mineral mixture."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -107191,6 +108989,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000873"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -107281,6 +109085,12 @@
       {
         "@language": "en",
         "@value": "Flake form"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed presentation form value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -107771,6 +109581,12 @@
         "@value": "Heating"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for feed-material semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -107790,6 +109606,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000867"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -107892,6 +109714,12 @@
       {
         "@language": "en",
         "@value": "Milk Yield"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please try and standardise to litres per animal per day (l/individual/day)."
       }
     ],
     "urn:era:property:conceptType": [
@@ -108259,6 +110087,12 @@
       {
         "@language": "en",
         "@value": "Specific Growth Rate"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please try to standardise to g per animal per day (g/individual/day). Default unit is unit/individual (e.g kg/cow) unless otherwise stated. Values for this outcome can be negative (the animal loses weight) or positive."
       }
     ],
     "urn:era:property:conceptType": [
@@ -108799,6 +110633,12 @@
         "@value": "Family"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Please standardize area denominators to ha where possible."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -108991,6 +110831,12 @@
         "@value": "Return on Investment"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "This is usually presented as a ratio, please convert any % values to proportions."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -109166,6 +111012,12 @@
       {
         "@language": "en",
         "@value": "Infiltration Rate"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Units should be volume/time."
       }
     ],
     "urn:era:property:conceptType": [
@@ -110227,6 +112079,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001319"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from wheat production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -110282,6 +112140,12 @@
       {
         "@language": "en",
         "@value": "Young fish"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Young-life-stage classes for fish."
       }
     ],
     "urn:era:property:conceptType": [
@@ -110609,6 +112473,12 @@
       {
         "@language": "en",
         "@value": "Bulb"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -111683,21 +113553,28 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
         "@value": "Raw material proportion"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "any measurable or declared characteristics related to the proportion of food raw material in animal diet- e.g. 0.6 corn grain"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@language": "en",
+        "@value": "Retired as a browse concept. Use aom:ingredientProportion on an aom:IngredientComponent with a QUDT QuantityValue, DimensionlessRatio quantity kind, explicit unit, and declared diet-composition basis."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -112980,6 +114857,12 @@
         "@value": "Feed Conversion Ratio (Out In)"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "This outcome relates to animal feed experiments. This is a ratio whose value should be less than 1 (although some aquatic experiment may yield slightly >1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -113249,6 +115132,12 @@
       {
         "@language": "en",
         "@value": "Cashew by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from cashew production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -113779,6 +115668,12 @@
       {
         "@language": "en",
         "@value": "Zootechnical feed additives"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed-additive category for substances or preparations used to affect animal performance, digestibility, or gut flora under authorized conditions."
       }
     ],
     "urn:era:property:conceptType": [
@@ -114458,6 +116353,12 @@
         "@value": "Feather by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for feather-derived feed material; processing state remains represented by narrower feed-material concepts."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -114499,6 +116400,12 @@
       {
         "@language": "en",
         "@value": "Other Feed"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."
       }
     ],
     "urn:era:property:conceptType": [
@@ -114756,6 +116663,12 @@
     "http://www.w3.org/2004/02/skos/core#related": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000648"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from maize production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -115454,6 +117367,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101152"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -116202,6 +118121,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_003960"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100866"
@@ -116838,6 +118763,12 @@
         "@value": "Coconut by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from coconut production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -117151,6 +119082,12 @@
         "@value": "Defatting"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -117260,6 +119197,12 @@
     "http://www.w3.org/2004/02/skos/core#related": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000024"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Rendered poultry by-products prepared as feed by cooking or sterilization, drying, and grinding."
       }
     ],
     "urn:era:property:conceptType": [
@@ -117897,6 +119840,12 @@
         "@value": "Cabbage by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from cabbage production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -117989,6 +119938,12 @@
         "@value": "Sprout"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -118044,6 +119999,12 @@
       {
         "@language": "en",
         "@value": "Jatropha curcas press-cake materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Jatropha curcas press cake, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -118238,6 +120199,12 @@
       {
         "@language": "en",
         "@value": "Cladode"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -118792,6 +120759,12 @@
       {
         "@language": "en",
         "@value": "Marine hydrolysates"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Grouping for marine-animal hydrolysates; processing state remains represented by narrower feed-material concepts."
       }
     ],
     "urn:era:property:conceptType": [
@@ -119412,6 +121385,12 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_42345"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "https://www.feedipedia.org/node/8012"
       }
     ],
     "urn:era:property:conceptType": [
@@ -120614,6 +122593,12 @@
         "@value": "Hay product type"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -121118,6 +123103,12 @@
       {
         "@language": "en",
         "@value": "Cake form"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed presentation form value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -121887,6 +123878,12 @@
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_42345"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "https://www.feedipedia.org/node/8012"
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -122037,6 +124034,12 @@
       {
         "@language": "en",
         "@value": "Feed bulk consistencies"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Bulk flow and dispersion consistencies of feed materials, independently of particle presentation and moisture condition."
       }
     ],
     "urn:era:property:conceptType": [
@@ -122242,6 +124245,12 @@
       {
         "@language": "en",
         "@value": "Animal Derived Fodders"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."
       }
     ],
     "urn:era:property:conceptType": [
@@ -122537,6 +124546,12 @@
         "@value": "Private monetary income"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Monetary private benefits from produce, manure, or animal services."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -122589,6 +124604,12 @@
       {
         "@language": "en",
         "@value": "Rosemary products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from rosemary as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -122792,6 +124813,12 @@
       {
         "@language": "en",
         "@value": "Chickpea by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from chickpea production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -124144,6 +126171,12 @@
         "@value": "Protein Conversion Ratio (Out In)"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "This outcome relates to animal feed experiments.  It is a ratio whose value should be less than 1 (although some aquatic experiment may yield slightly >1 if there are other food resources available in the water, like algae). Units can be absent as the outcome is a ratio."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -124423,6 +126456,12 @@
       {
         "@language": "en",
         "@value": "Feed additives"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed products intentionally added for a technological, sensory, nutritional, zootechnical, coccidiostatic, or histomonostatic function; authorization conditions require dated regulatory evidence."
       }
     ],
     "urn:era:property:conceptType": [
@@ -124864,6 +126903,12 @@
         "@value": "Viscera"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -124910,6 +126955,12 @@
       {
         "@language": "en",
         "@value": "Cotton by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from cotton production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -125152,6 +127203,12 @@
       {
         "@language": "en",
         "@value": "Feed product types"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed feed product type vocabulary used for feed-material semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -125413,6 +127470,12 @@
       {
         "@language": "en",
         "@value": "Macadamia by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from macadamia production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -126067,6 +128130,12 @@
         "@value": "Jatropha curcas forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Jatropha curcas, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -126474,6 +128543,12 @@
       {
         "@language": "en",
         "@value": "Liquid consistency"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Flowing bulk consistency without a governed requirement for dispersed solid particles."
       }
     ],
     "urn:era:property:conceptType": [
@@ -126959,6 +129034,12 @@
         "@value": "Rendering"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Thermal processing of animal by-products to separate or stabilize feed materials."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -127100,6 +129181,12 @@
       {
         "@language": "en",
         "@value": "Non Crop Fodders"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."
       }
     ],
     "urn:era:property:conceptType": [
@@ -127488,6 +129575,12 @@
         "@value": "mineral supplementation"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Management/Livestock Management/Feed Characteristic/Feed Chemical Composition/Minerals"
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -127640,6 +129733,12 @@
         "@value": "Stalk"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -127743,6 +129842,12 @@
       {
         "@language": "en",
         "@value": "Blue lupin products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from blue lupin as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -127877,6 +129982,12 @@
       {
         "@language": "en",
         "@value": "Khat by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from khat production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -129159,6 +131270,12 @@
         "@value": "Vitamin premixtures and complementary feeds"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Multi-component vitamin preparations represented as premixtures or complementary feeds rather than single vitamin substances."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -129638,6 +131755,12 @@
         "@value": "Blood component"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Animal body substance represented as a feed-material component; distinct from Blood feed material."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -129711,21 +131834,28 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
         "@value": "Supplement"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "Deprecated legacy Supplement catch-all; resolved descendants moved to feed-material, formulation, additive, or chemical axes and unresolved descendants routed to explicit holds."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@language": "en",
+        "@value": "Retired as a browse concept after approved descendants moved to feed-material, formulation, additive, chemical, role, or explicit hold classifications."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -130072,6 +132202,12 @@
         "@value": "Oil constituent"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed chemical constituent value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -130088,15 +132224,22 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
+    "http://www.w3.org/2002/07/owl#deprecated": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000781"
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "An AOM controlled category for “Unspecified” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@language": "en",
+        "@value": "Retired as a browse concept because an unspecified source value records missing data rather than a feed-material identity."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -131212,6 +133355,12 @@
         "@value": "Coffee products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from coffee as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -131315,6 +133464,12 @@
       {
         "@language": "en",
         "@value": "Group structure"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Composition of a managed animal group by stage, sex, or genetic group."
       }
     ],
     "urn:era:property:conceptType": [
@@ -131665,6 +133820,12 @@
         "@value": "Discarded-material waste role"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Waste role borne by material described as discarded or culled; lawful recovery or eligibility for feed requires separate evidence."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -131716,6 +133877,12 @@
         "@value": "Rice products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from rice as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -131765,6 +133932,12 @@
       {
         "@language": "en",
         "@value": "Watermelon by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from watermelon production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -132085,6 +134258,12 @@
         "@value": "Palm products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from palm as primary products or processed product forms."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -132294,6 +134473,12 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_42345"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "https://www.feedipedia.org/node/8012"
       }
     ],
     "urn:era:property:conceptType": [
@@ -132586,6 +134771,12 @@
         "@value": "Management activity variable cost"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Variable cost attributable to a crop or livestock management activity."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -132755,6 +134946,12 @@
       {
         "@language": "en",
         "@value": "Gender-equity outcomes"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Sex-disaggregated income and gender-equity outcomes."
       }
     ],
     "urn:era:property:conceptType": [
@@ -133459,6 +135656,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000663"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from jackfruit production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -133583,6 +135786,12 @@
     "http://purl.org/dc/terms/isReplacedBy": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000898"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
       }
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
@@ -133781,6 +135990,12 @@
       {
         "@language": "en",
         "@value": "Whole-crop composition"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Composition state indicating retention of the harvested whole-crop scope rather than one component part."
       }
     ],
     "urn:era:property:conceptType": [
@@ -135229,6 +137444,12 @@
         "@value": "Lantana camara forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Lantana camara, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -136095,6 +138316,12 @@
         "@value": "Stem"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -136185,6 +138412,12 @@
       {
         "@language": "en",
         "@value": "Hydrolysis"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -137013,6 +139246,12 @@
         "@value": "Partial N Balance-Above-ground Biomass"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Units can be absent as the outcome is a ratio. To compare two treatments they should share the same inputs, but have different management (for example)."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -137242,6 +139481,12 @@
       {
         "@language": "en",
         "@value": "Winged bean products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from winged bean as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -138248,6 +140493,12 @@
         "@value": "Rye by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from rye production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -138296,6 +140547,12 @@
       {
         "@language": "en",
         "@value": "Binder role"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed product role value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -138504,6 +140761,12 @@
       {
         "@language": "en",
         "@value": "Addition"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "It can be difficult to tell addition from substitution if looking only at proximate diet composition tables, we must also consider how much of the diet is being fed (and not just in terms of weight, between treatments diets could be fed to provide a similar amount of energy or protein, or to cost the same).\nWe can consider the following case likely to be feed addition: 1) a new ingredient is added to a control diet to form an experimental diet; 2) these diets are fed ad-libitum or to satiation or more of the experimental diet is fed than the control; and 3) the proximate composition of the experimenal diet shows the proportion of control ingredient all decrease the same relative amount to accomodate the new ingredients. It should not be the case that one control diet element decreases relatively more than others in the experimental diet, this may indicate substitution.  If in experimental diets the proportion of one diet ingredient decreases and the other remain constant relative to the control, then this is highly likely to be substitution.\nWe should think of addition and substitution as a continuum and not a binary classification."
       }
     ],
     "urn:era:property:conceptType": [
@@ -138917,6 +141180,12 @@
         "@value": "Grewia similis forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Grewia similis, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -139128,6 +141397,12 @@
       {
         "@language": "en",
         "@value": "Sugarcane by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from sugarcane production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -139490,6 +141765,12 @@
         "@value": "Cracking"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed processing method value used for feed-material semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -139585,6 +141866,12 @@
       {
         "@language": "en",
         "@value": "Bridelia ferruginea forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Bridelia ferruginea, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -139733,6 +142020,12 @@
       {
         "@language": "en",
         "@value": "Insect Derived Fodders"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Substitutions are typically defined by the author. Usually they are looking to substitute a conventional (e.g. purchased diet) with cheaper or more sustainable alternatives."
       }
     ],
     "urn:era:property:conceptType": [
@@ -140157,6 +142450,12 @@
         "@value": "Olive forage materials"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from olive, grouped independently of plant-part and processing state."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -140369,6 +142668,12 @@
       {
         "@language": "en",
         "@value": "Fluted pumpkin products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from fluted pumpkin as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -140639,6 +142944,12 @@
         "@value": "Vine"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for feed-material semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -140779,6 +143090,12 @@
       {
         "@language": "en",
         "@value": "Land Equivalent Ratio"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "We do not accept LER for practice A vs practice B (e.g. mulch vs no-mulch as this yield A/yield B, which we calculated as the response ratio)."
       }
     ],
     "urn:era:property:conceptType": [
@@ -141573,6 +143890,12 @@
         "@value": "Animal Manures"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feeds are added compared to a control practice (basal diet) that does not contain items which would gain the same ERA classfication. Control diets are often hay ad libitum or hay ad libitum + maize stover."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -141619,6 +143942,12 @@
       {
         "@language": "en",
         "@value": "Bamboo forage materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from bamboo, grouped independently of plant-part and processing state."
       }
     ],
     "urn:era:property:conceptType": [
@@ -142119,6 +144448,12 @@
         "@value": "Lick form"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed presentation form value used for ingredient-component semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -142358,6 +144693,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001459"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
@@ -142484,6 +144825,12 @@
       {
         "@language": "en",
         "@value": "Cheka by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from Cheka production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -143349,6 +145696,12 @@
       {
         "@language": "en",
         "@value": "Pellet form"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed presentation form value used for feed-material semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -144504,6 +146857,12 @@
         "@value": "Rhizome"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for feed-material semantics."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -145014,6 +147373,12 @@
         "@value": "Palm kernel by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from palm kernel production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -145226,6 +147591,12 @@
       {
         "@language": "en",
         "@value": "Potato products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials obtained from potato as primary products or processed product forms."
       }
     ],
     "urn:era:property:conceptType": [
@@ -145600,6 +147971,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000896"
       }
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000923"
@@ -145734,6 +148111,12 @@
       },
       {
         "@id": "http://purl.obolibrary.org/obo/NCBITaxon_3847"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "NA"
       }
     ],
     "urn:era:property:conceptType": [
@@ -146266,6 +148649,12 @@
         "@value": "Sugar beet by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from sugar beet production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -146610,6 +148999,12 @@
         "@value": "Composite crop-residue components"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Collective crop-residue components such as straw or stover that contain multiple anatomical structures."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -146700,6 +149095,12 @@
       {
         "@language": "en",
         "@value": "Root"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for ingredient-component semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -146960,6 +149361,12 @@
       {
         "@language": "en",
         "@value": "Flower"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Governed anatomical part value used for feed-material semantics."
       }
     ],
     "urn:era:property:conceptType": [
@@ -147564,6 +149971,12 @@
         "@value": "Sesame by-products"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from sesame production or processing."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -147657,6 +150070,12 @@
       {
         "@language": "en",
         "@value": "Stover"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Composite crop-residue component remaining after grain or seed harvest; not one anatomical structure."
       }
     ],
     "urn:era:property:conceptType": [
@@ -148558,6 +150977,12 @@
         "@value": "Variable Costs- Organic Fertilizer"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "The total variable cost can include labour, but record the individual cost of labour using the \"Labour Cost\" subindicator."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
@@ -149141,6 +151566,12 @@
         "@value": "Private non-monetary benefits"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Private benefits received through consumption, nutrient cycling, or animal labor."
+      }
+    ],
     "urn:era:property:conceptType": [
       {
         "@value": "aom_concept"
@@ -149202,6 +151633,12 @@
       {
         "@language": "en",
         "@value": "Cowpea by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed materials derived from cowpea production or processing."
       }
     ],
     "urn:era:property:conceptType": [
@@ -149763,21 +152200,28 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2002/07/owl#deprecated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+        "@value": true
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
         "@value": "Raw material name"
       }
     ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
-      }
-    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
         "@value": "any characteristics related to food raw material name- e.g. wheat flour, soybean meal"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#historyNote": [
+      {
+        "@language": "en",
+        "@value": "Retired as a browse concept. Use skos:prefLabel for canonical feed-material names and aom:ingredientName for row-local source labels on aom:IngredientComponent records."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -149948,6 +152392,12 @@
       {
         "@language": "en",
         "@value": "Anatomical components"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Biological anatomical structures represented as components of feed materials."
       }
     ],
     "urn:era:property:conceptType": [
