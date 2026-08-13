@@ -1,0 +1,35 @@
+{
+  "status": "recommendation-only",
+  "decision_status": "accepted-for-implementation-planning",
+  "reviewer": "Pete Steward",
+  "review_date": "2026-08-13",
+  "review_issue": "https://github.com/ERAgriculture/era-program/issues/52",
+  "graph_inputs": {
+    "nodes": "dist/livestock-staging/nodes.csv",
+    "nodes_sha256": "9988805db7f1b8464a2bc970d67aae3e68bdeccae2e2d323fa23f49eb7a033fc",
+    "edges": "dist/livestock-staging/edges.csv",
+    "edges_sha256": "d3c5e53344eb23da67f4efb7aac000b3849deabb99bfe8f6896184e9d0692e04"
+  },
+  "inventory_concepts": 1670,
+  "feed_material_direct_children": 20,
+  "feed_material_descendants": 1625,
+  "feed_additive_descendants": 33,
+  "chemical_substance_descendants": 8,
+  "forage_descendants": 768,
+  "crop_product_descendants": 185,
+  "crop_byproduct_descendants": 504,
+  "crop_forage_id_intersections": {
+    "forage_and_crop_product": 0,
+    "forage_and_crop_byproduct": 0,
+    "crop_product_and_crop_byproduct": 0
+  },
+  "crop_forage_normalized_label_intersections": {
+    "forage_and_crop_product": [],
+    "forage_and_crop_byproduct": [],
+    "crop_product_and_crop_byproduct": [
+      "cotton seed"
+    ]
+  },
+  "implementation_changes": 0,
+  "allocated_identifiers": 0
+}
