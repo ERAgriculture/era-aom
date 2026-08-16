@@ -5560,12 +5560,13 @@
 <urn:era-aom:livestock:AOM_000559> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000559" ;
-  skos:prefLabel "Animal"@en ;
+  skos:prefLabel "Feeds of animal origin"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Animal"@en ;
   skos:altLabel "metazoans"@en ;
   skos:altLabel "multicellular animals"@en ;
-  skos:definition "An AOM controlled category for “Animal” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
+  skos:definition "Editorial navigation for feed materials of animal origin; exact animal source, material identity, and product role require explicit assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> .
 
 <urn:era-aom:livestock:AOM_000561> a skos:Concept ;
@@ -5574,8 +5575,8 @@
   skos:prefLabel "Animal Manures"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "An AOM controlled category for “Animal Manures” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:definition "Classification hold for animal-manure source terms whose intentional oral-feed use, safety, and feed-product status remain unresolved; membership asserts no feed eligibility."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_000563> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -6995,10 +6996,11 @@
 <urn:era-aom:livestock:AOM_000735> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000735" ;
-  skos:prefLabel "Forage Plants"@en ;
+  skos:prefLabel "Forage materials"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "An AOM controlled feed category for “Forage Plants”. Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."@en ;
+  skos:altLabel "Forage Plants"@en ;
+  skos:definition "Editorial navigation for plant materials used as forage, fresh, dried, ensiled, or grazed; crop cultivation status and source taxon remain independent and may overlap."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100850> ;
   skos:relatedMatch <https://www.feedipedia.org/content/feeds?category=15965> .
 
@@ -7552,7 +7554,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "An AOM controlled category for “Essential Fatty Acid” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101147> .
+  skos:broader <urn:era-aom:livestock:AOM_101023> .
 
 <urn:era-aom:livestock:AOM_000811> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -10153,8 +10155,8 @@
   skos:prefLabel "Pseudovitamin"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed-supplement ingredient with governed workbook identity “Pseudovitamin”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101147> .
+  skos:definition "Classification hold for the source term Pseudovitamin; exact chemical identity, product kind, and intended function remain unresolved."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001069> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17170,7 +17172,7 @@
   era:status "unknown" ;
   skos:altLabel "Starch"@en ;
   skos:definition "Starch represented as a feed material; Starch constituent remains a separate chemical-constituent concept."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101159> .
 
 <urn:era-aom:livestock:AOM_001834> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17504,7 +17506,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed ingredient with governed workbook identity “Free Gossypol”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101147> .
+  skos:broader <urn:era-aom:livestock:AOM_101023> .
 
 <urn:era-aom:livestock:AOM_001866> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -17513,8 +17515,8 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Glycerin"@en ;
-  skos:definition "A feed ingredient with governed workbook identity “Glycerol”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:definition "Generic glycerol or glycerine feed-material concept retained temporarily under Unclassified feed materials while crude, refined, and chemical scope are reconciled; additive status is not asserted."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101162> .
 
 <urn:era-aom:livestock:AOM_001867> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -18000,7 +18002,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "A feed material with governed source identity “crop byproduct” and characteristics: product role — By-product role."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101159> .
 
 <urn:era-aom:livestock:AOM_001917> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -18048,8 +18050,8 @@
   skos:prefLabel "Water"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed ingredient with governed workbook identity “Water”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:definition "Classification hold for water represented as a feed or diet input; exact product-kind scope and distinction between drinking and incorporated water remain unresolved."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_001923> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -19550,8 +19552,8 @@
   era:status "unknown" ;
   skos:altLabel "Chromium Oxide Meal"@en ;
   skos:altLabel "Chromium Oxide Milled"@en ;
-  skos:definition "A feed material with governed source identity “chromium oxide” and characteristics: presentation form — Comminuted particle form; processing method — Grinding."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000746> .
+  skos:definition "Classification hold for a ground chromium-oxide source term; chemical identity, prepared-product status, grinding assertion, and presentation form require separate confirmation."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_002074> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -25470,8 +25472,8 @@
   skos:prefLabel "Unspecified Yeast"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "An AOM controlled category for “Unspecified Yeast” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:definition "Biological feed material with unresolved yeast organism and product scope; no exact source taxon or preparation is inferred."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101161> .
 
 <urn:era-aom:livestock:AOM_006242> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -26245,7 +26247,7 @@
   era:status "unknown" ;
   skos:altLabel "Protected Fat"@en ;
   skos:definition "Feed-material category for fat products whose rumen protection is supported by product or process evidence; drying, physical form, and feeding rate require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101160> .
 
 <urn:era-aom:livestock:AOM_006335> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -26387,8 +26389,8 @@
   skos:prefLabel "Pleurotus ostreatus"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed ingredient with governed workbook identity “Pleurotus ostreatus”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:definition "Classification hold for a Pleurotus ostreatus source term whose exact material identity and FeedMaterial status remain unresolved; no fruiting body, powder, mycelium, or treated substrate is inferred."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101142> .
 
 <urn:era-aom:livestock:AOM_006350> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -27643,7 +27645,7 @@
   era:status "unknown" ;
   skos:definition "Feed-material category for primary crop products."@en ;
   skos:scopeNote "Feed-material category for primary crop products."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101159> .
 
 <urn:era-aom:livestock:AOM_100922> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28194,7 +28196,7 @@
   era:status "unknown" ;
   skos:definition "Grouping for animal-derived production and processing residues; processing state remains represented by narrower feed-material concepts."@en ;
   skos:scopeNote "Grouping for animal-derived production and processing residues; processing state remains represented by narrower feed-material concepts."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_000559> .
 
 <urn:era-aom:livestock:AOM_100977> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28305,7 +28307,7 @@
   era:status "unknown" ;
   skos:definition "Feed-material category for former foodstuffs and processed-food production residues used as feed; product or waste role remains explicit."@en ;
   skos:scopeNote "Feed-material category for former foodstuffs and processed-food production residues used as feed; product or waste role remains explicit."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101160> .
 
 <urn:era-aom:livestock:AOM_100988> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -28327,7 +28329,7 @@
   skos:altLabel "Microalgae supplements"@en ;
   skos:definition "Feed materials derived from microalgal biomass; source taxon and processing remain explicit."@en ;
   skos:scopeNote "Feed materials derived from microalgal biomass; source taxon and processing remain explicit."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101161> .
 
 <urn:era-aom:livestock:AOM_100990> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29677,7 +29679,7 @@
   era:status "unknown" ;
   skos:definition "Mineral substances or products represented as feed materials; chemical composition and authorization as an additive require separate assertions."@en ;
   skos:scopeNote "Mineral substances or products represented as feed materials; chemical composition and authorization as an additive require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_100850> .
+  skos:broader <urn:era-aom:livestock:AOM_101160> .
 
 <urn:era-aom:livestock:AOM_101140> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29752,11 +29754,12 @@
 <urn:era-aom:livestock:AOM_101147> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101147" ;
-  skos:prefLabel "Feed chemical substances"@en ;
+  skos:prefLabel "Chemical substances"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions."@en ;
-  skos:scopeNote "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions."@en ;
+  skos:altLabel "Feed chemical substances"@en ;
+  skos:definition "Chemically identified substances or substance groups represented independently of feed-material, formulation, or additive product kind; intended use and authorization require separate assertions."@en ;
+  skos:scopeNote "Chemically identified substances or substance groups represented independently of feed-material, formulation, or additive product kind; intended use and authorization require separate assertions."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101146> .
 
 <urn:era-aom:livestock:AOM_101148> a skos:Concept, aom:ProductRole ;
@@ -29840,3 +29843,44 @@
   skos:definition "Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components."@en ;
   skos:scopeNote "Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001491> .
+
+<urn:era-aom:livestock:AOM_101159> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101159" ;
+  skos:prefLabel "Plant products and by-products"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:altLabel "Plant products/by-products"@en ;
+  skos:definition "Editorial navigation for plant-derived feed materials, including primary products and secondary outputs; source taxon and product role remain explicit independent assertions."@en ;
+  skos:scopeNote "Editorial navigation for plant-derived feed materials, including primary products and secondary outputs; source taxon and product role remain explicit independent assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
+
+<urn:era-aom:livestock:AOM_101160> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101160" ;
+  skos:prefLabel "Other feeds"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Editorial navigation for evidenced feed materials outside forage, plant-product, and animal-origin branches; membership does not replace source, product-role, or regulatory assertions."@en ;
+  skos:scopeNote "Editorial navigation for evidenced feed materials outside forage, plant-product, and animal-origin branches; membership does not replace source, product-role, or regulatory assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_100850> .
+
+<urn:era-aom:livestock:AOM_101161> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101161" ;
+  skos:prefLabel "Other biological feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Biologically derived feed materials not yet placed under forage, plant-product, or animal-origin navigation; exact source taxon remains explicit when known."@en ;
+  skos:scopeNote "Biologically derived feed materials not yet placed under forage, plant-product, or animal-origin navigation; exact source taxon remains explicit when known."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101160> .
+
+<urn:era-aom:livestock:AOM_101162> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101162" ;
+  skos:prefLabel "Unclassified feed materials"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:definition "Temporary navigation for evidenced feed materials lacking durable placement; each member requires a recorded evidence gap, owner, target cohort, review date, and resolution within one release cycle."@en ;
+  skos:scopeNote "Temporary navigation for evidenced feed materials lacking durable placement; each member requires a recorded evidence gap, owner, target cohort, review date, and resolution within one release cycle."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101160> .

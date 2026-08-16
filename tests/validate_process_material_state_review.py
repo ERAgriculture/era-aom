@@ -38,7 +38,7 @@ assert summary == {
     "reviewed_material_state_concepts": 18,
     "unresolved_cases": ["AOM_001961", "AOM_002008", "AOM_006004"],
 }
-assert len(hierarchy_revisions) == 126
+assert len(hierarchy_revisions) == 138
 assert len(process_results) == 2
 assert len(state_review) == 18
 assert len(grinding_review) == 343
@@ -170,4 +170,4 @@ for identifier in {
 }:
     assert "GPT4" not in definitions[identifier]
 
-print("Process/material-state review passed: 126 hierarchy revisions; 3 explicit holds")
+print("Process/material-state review passed: 138 hierarchy revisions; 3 explicit holds")

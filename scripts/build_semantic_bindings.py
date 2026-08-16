@@ -104,7 +104,7 @@ assert len({
 assert len(external_material_facets) == 3
 assert len(process_state_relations) == 2
 assert len(formulation_classifications) == 29
-assert len(taxonomy_classifications) == 220
+assert len(taxonomy_classifications) == 229
 classification_by_id = {row["concept_id"]: row for row in formulation_classifications}
 classification_by_id.update({row["concept_id"]: row for row in taxonomy_classifications})
 assert {

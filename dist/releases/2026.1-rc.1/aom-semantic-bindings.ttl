@@ -232,9 +232,6 @@
 <https://w3id.org/era-aom/livestock/AOM_000559> a skos:Concept,
         aom:FeedMaterial .
 
-<https://w3id.org/era-aom/livestock/AOM_000561> a skos:Concept,
-        aom:FeedMaterial .
-
 <https://w3id.org/era-aom/livestock/AOM_000563> a skos:Concept,
         aom:FeedMaterial ;
     aom:materialComponent <https://w3id.org/era-aom/livestock/AOM_101104> ;
@@ -840,7 +837,7 @@
         aom:ChemicalSubstance .
 
 <https://w3id.org/era-aom/livestock/AOM_000809> a skos:Concept,
-        aom:ChemicalSubstance .
+        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_000845> a skos:Concept,
         aom:ProcessingMethod .
@@ -851,13 +848,8 @@
 <https://w3id.org/era-aom/livestock/AOM_001067> a skos:Concept,
         aom:Feed .
 
-<https://w3id.org/era-aom/livestock/AOM_001068> a skos:Concept,
-        aom:ChemicalSubstance,
-        aom:Feed .
-
 <https://w3id.org/era-aom/livestock/AOM_001069> a skos:Concept,
-        aom:ChemicalSubstance,
-        aom:Feed .
+        aom:ChemicalSubstance .
 
 <https://w3id.org/era-aom/livestock/AOM_001094> a skos:Concept,
         aom:FeedMaterial ;
@@ -3113,7 +3105,7 @@
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_000836> .
 
 <https://w3id.org/era-aom/livestock/AOM_001865> a skos:Concept,
-        aom:ChemicalSubstance .
+        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_001866> a skos:Concept,
         aom:FeedMaterial .
@@ -3286,9 +3278,6 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001921> a skos:Concept,
         aom:Feed .
-
-<https://w3id.org/era-aom/livestock/AOM_001922> a skos:Concept,
-        aom:FeedMaterial .
 
 <https://w3id.org/era-aom/livestock/AOM_001924> a skos:Concept,
         aom:FeedMaterial ;
@@ -6665,6 +6654,9 @@
 <https://w3id.org/era-aom/livestock/AOM_006331> a skos:Concept,
         aom:Feed .
 
+<https://w3id.org/era-aom/livestock/AOM_006334> a skos:Concept,
+        aom:FeedMaterial .
+
 <https://w3id.org/era-aom/livestock/AOM_006335> a skos:Concept,
         aom:FeedMaterial ;
     aom:moistureCondition <https://w3id.org/era-aom/livestock/AOM_101054> ;
@@ -6733,9 +6725,6 @@
         aom:FeedMaterial ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_000831> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
-
-<https://w3id.org/era-aom/livestock/AOM_006349> a skos:Concept,
-        aom:FeedMaterial .
 
 <https://w3id.org/era-aom/livestock/AOM_006352> a skos:Concept,
         aom:FeedMaterial ;
@@ -6951,14 +6940,23 @@
     aom:ingredientPart <https://w3id.org/era-aom/livestock/AOM_101074> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_000832> .
 
+<https://w3id.org/era-aom/livestock/AOM_100850> a skos:Concept,
+        aom:FeedMaterial .
+
 <https://w3id.org/era-aom/livestock/AOM_100921> a skos:Concept,
         aom:FeedMaterial .
 
 <https://w3id.org/era-aom/livestock/AOM_100976> a skos:Concept,
         aom:FeedMaterial .
 
+<https://w3id.org/era-aom/livestock/AOM_100987> a skos:Concept,
+        aom:FeedMaterial .
+
 <https://w3id.org/era-aom/livestock/AOM_100988> a skos:Concept,
         aom:Feed .
+
+<https://w3id.org/era-aom/livestock/AOM_100989> a skos:Concept,
+        aom:FeedMaterial .
 
 <https://w3id.org/era-aom/livestock/AOM_101019> a skos:Concept,
         aom:FeedMaterialPartCategory .
@@ -7011,6 +7009,12 @@
 <https://w3id.org/era-aom/livestock/AOM_101133> a skos:Concept,
         aom:FeedMoistureCondition .
 
+<https://w3id.org/era-aom/livestock/AOM_101135> a skos:Concept,
+        aom:FeedAdditive .
+
+<https://w3id.org/era-aom/livestock/AOM_101139> a skos:Concept,
+        aom:FeedMaterial .
+
 <https://w3id.org/era-aom/livestock/AOM_101143> a skos:Concept,
         aom:FeedMaterialComponent .
 
@@ -7040,6 +7044,18 @@
 
 <https://w3id.org/era-aom/livestock/AOM_101154> a skos:Concept,
         aom:FeedMaterialComponent .
+
+<https://w3id.org/era-aom/livestock/AOM_101159> a skos:Concept,
+        aom:FeedMaterial .
+
+<https://w3id.org/era-aom/livestock/AOM_101160> a skos:Concept,
+        aom:FeedMaterial .
+
+<https://w3id.org/era-aom/livestock/AOM_101161> a skos:Concept,
+        aom:FeedMaterial .
+
+<https://w3id.org/era-aom/livestock/AOM_101162> a skos:Concept,
+        aom:FeedMaterial .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:ash> a aom:SemanticValueBinding ;
     aom:bindingAction "map_to_existing" ;

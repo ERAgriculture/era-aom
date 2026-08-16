@@ -1,6 +1,6 @@
 {
-  "expected_concepts": 2790,
-  "expected_hierarchy_relations": 2797,
+  "expected_concepts": 2794,
+  "expected_hierarchy_relations": 2801,
   "minimum_graph_triples": 29564,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
@@ -18,6 +18,27 @@
   "notation_search_concept": "AOM_101129",
   "notation_search_label": "Feed particle-size reduction processes",
   "retired_parent_concept": "AOM_100850",
+  "feed_material_navigation_children": [
+    {"concept_id": "AOM_000559", "label": "Feeds of animal origin"},
+    {"concept_id": "AOM_000735", "label": "Forage materials"},
+    {"concept_id": "AOM_101159", "label": "Plant products and by-products"},
+    {"concept_id": "AOM_101160", "label": "Other feeds"}
+  ],
+  "nested_navigation_checks": [
+    {"concept_id": "AOM_100976", "parent_id": "AOM_000559"},
+    {"concept_id": "AOM_001916", "parent_id": "AOM_101159"},
+    {"concept_id": "AOM_100921", "parent_id": "AOM_101159"},
+    {"concept_id": "AOM_001832", "parent_id": "AOM_101159"},
+    {"concept_id": "AOM_100987", "parent_id": "AOM_101160"},
+    {"concept_id": "AOM_101139", "parent_id": "AOM_101160"},
+    {"concept_id": "AOM_006334", "parent_id": "AOM_101160"},
+    {"concept_id": "AOM_100989", "parent_id": "AOM_101161"},
+    {"concept_id": "AOM_006241", "parent_id": "AOM_101161"},
+    {"concept_id": "AOM_001866", "parent_id": "AOM_101162"},
+    {"concept_id": "AOM_000561", "parent_id": "AOM_101142"},
+    {"concept_id": "AOM_001922", "parent_id": "AOM_101142"},
+    {"concept_id": "AOM_006349", "parent_id": "AOM_101142"}
+  ],
   "retired_descriptor_checks": [
     {"concept_id": "AOM_000531", "label": "Ingredient name", "history_contains": "source labels"},
     {"concept_id": "AOM_000532", "label": "Ingredient part", "history_contains": "compatibility provenance"},
@@ -50,6 +71,14 @@
     {"concept_id": "AOM_101060", "label": "Milling by-product role", "definition_contains": "secondary milling output"},
     {"concept_id": "AOM_101104", "label": "Bran", "definition_contains": "milling fraction"},
     {"concept_id": "AOM_101110", "label": "Whole-grain composition", "definition_contains": "bran, germ, and endosperm"},
-    {"concept_id": "AOM_101130", "label": "Feed component separation processes", "definition_contains": "removing"}
+    {"concept_id": "AOM_101130", "label": "Feed component separation processes", "definition_contains": "removing"},
+    {"concept_id": "AOM_000559", "label": "Feeds of animal origin", "definition_contains": "animal origin"},
+    {"concept_id": "AOM_000735", "label": "Forage materials", "definition_contains": "may overlap"},
+    {"concept_id": "AOM_101159", "label": "Plant products and by-products", "definition_contains": "product role"},
+    {"concept_id": "AOM_101160", "label": "Other feeds", "definition_contains": "regulatory assertions"},
+    {"concept_id": "AOM_101161", "label": "Other biological feed materials", "definition_contains": "source taxon"},
+    {"concept_id": "AOM_101162", "label": "Unclassified feed materials", "definition_contains": "resolution within one release cycle"},
+    {"concept_id": "AOM_101147", "label": "Chemical substances", "definition_contains": "independently"},
+    {"concept_id": "AOM_001866", "label": "Glycerol", "definition_contains": "temporarily"}
   ]
 }

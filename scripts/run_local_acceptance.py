@@ -99,12 +99,38 @@ def main():
     )
     narrower_text = json.dumps(narrower)
     assert not any(check["concept_id"] in narrower_text for check in profile["retired_descriptor_checks"])
+    navigation = json_get(
+        api + f"/{vocid}/narrower?" + urllib.parse.urlencode({"uri": retired_parent_uri, "lang": "en"}),
+        timings,
+    )
+    actual_navigation = {
+        item["uri"].rsplit("/", 1)[-1]: item["prefLabel"]
+        for item in navigation["narrower"]
+    }
+    expected_navigation = {
+        item["concept_id"]: item["label"]
+        for item in profile["feed_material_navigation_children"]
+    }
+    assert actual_navigation == expected_navigation, actual_navigation
+    nested_navigation = []
+    for check in profile["nested_navigation_checks"]:
+        child_uri = f"https://w3id.org/era-aom/livestock/{check['concept_id']}"
+        parent_response = json_get(
+            api + f"/{vocid}/broader?" + urllib.parse.urlencode({"uri": child_uri, "lang": "en"}),
+            timings,
+        )
+        actual_parents = {
+            item["uri"].rsplit("/", 1)[-1]
+            for item in parent_response["broader"]
+        }
+        assert actual_parents == {check["parent_id"]}, (check, actual_parents)
+        nested_navigation.append(check)
     stats = json_get(api + f"/{vocid}/vocabularyStatistics?lang=en", timings)
     assert str(count) in json.dumps(stats), stats
     top_concepts = json_get(api + f"/{vocid}/topConcepts?lang=en", timings)
     top_text = json.dumps(top_concepts)
     assert all(item in top_text for item in profile["expected_top_concepts"]), top_concepts
-    results["api"] = {"vocabularies": "pass", "search": "pass", "notation_search": "pass", "retired_search": retired_search_results, "retired_hierarchy_exclusion": "pass", "broader": "pass", "top_concepts": "pass", "statistics": "pass"}
+    results["api"] = {"vocabularies": "pass", "search": "pass", "notation_search": "pass", "retired_search": retired_search_results, "retired_hierarchy_exclusion": "pass", "feed_material_navigation": expected_navigation, "nested_navigation": nested_navigation, "broader": "pass", "top_concepts": "pass", "statistics": "pass"}
     results["hierarchy"] = {"roots": len(profile["expected_top_concepts"]), "broader": broader_count, "narrower": narrower_count}
 
     page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{concept_id}"
@@ -239,7 +265,7 @@ def main():
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     (output / "acceptance.json").write_text(json.dumps(results, indent=2) + "\n")
-    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Retired descriptor cards: {len(retired_results)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Retired descriptor exact search, warnings, history, and hierarchy exclusion: pass", "- Concept HTML + embedded JSON-LD: pass", "- Compound concept source/component/process/role display: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
+    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Retired descriptor cards: {len(retired_results)}", f"- Feed-material navigation children: {len(expected_navigation)}", f"- Nested navigation checks: {len(nested_navigation)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Feed-material direct and nested navigation: pass", "- Retired descriptor exact search, warnings, history, and hierarchy exclusion: pass", "- Concept HTML + embedded JSON-LD: pass", "- Compound concept source/component/process/role display: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
     (output / "acceptance.md").write_text("\n".join(lines))
     print(json.dumps(results, indent=2))
 

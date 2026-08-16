@@ -2442,13 +2442,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101162"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed ingredient with governed workbook identity “Glycerol”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        "@value": "Generic glycerol or glycerine feed-material concept retained temporarily under Unclassified feed materials while crude, refined, and chemical scope are reconciled; additive status is not asserted."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -4693,7 +4693,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101160"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -5122,6 +5122,72 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101159",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Plant products/by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Editorial navigation for plant-derived feed materials, including primary products and secondary outputs; source taxon and product role remain explicit independent assertions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100921"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001916"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001832"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101159"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Plant products and by-products"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Editorial navigation for plant-derived feed materials, including primary products and secondary outputs; source taxon and product role remain explicit independent assertions."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -7274,7 +7340,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101160"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -7561,11 +7627,6 @@
     "http://www.w3.org/2004/02/skos/core#inScheme": [
       {
         "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_002072"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -15570,7 +15631,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101159"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -24854,7 +24915,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101023"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -27033,6 +27094,72 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101160",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Editorial navigation for evidenced feed materials outside forage, plant-product, and animal-origin branches; membership does not replace source, product-role, or regulatory assertions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101162"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006334"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100987"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101161"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101160"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Other feeds"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Editorial navigation for evidenced feed materials outside forage, plant-product, and animal-origin branches; membership does not replace source, product-role, or regulatory assertions."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001503",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -27152,7 +27279,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101160"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -33400,7 +33527,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101023"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -40845,13 +40972,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101161"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An AOM controlled category for “Unspecified Yeast” within “Other Ingredients”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+        "@value": "Biological feed material with unresolved yeast organism and product scope; no exact source taxon or preparation is inferred."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -54307,6 +54434,63 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101161",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101160"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Biologically derived feed materials not yet placed under forage, plant-product, or animal-origin navigation; exact source taxon remains explicit when known."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006241"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100989"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101161"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Other biological feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Biologically derived feed materials not yet placed under forage, plant-product, or animal-origin navigation; exact source taxon remains explicit when known."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_100858",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -54948,13 +55132,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed ingredient with governed workbook identity “Water”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        "@value": "Classification hold for water represented as a feed or diet input; exact product-kind scope and distinction between drinking and incorporated water remain unresolved."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -60646,13 +60830,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed ingredient with governed workbook identity “Pleurotus ostreatus”, classified within “Other Ingredients”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        "@value": "Classification hold for a Pleurotus ostreatus source term whose exact material identity and FeedMaterial status remain unresolved; no fruiting body, powder, mycelium, or treated substrate is inferred."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -66741,6 +66925,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000790"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_002072"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000744"
       },
       {
@@ -66762,6 +66949,12 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000788"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000561"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_006349"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000782"
       },
       {
@@ -66778,6 +66971,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001869"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001922"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001503"
@@ -66805,6 +67001,9 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001868"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001068"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000779"
@@ -70117,7 +70316,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000559"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -76134,49 +76333,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001916"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000559"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001832"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100987"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000561"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000735"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006334"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101160"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100976"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006241"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_006349"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001922"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100989"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101139"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100921"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001866"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101159"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -79000,7 +79166,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101159"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -80548,6 +80714,12 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed chemical substances"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101146"
@@ -80556,7 +80728,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions."
+        "@value": "Chemically identified substances or substance groups represented independently of feed-material, formulation, or additive product kind; intended use and authorization require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -80566,19 +80738,10 @@
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001865"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_001068"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_006389"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000746"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000809"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -80589,13 +80752,13 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Feed chemical substances"
+        "@value": "Chemical substances"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#scopeNote": [
       {
         "@language": "en",
-        "@value": "Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions."
+        "@value": "Chemically identified substances or substance groups represented independently of feed-material, formulation, or additive product kind; intended use and authorization require separate assertions."
       }
     ],
     "urn:era:property:conceptType": [
@@ -85287,7 +85450,13 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101080"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000809"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_001577"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001865"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
@@ -85932,6 +86101,12 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Forage Plants"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
@@ -85940,7 +86115,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An AOM controlled feed category for “Forage Plants”. Used to organize narrower feed materials; it does not identify one material or assert inherited characteristics."
+        "@value": "Editorial navigation for plant materials used as forage, fresh, dried, ensiled, or grazed; crop cultivation status and source taxon remain independent and may overlap."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -85973,7 +86148,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Forage Plants"
+        "@value": "Forage materials"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#relatedMatch": [
@@ -91879,7 +92054,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101161"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -98588,13 +98763,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An AOM controlled category for “Animal Manures” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+        "@value": "Classification hold for animal-manure source terms whose intentional oral-feed use, safety, and feed-product status remain unresolved; membership asserts no feed eligibility."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -99996,7 +100171,7 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100850"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101159"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
@@ -107687,13 +107862,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101147"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed-supplement ingredient with governed workbook identity “Pseudovitamin”, classified within “Supplement”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."
+        "@value": "Classification hold for the source term Pseudovitamin; exact chemical identity, product kind, and intended function remain unresolved."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -118454,6 +118629,60 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101162",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101160"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Temporary navigation for evidenced feed materials lacking durable placement; each member requires a recorded evidence gap, owner, target cohort, review date, and resolution within one release cycle."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_001866"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101162"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Unclassified feed materials"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Temporary navigation for evidenced feed materials lacking durable placement; each member requires a recorded evidence gap, owner, target cohort, review date, and resolution within one release cycle."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001883",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -126492,13 +126721,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000746"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101142"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “chromium oxide” and characteristics: presentation form — Comminuted particle form; processing method — Grinding."
+        "@value": "Classification hold for a ground chromium-oxide source term; chemical identity, prepared-product status, grinding assertion, and presentation form require separate confirmation."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -137051,6 +137280,10 @@
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
         "@language": "en",
+        "@value": "Animal"
+      },
+      {
+        "@language": "en",
         "@value": "multicellular animals"
       },
       {
@@ -137066,7 +137299,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An AOM controlled category for “Animal” within “Feed Ingredient”. Used to classify feed records at this scope; narrower material characteristics require separate assertions."
+        "@value": "Editorial navigation for feed materials of animal origin; exact animal source, material identity, and product role require explicit assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -137088,6 +137321,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_001114"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100976"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000556"
       },
       {
@@ -137105,7 +137341,7 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Animal"
+        "@value": "Feeds of animal origin"
       }
     ],
     "urn:era:property:conceptType": [

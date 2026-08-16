@@ -1,12 +1,14 @@
 # ADR 0045: Separate feed product kind from source navigation
 
-- Status: accepted for implementation planning
+- Status: accepted and implemented in staging candidate
 - Date: 2026-08-13
 - Approved: 2026-08-13
+- Implemented: 2026-08-16
 - Reviewer: Pete Steward
 - Tracking: [era-program #52](https://github.com/ERAgriculture/era-program/issues/52)
 - Method: [Feed taxonomy governance](../methods/feed-taxonomy-governance.md)
 - Review: [livestock-v31](../../review/livestock-v31/README.md)
+- Implementation: [livestock-v34](../../review/livestock-v34/README.md)
 
 ## Context
 
@@ -43,9 +45,24 @@ source navigation, product role, individual materials, and five schema fields.
 7. Represent biological source using `aom:sourceTaxon` and product/waste status
    using `aom:productRole`; expose role on material cards rather than duplicating
    source branches by role.
-8. Retain all row-level holds in the livestock-v31 review. No identifier,
-   hierarchy, typing, relation, distribution, or publication change is approved
-   by this proposed ADR.
+8. Implement all 21 approved row-level dispositions and preserve all 11 reviewed
+   holds. Implementation approval changes staging ontology and generated release
+   artifacts only; it does not approve public publication or canonical cutover.
+
+## Authority comparison
+
+| Authority | Supports | Does not support |
+|---|---|---|
+| Regulation 767/2009 and Recommendation 2011/25/EU | Feed-material product scope, catalogue naming, source/process descriptors | Universal crop/forage disjointness or ontology browse design |
+| Regulation 1831/2003 and Implementing Regulation 2021/758 | Legal distinction and functional authorization of feed additives | Classification by inclusion percentage alone or timeless global status |
+| Regulation 2022/1104 | Current catalogue treatment for represented feed-material classes | Identity claims for unresolved local workbook labels |
+| Feedipedia | User-facing navigation among forage, plant products/by-products, animal-origin feeds, and other feeds | Legal authorization, exact product identity, or mandatory ontology hierarchy |
+| AGROVOC | Crop, feed-crop, forage, and biological-source terminology overlap | Product-role, additive authorization, or local material identity |
+| ERA-AOM local graph and workbook review | Existing identifiers, asserted parents, usage, mappings, and migration impact | External scientific or regulatory truth without supporting authority |
+
+No authority alone determines final structure. Regulatory sources govern product
+status, Feedipedia informs editorial navigation, AGROVOC informs terminology,
+and local evidence proves implementation impact.
 
 ## Evidence
 
@@ -55,11 +72,43 @@ Primary authorities are Regulation 767/2009, Regulation 1831/2003,
 Recommendation 2011/25/EU, Implementing Regulation 2021/758, Regulation
 2022/1104, Feedipedia categories, and AGROVOC Crop/Feed crop/Forage concepts.
 
-## Consequences if accepted
+Implementation evidence, including claim limitations, normalized-label
+collision checks, temporary-unclassified governance, rejected-ID reservation,
+and row-level disposition joins, is recorded in the
+[livestock-v34 evidence register](../../review/livestock-v34/evidence_register.csv).
+
+## Implementation
+
+- `Feed materials` now has exactly four direct editorial navigation children:
+  `AOM_000559 Feeds of animal origin`, `AOM_000735 Forage materials`,
+  `AOM_101159 Plant products and by-products`, and `AOM_101160 Other feeds`.
+- `AOM_101161 Other biological feed materials` groups microalgal and unresolved
+  yeast materials; `AOM_101162 Unclassified feed materials` temporarily contains
+  only `AOM_001866 Glycerol` under explicit one-release-cycle governance.
+- `AOM_101147` is renamed `Chemical substances`; Essential Fatty Acid and Free
+  Gossypol are typed and placed as chemical constituents rather than feed
+  materials.
+- Animal Manures, Water, Pleurotus ostreatus, Pseudovitamin, and Chromium Oxide
+  Ground remain explicit classification holds.
+- Rejected unapproved IDs `AOM_101156` through `AOM_101158` are reserved as
+  retired-before-publication and remain absent from ontology output. Accepted
+  new navigation IDs are `AOM_101159` through `AOM_101162`.
+
+Deterministic implementation records 32 dispositions, 12 hierarchy revisions,
+three label changes, four new navigation concepts, one temporary-unclassified
+member, and zero hierarchy gaps. Generated staging contains 2,794 concepts and
+2,801 broader/narrower pairs. Full Python validation, R pilot validation, RDF
+parity, SHACL, release/deployment validation, and repeated byte-stable generation
+pass. Clean-volume Fuseki/Skosmos acceptance also passes with 37,979 graph
+triples, exact four-branch navigation, 13 nested-parent checks, 31 representative
+cards, notation search, RDF downloads, and content negotiation; see the
+[acceptance summary](../../review/livestock-v34/local_acceptance_summary.json).
+
+## Consequences
 
 - Feed additives remain visible beside Feed materials but are not materials.
 - Chemical terms no longer imply legal product classification by hierarchy.
-- Glycerol may move from an isolated direct child to temporary unclassified
+- Glycerol moves from an isolated direct child to temporary unclassified
   navigation while exact catalogue scope is resolved.
 - Pleurotus remains a product-kind and identity hold rather than receiving
   invented fungal-product detail.
