@@ -44,7 +44,7 @@ assert {row["collision_id"] for row in detail} == {row["collision_id"] for row i
 assert all(row["review_status"] in {"proposed", "approved", "hold"} for row in cohort)
 assert all(row["recommended_action"] for row in cohort)
 assert summary["reviewed_groups"] == len(cohort)
-assert summary["approved_groups"] == 92
+assert summary["approved_groups"] == 91
 assert summary["held_groups"] == 1
 assert summary["unreviewed_groups"] == 0
 assert summary["status"] == "governed_with_holds"
@@ -67,7 +67,7 @@ for decision in decisions:
     key = normalize_label(decision["collision_key"])
     assert key not in decision_by_label
     decision_by_label[key] = decision
-assert len(decision_by_label) == len(cohort)
+assert {row["normalized_label"] for row in cohort} <= set(decision_by_label)
 for row in cohort:
     decision = decision_by_label[row["normalized_label"]]
     assert set(decision["concept_ids"].split(";")) == set(row["concept_ids"].split(";"))

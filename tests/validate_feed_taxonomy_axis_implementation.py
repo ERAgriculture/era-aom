@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import csv
 import json
-from collections import Counter
 from pathlib import Path
 
 
@@ -9,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "livestock-staging"
 REVIEW_V29 = ROOT / "review" / "livestock-v29"
 REVIEW_V30 = ROOT / "review" / "livestock-v30"
+REVIEW_V31 = ROOT / "review" / "livestock-v31"
 
 
 def read(path):
@@ -19,6 +19,7 @@ def read(path):
 v29 = read(REVIEW_V29 / "feed_taxonomy_adversarial_review.csv")
 classifications = read(DATA / "approved_feed_taxonomy_classifications.csv")
 implementation = read(REVIEW_V30 / "feed_taxonomy_implementation_register.csv")
+product_kind_review = read(REVIEW_V31 / "feed_product_kind_review.csv")
 evidence = read(REVIEW_V30 / "evidence_register.csv")
 new_concepts = read(DATA / "approved_new_concepts.csv")
 retirements = read(DATA / "approved_concept_retirements.csv")
@@ -39,7 +40,8 @@ v29_ids = {row["concept_id"] for row in v29}
 classification_by_id = {row["concept_id"]: row for row in classifications}
 implementation_by_id = {row["concept_id"]: row for row in implementation}
 assert len(v29) == len(v29_ids) == 220
-assert set(classification_by_id) == set(implementation_by_id) == v29_ids
+assert set(implementation_by_id) == v29_ids
+assert v29_ids <= set(classification_by_id)
 assert summary == {
     "component_retention_relations": 5,
     "concept_semantic_types": 21,
@@ -64,15 +66,17 @@ assert summary == {
     },
     "source_concept_retirements": 8,
 }
-assert Counter(row["implementation_status"] for row in classifications) == Counter(
-    summary["implementation_statuses"]
-)
-assert Counter(row["semantic_class"] or "none" for row in classifications) == Counter(
-    summary["semantic_classes"]
-)
-assert all(row["reviewer"] == "Pete Steward" and row["review_date"] == "2026-08-12" for row in classifications)
-assert all("0044-feed-taxonomy-axis-reclassification.md" in row["evidence"] for row in classifications)
-assert all("feed-taxonomy-governance.md" in row["evidence"] for row in classifications)
+superseded_ids = {row["concept_id"] for row in product_kind_review}
+for concept_id in v29_ids - superseded_ids:
+    current = classification_by_id[concept_id]
+    historical = implementation_by_id[concept_id]
+    for field in {
+        "preferred_label", "implementation_status", "semantic_class",
+        "target_parent_id", "reviewer", "review_date", "rationale",
+    }:
+        assert current[field] == historical[field], (concept_id, field)
+    assert "0044-feed-taxonomy-axis-reclassification.md" in current["evidence"]
+    assert "feed-taxonomy-governance.md" in current["evidence"]
 
 new_rows = [row for row in new_concepts if row["case_id"].startswith("FEED-TAXONOMY-")]
 new_ids = {f"AOM_{number:06d}" for number in range(101135, 101156)}
@@ -141,7 +145,11 @@ assert {
 }
 assert len(retention_relations) == 5
 assert len({(row["state_concept_id"], row["relation_property"], row["retained_concept_id"]) for row in retention_relations}) == 5
-assert len(semantic_types) == len({row["concept_id"] for row in semantic_types}) == 21
+semantic_type_by_id = {row["concept_id"]: row["semantic_class"] for row in semantic_types}
+assert len(semantic_types) == len(semantic_type_by_id) == 20
+assert semantic_type_by_id["AOM_000809"] == "aom:ChemicalConstituent"
+assert semantic_type_by_id["AOM_001865"] == "aom:ChemicalConstituent"
+assert "AOM_001068" not in semantic_type_by_id
 
 broader = {
     (row["subject_id"], row["object_id"])
@@ -158,7 +166,6 @@ assert {
     ("AOM_101130", "AOM_000845"),
     ("AOM_004433", "AOM_101135"),
     ("AOM_001579", "AOM_004433"),
-    ("AOM_006334", "AOM_100850"),
     ("AOM_001497", "AOM_006334"),
     ("AOM_101062", "AOM_101148"),
     ("AOM_101061", "AOM_101148"),

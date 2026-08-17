@@ -28,13 +28,13 @@ cohort = read(REVIEW / "global_identity_collision_cohort.csv")
 deprecations = read(DATA / "approved_deprecations.csv")
 summary = json.loads((REVIEW / "global_identity_collision_summary.json").read_text())
 
-assert len(decisions) == len(cohort) == 93
+assert len(decisions) == len(cohort) == 92
 assert Counter(row["decision"] for row in decisions) == {
-    "retain_distinct": 66,
+    "retain_distinct": 65,
     "deprecate_replace": 26,
     "hold_identity": 1,
 }
-assert Counter(row["status"] for row in decisions) == {"approved": 92, "hold": 1}
+assert Counter(row["status"] for row in decisions) == {"approved": 91, "hold": 1}
 assert all(row["reviewer"] == "Pete Steward" and row["review_date"] for row in decisions)
 
 decisions_by_label = {}
@@ -66,12 +66,12 @@ for decision in decisions:
         for deprecated_id, replacement_id in replacement_pairs
     )
 
-assert summary["reviewed_groups"] == 93
-assert summary["approved_groups"] == 92
+assert summary["reviewed_groups"] == 92
+assert summary["approved_groups"] == 91
 assert summary["held_groups"] == 1
 assert summary["unreviewed_groups"] == 0
 assert summary["status"] == "governed_with_holds"
 
 manifest = json.loads((ROOT / "dist/livestock-staging/manifest.json").read_text())
 assert manifest["counts"]["approved_ontology_collision_decisions"] == len(decisions)
-print("Ontology collision governance validation passed: 93 decisions; 0 unreviewed groups")
+print("Ontology collision governance validation passed: 92 decisions; 0 unreviewed groups")

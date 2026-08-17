@@ -39,6 +39,10 @@ round-trip tests will be added with normalized pilot data.
 - `validate_ingredient_descriptor_lifecycle_implementation.py`: checks five
   retired descriptor cards, governed history notes, hierarchy suppression,
   OWL/JSON-LD parity, corrected property domains, and explicit Skosmos policy.
+- `validate_feed_product_kind_implementation.py`: checks all 32 ADR 0045
+  dispositions, four direct Feed-material navigation branches, nested source
+  navigation, temporary-unclassified governance, classification holds,
+  chemical-constituent corrections, collision audit, and rejected-ID absence.
 - `validate_global_identity_audit.py`: covers every duplicate preferred-label
   group, prevents collision regression, and freezes generated ID allocation
   while canonical-reuse/deprecation review remains open.

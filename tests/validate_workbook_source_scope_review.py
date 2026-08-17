@@ -42,6 +42,7 @@ structure_replaced = {
     if row["definition_method"] in {
         "feed_structure_definition_replacement",
         "feed_taxonomy_axis_definition_replacement",
+        "feed_product_kind_definition_replacement",
     }
 }
 assert defined <= approved

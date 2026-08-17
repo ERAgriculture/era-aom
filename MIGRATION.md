@@ -26,6 +26,16 @@ Phase-3 ingredient-component decomposition is defined in
 Raw descriptors remain authoritative migration evidence until each facet
 assertion receives reviewed value governance.
 
+Feed product-kind and editorial source navigation are governed by
+[`docs/decisions/0045-feed-product-kind-and-source-navigation.md`](docs/decisions/0045-feed-product-kind-and-source-navigation.md).
+Feed materials, formulated feeds, and feed additives remain sibling product
+kinds. Feed-material browse navigation now separates forage materials, plant
+products/by-products, feeds of animal origin, and other feeds without treating
+source, product role, chemical identity, process, or legal status as the same
+axis. `AOM_101162 Unclassified feed materials` is temporary migration state,
+not a permanent catch-all; every member requires an owner, evidence gap, target
+cohort, and resolution before the next public livestock release.
+
 Ingredient descriptor lifecycle and browser behavior are governed by
 [`docs/decisions/0046-ingredient-descriptor-lifecycle-and-browser-deprecation.md`](docs/decisions/0046-ingredient-descriptor-lifecycle-and-browser-deprecation.md).
 Ontology implementation preserves `AOM_000531` through `AOM_000535` as

@@ -367,7 +367,7 @@ AOM_101143,en,scope_note,Material components or fractions produced or recovered 
 AOM_101144,en,scope_note,"Cereal-grain material fractions separated or recovered during milling, including bran and related fractions.",approved_new_concept
 AOM_101145,en,scope_note,Animal-derived body substances represented as feed-material components without treating them as connected anatomical structures.,approved_new_concept
 AOM_101146,en,scope_note,Chemical substances and constituent categories used to describe feed identity or composition independently of feed product kind or additive function.,approved_new_concept
-AOM_101147,en,scope_note,Chemically identified substances or substance groups encountered in feed data; intended feed use and additive authorization require separate assertions.,approved_new_concept
+AOM_101147,en,scope_note,"Chemically identified substances or substance groups represented independently of feed-material, formulation, or additive product kind; intended use and authorization require separate assertions.",approved_new_concept
 AOM_101148,en,scope_note,"Economic or production-status roles borne by feed materials. By-product and waste roles are sibling categories; material identity, component, process, and legal eligibility for feed remain separate.",approved_new_concept
 AOM_101149,en,scope_note,"Functions borne by substances or products in feed, represented independently of their material, formulation, additive, or chemical identity.",approved_new_concept
 AOM_101150,en,scope_note,Roles borne by substances or products because of their use in an experimental design or measurement method.,approved_new_concept
@@ -376,6 +376,10 @@ AOM_101152,en,scope_note,Functional role borne by a material or product used to 
 AOM_101153,en,scope_note,Seed tissue that stores nutrient reserves and forms a retained component of whole cereal grain.,approved_new_concept
 AOM_101154,en,scope_note,Collective crop-residue components such as straw or stover that contain multiple anatomical structures.,approved_new_concept
 AOM_101155,en,scope_note,"Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components.",approved_new_concept
+AOM_101159,en,scope_note,"Editorial navigation for plant-derived feed materials, including primary products and secondary outputs; source taxon and product role remain explicit independent assertions.",approved_new_concept
+AOM_101160,en,scope_note,"Editorial navigation for evidenced feed materials outside forage, plant-product, and animal-origin branches; membership does not replace source, product-role, or regulatory assertions.",approved_new_concept
+AOM_101161,en,scope_note,"Biologically derived feed materials not yet placed under forage, plant-product, or animal-origin navigation; exact source taxon remains explicit when known.",approved_new_concept
+AOM_101162,en,scope_note,"Temporary navigation for evidenced feed materials lacking durable placement; each member requires a recorded evidence gap, owner, target cohort, review date, and resolution within one release cycle.",approved_new_concept
 AOM_000531,en,history_note,Retired as a browse concept. Use skos:prefLabel for canonical feed-material names and aom:ingredientName for row-local source labels on aom:IngredientComponent records.,approved_concept_retirement
 AOM_000532,en,history_note,"Retired as a browse concept. Use reviewed material-component, presentation-form, processing-method, product-role, and constituent assertions; retain aom:legacyComponentDescriptor only as compatibility provenance on aom:IngredientComponent records.",approved_concept_retirement
 AOM_000533,en,history_note,Retired as a browse concept. Use aom:sourceTaxon for reviewed biological-source assertions on canonical aom:FeedMaterial records; preserve provisional source-row claims until material identity is resolved.,approved_concept_retirement

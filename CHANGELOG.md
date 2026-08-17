@@ -4,6 +4,13 @@ All notable vocabulary changes will be recorded here.
 
 ## Unreleased
 
+- Implement ADR 0045 across 32 reviewed feed product-kind and source-navigation
+  dispositions: expose four direct Feed-material navigation branches, add four
+  collision-audited concepts (`AOM_101159`–`AOM_101162`), reserve three rejected
+  pre-revert IDs, move Glycerol to governed temporary unclassified navigation,
+  retain six explicit classification holds, rename Chemical substances, and
+  keep source, role, process, composition, and legal status independent.
+
 - Implement ADR 0046 for five legacy ingredient descriptors: preserve stable
   deprecated cards and evidence, remove approved retirements from active browse
   hierarchy, add `owl:deprecated` and history notes, explicitly retain
