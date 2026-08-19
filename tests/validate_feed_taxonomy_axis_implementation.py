@@ -146,7 +146,7 @@ assert {
 assert len(retention_relations) == 5
 assert len({(row["state_concept_id"], row["relation_property"], row["retained_concept_id"]) for row in retention_relations}) == 5
 semantic_type_by_id = {row["concept_id"]: row["semantic_class"] for row in semantic_types}
-assert len(semantic_types) == len(semantic_type_by_id) == 20
+assert len(semantic_types) == len(semantic_type_by_id) == 47
 assert semantic_type_by_id["AOM_000809"] == "aom:ChemicalConstituent"
 assert semantic_type_by_id["AOM_001865"] == "aom:ChemicalConstituent"
 assert "AOM_001068" not in semantic_type_by_id

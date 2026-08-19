@@ -306,7 +306,7 @@ AOM_101064,en,scope_note,Governed chemical constituent value used for ingredient
 AOM_101065,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
 AOM_101066,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
 AOM_101067,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
-AOM_101069,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
+AOM_101069,en,scope_note,"Technical process objective of removing or reducing a fat fraction; exact operation, resulting composition, and degree of removal require separate assertions.",approved_new_concept
 AOM_101070,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
 AOM_101072,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
 AOM_101073,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
@@ -319,7 +319,7 @@ AOM_101079,en,scope_note,Governed product role value used for ingredient-compone
 AOM_101080,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
 AOM_101081,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
 AOM_101083,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
-AOM_101084,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
+AOM_101084,en,scope_note,Upstream production workflow in which sugar-bearing raw material is processed and one or more feed materials arise; direct treatment operations require separate assertions.,approved_new_concept
 AOM_101085,en,scope_note,"Anatomical structures, processed fractions, body substances, or collective material scopes represented as components of feed materials.",approved_new_concept
 AOM_101086,en,scope_note,Composition state indicating retention of the harvested whole-crop scope rather than one component part.,approved_new_concept
 AOM_101088,en,scope_note,Governed processing method value used for feed-material semantics.,approved_new_concept
@@ -380,6 +380,23 @@ AOM_101159,en,scope_note,"Editorial navigation for plant-derived feed materials,
 AOM_101160,en,scope_note,"Editorial navigation for evidenced feed materials outside forage, plant-product, and animal-origin branches; membership does not replace source, product-role, or regulatory assertions.",approved_new_concept
 AOM_101161,en,scope_note,"Biologically derived feed materials not yet placed under forage, plant-product, or animal-origin navigation; exact source taxon remains explicit when known.",approved_new_concept
 AOM_101162,en,scope_note,"Temporary navigation for evidenced feed materials lacking durable placement; each member requires a recorded evidence gap, owner, target cohort, review date, and resolution within one release cycle.",approved_new_concept
+AOM_101163,en,scope_note,Feed-process mechanism category for operations driven primarily by enzyme catalysis or comparable biochemical action; process objective and intended benefit require separate assertions.,approved_new_concept
+AOM_101164,en,scope_note,Technical-objective category for feed operations intended to convert or degrade constituents without implying a nutritional benefit or measured effect.,approved_new_concept
+AOM_101165,en,scope_note,Technical-objective category for feed operations intended to preserve material or improve storage stability without asserting that the intended outcome was achieved.,approved_new_concept
+AOM_101166,en,scope_note,Technical-objective category for feed operations intended to add or apply a component to material independently of application mechanism or downstream benefit.,approved_new_concept
+AOM_101167,en,scope_note,Technical-objective category for feed operations intended to add moisture or condition material through water uptake without asserting a resulting form or benefit.,approved_new_concept
+AOM_101168,en,scope_note,Controlled vocabulary of contextual benefits that a feed process may be intended to support; membership never asserts an achieved or measured effect.,approved_new_concept
+AOM_101169,en,scope_note,Possible feed benefit in which process application is intended to improve digestibility; achievement requires application-specific evidence.,approved_new_concept
+AOM_101170,en,scope_note,Possible feed benefit in which process application is intended to improve nutrient availability; achievement requires application-specific evidence.,approved_new_concept
+AOM_101171,en,scope_note,Possible feed benefit in which process application is intended to reduce one or more antinutritional factors; achievement requires application-specific evidence.,approved_new_concept
+AOM_101172,en,scope_note,Possible feed benefit in which process application is intended to improve feed safety; achievement requires application-specific evidence.,approved_new_concept
+AOM_101173,en,scope_note,Possible feed benefit in which process application is intended to improve palatability or voluntary intake; achievement requires application-specific evidence.,approved_new_concept
+AOM_101174,en,scope_note,Possible feed benefit in which process application is intended to improve preservation or storage stability; achievement requires application-specific evidence.,approved_new_concept
+AOM_101175,en,scope_note,"Possible feed benefit in which process application is intended to improve handling, mixing, or physical manageability; achievement requires application-specific evidence.",approved_new_concept
+AOM_101176,en,scope_note,Possible feed benefit in which process application is intended to obtain a material with a selected composition; achieved composition requires application-specific evidence.,approved_new_concept
+AOM_101177,en,scope_note,Possible production benefit in which process application is intended to recover a selected output or fraction; achieved recovery requires application-specific evidence.,approved_new_concept
+AOM_101178,en,scope_note,Possible feed benefit in which process application is intended to reduce airborne or fugitive dust; achievement requires application-specific evidence.,approved_new_concept
+AOM_101179,en,scope_note,"Possible production benefit in which process application is intended to facilitate a later operation such as fermentation, ensiling, cooking, or fraction recovery.",approved_new_concept
 AOM_000531,en,history_note,Retired as a browse concept. Use skos:prefLabel for canonical feed-material names and aom:ingredientName for row-local source labels on aom:IngredientComponent records.,approved_concept_retirement
 AOM_000532,en,history_note,"Retired as a browse concept. Use reviewed material-component, presentation-form, processing-method, product-role, and constituent assertions; retain aom:legacyComponentDescriptor only as compatibility provenance on aom:IngredientComponent records.",approved_concept_retirement
 AOM_000533,en,history_note,Retired as a browse concept. Use aom:sourceTaxon for reviewed biological-source assertions on canonical aom:FeedMaterial records; preserve provisional source-row claims until material identity is resolved.,approved_concept_retirement

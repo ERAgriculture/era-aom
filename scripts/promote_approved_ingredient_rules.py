@@ -13,7 +13,7 @@ REVIEWER = "Pete Steward"
 DATE = "2026-08-05"
 APPROVED_RULE_IDS = {
     "PROCESS-ALKALI_TREATED", "PROCESS-AUTOCLAVED", "PROCESS-BOILED",
-    "PROCESS-CRACKED", "PROCESS-CRUSHED", "PROCESS-DEFATTED", "PROCESS-DRIED",
+    "PROCESS-CRACKED", "PROCESS-CRUSHED", "PROCESS-DRIED",
     "PROCESS-ENSILED", "PROCESS-ENZYME_TREATED", "PROCESS-EXTRUDED",
     "PROCESS-FERMENTED", "PROCESS-GROUND", "PROCESS-HEATED",
     "PROCESS-MOLASSES_TREATED", "PROCESS-PRESSED", "PROCESS-ROASTED",
@@ -60,7 +60,7 @@ approved = [
     row for row in assessment
     if row["rule_id"] in APPROVED_RULE_IDS
 ]
-assert len(approved) == len(APPROVED_RULE_IDS) == 40
+assert len(approved) == len(APPROVED_RULE_IDS) == 39
 assert {row["rule_id"] for row in approved} == APPROVED_RULE_IDS
 approved_rows = []
 for row in approved:

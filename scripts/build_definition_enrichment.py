@@ -107,6 +107,7 @@ for row in material_facets:
 property_label = {
     "aom:ingredientPart": "ingredient part",
     "aom:processingMethod": "processing method",
+    "aom:productionProcessProvenance": "production-process provenance",
     "aom:physicalForm": "legacy physical form",
     "aom:presentationForm": "presentation form",
     "aom:bulkConsistency": "bulk consistency",

@@ -56,7 +56,12 @@ for rule in rules:
         if len(samples) == 5:
             break
 
-    if not matches:
+    if rule["rule_id"] == "PROCESS-DEFATTED":
+        recommendation = "hold-model-gap"
+        risk = "high"
+        guard = "Do not infer an extraction or separation operation from reduced-fat composition wording."
+        rationale = "Defatted directly describes composition state; exact operation requires material-specific evidence."
+    elif not matches:
         recommendation = "defer-no-occurrences"
         risk = "unknown"
         guard = "Require observed source cases before approval."

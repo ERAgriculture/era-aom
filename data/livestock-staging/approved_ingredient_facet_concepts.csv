@@ -48,7 +48,6 @@ AOM_101064,Gluten constituent,chemical_constituent,aom:primaryConstituent,aom:Ch
 AOM_101065,Starch constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101066,Fat constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101067,Essential-oil constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101069,Defatting,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101070,Pressing,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_000843,Drying,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101072,Extraction,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
@@ -63,7 +62,7 @@ AOM_101080,Ash constituent,chemical_constituent,aom:primaryConstituent,aom:Chemi
 AOM_101081,Oil constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_000838,Flour milling,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
 AOM_101083,Hydrolysis,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
-AOM_101084,Sugar processing,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
+AOM_101084,Sugar processing,production_process_provenance,aom:productionProcessProvenance,aom:ProductionProcess,facet_value,approved,Pete Steward,2026-08-18,docs/decisions/0047-feed-process-objective-benefit-and-effect-model.md
 AOM_101085,Feed material components,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_root,approved,Pete Steward,2026-08-05,review/livestock-v4/MAIZE_IDENTITY_REVIEW.md
 AOM_101086,Whole-crop composition,component_retention_state,aom:compositionState,aom:ComponentRetentionState,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_000819,Alkali treatment,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
@@ -105,9 +104,6 @@ AOM_101124,Distillation,processing_method,aom:processingMethod,aom:ProcessingMet
 AOM_101125,Comminuted particle form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md
 AOM_101126,Meal form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md
 AOM_101128,Rendering,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0041-feed-material-structural-model.md
-AOM_101129,Feed particle-size reduction processes,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101130,Feed component separation processes,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
-AOM_101131,Feed shaping and agglomeration processes,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
 AOM_101132,Feed bulk consistencies,bulk_consistency,aom:bulkConsistency,aom:FeedBulkConsistency,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
 AOM_101133,Feed moisture conditions,moisture_condition,aom:moistureCondition,aom:FeedMoistureCondition,facet_root,approved,Pete Steward,2026-08-11,docs/decisions/0043-feed-formulation-and-descriptor-model.md
 AOM_101134,Native-fat-retained composition,component_retention_state,aom:compositionState,aom:ComponentRetentionState,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md

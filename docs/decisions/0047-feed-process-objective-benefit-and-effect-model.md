@@ -1,6 +1,6 @@
 # ADR 0047: Feed-process objective, benefit, and effect model
 
-- Status: Proposed
+- Status: Accepted
 - Date: 2026-08-18
 - Owners: ERA-AOM semantic governance
 - Tracking: [era-program #54](https://github.com/ERAgriculture/era-program/issues/54)
@@ -178,5 +178,7 @@ unchanged depending on execution and context.
 ## Approval record
 
 Pete Steward accepted separation of mechanism, technical objective, intended
-feed benefit, and observed effect during guided review on 2026-08-18. Specific
-row dispositions and implementation remain pending explicit approval.
+feed benefit, and observed effect during guided review on 2026-08-18. Merge of
+the recommendation and explicit instruction to proceed accepted all 51
+non-held row dispositions. Inoculation scope, Stacking scope, and eight
+Defatting material migrations remain explicit holds.

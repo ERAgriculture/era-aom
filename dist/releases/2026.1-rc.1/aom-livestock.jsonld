@@ -1909,6 +1909,63 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101165",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000845"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Technical-objective category for feed operations intended to preserve material or improve storage stability without asserting that the intended outcome was achieved."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101128"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101165"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed preservation and stabilisation processes"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Technical-objective category for feed operations intended to preserve material or improve storage stability without asserting that the intended outcome was achieved."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001152",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -2043,7 +2100,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101084",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProcessingMethod"
+      "https://w3id.org/era-aom/schema/ProductionProcess"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
@@ -2053,7 +2110,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed processing method value used for ingredient-component semantics."
+        "@value": "Upstream production workflow in which sugar-bearing raw material is processed and one or more feed materials arise; direct treatment operations require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -2075,7 +2132,7 @@
     "http://www.w3.org/2004/02/skos/core#scopeNote": [
       {
         "@language": "en",
-        "@value": "Governed processing method value used for ingredient-component semantics."
+        "@value": "Upstream production workflow in which sugar-bearing raw material is processed and one or more feed materials arise; direct treatment operations require separate assertions."
       }
     ],
     "urn:era:property:conceptType": [
@@ -2112,7 +2169,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed process whose mechanism includes controlled heat transfer to material."
+        "@value": "Feed-process mechanism category for operations driven primarily by heat transfer or controlled temperature; objective and intended benefit require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -3250,6 +3307,9 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000196"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000327"
       },
       {
@@ -3294,13 +3354,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100991"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Alkali treatment is an feed processing technique that involves the application of alkaline substances to raw feed materials, primarily to enhance the digestibility of fibrous components. This process typically uses alkaline agents, such as sodium hydroxide, potassium hydroxide, or ammonia, which can solubilize hemicellulose, lignin, and other complex carbohydrates, improving the overall nutritional value of fibrous feedstuffs. (HV GPT4)"
+        "@value": "Application of an alkaline agent to feed material under controlled conditions; agent, dose, objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -5699,7 +5762,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Grouping for chemical feed processing; processing state remains represented by narrower feed-material concepts."
+        "@value": "Feed-process mechanism category for operations driven primarily by chemical agents or reactions; objective and intended benefit require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -5708,9 +5771,6 @@
       }
     ],
     "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_003202"
-      },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000818"
       },
@@ -10673,6 +10733,55 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101174",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve preservation or storage stability; achievement requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101174"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Preservation or storage-stability improvement"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve preservation or storage stability; achievement requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001568",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -11547,9 +11656,6 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000820"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000147"
@@ -17163,7 +17269,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: processing method — Defatting, Extrusion; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: processing method — Extrusion; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -18935,7 +19041,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “jatropha curcas” and characteristics: presentation form — Comminuted particle form; processing method — Defatting, Grinding."
+        "@value": "A feed material with governed source identity “jatropha curcas” and characteristics: presentation form — Comminuted particle form; processing method — Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -19524,6 +19630,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101178",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to reduce airborne or fugitive dust; achievement requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101178"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Dust control"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to reduce airborne or fugitive dust; achievement requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -20270,7 +20425,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed process whose mechanism primarily applies mechanical force to cut compress shear separate agglomerate or shape material."
+        "@value": "Feed-process mechanism category for operations driven primarily by mechanical force; objective and intended benefit require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -20623,13 +20778,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101096"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed processing method value used for feed-material semantics."
+        "@value": "Heating feed material with pressurized steam in an autoclave; pressure, temperature, duration, objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -22946,7 +23104,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “jatropha curcas” and characteristics: moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Defatting, Drying, Grinding."
+        "@value": "A feed material with governed source identity “jatropha curcas” and characteristics: moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -27395,8 +27553,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101130",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProcessingMethod"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#altLabel": [
       {
@@ -27416,7 +27573,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Feed processes whose objective includes removing, separating, or recovering a material component or fraction."
+        "@value": "Technical-objective category for feed operations intended to remove, separate, or recover a material component or fraction independently of mechanism."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -36765,8 +36922,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101131",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProcessingMethod"
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
@@ -36776,7 +36932,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Feed processes whose governed objective includes shaping or agglomerating material into a presentation such as pellets, flakes, or extrudates."
+        "@value": "Technical-objective category for feed operations intended to shape or agglomerate material into a presentation such as pellets, flakes, or extrudates."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -38281,12 +38437,21 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000819"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101166"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Urea treatment is a form of alkali processing in which urea is applied to low-quality fibrous feeds—such as straw or crop residues—to improve digestibility. Through enzymatic hydrolysis by urease, urea is converted into ammonia, which breaks lignocellulosic bonds and increases the nitrogen content of the feed. This method is commonly used in smallholder and mixed crop-livestock systems due to its low cost, ease of application, and dual benefit of improving both physical structure and crude protein value of the treated material."
+        "@value": "Application of urea to feed material under conditions that may involve urease-mediated ammonia formation and subsequent chemical action; resulting effects require separate evidence."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -39137,13 +39302,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100991"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Acid treatment is a feed processing technique that involves the application of acidic substances to raw feed materials, aiming to improve nutrient availability, digestibility, and preservation properties. This process typically uses organic or inorganic acids, such as phosphoric, sulfuric, or citric acid, which can break down complex molecules, lower pH, and inhibit microbial growth. (HV GPT4)"
+        "@value": "Application of an acidic agent to feed material under controlled conditions; agent, dose, objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -39243,7 +39411,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed process whose objective is reducing material moisture by natural or artificial means."
+        "@value": "Technical-objective category for feed operations intended to reduce moisture independently of mechanism, resulting moisture condition, or storage benefit."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -41497,13 +41665,13 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100991"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101166"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Molasses treatment involves applying molasses to fibrous feeds such as straw, stover, or hay to enhance palatability, increase energy content, and reduce dustiness. While it does not chemically alter fiber structure like alkali treatments, molasses provides readily fermentable carbohydrates that improve feed intake and support rumen microbial activity. It is often used as a carrier for urea or minerals in treated feeds and is widely adopted in both smallholder and commercial livestock systems for its ease of use and positive impact on voluntary intake."
+        "@value": "Application of molasses to feed material by an unspecified generic application operation; mixing, coating, dose, and downstream effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -41525,6 +41693,63 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101163",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000845"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Feed-process mechanism category for operations driven primarily by enzyme catalysis or comparable biochemical action; process objective and intended benefit require separate assertions."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000820"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100848"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101163"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Enzymatic or biochemical feed processes"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Feed-process mechanism category for operations driven primarily by enzyme catalysis or comparable biochemical action; process objective and intended benefit require separate assertions."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -41752,7 +41977,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Crushing, Defatting, Drying, Extrusion, Grinding, Heating; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Crushing, Drying, Extrusion, Grinding, Heating; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -41943,6 +42168,90 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101164",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000845"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Technical-objective category for feed operations intended to convert or degrade constituents without implying a nutritional benefit or measured effect."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000817"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000832"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000818"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000820"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000819"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000827"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003098"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101083"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101088"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100848"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101164"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed constituent transformation processes"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Technical-objective category for feed operations intended to convert or degrade constituents without implying a nutritional benefit or measured effect."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -44621,6 +44930,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101171",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to reduce one or more antinutritional factors; achievement requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101171"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Antinutritional-factor reduction"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to reduce one or more antinutritional factors; achievement requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -50284,6 +50642,9 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
       }
     ],
@@ -50425,6 +50786,60 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101167",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000845"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Technical-objective category for feed operations intended to add moisture or condition material through water uptake without asserting a resulting form or benefit."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101099"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101167"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed moisture addition and conditioning processes"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Technical-objective category for feed operations intended to add moisture or condition material through water uptake without asserting a resulting form or benefit."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -59387,16 +59802,22 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101165"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000145"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Feed fermentation is a process of preserving animal feeds, such as grains or forage, by allowing them to undergo controlled microbial breakdown. This process can occur naturally, or it can be initiated by adding specific microbial cultures. During fermentation, the microorganisms convert some of the feed's carbohydrates and sugars into organic acids, such as lactic acid, which lower the pH and inhibit the growth of harmful bacteria. The resulting fermented feed has a higher concentration of beneficial nutrients, such as vitamins and amino acids, and is more easily digestible by livestock. (human validated chatGPT)."
+        "@value": "Controlled transformation of feed material through microbial activity; organism, conditions, preservation objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -62081,7 +62502,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Indirect boiling involves using steam to indirectly heat the feed, either in a steam chamber or through the use of a steam jacketed kettle or cooker. Indirect boiling is typically used for larger-scale feed processing, such as in commercial feed mills. The steam provides gentle heating to the feed, improving its digestibility and reducing the risk of overcooking or damaging the feed. (Human validated chatGPT)"
+        "@value": "Boiling operation in which feed material is heated indirectly by steam or a heated vessel; duration, objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -68171,7 +68592,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A process applied to feed material to change its dimensions presentation composition moisture preservation state or separated fractions."
+        "@value": "Controlled operations and upstream production workflows relevant to feed materials; mechanism, technical objective, intended benefit, and observed effect are represented independently."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -68196,10 +68617,19 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000842"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101084"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101165"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101166"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101131"
@@ -68208,10 +68638,16 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101123"
       },
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101167"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101099"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101129"
@@ -74128,13 +74564,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101167"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000845"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Moistening and softening feed materials, also called steeping, to facilitate water uptake, coat removal, cooking, germination, or reduction of some antinutritional factors."
+        "@value": "Contacting feed material with water or aqueous liquid for uptake or conditioning; duration, subsequent operation, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -76133,6 +76572,55 @@
       {
         "@language": "en",
         "@value": "Governed anatomical part value used for feed-material semantics."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101172",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve feed safety; achievement requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101172"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed safety improvement"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve feed safety; achievement requires application-specific evidence."
       }
     ],
     "urn:era:property:conceptType": [
@@ -81209,7 +81697,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “jatropha curcas” and characteristics: ingredient part — Seed; presentation form — Comminuted particle form; processing method — Defatting, Fermentation, Grinding."
+        "@value": "A feed material with governed source identity “jatropha curcas” and characteristics: ingredient part — Seed; presentation form — Comminuted particle form; processing method — Fermentation, Grinding."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -86593,7 +87081,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Defatting, Drying, Grinding; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: moisture condition — Dried moisture condition; presentation form — Comminuted particle form; processing method — Drying, Grinding; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -87172,7 +87660,6 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101129",
     "@type": [
-      "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
@@ -87183,7 +87670,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Feed processes whose governed objective includes reducing particle dimensions without requiring one machine or dry bulk state."
+        "@value": "Technical-objective category for feed operations intended to reduce particle dimensions without implying one machine, mechanism, physical form, or nutritional benefit."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -92011,7 +92498,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Ensilation is a specific form of fermentation to preserve forage by packing it tightly into a silo or other airtight container and allowing it to ferment. This fermentation process creates an anaerobic environment that preserves the feed and enhances its nutritional quality by increasing the concentration of organic acids and decreasing the pH. The resulting ensiled feed can be stored for extended periods of time and used as a source of nutrition for livestock. (human validated chatGPT)"
+        "@value": "Controlled anaerobic conservation of moist feed material in which fermentation occurs; material, packing, conditions, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -95320,7 +95807,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Grouping for biological feed processing; processing state remains represented by narrower feed-material concepts."
+        "@value": "Feed-process mechanism category for operations driven primarily by living organisms or biological activity; objective and intended benefit require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -95334,9 +95821,6 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000820"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_003098"
@@ -96739,13 +97223,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Feed boiling refers to the process of heating animal feed in water or steam for a specific period of time to improve its digestibility and nutritional value by reducing anti-nutritional factors, such as toxins and enzyme inhibitors, and by increasing the availability of nutrients to the animal. (Human validated chatGPT)."
+        "@value": "Heating feed material in boiling water or steam; medium, duration, objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -97337,13 +97824,19 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000819"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101166"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Ammonia treatment is a feed processing technique that involves the application of ammonia (NH3) or ammonium hydroxide (NH4OH) to raw feed materials, primarily to enhance the digestibility of fibrous components and provide an additional source of non-protein nitrogen for ruminant animals. By solubilizing hemicellulose, lignin, and other complex carbohydrates, this alkaline treatment improves the overall nutritional value of fibrous feedstuffs. Furthermore, rumen microbes can utilize the non-protein nitrogen to synthesize microbial protein, contributing to the nutritional benefits of ammonia-treated feeds. (HV GPT4)"
+        "@value": "Application of ammonia or ammonium hydroxide to feed material as a chemical treatment; dose, conditions, constituent changes, and nutritional effects require separate evidence."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -99051,7 +99544,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “sugarcane” and characteristics: bulk consistency — Liquid consistency; processing method — Sugar processing; product role — By-product role."
+        "@value": "A feed material with governed source identity “sugarcane” and characteristics: bulk consistency — Liquid consistency; product role — By-product role; production-process provenance — Sugar processing."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -101269,7 +101762,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: processing method — Crushing, Defatting, Heating; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: processing method — Crushing, Heating; product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -101591,19 +102084,19 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000118",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101179",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000109"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "An experimental diet contains more fodders derived from insects than a control diet. This does not include the byproducts from processing insect products."
+        "@value": "Possible production benefit in which process application is intended to facilitate a later operation such as fermentation, ensiling, cooking, or fraction recovery."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -101613,18 +102106,24 @@
     ],
     "http://www.w3.org/2004/02/skos/core#notation": [
       {
-        "@value": "AOM_000118"
+        "@value": "AOM_101179"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Use of Insects"
+        "@value": "Downstream-process facilitation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible production benefit in which process application is intended to facilitate a later operation such as fermentation, ensiling, cooking, or fraction recovery."
       }
     ],
     "urn:era:property:conceptType": [
       {
-        "@value": "legacy_aom_concept"
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -101677,6 +102176,49 @@
       },
       {
         "@id": "https://www.feedipedia.org/node/12030"
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000118",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000109"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "An experimental diet contains more fodders derived from insects than a control diet. This does not include the byproducts from processing insect products."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_000118"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Use of Insects"
       }
     ],
     "urn:era:property:conceptType": [
@@ -102728,7 +103270,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: processing method — Defatting; product role — By-product role."
+        "@value": "A feed material with governed source identity “soybean flakes” and characteristics: product role — By-product role."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -104297,6 +104839,55 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101176",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to obtain a material with a selected composition; achieved composition requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101176"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Composition tailoring"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to obtain a material with a selected composition; achieved composition requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006280",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -105176,16 +105767,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_000145"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Enzyme treatment is a biological feed processing technique that involves incorporating biologically derived catalysts, such as proteases, amylases, or cellulases, into raw feed materials before consumption by animals. These enzymes, typically produced by microorganisms or sourced from plants, act on specific substrates to break down complex molecules into simpler, more digestible components, enhancing nutrient availability and overall feed quality. This process is distinct from enzyme supplementation, where enzymes are added to the feed and act within the animal's digestive system after ingestion. (HV GPT4)"
+        "@value": "Treatment of feed material with one or more enzymes before feeding; enzyme identity, substrate, dose, conditions, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -106315,7 +106906,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Direct boiling involves placing the feed directly in boiling water for a certain period of time to improve its digestibility and reduce anti-nutritional factors. This process is typically used for small-scale feed processing, such as for backyard poultry or pigs. (Human validated chatGPT)."
+        "@value": "Boiling operation in which feed material directly contacts boiling water; duration, objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -107586,6 +108177,55 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101170",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve nutrient availability; achievement requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101170"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Nutrient availability improvement"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve nutrient availability; achievement requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001993",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -108191,6 +108831,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101169",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve digestibility; achievement requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101169"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Digestibility improvement"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve digestibility; achievement requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -109732,7 +110421,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed processing method value used for feed-material semantics."
+        "@value": "Application of heat to feed material without specifying heating equipment, medium, objective, or resulting effect."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -113548,6 +114237,66 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101166",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000845"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Technical-objective category for feed operations intended to add or apply a component to material independently of application mechanism or downstream benefit."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100848"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_003202"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000817"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101166"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed component addition and application processes"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Technical-objective category for feed operations intended to add or apply a component to material independently of application mechanism or downstream benefit."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -119281,8 +120030,13 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101069",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProcessingMethod"
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Defatting"
+      }
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
@@ -119292,7 +120046,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed processing method value used for ingredient-component semantics."
+        "@value": "Technical process objective of removing or reducing a fat fraction; exact operation, resulting composition, and degree of removal require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -119308,13 +120062,13 @@
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Defatting"
+        "@value": "Fat removal"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#scopeNote": [
       {
         "@language": "en",
-        "@value": "Governed processing method value used for ingredient-component semantics."
+        "@value": "Technical process objective of removing or reducing a fat fraction; exact operation, resulting composition, and degree of removal require separate assertions."
       }
     ],
     "urn:era:property:conceptType": [
@@ -122032,7 +122786,7 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "A broad class of enzymes that catalyze the breakdown of complex fibrous components of plant cell walls, including cellulose, hemicellulose, and pectin. Fibrolytic enzymes include cellulases (which target cellulose), xylanases (which target hemicellulose), and other related hydrolases, and are critical in both natural and applied processes such as rumen digestion, silage treatment, and biomass degradation for biofuels."
+        "@value": "Treatment of feed material with one or more fibrolytic enzymes; enzyme identity, substrate, dose, conditions, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -123689,6 +124443,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101173",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve palatability or voluntary intake; achievement requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101173"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Palatability or intake improvement"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve palatability or voluntary intake; achievement requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -126953,13 +127756,16 @@
     ],
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Roasting refers to the process of heating animal feed to high temperatures, typically in a dry heat environment. The heat causes chemical reactions that break down complex carbohydrates and proteins, making them more easily digestible by the animal. Roasting may also reduce the presence of anti-nutritional factors and harmful microorganisms in the feed. (human validated chatGPT)"
+        "@value": "Heating feed material by roasting under dry or low-moisture conditions; temperature, duration, objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -129231,6 +130037,90 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101168",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000328"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Controlled vocabulary of contextual benefits that a feed process may be intended to support; membership never asserts an achieved or measured effect."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101173"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101177"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101172"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101179"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101174"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101178"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101176"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Feed-process benefits"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Controlled vocabulary of contextual benefits that a feed process may be intended to support; membership never asserts an achieved or measured effect."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101128",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -129239,12 +130129,15 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101165"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Thermal processing of animal by-products to separate or stabilize feed materials."
+        "@value": "Multi-stage thermal processing of animal-derived material that may include separation or stabilisation; drying, grinding, outputs, and effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -132741,6 +133634,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101175",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve handling, mixing, or physical manageability; achievement requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101175"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Handling or mixing improvement"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible feed benefit in which process application is intended to improve handling, mixing, or physical manageability; achievement requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [
@@ -138626,12 +139568,15 @@
     "http://www.w3.org/2004/02/skos/core#broader": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000845"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Governed processing method value used for ingredient-component semantics."
+        "@value": "Cleavage of chemical bonds in feed constituents through reaction with water; catalytic route, conditions, objective, and resulting effects require separate assertions."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#inScheme": [
@@ -142376,6 +143321,55 @@
     "urn:era:property:conceptType": [
       {
         "@value": "legacy_aom_concept"
+      }
+    ],
+    "urn:era:property:status": [
+      {
+        "@value": "unknown"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101177",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101168"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Possible production benefit in which process application is intended to recover a selected output or fraction; achieved recovery requires application-specific evidence."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://w3id.org/era-aom/scheme/livestock-v2"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation": [
+      {
+        "@value": "AOM_101177"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Process-output recovery"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Possible production benefit in which process application is intended to recover a selected output or fraction; achieved recovery requires application-specific evidence."
+      }
+    ],
+    "urn:era:property:conceptType": [
+      {
+        "@value": "aom_concept"
       }
     ],
     "urn:era:property:status": [

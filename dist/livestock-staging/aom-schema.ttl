@@ -125,6 +125,25 @@ aom:ComponentRetentionState a owl:Class ;
 aom:ProcessingMethod a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "processing method"@en .
+aom:ProductionProcess a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "production process"@en ;
+  rdfs:comment "Upstream process or workflow through which a feed material arises, independently of operations directly applied to that material."@en .
+aom:ProcessMechanism a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "process mechanism"@en ;
+  rdfs:comment "Controlled category describing how a processing operation acts, independently of technical objective or intended benefit."@en .
+aom:ProcessTechnicalObjective a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "process technical objective"@en ;
+  rdfs:comment "Direct material transformation sought by a processing operation, independently of mechanism, intended benefit, or measured effect."@en .
+aom:FeedBenefit a owl:Class ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "feed benefit"@en ;
+  rdfs:comment "Contextual benefit that a process may be intended to support without asserting achievement."@en .
+aom:ProcessApplication a owl:Class ;
+  rdfs:label "process application"@en ;
+  rdfs:comment "Contextual application of a process to material under specified conditions."@en .
 aom:FeedChemicalEntity a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "feed chemical entity"@en ;
@@ -214,6 +233,26 @@ aom:retainsChemicalConstituent a owl:ObjectProperty ;
 aom:processingMethod a owl:ObjectProperty ;
   rdfs:domain aom:Feed ; rdfs:range aom:ProcessingMethod ;
   rdfs:label "has processing method"@en .
+aom:processMechanism a owl:ObjectProperty ;
+  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:ProcessMechanism ;
+  rdfs:label "has process mechanism"@en ;
+  rdfs:comment "Links a processing operation to a governed description of how it acts; no technical objective or benefit is entailed."@en .
+aom:technicalProcessObjective a owl:ObjectProperty ;
+  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:ProcessTechnicalObjective ;
+  rdfs:label "has technical process objective"@en ;
+  rdfs:comment "Links a processing operation to a direct material transformation sought by that operation."@en .
+aom:maySupportFeedBenefit a owl:ObjectProperty ;
+  rdfs:domain aom:ProcessingMethod ; rdfs:range aom:FeedBenefit ;
+  rdfs:label "may support feed benefit"@en ;
+  rdfs:comment "Modal link to a contextual intended benefit; it does not assert an achieved or measured effect."@en .
+aom:productionProcessProvenance a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:ProductionProcess ;
+  rdfs:label "has production-process provenance"@en ;
+  rdfs:comment "Links a feed material to an upstream production process or workflow through which it arises, not to a direct treatment operation."@en .
+aom:observedProcessEffect a owl:ObjectProperty ;
+  rdfs:domain aom:ProcessApplication ; rdfs:range sosa:Observation ;
+  rdfs:label "has observed process effect"@en ;
+  rdfs:comment "Links one contextual process application to an observation of its measured effect."@en .
 aom:mayResultInPhysicalForm a owl:ObjectProperty ;
   rdfs:domain aom:ProcessingMethod ; rdfs:range aom:FeedPhysicalDescriptor ;
   rdfs:label "may result in physical descriptor"@en ;

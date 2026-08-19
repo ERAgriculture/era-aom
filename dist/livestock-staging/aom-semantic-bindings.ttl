@@ -372,6 +372,60 @@
 
 <urn:era-aom:livestock:AOM_001865> a skos:Concept, aom:ChemicalConstituent .
 
+<urn:era-aom:livestock:AOM_100990> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_100991> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101131> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000842> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProductionProcess .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101165> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101166> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101167> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101168> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101172> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101173> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101174> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101176> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101177> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101178> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101179> a skos:Concept, aom:FeedBenefit .
+
 <urn:era-aom:livestock:AOM_101019> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_101020> a skos:Concept, aom:FeedPresentationForm .
@@ -470,8 +524,6 @@
 
 <urn:era-aom:livestock:AOM_101067> a skos:Concept, aom:ChemicalConstituent .
 
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
 <urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
@@ -500,7 +552,7 @@
 
 <urn:era-aom:livestock:AOM_101083> a skos:Concept, aom:ProcessingMethod .
 
-<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProcessingMethod .
+<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProductionProcess .
 
 <urn:era-aom:livestock:AOM_101085> a skos:Concept, aom:FeedMaterialComponent .
 
@@ -583,12 +635,6 @@
 <urn:era-aom:livestock:AOM_101126> a skos:Concept, aom:FeedPresentationForm .
 
 <urn:era-aom:livestock:AOM_101128> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_101131> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_101132> a skos:Concept, aom:FeedBulkConsistency .
 
@@ -3613,16 +3659,6 @@
   aom:valueBindingStatus "approved" ;
   aom:valueTargetConcept <urn:era-aom:livestock:AOM_101053> .
 
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:value-binding:ingredient-component:flakes-defatted:2> a aom:SemanticValueBinding ;
-  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
-  aom:sourceValue "Flakes Defatted" ;
-  aom:bindingAction "decompose_to_existing" ;
-  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
-  aom:valueBindingStatus "approved" ;
-  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101069> .
-
 <urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:value-binding:ingredient-component:full-fat-cake:1> a aom:SemanticValueBinding ;
@@ -4063,13 +4099,13 @@
   aom:valueBindingStatus "approved" ;
   aom:valueTargetConcept <urn:era-aom:livestock:AOM_101077> .
 
-<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProcessingMethod .
+<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProductionProcess .
 
 <urn:era-aom:value-binding:ingredient-component:molasses:2> a aom:SemanticValueBinding ;
-  aom:valueTargetProperty <urn:era-aom:schema:processingMethod> ;
+  aom:valueTargetProperty <urn:era-aom:schema:productionProcessProvenance> ;
   aom:sourceValue "Molasses" ;
   aom:bindingAction "decompose_to_existing" ;
-  aom:targetValueClass <urn:era-aom:schema:ProcessingMethod> ;
+  aom:targetValueClass <urn:era-aom:schema:ProductionProcess> ;
   aom:valueBindingStatus "approved" ;
   aom:valueTargetConcept <urn:era-aom:livestock:AOM_101084> .
 
@@ -4264,6 +4300,13 @@
   aom:sourceValue "Whole" ;
   aom:bindingAction "hold_ambiguous" ;
   aom:targetValueClass <http://www.w3.org/2001/XMLSchema#string> ;
+  aom:valueBindingStatus "approved" .
+
+<urn:era-aom:value-binding:ingredient-component:flakes-defatted:hold> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:compositionState> ;
+  aom:sourceValue "Flakes Defatted" ;
+  aom:bindingAction "hold_ambiguous" ;
+  aom:targetValueClass <urn:era-aom:schema:CompositionState> ;
   aom:valueBindingStatus "approved" .
 
 <https://feedipedia.org/node/653> skos:prefLabel "Jobo (Spondias mombin)"@en ;
@@ -4952,10 +4995,10 @@
 <urn:era-aom:livestock:AOM_000642> a skos:Concept, aom:FeedMaterial ;
   aom:bulkConsistency <urn:era-aom:livestock:AOM_101077> .
 
-<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProcessingMethod .
+<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProductionProcess .
 
 <urn:era-aom:livestock:AOM_000642> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101084> .
+  aom:productionProcessProvenance <urn:era-aom:livestock:AOM_101084> .
 
 <urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole .
 
@@ -6181,16 +6224,6 @@
 
 <urn:era-aom:livestock:AOM_001358> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_001361> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101069> .
-
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_001362> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101069> .
 
 <urn:era-aom:livestock:AOM_000833> a skos:Concept, aom:ProcessingMethod .
 
@@ -8257,11 +8290,6 @@
 <urn:era-aom:livestock:AOM_001948> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
 
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_001949> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101069> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001949> a skos:Concept, aom:FeedMaterial ;
@@ -8417,11 +8445,6 @@
 <urn:era-aom:livestock:AOM_001969> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_001970> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101069> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001970> a skos:Concept, aom:FeedMaterial ;
@@ -8436,11 +8459,6 @@
 
 <urn:era-aom:livestock:AOM_001971> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101038> .
-
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_001971> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101069> .
 
 <urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
 
@@ -9377,11 +9395,6 @@
 <urn:era-aom:livestock:AOM_002119> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000835> .
 
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_002121> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101069> .
-
 <urn:era-aom:livestock:AOM_000835> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_002121> a skos:Concept, aom:FeedMaterial ;
@@ -9391,11 +9404,6 @@
 
 <urn:era-aom:livestock:AOM_002121> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_101096> .
-
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_002122> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101069> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -9506,11 +9514,6 @@
 
 <urn:era-aom:livestock:AOM_002131> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101069> a skos:Concept, aom:ProcessingMethod .
-
-<urn:era-aom:livestock:AOM_002133> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101069> .
 
 <urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
 
@@ -13337,10 +13340,10 @@
 <urn:era-aom:livestock:AOM_001482> a skos:Concept, aom:FeedMaterial ;
   aom:productRole <urn:era-aom:livestock:AOM_101062> .
 
-<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProcessingMethod .
+<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProductionProcess .
 
 <urn:era-aom:livestock:AOM_001482> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101084> .
+  aom:productionProcessProvenance <urn:era-aom:livestock:AOM_101084> .
 
 <urn:era-aom:livestock:AOM_101077> a skos:Concept, aom:FeedBulkConsistency .
 
@@ -13762,10 +13765,10 @@
 <urn:era-aom:livestock:AOM_006003> a skos:Concept, aom:FeedMaterial ;
   aom:bulkConsistency <urn:era-aom:livestock:AOM_101077> .
 
-<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProcessingMethod .
+<urn:era-aom:livestock:AOM_101084> a skos:Concept, aom:ProductionProcess .
 
 <urn:era-aom:livestock:AOM_006003> a skos:Concept, aom:FeedMaterial ;
-  aom:processingMethod <urn:era-aom:livestock:AOM_101084> .
+  aom:productionProcessProvenance <urn:era-aom:livestock:AOM_101084> .
 
 <urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole .
 
@@ -19744,3 +19747,999 @@
 <urn:era-aom:livestock:AOM_101066> a skos:Concept, aom:ChemicalConstituent .
 
 <urn:era-aom:livestock:AOM_101134> aom:retainsChemicalConstituent <urn:era-aom:livestock:AOM_101066> .
+
+<urn:era-aom:livestock:AOM_000817> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000817> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000817> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000817> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_000817> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_100991> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000817> aom:processMechanism <urn:era-aom:livestock:AOM_100991> .
+
+<urn:era-aom:livestock:AOM_000817> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000817> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000817> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101166> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000817> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101166> .
+
+<urn:era-aom:livestock:AOM_000818> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000818> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000818> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101172> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000818> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101172> .
+
+<urn:era-aom:livestock:AOM_000818> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101174> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000818> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101174> .
+
+<urn:era-aom:livestock:AOM_000818> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_100991> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000818> aom:processMechanism <urn:era-aom:livestock:AOM_100991> .
+
+<urn:era-aom:livestock:AOM_000818> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000818> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000819> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000819> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000819> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000819> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101171> .
+
+<urn:era-aom:livestock:AOM_000819> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_100991> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000819> aom:processMechanism <urn:era-aom:livestock:AOM_100991> .
+
+<urn:era-aom:livestock:AOM_000819> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000819> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000820> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000820> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000820> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000820> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_000820> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000820> aom:processMechanism <urn:era-aom:livestock:AOM_101163> .
+
+<urn:era-aom:livestock:AOM_000820> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000820> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000821> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000821> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000821> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000821> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_000821> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000821> aom:processMechanism <urn:era-aom:livestock:AOM_101163> .
+
+<urn:era-aom:livestock:AOM_000821> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000821> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000822> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000822> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000822> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000822> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_000822> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000822> aom:processMechanism <urn:era-aom:livestock:AOM_101163> .
+
+<urn:era-aom:livestock:AOM_000822> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000822> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000823> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000823> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000823> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000823> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_000823> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000823> aom:processMechanism <urn:era-aom:livestock:AOM_101163> .
+
+<urn:era-aom:livestock:AOM_000823> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000823> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000824> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000824> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000824> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000824> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_000824> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000824> aom:processMechanism <urn:era-aom:livestock:AOM_101163> .
+
+<urn:era-aom:livestock:AOM_000824> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000824> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000825> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000825> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_000825> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000825> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101171> .
+
+<urn:era-aom:livestock:AOM_000825> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000825> aom:processMechanism <urn:era-aom:livestock:AOM_101163> .
+
+<urn:era-aom:livestock:AOM_000825> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000825> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000827> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000827> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000827> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000827> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101171> .
+
+<urn:era-aom:livestock:AOM_000827> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101172> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000827> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101172> .
+
+<urn:era-aom:livestock:AOM_000827> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000827> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_000827> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000827> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000828> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000828> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000828> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000828> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101171> .
+
+<urn:era-aom:livestock:AOM_000828> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101172> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000828> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101172> .
+
+<urn:era-aom:livestock:AOM_000828> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000828> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_000828> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000828> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000829> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000829> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000829> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000829> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101171> .
+
+<urn:era-aom:livestock:AOM_000829> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101172> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000829> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101172> .
+
+<urn:era-aom:livestock:AOM_000829> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000829> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_000829> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000829> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000830> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000830> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101174> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000830> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101174> .
+
+<urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_100990> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000830> aom:processMechanism <urn:era-aom:livestock:AOM_100990> .
+
+<urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000830> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101165> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000830> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101165> .
+
+<urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101173> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000831> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101173> .
+
+<urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101174> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000831> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101174> .
+
+<urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_100990> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000831> aom:processMechanism <urn:era-aom:livestock:AOM_100990> .
+
+<urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000831> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101165> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000831> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101165> .
+
+<urn:era-aom:livestock:AOM_000832> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000832> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000832> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000832> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101171> .
+
+<urn:era-aom:livestock:AOM_000832> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101172> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000832> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101172> .
+
+<urn:era-aom:livestock:AOM_000832> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101173> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000832> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101173> .
+
+<urn:era-aom:livestock:AOM_000832> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000832> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_000832> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000832> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_000833> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000833> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000833> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101173> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000833> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101173> .
+
+<urn:era-aom:livestock:AOM_000833> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000833> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_000833> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000833> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_000833> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000833> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_000833> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101131> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000833> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101131> .
+
+<urn:era-aom:livestock:AOM_000834> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000834> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000834> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000834> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_000834> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000834> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_000834> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000834> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101129> .
+
+<urn:era-aom:livestock:AOM_000835> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000835> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000835> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000835> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_000835> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000835> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_000835> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000835> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101129> .
+
+<urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000836> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000836> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000836> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000836> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101129> .
+
+<urn:era-aom:livestock:AOM_000838> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000838> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_000838> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101177> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000838> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101177> .
+
+<urn:era-aom:livestock:AOM_000838> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000838> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_000838> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000838> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101129> .
+
+<urn:era-aom:livestock:AOM_000838> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000838> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101130> .
+
+<urn:era-aom:livestock:AOM_000839> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000839> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_000839> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000839> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_000839> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000839> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_000839> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000839> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101129> .
+
+<urn:era-aom:livestock:AOM_000840> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101173> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000840> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101173> .
+
+<urn:era-aom:livestock:AOM_000840> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000840> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_000840> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_000840> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_000840> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101131> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000840> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101131> .
+
+<urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101174> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000843> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101174> .
+
+<urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000843> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000842> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000843> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_000842> .
+
+<urn:era-aom:livestock:AOM_000844> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101174> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000844> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101174> .
+
+<urn:era-aom:livestock:AOM_000844> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101179> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_000844> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101179> .
+
+<urn:era-aom:livestock:AOM_000844> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000842> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_000844> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_000842> .
+
+<urn:era-aom:livestock:AOM_003097> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_003097> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_003097> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101176> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_003097> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101176> .
+
+<urn:era-aom:livestock:AOM_003097> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_003097> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_003097> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_003097> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101130> .
+
+<urn:era-aom:livestock:AOM_003098> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_003098> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_003098> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_003098> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_003098> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_100990> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_003098> aom:processMechanism <urn:era-aom:livestock:AOM_100990> .
+
+<urn:era-aom:livestock:AOM_003098> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_003098> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_003202> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101173> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_003202> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101173> .
+
+<urn:era-aom:livestock:AOM_003202> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101178> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_003202> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101178> .
+
+<urn:era-aom:livestock:AOM_003202> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101179> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_003202> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101179> .
+
+<urn:era-aom:livestock:AOM_003202> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101166> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_003202> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101166> .
+
+<urn:era-aom:livestock:AOM_006824> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_006824> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_006824> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_006824> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_006824> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_006824> aom:processMechanism <urn:era-aom:livestock:AOM_101163> .
+
+<urn:era-aom:livestock:AOM_006824> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_006824> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_100848> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_100848> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_100991> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_100848> aom:processMechanism <urn:era-aom:livestock:AOM_100991> .
+
+<urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101163> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_100848> aom:processMechanism <urn:era-aom:livestock:AOM_101163> .
+
+<urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_100848> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101166> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_100848> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101166> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101176> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101070> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101176> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101177> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101070> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101177> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101070> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_101070> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101070> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101130> .
+
+<urn:era-aom:livestock:AOM_101072> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101176> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101072> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101176> .
+
+<urn:era-aom:livestock:AOM_101072> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101177> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101072> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101177> .
+
+<urn:era-aom:livestock:AOM_101072> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101072> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101130> .
+
+<urn:era-aom:livestock:AOM_101073> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101073> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_101073> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101177> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101073> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101177> .
+
+<urn:era-aom:livestock:AOM_101073> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101073> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_101073> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101073> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101130> .
+
+<urn:era-aom:livestock:AOM_101083> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101083> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_101083> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101170> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101083> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101170> .
+
+<urn:era-aom:livestock:AOM_101083> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101083> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_101088> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101088> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_101088> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101088> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101171> .
+
+<urn:era-aom:livestock:AOM_101088> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101172> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101088> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101172> .
+
+<urn:era-aom:livestock:AOM_101088> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101088> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_101088> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101164> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101088> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101164> .
+
+<urn:era-aom:livestock:AOM_101090> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101169> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101090> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101169> .
+
+<urn:era-aom:livestock:AOM_101090> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101090> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_101090> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000837> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101090> aom:processMechanism <urn:era-aom:livestock:AOM_000837> .
+
+<urn:era-aom:livestock:AOM_101090> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101129> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101090> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101129> .
+
+<urn:era-aom:livestock:AOM_101096> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101096> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_101099> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101171> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101099> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101171> .
+
+<urn:era-aom:livestock:AOM_101099> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101175> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101099> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101175> .
+
+<urn:era-aom:livestock:AOM_101099> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101179> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101099> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101179> .
+
+<urn:era-aom:livestock:AOM_101099> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101167> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101099> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101167> .
+
+<urn:era-aom:livestock:AOM_101124> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101177> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101124> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101177> .
+
+<urn:era-aom:livestock:AOM_101124> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101124> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_101124> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101124> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101130> .
+
+<urn:era-aom:livestock:AOM_101128> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101172> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101128> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101172> .
+
+<urn:era-aom:livestock:AOM_101128> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101174> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101128> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101174> .
+
+<urn:era-aom:livestock:AOM_101128> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101177> a skos:Concept, aom:FeedBenefit .
+
+<urn:era-aom:livestock:AOM_101128> aom:maySupportFeedBenefit <urn:era-aom:livestock:AOM_101177> .
+
+<urn:era-aom:livestock:AOM_101128> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_000826> a skos:Concept, aom:ProcessMechanism .
+
+<urn:era-aom:livestock:AOM_101128> aom:processMechanism <urn:era-aom:livestock:AOM_000826> .
+
+<urn:era-aom:livestock:AOM_101128> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101130> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101128> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101130> .
+
+<urn:era-aom:livestock:AOM_101128> a skos:Concept, aom:ProcessingMethod .
+
+<urn:era-aom:livestock:AOM_101165> a skos:Concept, aom:ProcessTechnicalObjective .
+
+<urn:era-aom:livestock:AOM_101128> aom:technicalProcessObjective <urn:era-aom:livestock:AOM_101165> .

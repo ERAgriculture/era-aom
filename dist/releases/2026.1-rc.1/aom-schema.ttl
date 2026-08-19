@@ -180,17 +180,35 @@ aom:mayResultInPresentationForm a owl:ObjectProperty ;
     rdfs:range aom:FeedPresentationForm ;
     rdfs:subPropertyOf aom:mayResultInPhysicalForm .
 
+aom:maySupportFeedBenefit a owl:ObjectProperty ;
+    rdfs:label "may support feed benefit"@en ;
+    rdfs:comment "Modal link to a contextual intended benefit; it does not assert an achieved or measured effect."@en ;
+    rdfs:domain aom:ProcessingMethod ;
+    rdfs:range aom:FeedBenefit .
+
 aom:moistureCondition a owl:ObjectProperty ;
     rdfs:label "has moisture condition"@en ;
     rdfs:domain aom:Feed ;
     rdfs:range aom:FeedMoistureCondition ;
     rdfs:subPropertyOf aom:physicalForm .
 
+aom:observedProcessEffect a owl:ObjectProperty ;
+    rdfs:label "has observed process effect"@en ;
+    rdfs:comment "Links one contextual process application to an observation of its measured effect."@en ;
+    rdfs:domain aom:ProcessApplication ;
+    rdfs:range sosa:Observation .
+
 aom:presentationForm a owl:ObjectProperty ;
     rdfs:label "has presentation form"@en ;
     rdfs:domain aom:Feed ;
     rdfs:range aom:FeedPresentationForm ;
     rdfs:subPropertyOf aom:physicalForm .
+
+aom:processMechanism a owl:ObjectProperty ;
+    rdfs:label "has process mechanism"@en ;
+    rdfs:comment "Links a processing operation to a governed description of how it acts; no technical objective or benefit is entailed."@en ;
+    rdfs:domain aom:ProcessingMethod ;
+    rdfs:range aom:ProcessMechanism .
 
 aom:processingMethod a owl:ObjectProperty ;
     rdfs:label "has processing method"@en ;
@@ -202,6 +220,12 @@ aom:productRole a owl:ObjectProperty ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:ProductRole ;
     rdfs:subPropertyOf aom:role .
+
+aom:productionProcessProvenance a owl:ObjectProperty ;
+    rdfs:label "has production-process provenance"@en ;
+    rdfs:comment "Links a feed material to an upstream production process or workflow through which it arises, not to a direct treatment operation."@en ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:ProductionProcess .
 
 aom:quantityKind a owl:ObjectProperty ;
     rdfs:domain aom:SemanticBinding .
@@ -244,6 +268,12 @@ aom:targetProperty a owl:ObjectProperty ;
 aom:targetValueClass a owl:ObjectProperty ;
     rdfs:domain aom:SemanticValueBinding .
 
+aom:technicalProcessObjective a owl:ObjectProperty ;
+    rdfs:label "has technical process objective"@en ;
+    rdfs:comment "Links a processing operation to a direct material transformation sought by that operation."@en ;
+    rdfs:domain aom:ProcessingMethod ;
+    rdfs:range aom:ProcessTechnicalObjective .
+
 aom:unitRequirement a owl:DatatypeProperty ;
     rdfs:domain aom:SemanticBinding ;
     rdfs:range xsd:string .
@@ -269,6 +299,11 @@ aom:Evidence a owl:Class ;
 aom:ExperimentalFeedRole a owl:Class ;
     rdfs:label "experimental feed role"@en ;
     rdfs:subClassOf aom:FeedRole .
+
+aom:FeedBenefit a owl:Class ;
+    rdfs:label "feed benefit"@en ;
+    rdfs:comment "Contextual benefit that a process may be intended to support without asserting achievement."@en ;
+    rdfs:subClassOf skos:Concept .
 
 aom:FeedFormulation a owl:Class ;
     rdfs:label "feed formulation"@en ;
@@ -303,10 +338,29 @@ aom:MaterialIntegrity a owl:Class ;
 aom:Module a owl:Class ;
     rdfs:label "module"@en .
 
+aom:ProcessApplication a owl:Class ;
+    rdfs:label "process application"@en ;
+    rdfs:comment "Contextual application of a process to material under specified conditions."@en .
+
+aom:ProcessMechanism a owl:Class ;
+    rdfs:label "process mechanism"@en ;
+    rdfs:comment "Controlled category describing how a processing operation acts, independently of technical objective or intended benefit."@en ;
+    rdfs:subClassOf skos:Concept .
+
+aom:ProcessTechnicalObjective a owl:Class ;
+    rdfs:label "process technical objective"@en ;
+    rdfs:comment "Direct material transformation sought by a processing operation, independently of mechanism, intended benefit, or measured effect."@en ;
+    rdfs:subClassOf skos:Concept .
+
 aom:ProductRole a owl:Class ;
     rdfs:label "product role"@en ;
     rdfs:subClassOf skos:Concept,
         aom:FeedRole .
+
+aom:ProductionProcess a owl:Class ;
+    rdfs:label "production process"@en ;
+    rdfs:comment "Upstream process or workflow through which a feed material arises, independently of operations directly applied to that material."@en ;
+    rdfs:subClassOf skos:Concept .
 
 aom:Release a owl:Class ;
     rdfs:label "release"@en .
@@ -399,10 +453,6 @@ aom:FeedRole a owl:Class ;
     rdfs:comment "Role borne by a feed-related material, product, substance, or formulation independently of its identity."@en ;
     rdfs:subClassOf skos:Concept .
 
-aom:ProcessingMethod a owl:Class ;
-    rdfs:label "processing method"@en ;
-    rdfs:subClassOf skos:Concept .
-
 aom:FeedPhysicalDescriptor a owl:Class ;
     rdfs:label "feed physical descriptor"@en ;
     rdfs:comment "Compatibility superclass for independently governed presentation, bulk-consistency, and moisture-condition descriptors."@en ;
@@ -416,16 +466,20 @@ aom:IngredientComponent a owl:Class ;
     rdfs:label "ingredient component"@en ;
     rdfs:comment "A feed material used in a formulation, optionally with a quantitative proportion."@en .
 
+aom:ProcessingMethod a owl:Class ;
+    rdfs:label "processing method"@en ;
+    rdfs:subClassOf skos:Concept .
+
 aom:Feed a owl:Class ;
     rdfs:label "feed"@en ;
     rdfs:comment "A material, formulation, or additive represented for animal feeding."@en .
+
+aom:SemanticBinding a owl:Class ;
+    rdfs:label "semantic binding"@en ;
+    rdfs:comment "Governed migration contract connecting a legacy AOM concept to its normalized data-model use."@en .
 
 aom:FeedMaterial a owl:Class ;
     rdfs:label "feed material"@en ;
     rdfs:comment "A material used or evaluated as feed. Source organism, part, processing method, and economic product role are modeled as facets."@en ;
     rdfs:subClassOf aom:Feed .
-
-aom:SemanticBinding a owl:Class ;
-    rdfs:label "semantic binding"@en ;
-    rdfs:comment "Governed migration contract connecting a legacy AOM concept to its normalized data-model use."@en .
 
