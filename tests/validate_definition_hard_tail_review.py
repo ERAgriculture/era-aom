@@ -39,7 +39,8 @@ assert Counter(row["target_property"] for row in facets) == {
     "aom:primaryConstituent": 17, "aom:compositionState": 2,
     "aom:presentationForm": 12,
     "aom:bulkConsistency": 6,
-    "aom:processingMethod": 14,
+    "aom:processingMethod": 12,
+    "aom:productionProcessProvenance": 2,
 }
 assert all(row["blocker_code"] and row["next_action"] for row in rows if row["status"] == "held")
 assert not any(row["blocker_code"] or row["next_action"] for row in rows if row["status"] == "approved")

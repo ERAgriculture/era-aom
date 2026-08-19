@@ -166,6 +166,22 @@ def main():
         "properties": profile["compound_display_properties"],
     }
 
+    process_id = profile["process_display_concept"]
+    process_page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{process_id}"
+    process_status, process_headers, process_body, elapsed = request(process_page, "text/html")
+    timings.append(elapsed)
+    process_html = process_body.decode("utf-8", errors="replace")
+    assert process_status == 200 and process_headers.get_content_type() == "text/html"
+    assert profile["process_display_label"] in process_html
+    for property_check in profile["process_display_properties"]:
+        assert property_check["property"] in process_html, property_check
+        assert property_check["value"] in process_html, property_check
+    results["process_concept_page"] = {
+        "id": process_id,
+        "label": profile["process_display_label"],
+        "properties": profile["process_display_properties"],
+    }
+
     css_url = args.skosmos.rstrip("/") + "/resource/css/era-aom.css"
     status, headers, css_body, elapsed = request(css_url, "text/css")
     timings.append(elapsed)
@@ -265,7 +281,7 @@ def main():
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     (output / "acceptance.json").write_text(json.dumps(results, indent=2) + "\n")
-    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Retired descriptor cards: {len(retired_results)}", f"- Feed-material navigation children: {len(expected_navigation)}", f"- Nested navigation checks: {len(nested_navigation)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Feed-material direct and nested navigation: pass", "- Retired descriptor exact search, warnings, history, and hierarchy exclusion: pass", "- Concept HTML + embedded JSON-LD: pass", "- Compound concept source/component/process/role display: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
+    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Retired descriptor cards: {len(retired_results)}", f"- Feed-material navigation children: {len(expected_navigation)}", f"- Nested navigation checks: {len(nested_navigation)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Feed-material direct and nested navigation: pass", "- Retired descriptor exact search, warnings, history, and hierarchy exclusion: pass", "- Concept HTML + embedded JSON-LD: pass", "- Compound concept source/component/process/role display: pass", "- Process mechanism/objective/benefit display: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
     (output / "acceptance.md").write_text("\n".join(lines))
     print(json.dumps(results, indent=2))
 

@@ -22,6 +22,7 @@ TAXONOMY_CLASSIFICATION_SOURCE = ROOT / "data/livestock-staging/approved_feed_ta
 CONCEPT_TYPE_SOURCE = ROOT / "data/livestock-staging/approved_concept_semantic_types.csv"
 FEED_ROLE_SOURCE = ROOT / "data/livestock-staging/approved_feed_role_assertions.csv"
 COMPONENT_RETENTION_SOURCE = ROOT / "data/livestock-staging/approved_component_retention_relations.csv"
+PROCESS_AXIS_RELATION_SOURCE = ROOT / "data/livestock-staging/approved_process_axis_relations.csv"
 EXTERNAL_RESOURCE_LABEL_SOURCE = ROOT / "review/livestock-v9/feedipedia_definition_evidence.csv"
 EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE = ROOT / "data/livestock-staging/approved_external_resource_labels.csv"
 DIST = ROOT / "dist/livestock-staging"
@@ -80,6 +81,8 @@ with FEED_ROLE_SOURCE.open(encoding="utf-8", newline="") as handle:
     feed_role_assertions = list(csv.DictReader(handle))
 with COMPONENT_RETENTION_SOURCE.open(encoding="utf-8", newline="") as handle:
     component_retention_relations = list(csv.DictReader(handle))
+with PROCESS_AXIS_RELATION_SOURCE.open(encoding="utf-8", newline="") as handle:
+    process_axis_relations = list(csv.DictReader(handle))
 with EXTERNAL_RESOURCE_LABEL_SOURCE.open(encoding="utf-8", newline="") as handle:
     external_resource_label_evidence = list(csv.DictReader(handle))
 with EXTERNAL_RESOURCE_LABEL_OVERRIDE_SOURCE.open(encoding="utf-8", newline="") as handle:
@@ -95,14 +98,16 @@ assert len(value_rows) == 298
 assert {row["binding_action"] for row in value_rows} == {
     "map_to_existing", "map_to_external", "hold_ambiguous", "hold_non_taxon"
 }
-assert len(facet_rows) == 124 and len(facet_mappings) == 46 and len(facet_decompositions) == 64
-assert len(facet_holds) == 9
+assert len(facet_rows) == 120 and len(facet_mappings) == 46 and len(facet_decompositions) == 63
+assert len(facet_holds) == 10
 assert len({
     (row["feed_material_id"], row["target_property"], row["target_concept_id"])
     for row in material_facets
 }) == len(material_facets)
 assert len(external_material_facets) == 3
 assert len(process_state_relations) == 2
+assert process_axis_relations
+assert all(row["status"] == "approved" for row in process_axis_relations)
 assert len(formulation_classifications) == 29
 assert len(taxonomy_classifications) == 229
 classification_by_id = {row["concept_id"]: row for row in formulation_classifications}
@@ -285,6 +290,15 @@ for row in component_retention_relations:
         "@id": state,
         row["relation_property"]: {"@id": retained},
     })
+for row in process_axis_relations:
+    subject = CONCEPT_BASE + row["subject_id"]
+    target = CONCEPT_BASE + row["object_id"]
+    graph.append({"@id": subject, "@type": ["skos:Concept", row["subject_class"]]})
+    graph.append({"@id": target, "@type": ["skos:Concept", row["object_class"]]})
+    graph.append({
+        "@id": subject,
+        row["relation_property"]: {"@id": target},
+    })
 
 document = {"@context": PREFIXES, "@graph": graph}
 DIST.mkdir(parents=True, exist_ok=True)
@@ -385,8 +399,15 @@ for row in component_retention_relations:
     ttl.append(f"<{state}> a skos:Concept, aom:ComponentRetentionState .\n")
     ttl.append(f"<{retained}> a skos:Concept, {row['retained_class']} .\n")
     ttl.append(f"<{state}> {row['relation_property']} <{retained}> .\n")
+for row in process_axis_relations:
+    subject = CONCEPT_BASE + row["subject_id"]
+    target = CONCEPT_BASE + row["object_id"]
+    ttl.append(f"<{subject}> a skos:Concept, {row['subject_class']} .\n")
+    ttl.append(f"<{target}> a skos:Concept, {row['object_class']} .\n")
+    ttl.append(f"<{subject}> {row['relation_property']} <{target}> .\n")
 (DIST / "aom-semantic-bindings.ttl").write_text("\n".join(ttl), encoding="utf-8")
 print(
     f"Built {len(rows)} structural and {len(all_value_rows)} value semantic bindings; "
-    f"{len(material_facets)} material facets and {len(external_resource_labels)} external labels"
+    f"{len(material_facets)} material facets, {len(process_axis_relations)} process-axis relations, "
+    f"and {len(external_resource_labels)} external labels"
 )

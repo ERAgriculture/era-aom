@@ -840,6 +840,9 @@ def main():
             "approved_component_retention_relations": len(
                 read_governance("approved_component_retention_relations.csv")
             ),
+            "approved_process_axis_relations": len(
+                read_governance("approved_process_axis_relations.csv")
+            ),
             "approved_semantic_bindings": len(
                 read_governance("approved_semantic_bindings.csv")
             ),

@@ -12,11 +12,11 @@
   },
   "counts": {
     "source_records": 2503,
-    "published_staging_concepts": 2794,
+    "published_staging_concepts": 2811,
     "excluded_duplicate_id_records": 0,
     "resolved_to_existing_records": 1,
     "quarantine_assertions": 2,
-    "hierarchy_relations": 2801,
+    "hierarchy_relations": 2834,
     "replacement_relations": 32,
     "semantic_relations": 24,
     "hierarchy_gaps": 0,
@@ -28,24 +28,25 @@
     "approved_deprecations": 32,
     "approved_concept_retirements": 8,
     "approved_label_corrections": 34,
-    "approved_label_additions": 27,
+    "approved_label_additions": 28,
     "approved_label_suppressions": 6,
-    "approved_new_concepts": 293,
-    "registered_livestock_ids": 314,
-    "approved_semantic_relations": 30,
+    "approved_new_concepts": 310,
+    "registered_livestock_ids": 331,
+    "approved_semantic_relations": 29,
     "approved_reparentings": 64,
     "approved_hierarchy_revisions": 138,
     "approved_feed_formulation_classifications": 29,
     "approved_feed_taxonomy_classifications": 229,
-    "approved_concept_semantic_types": 20,
+    "approved_concept_semantic_types": 47,
     "approved_feed_role_assertions": 16,
     "approved_component_retention_relations": 5,
+    "approved_process_axis_relations": 166,
     "approved_semantic_bindings": 13,
     "approved_semantic_value_bindings": 298,
     "approved_ingredient_component_classifications": 83,
-    "approved_ingredient_facet_concepts": 124,
-    "approved_ingredient_harmonization_rules": 40,
-    "approved_generated_feed_material_facets": 1599,
+    "approved_ingredient_facet_concepts": 120,
+    "approved_ingredient_harmonization_rules": 39,
+    "approved_generated_feed_material_facets": 1591,
     "approved_hard_tail_feed_material_facets": 154,
     "approved_structural_feed_material_facets": 1159,
     "approved_feed_material_external_facets": 3,
@@ -55,10 +56,10 @@
     "approved_ingredient_semantic_closure_decisions": 19,
     "approved_ingredient_cluster_decisions": 14,
     "approved_ontology_collision_decisions": 92,
-    "approved_definition_enrichments": 2152,
+    "approved_definition_enrichments": 2182,
     "approved_ingredient_component_value_mappings": 46,
-    "approved_ingredient_component_decompositions": 64,
-    "approved_ingredient_component_value_holds": 9
+    "approved_ingredient_component_decompositions": 63,
+    "approved_ingredient_component_value_holds": 10
   },
   "identifier_policy": {
     "concept_ids_preserved": true,
@@ -78,13 +79,13 @@
     },
     {
       "path": "data/livestock-staging/approved_concept_semantic_types.csv",
-      "bytes": 5772,
-      "sha256": "98e7863ae82cf5b7e8317c4cb76c3d5c1c80bfb8a72dbd3bb1fcfccb7d0797fb"
+      "bytes": 13867,
+      "sha256": "8a10fe1192c42913941de863593e489df0c19378eeefc345aca34f09ca9bd23b"
     },
     {
       "path": "data/livestock-staging/approved_definition_enrichments.csv",
-      "bytes": 1083405,
-      "sha256": "434ce5f9aa253781ad62734a97ceddad5282323cccd1ef8687d9c7d46fd10b5f"
+      "bytes": 1098947,
+      "sha256": "2ad6e815e5b86dc3b4b748dfea59fe09eed0bdcf2f9e283e9ccd31bbf82c8ede"
     },
     {
       "path": "data/livestock-staging/approved_definition_overrides.csv",
@@ -113,8 +114,8 @@
     },
     {
       "path": "data/livestock-staging/approved_feed_material_facets.csv",
-      "bytes": 9986,
-      "sha256": "87aa7fa50f77ed1a20437ae0511241d3a17e1e1dd0546ea4ae3b39740a3a0893"
+      "bytes": 10130,
+      "sha256": "ba9537002796ab45c5f778a9a02462f9c9e3bd2c2e3cf160e7d4e7cd80bf4cae"
     },
     {
       "path": "data/livestock-staging/approved_feed_material_source_overrides.csv",
@@ -133,13 +134,13 @@
     },
     {
       "path": "data/livestock-staging/approved_generated_feed_material_facets.csv",
-      "bytes": 419356,
-      "sha256": "496dc71869038830b187fcbf4c24509e2f2bbe381b4493bf971408cfd1035f9a"
+      "bytes": 417220,
+      "sha256": "f2b4f1b05f6a53f6aa186de594292adf31d5ad7a9e1de3e97ba225347e8f63b5"
     },
     {
       "path": "data/livestock-staging/approved_hard_tail_feed_material_facets.csv",
-      "bytes": 38195,
-      "sha256": "ac777f9b3b66480f8c63ada9e897231e731988ed4f7f728231f819a6b390c949"
+      "bytes": 38395,
+      "sha256": "d13383b5700a83790d4e4102ba1c560a02888255a53a02046d4658db7e61f95e"
     },
     {
       "path": "data/livestock-staging/approved_hierarchy_revisions.csv",
@@ -168,13 +169,13 @@
     },
     {
       "path": "data/livestock-staging/approved_ingredient_component_decompositions.csv",
-      "bytes": 15179,
-      "sha256": "91b9992c992bae1743b54e9e24207f7964a67be8786036a4f9b4b8ed2ef16c51"
+      "bytes": 14938,
+      "sha256": "44acc46a539448e3b49beaa5955ead0adc0caa0c82f4b823969f92417d13e9be"
     },
     {
       "path": "data/livestock-staging/approved_ingredient_component_value_holds.csv",
-      "bytes": 2261,
-      "sha256": "62c757600e33ac9718118fd8a557b5a4b6c9bbad3826c4642117ee0a8a62a392"
+      "bytes": 2613,
+      "sha256": "6b8ddcbf9e8d885aa9ce60dbcdc36467fef6cb59eeb2b45a2d1212c92934f58e"
     },
     {
       "path": "data/livestock-staging/approved_ingredient_component_value_mappings.csv",
@@ -183,13 +184,13 @@
     },
     {
       "path": "data/livestock-staging/approved_ingredient_facet_concepts.csv",
-      "bytes": 23909,
-      "sha256": "d2b74ca0664f1cfb8ce6fac6394330b9fb00f79331c4ff396af79b3efe10e77c"
+      "bytes": 23111,
+      "sha256": "6a87cef2ffe7a8662e75f68e392294448ed59c8f0dfa1e1abf0c80f9331bc473"
     },
     {
       "path": "data/livestock-staging/approved_ingredient_harmonization_rules.csv",
-      "bytes": 13090,
-      "sha256": "26ae8425333153227a05cf35f9f021d04ca9167c5b481ac1a76cc40a609fb561"
+      "bytes": 12769,
+      "sha256": "fc9d080fc3c27180e3b8231407d686cf63800d7ae0c6b0ce10980970ad66aabf"
     },
     {
       "path": "data/livestock-staging/approved_ingredient_semantic_closure_decisions.csv",
@@ -198,8 +199,8 @@
     },
     {
       "path": "data/livestock-staging/approved_label_additions.csv",
-      "bytes": 6516,
-      "sha256": "c02496cb5f189c87dc8be98afc3a4370469b3239238d681704051f30922f690e"
+      "bytes": 6761,
+      "sha256": "73b33ac48d86ecdb7bfb75065724eb736b559768a25c40a0cfe119b9683e4f5b"
     },
     {
       "path": "data/livestock-staging/approved_label_corrections.csv",
@@ -233,13 +234,18 @@
     },
     {
       "path": "data/livestock-staging/approved_new_concepts.csv",
-      "bytes": 129411,
-      "sha256": "58977efe9b8180f422c72b25d7b9c3f243858383de85241eb28d60cb870f5539"
+      "bytes": 138778,
+      "sha256": "76e6a52c4702a31317ef03b94183f6498c1e5ec7fdcd169579e808a69a61f4d3"
     },
     {
       "path": "data/livestock-staging/approved_ontology_collision_decisions.csv",
       "bytes": 29546,
       "sha256": "5c265b8cce732b97fea27a9e681c30dd0e72083c209b236a51f323af1376d248"
+    },
+    {
+      "path": "data/livestock-staging/approved_process_axis_relations.csv",
+      "bytes": 52953,
+      "sha256": "64ab4132ead2e0ed7df5287bea1454b153781db1c918ba33a9bcd96136266aa9"
     },
     {
       "path": "data/livestock-staging/approved_process_state_relations.csv",
@@ -258,8 +264,8 @@
     },
     {
       "path": "data/livestock-staging/approved_semantic_relations.csv",
-      "bytes": 6931,
-      "sha256": "c50c2459477bf84b3d5c4b693212ac05c1751535b6f43661c5d1b551f6d435ca"
+      "bytes": 6712,
+      "sha256": "e20f7b40cb396e400073acfc1ddf9ab234551643e5e1f9d57f4a1539498e2de2"
     },
     {
       "path": "data/livestock-staging/approved_semantic_value_bindings.csv",
@@ -278,13 +284,13 @@
     },
     {
       "path": "data/livestock-staging/concepts.csv",
-      "bytes": 582064,
-      "sha256": "3e6b6c745c51ee6c20d1d755055460b77e124ec6fd16d38f24591b0e41469933"
+      "bytes": 584350,
+      "sha256": "0c0be1cb6c040f7dbff1271b184985a04a5aef11d737ed18f67e47cd8806efe5"
     },
     {
       "path": "data/livestock-staging/definitions.csv",
-      "bytes": 610250,
-      "sha256": "d970c42bc9b2b60f9487cce72ba8543cb66c76fb360f838df0020b7b1b12b159"
+      "bytes": 610774,
+      "sha256": "d352158c885bc9d22b0731d7dc8ab57aeda1b95b7fcb8a6f48d28f158aebceee"
     },
     {
       "path": "data/livestock-staging/hierarchy_gaps.csv",
@@ -293,8 +299,8 @@
     },
     {
       "path": "data/livestock-staging/labels.csv",
-      "bytes": 203030,
-      "sha256": "77915962f0af26acb3bcfffc3199e43dc983c04e1d5526ae58913f8d26e3c994"
+      "bytes": 204334,
+      "sha256": "9acce571d771a6f5da03318c4cc42842e325f1c8d91328f63bcd99f4625a4f5e"
     },
     {
       "path": "data/livestock-staging/legacy_records.csv",
@@ -303,8 +309,8 @@
     },
     {
       "path": "data/livestock-staging/livestock_id_registry.csv",
-      "bytes": 60861,
-      "sha256": "c138b6ea9281025f586b92a9d31248bfc817f5ff3df0e33a0adfccaca6078e2e"
+      "bytes": 65086,
+      "sha256": "7deccd985c7bde783953523e825552138a62d5e22449ef4787ce009b88a1d7c8"
     },
     {
       "path": "data/livestock-staging/mappings.csv",
@@ -313,8 +319,8 @@
     },
     {
       "path": "data/livestock-staging/notes.csv",
-      "bytes": 55506,
-      "sha256": "75c3708734cb933e5d920e4c9f5a900ed7da5531e4fb7a8b26e8d53800fc80cb"
+      "bytes": 59198,
+      "sha256": "235d48a25e92b89e08f53a17a71f04084c7de339c7bd8bd15fa1fd9053a51cec"
     },
     {
       "path": "data/livestock-staging/properties.csv",
@@ -328,8 +334,8 @@
     },
     {
       "path": "data/livestock-staging/relations.csv",
-      "bytes": 132568,
-      "sha256": "83689ed355824e1820e2255de49dcc15deddab6a357209c5670466f1f1d83281"
+      "bytes": 133855,
+      "sha256": "5b132c58e1e126a7c72a54a808e15af672c57c09c19df050bb7b7d7f5abf41bc"
     },
     {
       "path": "data/livestock-staging/schemes.csv",
@@ -338,8 +344,8 @@
     },
     {
       "path": "data/livestock-staging/source_records.csv",
-      "bytes": 200489,
-      "sha256": "f745ff60d0951f0318c210423cbff67177a411460080eb12057972884a32d781"
+      "bytes": 202994,
+      "sha256": "efb758a882951825849aaaefdcf724ff5d3d6978720afe284845f61453b83845"
     },
     {
       "path": "dist/livestock-staging/README.md",
@@ -348,38 +354,38 @@
     },
     {
       "path": "dist/livestock-staging/aom-livestock.jsonld",
-      "bytes": 2595052,
-      "sha256": "d0581de2a127cae30b16104df0e6b9ecfbf7245c6588f4fa365c584b4b32949f"
+      "bytes": 2609771,
+      "sha256": "5aa5bea2e2b3861e1d478ce9dab8499a69717ebeec46518dff3e512322847022"
     },
     {
       "path": "dist/livestock-staging/aom-livestock.ttl",
-      "bytes": 1697648,
-      "sha256": "9acddf5ac0ad072efa906295e2e112472c2aa232717a60e1baeca014cff6e3f3"
+      "bytes": 1706838,
+      "sha256": "5726afa75e581232028edef1bb98ce4480af5ac1ef9d7f2aadf1fd048132356d"
     },
     {
       "path": "dist/livestock-staging/aom-schema.ttl",
-      "bytes": 15896,
-      "sha256": "aaf792c2c9aab8dd779c9914972128126ce24ce4afcb200c4395b50201d56a41"
+      "bytes": 18542,
+      "sha256": "7d351103aa9abae098a70c8664cac9c3a6274598f6cbe58362e1e2f9a21b93f7"
     },
     {
       "path": "dist/livestock-staging/aom-semantic-bindings.jsonld",
-      "bytes": 1459448,
-      "sha256": "1382e308952f0e147e552d7e5b0b9e01bac5fba84d63212a22eb18a94905fff4"
+      "bytes": 1532747,
+      "sha256": "d0d2b3f3d808992f8461c0b5f7d95972dd84d6c3cf7e10abb4c9cef9200deac9"
     },
     {
       "path": "dist/livestock-staging/aom-semantic-bindings.ttl",
-      "bytes": 849307,
-      "sha256": "7d6e498de62c79133caa20652252ba0d6c3a1860c16f06709ddbb50215e122b4"
+      "bytes": 890611,
+      "sha256": "726ff01e3a7ceff39af03fe322a1545458091b4ab5ca0852b3b2e9806df36e6c"
     },
     {
       "path": "dist/livestock-staging/edges.csv",
-      "bytes": 132557,
-      "sha256": "7d190c1cef68f82534af2f8f5bd3280e467999485a98075c5fe7253e632e2969"
+      "bytes": 133844,
+      "sha256": "6573348aef8b66ba135abed4653e7f2a2d1e37ce7872bf766bfe0c226c7ab64e"
     },
     {
       "path": "dist/livestock-staging/nodes.csv",
-      "bytes": 181892,
-      "sha256": "a2e941c03c3f777614188989b36edeb8b17d0fc2c2c79c371da5c548623ee5bc"
+      "bytes": 183229,
+      "sha256": "c3de8b8b83414210c7f45caa5de9214031931ee5e19da795acd0ce6743de4fda"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "expected_concepts": 2794,
-  "expected_hierarchy_relations": 2801,
-  "minimum_graph_triples": 29564,
+  "expected_concepts": 2811,
+  "expected_hierarchy_relations": 2834,
+  "minimum_graph_triples": 30215,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
   "representative_label": "Whole-grain maize",
@@ -13,6 +13,14 @@
     {"property": "Has material component", "value": "Bran"},
     {"property": "Has processing method", "value": "Flour milling"},
     {"property": "Has product role", "value": "By-product role"}
+  ],
+  "process_display_concept": "AOM_000820",
+  "process_display_label": "Enzyme Treatment",
+  "process_display_properties": [
+    {"property": "Has process mechanism", "value": "Enzymatic or biochemical feed processes"},
+    {"property": "Has technical process objective", "value": "Feed constituent transformation processes"},
+    {"property": "May support feed benefit", "value": "Digestibility improvement"},
+    {"property": "May support feed benefit", "value": "Nutrient availability improvement"}
   ],
   "search_query": "Maize",
   "notation_search_concept": "AOM_101129",
@@ -71,7 +79,7 @@
     {"concept_id": "AOM_101060", "label": "Milling by-product role", "definition_contains": "secondary milling output"},
     {"concept_id": "AOM_101104", "label": "Bran", "definition_contains": "milling fraction"},
     {"concept_id": "AOM_101110", "label": "Whole-grain composition", "definition_contains": "bran, germ, and endosperm"},
-    {"concept_id": "AOM_101130", "label": "Feed component separation processes", "definition_contains": "removing"},
+    {"concept_id": "AOM_101130", "label": "Feed component separation processes", "definition_contains": "remove, separate"},
     {"concept_id": "AOM_000559", "label": "Feeds of animal origin", "definition_contains": "animal origin"},
     {"concept_id": "AOM_000735", "label": "Forage materials", "definition_contains": "may overlap"},
     {"concept_id": "AOM_101159", "label": "Plant products and by-products", "definition_contains": "product role"},
@@ -79,6 +87,12 @@
     {"concept_id": "AOM_101161", "label": "Other biological feed materials", "definition_contains": "source taxon"},
     {"concept_id": "AOM_101162", "label": "Unclassified feed materials", "definition_contains": "resolution within one release cycle"},
     {"concept_id": "AOM_101147", "label": "Chemical substances", "definition_contains": "independently"},
-    {"concept_id": "AOM_001866", "label": "Glycerol", "definition_contains": "temporarily"}
+    {"concept_id": "AOM_001866", "label": "Glycerol", "definition_contains": "temporarily"},
+    {"concept_id": "AOM_101163", "label": "Enzymatic or biochemical feed processes", "definition_contains": "enzyme catalysis"},
+    {"concept_id": "AOM_101164", "label": "Feed constituent transformation processes", "definition_contains": "convert or degrade"},
+    {"concept_id": "AOM_101168", "label": "Feed-process benefits", "definition_contains": "contextual benefits"},
+    {"concept_id": "AOM_101169", "label": "Digestibility improvement", "definition_contains": "improve digestibility"},
+    {"concept_id": "AOM_101084", "label": "Sugar processing", "definition_contains": "Upstream production workflow"},
+    {"concept_id": "AOM_101069", "label": "Fat removal", "definition_contains": "removing or reducing a fat fraction"}
   ]
 }

@@ -719,6 +719,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101165",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006376",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -738,7 +745,14 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101084",
     "@type": [
-      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "https://w3id.org/era-aom/schema/ProductionProcess",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000826",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessMechanism",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
@@ -955,6 +969,24 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100991"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -1172,6 +1204,19 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101177"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101176"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
+      }
     ]
   },
   {
@@ -1609,6 +1654,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_100991",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessMechanism"
     ]
   },
   {
@@ -2816,6 +2868,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101174",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001568",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -3781,6 +3840,24 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101129"
+      }
     ]
   },
   {
@@ -4556,6 +4633,31 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000825",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006133",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -4883,9 +4985,6 @@
     "https://w3id.org/era-aom/schema/processingMethod": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000833"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
       }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
@@ -5487,9 +5586,6 @@
     ],
     "https://w3id.org/era-aom/schema/processingMethod": [
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
     ]
@@ -5750,6 +5846,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101178",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-source:acacia-polyacantha",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -5928,6 +6031,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000837",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessMechanism"
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/11643",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -5995,6 +6105,27 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101172"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -6719,9 +6850,6 @@
       }
     ],
     "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
-      },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000843"
       },
@@ -7928,7 +8056,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101130",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProcessingMethod"
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective"
     ]
   },
   {
@@ -8879,6 +9007,52 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101177"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:flakes-defatted:hold",
+    "@type": [
+      "https://w3id.org/era-aom/schema/SemanticValueBinding"
+    ],
+    "https://w3id.org/era-aom/schema/bindingAction": [
+      {
+        "@value": "hold_ambiguous"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/sourceValue": [
+      {
+        "@value": "Flakes Defatted"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/targetValueClass": [
+      {
+        "@id": "https://w3id.org/era-aom/schema/CompositionState"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/valueBindingStatus": [
+      {
+        "@value": "approved"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/valueTargetProperty": [
+      {
+        "@id": "https://w3id.org/era-aom/schema/compositionState"
+      }
     ]
   },
   {
@@ -9325,6 +9499,31 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000822",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
+    ]
+  },
+  {
     "@id": "https://www.feedipedia.org/node/11893",
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -9619,6 +9818,31 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000834",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101129"
       }
     ]
   },
@@ -10601,7 +10825,7 @@
     "@id": "https://w3id.org/era-aom/livestock/AOM_101131",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/ProcessingMethod"
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective"
     ]
   },
   {
@@ -10637,14 +10861,14 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101077"
       }
     ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101084"
-      }
-    ],
     "https://w3id.org/era-aom/schema/productRole": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/productionProcessProvenance": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101084"
       }
     ]
   },
@@ -11058,6 +11282,30 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100991"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101166"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -11297,6 +11545,34 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000818",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101172"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101174"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100991"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001695",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -11363,6 +11639,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/ingredientPart"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000842",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective"
     ]
   },
   {
@@ -12097,6 +12380,29 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101178"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101173"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101179"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101166"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101163",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessMechanism"
     ]
   },
   {
@@ -12154,9 +12460,6 @@
     "https://w3id.org/era-aom/schema/processingMethod": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000835"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
@@ -12286,6 +12589,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/primaryConstituent"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101164",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -12506,7 +12816,7 @@
     ],
     "https://w3id.org/era-aom/schema/targetValueClass": [
       {
-        "@id": "https://w3id.org/era-aom/schema/ProcessingMethod"
+        "@id": "https://w3id.org/era-aom/schema/ProductionProcess"
       }
     ],
     "https://w3id.org/era-aom/schema/valueBindingStatus": [
@@ -12521,7 +12831,7 @@
     ],
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
-        "@id": "https://w3id.org/era-aom/schema/processingMethod"
+        "@id": "https://w3id.org/era-aom/schema/productionProcessProvenance"
       }
     ]
   },
@@ -12842,6 +13152,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101171",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -14062,6 +14379,24 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101176"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101177"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
+      }
     ]
   },
   {
@@ -14229,6 +14564,24 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -14261,6 +14614,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101167",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -15920,6 +16280,31 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000824",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001702",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -16376,6 +16761,31 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000821",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
       }
     ]
   },
@@ -16925,6 +17335,30 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101174"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101165"
+      }
     ]
   },
   {
@@ -17343,6 +17777,24 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101177"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
+      }
     ]
   },
   {
@@ -17584,6 +18036,34 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterial"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000829",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101172"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -20981,6 +21461,31 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000823",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001358",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -21002,6 +21507,22 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101179"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101167"
+      }
     ]
   },
   {
@@ -21738,6 +22259,13 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101172",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -22958,9 +23486,6 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_000830"
       },
       {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
-      },
-      {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
       }
     ]
@@ -23813,6 +24338,30 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101173"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101131"
+      }
     ]
   },
   {
@@ -24587,9 +25136,6 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000836"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
       }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
@@ -24833,7 +25379,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101129",
     "@type": [
-      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
@@ -26221,17 +26767,38 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_100989",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "https://w3id.org/era-aom/schema/FeedMaterial"
-    ]
-  },
-  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000831",
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101174"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101173"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100990"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101165"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_100989",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedMaterial"
     ]
   },
   {
@@ -26978,6 +27545,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_100990",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessMechanism",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001826",
     "@type": [
       "https://w3id.org/era-aom/schema/Feed",
@@ -27046,6 +27620,27 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101177"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101129"
+      }
     ]
   },
   {
@@ -27399,6 +27994,27 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101172"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -27438,6 +28054,34 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/FeedMaterialPartCategory"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000817",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_100991"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101166"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -27829,14 +28473,14 @@
         "@id": "https://w3id.org/era-aom/livestock/AOM_101077"
       }
     ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101084"
-      }
-    ],
     "https://w3id.org/era-aom/schema/productRole": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/productionProcessProvenance": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101084"
       }
     ]
   },
@@ -28606,9 +29250,6 @@
       },
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000835"
-      },
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
       }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
@@ -28717,25 +29358,10 @@
     ]
   },
   {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_001482",
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101179",
     "@type": [
-      "https://w3id.org/era-aom/schema/FeedMaterial",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "https://w3id.org/era-aom/schema/bulkConsistency": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101077"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101084"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/productRole": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
-      }
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedBenefit"
     ]
   },
   {
@@ -28771,6 +29397,28 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_001482",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedMaterial",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/bulkConsistency": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101077"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/productRole": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/productionProcessProvenance": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101084"
       }
     ]
   },
@@ -29085,11 +29733,6 @@
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
       "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "https://w3id.org/era-aom/schema/processingMethod": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
-      }
     ],
     "https://w3id.org/era-aom/schema/productRole": [
       {
@@ -29538,6 +30181,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101176",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_006280",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -29721,6 +30371,24 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -30016,6 +30684,34 @@
     "https://w3id.org/era-aom/schema/valueTargetProperty": [
       {
         "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000828",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101172"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
       }
     ]
   },
@@ -30458,6 +31154,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101170",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:beans:hold",
     "@type": [
       "https://w3id.org/era-aom/schema/SemanticValueBinding"
@@ -30707,6 +31410,13 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101169",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_001981",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -30815,42 +31525,6 @@
     "https://w3id.org/era-aom/schema/productRole": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/value-binding/ingredient-component:flakes-defatted:2",
-    "@type": [
-      "https://w3id.org/era-aom/schema/SemanticValueBinding"
-    ],
-    "https://w3id.org/era-aom/schema/bindingAction": [
-      {
-        "@value": "decompose_to_existing"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/sourceValue": [
-      {
-        "@value": "Flakes Defatted"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/targetValueClass": [
-      {
-        "@id": "https://w3id.org/era-aom/schema/ProcessingMethod"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueBindingStatus": [
-      {
-        "@value": "approved"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueTargetConcept": [
-      {
-        "@id": "https://w3id.org/era-aom/livestock/AOM_101069"
-      }
-    ],
-    "https://w3id.org/era-aom/schema/valueTargetProperty": [
-      {
-        "@id": "https://w3id.org/era-aom/schema/processingMethod"
       }
     ]
   },
@@ -31144,6 +31818,11 @@
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      }
     ]
   },
   {
@@ -31980,6 +32659,31 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000839",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101129"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000539",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -31999,6 +32703,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101166",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective"
     ]
   },
   {
@@ -33437,7 +34148,7 @@
   {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101069",
     "@type": [
-      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "https://w3id.org/era-aom/schema/ProcessTechnicalObjective",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
@@ -34137,6 +34848,31 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_006824",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101163"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000757",
     "@type": [
       "https://w3id.org/era-aom/schema/FeedMaterial",
@@ -34574,6 +35310,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_000843"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101173",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -35650,6 +36393,37 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000832",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101172"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101171"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101173"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_002092",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -35664,13 +36438,6 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/era-aom/livestock/AOM_000832",
-    "@type": [
-      "https://w3id.org/era-aom/schema/ProcessingMethod",
-      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -36302,10 +37069,41 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101168",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_101128",
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101172"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101174"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101177"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000826"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101165"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
+      }
     ]
   },
   {
@@ -37095,6 +37893,13 @@
       {
         "@id": "https://w3id.org/era-aom/schema/productRole"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101175",
+    "@type": [
+      "https://w3id.org/era-aom/schema/FeedBenefit",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ]
   },
   {
@@ -38150,6 +38955,31 @@
     ]
   },
   {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_000840",
+    "@type": [
+      "https://w3id.org/era-aom/schema/ProcessingMethod",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101173"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101131"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/era-aom/livestock/AOM_000946",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
@@ -38389,6 +39219,19 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101170"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101164"
+      }
     ]
   },
   {
@@ -39392,6 +40235,24 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101129"
+      }
     ]
   },
   {
@@ -39426,6 +40287,13 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101062"
       }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_101177",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/FeedBenefit"
     ]
   },
   {
@@ -39514,6 +40382,19 @@
     "@type": [
       "https://w3id.org/era-aom/schema/ProcessingMethod",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101179"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101174"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000842"
+      }
     ]
   },
   {
@@ -39795,6 +40676,31 @@
     "@type": [
       "https://w3id.org/era-aom/schema/Feed",
       "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/era-aom/livestock/AOM_003097",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "https://w3id.org/era-aom/schema/ProcessingMethod"
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101176"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101130"
+      }
     ]
   },
   {
@@ -41049,6 +41955,19 @@
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101054"
       }
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101174"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000842"
+      }
     ]
   },
   {
@@ -41515,6 +42434,24 @@
     "https://w3id.org/era-aom/schema/mayResultInPresentationForm": [
       {
         "@id": "https://w3id.org/era-aom/livestock/AOM_101125"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/maySupportFeedBenefit": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101175"
+      },
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101169"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/processMechanism": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_000837"
+      }
+    ],
+    "https://w3id.org/era-aom/schema/technicalProcessObjective": [
+      {
+        "@id": "https://w3id.org/era-aom/livestock/AOM_101129"
       }
     ]
   },

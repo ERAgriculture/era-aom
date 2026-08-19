@@ -33,6 +33,10 @@ Approved minted concepts live in `approved_new_concepts.csv`; allocations live
 in append-only `livestock_id_registry.csv`. See [`../../IDENTIFIERS.md`](../../IDENTIFIERS.md).
 Approved non-hierarchical concept links live in
 `approved_semantic_relations.csv`.
+Approved process-operation links to mechanisms, technical objectives, and
+modal benefits live in `approved_process_axis_relations.csv`. Upstream
+production provenance remains a feed-material facet. See ADR 0047 and
+`docs/methods/feed-process-axis-governance.md`.
 Approved hierarchy flattening and direct reparenting decisions live in
 `approved_reparentings.csv`.
 Approved phase-2 data-model migration bindings live in

@@ -5,6 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ProcessApplication">
+    <rdfs:label xml:lang="en">process application</rdfs:label>
+    <rdfs:comment xml:lang="en">Contextual application of a process to material under specified conditions.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/mayResultInPhysicalForm">
     <rdfs:label xml:lang="en">may result in physical descriptor</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
@@ -103,6 +108,13 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/observedProcessEffect">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessApplication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    <rdfs:comment xml:lang="en">Links one contextual process application to an observation of its measured effect.</rdfs:comment>
+    <rdfs:label xml:lang="en">has observed process effect</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedMaterialComponent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Reviewed material scope or component, including anatomical parts and collective material such as a whole crop.</rdfs:comment>
@@ -190,6 +202,13 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="https://w3id.org/era-aom/schema/FeedChemicalEntity"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/maySupportFeedBenefit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedBenefit"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
+    <rdfs:label xml:lang="en">may support feed benefit</rdfs:label>
+    <rdfs:comment xml:lang="en">Modal link to a contextual intended benefit; it does not assert an achieved or measured effect.</rdfs:comment>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedFormulation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">feed formulation</rdfs:label>
@@ -210,6 +229,12 @@
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/targetProperty">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ProcessMechanism">
+    <rdfs:label xml:lang="en">process mechanism</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Controlled category describing how a processing operation acts, independently of technical objective or intended benefit.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueTargetConcept">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -329,6 +354,12 @@
     <rdfs:label xml:lang="en">release</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ProductionProcess">
+    <rdfs:label xml:lang="en">production process</rdfs:label>
+    <rdfs:comment xml:lang="en">Upstream process or workflow through which a feed material arises, independently of operations directly applied to that material.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedMoistureCondition">
     <rdfs:comment xml:lang="en">Qualitative moisture condition independently of presentation and bulk consistency.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -408,6 +439,13 @@
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Release"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/processMechanism">
+    <rdfs:comment xml:lang="en">Links a processing operation to a governed description of how it acts; no technical objective or benefit is entailed.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProcessMechanism"/>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
+    <rdfs:label xml:lang="en">has process mechanism</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/reviewedBy">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Reviewer"/>
@@ -416,8 +454,15 @@
     <rdfs:comment xml:lang="en">Identifies a chemically defined constituent central to material identity; it does not represent an ingredient in a formulated feed.</rdfs:comment>
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ChemicalConstituent"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdfs:label xml:lang="en">has primary chemical constituent</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/technicalProcessObjective">
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/ProcessingMethod"/>
+    <rdfs:comment xml:lang="en">Links a processing operation to a direct material transformation sought by that operation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProcessTechnicalObjective"/>
+    <rdfs:label xml:lang="en">has technical process objective</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/inModule">
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/Module"/>
@@ -432,6 +477,12 @@
     <rdfs:label xml:lang="en">feed functional role</rdfs:label>
     <rdfs:subClassOf rdf:resource="https://w3id.org/era-aom/schema/FeedRole"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/ProcessTechnicalObjective">
+    <rdfs:comment xml:lang="en">Direct material transformation sought by a processing operation, independently of mechanism, intended benefit, or measured effect.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">process technical objective</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/Feed">
     <rdfs:label xml:lang="en">feed</rdfs:label>
@@ -449,12 +500,25 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">has feed product type</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/FeedBenefit">
+    <rdfs:comment xml:lang="en">Contextual benefit that a process may be intended to support without asserting achievement.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">feed benefit</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueTargetProperty">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/quantityKind">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticBinding"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/era-aom/schema/productionProcessProvenance">
+    <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/ProductionProcess"/>
+    <rdfs:comment xml:lang="en">Links a feed material to an upstream production process or workflow through which it arises, not to a direct treatment operation.</rdfs:comment>
+    <rdfs:label xml:lang="en">has production-process provenance</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/FeedMaterial"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/IngredientPhysicalForm">
@@ -496,9 +560,9 @@
     <rdfs:range rdf:resource="https://w3id.org/era-aom/schema/FeedMaterialPartCategory"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/QuantitativeObservation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">quantitative observation</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/era-aom/schema/valueBindingStatus">
     <rdfs:domain rdf:resource="https://w3id.org/era-aom/schema/SemanticValueBinding"/>

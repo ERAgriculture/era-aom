@@ -19,6 +19,7 @@ aom:FeedMaterialShape a sh:NodeShape ;
   sh:property [ sh:path aom:feedProductType ; sh:class aom:FeedProductType ] ;
   sh:property [ sh:path aom:compositionState ; sh:class aom:CompositionState ] ;
   sh:property [ sh:path aom:processingMethod ; sh:class aom:ProcessingMethod ] ;
+  sh:property [ sh:path aom:productionProcessProvenance ; sh:class aom:ProductionProcess ] ;
   sh:property [ sh:path aom:productRole ; sh:class aom:ProductRole ] ;
   sh:property [ sh:path aom:primaryConstituent ; sh:class aom:ChemicalConstituent ] ;
   sh:property [ sh:path aom:ingredientConstituent ; sh:class aom:IngredientConstituent ] .
@@ -81,6 +82,16 @@ aom:QuantitativeObservationShape a sh:NodeShape ;
     sh:class qudt:QuantityValue ;
     sh:node aom:QuantityValueShape
   ] .
+
+aom:ProcessingMethodShape a sh:NodeShape ;
+  sh:targetClass aom:ProcessingMethod ;
+  sh:property [ sh:path aom:processMechanism ; sh:class aom:ProcessMechanism ] ;
+  sh:property [ sh:path aom:technicalProcessObjective ; sh:class aom:ProcessTechnicalObjective ] ;
+  sh:property [ sh:path aom:maySupportFeedBenefit ; sh:class aom:FeedBenefit ] .
+
+aom:ProcessApplicationShape a sh:NodeShape ;
+  sh:targetClass aom:ProcessApplication ;
+  sh:property [ sh:path aom:observedProcessEffect ; sh:class sosa:Observation ] .
 
 aom:QuantityValueShape a sh:NodeShape ;
   sh:class qudt:QuantityValue ;
