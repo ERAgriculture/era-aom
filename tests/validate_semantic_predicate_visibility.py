@@ -22,6 +22,7 @@ labels = {
     "bulkConsistency": "has bulk consistency",
     "moistureCondition": "has moisture condition",
     "materialIntegrity": "has material integrity",
+    "componentRetentionState": "has component-retention state",
     "feedProductType": "has feed product type",
     "compositionState": "has composition state",
     "processingMethod": "has processing method",

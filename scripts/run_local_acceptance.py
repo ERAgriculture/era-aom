@@ -234,11 +234,18 @@ def main():
         if check.get("replaced_by"):
             replacements = {str(value).rsplit("/", 1)[-1] for value in backup.objects(uri, DCTERMS.isReplacedBy)}
             assert check["replaced_by"] in replacements, (cid, replacements)
+        for property_check in check.get("properties", []):
+            predicate = URIRef(f"https://w3id.org/era-aom/schema/{property_check['predicate']}")
+            targets = {str(value).rsplit("/", 1)[-1] for value in backup.objects(uri, predicate)}
+            assert property_check["target_id"] in targets, (cid, property_check, targets)
         concept_page = args.skosmos.rstrip("/") + f"/{vocid}/en/page/{cid}"
         page_status, _, page_body, elapsed = request(concept_page, "text/html")
         timings.append(elapsed)
         page_html = page_body.decode("utf-8", errors="replace")
         assert page_status == 200 and check["label"] in page_html and 'application/ld+json' in page_html
+        for property_check in check.get("properties", []):
+            assert property_check["property_label"] in page_html, property_check
+            assert property_check["value_label"] in page_html, property_check
         representative_results.append({"concept_id": cid, "label": check["label"], "page": "pass", "semantics": "pass"})
     results["representative_matrix"] = representative_results
 

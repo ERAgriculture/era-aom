@@ -28,13 +28,12 @@ relation = next(
     row for row in rows("relations.csv")
     if row["subject_id"] == "AOM_101104" and row["relation_type"] == "broader"
 )
-assert relation["object_id"] == "AOM_101144"
+assert relation["object_id"] == "AOM_101143"
 broader = {
     (row["subject_id"], row["object_id"])
     for row in rows("relations.csv") if row["relation_type"] == "broader"
 }
 assert {
-    ("AOM_101144", "AOM_101143"),
     ("AOM_101143", "AOM_101085"),
 } <= broader
 
@@ -62,5 +61,5 @@ definitions = {
     row["concept_id"]: row["definition"] for row in rows("definitions.csv")
 }
 assert "separated during milling" in definitions["AOM_001614"]
-assert "material fraction" in definitions["AOM_101104"]
+assert "milling fraction" in definitions["AOM_101104"]
 print("Bran compound model validation passed: source, component, process, and role asserted")

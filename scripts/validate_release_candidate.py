@@ -55,7 +55,7 @@ def main():
 
     concepts = set(livestock_ttl.subjects(RDF.type, SKOS.Concept))
     schemes = set(livestock_ttl.subjects(RDF.type, SKOS.ConceptScheme))
-    assert len(concepts) == 2811 and len(schemes) == 1
+    assert len(concepts) == 2813 and len(schemes) == 1
     assert all(str(item).startswith(base) for item in concepts | schemes)
     assert not any(
         isinstance(term, URIRef) and str(term).startswith("urn:era-aom:")
@@ -147,10 +147,10 @@ def main():
             (row["deprecated_id"], row["replacement_id"])
             for row in csv.DictReader(handle)
         }
-    assert nodes.num_rows == staging_nodes == 2811
+    assert nodes.num_rows == staging_nodes == 2813
     assert edges.num_rows == staging_edges
     assert crosswalk.num_rows == len(expected_crosswalk)
-    assert rules.num_rows == 39 and material_facets.num_rows == 2953
+    assert rules.num_rows == 37 and material_facets.num_rows == 2887
     assert set(zip(
         crosswalk.column("deprecated_id").to_pylist(),
         crosswalk.column("replacement_id").to_pylist(),

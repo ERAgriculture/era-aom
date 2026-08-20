@@ -55,11 +55,11 @@ with (DATA / "approved_feed_material_external_facets.csv").open(encoding="utf-8"
     external_material_facets = list(csv.DictReader(h))
 material_facets += generated_material_facets + hard_tail_material_facets + structural_material_facets
 assert len(value_bindings) == 298
-assert len(facet_value_concepts) == 120
+assert len(facet_value_concepts) == 116
 assert len(component_value_mappings) == 46
 assert len(component_decompositions) == 63
-assert len({row["concept_id"] for row in facet_value_concepts}) == 120
-assert len(material_facets) == 2950
+assert len({row["concept_id"] for row in facet_value_concepts}) == 116
+assert len(material_facets) == 2884
 assert len(external_material_facets) == 3
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
     row["concept_id"] for row in facet_value_concepts
@@ -355,7 +355,7 @@ assert (whole_crop_maize_silage, RDF.type, URIRef("urn:era-aom:schema:FeedMateri
 assert not any(binding_graph.objects(
     whole_crop_maize_silage, URIRef("urn:era-aom:schema:physicalForm")
 ))
-assert (whole_crop_maize_silage, URIRef("urn:era-aom:schema:compositionState"),
+assert (whole_crop_maize_silage, URIRef("urn:era-aom:schema:componentRetentionState"),
         URIRef("urn:era-aom:livestock:AOM_101086")) in binding_graph
 assert (whole_crop_maize_silage, URIRef("urn:era-aom:schema:processingMethod"),
         URIRef("urn:era-aom:livestock:AOM_000831")) in binding_graph

@@ -33,7 +33,7 @@ WORKBOOK_STRUCTURED = {"AOM_001880", "AOM_001930", "AOM_002120", "AOM_006200"}
 COMPOUND_DESCRIPTORS = {
     "deep stacked": [("aom:processingMethod", "AOM_101123", "Stacking", "deep stacked")],
     "protein isolate": [
-        ("aom:primaryConstituent", "AOM_101120", "Protein constituent", "protein"),
+        ("aom:primaryConstituent", "AOM_001571", "Protein", "protein"),
         ("aom:processingMethod", "AOM_101072", "Extraction", "isolate"),
     ],
     "steep liquor": [

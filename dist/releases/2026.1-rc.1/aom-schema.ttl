@@ -86,6 +86,11 @@ aom:compatibilityPolicy a owl:DatatypeProperty ;
     rdfs:domain aom:SemanticBinding ;
     rdfs:range xsd:string .
 
+aom:compositionState a owl:ObjectProperty ;
+    rdfs:label "has composition state"@en ;
+    rdfs:domain aom:FeedMaterial ;
+    rdfs:range aom:CompositionState .
+
 aom:experimentalRole a owl:ObjectProperty ;
     rdfs:label "has experimental role"@en ;
     rdfs:range aom:ExperimentalFeedRole ;
@@ -163,7 +168,7 @@ aom:materialIntegrity a owl:ObjectProperty ;
     rdfs:label "has material integrity"@en ;
     rdfs:domain aom:FeedMaterial ;
     rdfs:range aom:MaterialIntegrity ;
-    rdfs:subPropertyOf aom:compositionState ;
+    rdfs:subPropertyOf aom:componentRetentionState ;
     owl:deprecated true .
 
 aom:mayResultInMoistureCondition a owl:ObjectProperty ;
@@ -369,10 +374,11 @@ aom:Reviewer a owl:Class ;
     rdfs:label "reviewer"@en ;
     rdfs:subClassOf prov:Agent .
 
-aom:compositionState a owl:ObjectProperty ;
-    rdfs:label "has composition state"@en ;
+aom:componentRetentionState a owl:ObjectProperty ;
+    rdfs:label "has component-retention state"@en ;
+    rdfs:comment "Links material to positive native-component retention or integrity state independently of measured composition."@en ;
     rdfs:domain aom:FeedMaterial ;
-    rdfs:range aom:CompositionState .
+    rdfs:range aom:ComponentRetentionState .
 
 aom:materialComponent a owl:ObjectProperty ;
     rdfs:label "has material component"@en ;
@@ -417,11 +423,6 @@ aom:ChemicalConstituent a owl:Class ;
     rdfs:subClassOf skos:Concept,
         aom:FeedChemicalEntity .
 
-aom:ComponentRetentionState a owl:Class ;
-    rdfs:label "component-retention state"@en ;
-    rdfs:comment "Composition state defined through positive retention of native material components or chemical constituents."@en ;
-    rdfs:subClassOf aom:CompositionState .
-
 aom:FeedMaterialComponent a owl:Class ;
     rdfs:label "feed material component"@en ;
     rdfs:comment "Reviewed material scope or component, including anatomical parts and collective material such as a whole crop."@en ;
@@ -447,6 +448,11 @@ aom:physicalForm a owl:ObjectProperty ;
 aom:role a owl:ObjectProperty ;
     rdfs:label "has feed role"@en ;
     rdfs:range aom:FeedRole .
+
+aom:ComponentRetentionState a owl:Class ;
+    rdfs:label "component-retention state"@en ;
+    rdfs:comment "State defined through positive retention of native material components or chemical constituents. Transitional subclassing under composition state remains until Cohort E resolves held milk-fat cases."@en ;
+    rdfs:subClassOf aom:CompositionState .
 
 aom:FeedRole a owl:Class ;
     rdfs:label "feed role"@en ;

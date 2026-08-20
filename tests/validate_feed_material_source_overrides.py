@@ -33,7 +33,14 @@ for concept_id in {"AOM_000558", "AOM_006194"}:
     assert not by_id[concept_id]["component_candidates"]
 assert by_id["AOM_001333"]["source_identity_candidate"] == "oil"
 assert not by_id["AOM_001333"]["form_candidates"]
-assert all(by_id[row["concept_id"]]["governance_state"] == "approved_source_override" for row in overrides)
+assert all(
+    by_id[row["concept_id"]]["governance_state"] == (
+        "approved_retained_replacement"
+        if row["concept_id"] == "AOM_001616"
+        else "approved_source_override"
+    )
+    for row in overrides
+)
 
 assert not any(
     row["feed_material_id"] in {item["concept_id"] for item in overrides}

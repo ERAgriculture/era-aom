@@ -33,8 +33,10 @@ held = {
     row["rule_id"] for row in assessment
     if row["recommendation"].startswith("hold")
 }
-assert len(approved) == len(recommended) == 39
-assert recommended - {row["rule_id"] for row in approved} == {"PROCESS-DEHULLED"}
+assert len(approved) == 37 and len(recommended) == 39
+assert recommended - {row["rule_id"] for row in approved} == {
+    "COMPONENT-STOVER", "COMPONENT-STRAW", "PROCESS-DEHULLED",
+}
 assert {row["rule_id"] for row in approved} - recommended == {"COMPONENT-BLOOD"}
 assert not ({row["rule_id"] for row in approved} & held)
 assert all(
@@ -42,12 +44,12 @@ assert all(
     and row["review_date"] == "2026-08-05"
     for row in approved
 )
-assert len(generated) == 1591
+assert len(generated) == 1525
 assert manifest == {
-    "rule_version": "1.0.0", "status": "approved-and-promoted",
-    "reviewer": "Pete Steward", "review_date": "2026-08-05",
-    "approved_rules": 39, "generated_assertions": 1591,
-    "unapproved_rules": 29, "legacy_identifiers_preserved": True,
+    "rule_version": "1.1.0", "status": "approved-and-promoted",
+    "reviewer": "Pete Steward", "review_date": "2026-08-20",
+    "approved_rules": 37, "generated_assertions": 1525,
+    "unapproved_rules": 31, "legacy_identifiers_preserved": True,
     "ilri_identifiers_used": False,
 }
 assert len({
@@ -74,12 +76,12 @@ for row in generated + manual:
 assert by_material["AOM_000536"] == {("aom:processingMethod", "Grinding")}
 assert ("aom:processingMethod", "Grinding") in by_material["AOM_001324"]
 assert by_material["AOM_001326"] == {
-    ("aom:compositionState", "Whole-crop composition"),
+    ("aom:componentRetentionState", "Whole-crop composition"),
     ("aom:processingMethod", "Ensiling"),
 }
 assert "AOM_006072" not in by_material
 assert ("aom:processingMethod", "Soaking") in by_material["AOM_006500"]
-assert ("aom:compositionState", "Whole-grain composition") in by_material["AOM_001313"]
+assert ("aom:componentRetentionState", "Whole-grain composition") in by_material["AOM_001313"]
 assert ("aom:ingredientPart", "Grain") in by_material["AOM_001313"]
 assert not any(row["rule_id"] == "PROCESS-DEHULLED" for row in generated)
 assert "PROCESS-DEFATTED" in held

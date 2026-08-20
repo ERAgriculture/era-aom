@@ -1,6 +1,6 @@
 # ADR 0048: Chemical identity, composition, and component model
 
-- Status: Proposed
+- Status: Accepted
 - Date: 2026-08-19
 - Owners: ERA-AOM semantic governance
 - Tracking: [era-program #55](https://github.com/ERAgriculture/era-program/issues/55)
@@ -26,7 +26,7 @@ plant embryo. EU feed regulation defines maize Bran and Germ as manufacturing
 products containing mixtures of tissues. AGROVOC and NALT classify Straw and
 Stover as crop-residue products.
 
-## Proposed decision
+## Decision
 
 ### Independent axes
 
@@ -146,4 +146,4 @@ Rejected. Permanent catch-all hides mapping gaps. Explicit holds are safer.
 
 ## Approval record
 
-Pending Pete Steward review.
+Accepted by Pete Steward on 2026-08-20. Proposed dispositions are approved; held rows remain explicit implementation holds.

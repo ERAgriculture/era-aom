@@ -18,6 +18,7 @@ aom:FeedMaterialShape a sh:NodeShape ;
   sh:property [ sh:path aom:materialIntegrity ; sh:class aom:MaterialIntegrity ] ;
   sh:property [ sh:path aom:feedProductType ; sh:class aom:FeedProductType ] ;
   sh:property [ sh:path aom:compositionState ; sh:class aom:CompositionState ] ;
+  sh:property [ sh:path aom:componentRetentionState ; sh:class aom:ComponentRetentionState ] ;
   sh:property [ sh:path aom:processingMethod ; sh:class aom:ProcessingMethod ] ;
   sh:property [ sh:path aom:productionProcessProvenance ; sh:class aom:ProductionProcess ] ;
   sh:property [ sh:path aom:productRole ; sh:class aom:ProductRole ] ;

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate reviewed whole-grain composition model and cereal mappings."""
+"""Validate reviewed whole-grain component-retention model and cereal mappings."""
 
 import csv
 from pathlib import Path
@@ -39,19 +39,19 @@ preferred = {
 assert {concept_id: preferred[concept_id] for concept_id in expected_labels} == expected_labels
 assert {
     row["feed_material_id"] for row in facets
-    if row["target_property"] == "aom:compositionState"
+    if row["target_property"] == "aom:componentRetentionState"
     and row["target_concept_id"] == "AOM_101110"
 } == set(expected_labels)
 
 graph = Graph().parse(DIST / "aom-semantic-bindings.ttl")
-composition_state = URIRef("urn:era-aom:schema:compositionState")
+component_retention_state = URIRef("urn:era-aom:schema:componentRetentionState")
 whole_grain = URIRef("urn:era-aom:livestock:AOM_101110")
 grinding = URIRef("urn:era-aom:schema:processingMethod")
 grinding_value = URIRef("urn:era-aom:livestock:AOM_000836")
 presentation_form = URIRef("urn:era-aom:schema:presentationForm")
 for concept_id in expected_labels:
     material = URIRef("urn:era-aom:livestock:" + concept_id)
-    assert (material, composition_state, whole_grain) in graph
+    assert (material, component_retention_state, whole_grain) in graph
 for concept_id in {"AOM_000656", "AOM_000660", "AOM_001324"}:
     material = URIRef("urn:era-aom:livestock:" + concept_id)
     assert (material, grinding, grinding_value) in graph
@@ -69,13 +69,13 @@ assert not any(
         URIRef("urn:era-aom:livestock:" + concept_id), presentation_form
     )
 )
-assert not any(graph.objects(URIRef("urn:era-aom:livestock:AOM_000649"), composition_state))
+assert not any(graph.objects(URIRef("urn:era-aom:livestock:AOM_000649"), component_retention_state))
 assert whole_grain not in graph.objects(
-    URIRef("urn:era-aom:livestock:AOM_001326"), composition_state
+    URIRef("urn:era-aom:livestock:AOM_001326"), component_retention_state
 )
 retains = URIRef("urn:era-aom:schema:retainsMaterialComponent")
 assert {
     str(value).rsplit(":", 1)[-1]
     for value in graph.objects(whole_grain, retains)
 } == {"AOM_101029", "AOM_101104", "AOM_101153"}
-print("Whole-grain composition validation passed: 4 reviewed cereal materials")
+print("Whole-grain component-retention validation passed: 4 reviewed cereal materials")

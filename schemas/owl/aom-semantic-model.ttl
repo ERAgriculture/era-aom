@@ -121,7 +121,7 @@ aom:CompositionState a owl:Class ;
 aom:ComponentRetentionState a owl:Class ;
   rdfs:subClassOf aom:CompositionState ;
   rdfs:label "component-retention state"@en ;
-  rdfs:comment "Composition state defined through positive retention of native material components or chemical constituents."@en .
+  rdfs:comment "State defined through positive retention of native material components or chemical constituents. Transitional subclassing under composition state remains until Cohort E resolves held milk-fat cases."@en .
 aom:ProcessingMethod a owl:Class ;
   rdfs:subClassOf skos:Concept ;
   rdfs:label "processing method"@en .
@@ -214,7 +214,7 @@ aom:moistureCondition a owl:ObjectProperty ;
   rdfs:domain aom:Feed ; rdfs:range aom:FeedMoistureCondition ;
   rdfs:label "has moisture condition"@en .
 aom:materialIntegrity a owl:ObjectProperty ;
-  rdfs:subPropertyOf aom:compositionState ;
+  rdfs:subPropertyOf aom:componentRetentionState ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:MaterialIntegrity ;
   rdfs:label "has material integrity"@en ;
   owl:deprecated true .
@@ -224,6 +224,10 @@ aom:feedProductType a owl:ObjectProperty ;
 aom:compositionState a owl:ObjectProperty ;
   rdfs:domain aom:FeedMaterial ; rdfs:range aom:CompositionState ;
   rdfs:label "has composition state"@en .
+aom:componentRetentionState a owl:ObjectProperty ;
+  rdfs:domain aom:FeedMaterial ; rdfs:range aom:ComponentRetentionState ;
+  rdfs:label "has component-retention state"@en ;
+  rdfs:comment "Links material to positive native-component retention or integrity state independently of measured composition."@en .
 aom:retainsMaterialComponent a owl:ObjectProperty ;
   rdfs:domain aom:ComponentRetentionState ; rdfs:range aom:FeedMaterialComponent ;
   rdfs:label "retains material component"@en .
