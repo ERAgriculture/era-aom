@@ -1,0 +1,52 @@
+{
+  "status": "recommendation-only",
+  "decision_status": "proposed-pending-human-review",
+  "review_issue": "https://github.com/ERAgriculture/era-program/issues/55",
+  "proposed_adr": "docs/decisions/0048-chemical-identity-composition-and-component-model.md",
+  "source_commit": "5a6d0be7eab56a192522fc4c2b2556a2be2bbbba",
+  "review_author": "Codex",
+  "review_date": "2026-08-19",
+  "reviewed_concepts": 164,
+  "axis_concept_counts": {
+    "chemical-identity": 18,
+    "composition": 105,
+    "material-component": 41
+  },
+  "review_status_counts": {
+    "held": 19,
+    "proposed": 145
+  },
+  "anatomical_children_reviewed": 31,
+  "exact_label_authority_candidates": 16,
+  "identity_overlap_cases": 9,
+  "affected_material_assertions": 627,
+  "affected_assertion_property_counts": {
+    "aom:compositionState": 8,
+    "aom:ingredientPart": 509,
+    "aom:materialComponent": 87,
+    "aom:primaryConstituent": 23
+  },
+  "affected_materials": 604,
+  "proposed_navigation_concepts_without_ids": [
+    "Plant anatomical components",
+    "Animal anatomical components"
+  ],
+  "implementation_changes": 0,
+  "allocated_identifiers": 0,
+  "inputs": {
+    "nodes_sha256": "c3de8b8b83414210c7f45caa5de9214031931ee5e19da795acd0ce6743de4fda",
+    "edges_sha256": "6573348aef8b66ba135abed4653e7f2a2d1e37ce7872bf766bfe0c226c7ab64e",
+    "definitions_sha256": "d352158c885bc9d22b0731d7dc8ab57aeda1b95b7fcb8a6f48d28f158aebceee",
+    "semantic_types_sha256": "8a10fe1192c42913941de863593e489df0c19378eeefc345aca34f09ca9bd23b",
+    "facets_sha256": "7b4b947ea8d245100dfb5f3affcf6e2a34dbcf598f5cc0d20a309be69470b22e",
+    "evidence_register_sha256": "642fc9adc3ecedd5cf95096418701aa245c28a56e53c12fed1f999a3838c0088",
+    "authority_comparison_sha256": "b0871962d04d254b94f0c97812d495f36bf6fd016fe066f9fef67972283971f7"
+  },
+  "outputs": {
+    "review_sha256": "1dc36db36c5c8a80c2acbadc52602ec5a3029052c3c8fce8e1fa56bc7db6512f",
+    "inventory_sha256": "9ff076190663ee4de825364dd50c47bcd9a4082439900b151aa2f2a5f5257ec0",
+    "usage_sha256": "93e13e3f43ed8b094af3868d9639b4bc96f80cbf4a40993a9d2c86f2ad0fd3ae",
+    "anatomy_sha256": "1e73bd77ebe98453b26ee9fdbc044ec1c169dc7e9ab35d9ed4478898d179e561",
+    "identity_overlap_sha256": "12d84f1b9c0e2c01ecd80a8f419763a3d180ed0e196689ff4204da92f9c58194"
+  }
+}
