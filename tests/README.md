@@ -43,6 +43,10 @@ round-trip tests will be added with normalized pilot data.
   dispositions, four direct Feed-material navigation branches, nested source
   navigation, temporary-unclassified governance, classification holds,
   chemical-constituent corrections, collision audit, and rejected-ID absence.
+- `validate_composition_form_review.py`: checks complete 40-concept Cohort E
+  coverage, 796 affected assertions, physical-axis boundaries, component-
+  retention migrations, constituent decisions, material cases, evidence links,
+  label collisions, and recommendation-only status.
 - `validate_global_identity_audit.py`: covers every duplicate preferred-label
   group, prevents collision regression, and freezes generated ID allocation
   while canonical-reuse/deprecation review remains open.
