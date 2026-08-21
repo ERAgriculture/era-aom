@@ -21,7 +21,7 @@ APPROVED_RULE_IDS = {
     "COMPONENT-BLOOD", "COMPONENT-BRAN", "COMPONENT-COB", "COMPONENT-GRAIN",
     "COMPONENT-HUSK", "COMPONENT-KERNEL", "COMPONENT-LEAF", "COMPONENT-PEEL",
     "COMPONENT-POD", "COMPONENT-ROOT", "COMPONENT-SEED", "COMPONENT-SHELL",
-    "COMPONENT-STEM", "COMPONENT-STOVER", "COMPONENT-STRAW", "COMPONENT-TUBER",
+    "COMPONENT-STEM", "COMPONENT-TUBER",
     "COMPONENT-VINE", "FORM-BLOCK", "FORM-PELLET", "FORM-POWDER",
 }
 APPROVAL_OVERRIDES = {
@@ -60,7 +60,7 @@ approved = [
     row for row in assessment
     if row["rule_id"] in APPROVED_RULE_IDS
 ]
-assert len(approved) == len(APPROVED_RULE_IDS) == 39
+assert len(approved) == len(APPROVED_RULE_IDS) == 37
 assert {row["rule_id"] for row in approved} == APPROVED_RULE_IDS
 approved_rows = []
 for row in approved:
@@ -141,7 +141,7 @@ write(
 )
 (DATA / "ingredient_rule_promotion_manifest.json").write_text(
     json.dumps({
-        "rule_version": "1.0.0", "status": "approved-and-promoted",
+        "rule_version": "1.1.0", "status": "approved-and-promoted",
         "reviewer": REVIEWER, "review_date": DATE,
         "approved_rules": len(approved_rows),
         "generated_assertions": len(assertions),

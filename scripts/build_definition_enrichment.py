@@ -117,6 +117,7 @@ property_label = {
     "aom:materialIntegrity": "material integrity",
     "aom:materialComponent": "material component",
     "aom:compositionState": "composition state",
+    "aom:componentRetentionState": "component-retention state",
     "aom:primaryConstituent": "primary chemical constituent",
     "aom:ingredientConstituent": "legacy ingredient constituent",
 }

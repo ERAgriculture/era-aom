@@ -39,10 +39,10 @@ assert by_id["AOM_006072"]["component_or_form_terms"] == "whole"
 signals = {(row["scope"], row["quality_signal"]): int(row["count"]) for row in summary}
 assert signals[("all AOM", "source rows")] == 2503
 assert signals[("legacy source", "missing source definitions")] == 1865
-assert signals[("active governed vocabulary", "missing definitions")] == 12
+assert signals[("active governed vocabulary", "missing definitions")] == 15
 assert signals[("all AOM", "normalized preferred-label collisions")] == len(preferred_collisions)
 assert signals[("all AOM", "unresolved preferred-label collisions")] == 0
-assert signals[("cereal feed materials", "missing definitions")] == 5
+assert signals[("cereal feed materials", "missing definitions")] == 6
 release = json.loads((ROOT / "config/releases/2026.1-rc.1.json").read_text())
 baseline = release["content_baseline"]
 assert baseline["era_workbook_snapshot_modified"] == "2026-07-09T11:29:11+03:00"

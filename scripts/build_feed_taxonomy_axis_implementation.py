@@ -101,9 +101,15 @@ for row in read(DATA / "labels.csv"):
     all_labels.setdefault(row["label"].casefold(), set()).add(row["concept_id"])
 for row in read(DATA / "approved_new_concepts.csv"):
     all_labels.setdefault(row["preferred_label"].casefold(), set()).add(row["concept_id"])
+accepted_later_supersession_aliases = {
+    "AOM_101103": {"AOM_001616"},
+    "AOM_101144": {"AOM_101143"},
+}
 for _, concept_id, label, _, _ in new_specs:
     collisions = all_labels.get(label.casefold(), set()) - {concept_id}
-    assert not collisions, (concept_id, label, collisions)
+    assert not collisions or collisions == accepted_later_supersession_aliases.get(concept_id), (
+        concept_id, label, collisions,
+    )
 
 new_path = DATA / "approved_new_concepts.csv"
 new_rows = [
@@ -141,7 +147,9 @@ generated_updates = {
 }
 for concept_id, (label, _, _) in generated_updates.items():
     collisions = all_labels.get(label.casefold(), set()) - {concept_id}
-    assert not collisions, (concept_id, label, collisions)
+    assert not collisions or collisions == accepted_later_supersession_aliases.get(concept_id), (
+        concept_id, label, collisions,
+    )
 for concept_id, (label, scope, parent) in generated_updates.items():
     row = new_by_id[concept_id]
     row.update({

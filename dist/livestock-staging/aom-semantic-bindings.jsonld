@@ -1480,6 +1480,27 @@
       ]
     },
     {
+      "@id": "urn:era-aom:livestock:AOM_001578",
+      "@type": [
+        "skos:Concept",
+        "aom:ChemicalConstituent"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101180",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterialPartCategory"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101181",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterialPartCategory"
+      ]
+    },
+    {
       "@id": "urn:era-aom:livestock:AOM_101019",
       "@type": [
         "skos:Concept",
@@ -2054,28 +2075,7 @@
       ]
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101103",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101104",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101105",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
       "@type": [
         "skos:Concept",
         "aom:FeedMaterialComponent"
@@ -2156,13 +2156,6 @@
       "@type": [
         "skos:Concept",
         "aom:FeedBulkConsistency"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101120",
-      "@type": [
-        "skos:Concept",
-        "aom:ChemicalConstituent"
       ]
     },
     {
@@ -2257,13 +2250,6 @@
       ]
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101144",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101145",
       "@type": [
         "skos:Concept",
@@ -2313,7 +2299,14 @@
       ]
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101154",
+      "@id": "urn:era-aom:livestock:AOM_001571",
+      "@type": [
+        "skos:Concept",
+        "aom:ChemicalConstituent"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_001616",
       "@type": [
         "skos:Concept",
         "aom:FeedMaterialComponent"
@@ -9902,6 +9895,204 @@
       "aom:valueBindingStatus": "approved"
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FOODON_03420288",
+      "skos:prefLabel": {
+        "@value": "seed bran",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "seed bran",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0004518",
+      "skos:prefLabel": {
+        "@value": "bark",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "bark",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0004542",
+      "skos:prefLabel": {
+        "@value": "rhizome",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "rhizome",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0009001",
+      "skos:prefLabel": {
+        "@value": "fruit",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "fruit",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0009005",
+      "skos:prefLabel": {
+        "@value": "root",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "root",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0009009",
+      "skos:prefLabel": {
+        "@value": "plant embryo",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "plant embryo",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0009010",
+      "skos:prefLabel": {
+        "@value": "seed",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "seed",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0009046",
+      "skos:prefLabel": {
+        "@value": "flower",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "flower",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0009047",
+      "skos:prefLabel": {
+        "@value": "stem",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "stem",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0009089",
+      "skos:prefLabel": {
+        "@value": "endosperm",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "endosperm",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0025034",
+      "skos:prefLabel": {
+        "@value": "leaf",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "leaf",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0025066",
+      "skos:prefLabel": {
+        "@value": "stalk",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "stalk",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0025248",
+      "skos:prefLabel": {
+        "@value": "pseudostem",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "pseudostem",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0025354",
+      "skos:prefLabel": {
+        "@value": "cladode",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "cladode",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0025355",
+      "skos:prefLabel": {
+        "@value": "corm",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "corm",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0025356",
+      "skos:prefLabel": {
+        "@value": "bulb",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "bulb",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/PO_0025522",
+      "skos:prefLabel": {
+        "@value": "tuber",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "tuber",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/UBERON_0002107",
+      "skos:prefLabel": {
+        "@value": "liver",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "liver",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "https://feedipedia.org/node/653",
       "skos:prefLabel": {
         "@value": "Jobo (Spondias mombin)",
@@ -9909,6 +10100,28 @@
       },
       "rdfs:label": {
         "@value": "Jobo (Spondias mombin)",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A24431",
+      "skos:prefLabel": {
+        "@value": "chemical entity",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "chemical entity",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A59999",
+      "skos:prefLabel": {
+        "@value": "chemical substance",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "chemical substance",
         "@language": "en"
       }
     },
@@ -11916,7 +12129,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:compositionState": {
+      "aom:componentRetentionState": {
         "@id": "urn:era-aom:livestock:AOM_101086"
       }
     },
@@ -11950,7 +12163,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:compositionState": {
+      "aom:componentRetentionState": {
         "@id": "urn:era-aom:livestock:AOM_101110"
       }
     },
@@ -11967,7 +12180,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:compositionState": {
+      "aom:componentRetentionState": {
         "@id": "urn:era-aom:livestock:AOM_101110"
       }
     },
@@ -11984,7 +12197,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:compositionState": {
+      "aom:componentRetentionState": {
         "@id": "urn:era-aom:livestock:AOM_101110"
       }
     },
@@ -12001,7 +12214,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:compositionState": {
+      "aom:componentRetentionState": {
         "@id": "urn:era-aom:livestock:AOM_101110"
       }
     },
@@ -12992,23 +13205,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_000572",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101033",
       "@type": [
         "skos:Concept",
@@ -13077,23 +13273,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_000579",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101104",
       "@type": [
         "skos:Concept",
@@ -13108,57 +13287,6 @@
       ],
       "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_000581",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_000582",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_000584",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -14947,23 +15075,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001179",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101031",
       "@type": [
         "skos:Concept",
@@ -15185,23 +15296,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001197",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000835",
       "@type": [
         "skos:Concept",
@@ -15284,23 +15378,6 @@
       ],
       "aom:ingredientPart": {
         "@id": "urn:era-aom:livestock:AOM_101033"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101105",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001219",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101105"
       }
     },
     {
@@ -15403,23 +15480,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000843"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001241",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -15559,23 +15619,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001262",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -15709,23 +15752,6 @@
       ],
       "aom:ingredientPart": {
         "@id": "urn:era-aom:livestock:AOM_101033"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001271",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -15865,23 +15891,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001285",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101033",
       "@type": [
         "skos:Concept",
@@ -15913,23 +15922,6 @@
       ],
       "aom:materialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101104"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001291",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -16712,23 +16704,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000843"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001408",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -17718,23 +17693,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001617",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -17902,23 +17860,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000836"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001624",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -19214,23 +19155,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001682",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000836",
       "@type": [
         "skos:Concept",
@@ -19245,23 +19169,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000836"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001684",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -19333,23 +19240,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001686",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -19367,23 +19257,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001687",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_100848",
       "@type": [
         "skos:Concept",
@@ -19398,23 +19271,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_100848"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001688",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -20863,23 +20719,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001750",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000836",
       "@type": [
         "skos:Concept",
@@ -20894,23 +20733,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000836"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001751",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -21985,23 +21807,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001835",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101043",
       "@type": [
         "skos:Concept",
@@ -22376,23 +22181,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001885",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000831",
       "@type": [
         "skos:Concept",
@@ -22424,23 +22212,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_100848"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001887",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -22492,23 +22263,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000836"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_001890",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -26830,23 +26584,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_002084",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -27252,23 +26989,6 @@
       ],
       "aom:ingredientPart": {
         "@id": "urn:era-aom:livestock:AOM_101074"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_002117",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -28394,23 +28114,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_003102",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101033",
       "@type": [
         "skos:Concept",
@@ -28663,23 +28366,6 @@
       ],
       "aom:ingredientPart": {
         "@id": "urn:era-aom:livestock:AOM_101033"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_003692",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -29431,57 +29117,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_004005",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101105",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006001",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101105"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101105",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006002",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101105"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_100848",
       "@type": [
         "skos:Concept",
@@ -30213,23 +29848,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006035",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000830",
       "@type": [
         "skos:Concept",
@@ -30349,23 +29967,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006040",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -30431,23 +30032,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000835"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006042",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -31502,23 +31086,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000843"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101105",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006076",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101105"
       }
     },
     {
@@ -32797,23 +32364,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006133",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000831",
       "@type": [
         "skos:Concept",
@@ -33117,23 +32667,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000844"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006142",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -33664,23 +33197,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006165",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000831",
       "@type": [
         "skos:Concept",
@@ -33987,23 +33503,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006175",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000831",
       "@type": [
         "skos:Concept",
@@ -34154,23 +33653,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000836"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006181",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -34463,23 +33945,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006190",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000836",
       "@type": [
         "skos:Concept",
@@ -34497,23 +33962,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006191",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -34528,23 +33976,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000843"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006192",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -34766,23 +34197,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000835"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006206",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -36061,23 +35475,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006244",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000836",
       "@type": [
         "skos:Concept",
@@ -36316,23 +35713,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006259",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000831",
       "@type": [
         "skos:Concept",
@@ -36381,23 +35761,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_100848"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006260",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -37336,23 +36699,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006301",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000831",
       "@type": [
         "skos:Concept",
@@ -37387,23 +36733,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006302",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_100848",
       "@type": [
         "skos:Concept",
@@ -37418,23 +36747,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_100848"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006303",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -37469,23 +36781,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_100848"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006304",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -37761,23 +37056,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006313",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000835",
       "@type": [
         "skos:Concept",
@@ -37792,23 +37070,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000835"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006314",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -37931,23 +37192,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006319",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -37996,23 +37240,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000836"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006321",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -38135,23 +37362,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006328",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -38220,23 +37430,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006336",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -38268,23 +37461,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000836"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006337",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -38404,23 +37580,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000843"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006345",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -38917,23 +38076,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006374",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000831",
       "@type": [
         "skos:Concept",
@@ -39104,23 +38246,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006396",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_000843",
       "@type": [
         "skos:Concept",
@@ -39169,23 +38294,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_100848"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006397",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -39526,23 +38634,6 @@
       ],
       "aom:processingMethod": {
         "@id": "urn:era-aom:livestock:AOM_000843"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101106",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterialComponent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_006413",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:materialComponent": {
-        "@id": "urn:era-aom:livestock:AOM_101106"
       }
     },
     {
@@ -41926,7 +41017,7 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101120",
+      "@id": "urn:era-aom:livestock:AOM_001571",
       "@type": [
         "skos:Concept",
         "aom:ChemicalConstituent"
@@ -41939,7 +41030,7 @@
         "aom:FeedMaterial"
       ],
       "aom:primaryConstituent": {
-        "@id": "urn:era-aom:livestock:AOM_101120"
+        "@id": "urn:era-aom:livestock:AOM_001571"
       }
     },
     {

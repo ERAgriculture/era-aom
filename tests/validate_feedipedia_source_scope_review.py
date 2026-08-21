@@ -38,7 +38,11 @@ facet_composed = {
     row["concept_id"] for row in definitions
     if row["definition_method"] == "composed_from_approved_semantic_facets"
 }
+accepted_later_replacements = {
+    row["concept_id"] for row in definitions
+    if row["definition_method"] == "component_chemical_identity_definition_replacement"
+} & approved
 assert generated <= approved
-assert generated | (facet_composed & approved) == approved
+assert generated | (facet_composed & approved) | accepted_later_replacements == approved
 assert not any("ilri" in value.casefold() for row in rows for value in row.values())
 print("Feedipedia source-scope validation passed: 101 approved; 92 held")

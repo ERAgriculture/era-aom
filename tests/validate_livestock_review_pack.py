@@ -17,6 +17,10 @@ collisions = read(REVIEW / "01_identity_collisions.csv")
 parents = read(REVIEW / "02_missing_parent_candidates.csv")
 decisions = read(REVIEW / "03_review_decisions.csv")
 gaps = read(DATA / "hierarchy_gaps.csv")
+concept_status = {
+    row["concept_id"]: row["status"] for row in read(DATA / "concepts.csv")
+}
+active_gaps = [row for row in gaps if concept_status[row["child_id"]] != "deprecated"]
 relations = read(DATA / "relations.csv")
 summary = json.loads((REVIEW / "summary.json").read_text())
 remodeling = read(REVIEW / "schema_remodeling_candidates.csv")
@@ -46,7 +50,7 @@ assert len(parents) == summary["missing_parent_candidates"]
 assert sum(
     int(row["affected_child_count"])
     for row in parents if row["priority"] != "resolved"
-) == len(gaps)
+) == len(active_gaps)
 assert len({row["case_id"] for row in parents}) == len(parents)
 assert len(decisions) == len(parents) + 2
 assert len({row["case_id"] for row in decisions}) == len(decisions)
@@ -208,7 +212,7 @@ assert summary["safety"] == {
     "identifiers_minted": 170,
     "hierarchy_changes_applied": 667,
 }
-assert gaps == []
+assert active_gaps == []
 assert "AOM_000230" not in {row["child_id"] for row in gaps}
 assert "AOM_000230" in {row["subject_id"] for row in relations}
 print("Livestock review-pack validation passed:", len(parents), "parent candidates")

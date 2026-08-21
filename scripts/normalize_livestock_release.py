@@ -146,9 +146,17 @@ def main():
     if not {key[0] for key in replacement_by_key} <= source_rows:
         raise ValueError("Approved mapping replacement references unknown source row")
     source_ids = {row["AOM"] for row in records}
-    if not set(deprecation_by_id) <= source_ids:
+    registered_ids = {row["concept_id"] for row in id_registry}
+    new_ids = {row["concept_id"] for row in new_concepts}
+    new_by_id = {row["concept_id"]: row for row in new_concepts}
+    if len(new_ids) != len(new_concepts) or not new_ids <= registered_ids:
+        raise ValueError("Every new concept must have one registered unique identifier")
+    if new_ids & source_ids:
+        raise ValueError("New concept identifier collides with legacy source")
+    governed_ids = source_ids | new_ids
+    if not set(deprecation_by_id) <= governed_ids:
         raise ValueError("Approved deprecation references unknown deprecated concept ID")
-    if len(retirement_by_id) != len(retirements) or not set(retirement_by_id) <= source_ids:
+    if len(retirement_by_id) != len(retirements) or not set(retirement_by_id) <= governed_ids:
         raise ValueError("Approved retirement references unknown or duplicate source concept ID")
     if any(row["status"] != "approved" or not row["history_note"].strip() for row in retirements):
         raise ValueError("Concept retirement must be approved and include a history note")
@@ -158,14 +166,8 @@ def main():
         raise ValueError("Approved label corrections must have unique concept IDs")
     if not set(label_correction_by_id) <= source_ids:
         raise ValueError("Approved label correction references unknown concept ID")
-    registered_ids = {row["concept_id"] for row in id_registry}
-    new_ids = {row["concept_id"] for row in new_concepts}
-    if len(new_ids) != len(new_concepts) or not new_ids <= registered_ids:
-        raise ValueError("Every new concept must have one registered unique identifier")
-    if not set(retained_by_id) <= source_ids | new_ids:
+    if not set(retained_by_id) <= governed_ids:
         raise ValueError("Approved deprecation replacement references unknown concept ID")
-    if new_ids & source_ids:
-        raise ValueError("New concept identifier collides with legacy source")
 
     resolved_to_existing = {
         source_row for source_row, resolution in resolution_by_row.items()
@@ -363,7 +365,12 @@ def main():
         concepts.append({
             "concept_id": concept_id, "scheme_id": SCHEME_ID,
             "module": "aom-livestock", "concept_type": "aom_concept",
-            "notation": concept_id, "status": "staging",
+            "notation": concept_id,
+            "status": (
+                "deprecated"
+                if concept_id in deprecation_by_id or concept_id in retirement_by_id
+                else "staging"
+            ),
             "hierarchy_level": new_concept["hierarchy_level"],
             "derived_path": new_concept["derived_path"], "source_row": "",
         })
@@ -411,6 +418,8 @@ def main():
         })
     for new_concept in new_concepts:
         concept_id = new_concept["concept_id"]
+        if concept_id in deprecation_by_id or concept_id in retirement_by_id:
+            continue
         parent_id = new_concept["broader_id"]
         if parent_id not in concept_ids:
             raise ValueError(f"New concept parent is unknown: {parent_id}")
@@ -418,14 +427,15 @@ def main():
             "subject_id": concept_id, "relation_type": "broader",
             "object_id": parent_id, "status": "reviewed",
         })
-        child_ids = set(filter(None, new_concept["child_ids"].split(";")))
+        governed_child_ids = set(filter(None, new_concept["child_ids"].split(";")))
+        gaps = [
+            gap for gap in gaps
+            if gap["child_id"] not in governed_child_ids
+        ]
+        child_ids = governed_child_ids - set(deprecation_by_id) - set(retirement_by_id)
         unknown_children = child_ids - concept_ids
         if unknown_children:
             raise ValueError(f"New concept has unknown children: {sorted(unknown_children)}")
-        gaps = [
-            gap for gap in gaps
-            if gap["child_id"] not in child_ids
-        ]
         for child_id in sorted(child_ids):
             relations.append({
                 "subject_id": child_id, "relation_type": "broader",
@@ -463,8 +473,14 @@ def main():
     existing_definition_ids -= replacement_definition_ids
     if len(enrichment_ids) != len(definition_enrichments):
         raise ValueError("Approved definition enrichments must have unique concept IDs")
-    if not enrichment_ids <= concept_ids or enrichment_ids & existing_definition_ids:
-        raise ValueError("Approved definition enrichment references unknown or already-defined concept")
+    unknown_definition_ids = enrichment_ids - concept_ids
+    conflicting_definition_ids = enrichment_ids & existing_definition_ids
+    if unknown_definition_ids or conflicting_definition_ids:
+        raise ValueError(
+            "Approved definition enrichment references unknown or already-defined concept: "
+            f"unknown={sorted(unknown_definition_ids)}; "
+            f"conflicting={sorted(conflicting_definition_ids)}"
+        )
     for enrichment in definition_enrichments:
         if enrichment["status"] != "approved" or not enrichment["definition"].strip():
             raise ValueError("Definition enrichment must be approved and non-empty")
@@ -520,9 +536,13 @@ def main():
         relation_keys.add(add_key)
 
     retired_ids = set(retirement_by_id)
+    inactive_new_ids = retired_ids | (set(deprecation_by_id) & new_ids)
     relations = [
         row for row in relations
-        if not (row["relation_type"] == "broader" and row["subject_id"] in retired_ids)
+        if not (
+            row["relation_type"] == "broader"
+            and row["subject_id"] in inactive_new_ids
+        )
     ]
     gaps = [row for row in gaps if row["child_id"] not in retired_ids]
     for retirement in retirements:
@@ -535,8 +555,11 @@ def main():
     for deprecation in deprecations:
         deprecated_id = deprecation["deprecated_id"]
         replacement_id = deprecation["replacement_id"]
-        source = next(row for row in records if row["AOM"] == deprecated_id)
-        aliases = [source["_label"], *map(clean, source["Synonym"].split(";"))]
+        if deprecated_id in source_ids:
+            source = next(row for row in records if row["AOM"] == deprecated_id)
+            aliases = [source["_label"], *map(clean, source["Synonym"].split(";"))]
+        else:
+            aliases = [new_by_id[deprecated_id]["preferred_label"]]
         for alias in aliases:
             key = (replacement_id, "en", alias.casefold())
             if alias and key not in label_keys:

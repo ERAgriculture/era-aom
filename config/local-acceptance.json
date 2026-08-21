@@ -1,7 +1,7 @@
 {
-  "expected_concepts": 2811,
-  "expected_hierarchy_relations": 2834,
-  "minimum_graph_triples": 30215,
+  "expected_concepts": 2813,
+  "expected_hierarchy_relations": 2829,
+  "minimum_graph_triples": 30253,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
   "representative_label": "Whole-grain maize",
@@ -52,12 +52,15 @@
     {"concept_id": "AOM_000532", "label": "Ingredient part", "history_contains": "compatibility provenance"},
     {"concept_id": "AOM_000533", "label": "Ingredient species", "history_contains": "biological-source"},
     {"concept_id": "AOM_000534", "label": "Ingredient proportion", "history_contains": "DimensionlessRatio"},
-    {"concept_id": "AOM_000535", "label": "Ingredient source", "history_contains": "acquisition source"}
+    {"concept_id": "AOM_000535", "label": "Ingredient source", "history_contains": "acquisition source"},
+    {"concept_id": "AOM_101105", "label": "Stover", "history_contains": "material-component value without replacement"},
+    {"concept_id": "AOM_101106", "label": "Straw", "history_contains": "material-component value without replacement"},
+    {"concept_id": "AOM_101154", "label": "Composite crop-residue components", "history_contains": "erroneous component wrapper"}
   ],
   "expected_top_concepts": ["AOM_000001", "AOM_000106", "AOM_000358", "AOM_000846"],
   "maximum_response_seconds": 5.0,
   "representative_checks": [
-    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "Whole-grain composition"},
+    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "component-retention state", "properties": [{"predicate": "componentRetentionState", "target_id": "AOM_101110", "property_label": "Has component-retention state", "value_label": "Whole-grain composition"}]},
     {"concept_id": "AOM_100850", "label": "Feed materials", "definition_contains": "formulated feeds"},
     {"concept_id": "AOM_001491", "label": "Formulated feeds", "definition_contains": "component feed materials"},
     {"concept_id": "AOM_001326", "label": "Whole-crop maize silage", "definition_contains": "Ensiling"},
@@ -66,7 +69,7 @@
     {"concept_id": "AOM_001679", "label": "Maize Grain Ground", "definition_contains": "Comminuted particle form"},
     {"concept_id": "AOM_001096", "label": "Chicken Ground", "definition_contains": "Comminuted particle form"},
     {"concept_id": "AOM_001938", "label": "Chicken Offal Dried Ground", "definition_contains": "Meal form"},
-    {"concept_id": "AOM_001616", "label": "Blood", "definition_contains": "By-product role"},
+    {"concept_id": "AOM_001616", "label": "Blood", "definition_contains": "stable body-substance identity"},
     {"concept_id": "AOM_000748", "label": "Asperozym (Fibrolytic Enzymes)", "definition_contains": "unspecified"},
     {"concept_id": "AOM_000693", "label": "Grass Local", "definition_contains": "unspecified"},
     {"concept_id": "AOM_000638", "label": "Cassava Shaft", "definition_contains": "By-product role"},
@@ -78,7 +81,7 @@
     {"concept_id": "AOM_101061", "label": "Waste role", "definition_contains": "distinct from by-product"},
     {"concept_id": "AOM_101060", "label": "Milling by-product role", "definition_contains": "secondary milling output"},
     {"concept_id": "AOM_101104", "label": "Bran", "definition_contains": "milling fraction"},
-    {"concept_id": "AOM_101110", "label": "Whole-grain composition", "definition_contains": "bran, germ, and endosperm"},
+    {"concept_id": "AOM_101110", "label": "Whole-grain composition", "definition_contains": "bran, plant embryo, and endosperm"},
     {"concept_id": "AOM_101130", "label": "Feed component separation processes", "definition_contains": "remove, separate"},
     {"concept_id": "AOM_000559", "label": "Feeds of animal origin", "definition_contains": "animal origin"},
     {"concept_id": "AOM_000735", "label": "Forage materials", "definition_contains": "may overlap"},
@@ -93,6 +96,14 @@
     {"concept_id": "AOM_101168", "label": "Feed-process benefits", "definition_contains": "contextual benefits"},
     {"concept_id": "AOM_101169", "label": "Digestibility improvement", "definition_contains": "improve digestibility"},
     {"concept_id": "AOM_101084", "label": "Sugar processing", "definition_contains": "Upstream production workflow"},
-    {"concept_id": "AOM_101069", "label": "Fat removal", "definition_contains": "removing or reducing a fat fraction"}
+    {"concept_id": "AOM_101069", "label": "Fat removal", "definition_contains": "removing or reducing a fat fraction"},
+    {"concept_id": "AOM_101146", "label": "Feed-related chemical entities", "definition_contains": "independently of measured composition"},
+    {"concept_id": "AOM_000196", "label": "Feed composition characteristics", "definition_contains": "Measurable or observable characteristics"},
+    {"concept_id": "AOM_101180", "label": "Plant anatomical components", "definition_contains": "source-aware anatomical review"},
+    {"concept_id": "AOM_101181", "label": "Animal anatomical components", "definition_contains": "body substances"},
+    {"concept_id": "AOM_101029", "label": "Plant embryo", "definition_contains": "commercial germ fractions"},
+    {"concept_id": "AOM_101103", "label": "Blood component", "status": "deprecated", "replaced_by": "AOM_001616"},
+    {"concept_id": "AOM_101120", "label": "Protein constituent", "status": "deprecated", "replaced_by": "AOM_001571"},
+    {"concept_id": "AOM_101144", "label": "Cereal milling fractions", "status": "deprecated", "replaced_by": "AOM_101143"}
   ]
 }

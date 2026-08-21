@@ -426,6 +426,12 @@
 
 <urn:era-aom:livestock:AOM_101179> a skos:Concept, aom:FeedBenefit .
 
+<urn:era-aom:livestock:AOM_001578> a skos:Concept, aom:ChemicalConstituent .
+
+<urn:era-aom:livestock:AOM_101180> a skos:Concept, aom:FeedMaterialPartCategory .
+
+<urn:era-aom:livestock:AOM_101181> a skos:Concept, aom:FeedMaterialPartCategory .
+
 <urn:era-aom:livestock:AOM_101019> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_101020> a skos:Concept, aom:FeedPresentationForm .
@@ -590,13 +596,7 @@
 
 <urn:era-aom:livestock:AOM_000844> a skos:Concept, aom:ProcessingMethod .
 
-<urn:era-aom:livestock:AOM_101103> a skos:Concept, aom:FeedMaterialComponent .
-
 <urn:era-aom:livestock:AOM_101104> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_101105> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
 
 <urn:era-aom:livestock:AOM_101107> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -619,8 +619,6 @@
 <urn:era-aom:livestock:AOM_101117> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_101118> a skos:Concept, aom:FeedBulkConsistency .
-
-<urn:era-aom:livestock:AOM_101120> a skos:Concept, aom:ChemicalConstituent .
 
 <urn:era-aom:livestock:AOM_101121> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -648,8 +646,6 @@
 
 <urn:era-aom:livestock:AOM_101143> a skos:Concept, aom:FeedMaterialComponent .
 
-<urn:era-aom:livestock:AOM_101144> a skos:Concept, aom:FeedMaterialComponent .
-
 <urn:era-aom:livestock:AOM_101145> a skos:Concept, aom:FeedMaterialComponent .
 
 <urn:era-aom:livestock:AOM_101148> a skos:Concept, aom:ProductRole .
@@ -664,7 +660,9 @@
 
 <urn:era-aom:livestock:AOM_101153> a skos:Concept, aom:FeedMaterialPartCategory .
 
-<urn:era-aom:livestock:AOM_101154> a skos:Concept, aom:FeedMaterialComponent .
+<urn:era-aom:livestock:AOM_001571> a skos:Concept, aom:ChemicalConstituent .
+
+<urn:era-aom:livestock:AOM_001616> a skos:Concept, aom:FeedMaterialComponent .
 
 <urn:era-aom:binding:AOM_000531> a aom:SemanticBinding ;
   aom:legacyConcept <urn:era-aom:livestock:AOM_000531> ;
@@ -4309,8 +4307,68 @@
   aom:targetValueClass <urn:era-aom:schema:CompositionState> ;
   aom:valueBindingStatus "approved" .
 
+<http://purl.obolibrary.org/obo/FOODON_03420288> skos:prefLabel "seed bran"@en ;
+  rdfs:label "seed bran"@en .
+
+<http://purl.obolibrary.org/obo/PO_0004518> skos:prefLabel "bark"@en ;
+  rdfs:label "bark"@en .
+
+<http://purl.obolibrary.org/obo/PO_0004542> skos:prefLabel "rhizome"@en ;
+  rdfs:label "rhizome"@en .
+
+<http://purl.obolibrary.org/obo/PO_0009001> skos:prefLabel "fruit"@en ;
+  rdfs:label "fruit"@en .
+
+<http://purl.obolibrary.org/obo/PO_0009005> skos:prefLabel "root"@en ;
+  rdfs:label "root"@en .
+
+<http://purl.obolibrary.org/obo/PO_0009009> skos:prefLabel "plant embryo"@en ;
+  rdfs:label "plant embryo"@en .
+
+<http://purl.obolibrary.org/obo/PO_0009010> skos:prefLabel "seed"@en ;
+  rdfs:label "seed"@en .
+
+<http://purl.obolibrary.org/obo/PO_0009046> skos:prefLabel "flower"@en ;
+  rdfs:label "flower"@en .
+
+<http://purl.obolibrary.org/obo/PO_0009047> skos:prefLabel "stem"@en ;
+  rdfs:label "stem"@en .
+
+<http://purl.obolibrary.org/obo/PO_0009089> skos:prefLabel "endosperm"@en ;
+  rdfs:label "endosperm"@en .
+
+<http://purl.obolibrary.org/obo/PO_0025034> skos:prefLabel "leaf"@en ;
+  rdfs:label "leaf"@en .
+
+<http://purl.obolibrary.org/obo/PO_0025066> skos:prefLabel "stalk"@en ;
+  rdfs:label "stalk"@en .
+
+<http://purl.obolibrary.org/obo/PO_0025248> skos:prefLabel "pseudostem"@en ;
+  rdfs:label "pseudostem"@en .
+
+<http://purl.obolibrary.org/obo/PO_0025354> skos:prefLabel "cladode"@en ;
+  rdfs:label "cladode"@en .
+
+<http://purl.obolibrary.org/obo/PO_0025355> skos:prefLabel "corm"@en ;
+  rdfs:label "corm"@en .
+
+<http://purl.obolibrary.org/obo/PO_0025356> skos:prefLabel "bulb"@en ;
+  rdfs:label "bulb"@en .
+
+<http://purl.obolibrary.org/obo/PO_0025522> skos:prefLabel "tuber"@en ;
+  rdfs:label "tuber"@en .
+
+<http://purl.obolibrary.org/obo/UBERON_0002107> skos:prefLabel "liver"@en ;
+  rdfs:label "liver"@en .
+
 <https://feedipedia.org/node/653> skos:prefLabel "Jobo (Spondias mombin)"@en ;
   rdfs:label "Jobo (Spondias mombin)"@en .
+
+<https://www.ebi.ac.uk/chebi/CHEBI%3A24431> skos:prefLabel "chemical entity"@en ;
+  rdfs:label "chemical entity"@en .
+
+<https://www.ebi.ac.uk/chebi/CHEBI%3A59999> skos:prefLabel "chemical substance"@en ;
+  rdfs:label "chemical substance"@en .
 
 <https://www.feedipedia.org/content/feeds?category=13587> skos:prefLabel "List of feeds"@en ;
   rdfs:label "List of feeds"@en .
@@ -4858,7 +4916,7 @@
 <urn:era-aom:livestock:AOM_101086> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_001326> a skos:Concept, aom:FeedMaterial ;
-  aom:compositionState <urn:era-aom:livestock:AOM_101086> .
+  aom:componentRetentionState <urn:era-aom:livestock:AOM_101086> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
@@ -4868,22 +4926,22 @@
 <urn:era-aom:livestock:AOM_101110> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_000656> a skos:Concept, aom:FeedMaterial ;
-  aom:compositionState <urn:era-aom:livestock:AOM_101110> .
+  aom:componentRetentionState <urn:era-aom:livestock:AOM_101110> .
 
 <urn:era-aom:livestock:AOM_101110> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_000660> a skos:Concept, aom:FeedMaterial ;
-  aom:compositionState <urn:era-aom:livestock:AOM_101110> .
+  aom:componentRetentionState <urn:era-aom:livestock:AOM_101110> .
 
 <urn:era-aom:livestock:AOM_101110> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_001313> a skos:Concept, aom:FeedMaterial ;
-  aom:compositionState <urn:era-aom:livestock:AOM_101110> .
+  aom:componentRetentionState <urn:era-aom:livestock:AOM_101110> .
 
 <urn:era-aom:livestock:AOM_101110> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_001324> a skos:Concept, aom:FeedMaterial ;
-  aom:compositionState <urn:era-aom:livestock:AOM_101110> .
+  aom:componentRetentionState <urn:era-aom:livestock:AOM_101110> .
 
 <urn:era-aom:livestock:AOM_101116> a skos:Concept, aom:ComponentRetentionState .
 
@@ -5175,11 +5233,6 @@
 <urn:era-aom:livestock:AOM_000570> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000833> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_000572> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_000574> a skos:Concept, aom:FeedMaterial ;
@@ -5200,30 +5253,10 @@
 <urn:era-aom:livestock:AOM_000576> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101031> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_000579> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_101104> a skos:Concept, aom:FeedMaterialComponent .
 
 <urn:era-aom:livestock:AOM_000580> a skos:Concept, aom:FeedMaterial ;
   aom:materialComponent <urn:era-aom:livestock:AOM_101104> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_000581> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_000582> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_000584> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_101104> a skos:Concept, aom:FeedMaterialComponent .
 
@@ -5750,11 +5783,6 @@
 <urn:era-aom:livestock:AOM_001178> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001179> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_101031> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_001183> a skos:Concept, aom:FeedMaterial ;
@@ -5820,11 +5848,6 @@
 <urn:era-aom:livestock:AOM_001196> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101038> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001197> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000835> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001197> a skos:Concept, aom:FeedMaterial ;
@@ -5849,11 +5872,6 @@
 
 <urn:era-aom:livestock:AOM_001215> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101033> .
-
-<urn:era-aom:livestock:AOM_101105> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001219> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101105> .
 
 <urn:era-aom:livestock:AOM_101035> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -5884,11 +5902,6 @@
 
 <urn:era-aom:livestock:AOM_001238> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001241> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -5930,11 +5943,6 @@
 <urn:era-aom:livestock:AOM_001261> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001262> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001262> a skos:Concept, aom:FeedMaterial ;
@@ -5974,11 +5982,6 @@
 
 <urn:era-aom:livestock:AOM_001270> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101033> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001271> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_101040> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -6020,11 +6023,6 @@
 <urn:era-aom:livestock:AOM_001283> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101034> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001285> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_001286> a skos:Concept, aom:FeedMaterial ;
@@ -6034,11 +6032,6 @@
 
 <urn:era-aom:livestock:AOM_001290> a skos:Concept, aom:FeedMaterial ;
   aom:materialComponent <urn:era-aom:livestock:AOM_101104> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001291> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
 
@@ -6269,11 +6262,6 @@
 
 <urn:era-aom:livestock:AOM_001404> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001408> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
@@ -6565,11 +6553,6 @@
 <urn:era-aom:livestock:AOM_001615> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001617> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001617> a skos:Concept, aom:FeedMaterial ;
@@ -6619,11 +6602,6 @@
 
 <urn:era-aom:livestock:AOM_001623> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001624> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
 
@@ -7005,20 +6983,10 @@
 <urn:era-aom:livestock:AOM_001681> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001682> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001682> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001684> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
@@ -7040,30 +7008,15 @@
 <urn:era-aom:livestock:AOM_001684> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001686> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001686> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001687> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001687> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001688> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
 
@@ -7490,20 +7443,10 @@
 <urn:era-aom:livestock:AOM_001746> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001750> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001750> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001751> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
 
@@ -7820,11 +7763,6 @@
 <urn:era-aom:livestock:AOM_001830> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001835> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_101043> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_001840> a skos:Concept, aom:FeedMaterial ;
@@ -7935,11 +7873,6 @@
 <urn:era-aom:livestock:AOM_001883> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001885> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_001885> a skos:Concept, aom:FeedMaterial ;
@@ -7949,11 +7882,6 @@
 
 <urn:era-aom:livestock:AOM_001885> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001887> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_101032> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -7969,11 +7897,6 @@
 
 <urn:era-aom:livestock:AOM_001888> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_001890> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -9245,11 +9168,6 @@
 <urn:era-aom:livestock:AOM_002083> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_002084> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_002086> a skos:Concept, aom:FeedMaterial ;
@@ -9369,11 +9287,6 @@
 
 <urn:era-aom:livestock:AOM_002116> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101074> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_002117> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -9705,11 +9618,6 @@
 <urn:era-aom:livestock:AOM_003083> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101033> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_003102> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_101033> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_003106> a skos:Concept, aom:FeedMaterial ;
@@ -9784,11 +9692,6 @@
 
 <urn:era-aom:livestock:AOM_003691> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101033> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_003692> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_003202> a skos:Concept, aom:ProcessingMethod .
 
@@ -10010,21 +9913,6 @@
 <urn:era-aom:livestock:AOM_004003> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101074> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_004005> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
-<urn:era-aom:livestock:AOM_101105> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006001> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101105> .
-
-<urn:era-aom:livestock:AOM_101105> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006002> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101105> .
-
 <urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006002> a skos:Concept, aom:FeedMaterial ;
@@ -10240,11 +10128,6 @@
 <urn:era-aom:livestock:AOM_006034> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_003098> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006035> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006035> a skos:Concept, aom:FeedMaterial ;
@@ -10280,11 +10163,6 @@
 <urn:era-aom:livestock:AOM_006039> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006040> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006040> a skos:Concept, aom:FeedMaterial ;
@@ -10304,11 +10182,6 @@
 
 <urn:era-aom:livestock:AOM_006041> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000835> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006042> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -10619,11 +10492,6 @@
 
 <urn:era-aom:livestock:AOM_006075> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
-
-<urn:era-aom:livestock:AOM_101105> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006076> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101105> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
@@ -11000,11 +10868,6 @@
 <urn:era-aom:livestock:AOM_006130> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006133> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006133> a skos:Concept, aom:FeedMaterial ;
@@ -11094,11 +10957,6 @@
 
 <urn:era-aom:livestock:AOM_006141> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000844> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006142> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -11255,11 +11113,6 @@
 <urn:era-aom:livestock:AOM_006164> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000835> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006165> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006165> a skos:Concept, aom:FeedMaterial ;
@@ -11350,11 +11203,6 @@
 <urn:era-aom:livestock:AOM_006174> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006175> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006175> a skos:Concept, aom:FeedMaterial ;
@@ -11399,11 +11247,6 @@
 
 <urn:era-aom:livestock:AOM_006179> a skos:Concept, aom:Feed ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006181> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
@@ -11490,30 +11333,15 @@
 <urn:era-aom:livestock:AOM_006188> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000830> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006190> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006190> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006191> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006191> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006192> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
@@ -11579,11 +11407,6 @@
 
 <urn:era-aom:livestock:AOM_006205> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000835> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006206> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
@@ -11960,11 +11783,6 @@
 <urn:era-aom:livestock:AOM_006242> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006244> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006244> a skos:Concept, aom:FeedMaterial ;
@@ -12035,11 +11853,6 @@
 <urn:era-aom:livestock:AOM_006258> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006259> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006259> a skos:Concept, aom:FeedMaterial ;
@@ -12054,11 +11867,6 @@
 
 <urn:era-aom:livestock:AOM_006259> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006260> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -12335,11 +12143,6 @@
 <urn:era-aom:livestock:AOM_006300> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006301> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006301> a skos:Concept, aom:FeedMaterial ;
@@ -12350,20 +12153,10 @@
 <urn:era-aom:livestock:AOM_006301> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006302> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006302> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006303> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -12374,11 +12167,6 @@
 
 <urn:era-aom:livestock:AOM_006303> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006304> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000830> a skos:Concept, aom:ProcessingMethod .
 
@@ -12460,20 +12248,10 @@
 <urn:era-aom:livestock:AOM_006312> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006313> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000835> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006313> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000835> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006314> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -12510,11 +12288,6 @@
 <urn:era-aom:livestock:AOM_006317> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000835> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006319> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006319> a skos:Concept, aom:FeedMaterial ;
@@ -12529,11 +12302,6 @@
 
 <urn:era-aom:livestock:AOM_006320> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006321> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_100848> a skos:Concept, aom:ProcessingMethod .
 
@@ -12570,11 +12338,6 @@
 <urn:era-aom:livestock:AOM_006327> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006328> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006328> a skos:Concept, aom:FeedMaterial ;
@@ -12595,11 +12358,6 @@
 <urn:era-aom:livestock:AOM_006335> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006336> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006336> a skos:Concept, aom:FeedMaterial ;
@@ -12609,11 +12367,6 @@
 
 <urn:era-aom:livestock:AOM_006336> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000836> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006337> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -12649,11 +12402,6 @@
 
 <urn:era-aom:livestock:AOM_006344> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006345> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
@@ -12800,11 +12548,6 @@
 <urn:era-aom:livestock:AOM_006373> a skos:Concept, aom:FeedMaterial ;
   aom:ingredientPart <urn:era-aom:livestock:AOM_101033> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006374> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006374> a skos:Concept, aom:FeedMaterial ;
@@ -12855,11 +12598,6 @@
 <urn:era-aom:livestock:AOM_006395> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000844> .
 
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006396> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
-
 <urn:era-aom:livestock:AOM_000843> a skos:Concept, aom:ProcessingMethod .
 
 <urn:era-aom:livestock:AOM_006396> a skos:Concept, aom:FeedMaterial ;
@@ -12874,11 +12612,6 @@
 
 <urn:era-aom:livestock:AOM_006396> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_100848> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006397> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_003202> a skos:Concept, aom:ProcessingMethod .
 
@@ -12979,11 +12712,6 @@
 
 <urn:era-aom:livestock:AOM_006411> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000843> .
-
-<urn:era-aom:livestock:AOM_101106> a skos:Concept, aom:FeedMaterialComponent .
-
-<urn:era-aom:livestock:AOM_006413> a skos:Concept, aom:FeedMaterial ;
-  aom:materialComponent <urn:era-aom:livestock:AOM_101106> .
 
 <urn:era-aom:livestock:AOM_000831> a skos:Concept, aom:ProcessingMethod .
 
@@ -13685,10 +13413,10 @@
 <urn:era-aom:livestock:AOM_003697> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_101072> .
 
-<urn:era-aom:livestock:AOM_101120> a skos:Concept, aom:ChemicalConstituent .
+<urn:era-aom:livestock:AOM_001571> a skos:Concept, aom:ChemicalConstituent .
 
 <urn:era-aom:livestock:AOM_003697> a skos:Concept, aom:FeedMaterial ;
-  aom:primaryConstituent <urn:era-aom:livestock:AOM_101120> .
+  aom:primaryConstituent <urn:era-aom:livestock:AOM_001571> .
 
 <urn:era-aom:livestock:AOM_101081> a skos:Concept, aom:ChemicalConstituent .
 

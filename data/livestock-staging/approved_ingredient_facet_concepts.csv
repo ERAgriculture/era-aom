@@ -64,7 +64,7 @@ AOM_000838,Flour milling,processing_method,aom:processingMethod,aom:ProcessingMe
 AOM_101083,Hydrolysis,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v3/ingredient_component_value_candidates.csv
 AOM_101084,Sugar processing,production_process_provenance,aom:productionProcessProvenance,aom:ProductionProcess,facet_value,approved,Pete Steward,2026-08-18,docs/decisions/0047-feed-process-objective-benefit-and-effect-model.md
 AOM_101085,Feed material components,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_root,approved,Pete Steward,2026-08-05,review/livestock-v4/MAIZE_IDENTITY_REVIEW.md
-AOM_101086,Whole-crop composition,component_retention_state,aom:compositionState,aom:ComponentRetentionState,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
+AOM_101086,Whole-crop composition,component_retention_state,aom:componentRetentionState,aom:ComponentRetentionState,facet_value,approved,Pete Steward,2026-08-20,docs/decisions/0048-chemical-identity-composition-and-component-model.md
 AOM_000819,Alkali treatment,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_101088,Autoclaving,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_000827,Boiling,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
@@ -81,22 +81,18 @@ AOM_101099,Soaking,processing_method,aom:processingMethod,aom:ProcessingMethod,f
 AOM_003098,Sprouting,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_100848,Urea treatment,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_000844,Wilting,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
-AOM_101103,Blood component,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_101104,Bran,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
-AOM_101105,Stover,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
-AOM_101106,Straw,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_101107,Vine,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,review/livestock-v6/ingredient_rule_quality_assessment.csv
 AOM_101108,Pellet form,presentation_form,aom:presentationForm,aom:FeedPresentationForm,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101110,Whole-grain composition,component_retention_state,aom:compositionState,aom:ComponentRetentionState,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
+AOM_101110,Whole-grain composition,component_retention_state,aom:componentRetentionState,aom:ComponentRetentionState,facet_value,approved,Pete Steward,2026-08-20,docs/decisions/0048-chemical-identity-composition-and-component-model.md
 AOM_101111,Feed product types,feed_product_type,aom:feedProductType,aom:FeedProductType,facet_root,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
 AOM_101112,Processing pulp,feed_product_type,aom:feedProductType,aom:FeedProductType,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
 AOM_101113,Hay product type,feed_product_type,aom:feedProductType,aom:FeedProductType,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
 AOM_101114,Compound feed,feed_product_type,aom:feedProductType,aom:FeedProductType,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0020-ingredient-semantic-closure.md
-AOM_101115,Native-component retention states,component_retention_state,aom:compositionState,aom:ComponentRetentionState,facet_root,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
+AOM_101115,Native-component retention states,component_retention_state,aom:componentRetentionState,aom:ComponentRetentionState,facet_root,approved,Pete Steward,2026-08-20,docs/decisions/0048-chemical-identity-composition-and-component-model.md
 AOM_101116,Whole-milk composition,component_retention_state,aom:compositionState,aom:ComponentRetentionState,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_101117,Flower,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
 AOM_101118,Slurry consistency,bulk_consistency,aom:bulkConsistency,aom:FeedBulkConsistency,facet_value,approved,Pete Steward,2026-08-11,docs/decisions/0042-feed-process-and-material-state-axes.md
-AOM_101120,Protein constituent,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
 AOM_101121,Rhizome,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
 AOM_101122,Liver,anatomical_part,aom:ingredientPart,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
 AOM_101123,Stacking,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,docs/decisions/0029-semantic-model-hard-tail-extension.md
@@ -110,7 +106,6 @@ AOM_101134,Native-fat-retained composition,component_retention_state,aom:composi
 AOM_000831,Ensiling,processing_method,aom:processingMethod,aom:ProcessingMethod,facet_value,approved,Pete Steward,2026-08-05,data/livestock-staging/definitions.csv
 AOM_001510,Fresh moisture condition,moisture_condition,aom:moistureCondition,aom:FeedMoistureCondition,facet_value,approved,Pete Steward,2026-08-05,data/livestock-staging/definitions.csv
 AOM_101143,Processed material fractions,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_root,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
-AOM_101144,Cereal milling fractions,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_root,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_101145,Animal body substances,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_root,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_101148,Feed product roles,product_role,aom:productRole,aom:ProductRole,facet_root,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_101149,Feed functional roles,functional_role,aom:functionalRole,aom:FeedFunctionalRole,facet_root,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
@@ -118,4 +113,5 @@ AOM_101150,Feed experimental roles,experimental_role,aom:experimentalRole,aom:Ex
 AOM_101151,Digestibility-marker role,experimental_role,aom:experimentalRole,aom:ExperimentalFeedRole,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_101152,Filler role,functional_role,aom:functionalRole,aom:FeedFunctionalRole,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
 AOM_101153,Endosperm,anatomical_component,aom:materialComponent,aom:FeedMaterialPartCategory,facet_value,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
-AOM_101154,Composite crop-residue components,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_root,approved,Pete Steward,2026-08-12,docs/decisions/0044-feed-taxonomy-axis-reclassification.md
+AOM_001571,Protein,chemical_constituent,aom:primaryConstituent,aom:ChemicalConstituent,facet_value,approved,Pete Steward,2026-08-20,docs/decisions/0048-chemical-identity-composition-and-component-model.md
+AOM_001616,Blood,material_component,aom:materialComponent,aom:FeedMaterialComponent,facet_value,approved,Pete Steward,2026-08-20,docs/decisions/0048-chemical-identity-composition-and-component-model.md

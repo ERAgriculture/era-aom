@@ -199,7 +199,8 @@ AOM_000107,en,pref,Livestock Management,L2
 AOM_000356,en,pref,Animal Growth Promotant,L3
 AOM_000170,en,pref,Aquasilviculture,L4
 AOM_000328,en,pref,Feed Characteristic,L3
-AOM_000196,en,pref,Feed Chemical Composition,L4
+AOM_000196,en,pref,Feed composition characteristics,approved_label_correction
+AOM_000196,en,alt,Feed Chemical Composition,L4
 AOM_000197,en,pref,Acid Detergent Fibre (ADF),L5
 AOM_000198,en,pref,Acid Detergent Lignin (ADL),L5
 AOM_000199,en,pref,Amino Acids,L5
@@ -308,7 +309,7 @@ AOM_000559,en,pref,Feeds of animal origin,approved_label_correction
 AOM_000559,en,alt,Animal,L6
 AOM_000559,en,alt,metazoans,Synonym
 AOM_000559,en,alt,multicellular animals,Synonym
-AOM_001616,en,pref,Blood,L7
+AOM_001616,en,pref,Blood,approved_deprecation
 AOM_000537,en,pref,Blood Dried Ground Heated,L8
 AOM_000537,en,alt,Blood Dried Meal Heated,Synonym
 AOM_000537,en,alt,Blood Dried Milled Heated,Synonym
@@ -3084,7 +3085,7 @@ AOM_000794,en,alt,Minerals and Vitamins Premix,Synonym
 AOM_006334,en,pref,Rumen-protected fat feed materials,approved_label_correction
 AOM_006334,en,alt,Protected Fat,L7
 AOM_001572,en,pref,Casein,L8
-AOM_001571,en,pref,Protein,L7
+AOM_001571,en,pref,Protein,approved_deprecation
 AOM_001068,en,pref,Pseudovitamin,L7
 AOM_001069,en,pref,Inositol,L8
 AOM_001069,en,alt,Cyclohexanehexol,Synonym
@@ -4321,13 +4322,13 @@ AOM_101127,en,pref,Poultry by-product meal,approved_new_concept
 AOM_101019,en,pref,Anatomical components,approved_new_concept
 AOM_101020,en,pref,Feed presentation forms,approved_new_concept
 AOM_101022,en,pref,Feed roles,approved_new_concept
-AOM_101023,en,pref,Primary chemical constituents,approved_new_concept
+AOM_101023,en,pref,Chemical constituent categories,approved_new_concept
 AOM_101024,en,pref,Bulb,approved_new_concept
 AOM_101025,en,pref,Cladode,approved_new_concept
 AOM_101026,en,pref,Cob,approved_new_concept
 AOM_101027,en,pref,Corm,approved_new_concept
 AOM_101028,en,pref,Fruit,approved_new_concept
-AOM_101029,en,pref,Germ,approved_new_concept
+AOM_101029,en,pref,Plant embryo,approved_new_concept
 AOM_101030,en,pref,Hull,approved_new_concept
 AOM_101031,en,pref,Husk,approved_new_concept
 AOM_101032,en,pref,Kernel,approved_new_concept
@@ -4426,7 +4427,7 @@ AOM_101142,en,pref,Feed classification holds,approved_new_concept
 AOM_101143,en,pref,Processed material fractions,approved_new_concept
 AOM_101144,en,pref,Cereal milling fractions,approved_new_concept
 AOM_101145,en,pref,Animal body substances,approved_new_concept
-AOM_101146,en,pref,Feed chemical entities,approved_new_concept
+AOM_101146,en,pref,Feed-related chemical entities,approved_new_concept
 AOM_101147,en,pref,Chemical substances,approved_new_concept
 AOM_101148,en,pref,Feed product roles,approved_new_concept
 AOM_101149,en,pref,Feed functional roles,approved_new_concept
@@ -4457,6 +4458,8 @@ AOM_101176,en,pref,Composition tailoring,approved_new_concept
 AOM_101177,en,pref,Process-output recovery,approved_new_concept
 AOM_101178,en,pref,Dust control,approved_new_concept
 AOM_101179,en,pref,Downstream-process facilitation,approved_new_concept
+AOM_101180,en,pref,Plant anatomical components,approved_new_concept
+AOM_101181,en,pref,Animal anatomical components,approved_new_concept
 AOM_100850,en,alt,Feed ingredient,approved_label_addition
 AOM_101019,en,alt,Ingredient anatomical parts,approved_label_addition
 AOM_101020,en,alt,Ingredient presentation forms,approved_label_addition
@@ -4485,6 +4488,9 @@ AOM_101134,en,alt,Full-fat composition,approved_label_addition
 AOM_101147,en,alt,Feed chemical substances,approved_label_addition
 AOM_101159,en,alt,Plant products/by-products,approved_label_addition
 AOM_101069,en,alt,Defatting,approved_label_addition
+AOM_101146,en,alt,Feed chemical entities,approved_label_addition
+AOM_101023,en,alt,Primary chemical constituents,approved_label_addition
+AOM_101029,en,alt,Germ,approved_label_addition
 AOM_001326,en,alt,Maize Whole Ensiled,approved_deprecation
 AOM_001326,en,alt,Maize Whole Silage,approved_deprecation
 AOM_000564,en,alt,Brewers By-Product,approved_deprecation
@@ -4499,6 +4505,9 @@ AOM_000872,en,alt,chick production unit,approved_deprecation
 AOM_000872,en,alt,calf production system,approved_deprecation
 AOM_000872,en,alt,piglet production unit,approved_deprecation
 AOM_000872,en,alt,lamb production unit,approved_deprecation
+AOM_001616,en,alt,Blood component,approved_deprecation
+AOM_001571,en,alt,Protein constituent,approved_deprecation
+AOM_101143,en,alt,Cereal milling fractions,approved_deprecation
 AOM_101079,en,alt,Binder,approved_deprecation
 AOM_101151,en,alt,Digestibility Marker,approved_deprecation
 AOM_101152,en,alt,Unspecified Filler,approved_deprecation

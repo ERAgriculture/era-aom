@@ -110,7 +110,7 @@ AOM_000107,Livestock Management,aom-concept,aom-livestock,staging
 AOM_000356,Animal Growth Promotant,aom-concept,aom-livestock,staging
 AOM_000170,Aquasilviculture,aom-concept,aom-livestock,staging
 AOM_000328,Feed Characteristic,aom-concept,aom-livestock,staging
-AOM_000196,Feed Chemical Composition,aom-concept,aom-livestock,staging
+AOM_000196,Feed composition characteristics,aom-concept,aom-livestock,staging
 AOM_000197,Acid Detergent Fibre (ADF),aom-concept,aom-livestock,staging
 AOM_000198,Acid Detergent Lignin (ADL),aom-concept,aom-livestock,staging
 AOM_000199,Amino Acids,aom-concept,aom-livestock,staging
@@ -2674,13 +2674,13 @@ AOM_101127,Poultry by-product meal,aom-concept,aom-livestock,staging
 AOM_101019,Anatomical components,aom-concept,aom-livestock,staging
 AOM_101020,Feed presentation forms,aom-concept,aom-livestock,staging
 AOM_101022,Feed roles,aom-concept,aom-livestock,staging
-AOM_101023,Primary chemical constituents,aom-concept,aom-livestock,staging
+AOM_101023,Chemical constituent categories,aom-concept,aom-livestock,staging
 AOM_101024,Bulb,aom-concept,aom-livestock,staging
 AOM_101025,Cladode,aom-concept,aom-livestock,staging
 AOM_101026,Cob,aom-concept,aom-livestock,staging
 AOM_101027,Corm,aom-concept,aom-livestock,staging
 AOM_101028,Fruit,aom-concept,aom-livestock,staging
-AOM_101029,Germ,aom-concept,aom-livestock,staging
+AOM_101029,Plant embryo,aom-concept,aom-livestock,staging
 AOM_101030,Hull,aom-concept,aom-livestock,staging
 AOM_101031,Husk,aom-concept,aom-livestock,staging
 AOM_101032,Kernel,aom-concept,aom-livestock,staging
@@ -2739,10 +2739,10 @@ AOM_101088,Autoclaving,aom-concept,aom-livestock,staging
 AOM_101090,Cracking,aom-concept,aom-livestock,staging
 AOM_101096,Heating,aom-concept,aom-livestock,staging
 AOM_101099,Soaking,aom-concept,aom-livestock,staging
-AOM_101103,Blood component,aom-concept,aom-livestock,staging
+AOM_101103,Blood component,aom-concept,aom-livestock,deprecated
 AOM_101104,Bran,aom-concept,aom-livestock,staging
-AOM_101105,Stover,aom-concept,aom-livestock,staging
-AOM_101106,Straw,aom-concept,aom-livestock,staging
+AOM_101105,Stover,aom-concept,aom-livestock,deprecated
+AOM_101106,Straw,aom-concept,aom-livestock,deprecated
 AOM_101107,Vine,aom-concept,aom-livestock,staging
 AOM_101108,Pellet form,aom-concept,aom-livestock,staging
 AOM_101110,Whole-grain composition,aom-concept,aom-livestock,staging
@@ -2754,7 +2754,7 @@ AOM_101115,Native-component retention states,aom-concept,aom-livestock,staging
 AOM_101116,Whole-milk composition,aom-concept,aom-livestock,staging
 AOM_101117,Flower,aom-concept,aom-livestock,staging
 AOM_101118,Slurry consistency,aom-concept,aom-livestock,staging
-AOM_101120,Protein constituent,aom-concept,aom-livestock,staging
+AOM_101120,Protein constituent,aom-concept,aom-livestock,deprecated
 AOM_101121,Rhizome,aom-concept,aom-livestock,staging
 AOM_101122,Liver,aom-concept,aom-livestock,staging
 AOM_101123,Stacking,aom-concept,aom-livestock,staging
@@ -2777,9 +2777,9 @@ AOM_101140,Mineral complementary feeds,aom-concept,aom-livestock,staging
 AOM_101141,Vitamin premixtures and complementary feeds,aom-concept,aom-livestock,staging
 AOM_101142,Feed classification holds,aom-concept,aom-livestock,staging
 AOM_101143,Processed material fractions,aom-concept,aom-livestock,staging
-AOM_101144,Cereal milling fractions,aom-concept,aom-livestock,staging
+AOM_101144,Cereal milling fractions,aom-concept,aom-livestock,deprecated
 AOM_101145,Animal body substances,aom-concept,aom-livestock,staging
-AOM_101146,Feed chemical entities,aom-concept,aom-livestock,staging
+AOM_101146,Feed-related chemical entities,aom-concept,aom-livestock,staging
 AOM_101147,Chemical substances,aom-concept,aom-livestock,staging
 AOM_101148,Feed product roles,aom-concept,aom-livestock,staging
 AOM_101149,Feed functional roles,aom-concept,aom-livestock,staging
@@ -2787,7 +2787,7 @@ AOM_101150,Feed experimental roles,aom-concept,aom-livestock,staging
 AOM_101151,Digestibility-marker role,aom-concept,aom-livestock,staging
 AOM_101152,Filler role,aom-concept,aom-livestock,staging
 AOM_101153,Endosperm,aom-concept,aom-livestock,staging
-AOM_101154,Composite crop-residue components,aom-concept,aom-livestock,staging
+AOM_101154,Composite crop-residue components,aom-concept,aom-livestock,deprecated
 AOM_101155,Mineral and vitamin complementary feeds,aom-concept,aom-livestock,staging
 AOM_101159,Plant products and by-products,aom-concept,aom-livestock,staging
 AOM_101160,Other feeds,aom-concept,aom-livestock,staging
@@ -2810,3 +2810,5 @@ AOM_101176,Composition tailoring,aom-concept,aom-livestock,staging
 AOM_101177,Process-output recovery,aom-concept,aom-livestock,staging
 AOM_101178,Dust control,aom-concept,aom-livestock,staging
 AOM_101179,Downstream-process facilitation,aom-concept,aom-livestock,staging
+AOM_101180,Plant anatomical components,aom-concept,aom-livestock,staging
+AOM_101181,Animal anatomical components,aom-concept,aom-livestock,staging

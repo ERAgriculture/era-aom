@@ -67,7 +67,11 @@ assert summary == {
     "source_concept_retirements": 8,
 }
 superseded_ids = {row["concept_id"] for row in product_kind_review}
-for concept_id in v29_ids - superseded_ids:
+cohort_d_superseded_ids = {
+    "AOM_001571", "AOM_101019", "AOM_101029", "AOM_101103", "AOM_101104", "AOM_101105", "AOM_101106",
+    "AOM_101115", "AOM_101120", "AOM_101144", "AOM_101146", "AOM_101154",
+}
+for concept_id in v29_ids - superseded_ids - cohort_d_superseded_ids:
     current = classification_by_id[concept_id]
     historical = implementation_by_id[concept_id]
     for field in {
@@ -89,6 +93,8 @@ labels_by_value = {}
 for row in labels:
     labels_by_value.setdefault(row["label"].casefold(), set()).add(row["concept_id"])
 for row in new_rows:
+    if row["concept_id"] in cohort_d_superseded_ids:
+        continue
     assert labels_by_value[row["preferred_label"].casefold()] == {row["concept_id"]}
 
 retired_generated = {"AOM_101068", "AOM_101109"}
@@ -103,6 +109,7 @@ retirement_ids = {row["concept_id"] for row in retirements}
 assert retirement_ids == {
     "AOM_000531", "AOM_000532", "AOM_000533", "AOM_000534",
     "AOM_000535", "AOM_000736", "AOM_000781", "AOM_001507",
+    "AOM_101105", "AOM_101106", "AOM_101154",
 }
 concept_status = {row["concept_id"]: row["status"] for row in concepts}
 assert all(concept_status[concept_id] == "deprecated" for concept_id in retirement_ids)
@@ -146,7 +153,7 @@ assert {
 assert len(retention_relations) == 5
 assert len({(row["state_concept_id"], row["relation_property"], row["retained_concept_id"]) for row in retention_relations}) == 5
 semantic_type_by_id = {row["concept_id"]: row["semantic_class"] for row in semantic_types}
-assert len(semantic_types) == len(semantic_type_by_id) == 47
+assert len(semantic_types) == len(semantic_type_by_id) == 50
 assert semantic_type_by_id["AOM_000809"] == "aom:ChemicalConstituent"
 assert semantic_type_by_id["AOM_001865"] == "aom:ChemicalConstituent"
 assert "AOM_001068" not in semantic_type_by_id
@@ -156,13 +163,12 @@ broader = {
     for row in relations if row["relation_type"] == "broader"
 }
 assert {
-    ("AOM_101104", "AOM_101144"),
-    ("AOM_101144", "AOM_101143"),
+    ("AOM_101104", "AOM_101143"),
     ("AOM_101143", "AOM_101085"),
     ("AOM_101019", "AOM_101085"),
-    ("AOM_101103", "AOM_101145"),
     ("AOM_101145", "AOM_101085"),
     ("AOM_101110", "AOM_101115"),
+    ("AOM_101115", "AOM_000328"),
     ("AOM_101130", "AOM_000845"),
     ("AOM_004433", "AOM_101135"),
     ("AOM_001579", "AOM_004433"),
