@@ -1,6 +1,6 @@
 # Cohort E recommendations: composition, form, and component retention
 
-Status: proposed under
+Status: accepted by Pete Steward on 2026-08-21 under
 [era-program #56](https://github.com/ERAgriculture/era-program/issues/56).
 
 Decision proposal:
@@ -18,7 +18,7 @@ assertions:
 - three legacy composition-state assertions requiring migration;
 - 23 primary-constituent assertions.
 
-Thirty-eight dispositions are proposed and two remain held. No implementation
+Thirty-eight dispositions are approved and two remain held. No implementation
 change or identifier allocation occurs in this review.
 
 ## Authority comparison

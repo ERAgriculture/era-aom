@@ -1,6 +1,6 @@
 {
-  "expected_concepts": 2813,
-  "expected_hierarchy_relations": 2829,
+  "expected_concepts": 2814,
+  "expected_hierarchy_relations": 2827,
   "minimum_graph_triples": 30253,
   "vocabulary_id": "livestock",
   "representative_concept": "AOM_001313",
@@ -45,7 +45,11 @@
     {"concept_id": "AOM_001866", "parent_id": "AOM_101162"},
     {"concept_id": "AOM_000561", "parent_id": "AOM_101142"},
     {"concept_id": "AOM_001922", "parent_id": "AOM_101142"},
-    {"concept_id": "AOM_006349", "parent_id": "AOM_101142"}
+    {"concept_id": "AOM_006349", "parent_id": "AOM_101142"},
+    {"concept_id": "AOM_101182", "parent_id": "AOM_000328"},
+    {"concept_id": "AOM_101020", "parent_id": "AOM_101182"},
+    {"concept_id": "AOM_101132", "parent_id": "AOM_101182"},
+    {"concept_id": "AOM_101133", "parent_id": "AOM_101182"}
   ],
   "retired_descriptor_checks": [
     {"concept_id": "AOM_000531", "label": "Ingredient name", "history_contains": "source labels"},
@@ -60,7 +64,7 @@
   "expected_top_concepts": ["AOM_000001", "AOM_000106", "AOM_000358", "AOM_000846"],
   "maximum_response_seconds": 5.0,
   "representative_checks": [
-    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "component-retention state", "properties": [{"predicate": "componentRetentionState", "target_id": "AOM_101110", "property_label": "Has component-retention state", "value_label": "Whole-grain composition"}]},
+    {"concept_id": "AOM_001313", "label": "Whole-grain maize", "definition_contains": "component-retention state", "properties": [{"predicate": "componentRetentionState", "target_id": "AOM_101110", "property_label": "Has component-retention state", "value_label": "Whole-grain component retention"}]},
     {"concept_id": "AOM_100850", "label": "Feed materials", "definition_contains": "formulated feeds"},
     {"concept_id": "AOM_001491", "label": "Formulated feeds", "definition_contains": "component feed materials"},
     {"concept_id": "AOM_001326", "label": "Whole-crop maize silage", "definition_contains": "Ensiling"},
@@ -81,7 +85,7 @@
     {"concept_id": "AOM_101061", "label": "Waste role", "definition_contains": "distinct from by-product"},
     {"concept_id": "AOM_101060", "label": "Milling by-product role", "definition_contains": "secondary milling output"},
     {"concept_id": "AOM_101104", "label": "Bran", "definition_contains": "milling fraction"},
-    {"concept_id": "AOM_101110", "label": "Whole-grain composition", "definition_contains": "bran, plant embryo, and endosperm"},
+    {"concept_id": "AOM_101110", "label": "Whole-grain component retention", "definition_contains": "bran, plant embryo, and endosperm"},
     {"concept_id": "AOM_101130", "label": "Feed component separation processes", "definition_contains": "remove, separate"},
     {"concept_id": "AOM_000559", "label": "Feeds of animal origin", "definition_contains": "animal origin"},
     {"concept_id": "AOM_000735", "label": "Forage materials", "definition_contains": "may overlap"},
@@ -104,6 +108,16 @@
     {"concept_id": "AOM_101029", "label": "Plant embryo", "definition_contains": "commercial germ fractions"},
     {"concept_id": "AOM_101103", "label": "Blood component", "status": "deprecated", "replaced_by": "AOM_001616"},
     {"concept_id": "AOM_101120", "label": "Protein constituent", "status": "deprecated", "replaced_by": "AOM_001571"},
-    {"concept_id": "AOM_101144", "label": "Cereal milling fractions", "status": "deprecated", "replaced_by": "AOM_101143"}
+    {"concept_id": "AOM_101144", "label": "Cereal milling fractions", "status": "deprecated", "replaced_by": "AOM_101143"},
+    {"concept_id": "AOM_000326", "label": "Feed physical characteristics", "definition_contains": "Measurable or observable"},
+    {"concept_id": "AOM_101182", "label": "Feed physical descriptors", "definition_contains": "categorical physical descriptors"},
+    {"concept_id": "AOM_101115", "label": "Feed component-retention states", "definition_contains": "Positive states"},
+    {"concept_id": "AOM_101134", "label": "Native-fat retention", "definition_contains": "positive retention of native fat"},
+    {"concept_id": "AOM_000555", "label": "Whole Milk", "definition_contains": "Native-fat retention", "properties": [{"predicate": "componentRetentionState", "target_id": "AOM_101134", "property_label": "Has component-retention state", "value_label": "Native-fat retention"}]},
+    {"concept_id": "AOM_000764", "label": "Mineral Block", "definition_contains": "coherent block"},
+    {"concept_id": "AOM_000766", "label": "Mineral Lick", "definition_contains": "consumption by licking"},
+    {"concept_id": "AOM_000324", "label": "physical form", "status": "deprecated", "replaced_by": "AOM_101182", "hierarchy_excluded": true},
+    {"concept_id": "AOM_101116", "label": "Whole-milk composition", "status": "deprecated", "replaced_by": "AOM_101134", "hierarchy_excluded": true},
+    {"concept_id": "AOM_101080", "label": "Ash constituent", "status": "deprecated", "replaced_by": "AOM_000226", "hierarchy_excluded": true}
   ]
 }

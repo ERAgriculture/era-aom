@@ -418,7 +418,7 @@ whole_rows = [{
     "status": "approved", "evidence": ADR,
     "rationale": "Whole-crop, whole-grain integrity, intact presentation, whole-milk composition, and lexical aliases remain separate reviewed scopes.",
 } for concept_id in whole_ids]
-assert len(whole_rows) == 12
+assert len(whole_rows) == 13
 
 summary = {
     "formulation_cohort": len(classification_rows),

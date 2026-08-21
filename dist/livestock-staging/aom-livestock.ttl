@@ -2447,6 +2447,7 @@
   skos:prefLabel "Ash"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
+  skos:altLabel "Ash constituent"@en ;
   skos:definition "Ash remaining after incineration, a rough approximation of mineral matter. Source: Feedipedia"@en ;
   skos:broader <urn:era-aom:livestock:AOM_000196> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_665> ;
@@ -3391,9 +3392,10 @@
   skos:notation "AOM_000324" ;
   skos:prefLabel "physical form"@en ;
   era:conceptType "legacy_aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "any measurable or observable characteristic related to the physical form under which food (or diet) is given to the animal e.g. dry, wet, moist pellets, paste."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000326> ;
+  owl:deprecated true ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_101182> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000168> .
 
 <urn:era-aom:livestock:AOM_000325> a skos:Concept ;
@@ -3409,10 +3411,11 @@
 <urn:era-aom:livestock:AOM_000326> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_000326" ;
-  skos:prefLabel "Feed Physical Characteristic"@en ;
+  skos:prefLabel "Feed physical characteristics"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "any measurable characteristic related to the physical properties of feed (or diet) e.g. density, floatability, breakability,etc."@en ;
+  skos:altLabel "Feed Physical Characteristic"@en ;
+  skos:definition "Measurable or observable characteristics describing physical properties of a feed or diet, such as floatability, particle size, or water-retention capacity; categorical presentation, bulk consistency, moisture condition, and processing method are represented separately."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000328> ;
   skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000200> .
 
@@ -5357,7 +5360,7 @@
   skos:prefLabel "Bone Ash"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “bone” and characteristics: primary chemical constituent — Ash constituent; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “bone” and characteristics: product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000540> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_1000> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11876> .
@@ -5524,7 +5527,7 @@
   skos:prefLabel "Whole Milk"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “milk” and characteristics: composition state — Whole-milk composition."@en ;
+  skos:definition "A feed material with governed source identity “milk” and characteristics: component-retention state — Native-fat retention."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000556> .
 
 <urn:era-aom:livestock:AOM_000556> a skos:Concept ;
@@ -6040,7 +6043,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Soybean Oil Cake Full Fat"@en ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Native-fat-retained composition; presentation form — Cake form; processing method — Pressing; product role — By-product role."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: processing method — Pressing; presentation form — Cake form; product role — By-product role; component-retention state — Native-fat retention."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100852> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_16043> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> .
@@ -6367,7 +6370,7 @@
   skos:altLabel "Whole Rice Ground"@en ;
   skos:altLabel "Whole Rice Milled"@en ;
   skos:altLabel "Whole Rice Meal"@en ;
-  skos:definition "A feed material with governed source identity “rice” and characteristics: component-retention state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+  skos:definition "A feed material with governed source identity “rice” and characteristics: processing method — Grinding; ingredient part — Grain; presentation form — Comminuted particle form; component-retention state — Whole-grain component retention."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100927> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_25500> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4530> .
@@ -6393,7 +6396,7 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Wheat Whole Ground"@en ;
-  skos:definition "A feed material with governed source identity “wheat” and characteristics: component-retention state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+  skos:definition "A feed material with governed source identity “wheat” and characteristics: processing method — Grinding; ingredient part — Grain; presentation form — Comminuted particle form; component-retention state — Whole-grain component retention."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001319> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_25511> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4565> ;
@@ -7249,7 +7252,7 @@
   skos:prefLabel "Mineral Block"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “mineral” and characteristics: presentation form — Block form."@en ;
+  skos:definition "A mineral complementary feed formulation presented as a coherent block; consumption method, exact composition, and production process remain unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_000765> a skos:Concept ;
@@ -7267,7 +7270,7 @@
   skos:prefLabel "Mineral Lick"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed-supplement ingredient with governed workbook identity “Mineral Lick”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+  skos:definition "A mineral complementary feed formulation intended for gradual or free-choice consumption by licking; physical presentation, exact composition, and production process remain unspecified unless separately asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101140> .
 
 <urn:era-aom:livestock:AOM_000768> a skos:Concept ;
@@ -12346,7 +12349,7 @@
   era:status "unknown" ;
   skos:altLabel "Maize Whole"@en ;
   skos:altLabel "Corn Whole"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: component-retention state — Whole-grain composition; ingredient part — Grain."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; component-retention state — Whole-grain component retention."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000648> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11662> .
@@ -12379,7 +12382,7 @@
   skos:prefLabel "Soybean Full Fat"@en ;
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
-  skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Native-fat-retained composition."@en ;
+  skos:definition "A feed material with governed source identity “soybean” and characteristics: component-retention state — Native-fat retention."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001582> ;
   skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_14477> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_3847> ;
@@ -12472,7 +12475,7 @@
   skos:altLabel "Maize Whole Meal"@en ;
   skos:altLabel "Corn Whole Milled"@en ;
   skos:altLabel "MaizeWhole Milled"@en ;
-  skos:definition "A feed material with governed source identity “maize” and characteristics: component-retention state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+  skos:definition "A feed material with governed source identity “maize” and characteristics: processing method — Grinding; ingredient part — Grain; presentation form — Comminuted particle form; component-retention state — Whole-grain component retention."@en ;
   skos:broader <urn:era-aom:livestock:AOM_001313> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/11662> .
@@ -12489,7 +12492,7 @@
   skos:altLabel "Maize Silage"@en ;
   skos:altLabel "Maize Whole Ensiled"@en ;
   skos:altLabel "Maize Whole Silage"@en ;
-  skos:definition "A feed material with governed source identity “crop maize” and characteristics: component-retention state — Whole-crop composition; processing method — Ensiling."@en ;
+  skos:definition "A feed material with governed source identity “crop maize” and characteristics: processing method — Ensiling; component-retention state — Whole-crop component retention."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000648> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_4577> ;
   skos:relatedMatch <https://www.feedipedia.org/node/13883> .
@@ -14583,7 +14586,8 @@
   era:status "unknown" ;
   skos:altLabel "Protein constituent"@en ;
   skos:definition "Chemical-entity category for proteins represented as constituents of feed materials; measured protein content and feed-material use require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101146> .
+  skos:broader <urn:era-aom:livestock:AOM_101146> ;
+  skos:exactMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A36080> .
 
 <urn:era-aom:livestock:AOM_001572> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -14631,7 +14635,8 @@
   era:conceptType "legacy_aom_concept" ;
   era:status "unknown" ;
   skos:definition "Chemical-entity category for carbohydrates represented as constituents of feed materials; measured carbohydrate content and feed-material use require separate assertions."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101146> .
+  skos:broader <urn:era-aom:livestock:AOM_101146> ;
+  skos:exactMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A16646> .
 
 <urn:era-aom:livestock:AOM_001578> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -18236,7 +18241,7 @@
   skos:altLabel "Chicken Viscera Dried Ground"@en ;
   skos:altLabel "Chicken Offal Dried Meal"@en ;
   skos:altLabel "Chicken Offal Dried Milled"@en ;
-  skos:definition "A feed material with governed source identity “chicken offal” and characteristics: moisture condition — Dried moisture condition; presentation form — Meal form; processing method — Drying, Grinding."@en ;
+  skos:definition "A feed material with governed source identity “chicken offal” and characteristics: processing method — Drying, Grinding; presentation form — Meal form; moisture condition — Dried moisture condition; product role — By-product role."@en ;
   skos:broader <urn:era-aom:livestock:AOM_100983> ;
   skos:relatedMatch <http://purl.obolibrary.org/obo/NCBITaxon_9031> ;
   skos:relatedMatch <https://www.feedipedia.org/node/12474> .
@@ -28653,7 +28658,7 @@
   skos:altLabel "Ingredient presentation forms"@en ;
   skos:definition "Shapes and particle presentations applicable to feed materials or formulated feeds independently of moisture and bulk consistency."@en ;
   skos:scopeNote "Shapes and particle presentations of feeds, independently of moisture and bulk consistency."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000328> .
+  skos:broader <urn:era-aom:livestock:AOM_101182> .
 
 <urn:era-aom:livestock:AOM_101022> a skos:Concept, aom:FeedRole ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29114,9 +29119,10 @@
   skos:prefLabel "Starch constituent"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101023> .
+  skos:definition "Starch chemical identity represented as a primary constituent of feed materials; measured starch content and starch feed-material use require separate assertions."@en ;
+  skos:scopeNote "Starch chemical identity represented as a primary constituent of feed materials; measured starch content and starch feed-material use require separate assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101023> ;
+  skos:exactMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A28017> .
 
 <urn:era-aom:livestock:AOM_101066> a skos:Concept, aom:ChemicalConstituent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29124,19 +29130,22 @@
   skos:prefLabel "Fat constituent"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101023> .
+  skos:definition "Contextual fat or lipid-mixture category represented as a primary constituent of feed materials; measured fat content and feed-product use require separate assertions."@en ;
+  skos:scopeNote "Contextual fat or lipid-mixture category represented as a primary constituent of feed materials; measured fat content and feed-product use require separate assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101023> ;
+  skos:broadMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A18059> .
 
 <urn:era-aom:livestock:AOM_101067> a skos:Concept, aom:ChemicalConstituent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101067" ;
-  skos:prefLabel "Essential-oil constituent"@en ;
+  skos:prefLabel "Essential oil constituent"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101023> .
+  skos:altLabel "Essential-oil constituent"@en ;
+  skos:definition "Essential-oil chemical mixture represented as a primary constituent of feed materials; additive or feed-material use requires a separate assertion."@en ;
+  skos:scopeNote "Essential-oil chemical mixture represented as a primary constituent of feed materials; additive or feed-material use requires a separate assertion."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101023> ;
+  skos:exactMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A83630> .
 
 <urn:era-aom:livestock:AOM_101069> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29243,15 +29252,16 @@
   skos:scopeNote "Governed product role value used for ingredient-component semantics."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101149> .
 
-<urn:era-aom:livestock:AOM_101080> a skos:Concept, aom:ChemicalConstituent ;
+<urn:era-aom:livestock:AOM_101080> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101080" ;
   skos:prefLabel "Ash constituent"@en ;
   era:conceptType "aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
   skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101023> .
+  owl:deprecated true ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_000226> .
 
 <urn:era-aom:livestock:AOM_101081> a skos:Concept, aom:ChemicalConstituent ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29259,9 +29269,10 @@
   skos:prefLabel "Oil constituent"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
-  skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101023> .
+  skos:definition "Contextual oil or lipid-mixture category represented as a primary constituent of feed materials; measured oil content and feed-product use require separate assertions."@en ;
+  skos:scopeNote "Contextual oil or lipid-mixture category represented as a primary constituent of feed materials; measured oil content and feed-product use require separate assertions."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_101023> ;
+  skos:broadMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A18059> .
 
 <urn:era-aom:livestock:AOM_101083> a skos:Concept, aom:ProcessingMethod ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29297,10 +29308,11 @@
 <urn:era-aom:livestock:AOM_101086> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101086" ;
-  skos:prefLabel "Whole-crop composition"@en ;
+  skos:prefLabel "Whole-crop component retention"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Whole crop"@en ;
+  skos:altLabel "Whole-crop composition"@en ;
   skos:definition "Component-retention state indicating retention of harvested whole-crop scope rather than one selected component."@en ;
   skos:scopeNote "Component-retention state indicating retention of harvested whole-crop scope rather than one selected component."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101115> .
@@ -29416,11 +29428,12 @@
 <urn:era-aom:livestock:AOM_101110> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101110" ;
-  skos:prefLabel "Whole-grain composition"@en ;
+  skos:prefLabel "Whole-grain component retention"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Whole grain"@en ;
   skos:altLabel "Whole-grain integrity"@en ;
+  skos:altLabel "Whole-grain composition"@en ;
   skos:definition "Component-retention state in which bran, plant embryo, and endosperm remain in characteristic proportions independently of particle-size reduction."@en ;
   skos:scopeNote "Component-retention state in which bran, plant embryo, and endosperm remain in characteristic proportions independently of particle-size reduction."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101115> .
@@ -29468,23 +29481,25 @@
 <urn:era-aom:livestock:AOM_101115> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101115" ;
-  skos:prefLabel "Native-component retention states"@en ;
+  skos:prefLabel "Feed component-retention states"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Composition states"@en ;
-  skos:definition "Positive native-component retention or integrity states represented independently of measured chemical composition."@en ;
-  skos:scopeNote "Positive native-component retention or integrity states represented independently of measured chemical composition."@en ;
+  skos:altLabel "Native-component retention states"@en ;
+  skos:definition "Positive states indicating retention of native material or chemical components, represented independently of measured composition, presentation, moisture, and processing method."@en ;
+  skos:scopeNote "Positive states indicating retention of native material or chemical components, represented independently of measured composition, presentation, moisture, and processing method."@en ;
   skos:broader <urn:era-aom:livestock:AOM_000328> .
 
-<urn:era-aom:livestock:AOM_101116> a skos:Concept, aom:ComponentRetentionState ;
+<urn:era-aom:livestock:AOM_101116> a skos:Concept ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101116" ;
   skos:prefLabel "Whole-milk composition"@en ;
   era:conceptType "aom_concept" ;
-  era:status "unknown" ;
+  era:status "deprecated" ;
   skos:definition "Governed composition state value used for feed-material semantics."@en ;
   skos:scopeNote "Governed composition state value used for feed-material semantics."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_101115> .
+  owl:deprecated true ;
+  dcterms:isReplacedBy <urn:era-aom:livestock:AOM_101134> .
 
 <urn:era-aom:livestock:AOM_101117> a skos:Concept, aom:FeedMaterialPartCategory ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29646,7 +29661,7 @@
   skos:altLabel "Ingredient bulk consistencies"@en ;
   skos:definition "Bulk flow and dispersion consistencies applicable to feed materials or formulated feeds independently of particle presentation and moisture condition."@en ;
   skos:scopeNote "Bulk flow and dispersion consistencies of feed materials, independently of particle presentation and moisture condition."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000328> .
+  skos:broader <urn:era-aom:livestock:AOM_101182> .
 
 <urn:era-aom:livestock:AOM_101133> a skos:Concept, aom:FeedMoistureCondition ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
@@ -29657,17 +29672,19 @@
   skos:altLabel "Ingredient moisture conditions"@en ;
   skos:definition "Qualitative moisture conditions applicable to feed materials or formulated feeds independently of particle presentation and bulk consistency."@en ;
   skos:scopeNote "Qualitative moisture conditions of feed materials, independently of particle presentation and bulk consistency."@en ;
-  skos:broader <urn:era-aom:livestock:AOM_000328> .
+  skos:broader <urn:era-aom:livestock:AOM_101182> .
 
 <urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState ;
   skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
   skos:notation "AOM_101134" ;
-  skos:prefLabel "Native-fat-retained composition"@en ;
+  skos:prefLabel "Native-fat retention"@en ;
   era:conceptType "aom_concept" ;
   era:status "unknown" ;
   skos:altLabel "Full-fat composition"@en ;
-  skos:definition "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted."@en ;
-  skos:scopeNote "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted."@en ;
+  skos:altLabel "Native-fat-retained composition"@en ;
+  skos:altLabel "Whole-milk composition"@en ;
+  skos:definition "Component-retention state indicating positive retention of native fat; no measured concentration or inference from absence of defatting is asserted."@en ;
+  skos:scopeNote "Component-retention state indicating positive retention of native fat; no measured concentration or inference from absence of defatting is asserted."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101115> .
 
 <urn:era-aom:livestock:AOM_101135> a skos:Concept ;
@@ -30120,3 +30137,14 @@
   skos:definition "Animal structures used as material-component values after source-aware anatomical review; body substances and unresolved collective terms remain outside this group."@en ;
   skos:scopeNote "Animal structures used as material-component values after source-aware anatomical review; body substances and unresolved collective terms remain outside this group."@en ;
   skos:broader <urn:era-aom:livestock:AOM_101019> .
+
+<urn:era-aom:livestock:AOM_101182> a skos:Concept ;
+  skos:inScheme <urn:era-aom:scheme:livestock-v2> ;
+  skos:notation "AOM_101182" ;
+  skos:prefLabel "Feed physical descriptors"@en ;
+  era:conceptType "aom_concept" ;
+  era:status "unknown" ;
+  skos:altLabel "physical form"@en ;
+  skos:definition "Navigation grouping for categorical physical descriptors of feed presentation, bulk consistency, and moisture condition; measured physical characteristics and processing methods are represented separately."@en ;
+  skos:scopeNote "Navigation grouping for categorical physical descriptors of feed presentation, bulk consistency, and moisture condition; measured physical characteristics and processing methods are represented separately."@en ;
+  skos:broader <urn:era-aom:livestock:AOM_000328> .

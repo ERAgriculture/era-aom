@@ -44,6 +44,7 @@ structure_replaced = {
         "feed_taxonomy_axis_definition_replacement",
         "feed_product_kind_definition_replacement",
         "component_chemical_identity_definition_replacement",
+        "composition_form_definition_replacement",
     }
 }
 assert defined <= approved

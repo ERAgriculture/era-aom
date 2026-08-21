@@ -511,11 +511,20 @@ def main():
     for revision in hierarchy_revisions:
         if revision["status"] != "approved":
             raise ValueError("Hierarchy revision must be approved")
-        if not {revision["child_id"], revision["add_parent_id"]} <= concept_ids:
+        child_id = revision["child_id"]
+        add_parent_id = revision["add_parent_id"]
+        if child_id not in concept_ids or (add_parent_id and add_parent_id not in concept_ids):
             raise ValueError("Hierarchy revision references unknown concept")
         remove_parent_id = revision["remove_parent_id"]
+        if not add_parent_id and (
+            not remove_parent_id
+            or child_id not in set(deprecation_by_id) | set(retirement_by_id)
+        ):
+            raise ValueError(
+                "Removal-only hierarchy revision requires an inactive concept and existing parent"
+            )
         if remove_parent_id:
-            remove_key = (revision["child_id"], "broader", remove_parent_id)
+            remove_key = (child_id, "broader", remove_parent_id)
             if remove_key not in relation_keys:
                 raise ValueError(f"Hierarchy revision removal is absent: {remove_key}")
             relations = [
@@ -524,13 +533,15 @@ def main():
                 != remove_key
             ]
             relation_keys.remove(remove_key)
-        add_key = (revision["child_id"], "broader", revision["add_parent_id"])
+        if not add_parent_id:
+            continue
+        add_key = (child_id, "broader", add_parent_id)
         if add_key in relation_keys:
             raise ValueError(f"Hierarchy revision addition already exists: {add_key}")
         relations.append({
-            "subject_id": revision["child_id"],
+            "subject_id": child_id,
             "relation_type": "broader",
-            "object_id": revision["add_parent_id"],
+            "object_id": add_parent_id,
             "status": "reviewed",
         })
         relation_keys.add(add_key)

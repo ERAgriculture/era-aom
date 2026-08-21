@@ -96,8 +96,9 @@ for class_name in {"FeedMaterial", "FeedFormulation", "FeedAdditive"}:
     assert (concept("AOM_001500"), RDF.type, schema(class_name)) not in bindings
 
 assert not any(bindings.triples((None, schema("ingredientConstituent"), None)))
-assert len(list(bindings.triples((None, schema("primaryConstituent"), None)))) == 23
-assert len(list(bindings.triples((None, schema("compositionState"), concept("AOM_101134"))))) == 2
+assert len(list(bindings.triples((None, schema("primaryConstituent"), None)))) == 22
+assert not any(bindings.triples((None, schema("compositionState"), None)))
+assert len(list(bindings.triples((None, schema("componentRetentionState"), concept("AOM_101134"))))) == 3
 assert not any(bindings.triples((None, schema("primaryConstituent"), concept("AOM_101066"))))
 
 for child, parent in {
@@ -118,7 +119,7 @@ assert str(vocabulary.value(concept("AOM_101099"), SKOS.prefLabel)) == "Soaking"
 assert any(str(label) == "Steeping" for label in vocabulary.objects(concept("AOM_101099"), SKOS.altLabel))
 
 assert str(vocabulary.value(concept("AOM_101076"), SKOS.prefLabel)) == "Intact presentation"
-assert str(vocabulary.value(concept("AOM_101110"), SKOS.prefLabel)) == "Whole-grain composition"
+assert str(vocabulary.value(concept("AOM_101110"), SKOS.prefLabel)) == "Whole-grain component retention"
 assert (concept("AOM_101134"), RDF.type, schema("ComponentRetentionState")) in bindings
 for identifier, class_name in {
     "AOM_101020": "FeedPresentationForm",

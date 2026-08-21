@@ -76,19 +76,19 @@ for row in generated + manual:
 assert by_material["AOM_000536"] == {("aom:processingMethod", "Grinding")}
 assert ("aom:processingMethod", "Grinding") in by_material["AOM_001324"]
 assert by_material["AOM_001326"] == {
-    ("aom:componentRetentionState", "Whole-crop composition"),
+    ("aom:componentRetentionState", "Whole-crop component retention"),
     ("aom:processingMethod", "Ensiling"),
 }
 assert "AOM_006072" not in by_material
 assert ("aom:processingMethod", "Soaking") in by_material["AOM_006500"]
-assert ("aom:componentRetentionState", "Whole-grain composition") in by_material["AOM_001313"]
+assert ("aom:componentRetentionState", "Whole-grain component retention") in by_material["AOM_001313"]
 assert ("aom:ingredientPart", "Grain") in by_material["AOM_001313"]
 assert not any(row["rule_id"] == "PROCESS-DEHULLED" for row in generated)
 assert "PROCESS-DEFATTED" in held
 assert not any(row["rule_id"] == "PROCESS-DEFATTED" for row in generated)
 assert not any(row["target_label"] in {"Cake form", "Pulp form"} for row in generated)
 assert "AOM_001898" not in {row["feed_material_id"] for row in generated}
-assert ("aom:compositionState", "Whole-milk composition") in by_material["AOM_000555"]
+assert ("aom:componentRetentionState", "Native-fat retention") in by_material["AOM_000555"]
 assert ("aom:feedProductType", "Compound feed") in by_material["AOM_000801"]
 assert ("aom:feedProductType", "Processing pulp") in by_material["AOM_001836"]
 assert by_material["AOM_000687"] >= {

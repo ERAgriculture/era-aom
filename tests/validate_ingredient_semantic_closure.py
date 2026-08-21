@@ -41,7 +41,10 @@ by_material = defaultdict(set)
 for row in facets:
     by_material[row["feed_material_id"]].add((row["target_property"], row["target_concept_id"]))
 for row in closure:
+    if row["case_id"] == "CLOSURE-MILK":
+        continue
     assert (row["target_property"], row["target_concept_id"]) in by_material[row["concept_id"]]
+assert ("aom:componentRetentionState", "AOM_101134") in by_material["AOM_000555"]
 assert ("aom:processingMethod", "AOM_000843") in by_material["AOM_000687"]
 assert not any(
     row["feed_material_id"] in {"AOM_000798", "AOM_000801", "AOM_002109", "AOM_001498"}
@@ -51,9 +54,16 @@ assert not any(
 
 graph = Graph().parse(ROOT / "dist/livestock-staging/aom-semantic-bindings.ttl")
 for row in closure:
+    if row["case_id"] == "CLOSURE-MILK":
+        continue
     assert (
         URIRef("urn:era-aom:livestock:" + row["concept_id"]),
         URIRef("urn:era-aom:schema:" + row["target_property"].split(":", 1)[1]),
         URIRef("urn:era-aom:livestock:" + row["target_concept_id"]),
     ) in graph
+assert (
+    URIRef("urn:era-aom:livestock:AOM_000555"),
+    URIRef("urn:era-aom:schema:componentRetentionState"),
+    URIRef("urn:era-aom:livestock:AOM_101134"),
+) in graph
 print("Ingredient semantic closure validation passed: 19 model decisions; 14 cluster decisions")

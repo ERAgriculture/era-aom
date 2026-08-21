@@ -71,7 +71,11 @@ cohort_d_superseded_ids = {
     "AOM_001571", "AOM_101019", "AOM_101029", "AOM_101103", "AOM_101104", "AOM_101105", "AOM_101106",
     "AOM_101115", "AOM_101120", "AOM_101144", "AOM_101146", "AOM_101154",
 }
-for concept_id in v29_ids - superseded_ids - cohort_d_superseded_ids:
+cohort_e_superseded_ids = {
+    "AOM_000764", "AOM_000766", "AOM_101086", "AOM_101110",
+    "AOM_101116", "AOM_101134",
+}
+for concept_id in v29_ids - superseded_ids - cohort_d_superseded_ids - cohort_e_superseded_ids:
     current = classification_by_id[concept_id]
     historical = implementation_by_id[concept_id]
     for field in {
@@ -150,8 +154,8 @@ assert {
     ("AOM_101060", "AOM_101062"),
     ("AOM_101063", "AOM_101062"),
 }
-assert len(retention_relations) == 5
-assert len({(row["state_concept_id"], row["relation_property"], row["retained_concept_id"]) for row in retention_relations}) == 5
+assert len(retention_relations) == 4
+assert len({(row["state_concept_id"], row["relation_property"], row["retained_concept_id"]) for row in retention_relations}) == 4
 semantic_type_by_id = {row["concept_id"]: row["semantic_class"] for row in semantic_types}
 assert len(semantic_types) == len(semantic_type_by_id) == 50
 assert semantic_type_by_id["AOM_000809"] == "aom:ChemicalConstituent"
@@ -191,7 +195,7 @@ preferred = {
     for row in labels if row["language"] == "en" and row["label_type"] == "pref"
 }
 assert preferred["AOM_101104"] == "Bran"
-assert preferred["AOM_101110"] == "Whole-grain composition"
+assert preferred["AOM_101110"] == "Whole-grain component retention"
 assert preferred["AOM_101130"] == "Feed component separation processes"
 assert preferred["AOM_004433"] == "Coccidiostats and histomonostats"
 assert preferred["AOM_006334"] == "Rumen-protected fat feed materials"

@@ -218,7 +218,6 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000538> a skos:Concept,
         aom:FeedMaterial ;
-    aom:primaryConstituent <https://w3id.org/era-aom/livestock/AOM_101080> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
 
 <https://w3id.org/era-aom/livestock/AOM_000539> a skos:Concept,
@@ -272,7 +271,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000555> a skos:Concept,
         aom:FeedMaterial ;
-    aom:compositionState <https://w3id.org/era-aom/livestock/AOM_101116> .
+    aom:componentRetentionState <https://w3id.org/era-aom/livestock/AOM_101134> .
 
 <https://w3id.org/era-aom/livestock/AOM_000557> a skos:Concept,
         aom:FeedMaterial ;
@@ -477,7 +476,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_000611> a skos:Concept,
         aom:FeedMaterial ;
-    aom:compositionState <https://w3id.org/era-aom/livestock/AOM_101134> ;
+    aom:componentRetentionState <https://w3id.org/era-aom/livestock/AOM_101134> ;
     aom:presentationForm <https://w3id.org/era-aom/livestock/AOM_101052> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_101070> ;
     aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> .
@@ -1572,7 +1571,7 @@
 
 <https://w3id.org/era-aom/livestock/AOM_001317> a skos:Concept,
         aom:FeedMaterial ;
-    aom:compositionState <https://w3id.org/era-aom/livestock/AOM_101134> .
+    aom:componentRetentionState <https://w3id.org/era-aom/livestock/AOM_101134> .
 
 <https://w3id.org/era-aom/livestock/AOM_001318> a skos:Concept,
         aom:FeedMaterial ;
@@ -3453,6 +3452,7 @@
     aom:presentationForm <https://w3id.org/era-aom/livestock/AOM_101126> ;
     aom:processingMethod <https://w3id.org/era-aom/livestock/AOM_000836>,
         <https://w3id.org/era-aom/livestock/AOM_000843> ;
+    aom:productRole <https://w3id.org/era-aom/livestock/AOM_101062> ;
     aom:sourceTaxon <http://purl.obolibrary.org/obo/NCBITaxon_9031> .
 
 <https://w3id.org/era-aom/livestock/AOM_001939> a skos:Concept,
@@ -7123,13 +7123,12 @@
 <https://w3id.org/era-aom/livestock/AOM_101181> a skos:Concept,
         aom:FeedMaterialPartCategory .
 
-<https://w3id.org/era-aom/value-binding/ingredient-component:ash> a aom:SemanticValueBinding ;
-    aom:bindingAction "map_to_existing" ;
+<https://w3id.org/era-aom/value-binding/ingredient-component:ash:hold> a aom:SemanticValueBinding ;
+    aom:bindingAction "hold_ambiguous" ;
     aom:sourceValue "Ash" ;
-    aom:targetValueClass aom:ChemicalConstituent ;
+    aom:targetValueClass xsd:string ;
     aom:valueBindingStatus "approved" ;
-    aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101080> ;
-    aom:valueTargetProperty aom:primaryConstituent .
+    aom:valueTargetProperty aom:legacyComponentDescriptor .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:bean-cake:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
@@ -7295,7 +7294,7 @@
     aom:targetValueClass aom:ComponentRetentionState ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101134> ;
-    aom:valueTargetProperty aom:compositionState .
+    aom:valueTargetProperty aom:componentRetentionState .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:full-fat-cake:1> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
@@ -7303,7 +7302,7 @@
     aom:targetValueClass aom:ComponentRetentionState ;
     aom:valueBindingStatus "approved" ;
     aom:valueTargetConcept <https://w3id.org/era-aom/livestock/AOM_101134> ;
-    aom:valueTargetProperty aom:compositionState .
+    aom:valueTargetProperty aom:componentRetentionState .
 
 <https://w3id.org/era-aom/value-binding/ingredient-component:full-fat-cake:2> a aom:SemanticValueBinding ;
     aom:bindingAction "decompose_to_existing" ;
@@ -10391,11 +10390,26 @@
     aom:valueTargetConcept <http://purl.obolibrary.org/obo/NCBITaxon_157914> ;
     aom:valueTargetProperty aom:sourceTaxon .
 
+<https://www.ebi.ac.uk/chebi/CHEBI%3A16646> rdfs:label "carbohydrate"@en ;
+    skos:prefLabel "carbohydrate"@en .
+
+<https://www.ebi.ac.uk/chebi/CHEBI%3A18059> rdfs:label "lipid"@en ;
+    skos:prefLabel "lipid"@en .
+
 <https://www.ebi.ac.uk/chebi/CHEBI%3A24431> rdfs:label "chemical entity"@en ;
     skos:prefLabel "chemical entity"@en .
 
+<https://www.ebi.ac.uk/chebi/CHEBI%3A28017> rdfs:label "starch"@en ;
+    skos:prefLabel "starch"@en .
+
+<https://www.ebi.ac.uk/chebi/CHEBI%3A36080> rdfs:label "protein"@en ;
+    skos:prefLabel "protein"@en .
+
 <https://www.ebi.ac.uk/chebi/CHEBI%3A59999> rdfs:label "chemical substance"@en ;
     skos:prefLabel "chemical substance"@en .
+
+<https://www.ebi.ac.uk/chebi/CHEBI%3A83630> rdfs:label "essential oil"@en ;
+    skos:prefLabel "essential oil"@en .
 
 <https://www.feedipedia.org/content/feeds?category=13587> rdfs:label "List of feeds"@en ;
     skos:prefLabel "List of feeds"@en .
@@ -10991,6 +11005,9 @@
 <https://w3id.org/era-aom/livestock/AOM_101064> a skos:Concept,
         aom:ChemicalConstituent .
 
+<https://w3id.org/era-aom/livestock/AOM_101066> a skos:Concept,
+        aom:ChemicalConstituent .
+
 <https://w3id.org/era-aom/livestock/AOM_101067> a skos:Concept,
         aom:ChemicalConstituent .
 
@@ -11009,10 +11026,6 @@
 
 <https://w3id.org/era-aom/livestock/AOM_101113> a skos:Concept,
         aom:FeedProductType .
-
-<https://w3id.org/era-aom/livestock/AOM_101116> a skos:Concept,
-        aom:ComponentRetentionState ;
-    aom:retainsChemicalConstituent <https://w3id.org/era-aom/livestock/AOM_101066> .
 
 <https://w3id.org/era-aom/livestock/AOM_101118> a skos:Concept,
         aom:FeedBulkConsistency .
@@ -11098,18 +11111,12 @@
 <https://w3id.org/era-aom/livestock/AOM_101060> a skos:Concept,
         aom:ProductRole .
 
-<https://w3id.org/era-aom/livestock/AOM_101066> a skos:Concept,
-        aom:ChemicalConstituent .
-
 <https://w3id.org/era-aom/livestock/AOM_101073> a skos:Concept,
         aom:ProcessingMethod ;
     aom:maySupportFeedBenefit <https://w3id.org/era-aom/livestock/AOM_101175>,
         <https://w3id.org/era-aom/livestock/AOM_101177> ;
     aom:processMechanism <https://w3id.org/era-aom/livestock/AOM_000837> ;
     aom:technicalProcessObjective <https://w3id.org/era-aom/livestock/AOM_101130> .
-
-<https://w3id.org/era-aom/livestock/AOM_101080> a skos:Concept,
-        aom:ChemicalConstituent .
 
 <https://w3id.org/era-aom/livestock/AOM_101108> a skos:Concept,
         aom:FeedPresentationForm .
@@ -11209,10 +11216,6 @@
 <https://w3id.org/era-aom/livestock/AOM_101114> a skos:Concept,
         aom:FeedProductType .
 
-<https://w3id.org/era-aom/livestock/AOM_101134> a skos:Concept,
-        aom:ComponentRetentionState ;
-    aom:retainsChemicalConstituent <https://w3id.org/era-aom/livestock/AOM_101066> .
-
 <https://w3id.org/era-aom/livestock/AOM_101055> a skos:Concept,
         aom:ProductRole .
 
@@ -11230,6 +11233,10 @@
 
 <https://w3id.org/era-aom/livestock/AOM_101075> a skos:Concept,
         aom:FeedPresentationForm .
+
+<https://w3id.org/era-aom/livestock/AOM_101134> a skos:Concept,
+        aom:ComponentRetentionState ;
+    aom:retainsChemicalConstituent <https://w3id.org/era-aom/livestock/AOM_101066> .
 
 <https://w3id.org/era-aom/livestock/AOM_101173> a skos:Concept,
         aom:FeedBenefit .

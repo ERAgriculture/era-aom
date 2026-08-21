@@ -60,7 +60,7 @@ for concept_id, (label, parent) in expected_new.items():
     assert new_by_id[concept_id]["broader_id"] == parent
 
 registered = {row["concept_id"]: row for row in registry}
-assert {row["concept_id"] for row in registry} == {f"AOM_{number:06d}" for number in range(100849, 101182)}
+assert {row["concept_id"] for row in registry} == {f"AOM_{number:06d}" for number in range(100849, 101183)}
 for concept_id in {"AOM_101156", "AOM_101157", "AOM_101158"}:
     assert registered[concept_id]["status"] == "retired-before-publication"
 for concept_id in expected_new:

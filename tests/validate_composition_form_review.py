@@ -50,10 +50,10 @@ for row in review:
     assert row["recommended_disposition"]
     assert row["recommended_semantic_action"]
     assert row["rationale"]
-    assert row["status"] in {"proposed", "held"}
+    assert row["status"] in {"approved", "held"}
     assert set(row["evidence_ids"].split(";")) <= evidence_ids
 
-assert Counter(row["status"] for row in review) == {"proposed": 38, "held": 2}
+assert Counter(row["status"] for row in review) == {"approved": 38, "held": 2}
 assert review_by_id["AOM_000324"]["recommended_disposition"] == "deprecate-and-replace"
 assert review_by_id["AOM_101050"]["status"] == "held"
 assert review_by_id["AOM_101115"]["proposed_label"] == "Feed component-retention states"
@@ -99,10 +99,10 @@ assert collision_by_label["Feed physical descriptors"]["candidate_concept_id"] =
 
 assert len(authorities) == 6
 assert all(set(row["evidence_ids"].split(";")) <= evidence_ids for row in authorities)
-assert summary["status"] == "proposed-recommendation"
+assert summary["status"] == "accepted-recommendation"
 assert summary["reviewed_concepts"] == 40
 assert summary["affected_material_assertions"] == 796
-assert summary["review_status_counts"] == {"held": 2, "proposed": 38}
+assert summary["review_status_counts"] == {"approved": 38, "held": 2}
 assert summary["implementation_changes"] == 0
 assert summary["allocated_identifiers"] == 0
 assert summary["proposed_navigation_concepts_without_ids"] == ["Feed physical descriptors"]
@@ -123,11 +123,12 @@ for key, filename in hash_targets.items():
 adr = (ROOT / "docs" / "decisions" / "0049-composition-form-and-component-retention-model.md").read_text()
 method = (ROOT / "docs" / "methods" / "composition-form-and-retention-governance.md").read_text()
 recommendations = (OUT / "RECOMMENDATIONS.md").read_text()
-assert "- Status: Proposed" in adr
+assert "- Status: Accepted" in adr
 assert "## Authority comparison" in adr
 assert "## Evidence" in adr
 assert "40 concepts and 796 affected material" in adr
-assert "Status: proposed with ADR 0049." in method
+assert "Status: accepted with ADR 0049." in method
+assert "Accepted by Pete Steward on 2026-08-21" in adr
 assert "## Authority comparison" in recommendations
 assert "## Guided Skosmos acceptance plan" in recommendations
 

@@ -33,10 +33,10 @@ assert Counter(row["decision"] for row in rows) == {
     "approve_consolidated_authority_with_explicit_facets": 17,
     "approve_bounded_workbook_material_scope": 91,
 }
-assert len(facets) == 154
+assert len(facets) == 153
 assert Counter(row["target_property"] for row in facets) == {
     "aom:productRole": 57, "aom:ingredientPart": 46,
-    "aom:primaryConstituent": 17, "aom:compositionState": 2,
+    "aom:primaryConstituent": 16, "aom:componentRetentionState": 2,
     "aom:presentationForm": 12,
     "aom:bulkConsistency": 6,
     "aom:processingMethod": 12,
@@ -53,4 +53,4 @@ assert ("AOM_003879", "AOM_101037") not in facet_pairs
 assert {("AOM_001880", "AOM_101122"), ("AOM_001880", "AOM_101081")} <= facet_pairs
 assert "AOM_001805" not in {row["feed_material_id"] for row in facets}  # plant taxon cannot establish larval biomass
 assert all(row["evidence"] for row in rows if row["decision"] == "approve_taxon_source_with_explicit_facets")
-print("Definition hard-tail review passed: 192 approved; 18 integrity holds; 154 facets")
+print("Definition hard-tail review passed: 192 approved; 18 integrity holds; 153 facets")
