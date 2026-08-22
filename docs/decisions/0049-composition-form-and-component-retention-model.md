@@ -1,6 +1,6 @@
 # ADR 0049: Composition, form, and component-retention model
 
-- Status: Proposed
+- Status: Accepted
 - Date: 2026-08-21
 - Owners: ERA-AOM semantic governance
 - Tracking: [era-program #56](https://github.com/ERAgriculture/era-program/issues/56)
@@ -181,5 +181,7 @@ constituent without becoming narrower chemical identity.
 
 ## Approval record
 
-Awaiting human decision. Proposed rows are not implementation approval; held
-rows remain blocked until their named questions are resolved.
+Accepted by Pete Steward on 2026-08-21 after merge of recommendation PR #100.
+Thirty-eight proposed dispositions are approved for implementation. Lick
+delivery and Gluten identity rows remain explicit holds until their named
+questions are resolved.

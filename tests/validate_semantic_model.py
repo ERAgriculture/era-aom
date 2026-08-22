@@ -55,10 +55,10 @@ with (DATA / "approved_feed_material_external_facets.csv").open(encoding="utf-8"
     external_material_facets = list(csv.DictReader(h))
 material_facets += generated_material_facets + hard_tail_material_facets + structural_material_facets
 assert len(value_bindings) == 298
-assert len(facet_value_concepts) == 116
-assert len(component_value_mappings) == 46
+assert len(facet_value_concepts) == 114
+assert len(component_value_mappings) == 45
 assert len(component_decompositions) == 63
-assert len({row["concept_id"] for row in facet_value_concepts}) == 116
+assert len({row["concept_id"] for row in facet_value_concepts}) == 114
 assert len(material_facets) == 2884
 assert len(external_material_facets) == 3
 assert {row["target_concept_id"] for row in component_value_mappings + component_decompositions} <= {
@@ -382,4 +382,4 @@ assert not invalid_value_binding_result
 assert not invalid_facet_result
 assert not invalid_proportion_result
 assert not invalid_proportion_kind_result
-print("Semantic model validation passed: 50 dispositions; 13 structural, 417 value bindings, 2,953 material assertions, 166 process-axis relations")
+print("Semantic model validation passed: 50 dispositions; 13 structural, 417 value bindings, 2,887 material assertions, 166 process-axis relations")

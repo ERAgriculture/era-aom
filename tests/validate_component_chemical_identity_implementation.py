@@ -196,8 +196,10 @@ assert len(facets) == 2884
 assert not any(row["target_concept_id"] in retired for row in facets)
 assert sum(row["target_property"] == "aom:ingredientPart" for row in facets) == 509
 retention = [row for row in facets if row["target_property"] == "aom:componentRetentionState"]
-assert len(retention) == 5
-assert {row["target_concept_id"] for row in retention} == {"AOM_101086", "AOM_101110"}
+assert len(retention) == 8
+assert {row["target_concept_id"] for row in retention} == {
+    "AOM_101086", "AOM_101110", "AOM_101134",
+}
 assert not any(
     row["target_property"] == "aom:compositionState"
     and row["target_concept_id"] in {"AOM_101086", "AOM_101110"}

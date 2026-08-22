@@ -24,7 +24,7 @@ changes are made by this pack.
 
 - `composition_form_inventory.csv`: complete 40-concept closure and impact
   counts.
-- `composition_form_review.csv`: one proposed or held disposition per concept.
+- `composition_form_review.csv`: one approved or held disposition per concept.
 - `affected_material_assertions.csv`: complete current assertion impact surface.
 - `specific_material_review.csv`: mineral formulation and poultry-offal cases.
 - `axis_overlap_review.csv`: eight cross-axis ambiguity decisions.

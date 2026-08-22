@@ -1,6 +1,6 @@
 # Composition, form, and retention governance
 
-Status: proposed with ADR 0049.
+Status: accepted with ADR 0049.
 
 ## Purpose
 

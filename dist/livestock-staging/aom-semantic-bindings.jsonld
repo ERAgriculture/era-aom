@@ -1914,13 +1914,6 @@
       ]
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101080",
-      "@type": [
-        "skos:Concept",
-        "aom:ChemicalConstituent"
-      ]
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101081",
       "@type": [
         "skos:Concept",
@@ -2132,13 +2125,6 @@
     },
     {
       "@id": "urn:era-aom:livestock:AOM_101115",
-      "@type": [
-        "skos:Concept",
-        "aom:ComponentRetentionState"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101116",
       "@type": [
         "skos:Concept",
         "aom:ComponentRetentionState"
@@ -8063,29 +8049,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101080",
-      "@type": [
-        "skos:Concept",
-        "aom:ChemicalConstituent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:value-binding:ingredient-component:ash",
-      "@type": "aom:SemanticValueBinding",
-      "aom:valueTargetProperty": {
-        "@id": "urn:era-aom:schema:primaryConstituent"
-      },
-      "aom:sourceValue": "Ash",
-      "aom:bindingAction": "map_to_existing",
-      "aom:targetValueClass": {
-        "@id": "urn:era-aom:schema:ChemicalConstituent"
-      },
-      "aom:valueBindingStatus": "approved",
-      "aom:valueTargetConcept": {
-        "@id": "urn:era-aom:livestock:AOM_101080"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101079",
       "@type": [
         "skos:Concept",
@@ -8211,7 +8174,7 @@
       "@id": "urn:era-aom:value-binding:ingredient-component:full-fat",
       "@type": "aom:SemanticValueBinding",
       "aom:valueTargetProperty": {
-        "@id": "urn:era-aom:schema:compositionState"
+        "@id": "urn:era-aom:schema:componentRetentionState"
       },
       "aom:sourceValue": "Full Fat",
       "aom:bindingAction": "map_to_existing",
@@ -8441,7 +8404,7 @@
       "@id": "urn:era-aom:value-binding:ingredient-component:full-fat-cake:1",
       "@type": "aom:SemanticValueBinding",
       "aom:valueTargetProperty": {
-        "@id": "urn:era-aom:schema:compositionState"
+        "@id": "urn:era-aom:schema:componentRetentionState"
       },
       "aom:sourceValue": "Full Fat Cake",
       "aom:bindingAction": "decompose_to_existing",
@@ -9895,6 +9858,19 @@
       "aom:valueBindingStatus": "approved"
     },
     {
+      "@id": "urn:era-aom:value-binding:ingredient-component:ash:hold",
+      "@type": "aom:SemanticValueBinding",
+      "aom:valueTargetProperty": {
+        "@id": "urn:era-aom:schema:legacyComponentDescriptor"
+      },
+      "aom:sourceValue": "Ash",
+      "aom:bindingAction": "hold_ambiguous",
+      "aom:targetValueClass": {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "aom:valueBindingStatus": "approved"
+    },
+    {
       "@id": "http://purl.obolibrary.org/obo/FOODON_03420288",
       "skos:prefLabel": {
         "@value": "seed bran",
@@ -10104,6 +10080,28 @@
       }
     },
     {
+      "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A16646",
+      "skos:prefLabel": {
+        "@value": "carbohydrate",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "carbohydrate",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A18059",
+      "skos:prefLabel": {
+        "@value": "lipid",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "lipid",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A24431",
       "skos:prefLabel": {
         "@value": "chemical entity",
@@ -10115,6 +10113,28 @@
       }
     },
     {
+      "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A28017",
+      "skos:prefLabel": {
+        "@value": "starch",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "starch",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A36080",
+      "skos:prefLabel": {
+        "@value": "protein",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "protein",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A59999",
       "skos:prefLabel": {
         "@value": "chemical substance",
@@ -10122,6 +10142,17 @@
       },
       "rdfs:label": {
         "@value": "chemical substance",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://www.ebi.ac.uk/chebi/CHEBI%3A83630",
+      "skos:prefLabel": {
+        "@value": "essential oil",
+        "@language": "en"
+      },
+      "rdfs:label": {
+        "@value": "essential oil",
         "@language": "en"
       }
     },
@@ -12219,7 +12250,7 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101116",
+      "@id": "urn:era-aom:livestock:AOM_101134",
       "@type": [
         "skos:Concept",
         "aom:ComponentRetentionState"
@@ -12231,8 +12262,8 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:compositionState": {
-        "@id": "urn:era-aom:livestock:AOM_101116"
+      "aom:componentRetentionState": {
+        "@id": "urn:era-aom:livestock:AOM_101134"
       }
     },
     {
@@ -12890,6 +12921,23 @@
     },
     {
       "@id": "urn:era-aom:livestock:AOM_101127",
+      "@type": [
+        "skos:Concept",
+        "aom:FeedMaterial"
+      ],
+      "aom:productRole": {
+        "@id": "urn:era-aom:livestock:AOM_101062"
+      }
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_101062",
+      "@type": [
+        "skos:Concept",
+        "aom:ProductRole"
+      ]
+    },
+    {
+      "@id": "urn:era-aom:livestock:AOM_001938",
       "@type": [
         "skos:Concept",
         "aom:FeedMaterial"
@@ -38824,23 +38872,6 @@
       }
     },
     {
-      "@id": "urn:era-aom:livestock:AOM_101080",
-      "@type": [
-        "skos:Concept",
-        "aom:ChemicalConstituent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_000538",
-      "@type": [
-        "skos:Concept",
-        "aom:FeedMaterial"
-      ],
-      "aom:primaryConstituent": {
-        "@id": "urn:era-aom:livestock:AOM_101080"
-      }
-    },
-    {
       "@id": "urn:era-aom:livestock:AOM_101058",
       "@type": [
         "skos:Concept",
@@ -39193,7 +39224,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:compositionState": {
+      "aom:componentRetentionState": {
         "@id": "urn:era-aom:livestock:AOM_101134"
       }
     },
@@ -39720,7 +39751,7 @@
         "skos:Concept",
         "aom:FeedMaterial"
       ],
-      "aom:compositionState": {
+      "aom:componentRetentionState": {
         "@id": "urn:era-aom:livestock:AOM_101134"
       }
     },
@@ -61532,26 +61563,6 @@
       "@id": "urn:era-aom:livestock:AOM_101110",
       "aom:retainsMaterialComponent": {
         "@id": "urn:era-aom:livestock:AOM_101153"
-      }
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101116",
-      "@type": [
-        "skos:Concept",
-        "aom:ComponentRetentionState"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101066",
-      "@type": [
-        "skos:Concept",
-        "aom:ChemicalConstituent"
-      ]
-    },
-    {
-      "@id": "urn:era-aom:livestock:AOM_101116",
-      "aom:retainsChemicalConstituent": {
-        "@id": "urn:era-aom:livestock:AOM_101066"
       }
     },
     {

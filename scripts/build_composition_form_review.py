@@ -122,7 +122,7 @@ def recommendation(
     proposed_label="",
     proposed_parent="",
     mapping="",
-    status="proposed",
+    status="approved",
     blocking_question="",
 ):
     referenced = set(evidence.split(";"))
@@ -570,8 +570,8 @@ summary = {
     "review": "livestock-v39-composition-form-component-retention",
     "source_commit": SOURCE_COMMIT,
     "review_date": REVIEW_DATE,
-    "status": "proposed-recommendation",
-    "decision_status": "row-dispositions-proposed-with-explicit-holds",
+    "status": "accepted-recommendation",
+    "decision_status": "row-dispositions-approved-with-explicit-holds",
     "reviewed_concepts": len(review_rows),
     "affected_material_assertions": len(assertion_rows),
     "specific_materials_reviewed": len(specific_rows),

@@ -234,6 +234,8 @@ def main():
         if check.get("replaced_by"):
             replacements = {str(value).rsplit("/", 1)[-1] for value in backup.objects(uri, DCTERMS.isReplacedBy)}
             assert check["replaced_by"] in replacements, (cid, replacements)
+        if check.get("hierarchy_excluded"):
+            assert not any(backup.objects(uri, SKOS.broader)), cid
         for property_check in check.get("properties", []):
             predicate = URIRef(f"https://w3id.org/era-aom/schema/{property_check['predicate']}")
             targets = {str(value).rsplit("/", 1)[-1] for value in backup.objects(uri, predicate)}

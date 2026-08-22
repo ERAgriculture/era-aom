@@ -303,9 +303,9 @@ AOM_101061,en,scope_note,Product-status role borne by material identified as was
 AOM_101062,en,scope_note,Product role borne by a secondary output obtained alongside or remaining after production or processing of a principal product and retained for another use. Material identity and lawful feed use require separate assertions.,approved_new_concept
 AOM_101063,en,scope_note,By-product role borne by crop residue retained after harvest or processing for another use; anatomical or composite component identity remains separate.,approved_new_concept
 AOM_101064,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
-AOM_101065,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
-AOM_101066,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
-AOM_101067,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
+AOM_101065,en,scope_note,Starch chemical identity represented as a primary constituent of feed materials; measured starch content and starch feed-material use require separate assertions.,approved_new_concept
+AOM_101066,en,scope_note,Contextual fat or lipid-mixture category represented as a primary constituent of feed materials; measured fat content and feed-product use require separate assertions.,approved_new_concept
+AOM_101067,en,scope_note,Essential-oil chemical mixture represented as a primary constituent of feed materials; additive or feed-material use requires a separate assertion.,approved_new_concept
 AOM_101069,en,scope_note,"Technical process objective of removing or reducing a fat fraction; exact operation, resulting composition, and degree of removal require separate assertions.",approved_new_concept
 AOM_101070,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
 AOM_101072,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
@@ -317,7 +317,7 @@ AOM_101077,en,scope_note,Flowing bulk consistency without a governed requirement
 AOM_101078,en,scope_note,"Moist fibrous or cellular bulk consistency, commonly semisolid; source and production process remain independently represented.",approved_new_concept
 AOM_101079,en,scope_note,Governed product role value used for ingredient-component semantics.,approved_new_concept
 AOM_101080,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
-AOM_101081,en,scope_note,Governed chemical constituent value used for ingredient-component semantics.,approved_new_concept
+AOM_101081,en,scope_note,Contextual oil or lipid-mixture category represented as a primary constituent of feed materials; measured oil content and feed-product use require separate assertions.,approved_new_concept
 AOM_101083,en,scope_note,Governed processing method value used for ingredient-component semantics.,approved_new_concept
 AOM_101084,en,scope_note,Upstream production workflow in which sugar-bearing raw material is processed and one or more feed materials arise; direct treatment operations require separate assertions.,approved_new_concept
 AOM_101085,en,scope_note,"Anatomical structures, body substances, and process-defined fractions represented as components of feed materials; crop-residue product identity and component retention remain separate.",approved_new_concept
@@ -337,7 +337,7 @@ AOM_101111,en,scope_note,Governed feed product type vocabulary used for feed-mat
 AOM_101112,en,scope_note,Governed feed product type value used for feed-material semantics.,approved_new_concept
 AOM_101113,en,scope_note,Governed hay product type value used for feed-material semantics; distinguished from the feed-material concept labeled Hay.,approved_new_concept
 AOM_101114,en,scope_note,Governed feed product type value used for feed-material semantics.,approved_new_concept
-AOM_101115,en,scope_note,Positive native-component retention or integrity states represented independently of measured chemical composition.,approved_new_concept
+AOM_101115,en,scope_note,"Positive states indicating retention of native material or chemical components, represented independently of measured composition, presentation, moisture, and processing method.",approved_new_concept
 AOM_101116,en,scope_note,Governed composition state value used for feed-material semantics.,approved_new_concept
 AOM_101117,en,scope_note,Determinate reproductive shoot system containing at least one carpel or stamen and no nested determinate shoot system.,approved_new_concept
 AOM_101118,en,scope_note,Bulk consistency in which solid particles are dispersed in a liquid continuous phase; not equivalent to an unqualified liquid.,approved_new_concept
@@ -354,7 +354,7 @@ AOM_101130,en,scope_note,"Feed processes whose objective includes removing, sepa
 AOM_101131,en,scope_note,"Feed processes whose governed objective includes shaping or agglomerating material into a presentation such as pellets, flakes, or extrudates.",approved_new_concept
 AOM_101132,en,scope_note,"Bulk flow and dispersion consistencies of feed materials, independently of particle presentation and moisture condition.",approved_new_concept
 AOM_101133,en,scope_note,"Qualitative moisture conditions of feed materials, independently of particle presentation and bulk consistency.",approved_new_concept
-AOM_101134,en,scope_note,Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted.,approved_new_concept
+AOM_101134,en,scope_note,Component-retention state indicating positive retention of native fat; no measured concentration or inference from absence of defatting is asserted.,approved_new_concept
 AOM_101135,en,scope_note,"Feed products intentionally added for a technological, sensory, nutritional, zootechnical, coccidiostatic, or histomonostatic function; authorization conditions require dated regulatory evidence.",approved_new_concept
 AOM_101136,en,scope_note,"Feed-additive category for vitamins, trace-element compounds, amino acids, urea, and related authorized nutritional additive groups.",approved_new_concept
 AOM_101137,en,scope_note,"Feed-additive category for substances or preparations used to affect animal performance, digestibility, or gut flora under authorized conditions.",approved_new_concept
@@ -399,6 +399,7 @@ AOM_101178,en,scope_note,Possible feed benefit in which process application is i
 AOM_101179,en,scope_note,"Possible production benefit in which process application is intended to facilitate a later operation such as fermentation, ensiling, cooking, or fraction recovery.",approved_new_concept
 AOM_101180,en,scope_note,Plant structures used as material-component values after source-aware anatomical review; processed fractions and unresolved vernacular parts remain outside this group.,approved_new_concept
 AOM_101181,en,scope_note,Animal structures used as material-component values after source-aware anatomical review; body substances and unresolved collective terms remain outside this group.,approved_new_concept
+AOM_101182,en,scope_note,"Navigation grouping for categorical physical descriptors of feed presentation, bulk consistency, and moisture condition; measured physical characteristics and processing methods are represented separately.",approved_new_concept
 AOM_000531,en,history_note,Retired as a browse concept. Use skos:prefLabel for canonical feed-material names and aom:ingredientName for row-local source labels on aom:IngredientComponent records.,approved_concept_retirement
 AOM_000532,en,history_note,"Retired as a browse concept. Use reviewed material-component, presentation-form, processing-method, product-role, and constituent assertions; retain aom:legacyComponentDescriptor only as compatibility provenance on aom:IngredientComponent records.",approved_concept_retirement
 AOM_000533,en,history_note,Retired as a browse concept. Use aom:sourceTaxon for reviewed biological-source assertions on canonical aom:FeedMaterial records; preserve provisional source-row claims until material identity is resolved.,approved_concept_retirement

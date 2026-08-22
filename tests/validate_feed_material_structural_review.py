@@ -53,8 +53,8 @@ assert Counter(row["moisture_disposition"] for row in cohort) == {
 assert Counter(row["role_disposition"] for row in cohort) == {
     "approved_blood_byproduct": 3,
     "approved_branch_to_role_translation": 419,
-    "approved_existing_role": 60,
-    "not_in_role_cohort": 1161,
+    "approved_existing_role": 61,
+    "not_in_role_cohort": 1160,
 }
 assert not any(row["target_concept_id"] == "AOM_101126" for row in facets)
 

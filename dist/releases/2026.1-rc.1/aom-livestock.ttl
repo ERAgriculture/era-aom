@@ -5,6 +5,17 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://w3id.org/era-aom/livestock/AOM_000324> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_101182> ;
+    owl:deprecated true ;
+    skos:definition "any measurable or observable characteristic related to the physical form under which food (or diet) is given to the animal e.g. dry, wet, moist pellets, paste."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_000324" ;
+    skos:prefLabel "physical form"@en ;
+    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000168> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "deprecated" .
+
 <https://w3id.org/era-aom/livestock/AOM_000531> a skos:Concept ;
     owl:deprecated true ;
     skos:altLabel "Raw material name"@en ;
@@ -107,6 +118,17 @@
     era:conceptType "legacy_aom_concept" ;
     era:status "deprecated" .
 
+<https://w3id.org/era-aom/livestock/AOM_101080> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_000226> ;
+    owl:deprecated true ;
+    skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101080" ;
+    skos:prefLabel "Ash constituent"@en ;
+    skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    era:conceptType "aom_concept" ;
+    era:status "deprecated" .
+
 <https://w3id.org/era-aom/livestock/AOM_101103> a skos:Concept ;
     dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_001616> ;
     owl:deprecated true ;
@@ -137,6 +159,17 @@
     skos:notation "AOM_101106" ;
     skos:prefLabel "Straw"@en ;
     skos:scopeNote "Composite crop-residue component consisting mainly of dried cereal or legume stems and leaves after harvest; not one anatomical structure."@en ;
+    era:conceptType "aom_concept" ;
+    era:status "deprecated" .
+
+<https://w3id.org/era-aom/livestock/AOM_101116> a skos:Concept ;
+    dcterms:isReplacedBy <https://w3id.org/era-aom/livestock/AOM_101134> ;
+    owl:deprecated true ;
+    skos:definition "Governed composition state value used for feed-material semantics."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101116" ;
+    skos:prefLabel "Whole-milk composition"@en ;
+    skos:scopeNote "Governed composition state value used for feed-material semantics."@en ;
     era:conceptType "aom_concept" ;
     era:status "deprecated" .
 
@@ -2136,17 +2169,6 @@ When looking at proximate diet composition tables it can be difficult to tell ad
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_000226> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000196> ;
-    skos:definition "Ash remaining after incineration, a rough approximation of mineral matter. Source: Feedipedia"@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_000226" ;
-    skos:prefLabel "Ash"@en ;
-    skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_665>,
-        <http://opendata.inra.fr/EOL/EOL_0000162> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_000227> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100849> ;
     skos:definition "Any measurable characteristic related to the concentration of calcium in feed. Source: EOL"@en ;
@@ -3051,16 +3073,6 @@ The NDF fraction primarily contains cellulose, hemicellulose, and lignin, repres
     skos:notation "AOM_000323" ;
     skos:prefLabel "particle size"@en ;
     skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000166> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000324> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000326> ;
-    skos:definition "any measurable or observable characteristic related to the physical form under which food (or diet) is given to the animal e.g. dry, wet, moist pellets, paste."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_000324" ;
-    skos:prefLabel "physical form"@en ;
-    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000168> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -4503,7 +4515,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 
 <https://w3id.org/era-aom/livestock/AOM_000538> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000540> ;
-    skos:definition "A feed material with governed source identity “bone” and characteristics: primary chemical constituent — Ash constituent; product role — By-product role."@en ;
+    skos:definition "A feed material with governed source identity “bone” and characteristics: product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000538" ;
     skos:prefLabel "Bone Ash"@en ;
@@ -4608,7 +4620,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 
 <https://w3id.org/era-aom/livestock/AOM_000555> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000556> ;
-    skos:definition "A feed material with governed source identity “milk” and characteristics: composition state — Whole-milk composition."@en ;
+    skos:definition "A feed material with governed source identity “milk” and characteristics: component-retention state — Native-fat retention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000555" ;
     skos:prefLabel "Whole Milk"@en ;
@@ -4821,7 +4833,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 <https://w3id.org/era-aom/livestock/AOM_000611> a skos:Concept ;
     skos:altLabel "Soybean Oil Cake Full Fat"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100852> ;
-    skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Native-fat-retained composition; presentation form — Cake form; processing method — Pressing; product role — By-product role."@en ;
+    skos:definition "A feed material with governed source identity “soybean” and characteristics: processing method — Pressing; presentation form — Cake form; product role — By-product role; component-retention state — Native-fat retention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000611" ;
     skos:prefLabel "Soybean Full Fat Cake"@en ;
@@ -4993,7 +5005,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
         "Whole Rice Meal"@en,
         "Whole Rice Milled"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100927> ;
-    skos:definition "A feed material with governed source identity “rice” and characteristics: component-retention state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+    skos:definition "A feed material with governed source identity “rice” and characteristics: processing method — Grinding; ingredient part — Grain; presentation form — Comminuted particle form; component-retention state — Whole-grain component retention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000656" ;
     skos:prefLabel "Ground whole-grain rice"@en ;
@@ -5019,7 +5031,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 <https://w3id.org/era-aom/livestock/AOM_000660> a skos:Concept ;
     skos:altLabel "Wheat Whole Ground"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001319> ;
-    skos:definition "A feed material with governed source identity “wheat” and characteristics: component-retention state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+    skos:definition "A feed material with governed source identity “wheat” and characteristics: processing method — Grinding; ingredient part — Grain; presentation form — Comminuted particle form; component-retention state — Whole-grain component retention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000660" ;
     skos:prefLabel "Ground whole-grain wheat"@en ;
@@ -5472,7 +5484,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 
 <https://w3id.org/era-aom/livestock/AOM_000764> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101140> ;
-    skos:definition "A feed material with governed source identity “mineral” and characteristics: presentation form — Block form."@en ;
+    skos:definition "A mineral complementary feed formulation presented as a coherent block; consumption method, exact composition, and production process remain unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000764" ;
     skos:prefLabel "Mineral Block"@en ;
@@ -5490,7 +5502,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 
 <https://w3id.org/era-aom/livestock/AOM_000766> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101140> ;
-    skos:definition "A feed-supplement ingredient with governed workbook identity “Mineral Lick”, classified within “Mineral”. Component, processing method, presentation form, bulk consistency, moisture condition, product role, integrity, composition, and constituent are unspecified unless separately asserted."@en ;
+    skos:definition "A mineral complementary feed formulation intended for gradual or free-choice consumption by licking; physical presentation, exact composition, and production process remain unspecified unless separately asserted."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_000766" ;
     skos:prefLabel "Mineral Lick"@en ;
@@ -8418,7 +8430,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
         "Maize Whole Meal"@en,
         "MaizeWhole Milled"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001313> ;
-    skos:definition "A feed material with governed source identity “maize” and characteristics: component-retention state — Whole-grain composition; ingredient part — Grain; presentation form — Comminuted particle form; processing method — Grinding."@en ;
+    skos:definition "A feed material with governed source identity “maize” and characteristics: processing method — Grinding; ingredient part — Grain; presentation form — Comminuted particle form; component-retention state — Whole-grain component retention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001324" ;
     skos:prefLabel "Ground whole-grain maize"@en ;
@@ -9855,6 +9867,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 <https://w3id.org/era-aom/livestock/AOM_001577> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101146> ;
     skos:definition "Chemical-entity category for carbohydrates represented as constituents of feed materials; measured carbohydrate content and feed-material use require separate assertions."@en ;
+    skos:exactMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A16646> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001577" ;
     skos:prefLabel "Carbohydrate"@en ;
@@ -12607,7 +12620,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
         "Chicken Offal Dried Milled"@en,
         "Chicken Viscera Dried Ground"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_100983> ;
-    skos:definition "A feed material with governed source identity “chicken offal” and characteristics: moisture condition — Dried moisture condition; presentation form — Meal form; processing method — Drying, Grinding."@en ;
+    skos:definition "A feed material with governed source identity “chicken offal” and characteristics: processing method — Drying, Grinding; presentation form — Meal form; moisture condition — Dried moisture condition; product role — By-product role."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001938" ;
     skos:prefLabel "Chicken Offal Dried Ground"@en ;
@@ -19998,33 +20011,37 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 <https://w3id.org/era-aom/livestock/AOM_101065> a skos:Concept,
         aom:ChemicalConstituent ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
-    skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:definition "Starch chemical identity represented as a primary constituent of feed materials; measured starch content and starch feed-material use require separate assertions."@en ;
+    skos:exactMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A28017> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101065" ;
     skos:prefLabel "Starch constituent"@en ;
-    skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:scopeNote "Starch chemical identity represented as a primary constituent of feed materials; measured starch content and starch feed-material use require separate assertions."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101066> a skos:Concept,
         aom:ChemicalConstituent ;
+    skos:broadMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A18059> ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
-    skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:definition "Contextual fat or lipid-mixture category represented as a primary constituent of feed materials; measured fat content and feed-product use require separate assertions."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101066" ;
     skos:prefLabel "Fat constituent"@en ;
-    skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:scopeNote "Contextual fat or lipid-mixture category represented as a primary constituent of feed materials; measured fat content and feed-product use require separate assertions."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
 <https://w3id.org/era-aom/livestock/AOM_101067> a skos:Concept,
         aom:ChemicalConstituent ;
+    skos:altLabel "Essential-oil constituent"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
-    skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:definition "Essential-oil chemical mixture represented as a primary constituent of feed materials; additive or feed-material use requires a separate assertion."@en ;
+    skos:exactMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A83630> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101067" ;
-    skos:prefLabel "Essential-oil constituent"@en ;
-    skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:prefLabel "Essential oil constituent"@en ;
+    skos:scopeNote "Essential-oil chemical mixture represented as a primary constituent of feed materials; additive or feed-material use requires a separate assertion."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20106,25 +20123,15 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101080> a skos:Concept,
-        aom:ChemicalConstituent ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
-    skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101080" ;
-    skos:prefLabel "Ash constituent"@en ;
-    skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101081> a skos:Concept,
         aom:ChemicalConstituent ;
+    skos:broadMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A18059> ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101023> ;
-    skos:definition "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:definition "Contextual oil or lipid-mixture category represented as a primary constituent of feed materials; measured oil content and feed-product use require separate assertions."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101081" ;
     skos:prefLabel "Oil constituent"@en ;
-    skos:scopeNote "Governed chemical constituent value used for ingredient-component semantics."@en ;
+    skos:scopeNote "Contextual oil or lipid-mixture category represented as a primary constituent of feed materials; measured oil content and feed-product use require separate assertions."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20141,12 +20148,13 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 
 <https://w3id.org/era-aom/livestock/AOM_101086> a skos:Concept,
         aom:ComponentRetentionState ;
-    skos:altLabel "Whole crop"@en ;
+    skos:altLabel "Whole crop"@en,
+        "Whole-crop composition"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101115> ;
     skos:definition "Component-retention state indicating retention of harvested whole-crop scope rather than one selected component."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101086" ;
-    skos:prefLabel "Whole-crop composition"@en ;
+    skos:prefLabel "Whole-crop component retention"@en ;
     skos:scopeNote "Component-retention state indicating retention of harvested whole-crop scope rather than one selected component."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
@@ -20188,12 +20196,13 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 <https://w3id.org/era-aom/livestock/AOM_101110> a skos:Concept,
         aom:ComponentRetentionState ;
     skos:altLabel "Whole grain"@en,
+        "Whole-grain composition"@en,
         "Whole-grain integrity"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101115> ;
     skos:definition "Component-retention state in which bran, plant embryo, and endosperm remain in characteristic proportions independently of particle-size reduction."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_101110" ;
-    skos:prefLabel "Whole-grain composition"@en ;
+    skos:prefLabel "Whole-grain component retention"@en ;
     skos:scopeNote "Component-retention state in which bran, plant embryo, and endosperm remain in characteristic proportions independently of particle-size reduction."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
@@ -20228,17 +20237,6 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
     skos:notation "AOM_101114" ;
     skos:prefLabel "Compound feed"@en ;
     skos:scopeNote "Governed feed product type value used for feed-material semantics."@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101116> a skos:Concept,
-        aom:ComponentRetentionState ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101115> ;
-    skos:definition "Governed composition state value used for feed-material semantics."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101116" ;
-    skos:prefLabel "Whole-milk composition"@en ;
-    skos:scopeNote "Governed composition state value used for feed-material semantics."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20321,18 +20319,6 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
     skos:prefLabel "Poultry by-product meal"@en ;
     skos:related <https://w3id.org/era-aom/livestock/AOM_000024> ;
     skos:scopeNote "Rendered poultry by-products prepared as feed by cooking or sterilization, drying, and grinding."@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101134> a skos:Concept,
-        aom:ComponentRetentionState ;
-    skos:altLabel "Full-fat composition"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101115> ;
-    skos:definition "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:notation "AOM_101134" ;
-    skos:prefLabel "Native-fat-retained composition"@en ;
-    skos:scopeNote "Component-retention state indicating positive retention of native fat; no measured concentration or inferred absence of defatting is asserted."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -20577,6 +20563,18 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_000163> ;
     skos:notation "AOM_000168" ;
     skos:prefLabel "Controlled Grazing"@en ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000226> a skos:Concept ;
+    skos:altLabel "Ash constituent"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000196> ;
+    skos:definition "Ash remaining after incineration, a rough approximation of mineral matter. Source: Feedipedia"@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_000226" ;
+    skos:prefLabel "Ash"@en ;
+    skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_665>,
+        <http://opendata.inra.fr/EOL/EOL_0000162> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -21858,7 +21856,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
     skos:altLabel "Corn Whole"@en,
         "Maize Whole"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
-    skos:definition "A feed material with governed source identity “maize” and characteristics: component-retention state — Whole-grain composition; ingredient part — Grain."@en ;
+    skos:definition "A feed material with governed source identity “maize” and characteristics: ingredient part — Grain; component-retention state — Whole-grain component retention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001324> ;
     skos:notation "AOM_001313" ;
@@ -21870,7 +21868,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
 
 <https://w3id.org/era-aom/livestock/AOM_001317> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001582> ;
-    skos:definition "A feed material with governed source identity “soybean” and characteristics: composition state — Native-fat-retained composition."@en ;
+    skos:definition "A feed material with governed source identity “soybean” and characteristics: component-retention state — Native-fat retention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_002033> ;
     skos:notation "AOM_001317" ;
@@ -21901,7 +21899,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
         "Maize Whole Ensiled"@en,
         "Maize Whole Silage"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000648> ;
-    skos:definition "A feed material with governed source identity “crop maize” and characteristics: component-retention state — Whole-crop composition; processing method — Ensiling."@en ;
+    skos:definition "A feed material with governed source identity “crop maize” and characteristics: processing method — Ensiling; component-retention state — Whole-crop component retention."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001326" ;
     skos:prefLabel "Whole-crop maize silage"@en ;
@@ -22368,6 +22366,7 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
     skos:altLabel "Protein constituent"@en ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_101146> ;
     skos:definition "Chemical-entity category for proteins represented as constituents of feed materials; measured protein content and feed-material use require separate assertions."@en ;
+    skos:exactMatch <https://www.ebi.ac.uk/chebi/CHEBI%3A36080> ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:notation "AOM_001571" ;
     skos:prefLabel "Protein"@en ;
@@ -25084,6 +25083,20 @@ This is the amount carbon in soil biomass, if total carbon is presented use the 
     skos:notation "AOM_101128" ;
     skos:prefLabel "Rendering"@en ;
     skos:scopeNote "Thermal processing of animal by-products to separate or stabilize feed materials."@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101134> a skos:Concept,
+        aom:ComponentRetentionState ;
+    skos:altLabel "Full-fat composition"@en,
+        "Native-fat-retained composition"@en,
+        "Whole-milk composition"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101115> ;
+    skos:definition "Component-retention state indicating positive retention of native fat; no measured concentration or inference from absence of defatting is asserted."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:notation "AOM_101134" ;
+    skos:prefLabel "Native-fat retention"@en ;
+    skos:scopeNote "Component-retention state indicating positive retention of native fat; no measured concentration or inference from absence of defatting is asserted."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -27972,7 +27985,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 <https://w3id.org/era-aom/livestock/AOM_101133> a skos:Concept,
         aom:FeedMoistureCondition ;
     skos:altLabel "Ingredient moisture conditions"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101182> ;
     skos:definition "Qualitative moisture conditions applicable to feed materials or formulated feeds independently of particle presentation and bulk consistency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_001510>,
@@ -28187,6 +28200,20 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_000243> ;
     skos:notation "AOM_000244" ;
     skos:prefLabel "Energy Content"@en ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_000326> a skos:Concept ;
+    skos:altLabel "Feed Physical Characteristic"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:definition "Measurable or observable characteristics describing physical properties of a feed or diet, such as floatability, particle size, or water-retention capacity; categorical presentation, bulk consistency, moisture condition, and processing method are represented separately."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000322>,
+        <https://w3id.org/era-aom/livestock/AOM_000323>,
+        <https://w3id.org/era-aom/livestock/AOM_000325> ;
+    skos:notation "AOM_000326" ;
+    skos:prefLabel "Feed physical characteristics"@en ;
+    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000200> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -29238,10 +29265,26 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101115> a skos:Concept,
+        aom:ComponentRetentionState ;
+    skos:altLabel "Composition states"@en,
+        "Native-component retention states"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:definition "Positive states indicating retention of native material or chemical components, represented independently of measured composition, presentation, moisture, and processing method."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101086>,
+        <https://w3id.org/era-aom/livestock/AOM_101110>,
+        <https://w3id.org/era-aom/livestock/AOM_101134> ;
+    skos:notation "AOM_101115" ;
+    skos:prefLabel "Feed component-retention states"@en ;
+    skos:scopeNote "Positive states indicating retention of native material or chemical components, represented independently of measured composition, presentation, moisture, and processing method."@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_101132> a skos:Concept,
         aom:FeedBulkConsistency ;
     skos:altLabel "Ingredient bulk consistencies"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101182> ;
     skos:definition "Bulk flow and dispersion consistencies applicable to feed materials or formulated feeds independently of particle presentation and moisture condition."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_101077>,
@@ -29373,20 +29416,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
         <https://w3id.org/era-aom/livestock/AOM_000177> ;
     skos:notation "AOM_000173" ;
     skos:prefLabel "Disease Prevention"@en ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000326> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "any measurable characteristic related to the physical properties of feed (or diet) e.g. density, floatability, breakability,etc."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000322>,
-        <https://w3id.org/era-aom/livestock/AOM_000323>,
-        <https://w3id.org/era-aom/livestock/AOM_000324>,
-        <https://w3id.org/era-aom/livestock/AOM_000325> ;
-    skos:notation "AOM_000326" ;
-    skos:prefLabel "Feed Physical Characteristic"@en ;
-    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000200> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
@@ -30189,22 +30218,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
-<https://w3id.org/era-aom/livestock/AOM_101115> a skos:Concept,
-        aom:ComponentRetentionState ;
-    skos:altLabel "Composition states"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
-    skos:definition "Positive native-component retention or integrity states represented independently of measured chemical composition."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101086>,
-        <https://w3id.org/era-aom/livestock/AOM_101110>,
-        <https://w3id.org/era-aom/livestock/AOM_101116>,
-        <https://w3id.org/era-aom/livestock/AOM_101134> ;
-    skos:notation "AOM_101115" ;
-    skos:prefLabel "Native-component retention states"@en ;
-    skos:scopeNote "Positive native-component retention or integrity states represented independently of measured chemical composition."@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
 <https://w3id.org/era-aom/livestock/AOM_101135> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
     skos:definition "Feed products intentionally added for a technological, sensory, nutritional, zootechnical, coccidiostatic, or histomonostatic function; authorization conditions require dated regulatory evidence."@en ;
@@ -30230,6 +30243,20 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:notation "AOM_101155" ;
     skos:prefLabel "Mineral and vitamin complementary feeds"@en ;
     skos:scopeNote "Formulated complementary feeds or mixtures containing governed mineral, vitamin, salt, or urea components."@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
+<https://w3id.org/era-aom/livestock/AOM_101182> a skos:Concept ;
+    skos:altLabel "physical form"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:definition "Navigation grouping for categorical physical descriptors of feed presentation, bulk consistency, and moisture condition; measured physical characteristics and processing methods are represented separately."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101020>,
+        <https://w3id.org/era-aom/livestock/AOM_101132>,
+        <https://w3id.org/era-aom/livestock/AOM_101133> ;
+    skos:notation "AOM_101182" ;
+    skos:prefLabel "Feed physical descriptors"@en ;
+    skos:scopeNote "Navigation grouping for categorical physical descriptors of feed presentation, bulk consistency, and moisture condition; measured physical characteristics and processing methods are represented separately."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -30642,6 +30669,24 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_101023> a skos:Concept,
+        aom:ChemicalConstituent ;
+    skos:altLabel "Ingredient constituents"@en,
+        "Primary chemical constituents"@en ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101146> ;
+    skos:definition "Chemical-entity categories used as targets of constituent relations; primary role is supplied by relation from feed material."@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101064>,
+        <https://w3id.org/era-aom/livestock/AOM_101065>,
+        <https://w3id.org/era-aom/livestock/AOM_101066>,
+        <https://w3id.org/era-aom/livestock/AOM_101067>,
+        <https://w3id.org/era-aom/livestock/AOM_101081> ;
+    skos:notation "AOM_101023" ;
+    skos:prefLabel "Chemical constituent categories"@en ;
+    skos:scopeNote "Chemical-entity categories used as targets of constituent relations; primary role is supplied by relation from feed material."@en ;
+    era:conceptType "aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_101129> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_000845> ;
     skos:definition "Technical-objective category for feed operations intended to reduce particle dimensions without implying one machine, mechanism, physical form, or nutritional benefit."@en ;
@@ -31010,25 +31055,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:notation "AOM_101002" ;
     skos:prefLabel "Animal rearing stage"@en ;
     skos:scopeNote "Animal-source categories used to organize life-stage descriptors in livestock management."@en ;
-    era:conceptType "aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_101023> a skos:Concept,
-        aom:ChemicalConstituent ;
-    skos:altLabel "Ingredient constituents"@en,
-        "Primary chemical constituents"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_101146> ;
-    skos:definition "Chemical-entity categories used as targets of constituent relations; primary role is supplied by relation from feed material."@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_101064>,
-        <https://w3id.org/era-aom/livestock/AOM_101065>,
-        <https://w3id.org/era-aom/livestock/AOM_101066>,
-        <https://w3id.org/era-aom/livestock/AOM_101067>,
-        <https://w3id.org/era-aom/livestock/AOM_101080>,
-        <https://w3id.org/era-aom/livestock/AOM_101081> ;
-    skos:notation "AOM_101023" ;
-    skos:prefLabel "Chemical constituent categories"@en ;
-    skos:scopeNote "Chemical-entity categories used as targets of constituent relations; primary role is supplied by relation from feed material."@en ;
     era:conceptType "aom_concept" ;
     era:status "unknown" .
 
@@ -31407,7 +31433,7 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
 <https://w3id.org/era-aom/livestock/AOM_101020> a skos:Concept,
         aom:FeedPresentationForm ;
     skos:altLabel "Ingredient presentation forms"@en ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000328> ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_101182> ;
     skos:definition "Shapes and particle presentations applicable to feed materials or formulated feeds independently of moisture and bulk consistency."@en ;
     skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
     skos:narrower <https://w3id.org/era-aom/livestock/AOM_101049>,
@@ -32236,6 +32262,33 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 
+<https://w3id.org/era-aom/livestock/AOM_000328> a skos:Concept ;
+    skos:broader <https://w3id.org/era-aom/livestock/AOM_000107> ;
+    skos:definition "any measurable, observable or declared characteristic related to elements or set of elements, with nutritional purposes"@en ;
+    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
+    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000196>,
+        <https://w3id.org/era-aom/livestock/AOM_000321>,
+        <https://w3id.org/era-aom/livestock/AOM_000326>,
+        <https://w3id.org/era-aom/livestock/AOM_000327>,
+        <https://w3id.org/era-aom/livestock/AOM_000845>,
+        <https://w3id.org/era-aom/livestock/AOM_001062>,
+        <https://w3id.org/era-aom/livestock/AOM_001491>,
+        <https://w3id.org/era-aom/livestock/AOM_100850>,
+        <https://w3id.org/era-aom/livestock/AOM_101022>,
+        <https://w3id.org/era-aom/livestock/AOM_101085>,
+        <https://w3id.org/era-aom/livestock/AOM_101111>,
+        <https://w3id.org/era-aom/livestock/AOM_101115>,
+        <https://w3id.org/era-aom/livestock/AOM_101135>,
+        <https://w3id.org/era-aom/livestock/AOM_101142>,
+        <https://w3id.org/era-aom/livestock/AOM_101146>,
+        <https://w3id.org/era-aom/livestock/AOM_101168>,
+        <https://w3id.org/era-aom/livestock/AOM_101182> ;
+    skos:notation "AOM_000328" ;
+    skos:prefLabel "Feed Characteristic"@en ;
+    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000065> ;
+    era:conceptType "legacy_aom_concept" ;
+    era:status "unknown" .
+
 <https://w3id.org/era-aom/livestock/AOM_000628> a skos:Concept ;
     skos:broader <https://w3id.org/era-aom/livestock/AOM_001916> ;
     skos:definition "A feed material with governed source identity “Oil Plant ByProducts” and characteristics: product role — By-product role."@en ;
@@ -32317,35 +32370,6 @@ D = Proportion of the total nutrient in the diet supplied by the test feed"""@en
     skos:prefLabel "Legume"@en ;
     skos:relatedMatch <http://purl.obolibrary.org/obo/FOODON_03413377>,
         <http://purl.obolibrary.org/obo/NCBITaxon_3803> ;
-    era:conceptType "legacy_aom_concept" ;
-    era:status "unknown" .
-
-<https://w3id.org/era-aom/livestock/AOM_000328> a skos:Concept ;
-    skos:broader <https://w3id.org/era-aom/livestock/AOM_000107> ;
-    skos:definition "any measurable, observable or declared characteristic related to elements or set of elements, with nutritional purposes"@en ;
-    skos:inScheme <https://w3id.org/era-aom/scheme/livestock-v2> ;
-    skos:narrower <https://w3id.org/era-aom/livestock/AOM_000196>,
-        <https://w3id.org/era-aom/livestock/AOM_000321>,
-        <https://w3id.org/era-aom/livestock/AOM_000326>,
-        <https://w3id.org/era-aom/livestock/AOM_000327>,
-        <https://w3id.org/era-aom/livestock/AOM_000845>,
-        <https://w3id.org/era-aom/livestock/AOM_001062>,
-        <https://w3id.org/era-aom/livestock/AOM_001491>,
-        <https://w3id.org/era-aom/livestock/AOM_100850>,
-        <https://w3id.org/era-aom/livestock/AOM_101020>,
-        <https://w3id.org/era-aom/livestock/AOM_101022>,
-        <https://w3id.org/era-aom/livestock/AOM_101085>,
-        <https://w3id.org/era-aom/livestock/AOM_101111>,
-        <https://w3id.org/era-aom/livestock/AOM_101115>,
-        <https://w3id.org/era-aom/livestock/AOM_101132>,
-        <https://w3id.org/era-aom/livestock/AOM_101133>,
-        <https://w3id.org/era-aom/livestock/AOM_101135>,
-        <https://w3id.org/era-aom/livestock/AOM_101142>,
-        <https://w3id.org/era-aom/livestock/AOM_101146>,
-        <https://w3id.org/era-aom/livestock/AOM_101168> ;
-    skos:notation "AOM_000328" ;
-    skos:prefLabel "Feed Characteristic"@en ;
-    skos:relatedMatch <http://opendata.inra.fr/EOL/EOL_0000065> ;
     era:conceptType "legacy_aom_concept" ;
     era:status "unknown" .
 

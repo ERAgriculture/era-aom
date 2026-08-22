@@ -550,8 +550,6 @@
 
 <urn:era-aom:livestock:AOM_101079> a skos:Concept, aom:FeedFunctionalRole .
 
-<urn:era-aom:livestock:AOM_101080> a skos:Concept, aom:ChemicalConstituent .
-
 <urn:era-aom:livestock:AOM_101081> a skos:Concept, aom:ChemicalConstituent .
 
 <urn:era-aom:livestock:AOM_000838> a skos:Concept, aom:ProcessingMethod .
@@ -613,8 +611,6 @@
 <urn:era-aom:livestock:AOM_101114> a skos:Concept, aom:FeedProductType .
 
 <urn:era-aom:livestock:AOM_101115> a skos:Concept, aom:ComponentRetentionState .
-
-<urn:era-aom:livestock:AOM_101116> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_101117> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -3497,16 +3493,6 @@
   aom:valueBindingStatus "approved" ;
   aom:valueTargetConcept <urn:era-aom:livestock:AOM_101061> .
 
-<urn:era-aom:livestock:AOM_101080> a skos:Concept, aom:ChemicalConstituent .
-
-<urn:era-aom:value-binding:ingredient-component:ash> a aom:SemanticValueBinding ;
-  aom:valueTargetProperty <urn:era-aom:schema:primaryConstituent> ;
-  aom:sourceValue "Ash" ;
-  aom:bindingAction "map_to_existing" ;
-  aom:targetValueClass <urn:era-aom:schema:ChemicalConstituent> ;
-  aom:valueBindingStatus "approved" ;
-  aom:valueTargetConcept <urn:era-aom:livestock:AOM_101080> .
-
 <urn:era-aom:livestock:AOM_101079> a skos:Concept, aom:FeedFunctionalRole .
 
 <urn:era-aom:value-binding:ingredient-component:binder> a aom:SemanticValueBinding ;
@@ -3560,7 +3546,7 @@
 <urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:value-binding:ingredient-component:full-fat> a aom:SemanticValueBinding ;
-  aom:valueTargetProperty <urn:era-aom:schema:compositionState> ;
+  aom:valueTargetProperty <urn:era-aom:schema:componentRetentionState> ;
   aom:sourceValue "Full Fat" ;
   aom:bindingAction "map_to_existing" ;
   aom:targetValueClass <urn:era-aom:schema:ComponentRetentionState> ;
@@ -3660,7 +3646,7 @@
 <urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:value-binding:ingredient-component:full-fat-cake:1> a aom:SemanticValueBinding ;
-  aom:valueTargetProperty <urn:era-aom:schema:compositionState> ;
+  aom:valueTargetProperty <urn:era-aom:schema:componentRetentionState> ;
   aom:sourceValue "Full Fat Cake" ;
   aom:bindingAction "decompose_to_existing" ;
   aom:targetValueClass <urn:era-aom:schema:ComponentRetentionState> ;
@@ -4307,6 +4293,13 @@
   aom:targetValueClass <urn:era-aom:schema:CompositionState> ;
   aom:valueBindingStatus "approved" .
 
+<urn:era-aom:value-binding:ingredient-component:ash:hold> a aom:SemanticValueBinding ;
+  aom:valueTargetProperty <urn:era-aom:schema:legacyComponentDescriptor> ;
+  aom:sourceValue "Ash" ;
+  aom:bindingAction "hold_ambiguous" ;
+  aom:targetValueClass <http://www.w3.org/2001/XMLSchema#string> ;
+  aom:valueBindingStatus "approved" .
+
 <http://purl.obolibrary.org/obo/FOODON_03420288> skos:prefLabel "seed bran"@en ;
   rdfs:label "seed bran"@en .
 
@@ -4364,11 +4357,26 @@
 <https://feedipedia.org/node/653> skos:prefLabel "Jobo (Spondias mombin)"@en ;
   rdfs:label "Jobo (Spondias mombin)"@en .
 
+<https://www.ebi.ac.uk/chebi/CHEBI%3A16646> skos:prefLabel "carbohydrate"@en ;
+  rdfs:label "carbohydrate"@en .
+
+<https://www.ebi.ac.uk/chebi/CHEBI%3A18059> skos:prefLabel "lipid"@en ;
+  rdfs:label "lipid"@en .
+
 <https://www.ebi.ac.uk/chebi/CHEBI%3A24431> skos:prefLabel "chemical entity"@en ;
   rdfs:label "chemical entity"@en .
 
+<https://www.ebi.ac.uk/chebi/CHEBI%3A28017> skos:prefLabel "starch"@en ;
+  rdfs:label "starch"@en .
+
+<https://www.ebi.ac.uk/chebi/CHEBI%3A36080> skos:prefLabel "protein"@en ;
+  rdfs:label "protein"@en .
+
 <https://www.ebi.ac.uk/chebi/CHEBI%3A59999> skos:prefLabel "chemical substance"@en ;
   rdfs:label "chemical substance"@en .
+
+<https://www.ebi.ac.uk/chebi/CHEBI%3A83630> skos:prefLabel "essential oil"@en ;
+  rdfs:label "essential oil"@en .
 
 <https://www.feedipedia.org/content/feeds?category=13587> skos:prefLabel "List of feeds"@en ;
   rdfs:label "List of feeds"@en .
@@ -4943,10 +4951,10 @@
 <urn:era-aom:livestock:AOM_001324> a skos:Concept, aom:FeedMaterial ;
   aom:componentRetentionState <urn:era-aom:livestock:AOM_101110> .
 
-<urn:era-aom:livestock:AOM_101116> a skos:Concept, aom:ComponentRetentionState .
+<urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_000555> a skos:Concept, aom:FeedMaterial ;
-  aom:compositionState <urn:era-aom:livestock:AOM_101116> .
+  aom:componentRetentionState <urn:era-aom:livestock:AOM_101134> .
 
 <urn:era-aom:livestock:AOM_101113> a skos:Concept, aom:FeedProductType .
 
@@ -5141,6 +5149,11 @@
 <urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole .
 
 <urn:era-aom:livestock:AOM_101127> a skos:Concept, aom:FeedMaterial ;
+  aom:productRole <urn:era-aom:livestock:AOM_101062> .
+
+<urn:era-aom:livestock:AOM_101062> a skos:Concept, aom:ProductRole .
+
+<urn:era-aom:livestock:AOM_001938> a skos:Concept, aom:FeedMaterial ;
   aom:productRole <urn:era-aom:livestock:AOM_101062> .
 
 <urn:era-aom:livestock:AOM_000836> a skos:Concept, aom:ProcessingMethod .
@@ -12768,11 +12781,6 @@
 <urn:era-aom:livestock:AOM_012120> a skos:Concept, aom:FeedMaterial ;
   aom:processingMethod <urn:era-aom:livestock:AOM_000832> .
 
-<urn:era-aom:livestock:AOM_101080> a skos:Concept, aom:ChemicalConstituent .
-
-<urn:era-aom:livestock:AOM_000538> a skos:Concept, aom:FeedMaterial ;
-  aom:primaryConstituent <urn:era-aom:livestock:AOM_101080> .
-
 <urn:era-aom:livestock:AOM_101058> a skos:Concept, aom:ProductRole .
 
 <urn:era-aom:livestock:AOM_000545> a skos:Concept, aom:FeedMaterial ;
@@ -12876,7 +12884,7 @@
 <urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_000611> a skos:Concept, aom:FeedMaterial ;
-  aom:compositionState <urn:era-aom:livestock:AOM_101134> .
+  aom:componentRetentionState <urn:era-aom:livestock:AOM_101134> .
 
 <urn:era-aom:livestock:AOM_101052> a skos:Concept, aom:FeedPresentationForm .
 
@@ -13031,7 +13039,7 @@
 <urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState .
 
 <urn:era-aom:livestock:AOM_001317> a skos:Concept, aom:FeedMaterial ;
-  aom:compositionState <urn:era-aom:livestock:AOM_101134> .
+  aom:componentRetentionState <urn:era-aom:livestock:AOM_101134> .
 
 <urn:era-aom:livestock:AOM_101038> a skos:Concept, aom:FeedMaterialPartCategory .
 
@@ -19463,12 +19471,6 @@
 <urn:era-aom:livestock:AOM_101153> a skos:Concept, aom:FeedMaterialPartCategory .
 
 <urn:era-aom:livestock:AOM_101110> aom:retainsMaterialComponent <urn:era-aom:livestock:AOM_101153> .
-
-<urn:era-aom:livestock:AOM_101116> a skos:Concept, aom:ComponentRetentionState .
-
-<urn:era-aom:livestock:AOM_101066> a skos:Concept, aom:ChemicalConstituent .
-
-<urn:era-aom:livestock:AOM_101116> aom:retainsChemicalConstituent <urn:era-aom:livestock:AOM_101066> .
 
 <urn:era-aom:livestock:AOM_101134> a skos:Concept, aom:ComponentRetentionState .
 

@@ -46,7 +46,11 @@ round-trip tests will be added with normalized pilot data.
 - `validate_composition_form_review.py`: checks complete 40-concept Cohort E
   coverage, 796 affected assertions, physical-axis boundaries, component-
   retention migrations, constituent decisions, material cases, evidence links,
-  label collisions, and recommendation-only status.
+  label collisions, and accepted review status.
+- `validate_composition_form_implementation.py`: checks all accepted ADR 0049
+  dispositions, idempotent governance generation, physical-axis navigation,
+  deprecated-card suppression, retention migrations, chemical mappings, raw
+  Ash hold, specific-material assertions, RDF parity, and two explicit holds.
 - `validate_global_identity_audit.py`: covers every duplicate preferred-label
   group, prevents collision regression, and freezes generated ID allocation
   while canonical-reuse/deprecation review remains open.

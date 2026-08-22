@@ -229,7 +229,7 @@ AOM_000221,en,pref,tryptophan,L6
 AOM_000222,en,pref,tyrosine,L6
 AOM_000223,en,pref,valine,L6
 AOM_000225,en,pref,Ammonia,L5
-AOM_000226,en,pref,Ash,L5
+AOM_000226,en,pref,Ash,approved_deprecation
 AOM_000228,en,pref,Carbohydrate,L5
 AOM_000229,en,pref,Carbon,L5
 AOM_000230,en,pref,Carbon:Nitrogen (C/N) Ratio,L5
@@ -3162,7 +3162,8 @@ AOM_000316,en,pref,Digestible Organic Matter,L5
 AOM_000317,en,pref,Digestible Protein,L5
 AOM_000320,en,pref,Measured (Unspecified),L5
 AOM_000321,en,pref,Feed pH,L4
-AOM_000326,en,pref,Feed Physical Characteristic,L4
+AOM_000326,en,pref,Feed physical characteristics,approved_label_correction
+AOM_000326,en,alt,Feed Physical Characteristic,L4
 AOM_000322,en,pref,floatability,L5
 AOM_000323,en,pref,particle size,L5
 AOM_000324,en,pref,physical form,L5
@@ -4366,7 +4367,7 @@ AOM_101063,en,pref,Crop-residue by-product role,approved_new_concept
 AOM_101064,en,pref,Gluten constituent,approved_new_concept
 AOM_101065,en,pref,Starch constituent,approved_new_concept
 AOM_101066,en,pref,Fat constituent,approved_new_concept
-AOM_101067,en,pref,Essential-oil constituent,approved_new_concept
+AOM_101067,en,pref,Essential oil constituent,approved_new_concept
 AOM_101069,en,pref,Fat removal,approved_new_concept
 AOM_101070,en,pref,Pressing,approved_new_concept
 AOM_101072,en,pref,Extraction,approved_new_concept
@@ -4382,7 +4383,7 @@ AOM_101081,en,pref,Oil constituent,approved_new_concept
 AOM_101083,en,pref,Hydrolysis,approved_new_concept
 AOM_101084,en,pref,Sugar processing,approved_new_concept
 AOM_101085,en,pref,Feed material components,approved_new_concept
-AOM_101086,en,pref,Whole-crop composition,approved_new_concept
+AOM_101086,en,pref,Whole-crop component retention,approved_new_concept
 AOM_101088,en,pref,Autoclaving,approved_new_concept
 AOM_101090,en,pref,Cracking,approved_new_concept
 AOM_101096,en,pref,Heating,approved_new_concept
@@ -4393,12 +4394,12 @@ AOM_101105,en,pref,Stover,approved_new_concept
 AOM_101106,en,pref,Straw,approved_new_concept
 AOM_101107,en,pref,Vine,approved_new_concept
 AOM_101108,en,pref,Pellet form,approved_new_concept
-AOM_101110,en,pref,Whole-grain composition,approved_new_concept
+AOM_101110,en,pref,Whole-grain component retention,approved_new_concept
 AOM_101111,en,pref,Feed product types,approved_new_concept
 AOM_101112,en,pref,Processing pulp,approved_new_concept
 AOM_101113,en,pref,Hay product type,approved_new_concept
 AOM_101114,en,pref,Compound feed,approved_new_concept
-AOM_101115,en,pref,Native-component retention states,approved_new_concept
+AOM_101115,en,pref,Feed component-retention states,approved_new_concept
 AOM_101116,en,pref,Whole-milk composition,approved_new_concept
 AOM_101117,en,pref,Flower,approved_new_concept
 AOM_101118,en,pref,Slurry consistency,approved_new_concept
@@ -4415,7 +4416,7 @@ AOM_101130,en,pref,Feed component separation processes,approved_new_concept
 AOM_101131,en,pref,Feed shaping and agglomeration processes,approved_new_concept
 AOM_101132,en,pref,Feed bulk consistencies,approved_new_concept
 AOM_101133,en,pref,Feed moisture conditions,approved_new_concept
-AOM_101134,en,pref,Native-fat-retained composition,approved_new_concept
+AOM_101134,en,pref,Native-fat retention,approved_new_concept
 AOM_101135,en,pref,Feed additives,approved_new_concept
 AOM_101136,en,pref,Nutritional feed additives,approved_new_concept
 AOM_101137,en,pref,Zootechnical feed additives,approved_new_concept
@@ -4460,6 +4461,7 @@ AOM_101178,en,pref,Dust control,approved_new_concept
 AOM_101179,en,pref,Downstream-process facilitation,approved_new_concept
 AOM_101180,en,pref,Plant anatomical components,approved_new_concept
 AOM_101181,en,pref,Animal anatomical components,approved_new_concept
+AOM_101182,en,pref,Feed physical descriptors,approved_new_concept
 AOM_100850,en,alt,Feed ingredient,approved_label_addition
 AOM_101019,en,alt,Ingredient anatomical parts,approved_label_addition
 AOM_101020,en,alt,Ingredient presentation forms,approved_label_addition
@@ -4491,6 +4493,11 @@ AOM_101069,en,alt,Defatting,approved_label_addition
 AOM_101146,en,alt,Feed chemical entities,approved_label_addition
 AOM_101023,en,alt,Primary chemical constituents,approved_label_addition
 AOM_101029,en,alt,Germ,approved_label_addition
+AOM_101067,en,alt,Essential-oil constituent,approved_label_addition
+AOM_101086,en,alt,Whole-crop composition,approved_label_addition
+AOM_101110,en,alt,Whole-grain composition,approved_label_addition
+AOM_101115,en,alt,Native-component retention states,approved_label_addition
+AOM_101134,en,alt,Native-fat-retained composition,approved_label_addition
 AOM_001326,en,alt,Maize Whole Ensiled,approved_deprecation
 AOM_001326,en,alt,Maize Whole Silage,approved_deprecation
 AOM_000564,en,alt,Brewers By-Product,approved_deprecation
@@ -4508,6 +4515,9 @@ AOM_000872,en,alt,lamb production unit,approved_deprecation
 AOM_001616,en,alt,Blood component,approved_deprecation
 AOM_001571,en,alt,Protein constituent,approved_deprecation
 AOM_101143,en,alt,Cereal milling fractions,approved_deprecation
+AOM_101182,en,alt,physical form,approved_deprecation
+AOM_101134,en,alt,Whole-milk composition,approved_deprecation
+AOM_000226,en,alt,Ash constituent,approved_deprecation
 AOM_101079,en,alt,Binder,approved_deprecation
 AOM_101151,en,alt,Digestibility Marker,approved_deprecation
 AOM_101152,en,alt,Unspecified Filler,approved_deprecation
