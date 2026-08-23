@@ -1,0 +1,44 @@
+{
+  "issue": "https://github.com/ERAgriculture/era-aom/issues/99",
+  "decision": "docs/decisions/0050-reproducible-release-artifact-contract.md",
+  "baseline_commit": "8fb207ffb974891d59f58d7e9a1b90fcf44796ce",
+  "evidence_date": "2026-08-23",
+  "reproduction": {
+    "allowed_old_runtime": {
+      "python": "3.12.14",
+      "rdflib": "7.1.4",
+      "pyarrow": "18.1.0"
+    },
+    "reference_runtime": {
+      "python": "3.12.10",
+      "rdflib": "7.6.0",
+      "pyarrow": "24.0.0"
+    },
+    "different_files": 7,
+    "different_parquet_files": 5,
+    "manifest_and_checksum_differences": 2,
+    "rdf_graph_differences": 0,
+    "finding": "Floating writer ranges permit byte drift despite equal table and RDF meaning."
+  },
+  "cross_platform_result": {
+    "macos_python": "3.12.10",
+    "linux_python": "3.12.14",
+    "linux_image": "python:3.12-slim@sha256:2c941e860699f878900b0edc2403613c234d4b32eda3cc9fa7036991a2a63c4a",
+    "rdflib": "7.6.0",
+    "pyarrow": "24.0.0",
+    "release_files_compared": 22,
+    "byte_differences": 0,
+    "rdf_graph_differences": 0,
+    "parquet_table_differences": 0,
+    "status": "pass"
+  },
+  "contract": {
+    "tracked_generated_outputs": "byte-identical",
+    "rdf_serializations": "byte-identical and graph-equivalent",
+    "parquet_distributions": "byte-identical and CSV-table-equivalent",
+    "unsupported_writer_versions": "semantic inspection only; not accepted release bytes",
+    "clean_worktree_after_full_build": "required"
+  },
+  "semantic_changes": 0,
+  "publication_changes": 0
+}

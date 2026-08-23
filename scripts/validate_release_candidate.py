@@ -12,6 +12,8 @@ import pyarrow.parquet as pq
 from pyshacl import validate
 from rdflib import Graph, Literal, OWL, RDF, SKOS, URIRef
 
+from release_reproducibility import RUNTIME_CONTRACT, validate_runtime_contract
+
 
 def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -26,6 +28,11 @@ def csv_row_count(path):
         return sum(1 for row in csv.DictReader(handle))
 
 
+def csv_rows(path):
+    with path.open(encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--release", required=True)
@@ -34,6 +41,7 @@ def main():
     root = Path(args.root).resolve()
     release = root / "dist" / "releases" / args.release
     manifest = json.loads((release / "manifest.json").read_text(encoding="utf-8"))
+    validate_runtime_contract()
     base = manifest["namespace_base"].rstrip("/") + "/"
 
     assert manifest["release_status"] == "release-candidate-not-canonical"
@@ -41,6 +49,12 @@ def main():
     assert manifest["compatibility_policy"] == "dual_publish"
     assert manifest["reviewer"] == "TBD"
     assert not any(manifest["publication_gates"].values())
+    assert manifest["reproducibility_contract"] == {
+        "byte_identity": "required",
+        "rdf_graph_equivalence": "required",
+        "parquet_table_equivalence": "required",
+        "runtime": RUNTIME_CONTRACT,
+    }
 
     for item in manifest["distributions"]:
         path = release / item["path"]
@@ -138,6 +152,15 @@ def main():
     crosswalk = pq.read_table(release / "migration-crosswalk.parquet")
     rules = pq.read_table(release / "ingredient-harmonization-rules.parquet")
     material_facets = pq.read_table(release / "feed-material-facets.parquet")
+    parquet_tables = {
+        "nodes": nodes,
+        "edges": edges,
+        "migration-crosswalk": crosswalk,
+        "ingredient-harmonization-rules": rules,
+        "feed-material-facets": material_facets,
+    }
+    for stem, table in parquet_tables.items():
+        assert table.to_pylist() == csv_rows(release / f"{stem}.csv")
     staging_nodes = csv_row_count(root / "dist" / "livestock-staging" / "nodes.csv")
     staging_edges = csv_row_count(root / "dist" / "livestock-staging" / "edges.csv")
     with (root / "data" / "livestock-staging" / "approved_deprecations.csv").open(

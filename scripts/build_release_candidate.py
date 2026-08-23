@@ -11,8 +11,15 @@ import sys
 from pathlib import Path
 
 import pyarrow as pa
-import pyarrow.parquet as pq
 from rdflib import Graph, Literal, OWL, RDF, SKOS, URIRef
+
+from release_reproducibility import (
+    RUNTIME_CONTRACT,
+    validate_runtime_contract,
+    write_jsonld,
+    write_parquet,
+    write_rdfxml,
+)
 
 
 if os.environ.get("PYTHONHASHSEED") != "0":
@@ -80,14 +87,19 @@ def materialize_browser_hierarchy(graph):
 
 
 def write_graph(graph, path, rdf_format):
-    graph.serialize(destination=path, format=rdf_format, encoding="utf-8")
+    if rdf_format == "json-ld":
+        write_jsonld(graph, path)
+    elif rdf_format == "xml":
+        write_rdfxml(graph, path)
+    else:
+        graph.serialize(destination=path, format=rdf_format, encoding="utf-8")
 
 
 def copy_csv_and_parquet(source, csv_target, parquet_target):
     shutil.copyfile(source, csv_target)
     with source.open(encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle))
-    pq.write_table(pa.Table.from_pylist(rows), parquet_target, compression="zstd")
+    write_parquet(pa.Table.from_pylist(rows), parquet_target)
 
 
 def combine_csv_and_parquet(sources, csv_target, parquet_target):
@@ -98,11 +110,12 @@ def combine_csv_and_parquet(sources, csv_target, parquet_target):
             reader = csv.DictReader(handle)
             fields.extend(field for field in reader.fieldnames if field not in fields)
             rows.extend(reader)
+    rows = [{field: row.get(field, "") for field in fields} for row in rows]
     with csv_target.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
-    pq.write_table(pa.Table.from_pylist(rows), parquet_target, compression="zstd")
+    write_parquet(pa.Table.from_pylist(rows), parquet_target)
 
 
 def main():
@@ -111,6 +124,7 @@ def main():
     parser.add_argument("--root", default=".")
     args = parser.parse_args()
     root = Path(args.root).resolve()
+    validate_runtime_contract()
     config_path = (root / args.config).resolve()
     config = json.loads(config_path.read_text(encoding="utf-8"))
     release_id = config["release_id"]
@@ -175,6 +189,12 @@ def main():
         **config,
         "manifest_schema_version": "1.0.0",
         "source_staging_manifest_sha256": sha256(staging_manifest),
+        "reproducibility_contract": {
+            "byte_identity": "required",
+            "rdf_graph_equivalence": "required",
+            "parquet_table_equivalence": "required",
+            "runtime": RUNTIME_CONTRACT,
+        },
         "counts": {
             "livestock_triples": len(livestock),
             "schema_triples": len(schema),
