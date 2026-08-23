@@ -35,6 +35,7 @@ Normalized livestock review staging:
 Contribution and review workflow: [`CONTRIBUTING.md`](CONTRIBUTING.md).
 Persistent identifier allocation policy: [`IDENTIFIERS.md`](IDENTIFIERS.md).
 Publication and rollback procedure: [`docs/PUBLICATION_RUNBOOK.md`](docs/PUBLICATION_RUNBOOK.md).
+Reproducible rebuild contract: [`docs/REBUILD_CONTRACT.md`](docs/REBUILD_CONTRACT.md).
 Current noncanonical release candidate:
 [`2026.1-rc.1`](docs/releases/2026.1-rc.1.md).
 Livestock domain-review pack:

@@ -15,11 +15,14 @@ python -m venv .venv
 .venv/bin/python scripts/build_release_candidate.py \
   --config=config/releases/2026.1-rc.1.json
 .venv/bin/python scripts/validate_release_candidate.py --release=2026.1-rc.1
+.venv/bin/python tests/validate_release_reproducibility.py
+.venv/bin/python scripts/validate_clean_rebuild.py
 ```
 
 Review `manifest.json`, `checksums.sha256`, release notes, licence, citation,
 counts, and open gates. Rebuild from clean checkout; candidate tree and
-checksums must match.
+checksums must match. Follow [`REBUILD_CONTRACT.md`](REBUILD_CONTRACT.md); do
+not rebuild release artifacts with unpinned writer versions.
 
 ## Semantic-tool evaluation
 

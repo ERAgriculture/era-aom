@@ -7,6 +7,10 @@ round-trip tests will be added with normalized pilot data.
 - `check_roundtrip.R`: private-workbook comparison; runs locally because
   workbook is not published.
 - GitHub Actions parses JSON-LD/Turtle and executes SHACL against both schemes.
+- `validate_release_reproducibility.py` checks pinned writer versions,
+  deterministic JSON-LD/RDF/XML output, Parquet metadata, and clean-rebuild gate
+  behavior. CI runs `validate_clean_rebuild.py` last to reject stale generated
+  artifacts.
 - `validate_livestock_inventory.py`: pins public AOM v2 identity and verifies
   private/restricted data remain excluded.
 - `validate_livestock_staging.py`: validates normalized public-v2 staging,
