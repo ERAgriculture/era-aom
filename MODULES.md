@@ -13,10 +13,10 @@ domain review.
 
 | Module | Scope | Current state |
 |---|---|---|
-| `aom-core` | cross-domain study, intervention, observation, unit, provenance, and context semantics | layered semantic model accepted; staged migration pending |
-| `aom-crop` | ERA practices, outcomes, crop products, inputs, sites, and field model | `prac` + `out` normalization pilot |
-| `aom-livestock` | diets, feed ingredients, animals, physiology, husbandry practices, livestock outcomes | v2 release inventoried; normalized review staging generated |
-| `mappings` | reviewed links among modules and external resources | model placeholders now; mapping work later |
+| `aom-core` | cross-domain study, intervention, observation, unit, provenance, and context semantics | layered semantic model accepted; no workbook source normalized into core yet |
+| `aom-crop` | ERA practices, outcomes, crop products, inputs, sites, and field model | `prac` + `out` pilot only; product, input, identity, trait, and economic-outcome sources pending |
+| `aom-livestock` | diets, feed ingredients, animals, physiology, husbandry practices, livestock outcomes | public v2 normalized and deeply reviewed for feed; non-feed and `vars_animals` coverage remains open |
+| `mappings` | reviewed links among modules and external resources | livestock mappings generated; whole-workbook and crop mapping migration pending |
 
 ## Existing livestock AOM
 
@@ -54,11 +54,15 @@ Reconciliation report:
 
 ## Next analysis
 
-1. Apply semantic-model phase 2 to pipeline records and dual-publish legacy fields.
-2. Review legacy mapping assertions.
-3. Resolve evidence-dependent feed-material and reproductive classifications.
-4. Identify true shared concepts across crop and livestock.
-5. Promote only demonstrated cross-domain semantics into `aom-core`.
+1. Review the
+   [whole-vocabulary coverage matrix](review/whole-vocabulary-v1/resource_coverage.csv)
+   and [ADR 0051](docs/decisions/0051-whole-vocabulary-resource-boundaries-and-migration-sequence.md).
+2. Formalize current field, lookup, unit, and shared observation contracts.
+3. Review and promote crop practice, outcome, and economic-outcome foundations.
+4. Migrate crop products, components, inputs, identities, and traits in bounded
+   cohorts.
+5. Complete livestock coverage outside the recent feed-heavy cohorts.
+6. Promote only demonstrated cross-domain semantics into `aom-core`.
 
 Semantic layering decision:
 [`docs/decisions/0001-semantic-model-layers.md`](docs/decisions/0001-semantic-model-layers.md).
