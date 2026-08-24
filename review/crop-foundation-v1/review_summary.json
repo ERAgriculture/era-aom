@@ -1,0 +1,54 @@
+{
+  "agro_snapshot_sha256": "d861a6fbf09e01fffcf4312dee29f20a15a1a4a65b2a7012e50c02f65a495b55",
+  "authority_label_candidate_count": 26,
+  "guided_review_item_count": 12,
+  "identity_collision_records": 175,
+  "identity_collision_scopes": {
+    "pilot-internal": 75,
+    "source-to-aom": 100
+  },
+  "implementation_authorized": false,
+  "pilot_hierarchy_edges_reviewed": 405,
+  "pilot_intermediate_nodes_reviewed": 109,
+  "review_date": "2026-08-24",
+  "review_version": "crop-foundation-v1",
+  "shared_core_candidate_count": 15,
+  "source_disposition_actions": {
+    "hold-ambiguous-legacy-code-mapping": 11,
+    "hold-deprecated-source-record": 19,
+    "hold-existing-aom-code-mapping-review": 33,
+    "hold-id-allocation-pending-economic-decomposition": 63,
+    "hold-source-correction-before-id-allocation": 2,
+    "hold-source-quality-correction": 1,
+    "retain-distinct-context-pending-identity-review": 4,
+    "retain-source-candidate-pending-row-review": 190,
+    "reuse-existing-aom-id-candidate": 54
+  },
+  "source_disposition_status": {
+    "held": 133,
+    "proposed": 244
+  },
+  "source_quality_issue_count": 265,
+  "source_quality_issue_types": {
+    "definition-content-defect": 4,
+    "deprecated-source-record": 19,
+    "duplicate-contextual-variable-label": 2,
+    "duplicate-subpractice-code": 4,
+    "indicator-label-code-collision": 14,
+    "invalid-sign-code": 1,
+    "literal-na-sentinel": 89,
+    "missing-definition": 3,
+    "non-boolean-not-percentage": 5,
+    "pilot-notation-mutation": 58,
+    "placeholder-identifier": 65,
+    "unknown-lifecycle-status": 1
+  },
+  "source_row_total": 377,
+  "source_rows": {
+    "out": 116,
+    "out_econ": 65,
+    "prac": 196
+  },
+  "source_workbook_sha256": "f834c4f7837927774499eff4340c912784a3db10c2e19bd5d75a7f753df41438",
+  "status": "recommendation-only"
+}

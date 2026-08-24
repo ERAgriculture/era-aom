@@ -29,6 +29,8 @@ jobs:
           python tests/validate_whole_vocabulary_coverage.py
       - name: Validate data-model and shared-core review
         run: python tests/validate_data_model_core_review.py
+      - name: Validate crop-foundation review
+        run: python tests/validate_crop_foundation_review.py
       - name: Validate livestock staging
         run: python tests/validate_livestock_staging.py
       - name: Validate livestock review pack
