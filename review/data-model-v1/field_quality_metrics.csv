@@ -1,0 +1,18 @@
+metric,value,interpretation
+workbook_rows,754,Issue #27 source-row count.
+populated_field_rows,751,Rows representing fields after blank-field exclusion.
+valid_table_field_rows,750,Populated field rows with both table and field identity.
+unique_table_field_keys,733,Logical identities available under current composite key.
+duplicate_table_field_keys,17,Keys requiring normalization or source correction.
+missing_table_rows,1,Populated fields silently omitted by current generator.
+missing_description_rows,270,Field definitions incomplete.
+missing_datatype_rows,117,Datatype defaults currently hide missing governance.
+missing_requiredness_rows,239,Requiredness metadata incomplete.
+declared_extraction_rounds,4,Current canonical workbook round columns.
+fields_used_in_courageous_camel_2024,324,Current generator does not publish this round.
+published_model_tables,45,Published v2026.1 extraction-model table count.
+published_model_field_entries,750,Published v2026.1 field entries retain duplicates.
+published_model_unique_field_keys,733,Published v2026.1 logical field-key count.
+published_model_allowed_value_fields,43,Exact table-field matching exposes only part of lookup registry.
+published_model_allowed_values,399,Allowed values emitted after exact-key matching and 200-value cap.
+published_model_extraction_rounds,3,Published v2026.1 omits courageous_camel_2024.

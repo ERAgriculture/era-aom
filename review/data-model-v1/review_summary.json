@@ -1,0 +1,70 @@
+{
+  "review": "data-model-v1",
+  "review_date": "2026-08-24",
+  "status": "recommendation-only",
+  "source_workbook_sha256": "f834c4f7837927774499eff4340c912784a3db10c2e19bd5d75a7f753df41438",
+  "source_workbook_md5": "cb5d54c4bce97e23832b782cdebd8931",
+  "published_vocab_workbook_md5": "dfb9129e4001227ca85d566f913aacee",
+  "field_registry": {
+    "workbook_rows": 754,
+    "populated_field_rows": 751,
+    "valid_field_rows": 750,
+    "unique_field_keys": 733,
+    "duplicate_field_keys": 17,
+    "issue_rows": 21,
+    "missing_descriptions": 270,
+    "missing_datatypes": 117,
+    "courageous_camel_fields": 324
+  },
+  "published_model": {
+    "tables": 45,
+    "field_entries": 750,
+    "unique_field_keys": 733,
+    "extraction_rounds": ["majestic_hippo_2020", "skinny_cow_2022", "industrious_elephant_2023"],
+    "fields_with_allowed_values": 43,
+    "allowed_values": 399
+  },
+  "lookup_registry": {
+    "rows": 682,
+    "table_field_pairs": 83,
+    "exact_matches": 42,
+    "unmatched_pairs": 41
+  },
+  "unit_registry": {
+    "rows": 1105,
+    "conflicting-canonical-label": 2,
+    "identity-label": 404,
+    "normalized-label": 635,
+    "unresolved": 64
+  },
+  "consumers": {
+    "agronomy_schema_columns": 138,
+    "livestock_schema_columns": 138,
+    "product_schema_descriptions": 0,
+    "eragri_data_columns": 137,
+    "eragri_dictionary_fields": 106,
+    "recorded_differences": 44
+  },
+  "semantic_bindings": {
+    "structural": 13,
+    "values": 298,
+    "crop_source_bindings": 0
+  },
+  "recommendations": 12,
+  "semantic_changes": 0,
+  "allocated_identifiers": 0,
+  "outputs": {
+    "source_contracts_sha256": "44605e8d81946faab7553f1681ea8fe29ec9acab6006084791065152576ed34d",
+    "field_key_issues_sha256": "c6b68517feb279c3fdce1ec95f6025e097fa68cab6a98b7cc9b6ba107494398d",
+    "field_quality_metrics_sha256": "38172d3b1d913a4ff45da0cbc7d3fd7c72a13e7e003a227a4c6592b4a8bfe7d2",
+    "lookup_binding_audit_sha256": "ebd3f1ad92692655ee26547a84636992174b82deeb4cc3fcf61eb9fe3fd65d4d",
+    "unit_mapping_audit_sha256": "29fbec8fc3fb2b2153532bcbfdaea8f32b1918b3b397e445f33aa1c192063b8c",
+    "consumer_contract_comparison_sha256": "78059447ba5c4cdea497b6012f66fd5187ed3f22b02fe9e7bc43f82779c8203f",
+    "consumer_contract_diffs_sha256": "09638c0baf86e4231c2f8778c298df9bdf9bb45b075d210fd858fa2a36cc014f",
+    "semantic_binding_scope_sha256": "69a9cc13d0b167a20381b3262c696c6500c0dcff47adcaa5838dd5efeaf15f05",
+    "shared_core_boundary_sha256": "d4587534bda3b8082c1032028dacfedf8190189a0db4c0cdef976ac2651ea108",
+    "recommendation_register_sha256": "5056ea87c1a339f627ba5e4fa7e960564bd6aa556b27721f4f8d7c9418e4e28b",
+    "authority_comparison_sha256": "1c89165a1565f759fde502ee9a4d7a1ff7fe6cd9b3ab918dabc365940b338e0c",
+    "evidence_register_sha256": "a704a04dc221198db0f94f2722a14fdca3177713efa4d9c4b3a1439b009b380f"
+  }
+}
