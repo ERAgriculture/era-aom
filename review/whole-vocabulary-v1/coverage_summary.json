@@ -1,0 +1,128 @@
+{
+  "allocated_identifiers": 0,
+  "concept_scheme_rows": 11162,
+  "concept_scheme_sheets": 14,
+  "current_coverage_state_counts": {
+    "excluded-confirmed": 1,
+    "excluded-documentation": 1,
+    "excluded-legacy": 3,
+    "excluded-operational": 2,
+    "excluded-pending-provenance-review": 1,
+    "excluded-scratch": 1,
+    "inventory-only": 14,
+    "inventory-only-current-schema": 1,
+    "inventory-only-legacy-schema": 1,
+    "pilot-normalized": 2,
+    "publication-review-required": 1,
+    "reconciled-not-normalized": 4,
+    "release-normalized-partially-reviewed": 1
+  },
+  "migration_wave_count": 8,
+  "module_coverage": {
+    "aom-core": {
+      "normalized_source_sheet_count": 0,
+      "normalized_source_sheets": [],
+      "targeted_sheet_count": 5,
+      "targeted_sheets": [
+        "era_fields_v1",
+        "era_fields_v2",
+        "lookup_levels",
+        "unit_harmonization",
+        "aez"
+      ]
+    },
+    "aom-crop": {
+      "normalized_source_sheet_count": 2,
+      "normalized_source_sheets": [
+        "prac",
+        "out"
+      ],
+      "targeted_sheet_count": 10,
+      "targeted_sheets": [
+        "prac",
+        "prod",
+        "prod_comp",
+        "out",
+        "out_econ",
+        "fert",
+        "chem",
+        "trees",
+        "residues",
+        "vars"
+      ]
+    },
+    "aom-livestock": {
+      "normalized_source_sheet_count": 1,
+      "normalized_source_sheets": [
+        "AOM"
+      ],
+      "targeted_sheet_count": 5,
+      "targeted_sheets": [
+        "vars_animals",
+        "AOM",
+        "ani_diet",
+        "ani_process",
+        "AOM_diets"
+      ]
+    },
+    "mappings": {
+      "normalized_source_sheet_count": 0,
+      "normalized_source_sheets": [],
+      "targeted_sheet_count": 14,
+      "targeted_sheets": [
+        "prod",
+        "fert",
+        "chem",
+        "countries",
+        "trees",
+        "residues",
+        "vars",
+        "vars_animals",
+        "var_traits",
+        "ani_diet",
+        "ani_process",
+        "AOM_diets",
+        "unit_harmonization",
+        "scio - Custom Terms"
+      ]
+    }
+  },
+  "normalized_source_rows": 2815,
+  "normalized_source_sheet_count": 3,
+  "normalized_source_sheets": [
+    "prac",
+    "out",
+    "AOM"
+  ],
+  "outputs": {
+    "authority_comparison_sha256": "8763c4c5d698a8b30de46787c87876cf0881f2a565bf8fc352735b6eaf46b661",
+    "evidence_register_sha256": "e8ad37ba1e3d53ecccf4d1bf26d99506574d818b234d021db843ba63010aa43e",
+    "migration_waves_sha256": "f159c874eb87ca28f01e4c4ab19e37283f66b9506fc6e4eca31fe18105129084",
+    "resource_coverage_sha256": "9bbbe22405eb46dced9d909271f1630ba68835dbf498c617e42d108bae98d7bf"
+  },
+  "public_or_review_rows": 15444,
+  "public_or_review_sheets": 24,
+  "publication_counts": {
+    "exclude": 9,
+    "public": 23,
+    "review": 1
+  },
+  "resource_type_counts": {
+    "closed": 1,
+    "code_list": 4,
+    "concept_scheme": 14,
+    "crosswalk": 3,
+    "data_model": 3,
+    "documentation": 1,
+    "legacy": 3,
+    "operational": 2,
+    "scratch": 2
+  },
+  "review": "whole-vocabulary-v1",
+  "review_date": "2026-08-24",
+  "semantic_changes": 0,
+  "source_inventory": "inventory/workbook_sheets.csv",
+  "status": "recommendation-only",
+  "workbook_nonblank_rows": 19845,
+  "workbook_sheets": 33
+}

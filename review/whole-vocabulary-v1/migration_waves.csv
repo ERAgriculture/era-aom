@@ -1,0 +1,9 @@
+wave,order,objective,exit_artifact,dependencies
+0-boundary-governance,0,Classify every workbook resource and approve module boundaries,Whole-resource coverage matrix; ADR 0051; no semantic implementation,era-program #17; ADR 0007; ADR 0008
+1-data-model-and-core,1,"Formalize tabular schema, controlled-value bindings, units, and shared observation semantics",Machine-readable field schema; versioned code-list contracts; reviewed AOM bindings,era-program #27; era_fields_v2; lookup_levels; unit_harmonization
+2-crop-observation-foundation,2,Promote reviewed crop practice and outcome foundations,"Governed prac, out, and out_econ schemes with stable IDs and mappings",Wave 1 contracts; pilot collision and source review
+3-crop-products-and-components,3,"Model crop products, components, and residue mappings","Reviewed prod, prod_comp, and residues contracts",Waves 1-2; biological-source and product-role predicates
+4-crop-inputs-and-chemicals,4,"Separate material, formulation, chemical identity, composition, and use",Reviewed fert and chem contracts with external mapping evidence,Waves 1-3; chemical identity governance
+5-biological-identity-and-traits,5,"Normalize crop and animal biological identity, varieties, accessions, and traits","Reviewed trees, vars, vars_animals, and var_traits contracts","Identifier reuse audit; WFO, NCBI, GBIF, and trait mapping review"
+6-livestock-non-feed-completion,6,Close livestock coverage outside the recent feed-heavy review,Domain-balanced AOM audit plus governed supporting crosswalks,ADR 0049 visual acceptance; public lineage preservation
+7-reference-context-and-crosswalks,7,"Publish reference code lists, context registries, and remaining mappings","Versioned countries, journals, AEZ, site, unit, and mapping distributions",Privacy review; Waves 1-6 identifiers

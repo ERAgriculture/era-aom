@@ -23,6 +23,10 @@ jobs:
         run: python -m pip install --requirement requirements-dev.txt
       - name: Validate livestock inventory
         run: python tests/validate_livestock_inventory.py
+      - name: Validate whole-vocabulary coverage
+        run: |
+          python scripts/build_whole_vocabulary_coverage.py
+          python tests/validate_whole_vocabulary_coverage.py
       - name: Validate livestock staging
         run: python tests/validate_livestock_staging.py
       - name: Validate livestock review pack
