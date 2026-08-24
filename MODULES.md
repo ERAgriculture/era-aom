@@ -66,3 +66,6 @@ Reconciliation report:
 
 Semantic layering decision:
 [`docs/decisions/0001-semantic-model-layers.md`](docs/decisions/0001-semantic-model-layers.md).
+
+Wave 1 data-model decision:
+[`docs/decisions/0052-data-model-registry-and-shared-core-contract.md`](docs/decisions/0052-data-model-registry-and-shared-core-contract.md).

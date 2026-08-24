@@ -1,0 +1,9 @@
+authority_id,authority,supports,does_not_support,evidence
+AUTH-01,ERA ADR 0007,Canonical workbook authority until governed cutover.,Workbook layout does not define target architecture or approve semantic identity.,https://github.com/ERAgriculture/era-program/blob/main/project-management/decisions/ADR-0007-canonical-vocab-source.md
+AUTH-02,AOM ADR 0051,Resource routing and Wave 1 data-model/shared-core sequence.,"Architecture does not resolve field rows, lookup keys, units, or consumer drift.",docs/decisions/0051-whole-vocabulary-resource-boundaries-and-migration-sequence.md
+AUTH-03,W3C CSVW,"Column metadata, datatypes, keys, foreign keys, annotations, and tabular validation.",Does not decide agricultural concept identity or external ontology mappings.,https://www.w3.org/TR/tabular-data-model/;https://www.w3.org/TR/tabular-metadata/
+AUTH-04,Frictionless Table Schema,"Portable JSON field descriptors, constraints, primary keys, and foreign keys.",Does not provide domain semantics or replace RDF graph validation.,https://specs.frictionlessdata.io/table-schema/
+AUTH-05,W3C SHACL,Validation of RDF semantic bindings and shared-core graphs.,Does not define raw tabular release schema or choose canonical units.,https://www.w3.org/TR/shacl/
+AUTH-06,W3C SOSA/SSN 2023,"Observation, feature, procedure, result, and identifiable property relations.",Does not define ERA outcome taxonomy or measured quantity kinds by itself.,https://www.w3.org/TR/vocab-ssn-2023/
+AUTH-07,QUDT,"Quantity values, quantity kinds, units, dimensions, and conversion semantics.",Does not prove a raw label denotes a unit or authorize conversion without context.,https://www.qudt.org/catalog/qudt-catalog.html
+AUTH-08,W3C PROV-O and DCAT 3,"Provenance plus dataset, distribution, version, and checksum metadata.",Does not define field-level agricultural meaning or table constraints.,https://www.w3.org/TR/prov-o/;https://www.w3.org/TR/vocab-dcat-3/

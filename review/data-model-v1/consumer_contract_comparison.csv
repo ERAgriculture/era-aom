@@ -1,0 +1,7 @@
+contract,role,object_count,field_entries,unique_field_keys,populated_descriptions,declared_rounds,observed_boundary,required_action
+canonical-era-fields-v2,extraction-model-source,45,750,733,481,4,"Authoring registry for extraction tables, not compiled-product dictionary.","Normalize logical fields, round profiles, relationships, lifecycle, and units."
+published-era-data-model-2026.1,derived-extraction-model,45,750,733,481,3,Derived registry omits one round and retains duplicate field entries.,Regenerate from normalized source and fail on omitted rounds or duplicate keys.
+published-era-compiled-schema-2026.1,agronomy-product-schema,1,138,138,0,,Current public product contract has 138 columns with no descriptions.,Create complete versioned product-field dictionary and link controlled values.
+published-era-compiled-ls-schema-2026.1,livestock-product-schema,1,138,138,0,,Current public livestock contract has same names and types as agronomy with no descriptions.,Create livestock product profile and document genuine shared versus product-specific fields.
+eragri-era-compiled-snapshot,package-data-snapshot,1,137,137,,,Package snapshot has 137 columns and no embedded release provenance.,Pin package data to release and publish compatibility mapping.
+eragri-era-compiled-dictionary,package-data-dictionary,1,106,106,106,,Package dictionary documents 106 names and includes aliases/pattern fields not present literally.,Generate package dictionary from approved product schema plus curated descriptions.
