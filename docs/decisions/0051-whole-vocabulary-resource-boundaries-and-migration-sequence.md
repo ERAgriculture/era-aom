@@ -4,7 +4,9 @@
 - Date: 2026-08-24
 - Owners: ERA-AOM semantic and data-model governance
 - Tracking: [era-program #17](https://github.com/ERAgriculture/era-program/issues/17)
-- Evidence: [Whole-vocabulary coverage review](../../review/whole-vocabulary-v1/RECOMMENDATIONS.md)
+- Evidence:
+  [Whole-vocabulary coverage review](../../review/whole-vocabulary-v1/RECOMMENDATIONS.md),
+  [guided-review checkpoint](../../review/whole-vocabulary-v2/README.md)
 - Method: [Whole-vocabulary migration governance](../methods/whole-vocabulary-migration-governance.md)
 - Depends on:
   [ERA ADR 0007](https://github.com/ERAgriculture/era-program/blob/main/project-management/decisions/ADR-0007-canonical-vocab-source.md),
@@ -148,6 +150,28 @@ Full support and limitation statements are recorded in
 - [Authority comparison](../../review/whole-vocabulary-v1/authority_comparison.csv)
 - [Claim-level evidence register](../../review/whole-vocabulary-v1/evidence_register.csv)
 - [Machine summary](../../review/whole-vocabulary-v1/coverage_summary.json)
+- [Guided policy recommendations](../../review/whole-vocabulary-v2/guided_decision_recommendations.csv)
+- [All resource-route recommendations](../../review/whole-vocabulary-v2/resource_routing_recommendations.csv)
+- [Guided-review evidence register](../../review/whole-vocabulary-v2/evidence_register.csv)
+- [Guided-review summary](../../review/whole-vocabulary-v2/acceptance_summary.json)
+
+## Guided decision checkpoint
+
+Eight policy decisions and all 33 resource routes are prepared for one human
+review cohort. Recommendations retain explicit publication and provenance holds
+for `site_list` and `scio - Custom Terms`, preserve confirmed exclusion of
+`ssa_feedsdb`, revise stale crop-only routes for `prac`, `out`, and `out_econ`
+to cross-domain row routing under accepted ADR 0053, and keep all
+human-decision fields blank.
+
+Guided recommendations revise migration wording so wave labels `0` through `7`
+remain identifiers while narrative positions are ordinals. ADR 0049 remains a
+separate livestock visual-acceptance gate and does not block independent
+data-model, crop, reference, or mapping review.
+
+This checkpoint records no approval and authorizes no source, identity,
+hierarchy, mapping, publication, implementation, release, consumer migration,
+or canonical-cutover change.
 
 ## Consequences
 
@@ -207,6 +231,7 @@ independence, and intelligible navigation.
 
 ## Approval record
 
-Awaiting human decision. This ADR and review allocate no identifier and change
-no hierarchy, schema, mapping, source data, generated distribution,
-publication status, or canonical authority.
+Awaiting human decision on `GV-01` through `GV-08` and `RR-01` through `RR-33`.
+This ADR and review allocate no identifier and change no hierarchy, schema,
+mapping, source data, generated distribution, publication status, or canonical
+authority.
