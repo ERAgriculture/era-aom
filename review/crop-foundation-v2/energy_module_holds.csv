@@ -1,0 +1,15 @@
+source_sheet,source_row,source_id,source_label,source_status,resource_shape,module_disposition,recommendation_status,approval_status,rationale
+prac,96,prac:c1,Biogas,FALSE,practice-candidate,unassigned-agricultural-or-household-energy,held,pending,Biogas production or use requires explicit process and system scope.
+prac,97,prac:c4,Biofertilizer,TRUE,deprecated-material-or-practice-conflict,unassigned-agricultural-or-household-energy,held,pending,Deprecated source describes biodigester slurry rather than generic biofertilizer identity.
+prac,98,prac:c3,Biogas Switching,FALSE,change-or-switching-practice,unassigned-agricultural-or-household-energy,held,pending,Switching requires source and target energy systems.
+prac,99,prac:c2,Improved Cookstoves,FALSE,practice-candidate,unassigned-agricultural-or-household-energy,held,pending,Improved cookstove use or adoption requires device and application scope.
+prac,100,prac:c5,Cookstove Switching,FALSE,change-or-switching-practice,unassigned-agricultural-or-household-energy,held,pending,Switching requires source and target cookstove systems.
+prac,101,prac:h14,Unimproved Stove Technology,FALSE,condition-or-comparator,unassigned-agricultural-or-household-energy,held,pending,Unimproved technology may be baseline state rather than practice identity.
+prac,102,prac:h15,Conventional Biomass Feedstocks,FALSE,condition-or-comparator,unassigned-agricultural-or-household-energy,held,pending,"Conventional feedstock is material and baseline context, not necessarily practice identity."
+prac,103,prac:h16,Predominant Biodigestor Model,TRUE,deprecated-source-descriptor,unassigned-agricultural-or-household-energy,held,pending,Deprecated row lacks definition and names a model descriptor.
+prac,104,prac:h26,Conventional Energy Sources,FALSE,condition-or-comparator,unassigned-agricultural-or-household-energy,held,pending,Conventional source is baseline context requiring explicit energy-source identity.
+out,113,out:323,Fuel Use,FALSE,outcome-property,unassigned-agricultural-or-household-energy,held,pending,"Fuel use requires fuel, device, procedure, quantity, unit, and denominator basis."
+out,114,out:320,Fuel Savings,FALSE,derived-outcome-property,unassigned-agricultural-or-household-energy,held,pending,"Fuel savings requires baseline, comparison, derivation, quantity, unit, and denominator basis."
+out,115,out:321,Cooking Time,FALSE,outcome-property,unassigned-agricultural-or-household-energy,held,pending,"Cooking time requires activity, procedure, time unit, and denominator basis."
+out,116,out:322,Specific Fuel Use,FALSE,derived-outcome-property,unassigned-agricultural-or-household-energy,held,pending,"Specific fuel use requires numerator, denominator, procedure, and unit."
+out,117,out:324,Cookstove Emissions,FALSE,outcome-property,unassigned-agricultural-or-household-energy,held,pending,"Cookstove emissions require pollutant, device, procedure, quantity, unit, and denominator basis."

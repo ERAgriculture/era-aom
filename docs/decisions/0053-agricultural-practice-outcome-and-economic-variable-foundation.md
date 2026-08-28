@@ -2,13 +2,16 @@
 
 - Status: Proposed
 - Date: 2026-08-24
+- Last reviewed: 2026-08-28
 - Owners: ERA-AOM semantic and data-model governance
 - Tracking: [era-program #17](https://github.com/ERAgriculture/era-program/issues/17)
-- Evidence: [Crop-foundation review](../../review/crop-foundation-v1/RECOMMENDATIONS.md)
+- Evidence:
+  [Guided-review recommendations](../../review/crop-foundation-v2/GUIDED_REVIEW_RECOMMENDATIONS.md),
+  [baseline crop-foundation review](../../review/crop-foundation-v1/RECOMMENDATIONS.md)
 - Method: [Agricultural practice and outcome foundation governance](../methods/agricultural-practice-outcome-foundation-governance.md)
 - Depends on:
   [ADR 0051](0051-whole-vocabulary-resource-boundaries-and-migration-sequence.md),
-  [ADR 0052](https://github.com/ERAgriculture/era-aom/blob/agent/data-model-core-review/docs/decisions/0052-data-model-registry-and-shared-core-contract.md)
+  [ADR 0052](0052-data-model-registry-and-shared-core-contract.md)
 
 ## Context
 
@@ -110,9 +113,12 @@ is confirmed. Same label, exact external label, or legacy `relatedMatch` does
 not prove equivalence. Ambiguous code mappings remain held. Published IDs are
 never deleted, reassigned, or duplicated.
 
-Field application of `Urea` and `Ash`, crop-variety `Heat Tolerance`, and generic
-`Unspecified` remain distinct-context holds against current feed, animal, or
-generic AOM labels.
+Do not mint same-label context concepts when source rows conflate different
+resource types. Model field `Urea` and `Ash` rows as application practices linked
+to governed materials; model crop `Heat Tolerance` as use of a heat-tolerant
+crop variety linked to trait and variety facets; model breed `Unspecified` as a
+field-scoped missing or unspecified value with raw provenance, not a public
+global identity.
 
 ### Shared-core scaffold
 
@@ -123,6 +129,31 @@ collection, economic measure, accounting classification, and module assignment.
 
 Candidate status does not approve class IRIs or axioms. Cross-domain promotion
 requires crop and livestock evidence plus ADR 0052 field-contract alignment.
+
+### Guided-review recommendation
+
+The 2026-08-28 checkpoint recommends:
+
+1. accept cross-domain routing, practice-context separation, SOSA outcome
+   modeling, and economic decomposition;
+2. accept lexical source codes and collection navigation with revised wording
+   and scoped collection labels;
+3. accept stable-ID priority only with identity, entity-type, lifecycle, and
+   module conditions;
+4. convert 43 editorial nodes to collections, collapse 13 duplicate parent/leaf
+   nodes, and hold 53 practice groups for extensional review;
+5. decompose Urea, Ash, Heat Tolerance, and Unspecified rather than minting
+   same-label context identities;
+6. require source-owner correction or hold for economic defects before ID
+   allocation;
+7. review external candidates individually: four strong close-match candidates,
+   one conditional close-match candidate, one definition-overlap hold, and 20
+   non-identity facet candidates; and
+8. keep all 14 energy and cookstove rows on module hold.
+
+These are recommendations, not accepted decisions. Detailed wording and blank
+human-decision fields are in
+[`guided_decision_recommendations.csv`](../../review/crop-foundation-v2/guided_decision_recommendations.csv).
 
 ## Authority comparison
 
@@ -151,6 +182,14 @@ Full support and limitation statements are recorded in
 ## Evidence
 
 - [Recommendations](../../review/crop-foundation-v1/RECOMMENDATIONS.md)
+- [Guided-review recommendations](../../review/crop-foundation-v2/GUIDED_REVIEW_RECOMMENDATIONS.md)
+- [Guided decision rows](../../review/crop-foundation-v2/guided_decision_recommendations.csv)
+- [Guided hierarchy dispositions](../../review/crop-foundation-v2/hierarchy_guided_dispositions.csv)
+- [Same-label decomposition review](../../review/crop-foundation-v2/same_label_decomposition_review.csv)
+- [Source issue action plan](../../review/crop-foundation-v2/source_issue_action_plan.csv)
+- [Economic correction proposals](../../review/crop-foundation-v2/economic_source_correction_proposals.csv)
+- [External mapping dispositions](../../review/crop-foundation-v2/external_mapping_dispositions.csv)
+- [Energy module holds](../../review/crop-foundation-v2/energy_module_holds.csv)
 - [Source snapshot](../../review/crop-foundation-v1/source_snapshot.csv)
 - [Row dispositions](../../review/crop-foundation-v1/source_row_dispositions.csv)
 - [Hierarchy-node review](../../review/crop-foundation-v1/hierarchy_node_review.csv)
@@ -225,6 +264,7 @@ process applications. Mapping relation requires claim-level review.
 
 ## Approval record
 
-Awaiting human decision. This ADR and review change no source workbook, pilot
+Awaiting human decision on GR-01 through GR-12. Guided recommendations are
+complete but unapproved. This ADR and review change no source workbook, pilot
 distribution, AOM identity, hierarchy, mapping, shared-core axiom, module
 assignment, publication status, or release artifact.
