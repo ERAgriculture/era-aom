@@ -192,6 +192,10 @@ Full claim support and limitations are recorded in
 - [Human decision approvals](../../review/data-model-v2/decision_approvals.csv)
 - [Acceptance evidence register](../../review/data-model-v2/evidence_register.csv)
 - [Acceptance summary](../../review/data-model-v2/acceptance_summary.json)
+- [Source-disposition checkpoint](../../review/data-model-v3/README.md)
+- [Field-key recommendations](../../review/data-model-v3/field_key_disposition_recommendations.csv)
+- [Lookup-binding recommendations](../../review/data-model-v3/lookup_binding_disposition_recommendations.csv)
+- [Source-disposition summary](../../review/data-model-v3/disposition_summary.json)
 
 ## Human decision
 
@@ -207,6 +211,22 @@ evidence before shared-core promotion.
 Acceptance does not edit the canonical workbook, allocate stable keys,
 regenerate schemas, promote shared-core resources, mutate `v2026.1`, publish a
 new release, migrate consumers, or close programme issues.
+
+## Source-disposition checkpoint
+
+All 21 field-key issues and 41 unmatched lookup pairs are classified for one
+human review cohort. Thirteen duplicate field keys with disjoint round coverage
+are recommended for one logical identity plus round-specific profiles. Eight
+field cases remain held: three overlapping duplicate keys, three blank-field
+rows, one irrigation date-key conflict, and one missing-table row.
+
+All 41 unmatched lookup pairs remain held. Thirty-nine have no candidate field
+key; two have one same-field candidate under a different table but require
+source identity and value-scope review. No fuzzy or automatic binding is
+recommended.
+
+This checkpoint records no human decision, source edit, stable-key allocation,
+binding, schema regeneration, release, or consumer migration.
 
 ## Consequences
 

@@ -35,6 +35,10 @@ jobs:
         run: python tests/validate_data_model_core_review.py
       - name: Validate ADR 0052 acceptance
         run: python tests/validate_adr0052_acceptance.py
+      - name: Validate ADR 0052 source dispositions
+        run: |
+          python scripts/build_adr0052_source_dispositions.py
+          python tests/validate_adr0052_source_dispositions.py
       - name: Validate crop-foundation review
         run: python tests/validate_crop_foundation_review.py
       - name: Validate ADR 0053 guided review
