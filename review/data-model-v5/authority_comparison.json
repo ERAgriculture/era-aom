@@ -1,0 +1,32 @@
+[
+  {
+    "authority": "QUDT 3.1.10",
+    "limitation": "Does not establish what an ERA source label means without measured-property and source context.",
+    "supports": "Separate quantity, quantity kind, unit, dimension, value, and conversion semantics.",
+    "url": "https://www.qudt.org/doc/2026/01/DOC_SCHEMA-QUDT.html"
+  },
+  {
+    "authority": "UCUM 2.2",
+    "limitation": "Expression validity does not repair malformed, incomplete, misplaced, or context-free source labels.",
+    "supports": "Case-sensitive unit atoms and formal multiplication, division, exponentiation, scalar, and annotation syntax.",
+    "url": "https://ucum.org/ucum"
+  },
+  {
+    "authority": "ISO 4217",
+    "limitation": "Currency code does not provide denominator, price basis, geography, effective date, or exchange conversion.",
+    "supports": "Current and historical alphabetic and numeric currency-code identity.",
+    "url": "https://www.iso.org/iso-4217-currency-codes.html"
+  },
+  {
+    "authority": "Bank of Zambia 2012 rebasing guidance",
+    "limitation": "Source observation date and intended monetary basis are still required for each ERA row.",
+    "supports": "ZMW became the new alphabetic code from 2013-01-01 and ZMK ceased current use after rebasing.",
+    "url": "https://www.boz.zm/17-2012.pdf"
+  },
+  {
+    "authority": "ERA ADR 0007 canonical workbook policy",
+    "limitation": "Canonical authority does not make incomplete unit labels semantically sufficient.",
+    "supports": "Canonical workbook remains source authority and source changes require governed edits.",
+    "url": "../../docs/decisions/0007-canonical-vocabulary-source.md"
+  }
+]

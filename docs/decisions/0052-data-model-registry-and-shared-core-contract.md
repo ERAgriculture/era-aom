@@ -200,6 +200,11 @@ Full claim support and limitations are recorded in
 - [Source-disposition policy approvals](../../review/data-model-v4/policy_decision_approvals.csv)
 - [Hash-pinned cohort approvals](../../review/data-model-v4/cohort_approvals.csv)
 - [Source-disposition acceptance summary](../../review/data-model-v4/acceptance_summary.json)
+- [Unit-disposition checkpoint](../../review/data-model-v5/README.md)
+- [Guided unit recommendations](../../review/data-model-v5/GUIDED_UNIT_RECOMMENDATIONS.md)
+- [Unit row recommendations](../../review/data-model-v5/unit_disposition_recommendations.json)
+- [Unit authority comparison](../../review/data-model-v5/authority_comparison.json)
+- [Unit-disposition summary](../../review/data-model-v5/disposition_summary.json)
 
 ## Human decision
 
@@ -238,6 +243,26 @@ holds in total.
 Acceptance records disposition only. It performs no source edit, stable-key
 allocation, profile or binding creation, schema regeneration, release, or
 consumer migration.
+
+## Unit-disposition checkpoint
+
+All 64 unresolved unit rows and both conflicting `ZMK/ha` correction rows are
+classified for one human review cohort. Every case remains held. Eight lexical
+triage classes separate missing-value sentinels, source fragments, apparent
+non-units or misplaced values, bases or qualifiers, incomplete ratios,
+ambiguous symbols, currency expressions, and conflicting currency context.
+
+QUDT supports separate quantity-kind and unit identity. UCUM supports formal,
+case-sensitive unit expressions. ISO 4217 and Bank of Zambia guidance establish
+currency-code and effective-date evidence. None supplies missing ERA outcome
+field context, numerator, denominator, basis, geography, observation date, or
+source intent. No canonical unit URI, quantity kind, conversion, source
+correction, registry record, schema, release, or migration is recommended from
+label evidence alone.
+
+This checkpoint records no human decision or spreadsheet artifact. Approved
+spreadsheet runtime remains unavailable; source CSV is read-only and
+hash-pinned, while generated review records use deterministic JSON and Markdown.
 
 ## Consequences
 
@@ -303,7 +328,9 @@ new release.
    profile consolidations approved and 49 source-edit cases retained as holds.
 3. Stable identifiers and foreign-key-valid normalized registry.
 4. Four-round field-profile completeness and explicit lifecycle.
-5. Governed outcome for every unit row without inferred conversion.
+5. Governed outcome for every unit row without inferred conversion. Complete
+   recommendation checkpoint exists for 66 held cases; human acceptance and
+   source dispositions remain pending.
 6. Separate extraction and product schemas with derivation lineage.
 7. Complete 138-column product dictionaries or explicit reviewed deferrals.
 8. Release-pinned package and documentation consumers.

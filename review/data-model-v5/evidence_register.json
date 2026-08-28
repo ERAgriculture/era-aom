@@ -1,0 +1,56 @@
+[
+  {
+    "claim_boundary": "Audit provides labels and correction status but no outcome-field context, unit URI, quantity kind, or conversion evidence.",
+    "evidence_id": "E-ADR0052-UNIT-SOURCE",
+    "evidence_type": "source-audit",
+    "locator": "../data-model-v1/unit_mapping_audit.csv",
+    "supports": "64 unresolved rows and two conflicting ZMK/ha correction rows.",
+    "title": "ADR 0052 unit mapping audit",
+    "version_or_date": "2026-08-24"
+  },
+  {
+    "claim_boundary": "Does not establish what an ERA source label means without measured-property and source context.",
+    "evidence_id": "E-ADR0052-UNIT-QUDT",
+    "evidence_type": "unit-authority",
+    "locator": "https://www.qudt.org/doc/2026/01/DOC_SCHEMA-QUDT.html",
+    "supports": "Separate quantity, quantity kind, unit, dimension, value, and conversion semantics.",
+    "title": "QUDT 3.1.10 schema",
+    "version_or_date": "2026-01-15"
+  },
+  {
+    "claim_boundary": "Expression validity does not repair malformed, incomplete, misplaced, or context-free source labels.",
+    "evidence_id": "E-ADR0052-UNIT-UCUM",
+    "evidence_type": "unit-code-authority",
+    "locator": "https://ucum.org/ucum",
+    "supports": "Case-sensitive unit atoms and formal multiplication, division, exponentiation, scalar, and annotation syntax.",
+    "title": "UCUM specification 2.2",
+    "version_or_date": "2024-06-17"
+  },
+  {
+    "claim_boundary": "Currency code does not provide denominator, price basis, geography, effective date, or exchange conversion.",
+    "evidence_id": "E-ADR0052-UNIT-CURRENCY",
+    "evidence_type": "currency-authority",
+    "locator": "https://www.iso.org/iso-4217-currency-codes.html",
+    "supports": "Current and historical alphabetic and numeric currency-code identity.",
+    "title": "ISO 4217 currency codes",
+    "version_or_date": "accessed 2026-08-29"
+  },
+  {
+    "claim_boundary": "Source observation date and intended monetary basis are still required for each ERA row.",
+    "evidence_id": "E-ADR0052-UNIT-ZAMBIA",
+    "evidence_type": "currency-transition-authority",
+    "locator": "https://www.boz.zm/17-2012.pdf",
+    "supports": "ZMW became the new alphabetic code from 2013-01-01 and ZMK ceased current use after rebasing.",
+    "title": "Bank of Zambia rebasing implementation guidance",
+    "version_or_date": "2012"
+  },
+  {
+    "claim_boundary": "No workbook, registry, schema, semantic binding, release, or consumer is modified.",
+    "evidence_id": "E-ADR0052-UNIT-BOUNDARY",
+    "evidence_type": "implementation-boundary",
+    "locator": "disposition_summary.json",
+    "supports": "All 66 cases remain holds with blank canonical identity, conversion, and human-decision fields.",
+    "title": "Recommendation-only unit disposition",
+    "version_or_date": "2026-08-29"
+  }
+]
