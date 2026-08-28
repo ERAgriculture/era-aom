@@ -196,6 +196,10 @@ Full claim support and limitations are recorded in
 - [Field-key recommendations](../../review/data-model-v3/field_key_disposition_recommendations.csv)
 - [Lookup-binding recommendations](../../review/data-model-v3/lookup_binding_disposition_recommendations.csv)
 - [Source-disposition summary](../../review/data-model-v3/disposition_summary.json)
+- [Source-disposition acceptance](../../review/data-model-v4/README.md)
+- [Source-disposition policy approvals](../../review/data-model-v4/policy_decision_approvals.csv)
+- [Hash-pinned cohort approvals](../../review/data-model-v4/cohort_approvals.csv)
+- [Source-disposition acceptance summary](../../review/data-model-v4/acceptance_summary.json)
 
 ## Human decision
 
@@ -225,8 +229,15 @@ key; two have one same-field candidate under a different table but require
 source identity and value-scope review. No fuzzy or automatic binding is
 recommended.
 
-This checkpoint records no human decision, source edit, stable-key allocation,
-binding, schema regeneration, release, or consumer migration.
+P. Steward accepted `SD-01` through `SD-08` and the exact 21-row field-key and
+41-row lookup-binding recommendation artifacts on 2026-08-28. This approves 13
+profile consolidations for later governed implementation and retains eight
+field cases plus all 41 lookup cases as holds: 49 source-edit cases retained as
+holds in total.
+
+Acceptance records disposition only. It performs no source edit, stable-key
+allocation, profile or binding creation, schema regeneration, release, or
+consumer migration.
 
 ## Consequences
 
@@ -287,9 +298,9 @@ new release.
 
 ## Implementation gates
 
-1. Human approval of ADR 0051 and ADR 0052. ADR 0052 accepted; ADR 0051
-   remains pending.
-2. Reviewed disposition for every field-key and lookup-key issue.
+1. Human approval of ADR 0051 and ADR 0052. Complete; both ADRs accepted.
+2. Reviewed disposition for every field-key and lookup-key issue. Complete; 13
+   profile consolidations approved and 49 source-edit cases retained as holds.
 3. Stable identifiers and foreign-key-valid normalized registry.
 4. Four-round field-profile completeness and explicit lifecycle.
 5. Governed outcome for every unit row without inferred conversion.
@@ -303,6 +314,8 @@ new release.
 ## Approval record
 
 Accepted by P. Steward on 2026-08-28 with conditions and holds recorded in the
-[acceptance pack](../../review/data-model-v2/README.md). Acceptance allocates no
-identifier and changes no workbook source, schema, hierarchy, binding, mapping,
-generated distribution, package object, release, or publication status.
+[architecture acceptance pack](../../review/data-model-v2/README.md) and
+[source-disposition acceptance pack](../../review/data-model-v4/README.md).
+Acceptance allocates no identifier and changes no workbook source, schema,
+hierarchy, binding, mapping, generated distribution, package object, release,
+or publication status.

@@ -261,6 +261,10 @@ No human decision is recorded. No canonical workbook cell, stable key, field,
 profile, value set, binding, schema, release, or consumer is changed. All 41
 unmatched lookup pairs remain held; no fuzzy binding is proposed.
 
+Human acceptance of this exact recommendation cohort is recorded in
+[`data-model-v4`](../data-model-v4/README.md). This recommendation checkpoint
+remains immutable and records no implementation.
+
 ## Rebuild
 
 ```bash
