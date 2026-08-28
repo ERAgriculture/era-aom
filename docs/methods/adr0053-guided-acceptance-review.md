@@ -44,9 +44,9 @@ status.
 ## Lifecycle
 
 1. Recommendation pack generated.
-2. Human records guided decisions.
-3. Source owner approves correction proposals.
-4. Canonical source corrected and review regenerated.
-5. ADR accepted or revised.
+2. Human decisions recorded in `review/crop-foundation-v3`.
+3. Source owner approved seven correction proposals and held one.
+4. ADR accepted with recorded conditions and holds.
+5. Canonical source corrected and review regenerated.
 6. Separate implementation change assigns IDs, mappings, hierarchy, and module.
 7. Release and consumer migration follow independent validation and approval.

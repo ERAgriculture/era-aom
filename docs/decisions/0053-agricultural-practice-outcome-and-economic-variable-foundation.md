@@ -1,11 +1,13 @@
 # ADR 0053: Agricultural practice, outcome, and economic-variable foundation
 
-- Status: Proposed
+- Status: Accepted
 - Date: 2026-08-24
 - Last reviewed: 2026-08-28
+- Accepted: 2026-08-28 by P. Steward
 - Owners: ERA-AOM semantic and data-model governance
 - Tracking: [era-program #17](https://github.com/ERAgriculture/era-program/issues/17)
 - Evidence:
+  [Human acceptance record](../../review/crop-foundation-v3/README.md),
   [Guided-review recommendations](../../review/crop-foundation-v2/GUIDED_REVIEW_RECOMMENDATIONS.md),
   [baseline crop-foundation review](../../review/crop-foundation-v1/RECOMMENDATIONS.md)
 - Method: [Agricultural practice and outcome foundation governance](../methods/agricultural-practice-outcome-foundation-governance.md)
@@ -130,9 +132,9 @@ collection, economic measure, accounting classification, and module assignment.
 Candidate status does not approve class IRIs or axioms. Cross-domain promotion
 requires crop and livestock evidence plus ADR 0052 field-contract alignment.
 
-### Guided-review recommendation
+### Guided-review decision
 
-The 2026-08-28 checkpoint recommends:
+On 2026-08-28 P. Steward accepted:
 
 1. accept cross-domain routing, practice-context separation, SOSA outcome
    modeling, and economic decomposition;
@@ -151,9 +153,10 @@ The 2026-08-28 checkpoint recommends:
    non-identity facet candidates; and
 8. keep all 14 energy and cookstove rows on module hold.
 
-These are recommendations, not accepted decisions. Detailed wording and blank
-human-decision fields are in
+Detailed recommendations remain unchanged in
 [`guided_decision_recommendations.csv`](../../review/crop-foundation-v2/guided_decision_recommendations.csv).
+Final human decisions, conditions, and holds are recorded separately in
+[`guided_decision_approvals.csv`](../../review/crop-foundation-v3/guided_decision_approvals.csv).
 
 ## Authority comparison
 
@@ -182,6 +185,9 @@ Full support and limitation statements are recorded in
 ## Evidence
 
 - [Recommendations](../../review/crop-foundation-v1/RECOMMENDATIONS.md)
+- [Human acceptance record](../../review/crop-foundation-v3/README.md)
+- [Guided decision approvals](../../review/crop-foundation-v3/guided_decision_approvals.csv)
+- [Source correction approvals](../../review/crop-foundation-v3/source_correction_approvals.csv)
 - [Guided-review recommendations](../../review/crop-foundation-v2/GUIDED_REVIEW_RECOMMENDATIONS.md)
 - [Guided decision rows](../../review/crop-foundation-v2/guided_decision_recommendations.csv)
 - [Guided hierarchy dispositions](../../review/crop-foundation-v2/hierarchy_guided_dispositions.csv)
@@ -250,8 +256,10 @@ process applications. Mapping relation requires claim-level review.
 
 ## Implementation gates
 
-1. Human approval of ADR 0053 and priority guided-review decisions.
-2. Canonical source correction for missing, placeholder, duplicate, swapped,
+1. **Complete 2026-08-28:** human approval of ADR 0053 and all guided-review
+   decisions, including explicit revisions, conditions, and holds.
+2. Apply approved canonical source corrections for missing, placeholder,
+   duplicate, swapped,
    ambiguous, status, and sentinel defects.
 3. Approval or hold for all 377 row dispositions.
 4. Approval or replacement for all 109 generated nodes and 405 current edges.
@@ -264,7 +272,21 @@ process applications. Mapping relation requires claim-level review.
 
 ## Approval record
 
-Awaiting human decision on GR-01 through GR-12. Guided recommendations are
-complete but unapproved. This ADR and review change no source workbook, pilot
-distribution, AOM identity, hierarchy, mapping, shared-core axiom, module
-assignment, publication status, or release artifact.
+Accepted by P. Steward on 2026-08-28 after guided review of `GR-01` through
+`GR-12`.
+
+- `GR-01`–`GR-06`: accepted with stated lexical-code, navigation, stable-ID,
+  practice-context, and outcome-property conditions.
+- `GR-07`–`GR-08`: accepted with 53 practice-group holds and explicit
+  practice/material/trait/missing-value decomposition.
+- `GR-09`–`GR-10`: accepted; seven economic source corrections approved and
+  `Nutrient/Soil management` retained on clarification hold.
+- `GR-11`: four AgrO close matches approved for later implementation;
+  Monoculture and Controlled Grazing held; 20 other identity mappings rejected
+  while retaining facet evidence.
+- `GR-12`: all 14 energy and cookstove rows retained on module hold.
+
+Acceptance authorizes approved source correction. It does not itself change
+source workbook, pilot distribution, AOM identity, hierarchy, mapping assertion,
+shared-core axiom, module assignment, publication status, consumer contract, or
+release artifact. Semantic implementation remains a separate approval and PR.
