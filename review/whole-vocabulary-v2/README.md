@@ -41,3 +41,6 @@ python3 tests/validate_adr0051_guided_review.py
 
 Generated recommendations must not be edited to record approval. Human
 decisions belong in a later acceptance artifact.
+
+Human decisions are recorded separately in
+[`whole-vocabulary-v3`](../whole-vocabulary-v3/README.md).

@@ -31,6 +31,8 @@ jobs:
         run: |
           python scripts/build_adr0051_guided_review.py
           python tests/validate_adr0051_guided_review.py
+      - name: Validate ADR 0051 acceptance
+        run: python tests/validate_adr0051_acceptance.py
       - name: Validate data-model and shared-core review
         run: python tests/validate_data_model_core_review.py
       - name: Validate ADR 0052 acceptance
