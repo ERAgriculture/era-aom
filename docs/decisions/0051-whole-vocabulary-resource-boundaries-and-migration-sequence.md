@@ -1,12 +1,14 @@
 # ADR 0051: Whole-vocabulary resource boundaries and migration sequence
 
-- Status: Proposed
+- Status: Accepted
 - Date: 2026-08-24
+- Accepted: 2026-08-28 by P. Steward
 - Owners: ERA-AOM semantic and data-model governance
 - Tracking: [era-program #17](https://github.com/ERAgriculture/era-program/issues/17)
 - Evidence:
   [Whole-vocabulary coverage review](../../review/whole-vocabulary-v1/RECOMMENDATIONS.md),
-  [guided-review checkpoint](../../review/whole-vocabulary-v2/README.md)
+  [guided-review checkpoint](../../review/whole-vocabulary-v2/README.md),
+  [human acceptance record](../../review/whole-vocabulary-v3/README.md)
 - Method: [Whole-vocabulary migration governance](../methods/whole-vocabulary-migration-governance.md)
 - Depends on:
   [ERA ADR 0007](https://github.com/ERAgriculture/era-program/blob/main/project-management/decisions/ADR-0007-canonical-vocab-source.md),
@@ -79,7 +81,8 @@ Execute bounded waves with explicit dependency gates:
 1. approve whole-resource boundaries and coverage reporting;
 2. formalize current data model, lookup bindings, units, and shared-core
    observation contracts;
-3. review and promote `prac`, `out`, and `out_econ`;
+3. review `prac`, `out`, and `out_econ` as cross-domain source registries and
+   route approved identities row by row;
 4. review crop products, components, and residue mappings;
 5. review fertilizers, chemicals, formulations, active ingredients, and use;
 6. review crop and animal biological identities, varieties, accessions, and
@@ -116,11 +119,13 @@ never deleted or reassigned.
 
 ### Near-term priority
 
-After ADR 0049 visual acceptance, pause further feed-first structural expansion
-unless correcting a defect or publication blocker. Next implementation work is
-Wave 1 data-model and shared-core contracts, followed by governed crop
-foundation review. Livestock work continues through explicit non-feed coverage,
-including `vars_animals`, rather than feed alone.
+ADR 0049 remains a separate livestock visual-acceptance gate and does not block
+independent data-model, crop, reference, or mapping review. Pause further
+feed-first structural expansion unless correcting a defect or publication
+blocker. Next implementation work is Wave 1 data-model and shared-core
+contracts, followed by governed cross-domain practice and outcome foundation
+review. Livestock work continues through explicit non-feed coverage, including
+`vars_animals`, rather than feed alone.
 
 ## Authority comparison
 
@@ -154,6 +159,10 @@ Full support and limitation statements are recorded in
 - [All resource-route recommendations](../../review/whole-vocabulary-v2/resource_routing_recommendations.csv)
 - [Guided-review evidence register](../../review/whole-vocabulary-v2/evidence_register.csv)
 - [Guided-review summary](../../review/whole-vocabulary-v2/acceptance_summary.json)
+- [Human policy approvals](../../review/whole-vocabulary-v3/policy_decision_approvals.csv)
+- [Human route approvals](../../review/whole-vocabulary-v3/resource_route_approvals.csv)
+- [Acceptance evidence register](../../review/whole-vocabulary-v3/evidence_register.csv)
+- [Acceptance summary](../../review/whole-vocabulary-v3/acceptance_summary.json)
 
 ## Guided decision checkpoint
 
@@ -172,6 +181,23 @@ data-model, crop, reference, or mapping review.
 This checkpoint records no approval and authorizes no source, identity,
 hierarchy, mapping, publication, implementation, release, consumer migration,
 or canonical-cutover change.
+
+## Human decision
+
+P. Steward accepted `GV-01` through `GV-08` and `RR-01` through `RR-33` on
+2026-08-28 with all stated revisions, conditions, and holds. Acceptance approves
+whole-product boundaries, function-first resource routing, bounded migration
+waves, coverage reporting, source and identifier continuity, and publication
+boundaries.
+
+Accepted revisions route `prac`, `out`, and `out_econ` row by row across modules
+instead of treating each sheet as crop-only. Accepted holds retain `site_list`
+on publication review, `scio - Custom Terms` on provenance review, and
+`ssa_feedsdb` as restricted exclusion.
+
+Acceptance does not approve row identities, hierarchy, mappings, source edits,
+identifier allocation, publication, implementation, release, consumer
+migration, or canonical cutover.
 
 ## Consequences
 
@@ -218,7 +244,7 @@ independence, and intelligible navigation.
 
 ## Implementation gates
 
-1. Human approval of ADR and all resource-level routing dispositions.
+1. Human approval of ADR and all resource-level routing dispositions. Complete.
 2. Complete row inventory and affected-consumer inventory per bounded cohort.
 3. Claim-level authority comparison and row-level dispositions with holds.
 4. Global label, identifier, deprecation, and external-mapping collision audit.
@@ -231,7 +257,8 @@ independence, and intelligible navigation.
 
 ## Approval record
 
-Awaiting human decision on `GV-01` through `GV-08` and `RR-01` through `RR-33`.
-This ADR and review allocate no identifier and change no hierarchy, schema,
-mapping, source data, generated distribution, publication status, or canonical
-authority.
+Accepted by P. Steward on 2026-08-28 with revisions, conditions, and holds
+recorded in the
+[acceptance pack](../../review/whole-vocabulary-v3/README.md). Acceptance
+allocates no identifier and changes no hierarchy, schema, mapping, source data,
+generated distribution, publication status, or canonical authority.

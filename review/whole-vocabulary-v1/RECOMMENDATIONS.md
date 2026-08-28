@@ -6,6 +6,10 @@ Status: recommendation-only review for
 Decision proposal:
 [ADR 0051](../../docs/decisions/0051-whole-vocabulary-resource-boundaries-and-migration-sequence.md).
 
+Human decisions are recorded separately in the
+[ADR 0051 acceptance pack](../whole-vocabulary-v3/README.md); this evidence
+snapshot remains immutable and recommendation-only.
+
 ## Snapshot
 
 AOM is not livestock shorthand. Current canonical workbook contains 33 sheets

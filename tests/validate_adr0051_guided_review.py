@@ -88,7 +88,8 @@ assert len(evidence) == 7
 assert all(row["supports"] and row["claim_boundary"] for row in evidence)
 
 adr_text = (ROOT / "docs/decisions/0051-whole-vocabulary-resource-boundaries-and-migration-sequence.md").read_text(encoding="utf-8")
-assert "Status: Proposed" in adr_text
+assert "Status: Accepted" in adr_text
 assert "whole-vocabulary-v2/README.md" in adr_text
+assert "whole-vocabulary-v3/README.md" in adr_text
 
 print("Validated ADR 0051 guided review: 8 decisions and 33 resource routes")
