@@ -50,3 +50,6 @@ python3 tests/validate_adr0053_guided_review.py
 Generated recommendations must not be edited to record approval. Human
 decisions belong in a later approval artifact after review; approved source
 corrections then occur in the canonical workbook and trigger regeneration.
+
+Human decisions are recorded separately in
+[`crop-foundation-v3`](../crop-foundation-v3/README.md).

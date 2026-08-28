@@ -35,6 +35,8 @@ jobs:
         run: |
           python scripts/build_adr0053_guided_review.py
           python tests/validate_adr0053_guided_review.py
+      - name: Validate ADR 0053 acceptance
+        run: python tests/validate_adr0053_acceptance.py
       - name: Validate livestock staging
         run: python tests/validate_livestock_staging.py
       - name: Validate livestock review pack
