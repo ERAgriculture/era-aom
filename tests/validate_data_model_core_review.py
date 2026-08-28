@@ -164,7 +164,8 @@ method_text = (ROOT / "docs" / "methods" / "data-model-and-shared-core-contract-
 for heading in ("## Authority comparison", "## Evidence"):
     expect(heading in recommendation_text, f"Recommendations missing {heading}")
     expect(heading in adr_text, f"ADR missing {heading}")
-expect("Status: Proposed" in adr_text, "ADR must remain proposed")
+expect("Status: Accepted" in adr_text, "ADR must record accepted status")
+expect("review/data-model-v2/README.md" in adr_text, "ADR must link human acceptance record")
 expect("semantic_changes = 0L" in (ROOT / "scripts" / "build_data_model_core_review.R").read_text(encoding="utf-8"), "Builder must retain no-change declaration")
 expect("Never infer dimensions" in method_text, "Method must prohibit inferred unit semantics")
 

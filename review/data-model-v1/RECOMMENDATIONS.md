@@ -6,6 +6,10 @@ Recommendation-only review for ADR 0051 Wave 1. It changes no ontology
 hierarchy, semantic binding, source workbook, released schema, package object,
 identifier, or publication artifact.
 
+Human decisions are recorded separately in the
+[ADR 0052 acceptance pack](../data-model-v2/README.md); this evidence snapshot
+remains immutable and recommendation-only.
+
 ## Decision summary
 
 ERA needs two related but distinct contracts:

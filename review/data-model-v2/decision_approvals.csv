@@ -1,0 +1,13 @@
+recommendation_id,final_decision,conditions_or_holds,reviewer,review_date,approval_status
+DM-01,accepted,"Keep table, field, profile, value-set, unit, semantic-binding, product-schema, and compatibility resources separate.",P. Steward,2026-08-28,accepted
+DM-02,accepted,"Allocate stable table and field keys only during governed implementation; preserve round variation in profiles.",P. Steward,2026-08-28,accepted
+DM-03,accepted-with-source-holds,"Review all 21 field-key issues against canonical source evidence; never auto-rename probable errors.",P. Steward,2026-08-28,accepted
+DM-04,accepted-with-lookup-holds,"Use explicit field-key to value-set identity; review all 41 unmatched pairs without fuzzy joining.",P. Steward,2026-08-28,accepted
+DM-05,accepted,"Keep extraction-model and analytical-product schemas separate with explicit derivation lineage.",P. Steward,2026-08-28,accepted
+DM-06,accepted-with-documentation-gate,"Document every field in both 138-column products or record explicit reviewed deferrals.",P. Steward,2026-08-28,accepted
+DM-07,accepted,"Pin eragri objects and dictionaries to an ERA release and publish compatibility reports.",P. Steward,2026-08-28,accepted
+DM-08,accepted-with-evidence-gate,"Promote shared core only after equivalent crop-and-livestock scope evidence; preserve domain modules.",P. Steward,2026-08-28,accepted
+DM-09,accepted,"Use stable semantic-binding keys while retaining domain concepts in their owning modules.",P. Steward,2026-08-28,accepted
+DM-10,accepted,"Use CSVW or Frictionless descriptors for tabular contracts and SHACL for RDF constraints.",P. Steward,2026-08-28,accepted
+DM-11,accepted-with-unit-holds,"Preserve raw units; govern URI, quantity kind, conversion, basis, context, and evidence separately; hold 64 unresolved and two conflicting rows.",P. Steward,2026-08-28,accepted
+DM-12,accepted,"Close programme issues only after source, schema, Parquet, package, catalog, documentation, and contract-test parity.",P. Steward,2026-08-28,accepted

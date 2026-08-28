@@ -1,13 +1,16 @@
 # ADR 0052: Data-model registry and shared-core contract
 
-- Status: Proposed
+- Status: Accepted
 - Date: 2026-08-24
+- Accepted: 2026-08-28 by P. Steward
 - Owners: ERA data-model and AOM semantic governance
 - Tracking:
   [era-program #27](https://github.com/ERAgriculture/era-program/issues/27),
   [era-program #21](https://github.com/ERAgriculture/era-program/issues/21),
   [era-program #17](https://github.com/ERAgriculture/era-program/issues/17)
-- Evidence: [Wave 1 data-model review](../../review/data-model-v1/RECOMMENDATIONS.md)
+- Evidence:
+  [Wave 1 data-model review](../../review/data-model-v1/RECOMMENDATIONS.md),
+  [human acceptance record](../../review/data-model-v2/README.md)
 - Method: [Data-model and shared-core contract review](../methods/data-model-and-shared-core-contract-review.md)
 - Depends on:
   [AOM ADR 0051](0051-whole-vocabulary-resource-boundaries-and-migration-sequence.md),
@@ -186,6 +189,24 @@ Full claim support and limitations are recorded in
 - [Recommendation register](../../review/data-model-v1/recommendation_register.csv)
 - [Claim-level evidence register](../../review/data-model-v1/evidence_register.csv)
 - [Machine summary](../../review/data-model-v1/review_summary.json)
+- [Human decision approvals](../../review/data-model-v2/decision_approvals.csv)
+- [Acceptance evidence register](../../review/data-model-v2/evidence_register.csv)
+- [Acceptance summary](../../review/data-model-v2/acceptance_summary.json)
+
+## Human decision
+
+P. Steward accepted `DM-01` through `DM-12` on 2026-08-28. Acceptance approves
+the registry architecture, source-disposition work, publication forms,
+consumer-compatibility gates, and evidence conditions described above.
+
+Acceptance retains 21 field-key, 41 unmatched lookup, 64 unresolved unit, and
+two conflicting-unit review cases. It requires complete documentation or
+reviewed deferral for each 138-column public product schema and crop-and-livestock
+evidence before shared-core promotion.
+
+Acceptance does not edit the canonical workbook, allocate stable keys,
+regenerate schemas, promote shared-core resources, mutate `v2026.1`, publish a
+new release, migrate consumers, or close programme issues.
 
 ## Consequences
 
@@ -246,7 +267,8 @@ new release.
 
 ## Implementation gates
 
-1. Human approval of ADR 0051 and ADR 0052.
+1. Human approval of ADR 0051 and ADR 0052. ADR 0052 accepted; ADR 0051
+   remains pending.
 2. Reviewed disposition for every field-key and lookup-key issue.
 3. Stable identifiers and foreign-key-valid normalized registry.
 4. Four-round field-profile completeness and explicit lifecycle.
@@ -260,6 +282,7 @@ new release.
 
 ## Approval record
 
-Awaiting human decision. This ADR and review allocate no identifier and change
-no workbook source, schema, hierarchy, binding, mapping, generated distribution,
-package object, release, or publication status.
+Accepted by P. Steward on 2026-08-28 with conditions and holds recorded in the
+[acceptance pack](../../review/data-model-v2/README.md). Acceptance allocates no
+identifier and changes no workbook source, schema, hierarchy, binding, mapping,
+generated distribution, package object, release, or publication status.
