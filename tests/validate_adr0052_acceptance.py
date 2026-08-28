@@ -66,6 +66,7 @@ assert summary["conflicting_unit_rows"] == 2
 assert summary["product_schema_columns_per_product"] == 138
 assert summary["consumer_difference_records"] == len(consumer_differences)
 assert summary["architecture_accepted"] is True
+assert summary["adr0051_dependency_accepted"] is False
 assert summary["source_disposition_authorized"] is True
 assert summary["canonical_workbook_modified"] is False
 assert summary["stable_keys_allocated"] is False

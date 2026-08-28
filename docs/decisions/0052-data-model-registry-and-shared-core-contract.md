@@ -267,7 +267,8 @@ new release.
 
 ## Implementation gates
 
-1. Human approval of ADR 0051 and ADR 0052. Complete.
+1. Human approval of ADR 0051 and ADR 0052. ADR 0052 accepted; ADR 0051
+   remains pending.
 2. Reviewed disposition for every field-key and lookup-key issue.
 3. Stable identifiers and foreign-key-valid normalized registry.
 4. Four-round field-profile completeness and explicit lifecycle.

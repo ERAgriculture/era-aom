@@ -43,7 +43,9 @@ based on the recommendation-only review in
 ADR acceptance approves architecture and source-disposition work. It does not
 edit the canonical workbook, allocate stable keys, regenerate schemas, promote
 shared-core resources, mutate release `v2026.1`, publish a new release, migrate
-consumers, or close programme issues.
+consumers, or close programme issues. Dependent ADR 0051 remains Proposed and
+must be accepted separately before its resource-routing policy is treated as
+approved.
 
 Validate with:
 
