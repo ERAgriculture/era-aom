@@ -1,0 +1,9 @@
+review_id,recommended_decision,final_decision,conditions_or_holds,reviewer,review_date,approval_status
+SD-01,accept-profile-consolidation,accept-profile-consolidation,"Preserve every source row and round-specific property; allocate stable keys and create profiles only during separately approved implementation.",P. Steward,2026-08-28,accepted
+SD-02,hold-source-row-comparison,hold-source-row-comparison,"Retain all three overlapping duplicate keys until full source-row properties and intent are reviewed.",P. Steward,2026-08-28,accepted
+SD-03,hold-source-key-correction,hold-source-key-correction,"Retain irrigation date-key conflict until source owner confirms intended key; do not infer correction from display label.",P. Steward,2026-08-28,accepted
+SD-04,hold-metadata-or-removal-classification,hold-metadata-or-removal-classification,"Retain all three blank-field rows until classified as metadata, separators, or removable source artifacts.",P. Steward,2026-08-28,accepted
+SD-05,hold-table-assignment-or-retirement,hold-table-assignment-or-retirement,"Retain source row 480 until table identity is evidenced or row is explicitly retired.",P. Steward,2026-08-28,accepted
+SD-06,hold-add-field-or-retire-lookup,hold-add-field-or-retire-lookup,"Retain all 39 no-candidate lookup pairs; add governed fields from source evidence or retire lookup pairs.",P. Steward,2026-08-28,accepted
+SD-07,hold-table-key-realignment-review,hold-table-key-realignment-review,"Retain both candidate-key pairs until table identity, value scope, and consumer use are reviewed.",P. Steward,2026-08-28,accepted
+SD-08,accept-explicit-binding-policy,accept-explicit-binding-policy,"Require stable field and value-set keys for approved bindings; no unmatched pair is approved by this policy.",P. Steward,2026-08-28,accepted
