@@ -1,0 +1,98 @@
+[
+  {
+    "conditions_or_holds": "Normalization, correction, and mapping never overwrite source evidence.",
+    "decision_detail": "Preserve every raw unit label and source-row identity independently from reviewed canonical unit assertions.",
+    "priority": 1,
+    "recommended_decision": "retain-raw-unit-and-source-row",
+    "review_id": "UD-01",
+    "review_topic": "Raw unit preservation"
+  },
+  {
+    "conditions_or_holds": "No row receives canonical unit identity, quantity kind, or conversion from label evidence alone.",
+    "decision_detail": "Retain all 64 unresolved rows and both conflicting ZMK/ha rows as holds pending source context.",
+    "priority": 1,
+    "recommended_decision": "accept-recommendation-only-hold",
+    "review_id": "UD-02",
+    "review_topic": "Complete held cohort"
+  },
+  {
+    "conditions_or_holds": "Normalize to null only through approved source correction after confirming source intent.",
+    "decision_detail": "Treat N/A and NA as candidate missing-value sentinels rather than units.",
+    "priority": 1,
+    "recommended_decision": "hold-missing-sentinel-source-correction",
+    "review_id": "UD-03",
+    "review_topic": "Missing-value sentinels"
+  },
+  {
+    "conditions_or_holds": "Lexical classification is triage, not approval to delete, move, or replace a source value.",
+    "decision_detail": "Hold apparent outcomes, statuses, values, and text fragments for field-level source correction.",
+    "priority": 1,
+    "recommended_decision": "hold-non-unit-and-fragment-source-correction",
+    "review_id": "UD-04",
+    "review_topic": "Non-unit values and fragments"
+  },
+  {
+    "conditions_or_holds": "Terms such as DM, BW, feed, milk, and metabolic require expanded source meaning before modeling.",
+    "decision_detail": "Represent material, population, state, and reporting basis independently from physical unit identity.",
+    "priority": 1,
+    "recommended_decision": "separate-basis-and-qualifier",
+    "review_id": "UD-05",
+    "review_topic": "Bases and qualifiers"
+  },
+  {
+    "conditions_or_holds": "A slash-containing label does not prove a valid or complete unit expression.",
+    "decision_detail": "Resolve numerator, denominator, scaling, population, area, and time before assigning compound-unit identity.",
+    "priority": 1,
+    "recommended_decision": "decompose-ratio-before-unit-mapping",
+    "review_id": "UD-06",
+    "review_topic": "Ratio decomposition"
+  },
+  {
+    "conditions_or_holds": "Do not silently reinterpret mg as Mg, ms as mS, in as inch, or abbreviations as quantities.",
+    "decision_detail": "Review exact case and expanded meaning before interpreting ambiguous symbols or abbreviations.",
+    "priority": 1,
+    "recommended_decision": "require-case-sensitive-symbol-review",
+    "review_id": "UD-07",
+    "review_topic": "Symbol case and abbreviation"
+  },
+  {
+    "conditions_or_holds": "Same label can occur under different quantities, bases, or contexts.",
+    "decision_detail": "Establish measured property and quantity kind before selecting a QUDT or other canonical unit identifier.",
+    "priority": 1,
+    "recommended_decision": "require-quantity-kind-before-unit-uri",
+    "review_id": "UD-08",
+    "review_topic": "Quantity kind before unit URI"
+  },
+  {
+    "conditions_or_holds": "Case-sensitive codes, annotations, and compound expressions require explicit reviewed construction.",
+    "decision_detail": "Use UCUM to validate approved unit expressions and semantics, not to infer source meaning from malformed labels.",
+    "priority": 2,
+    "recommended_decision": "use-ucum-validation-not-identity-inference",
+    "review_id": "UD-09",
+    "review_topic": "UCUM expression validation"
+  },
+  {
+    "conditions_or_holds": "Never replace ZMK with ZMW without source date and rebasing context.",
+    "decision_detail": "Model currency code, denominator or basis, geography, and effective date separately.",
+    "priority": 1,
+    "recommended_decision": "require-currency-code-and-effective-context",
+    "review_id": "UD-10",
+    "review_topic": "Currency and effective context"
+  },
+  {
+    "conditions_or_holds": "Label normalization alone authorizes no numeric conversion.",
+    "decision_detail": "Store conversion factor, offset, formula, direction, basis, applicability, authority, and evidence separately.",
+    "priority": 1,
+    "recommended_decision": "require-explicit-conversion-record",
+    "review_id": "UD-11",
+    "review_topic": "Conversion semantics"
+  },
+  {
+    "conditions_or_holds": "This cohort changes no workbook, schema, unit registry, binding, distribution, or consumer.",
+    "decision_detail": "Keep recommendation, human acceptance, source correction, registry implementation, release, and migration as separate gates.",
+    "priority": 1,
+    "recommended_decision": "retain-unit-implementation-gates",
+    "review_id": "UD-12",
+    "review_topic": "Implementation boundary"
+  }
+]
