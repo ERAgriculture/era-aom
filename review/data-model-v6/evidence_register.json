@@ -1,0 +1,47 @@
+[
+  {
+    "claim_boundary": "Acceptance records governance only and creates no source or registry implementation.",
+    "evidence_id": "E-ADR0052-UA-POLICY",
+    "evidence_type": "human-governance-decision",
+    "locator": "policy_decision_approvals.json",
+    "supports": "P. Steward accepted UD-01 through UD-12 as recommended.",
+    "title": "Unit-governance policy approvals",
+    "version_or_date": "2026-08-31"
+  },
+  {
+    "claim_boundary": "Approval retains every row as a hold and assigns no canonical identity or conversion.",
+    "evidence_id": "E-ADR0052-UA-COHORT",
+    "evidence_type": "hash-pinned-human-decision",
+    "locator": "cohort_approval.json",
+    "supports": "Exact 12-decision and 66-row recommendation artifacts accepted as recommended.",
+    "title": "Unit-disposition cohort approval",
+    "version_or_date": "2026-08-31"
+  },
+  {
+    "claim_boundary": "Recommendation evidence does not itself implement accepted decisions.",
+    "evidence_id": "E-ADR0052-UA-REVIEW",
+    "evidence_type": "governance-review",
+    "locator": "../data-model-v5/README.md",
+    "supports": "Complete deterministic review for all 66 held unit rows.",
+    "title": "Unit-disposition recommendation checkpoint",
+    "version_or_date": "2026-08-29"
+  },
+  {
+    "claim_boundary": "Authorities support review structure but cannot supply missing ERA source context.",
+    "evidence_id": "E-ADR0052-UA-AUTHORITY",
+    "evidence_type": "authority-comparison",
+    "locator": "../data-model-v5/authority_comparison.json",
+    "supports": "QUDT, UCUM, ISO 4217, Bank of Zambia, and ERA authority roles and limitations.",
+    "title": "Unit authority comparison",
+    "version_or_date": "2026-08-29"
+  },
+  {
+    "claim_boundary": "Stable-key allocation, mappings, conversions, schema generation, release, and migration remain unauthorized.",
+    "evidence_id": "E-ADR0052-UA-BOUNDARY",
+    "evidence_type": "implementation-boundary",
+    "locator": "acceptance_summary.json",
+    "supports": "Canonical workbook, source CSV, and generated semantic artifacts remain unchanged.",
+    "title": "Unit acceptance implementation boundary",
+    "version_or_date": "2026-08-31"
+  }
+]

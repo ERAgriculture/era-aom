@@ -1,0 +1,110 @@
+[
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Preserve every raw label and source-row identity; never overwrite source evidence with normalization or mapping.",
+    "final_decision": "retain-raw-unit-and-source-row",
+    "recommended_decision": "retain-raw-unit-and-source-row",
+    "review_date": "2026-08-31",
+    "review_id": "UD-01",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "All 64 unresolved rows and both conflicting rows remain held pending source context.",
+    "final_decision": "accept-recommendation-only-hold",
+    "recommended_decision": "accept-recommendation-only-hold",
+    "review_date": "2026-08-31",
+    "review_id": "UD-02",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Treat N/A and NA as candidate sentinels; normalize to null only through approved source correction.",
+    "final_decision": "hold-missing-sentinel-source-correction",
+    "recommended_decision": "hold-missing-sentinel-source-correction",
+    "review_date": "2026-08-31",
+    "review_id": "UD-03",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Apparent outcomes, statuses, misplaced values, and fragments remain held for field-level source review.",
+    "final_decision": "hold-non-unit-and-fragment-source-correction",
+    "recommended_decision": "hold-non-unit-and-fragment-source-correction",
+    "review_date": "2026-08-31",
+    "review_id": "UD-04",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Model material, population, state, and reporting basis separately after expanded source meaning is known.",
+    "final_decision": "separate-basis-and-qualifier",
+    "recommended_decision": "separate-basis-and-qualifier",
+    "review_date": "2026-08-31",
+    "review_id": "UD-05",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Resolve numerator, denominator, scaling, population, area, and time before compound-unit mapping.",
+    "final_decision": "decompose-ratio-before-unit-mapping",
+    "recommended_decision": "decompose-ratio-before-unit-mapping",
+    "review_date": "2026-08-31",
+    "review_id": "UD-06",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Require expanded meaning and exact case; do not silently reinterpret ambiguous symbols or abbreviations.",
+    "final_decision": "require-case-sensitive-symbol-review",
+    "recommended_decision": "require-case-sensitive-symbol-review",
+    "review_date": "2026-08-31",
+    "review_id": "UD-07",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Establish measured property and quantity kind before selecting canonical unit identifier.",
+    "final_decision": "require-quantity-kind-before-unit-uri",
+    "recommended_decision": "require-quantity-kind-before-unit-uri",
+    "review_date": "2026-08-31",
+    "review_id": "UD-08",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Use UCUM to validate reviewed expressions, never to infer source meaning from malformed or context-free labels.",
+    "final_decision": "use-ucum-validation-not-identity-inference",
+    "recommended_decision": "use-ucum-validation-not-identity-inference",
+    "review_date": "2026-08-31",
+    "review_id": "UD-09",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Require currency code, denominator, geography, and effective date; never replace ZMK with ZMW silently.",
+    "final_decision": "require-currency-code-and-effective-context",
+    "recommended_decision": "require-currency-code-and-effective-context",
+    "review_date": "2026-08-31",
+    "review_id": "UD-10",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Store conversion factor, offset, formula, direction, basis, applicability, authority, and evidence separately.",
+    "final_decision": "require-explicit-conversion-record",
+    "recommended_decision": "require-explicit-conversion-record",
+    "review_date": "2026-08-31",
+    "review_id": "UD-11",
+    "reviewer": "P. Steward"
+  },
+  {
+    "approval_status": "accepted",
+    "conditions_or_holds": "Keep recommendation, source correction, registry implementation, release, and migration as separate gates.",
+    "final_decision": "retain-unit-implementation-gates",
+    "recommended_decision": "retain-unit-implementation-gates",
+    "review_date": "2026-08-31",
+    "review_id": "UD-12",
+    "reviewer": "P. Steward"
+  }
+]
