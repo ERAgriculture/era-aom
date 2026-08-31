@@ -23,6 +23,10 @@ Approved spreadsheet artifact runtime was unavailable, so this checkpoint
 authors no CSV or workbook. Machine records use deterministic JSON; human review
 uses Markdown. Source CSV remains read-only and hash-pinned.
 
+Human acceptance of this exact recommendation cohort is recorded in
+[`data-model-v6`](../data-model-v6/README.md). This recommendation checkpoint
+remains immutable and records no implementation.
+
 ## Files
 
 - [`GUIDED_UNIT_RECOMMENDATIONS.md`](GUIDED_UNIT_RECOMMENDATIONS.md)

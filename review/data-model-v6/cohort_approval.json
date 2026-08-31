@@ -1,0 +1,20 @@
+{
+  "approval_status": "accepted",
+  "artifacts": [
+    {
+      "artifact": "../data-model-v5/guided_decision_recommendations.json",
+      "record_count": 12,
+      "sha256": "68b318366e620c6391ab66b966f9e96b4fc3f91b2d19d7eb2cca043dfdd6878a"
+    },
+    {
+      "artifact": "../data-model-v5/unit_disposition_recommendations.json",
+      "record_count": 66,
+      "sha256": "d5d5ed94a8e3f8e66eab5c989abc5a124f0994cf533d1e9375327706ce42ecec"
+    }
+  ],
+  "cohort_id": "UNIT-DISPOSITION-COHORT",
+  "conditions_or_holds": "Accept all recommendations as recorded; all 66 unit rows remain holds and no source or semantic implementation is authorized.",
+  "final_decision": "accepted-as-recommended",
+  "review_date": "2026-08-31",
+  "reviewer": "P. Steward"
+}

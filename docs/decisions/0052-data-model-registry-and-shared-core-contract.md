@@ -205,6 +205,10 @@ Full claim support and limitations are recorded in
 - [Unit row recommendations](../../review/data-model-v5/unit_disposition_recommendations.json)
 - [Unit authority comparison](../../review/data-model-v5/authority_comparison.json)
 - [Unit-disposition summary](../../review/data-model-v5/disposition_summary.json)
+- [Unit-disposition acceptance](../../review/data-model-v6/README.md)
+- [Unit policy approvals](../../review/data-model-v6/policy_decision_approvals.json)
+- [Hash-pinned unit cohort approval](../../review/data-model-v6/cohort_approval.json)
+- [Unit acceptance summary](../../review/data-model-v6/acceptance_summary.json)
 
 ## Human decision
 
@@ -260,9 +264,15 @@ source intent. No canonical unit URI, quantity kind, conversion, source
 correction, registry record, schema, release, or migration is recommended from
 label evidence alone.
 
-This checkpoint records no human decision or spreadsheet artifact. Approved
-spreadsheet runtime remains unavailable; source CSV is read-only and
-hash-pinned, while generated review records use deterministic JSON and Markdown.
+P. Steward accepted `UD-01` through `UD-12` and exact 12-decision and 66-row
+recommendation artifacts on 2026-08-31. All 64 unresolved rows and both
+conflicting rows remain explicit holds. Acceptance approves governance and hold
+dispositions only.
+
+Acceptance records no spreadsheet artifact, source correction, unit or
+quantity-kind identity, conversion, registry record, schema regeneration,
+release, or consumer migration. Approved spreadsheet runtime remains
+unavailable; source CSV is read-only and hash-pinned.
 
 ## Consequences
 
@@ -280,8 +290,8 @@ hash-pinned, while generated review records use deterministic JSON and Markdown.
 
 ### Costs
 
-- Canonical workbook needs 21 field-key and 41 lookup-key dispositions before
-  clean normalization.
+- Canonical workbook retains 49 accepted source-edit holds before clean
+  normalization.
 - Complete product dictionaries need human descriptions and derivation review.
 - Unit work requires authority and conversion-basis review beyond string cleanup.
 - Pipeline, data, package, docs, and ontology repositories need coordinated but
@@ -328,9 +338,9 @@ new release.
    profile consolidations approved and 49 source-edit cases retained as holds.
 3. Stable identifiers and foreign-key-valid normalized registry.
 4. Four-round field-profile completeness and explicit lifecycle.
-5. Governed outcome for every unit row without inferred conversion. Complete
-   recommendation checkpoint exists for 66 held cases; human acceptance and
-   source dispositions remain pending.
+5. Governed outcome for every unit row without inferred conversion. Complete;
+   all 66 cases accepted as explicit holds with no inferred mapping or
+   conversion.
 6. Separate extraction and product schemas with derivation lineage.
 7. Complete 138-column product dictionaries or explicit reviewed deferrals.
 8. Release-pinned package and documentation consumers.
@@ -342,7 +352,9 @@ new release.
 
 Accepted by P. Steward on 2026-08-28 with conditions and holds recorded in the
 [architecture acceptance pack](../../review/data-model-v2/README.md) and
-[source-disposition acceptance pack](../../review/data-model-v4/README.md).
-Acceptance allocates no identifier and changes no workbook source, schema,
-hierarchy, binding, mapping, generated distribution, package object, release,
-or publication status.
+[source-disposition acceptance pack](../../review/data-model-v4/README.md), with
+unit dispositions accepted on 2026-08-31 in the
+[unit acceptance pack](../../review/data-model-v6/README.md). Acceptance
+allocates no identifier and changes no workbook source, schema, hierarchy,
+binding, mapping, generated distribution, package object, release, or
+publication status.
