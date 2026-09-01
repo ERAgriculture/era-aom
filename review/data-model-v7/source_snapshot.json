@@ -1,0 +1,3007 @@
+{
+  "snapshot_date": "2026-09-01",
+  "status": "read-only-source-evidence",
+  "source_repositories": [
+    {
+      "repository": "ERAgriculture/era-data",
+      "commit": "799ace4f0322cda103781060004816b346bdca1e",
+      "clean": true
+    },
+    {
+      "repository": "ERAgriculture/eragri",
+      "commit": "c6594e1f2769cb6fff6d82a2bf66f6785c70f546",
+      "clean": true
+    }
+  ],
+  "sources": {
+    "agronomy_schema": {
+      "repository": "ERAgriculture/era-data",
+      "commit": "799ace4f0322cda103781060004816b346bdca1e",
+      "path": "schemas/era_compiled.schema.json",
+      "sha256": "a06d2b18da35d5a56004e1abf918df42be1b9d0f0cffe8b4aec53a878794507f",
+      "product": "era_compiled",
+      "column_count": 138,
+      "columns": [
+        {
+          "position": 1,
+          "name": "Site.Key",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 2,
+          "name": "Index",
+          "physical_type": "int32",
+          "description": ""
+        },
+        {
+          "position": 3,
+          "name": "Code",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 4,
+          "name": "Author",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 5,
+          "name": "Date",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 6,
+          "name": "Journal",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 7,
+          "name": "DOI",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 8,
+          "name": "Elevation",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 9,
+          "name": "Country",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 10,
+          "name": "ISO.3166.1.alpha.3",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 11,
+          "name": "Site.Type",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 12,
+          "name": "Site.ID",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 13,
+          "name": "MAT",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 14,
+          "name": "MAP",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 15,
+          "name": "TAP",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 16,
+          "name": "MSP",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 17,
+          "name": "TSP",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 18,
+          "name": "Soil.Type",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 19,
+          "name": "Soil.Classification",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 20,
+          "name": "Soil.Texture",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 21,
+          "name": "SOC",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 22,
+          "name": "SOC.Unit",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 23,
+          "name": "SOC.Depth",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 24,
+          "name": "Soil.pH",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 25,
+          "name": "Soil.pH.Method",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 26,
+          "name": "Plant.Start",
+          "physical_type": "date32[day]",
+          "description": ""
+        },
+        {
+          "position": 27,
+          "name": "Plant.End",
+          "physical_type": "date32[day]",
+          "description": ""
+        },
+        {
+          "position": 28,
+          "name": "Harvest.Start",
+          "physical_type": "date32[day]",
+          "description": ""
+        },
+        {
+          "position": 29,
+          "name": "Harvest.End",
+          "physical_type": "date32[day]",
+          "description": ""
+        },
+        {
+          "position": 30,
+          "name": "Rep",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 31,
+          "name": "Plot.Size",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 32,
+          "name": "CID",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 33,
+          "name": "C.Descrip",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 34,
+          "name": "C.NI",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 35,
+          "name": "C.NO",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 36,
+          "name": "TID",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 37,
+          "name": "T.Descrip",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 38,
+          "name": "T.NI",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 39,
+          "name": "T.NO",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 40,
+          "name": "Diversity",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 41,
+          "name": "Variety",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 42,
+          "name": "Tree",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 43,
+          "name": "Duration",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 44,
+          "name": "M.Year",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 45,
+          "name": "M.Year.Start",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 46,
+          "name": "M.Year.End",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 47,
+          "name": "Season.Start",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 48,
+          "name": "Season.End",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 49,
+          "name": "EU",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 50,
+          "name": "Outcode",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 51,
+          "name": "Units",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 52,
+          "name": "MeanC",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 53,
+          "name": "MeanT",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 54,
+          "name": "Upper",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 55,
+          "name": "Lower",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 56,
+          "name": "DataLoc",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 57,
+          "name": "MeanFlip",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 58,
+          "name": "T.Feed.Source",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 59,
+          "name": "C.Feed.Source",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 60,
+          "name": "Species",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 61,
+          "name": "Partial.Outcome.Name",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 62,
+          "name": "Partial.Outcome.Code",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 63,
+          "name": "MeanT.Error",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 64,
+          "name": "Mean.Error.Type",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 65,
+          "name": "MeanC.Error",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 66,
+          "name": "Analysis.Function",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 67,
+          "name": "Version",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 68,
+          "name": "Mulch.Code",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 69,
+          "name": "Rep.Animals",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 70,
+          "name": "Tree.Feed",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 71,
+          "name": "C13",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 72,
+          "name": "C14",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 73,
+          "name": "T13",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 74,
+          "name": "T14",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 75,
+          "name": "Irrigation.C",
+          "physical_type": "bool",
+          "description": ""
+        },
+        {
+          "position": 76,
+          "name": "Irrigation.T",
+          "physical_type": "bool",
+          "description": ""
+        },
+        {
+          "position": 77,
+          "name": "Irrig.Meth.C",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 78,
+          "name": "USD2010.C",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 79,
+          "name": "USD2010.T",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 80,
+          "name": "C1",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 81,
+          "name": "C2",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 82,
+          "name": "C3",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 83,
+          "name": "C4",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 84,
+          "name": "C5",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 85,
+          "name": "C6",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 86,
+          "name": "C7",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 87,
+          "name": "C8",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 88,
+          "name": "C9",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 89,
+          "name": "C10",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 90,
+          "name": "C11",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 91,
+          "name": "C12",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 92,
+          "name": "T1",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 93,
+          "name": "T2",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 94,
+          "name": "T3",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 95,
+          "name": "T4",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 96,
+          "name": "T5",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 97,
+          "name": "T6",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 98,
+          "name": "T7",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 99,
+          "name": "T8",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 100,
+          "name": "T9",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 101,
+          "name": "T10",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 102,
+          "name": "T11",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 103,
+          "name": "T12",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 104,
+          "name": "ID",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 105,
+          "name": "obs_count",
+          "physical_type": "int32",
+          "description": ""
+        },
+        {
+          "position": 106,
+          "name": "out_count",
+          "physical_type": "int32",
+          "description": ""
+        },
+        {
+          "position": 107,
+          "name": "Lat",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 108,
+          "name": "Lon",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 109,
+          "name": "yi",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 110,
+          "name": "pc",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 111,
+          "name": "plist",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 112,
+          "name": "base.list",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 113,
+          "name": "EUlist",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 114,
+          "name": "Out.Pillar",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 115,
+          "name": "Out.SubPillar",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 116,
+          "name": "Out.Ind",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 117,
+          "name": "Out.SubInd",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 118,
+          "name": "SubPrName",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 119,
+          "name": "PrName",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 120,
+          "name": "Theme",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 121,
+          "name": "SubPrName.Base",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 122,
+          "name": "PrName.Base",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 123,
+          "name": "Theme.Base",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 124,
+          "name": "Product",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 125,
+          "name": "Product.Type",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 126,
+          "name": "Product.Subtype",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 127,
+          "name": "Product.Simple",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 128,
+          "name": "Latitude",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 129,
+          "name": "Longitude",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 130,
+          "name": "Buffer",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 131,
+          "name": "AEZ16",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 132,
+          "name": "AEZ16simple",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 133,
+          "name": "AEZ5",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 134,
+          "name": "Mean.Annual.Precip",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 135,
+          "name": "Mean.Annual.Temp",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 136,
+          "name": "CLY",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 137,
+          "name": "SND",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 138,
+          "name": "SLT",
+          "physical_type": "double",
+          "description": ""
+        }
+      ]
+    },
+    "livestock_schema": {
+      "repository": "ERAgriculture/era-data",
+      "commit": "799ace4f0322cda103781060004816b346bdca1e",
+      "path": "schemas/era_compiled_ls.schema.json",
+      "sha256": "6979df8efd8c673e41a75cf0ab847d28cda1ab81b4b19eba3cd7a0d78e525507",
+      "product": "era_compiled_ls",
+      "column_count": 138,
+      "columns": [
+        {
+          "position": 1,
+          "name": "Site.Key",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 2,
+          "name": "Index",
+          "physical_type": "int32",
+          "description": ""
+        },
+        {
+          "position": 3,
+          "name": "Code",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 4,
+          "name": "Author",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 5,
+          "name": "Date",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 6,
+          "name": "Journal",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 7,
+          "name": "DOI",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 8,
+          "name": "Elevation",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 9,
+          "name": "Country",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 10,
+          "name": "ISO.3166.1.alpha.3",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 11,
+          "name": "Site.Type",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 12,
+          "name": "Site.ID",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 13,
+          "name": "MAT",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 14,
+          "name": "MAP",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 15,
+          "name": "TAP",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 16,
+          "name": "MSP",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 17,
+          "name": "TSP",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 18,
+          "name": "Soil.Type",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 19,
+          "name": "Soil.Classification",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 20,
+          "name": "Soil.Texture",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 21,
+          "name": "SOC",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 22,
+          "name": "SOC.Unit",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 23,
+          "name": "SOC.Depth",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 24,
+          "name": "Soil.pH",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 25,
+          "name": "Soil.pH.Method",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 26,
+          "name": "Plant.Start",
+          "physical_type": "date32[day]",
+          "description": ""
+        },
+        {
+          "position": 27,
+          "name": "Plant.End",
+          "physical_type": "date32[day]",
+          "description": ""
+        },
+        {
+          "position": 28,
+          "name": "Harvest.Start",
+          "physical_type": "date32[day]",
+          "description": ""
+        },
+        {
+          "position": 29,
+          "name": "Harvest.End",
+          "physical_type": "date32[day]",
+          "description": ""
+        },
+        {
+          "position": 30,
+          "name": "Rep",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 31,
+          "name": "Plot.Size",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 32,
+          "name": "CID",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 33,
+          "name": "C.Descrip",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 34,
+          "name": "C.NI",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 35,
+          "name": "C.NO",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 36,
+          "name": "TID",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 37,
+          "name": "T.Descrip",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 38,
+          "name": "T.NI",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 39,
+          "name": "T.NO",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 40,
+          "name": "Diversity",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 41,
+          "name": "Variety",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 42,
+          "name": "Tree",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 43,
+          "name": "Duration",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 44,
+          "name": "M.Year",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 45,
+          "name": "M.Year.Start",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 46,
+          "name": "M.Year.End",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 47,
+          "name": "Season.Start",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 48,
+          "name": "Season.End",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 49,
+          "name": "EU",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 50,
+          "name": "Outcode",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 51,
+          "name": "Units",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 52,
+          "name": "MeanC",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 53,
+          "name": "MeanT",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 54,
+          "name": "Upper",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 55,
+          "name": "Lower",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 56,
+          "name": "DataLoc",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 57,
+          "name": "MeanFlip",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 58,
+          "name": "T.Feed.Source",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 59,
+          "name": "C.Feed.Source",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 60,
+          "name": "Species",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 61,
+          "name": "Partial.Outcome.Name",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 62,
+          "name": "Partial.Outcome.Code",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 63,
+          "name": "MeanT.Error",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 64,
+          "name": "Mean.Error.Type",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 65,
+          "name": "MeanC.Error",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 66,
+          "name": "Analysis.Function",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 67,
+          "name": "Version",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 68,
+          "name": "Mulch.Code",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 69,
+          "name": "Rep.Animals",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 70,
+          "name": "Tree.Feed",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 71,
+          "name": "C14",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 72,
+          "name": "T14",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 73,
+          "name": "Irrigation.C",
+          "physical_type": "bool",
+          "description": ""
+        },
+        {
+          "position": 74,
+          "name": "Irrigation.T",
+          "physical_type": "bool",
+          "description": ""
+        },
+        {
+          "position": 75,
+          "name": "Irrig.Meth.C",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 76,
+          "name": "USD2010.C",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 77,
+          "name": "USD2010.T",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 78,
+          "name": "C1",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 79,
+          "name": "C2",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 80,
+          "name": "C3",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 81,
+          "name": "C4",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 82,
+          "name": "C5",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 83,
+          "name": "C6",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 84,
+          "name": "C7",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 85,
+          "name": "C8",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 86,
+          "name": "C9",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 87,
+          "name": "C10",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 88,
+          "name": "C11",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 89,
+          "name": "C12",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 90,
+          "name": "C13",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 91,
+          "name": "T1",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 92,
+          "name": "T2",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 93,
+          "name": "T3",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 94,
+          "name": "T4",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 95,
+          "name": "T5",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 96,
+          "name": "T6",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 97,
+          "name": "T7",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 98,
+          "name": "T8",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 99,
+          "name": "T9",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 100,
+          "name": "T10",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 101,
+          "name": "T11",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 102,
+          "name": "T12",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 103,
+          "name": "T13",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 104,
+          "name": "ID",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 105,
+          "name": "obs_count",
+          "physical_type": "int32",
+          "description": ""
+        },
+        {
+          "position": 106,
+          "name": "out_count",
+          "physical_type": "int32",
+          "description": ""
+        },
+        {
+          "position": 107,
+          "name": "Lat",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 108,
+          "name": "Lon",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 109,
+          "name": "yi",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 110,
+          "name": "pc",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 111,
+          "name": "plist",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 112,
+          "name": "base.list",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 113,
+          "name": "EUlist",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 114,
+          "name": "Out.Pillar",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 115,
+          "name": "Out.SubPillar",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 116,
+          "name": "Out.Ind",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 117,
+          "name": "Out.SubInd",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 118,
+          "name": "SubPrName",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 119,
+          "name": "PrName",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 120,
+          "name": "Theme",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 121,
+          "name": "SubPrName.Base",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 122,
+          "name": "PrName.Base",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 123,
+          "name": "Theme.Base",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 124,
+          "name": "Product",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 125,
+          "name": "Product.Type",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 126,
+          "name": "Product.Subtype",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 127,
+          "name": "Product.Simple",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 128,
+          "name": "Latitude",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 129,
+          "name": "Longitude",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 130,
+          "name": "Buffer",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 131,
+          "name": "AEZ16",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 132,
+          "name": "AEZ16simple",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 133,
+          "name": "AEZ5",
+          "physical_type": "string",
+          "description": ""
+        },
+        {
+          "position": 134,
+          "name": "Mean.Annual.Precip",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 135,
+          "name": "Mean.Annual.Temp",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 136,
+          "name": "CLY",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 137,
+          "name": "SND",
+          "physical_type": "double",
+          "description": ""
+        },
+        {
+          "position": 138,
+          "name": "SLT",
+          "physical_type": "double",
+          "description": ""
+        }
+      ]
+    },
+    "package_data": {
+      "repository": "ERAgriculture/eragri",
+      "commit": "c6594e1f2769cb6fff6d82a2bf66f6785c70f546",
+      "path": "data/ERA.Compiled.rda",
+      "sha256": "00318de7341cad728e991ab0bf536fe68aeaeff4f732b7fde0b06e5f68e92091",
+      "object": "ERA.Compiled",
+      "row_count": 113286,
+      "column_count": 137,
+      "columns": [
+        {
+          "position": 1,
+          "name": "Index"
+        },
+        {
+          "position": 2,
+          "name": "Code"
+        },
+        {
+          "position": 3,
+          "name": "Author"
+        },
+        {
+          "position": 4,
+          "name": "Date"
+        },
+        {
+          "position": 5,
+          "name": "Journal"
+        },
+        {
+          "position": 6,
+          "name": "DOI"
+        },
+        {
+          "position": 7,
+          "name": "Elevation"
+        },
+        {
+          "position": 8,
+          "name": "Country"
+        },
+        {
+          "position": 9,
+          "name": "ISO.3166.1.alpha.3"
+        },
+        {
+          "position": 10,
+          "name": "Site.Type"
+        },
+        {
+          "position": 11,
+          "name": "Site.ID"
+        },
+        {
+          "position": 12,
+          "name": "MAT"
+        },
+        {
+          "position": 13,
+          "name": "MAP"
+        },
+        {
+          "position": 14,
+          "name": "TAP"
+        },
+        {
+          "position": 15,
+          "name": "MSP"
+        },
+        {
+          "position": 16,
+          "name": "TSP"
+        },
+        {
+          "position": 17,
+          "name": "Soil.Type"
+        },
+        {
+          "position": 18,
+          "name": "Soil.Classification"
+        },
+        {
+          "position": 19,
+          "name": "Soil.Texture"
+        },
+        {
+          "position": 20,
+          "name": "SOC"
+        },
+        {
+          "position": 21,
+          "name": "SOC.Unit"
+        },
+        {
+          "position": 22,
+          "name": "SOC.Depth"
+        },
+        {
+          "position": 23,
+          "name": "Soil.pH"
+        },
+        {
+          "position": 24,
+          "name": "Soil.pH.Method"
+        },
+        {
+          "position": 25,
+          "name": "Plant.Start"
+        },
+        {
+          "position": 26,
+          "name": "Plant.End"
+        },
+        {
+          "position": 27,
+          "name": "Harvest.Start"
+        },
+        {
+          "position": 28,
+          "name": "Harvest.End"
+        },
+        {
+          "position": 29,
+          "name": "Rep"
+        },
+        {
+          "position": 30,
+          "name": "Plot.Size"
+        },
+        {
+          "position": 31,
+          "name": "CID"
+        },
+        {
+          "position": 32,
+          "name": "C.Descrip"
+        },
+        {
+          "position": 33,
+          "name": "C.NI"
+        },
+        {
+          "position": 34,
+          "name": "C.NO"
+        },
+        {
+          "position": 35,
+          "name": "TID"
+        },
+        {
+          "position": 36,
+          "name": "T.Descrip"
+        },
+        {
+          "position": 37,
+          "name": "T.NI"
+        },
+        {
+          "position": 38,
+          "name": "T.NO"
+        },
+        {
+          "position": 39,
+          "name": "Diversity"
+        },
+        {
+          "position": 40,
+          "name": "Variety"
+        },
+        {
+          "position": 41,
+          "name": "Tree"
+        },
+        {
+          "position": 42,
+          "name": "Duration"
+        },
+        {
+          "position": 43,
+          "name": "M.Year"
+        },
+        {
+          "position": 44,
+          "name": "M.Year.Start"
+        },
+        {
+          "position": 45,
+          "name": "M.Year.End"
+        },
+        {
+          "position": 46,
+          "name": "Season.Start"
+        },
+        {
+          "position": 47,
+          "name": "Season.End"
+        },
+        {
+          "position": 48,
+          "name": "EU"
+        },
+        {
+          "position": 49,
+          "name": "Outcode"
+        },
+        {
+          "position": 50,
+          "name": "Units"
+        },
+        {
+          "position": 51,
+          "name": "MeanC"
+        },
+        {
+          "position": 52,
+          "name": "MeanT"
+        },
+        {
+          "position": 53,
+          "name": "Upper"
+        },
+        {
+          "position": 54,
+          "name": "Lower"
+        },
+        {
+          "position": 55,
+          "name": "DataLoc"
+        },
+        {
+          "position": 56,
+          "name": "MeanFlip"
+        },
+        {
+          "position": 57,
+          "name": "T.Feed.Source"
+        },
+        {
+          "position": 58,
+          "name": "C.Feed.Source"
+        },
+        {
+          "position": 59,
+          "name": "Species"
+        },
+        {
+          "position": 60,
+          "name": "Partial.Outcome.Name"
+        },
+        {
+          "position": 61,
+          "name": "Partial.Outcome.Code"
+        },
+        {
+          "position": 62,
+          "name": "MeanT.Error"
+        },
+        {
+          "position": 63,
+          "name": "Mean.Error.Type"
+        },
+        {
+          "position": 64,
+          "name": "MeanC.Error"
+        },
+        {
+          "position": 65,
+          "name": "Analysis.Function"
+        },
+        {
+          "position": 66,
+          "name": "Version"
+        },
+        {
+          "position": 67,
+          "name": "Mulch.Code"
+        },
+        {
+          "position": 68,
+          "name": "Rep.Animals"
+        },
+        {
+          "position": 69,
+          "name": "Tree.Feed"
+        },
+        {
+          "position": 70,
+          "name": "Irrigation.C"
+        },
+        {
+          "position": 71,
+          "name": "Irrigation.T"
+        },
+        {
+          "position": 72,
+          "name": "Irrig.Meth.C"
+        },
+        {
+          "position": 73,
+          "name": "B.Code"
+        },
+        {
+          "position": 74,
+          "name": "USD2010.C"
+        },
+        {
+          "position": 75,
+          "name": "USD2010.T"
+        },
+        {
+          "position": 76,
+          "name": "C1"
+        },
+        {
+          "position": 77,
+          "name": "C2"
+        },
+        {
+          "position": 78,
+          "name": "C3"
+        },
+        {
+          "position": 79,
+          "name": "C4"
+        },
+        {
+          "position": 80,
+          "name": "C5"
+        },
+        {
+          "position": 81,
+          "name": "C6"
+        },
+        {
+          "position": 82,
+          "name": "C7"
+        },
+        {
+          "position": 83,
+          "name": "C8"
+        },
+        {
+          "position": 84,
+          "name": "C9"
+        },
+        {
+          "position": 85,
+          "name": "C10"
+        },
+        {
+          "position": 86,
+          "name": "C11"
+        },
+        {
+          "position": 87,
+          "name": "C12"
+        },
+        {
+          "position": 88,
+          "name": "C13"
+        },
+        {
+          "position": 89,
+          "name": "T1"
+        },
+        {
+          "position": 90,
+          "name": "T2"
+        },
+        {
+          "position": 91,
+          "name": "T3"
+        },
+        {
+          "position": 92,
+          "name": "T4"
+        },
+        {
+          "position": 93,
+          "name": "T5"
+        },
+        {
+          "position": 94,
+          "name": "T6"
+        },
+        {
+          "position": 95,
+          "name": "T7"
+        },
+        {
+          "position": 96,
+          "name": "T8"
+        },
+        {
+          "position": 97,
+          "name": "T9"
+        },
+        {
+          "position": 98,
+          "name": "T10"
+        },
+        {
+          "position": 99,
+          "name": "T11"
+        },
+        {
+          "position": 100,
+          "name": "T12"
+        },
+        {
+          "position": 101,
+          "name": "T13"
+        },
+        {
+          "position": 102,
+          "name": "ID"
+        },
+        {
+          "position": 103,
+          "name": "obs_count"
+        },
+        {
+          "position": 104,
+          "name": "out_count"
+        },
+        {
+          "position": 105,
+          "name": "Lat"
+        },
+        {
+          "position": 106,
+          "name": "Lon"
+        },
+        {
+          "position": 107,
+          "name": "yi"
+        },
+        {
+          "position": 108,
+          "name": "pc"
+        },
+        {
+          "position": 109,
+          "name": "plist"
+        },
+        {
+          "position": 110,
+          "name": "base.list"
+        },
+        {
+          "position": 111,
+          "name": "EUlist"
+        },
+        {
+          "position": 112,
+          "name": "Out.Pillar"
+        },
+        {
+          "position": 113,
+          "name": "Out.SubPillar"
+        },
+        {
+          "position": 114,
+          "name": "Out.Ind"
+        },
+        {
+          "position": 115,
+          "name": "Out.SubInd"
+        },
+        {
+          "position": 116,
+          "name": "SubPrName"
+        },
+        {
+          "position": 117,
+          "name": "PrName"
+        },
+        {
+          "position": 118,
+          "name": "Theme"
+        },
+        {
+          "position": 119,
+          "name": "SubPrName.Base"
+        },
+        {
+          "position": 120,
+          "name": "PrName.Base"
+        },
+        {
+          "position": 121,
+          "name": "Theme.Base"
+        },
+        {
+          "position": 122,
+          "name": "Product"
+        },
+        {
+          "position": 123,
+          "name": "Product.Type"
+        },
+        {
+          "position": 124,
+          "name": "Product.Subtype"
+        },
+        {
+          "position": 125,
+          "name": "Product.Simple"
+        },
+        {
+          "position": 126,
+          "name": "Latitude"
+        },
+        {
+          "position": 127,
+          "name": "Longitude"
+        },
+        {
+          "position": 128,
+          "name": "Buffer"
+        },
+        {
+          "position": 129,
+          "name": "Site.Key"
+        },
+        {
+          "position": 130,
+          "name": "AEZ16simple"
+        },
+        {
+          "position": 131,
+          "name": "AEZ16"
+        },
+        {
+          "position": 132,
+          "name": "AEZ5"
+        },
+        {
+          "position": 133,
+          "name": "Mean.Annual.Precip"
+        },
+        {
+          "position": 134,
+          "name": "Mean.Annual.Temp"
+        },
+        {
+          "position": 135,
+          "name": "CLY"
+        },
+        {
+          "position": 136,
+          "name": "SND"
+        },
+        {
+          "position": 137,
+          "name": "SLT"
+        }
+      ]
+    },
+    "package_dictionary": {
+      "repository": "ERAgriculture/eragri",
+      "commit": "c6594e1f2769cb6fff6d82a2bf66f6785c70f546",
+      "path": "data/ERACompiledFields.rda",
+      "sha256": "85ff22c5c595888899b0c3c5cbfaab3fe1b377dfedcb52fdb0dd44d322aaffd9",
+      "object": "ERACompiledFields",
+      "row_count": 106,
+      "column_count": 4,
+      "columns": ["Field.Name", "Data.Type", "Description", "Example"],
+      "rows": [
+        {
+          "row": 1,
+          "field_name": "Index",
+          "data_type": "Numeric",
+          "description": "A unique number identifiying an single observation (i.e. row) in ERA.",
+          "example": ""
+        },
+        {
+          "row": 2,
+          "field_name": "Code",
+          "data_type": "Character",
+          "description": "Each paper is assigned a unique code that can be used to identify the source of the data in the database. The code consists of your initials (first and last name) and a sequential four-digit number that begins with 0000 and goes up 1 with each paper entered.",
+          "example": "TR0343 \nNN1002 \n"
+        },
+        {
+          "row": 3,
+          "field_name": "Author",
+          "data_type": "Character",
+          "description": "The name of the first author, last name comes first with no punctuation. Use all initials given and do not include spaces between initials.",
+          "example": "Bucagu C \nYamoah CF"
+        },
+        {
+          "row": 4,
+          "field_name": "Date",
+          "data_type": "Positive Integer",
+          "description": "The year of publication.",
+          "example": ""
+        },
+        {
+          "row": 5,
+          "field_name": "Journal",
+          "data_type": "Character",
+          "description": "Abbreviation of the journal name. We use WoS abbreviations that can be found here: https://images.webofknowledge.com/images/help/WOS/A_abrvjt.html\nThis field will autofill using the data in the Levels tab matching to the user selected journal name.",
+          "example": "Soil & Tillage Research = STR \nJournal of Plant Nutrition = JPN"
+        },
+        {
+          "row": 6,
+          "field_name": "DOI",
+          "data_type": "Character",
+          "description": "DOI (or url if no DOI available) of article. DOI = Digital Object Identifier.",
+          "example": ""
+        },
+        {
+          "row": 7,
+          "field_name": "Elevation",
+          "data_type": "Integer",
+          "description": "The elevation in meters (m). Provide the mid-point if a range is given.",
+          "example": "875"
+        },
+        {
+          "row": 8,
+          "field_name": "Country",
+          "data_type": "Character",
+          "description": "Country Name",
+          "example": "Kenya \nIvory Coast"
+        },
+        {
+          "row": 9,
+          "field_name": "ISO.3166-1.alpha-3",
+          "data_type": "Character",
+          "description": "Standardized country name using ISO.3166-1.alpha-3. This field should be auto filled using the country selected and data in the Levels Tab,",
+          "example": "KEN\nCIV"
+        },
+        {
+          "row": 10,
+          "field_name": "Site.Type",
+          "data_type": "Character",
+          "description": "One of the following: Farm, Station, Greenhouse, Survey, or Lab. \nFarm research is conducted in a farmer’s field and can be managed by the farmer or researcher. \nStation research is conducted in a controlled setting of research station, university or school. \nSurvey research is conducted via interviews that yields quantitative data based on testimonial. \nGreenhouse is conducted in a greenhouse and is only relevant for studies of greenhouse gas emissions data. \nLab studies can include fisheries feeding trials conducted at a small scale in university research labs.",
+          "example": "Farm\nStation\nLab"
+        },
+        {
+          "row": 11,
+          "field_name": "Site.ID",
+          "data_type": "Character",
+          "description": "Free text name to identify the site. Include institution/station name and location or village/town in county/district, but not the country.",
+          "example": "Chitedze ARS, Lilongwe\nIITA, Ibadan"
+        },
+        {
+          "row": 12,
+          "field_name": "MAT",
+          "data_type": "Numeric",
+          "description": "Reported mean annual temperature in degrees C. If a range is given, average the values and enter the average. If mean highs and lows are given, they can be averaged to estimate the mean annual temperature.",
+          "example": ""
+        },
+        {
+          "row": 13,
+          "field_name": "MAP",
+          "data_type": "Numeric",
+          "description": "Mean annual precipitation (mm) for the location. This should be a long-term average for more than 10 years of data.",
+          "example": ""
+        },
+        {
+          "row": 14,
+          "field_name": "TAP",
+          "data_type": "Numeric",
+          "description": "Total annual precipitation (mm) for the location in the year corresponding to the outcome data",
+          "example": ""
+        },
+        {
+          "row": 15,
+          "field_name": "MSP",
+          "data_type": "Numeric",
+          "description": "Mean seasonal precipitation (mm) for the location in the season corresponding to the outcome data. This should be a long-term average from more than 10 years of data.",
+          "example": ""
+        },
+        {
+          "row": 16,
+          "field_name": "TSP",
+          "data_type": "Numeric",
+          "description": "Total seasonal precipitation (mm) for the location in the season corresponding to the outcome data",
+          "example": ""
+        },
+        {
+          "row": 17,
+          "field_name": "Soil.Type",
+          "data_type": "Character",
+          "description": "List the given soil classification/name in lowercase letters. If more than one soil type is given (within the same taxonomic system) enter both separated by a period ‘.’",
+          "example": "ferric lixisol\nlixisol.plinthisol"
+        },
+        {
+          "row": 18,
+          "field_name": "Soil.Classification",
+          "data_type": "Character",
+          "description": "List the taxonomic system used to classify the soil. Choose from {FAO, USDA, other}.",
+          "example": "FAO"
+        },
+        {
+          "row": 19,
+          "field_name": "Soil.Texture",
+          "data_type": "Character",
+          "description": "List the soil texture provided in the text or in tables in lowercase letters. If no texture is named, but % of sand, silt and clay are given, use the soil texture triangle to estimate soil texture (https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/?cid=nrcs142p2_054167).",
+          "example": "sandy loam \nclay"
+        },
+        {
+          "row": 20,
+          "field_name": "SOC",
+          "data_type": "Numeric",
+          "description": "Soil organic carbon. If multiple soil depths are reported, use 0-20 cm, or the closest reported value. Do NOT use soil organic matter (SOM) or total carbon (TSC) measurements here.",
+          "example": "3.4\n0.54"
+        },
+        {
+          "row": 21,
+          "field_name": "SOC.Unit",
+          "data_type": "Character",
+          "description": "Units provided for soil organic carbon. Usually either g/kg or % (also can be density kg/m3 or stocks t/ha)",
+          "example": "%"
+        },
+        {
+          "row": 22,
+          "field_name": "SOC.Depth",
+          "data_type": "Character",
+          "description": "Concatenate min (top) and max (bottom) depths user entered with a \"\"-\"\", e.g. 0-10.",
+          "example": "10\n20"
+        },
+        {
+          "row": 23,
+          "field_name": "Soil.pH",
+          "data_type": "Positive Integer",
+          "description": "Soil pH value derived during site characterization. If multiple methods for pH are given, report the water (H2O) method.",
+          "example": "5.9"
+        },
+        {
+          "row": 24,
+          "field_name": "Soil.pH.Method",
+          "data_type": "Character",
+          "description": "Method used to calculate soil pH.",
+          "example": "CaCl2"
+        },
+        {
+          "row": 25,
+          "field_name": "Plant.Start",
+          "data_type": "Date",
+          "description": "Starting of planting period (dd.mm.yyyy)",
+          "example": "01.12.2015"
+        },
+        {
+          "row": 26,
+          "field_name": "Plant.End",
+          "data_type": "Date",
+          "description": "End of planting period (dd.mm.yyyy)",
+          "example": "10.12.2015"
+        },
+        {
+          "row": 27,
+          "field_name": "Harvest.Start",
+          "data_type": "Date",
+          "description": "Starting of harvest period (dd.mm.yyyy)",
+          "example": "04.04.2016"
+        },
+        {
+          "row": 28,
+          "field_name": "Harvest.End",
+          "data_type": "Date",
+          "description": "End of harvest period (dd.mm.yyyy)",
+          "example": "05.04.2016"
+        },
+        {
+          "row": 29,
+          "field_name": "Rep",
+          "data_type": "Positive Integer",
+          "description": "The number of replicates for the treatments. If the number varies between treatments, use the lowest number. If no number is given, leave blank.",
+          "example": "4"
+        },
+        {
+          "row": 30,
+          "field_name": "Plot.Size",
+          "data_type": "Positive Integer",
+          "description": "The size of the smallest treatment plot unit in m2. If plot dimensions are given, calculate the area in m2. For example, if the size of the subplots is 6m x 4m, the Plot.Size is 24 (m2).",
+          "example": "10"
+        },
+        {
+          "row": 31,
+          "field_name": "CID",
+          "data_type": "Character",
+          "description": "A unique identifier (within study) describing a set of management practices that occurred in the control which is used to identify the treatment combinations tested, to allow comparison across outcomes in a paper. A default system of T1, T2, T3, etc. can be used. CID should describe the treatment used as the control for this observation.",
+          "example": "C0\nC1\n"
+        },
+        {
+          "row": 32,
+          "field_name": "C.Descrip",
+          "data_type": "Character",
+          "description": "[Superceded by C.Descrip.Clean column] Free text description of the control treatment. Use sufficient detail to easily identify the practices.",
+          "example": "Conventional tillage with 20 kg N/ha"
+        },
+        {
+          "row": 33,
+          "field_name": "C.NI",
+          "data_type": "Character",
+          "description": "Amount of inorganic (chemical) nitrogen applied to control plots in kg/ha",
+          "example": "20"
+        },
+        {
+          "row": 34,
+          "field_name": "C.NO",
+          "data_type": "Character",
+          "description": "Amount of nitrogen in organic materials (manures or compost, but not residues) applied to control plots, preferably in kg/ha. If no nitrogen content is provided, please list amount of organic manure applied with a ‘t’ to symbolize tonnes.",
+          "example": "40\n5t"
+        },
+        {
+          "row": 35,
+          "field_name": "TID",
+          "data_type": "Character",
+          "description": "A unique identifier (within study) describing a set of management practices that occurred in treatment which is used to identify the treatment combinations tested, to allow comparison across outcomes in a paper. A default system of T1, T2, T3, etc. can be used. TID should describe the treatment used as the control for this observation.",
+          "example": "T1 \nT2"
+        },
+        {
+          "row": 36,
+          "field_name": "T.Descrip",
+          "data_type": "Character",
+          "description": "[Superceded by T.Descrip.Clean column] Free text description of the CSA treatment. Use sufficient detail to easily identify all the component practices.",
+          "example": "Reduced tillage with mulch"
+        },
+        {
+          "row": 37,
+          "field_name": "T.NI",
+          "data_type": "Numeric",
+          "description": "Amount of inorganic (chemical) nitrogen (N) applied to CSA treatment in kg/ha",
+          "example": "80"
+        },
+        {
+          "row": 38,
+          "field_name": "T.NO",
+          "data_type": "Numeric",
+          "description": "Amount of nitrogen (N) in organic materials (manures or compost) applied to CSA treatment, preferably in kg/ha. If no nitrogen content is provided, please list amount of organic manure applied with a ‘t’ to symbolize tonnes.",
+          "example": "40\n5t"
+        },
+        {
+          "row": 39,
+          "field_name": "Diversity",
+          "data_type": "Character",
+          "description": "Name of species in intercrop or rotations including the crop, first letter of name capitilized and the rest lowercase. Use a dash (-) for intercrops and forward slash (/) for rotation. Use common names of species, unless agroforestry species, then use scientific name. This should be used for both crop and agroforestry intercroppings.",
+          "example": "Maize/Cotton/Bean \nMaize-Albizia gummifera"
+        },
+        {
+          "row": 40,
+          "field_name": "Variety",
+          "data_type": "Character",
+          "description": "Commercial name of the crop or animal variety. Do not include the type of crop or animal in field (e.g. Maasai Red Goats should be Maasai Red).",
+          "example": "G2333 \nKatumani"
+        },
+        {
+          "row": 41,
+          "field_name": "Tree",
+          "data_type": "Character",
+          "description": "Name of tree species used in agroforestry experiments, can be both as an intercrop or as an agroforestry mulch. Please use scientific name and be careful of your spelling. Use full scientific name, do not abbreviate genus (e.g., Mangifera indica should not be abbreviated to M.indica).",
+          "example": "Gliricidia sepium \nAcacia abyssinica"
+        },
+        {
+          "row": 42,
+          "field_name": "Duration",
+          "data_type": "Numeric",
+          "description": "Length of time the experiment has been ongoing up to the date the data are being reported for in years. In bimodal rainfall systems with multiple growing seasons, seasons are identified by fractions of the year, 0.5, etc. If outcomes are reported in a unimodal rainfall system with one growing season per year, the duration can be equivalent to one year.",
+          "example": "0.5\n1\n5"
+        },
+        {
+          "row": 43,
+          "field_name": "M.Year",
+          "data_type": "Character",
+          "description": "The calendar year the measurement was taken. Seasons in multi-season systems are identified by decimals ‘.1’ or ‘.2’ for the first and second season respectively. When the measurements are average values for more than one year create a decimal for the years covered.",
+          "example": "1999 \n2002.2\n1999.2004\n"
+        },
+        {
+          "row": 44,
+          "field_name": "M.Year.Start",
+          "data_type": "Postive Integer",
+          "description": "First year the measurement was taken (YYYY). For yield or similar outcomes this should relate to the harvest year (rather than the planting year). Where data are aggregated across years also complete the Measurement End Year Field.",
+          "example": ""
+        },
+        {
+          "row": 45,
+          "field_name": "M.Year.End",
+          "data_type": "Postive Integer",
+          "description": "This only required for temporally aggregated observations (e.g. a result that has been averaged from crop yields reported from 2000,2001 and 2002). Here report the last year of the period over for which observations were aggregated (in the previous example this would be 2002).",
+          "example": ""
+        },
+        {
+          "row": 46,
+          "field_name": "Season.Start",
+          "data_type": "Postive Integer",
+          "description": "This only required in areas where there are mutiple growing seasons in a year (e.g., areas with bimodal rainfall or irrigated cropping in dry seasons of a unimodal system).\nLeave blank where there is only one growing season per year or no seasonal information is presented with the data.\nCode the season in order 1,2,etc. Determine the season sequence by harvest year. If there are two cropping seasons, with crops harvested in Feb and Sept, Feb = season 1 and Sept = season 2.",
+          "example": ""
+        },
+        {
+          "row": 47,
+          "field_name": "Season.End",
+          "data_type": "Postive Integer",
+          "description": "This only required for temporally aggregated observations in areas with more than one growing season (e.g. a result that has been averaged from crop yields reported from 2000 season 1,2001 season 1 and 2002 season 1). Here report the last season of the period over for which observations were aggregated (in the previous example this would be 1).",
+          "example": ""
+        },
+        {
+          "row": 48,
+          "field_name": "EU",
+          "data_type": "Character",
+          "description": "The experimental unit (EU) for which experiment outcomes are reported. This usually a crop or animal product. For cookstove papers it may be a cookstove. The EU for soil outcomes should be the crop(s) grown on the soil unless no crops are grown at all. Letters in the code should be lowercase. If the outcome refers to multiple experimental units (e.g. soil outcomes during an intercropping experiment) select all experimental units separated by a period (see EU2 tab).",
+          "example": ""
+        },
+        {
+          "row": 49,
+          "field_name": "Outcode",
+          "data_type": "Character",
+          "description": "The productivity, resilience, or mitigation outcome indicator that data are being reported on (see OUTCOMES2 tab).",
+          "example": "101 \n267"
+        },
+        {
+          "row": 50,
+          "field_name": "Units",
+          "data_type": "Character",
+          "description": "Free text description of the units of the data being reported without special characters or formatting.",
+          "example": "kg/ha"
+        },
+        {
+          "row": 51,
+          "field_name": "MeanC",
+          "data_type": "Numeric",
+          "description": "The value that corresponds to the control treatment and outcome. Please standard yields to t/ha where appropropriate, keeping as many decimal places as there is data for.",
+          "example": "1.5"
+        },
+        {
+          "row": 52,
+          "field_name": "MeanT",
+          "data_type": "Numeric",
+          "description": "The value that corresponds to the CSA treatment and outcome. Please standard yields to kg/ha where appropropriate, keeping as many decimal places as there is data for.",
+          "example": "3.7"
+        },
+        {
+          "row": 53,
+          "field_name": "Upper",
+          "data_type": "Numeric",
+          "description": "The depth for which the MeanC and MeanT correspond for soil properties in cm (lowest depth value = upper, so if you have a depth of 0-20 cm the lowest value = 20).",
+          "example": "0"
+        },
+        {
+          "row": 54,
+          "field_name": "Lower",
+          "data_type": "Numeric",
+          "description": "The depth for which the MeanC and MeanT correspond for soil properties in cm (highest depth value = lower, so if you have a depth of 0-20 cm the highest value = 0).",
+          "example": "10"
+        },
+        {
+          "row": 55,
+          "field_name": "DataLoc",
+          "data_type": "Character",
+          "description": "The location in the paper where the data can be found. This should be three letters (fig, tab, or txt) in lowercase and a number (for figures and tables) to signify figure, table or text, respectively.",
+          "example": "Fig. 1\nTable 2"
+        },
+        {
+          "row": 56,
+          "field_name": "USD2010.C",
+          "data_type": "Numeric",
+          "description": "Monetary outcomes converted to International USD 2010 using World Bank CPI, PPP and exchange rates. There are no reliable data for Zimbabwe. ",
+          "example": "100"
+        },
+        {
+          "row": 57,
+          "field_name": "USD2010.T",
+          "data_type": "Numeric",
+          "description": "Monetary outcomes converted to International USD 2010 using World Bank CPI, PPP and exchange rates. There are no reliable data for Zimbabwe. ",
+          "example": "100"
+        },
+        {
+          "row": 58,
+          "field_name": "MeanFlip",
+          "data_type": "Character",
+          "description": "Is a negative result considered better than a positive result (i.e. MeanT/MeanC <1 = good)? This is indexed in using the Outcode field in the compednium and the \"\"Negative Values\"\" field in the OUTCOMES tab",
+          "example": "logical (T/F)"
+        },
+        {
+          "row": 59,
+          "field_name": "T.Feed.Source",
+          "data_type": "Character",
+          "description": "Where were livestock diets in the treatment practice(s) sourced from?",
+          "example": "Purchased\nProduced On-farm\nPurchased & Produced On-farm"
+        },
+        {
+          "row": 60,
+          "field_name": "C.Feed.Source",
+          "data_type": "Character",
+          "description": "Where were livestock diets in the control practice(s) sourced from?",
+          "example": "Purchased\nProduced On-farm\nPurchased & Produced On-farm"
+        },
+        {
+          "row": 61,
+          "field_name": "Species",
+          "data_type": "Character",
+          "description": "The tree species for which the experiment outcome are reported",
+          "example": ""
+        },
+        {
+          "row": 62,
+          "field_name": "Partial.Outcome.Name",
+          "data_type": "Character",
+          "description": "Free text to describe the partial outcome",
+          "example": ""
+        },
+        {
+          "row": 63,
+          "field_name": "Analysis.Function ",
+          "data_type": "Character",
+          "description": "Describes the logical process used to compare control to treatment (for developers)",
+          "example": ""
+        },
+        {
+          "row": 64,
+          "field_name": "Version",
+          "data_type": "Numeric",
+          "description": "Year in which the ERA data entry took place. Either 2018 or 2020",
+          "example": ""
+        },
+        {
+          "row": 65,
+          "field_name": "Irrigation.C",
+          "data_type": "Logical",
+          "description": "Indicates the presence of irrigation in the control treatment",
+          "example": ""
+        },
+        {
+          "row": 66,
+          "field_name": "Irrigation.T",
+          "data_type": "Logical",
+          "description": "Indicates the presence of irrigation in the experimental treatment",
+          "example": ""
+        },
+        {
+          "row": 67,
+          "field_name": "Irrig.Meth.C",
+          "data_type": "Character",
+          "description": "Method of irrigation used in the control treatment. Cell will be blank if Irrigation.C is FALSE",
+          "example": ""
+        },
+        {
+          "row": 68,
+          "field_name": "Irrig.Meth.T",
+          "data_type": "Character",
+          "description": "Method of irrigation used in the experimental treatment. Cell will be blank if Irrigation.T is FALSE",
+          "example": ""
+        },
+        {
+          "row": 69,
+          "field_name": "C1:Cn",
+          "data_type": "Character",
+          "description": "Codes corresponding to all practices used on the control treatment described in C.Descrip. Only one code is placed in each column (see subpractices column of PRACTICES2 tab).",
+          "example": "h10"
+        },
+        {
+          "row": 70,
+          "field_name": "T1:Tn",
+          "data_type": "Character",
+          "description": "Codes corresponding to all practices used on the CSA treatment described in T.Descrip. Only one code is placed in each column (see subpractices column of PRACTICES2 tab).",
+          "example": "b38 \nd4"
+        },
+        {
+          "row": 71,
+          "field_name": "ID",
+          "data_type": "Numeric",
+          "description": "Study number",
+          "example": ""
+        },
+        {
+          "row": 72,
+          "field_name": "obs_count",
+          "data_type": "Postive Integer",
+          "description": "Number of observations",
+          "example": ""
+        },
+        {
+          "row": 73,
+          "field_name": "out_count",
+          "data_type": "Postive Integer",
+          "description": "Number of outcomes reported per study",
+          "example": ""
+        },
+        {
+          "row": 74,
+          "field_name": "Lat",
+          "data_type": "Numeric",
+          "description": "Latitude of study location in degrees or decimal degrees, the latter recorded to same accuracy as in publication (or estimated from googlemaps where locations were found from site names/descriptions",
+          "example": ""
+        },
+        {
+          "row": 75,
+          "field_name": "Lon",
+          "data_type": "Numeric",
+          "description": "Longitude of study location in degrees or decimal degrees, the latter recorded to same accuracy as in publication (or estimated from googlemaps where locations were found from site names/descriptions",
+          "example": ""
+        },
+        {
+          "row": 76,
+          "field_name": "yi",
+          "data_type": "Numeric",
+          "description": "the natural log of the response ratio log(MeanT/MeanC)",
+          "example": ""
+        },
+        {
+          "row": 77,
+          "field_name": "pc",
+          "data_type": "Numeric",
+          "description": "pc=proportional change.It is a measure of the ratio of experimental to control outcomes",
+          "example": ""
+        },
+        {
+          "row": 78,
+          "field_name": "plist",
+          "data_type": "Character",
+          "description": "experimental ERA practices that are in the experimental, but not the control treatment",
+          "example": ""
+        },
+        {
+          "row": 79,
+          "field_name": "base.list",
+          "data_type": "Character",
+          "description": "base practices that are shared between experimental and control treatments",
+          "example": ""
+        },
+        {
+          "row": 80,
+          "field_name": "EUlist",
+          "data_type": "Character",
+          "description": "the product code OutcomeCodes$Code for the observation using a - delim for multiple products",
+          "example": "c13"
+        },
+        {
+          "row": 81,
+          "field_name": "Out.Pillar",
+          "data_type": "Character",
+          "description": "Outcome pillar name",
+          "example": "Productivity"
+        },
+        {
+          "row": 82,
+          "field_name": "Out.SubPillar",
+          "data_type": "Character",
+          "description": "Outcome subpillar name",
+          "example": "Yield"
+        },
+        {
+          "row": 83,
+          "field_name": "Out.Ind",
+          "data_type": "Character",
+          "description": "Outcome indicator name",
+          "example": "Product Yield"
+        },
+        {
+          "row": 84,
+          "field_name": "Out.SubInd",
+          "data_type": "Character",
+          "description": "Outcome subindicator name",
+          "example": "Crop Yield"
+        },
+        {
+          "row": 85,
+          "field_name": "SubPrName",
+          "data_type": "Character",
+          "description": "Experimental subpractice name (note that this corresponds to the Subpractice.S field in the PracticeCodes)",
+          "example": "Inputs K-Inputs"
+        },
+        {
+          "row": 86,
+          "field_name": "PrName",
+          "data_type": "Character",
+          "description": "Experimental practice name",
+          "example": "Inorganic Fertilizer"
+        },
+        {
+          "row": 87,
+          "field_name": "Theme",
+          "data_type": "Character",
+          "description": "Experimental practice theme name",
+          "example": "Nutrient Management"
+        },
+        {
+          "row": 88,
+          "field_name": "SubPrName.Base",
+          "data_type": "Character",
+          "description": "Base practice name (note that this corresponds to the Subpractice.S field in the PracticeCodes)",
+          "example": ""
+        },
+        {
+          "row": 89,
+          "field_name": "PrName.Base",
+          "data_type": "Character",
+          "description": "Base practice name",
+          "example": ""
+        },
+        {
+          "row": 90,
+          "field_name": "Theme.Base",
+          "data_type": "Character",
+          "description": "Base practice theme name",
+          "example": ""
+        },
+        {
+          "row": 91,
+          "field_name": "Product",
+          "data_type": "Character",
+          "description": "The full name of the product, including aspect of the component such as grain, meat or milk",
+          "example": "Sorghum"
+        },
+        {
+          "row": 92,
+          "field_name": "Product.Type",
+          "data_type": "Character",
+          "description": "Product type name",
+          "example": "Plant"
+        },
+        {
+          "row": 93,
+          "field_name": "Product.Subtype",
+          "data_type": "Character",
+          "description": "Product subtype name",
+          "example": "Cereals"
+        },
+        {
+          "row": 94,
+          "field_name": "Product.Simple",
+          "data_type": "Character",
+          "description": "Simplified product name, excluding any aspects of component",
+          "example": "Sorghum"
+        },
+        {
+          "row": 95,
+          "field_name": "Latitude",
+          "data_type": "Numeric",
+          "description": "Latitude of study location in degrees or decimal degrees",
+          "example": ""
+        },
+        {
+          "row": 96,
+          "field_name": "Longitude",
+          "data_type": "Numeric",
+          "description": "Longitude of study location in degrees or decimal degrees",
+          "example": ""
+        },
+        {
+          "row": 97,
+          "field_name": "Buffer",
+          "data_type": "Character",
+          "description": "Manual estimation (e.g. from measuring on google earth) in m of the spatial uncertainty for a point location. The site should within an X m radius (the buffer.manual amount) of the point location specified. Unit is meters",
+          "example": ""
+        },
+        {
+          "row": 98,
+          "field_name": "Site.Key",
+          "data_type": "Character",
+          "description": "Longitude, latitude and buffer for the site",
+          "example": "12.1700 -5.1000 B550"
+        },
+        {
+          "row": 99,
+          "field_name": "AEZ16simple",
+          "data_type": "Character",
+          "description": "Simplified version of AEZ16 removing the tropic/subtropic classification",
+          "example": "Warm.Semiarid"
+        },
+        {
+          "row": 100,
+          "field_name": "AEZ16",
+          "data_type": "Character",
+          "description": "AEZs for Africa South of the Sahara (SSA) based on the methodology developed by FAO and IIASA, using the scheme with 16 classes",
+          "example": "Tropic - warm/semiarid"
+        },
+        {
+          "row": 101,
+          "field_name": "AEZ5",
+          "data_type": "Character",
+          "description": "AEZs Africa South of the Sahara (SSA) based on the methodology developed by FAO and IIASA, using the scheme with 5 classes",
+          "example": "Semi-Arid"
+        },
+        {
+          "row": 102,
+          "field_name": "Mean.Annual.Precip",
+          "data_type": "Numeric",
+          "description": "Mean annual precipitation (mm) derived from the CHIRPS 2.0 dataset API at 0.05&deg resolution",
+          "example": ""
+        },
+        {
+          "row": 103,
+          "field_name": "Mean.Annual.Temp",
+          "data_type": "Numeric",
+          "description": "Mean annual temperature (C) derived from the NASA POWER dataset API at 0.5&deg resolution",
+          "example": ""
+        },
+        {
+          "row": 104,
+          "field_name": "CLY",
+          "data_type": "Numeric",
+          "description": "Weight percentage of clay particles (<0.0002 mm)",
+          "example": ""
+        },
+        {
+          "row": 105,
+          "field_name": "SLT",
+          "data_type": "Numeric",
+          "description": "Weight percentage of silt particles (0.0002-0.05 mm)",
+          "example": ""
+        },
+        {
+          "row": 106,
+          "field_name": "SND",
+          "data_type": "Numeric",
+          "description": "Weight percentage of the sand particles (0.05-2 mm)",
+          "example": ""
+        }
+      ]
+    }
+  }
+}

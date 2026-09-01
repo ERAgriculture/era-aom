@@ -1,0 +1,38 @@
+[
+  {
+    "authority": "W3C CSV on the Web",
+    "limitation": "Does not supply ERA field meaning, derivation, units, source identity, or release compatibility decisions.",
+    "supports": "Column metadata, datatypes, titles, descriptions, constraints, keys, foreign keys, and table annotations.",
+    "url": "https://www.w3.org/TR/tabular-metadata/"
+  },
+  {
+    "authority": "Frictionless Table Schema v1",
+    "limitation": "Portable descriptor structure does not make current package dictionary rows authoritative or equivalent to published products.",
+    "supports": "Ordered field descriptors with names, types, formats, examples, descriptions, constraints, primary keys, and foreign keys.",
+    "url": "https://specs.frictionlessdata.io/table-schema/"
+  },
+  {
+    "authority": "JSON Schema 2020-12 validation vocabulary",
+    "limitation": "Annotation keywords do not define ERA derivation lineage, release provenance, or field identity across repositories.",
+    "supports": "Validation plus title, description, examples, read/write status, and deprecation annotations.",
+    "url": "https://json-schema.org/draft/2020-12/json-schema-validation"
+  },
+  {
+    "authority": "W3C PROV-O",
+    "limitation": "Does not prescribe ERA physical schemas, logical field types, or consumer compatibility policy.",
+    "supports": "Entities, activities, agents, derivation, generation, and attribution for product-field and release lineage.",
+    "url": "https://www.w3.org/TR/prov-o/"
+  },
+  {
+    "authority": "W3C DCAT 3",
+    "limitation": "Does not resolve field-level meaning or package-to-release differences.",
+    "supports": "Dataset, distribution, version, conformance, checksum, and provenance-oriented catalog metadata.",
+    "url": "https://www.w3.org/TR/vocab-dcat-3/"
+  },
+  {
+    "authority": "ERA ADR 0052",
+    "limitation": "Architecture decision still requires human row-level product-field and consumer-difference review.",
+    "supports": "ERA ownership, product-contract boundary, field completeness, compatibility, release, and closure gates.",
+    "url": "../../docs/decisions/0052-data-model-registry-and-shared-core-contract.md"
+  }
+]

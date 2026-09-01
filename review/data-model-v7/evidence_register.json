@@ -1,0 +1,82 @@
+[
+  {
+    "claim": "Agronomy and livestock schemas each contain 138 fields with identical name sets and physical types.",
+    "claim_boundary": "Does not prove product meaning, field order, derivation, values, or release equivalence.",
+    "evidence_id": "PC-E01",
+    "source": "source_snapshot.json",
+    "source_sha256": "631fa3e461d39c9a5f4dced53363ac2453dae63f8388a762e0098f091602548a",
+    "supports": "Shared logical-field-set recommendation."
+  },
+  {
+    "claim": "Thirty-three field positions differ between published agronomy and livestock schemas.",
+    "claim_boundary": "Position difference alone does not prove either order is wrong.",
+    "evidence_id": "PC-E02",
+    "source": "product_field_recommendations.json",
+    "source_sha256": "44a5dad5ef19ea680fd0aa9f001232e22b2e1600723a8b0a3291956aacf111ee",
+    "supports": "Separate ordered product profiles."
+  },
+  {
+    "claim": "All 276 published schema description cells are blank.",
+    "claim_boundary": "Blank schema descriptions do not prove no external documentation exists.",
+    "evidence_id": "PC-E03",
+    "source": "source_snapshot.json",
+    "source_sha256": "631fa3e461d39c9a5f4dced53363ac2453dae63f8388a762e0098f091602548a",
+    "supports": "Complete documentation or explicit deferral gate."
+  },
+  {
+    "claim": "Package data contains 137 fields; package dictionary contains 106 rows.",
+    "claim_boundary": "Unversioned package objects do not identify intended public release compatibility.",
+    "evidence_id": "PC-E04",
+    "source": "source_snapshot.json",
+    "source_sha256": "631fa3e461d39c9a5f4dced53363ac2453dae63f8388a762e0098f091602548a",
+    "supports": "Release-pinned package compatibility and candidate-only dictionary use."
+  },
+  {
+    "claim": "Product-field review yields 101 exact-name, two explicit-alias, 26 pattern, seven missing-documentation, and two published-only holds.",
+    "claim_boundary": "Candidate classification is lexical and release evidence, not approved semantic identity.",
+    "evidence_id": "PC-E05",
+    "source": "product_field_recommendations.json",
+    "source_sha256": "44a5dad5ef19ea680fd0aa9f001232e22b2e1600723a8b0a3291956aacf111ee",
+    "supports": "Complete 138-field guided review cohort."
+  },
+  {
+    "claim": "Forty-four producer-consumer differences remain across public schema, package data, and package dictionary.",
+    "claim_boundary": "Differences do not authorize automatic rename, addition, removal, or retirement.",
+    "evidence_id": "PC-E06",
+    "source": "../data-model-v1/consumer_contract_diffs.csv",
+    "source_sha256": "09638c0baf86e4231c2f8778c298df9bdf9bb45b075d210fd858fa2a36cc014f",
+    "supports": "Complete compatibility disposition cohort."
+  },
+  {
+    "claim": "All 44 differences have one proposed evidence-hold disposition.",
+    "claim_boundary": "No consumer migration or source change is approved.",
+    "evidence_id": "PC-E07",
+    "source": "consumer_difference_recommendations.json",
+    "source_sha256": "3432c591f99f87d1252247f0060c50a9f793411b5a0fced9e189a589fea61b47",
+    "supports": "Human review can accept or amend complete difference cohort."
+  },
+  {
+    "claim": "CSVW and Frictionless both support ordered, documented tabular field contracts.",
+    "claim_boundary": "Neither standard supplies ERA-specific field content.",
+    "evidence_id": "PC-E08",
+    "source": "authority_comparison.json",
+    "source_sha256": "4419b66a234bb272cde91ba8851b67ad3d2f2846d0168aeb22ee850f737d5ea4",
+    "supports": "Portable product contract structure and field-order preservation."
+  },
+  {
+    "claim": "PROV-O and DCAT 3 support derivation, release, distribution, version, conformance, and provenance metadata.",
+    "claim_boundary": "Neither authority resolves current ERA field differences.",
+    "evidence_id": "PC-E09",
+    "source": "authority_comparison.json",
+    "source_sha256": "4419b66a234bb272cde91ba8851b67ad3d2f2846d0168aeb22ee850f737d5ea4",
+    "supports": "Release lineage and compatibility profile design."
+  },
+  {
+    "claim": "JSON Schema annotations improve documentation but remain separate from validation semantics.",
+    "claim_boundary": "Annotations alone do not establish field identity or release provenance.",
+    "evidence_id": "PC-E10",
+    "source": "authority_comparison.json",
+    "source_sha256": "4419b66a234bb272cde91ba8851b67ad3d2f2846d0168aeb22ee850f737d5ea4",
+    "supports": "Descriptions and lifecycle annotations in JSON product schemas."
+  }
+]
