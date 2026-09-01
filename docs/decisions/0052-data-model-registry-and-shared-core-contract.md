@@ -209,6 +209,14 @@ Full claim support and limitations are recorded in
 - [Unit policy approvals](../../review/data-model-v6/policy_decision_approvals.json)
 - [Hash-pinned unit cohort approval](../../review/data-model-v6/cohort_approval.json)
 - [Unit acceptance summary](../../review/data-model-v6/acceptance_summary.json)
+- [Product-contract checkpoint](../../review/data-model-v7/README.md)
+- [Guided product-contract recommendations](../../review/data-model-v7/GUIDED_PRODUCT_CONTRACT_RECOMMENDATIONS.md)
+- [Hash-pinned product source snapshot](../../review/data-model-v7/source_snapshot.json)
+- [Product-field recommendations](../../review/data-model-v7/product_field_recommendations.json)
+- [Consumer-difference recommendations](../../review/data-model-v7/consumer_difference_recommendations.json)
+- [Product-contract authority comparison](../../review/data-model-v7/authority_comparison.json)
+- [Product-contract evidence register](../../review/data-model-v7/evidence_register.json)
+- [Product-contract disposition summary](../../review/data-model-v7/disposition_summary.json)
 
 ## Human decision
 
@@ -273,6 +281,33 @@ Acceptance records no spreadsheet artifact, source correction, unit or
 quantity-kind identity, conversion, registry record, schema regeneration,
 release, or consumer migration. Approved spreadsheet runtime remains
 unavailable; source CSV is read-only and hash-pinned.
+
+## Product-contract checkpoint
+
+Published agronomy and livestock schemas contain the same 138 field names and
+matching physical types. They are not ordered identically. Thirty-three field
+positions differ, so current evidence supports one shared logical field set and
+separate ordered product profiles rather than one undifferentiated schema.
+
+Both published schemas contain 138 blank descriptions. The package dictionary
+provides 101 exact-name candidates, two explicit lexical-alias candidates, and
+26 pattern candidates for released fields. Seven fields have no documentation
+candidate. `C14` and `T14` remain published-only release-lineage holds even
+though each has a pattern candidate. Candidate rows are evidence for human
+review, not authoritative descriptions, datatypes, aliases, or mappings.
+
+The package data snapshot shares 136 field names with the published schemas and
+has 130 relative-order differences across those shared fields. All 44 existing
+schema, package-data, and package-dictionary differences now have proposed
+evidence-hold dispositions. No rename, trim, pattern expansion, addition,
+removal, retirement, field documentation, logical type, derivation, unit,
+basis, value constraint, source correction, schema change, package change,
+release, or migration is approved.
+
+`PC-01` through `PC-12`, the exact 138-field recommendation artifact, and the
+exact 44-difference artifact await human review. Source repositories were read
+only at pinned clean commits. Approved spreadsheet runtime remained
+unavailable; existing source CSV evidence was read only and hash pinned.
 
 ## Consequences
 
@@ -341,9 +376,13 @@ new release.
 5. Governed outcome for every unit row without inferred conversion. Complete;
    all 66 cases accepted as explicit holds with no inferred mapping or
    conversion.
-6. Separate extraction and product schemas with derivation lineage.
+6. Separate extraction and product schemas with derivation lineage. Complete
+   as recommendation checkpoint; human decision and implementation pending.
 7. Complete 138-column product dictionaries or explicit reviewed deferrals.
-8. Release-pinned package and documentation consumers.
+   Complete as 138-field recommendation cohort; human decisions pending.
+8. Release-pinned package and documentation consumers. Complete as
+   44-difference recommendation cohort; human decisions and implementation
+   pending.
 9. Crop and livestock evidence for every shared-core promotion.
 10. Deterministic rebuild, source fingerprints, cross-repository compatibility
     report, and green contract tests.

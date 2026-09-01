@@ -49,6 +49,10 @@ jobs:
           python tests/validate_adr0052_unit_dispositions.py
       - name: Validate ADR 0052 unit-disposition acceptance
         run: python tests/validate_adr0052_unit_disposition_acceptance.py
+      - name: Validate ADR 0052 product-contract review
+        run: |
+          python scripts/build_adr0052_product_contract_review.py
+          python tests/validate_adr0052_product_contract_review.py
       - name: Validate crop-foundation review
         run: python tests/validate_crop_foundation_review.py
       - name: Validate ADR 0053 guided review
