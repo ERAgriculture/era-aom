@@ -1,0 +1,56 @@
+[
+  {
+    "claim_boundary": "Acceptance records governance and design direction only; it creates no source, schema, package, or consumer implementation.",
+    "evidence_id": "E-ADR0052-PA-POLICY",
+    "evidence_type": "human-governance-decision",
+    "locator": "policy_decision_approvals.json",
+    "supports": "P. Steward accepted PC-01 through PC-12 as recommended.",
+    "title": "Product-contract policy approvals",
+    "version_or_date": "2026-09-01"
+  },
+  {
+    "claim_boundary": "Approval preserves every row disposition as a hold and assigns no field identity, documentation, alias, or compatibility change.",
+    "evidence_id": "E-ADR0052-PA-COHORT",
+    "evidence_type": "hash-pinned-human-decision",
+    "locator": "cohort_approval.json",
+    "supports": "Exact 12-decision, 138-field, and 44-difference recommendation artifacts accepted as recorded.",
+    "title": "Product-contract cohort approval",
+    "version_or_date": "2026-09-01"
+  },
+  {
+    "claim_boundary": "Recommendation evidence does not itself implement accepted decisions.",
+    "evidence_id": "E-ADR0052-PA-REVIEW",
+    "evidence_type": "governance-review",
+    "locator": "../data-model-v7/README.md",
+    "supports": "Complete deterministic review for both public schemas and all known consumer differences.",
+    "title": "Product-contract recommendation checkpoint",
+    "version_or_date": "2026-09-01"
+  },
+  {
+    "claim_boundary": "Snapshot proves observed files at pinned commits, not intended compatibility, field meaning, or release equivalence.",
+    "evidence_id": "E-ADR0052-PA-SNAPSHOT",
+    "evidence_type": "hash-pinned-source-evidence",
+    "locator": "../data-model-v7/source_snapshot.json",
+    "supports": "Agronomy schema, livestock schema, package data, and package dictionary evidence used by accepted cohort.",
+    "title": "Product-contract source snapshot",
+    "version_or_date": "2026-09-01"
+  },
+  {
+    "claim_boundary": "Authorities support contract structure and lineage but cannot supply ERA field meaning or resolve current differences.",
+    "evidence_id": "E-ADR0052-PA-AUTHORITY",
+    "evidence_type": "authority-comparison",
+    "locator": "../data-model-v7/authority_comparison.json",
+    "supports": "CSVW, Frictionless, JSON Schema, PROV-O, DCAT 3, and ERA authority roles and limitations.",
+    "title": "Product-contract authority comparison",
+    "version_or_date": "2026-09-01"
+  },
+  {
+    "claim_boundary": "Field authoring, aliases, mappings, source correction, schema/package changes, release, and migration remain unauthorized.",
+    "evidence_id": "E-ADR0052-PA-BOUNDARY",
+    "evidence_type": "implementation-boundary",
+    "locator": "acceptance_summary.json",
+    "supports": "Canonical source and all producer and consumer artifacts remain unchanged.",
+    "title": "Product-contract acceptance implementation boundary",
+    "version_or_date": "2026-09-01"
+  }
+]

@@ -190,9 +190,10 @@ for key in (
 readme = (REVIEW / "README.md").read_text(encoding="utf-8")
 method = (REVIEW / "METHOD.md").read_text(encoding="utf-8")
 guided_markdown = (REVIEW / "GUIDED_PRODUCT_CONTRACT_RECOMMENDATIONS.md").read_text(encoding="utf-8")
-assert "human decision pending" in readme
+assert "data-model-v8" in readme
 assert "No lexical match" in method
 assert guided_markdown.count("| `PC-") == 12
+assert "accepted as recorded on 2026-09-01" in guided_markdown
 
 adr = (ROOT / "docs/decisions/0052-data-model-registry-and-shared-core-contract.md").read_text(encoding="utf-8")
 assert "data-model-v7/README.md" in adr

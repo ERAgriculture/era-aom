@@ -53,6 +53,8 @@ jobs:
         run: |
           python scripts/build_adr0052_product_contract_review.py
           python tests/validate_adr0052_product_contract_review.py
+      - name: Validate ADR 0052 product-contract acceptance
+        run: python tests/validate_adr0052_product_contract_acceptance.py
       - name: Validate crop-foundation review
         run: python tests/validate_crop_foundation_review.py
       - name: Validate ADR 0053 guided review

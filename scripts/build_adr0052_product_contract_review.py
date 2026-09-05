@@ -463,8 +463,10 @@ the `eragri` package data snapshot, and package dictionary. It preserves all
 
 ## Human checkpoint
 
-All recommendations have `human decision pending`. Review `PC-01` through
-`PC-12`, then accept or amend exact 138-field and 44-difference artifacts.
+P. Steward accepted `PC-01` through `PC-12` and exact 138-field and
+44-difference artifacts as recorded on 2026-09-01. Durable record:
+[`data-model-v8`](../data-model-v8/README.md). Acceptance authorizes no source,
+schema, package, release, or migration change.
 """
     method = f"""# ADR 0052 product-contract review method
 
@@ -508,7 +510,7 @@ each proposed policy and row. Unsupported cases remain holds.
     guided_lines = [
         "# Guided product-contract recommendations",
         "",
-        "Status: **human decision pending**.",
+        "Status: **accepted as recorded on 2026-09-01**. See `../data-model-v8/`.",
         "",
         "| ID | Recommendation | Conditions / holds |",
         "|---|---|---|",
