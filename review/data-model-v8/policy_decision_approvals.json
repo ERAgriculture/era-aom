@@ -1,0 +1,110 @@
+[
+  {
+    "accepted_recommendation": "Govern extraction schemas separately from released analytical product schemas.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No extraction or product schema changes until producer ownership and compatibility profiles are approved.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-01",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Use one reviewed 138-field logical set with separate agronomy and livestock ordered product profiles.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Do not call current schema files identical or reorder either product without migration evidence.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-02",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Require reviewed documentation or explicit deferral for every public product field.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Each field remains held until description, logical type, derivation, unit or basis, values, applicability, and lifecycle are reviewed.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-03",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Review exact-name package dictionary rows as candidates, not authoritative mappings.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No description or datatype may be copied into product contracts without field-level review.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-04",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Review trailing-space and punctuation variants through explicit governed aliases.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No automatic trim, punctuation normalization, rename, or identity assertion.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-05",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Replace C1:Cn and T1:Tn patterns with explicit governed field aliases only after scope review.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "C1-C14 and T1-T14 remain separately reviewable; no generated aliases are approved here.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-06",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Publish release provenance and compatibility profile for each package data snapshot and dictionary.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No package snapshot may be treated as current release without a pinned producer release and checksum.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-07",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Retain C14 and T14 as published-only holds pending release and derivation lineage.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No removal, package addition, or pattern mapping is approved.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-08",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Retain B.Code as package-only hold pending provenance and compatibility or retirement decision.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No schema addition or package removal is approved.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-09",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Review Irrig.Meth.T as dictionary-only legacy or retirement case.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No alias target or retirement is inferred from absence.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-10",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Record physical and logical type, nullability, derivation, unit or basis, controlled values, applicability, lifecycle, and evidence per field.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Unknown properties remain explicit reviewed deferrals rather than guessed values.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-11",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Require schema, data, package, dictionary, and documentation compatibility report before closure.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No release, migration, source edit, package edit, documentation edit, or issue closure is approved here.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-01",
+    "review_id": "PC-12",
+    "reviewer": "P. Steward"
+  }
+]

@@ -1,6 +1,6 @@
 # Guided product-contract recommendations
 
-Status: **human decision pending**.
+Status: **accepted as recorded on 2026-09-01**. See `../data-model-v8/`.
 
 | ID | Recommendation | Conditions / holds |
 |---|---|---|

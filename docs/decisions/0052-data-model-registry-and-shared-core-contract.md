@@ -217,6 +217,11 @@ Full claim support and limitations are recorded in
 - [Product-contract authority comparison](../../review/data-model-v7/authority_comparison.json)
 - [Product-contract evidence register](../../review/data-model-v7/evidence_register.json)
 - [Product-contract disposition summary](../../review/data-model-v7/disposition_summary.json)
+- [Product-contract acceptance](../../review/data-model-v8/README.md)
+- [Product-contract policy approvals](../../review/data-model-v8/policy_decision_approvals.json)
+- [Hash-pinned product-contract cohort approval](../../review/data-model-v8/cohort_approval.json)
+- [Product-contract acceptance evidence](../../review/data-model-v8/evidence_register.json)
+- [Product-contract acceptance summary](../../review/data-model-v8/acceptance_summary.json)
 
 ## Human decision
 
@@ -304,10 +309,20 @@ removal, retirement, field documentation, logical type, derivation, unit,
 basis, value constraint, source correction, schema change, package change,
 release, or migration is approved.
 
-`PC-01` through `PC-12`, the exact 138-field recommendation artifact, and the
-exact 44-difference artifact await human review. Source repositories were read
-only at pinned clean commits. Approved spreadsheet runtime remained
-unavailable; existing source CSV evidence was read only and hash pinned.
+P. Steward accepted `PC-01` through `PC-12`, the exact 138-field recommendation
+artifact, and the exact 44-difference artifact as recorded on 2026-09-01. This
+accepts one shared logical field set with separate ordered product profiles,
+complete field contracts or explicit reviewed deferrals, and release-pinned
+consumer compatibility as design and closure requirements.
+
+All 138 field dispositions and all 44 consumer-difference dispositions retain
+their recorded evidence holds. Acceptance does not approve any candidate
+description, datatype, derivation, alias, pattern expansion, unit or basis,
+controlled value, identity, source correction, compatibility change,
+retirement, schema/package modification, release, or migration. Source
+repositories were read only at pinned clean commits. Approved spreadsheet
+runtime remained unavailable; existing source CSV evidence was read only and
+hash pinned.
 
 ## Consequences
 
@@ -377,12 +392,11 @@ new release.
    all 66 cases accepted as explicit holds with no inferred mapping or
    conversion.
 6. Separate extraction and product schemas with derivation lineage. Complete
-   as recommendation checkpoint; human decision and implementation pending.
+   as accepted design direction; implementation pending.
 7. Complete 138-column product dictionaries or explicit reviewed deferrals.
-   Complete as 138-field recommendation cohort; human decisions pending.
+   Complete as accepted 138-field disposition cohort; field authoring pending.
 8. Release-pinned package and documentation consumers. Complete as
-   44-difference recommendation cohort; human decisions and implementation
-   pending.
+   accepted 44-difference disposition cohort; implementation pending.
 9. Crop and livestock evidence for every shared-core promotion.
 10. Deterministic rebuild, source fingerprints, cross-repository compatibility
     report, and green contract tests.
@@ -393,7 +407,9 @@ Accepted by P. Steward on 2026-08-28 with conditions and holds recorded in the
 [architecture acceptance pack](../../review/data-model-v2/README.md) and
 [source-disposition acceptance pack](../../review/data-model-v4/README.md), with
 unit dispositions accepted on 2026-08-31 in the
-[unit acceptance pack](../../review/data-model-v6/README.md). Acceptance
-allocates no identifier and changes no workbook source, schema, hierarchy,
-binding, mapping, generated distribution, package object, release, or
-publication status.
+[unit acceptance pack](../../review/data-model-v6/README.md), and product-
+contract recommendations accepted on 2026-09-01 in the
+[product-contract acceptance pack](../../review/data-model-v8/README.md).
+Acceptance allocates no identifier and changes no workbook source, schema,
+hierarchy, binding, mapping, generated distribution, package object, release,
+or publication status.

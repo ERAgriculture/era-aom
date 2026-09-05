@@ -1,0 +1,27 @@
+{
+  "approval_status": "accepted",
+  "artifacts": [
+    {
+      "artifact": "../data-model-v7/guided_decision_recommendations.json",
+      "record_count": 12,
+      "sha256": "310141c90ced81901a110adb4d26e61541f7027367a7b83160b09be2965ee8ae"
+    },
+    {
+      "artifact": "../data-model-v7/product_field_recommendations.json",
+      "record_count": 138,
+      "sha256": "44a5dad5ef19ea680fd0aa9f001232e22b2e1600723a8b0a3291956aacf111ee"
+    },
+    {
+      "artifact": "../data-model-v7/consumer_difference_recommendations.json",
+      "record_count": 44,
+      "sha256": "3432c591f99f87d1252247f0060c50a9f793411b5a0fced9e189a589fea61b47"
+    }
+  ],
+  "cohort_id": "PRODUCT-CONTRACT-COHORT",
+  "conditions_or_holds": "Accept all recommendations as recorded. Every product-field and consumer-difference disposition remains an evidence hold; no source or consumer implementation is authorized.",
+  "final_decision": "accepted-as-recommended",
+  "recommendation_commit": "d52142b845925ab1d563988ece2eca1e6741b0b7",
+  "review_date": "2026-09-01",
+  "reviewer": "P. Steward",
+  "source_snapshot_sha256": "631fa3e461d39c9a5f4dced53363ac2453dae63f8388a762e0098f091602548a"
+}
