@@ -18,6 +18,18 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: domain
+    attributes:
+      label: Affected domain
+      options:
+        - aom-core
+        - aom-crop
+        - aom-livestock
+        - cross-module
+        - uncertain
+    validations:
+      required: true
+  - type: dropdown
     id: change
     attributes:
       label: Change type
@@ -66,4 +78,3 @@ body:
           required: true
         - label: Submission contains no restricted data or copyrighted full text.
           required: true
-

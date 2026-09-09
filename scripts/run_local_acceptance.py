@@ -146,6 +146,9 @@ def main():
     assert '<meta name="viewport"' in html
     assert 'href="https://github.com/ERAgriculture/era-aom/issues/new/choose"' in html
     assert '&nbsp;Contribute' in html
+    assert 'id="request-concept-change"' in html
+    assert 'template=02-correct-concept.yml' in html
+    assert f'concept={concept_id}' in html
     results["concept_page"] = {"id": concept_id, "label": profile["representative_label"], "embedded_jsonld": True}
 
     compound_id = profile["compound_display_concept"]
@@ -190,7 +193,11 @@ def main():
     assert ".prop-skos_relatedMatch" in css_text and ".prop-mapping-label" in css_text
     assert ".prop-mapping-vocab" in css_text and "overflow-wrap: anywhere" in css_text
     results["custom_css"] = {"linked": True, "served": True, "long_mapping_wrap": True}
-    results["contribution_route"] = {"github_issue_chooser": "pass", "dead_mail_form_exposed": False}
+    results["contribution_route"] = {
+        "github_issue_chooser": "pass",
+        "concept_correction_prefill": "pass",
+        "dead_mail_form_exposed": False,
+    }
 
     graph_url = args.fuseki + "/get?" + urllib.parse.urlencode({"graph": "https://w3id.org/era-aom/graph/livestock"})
     status, _, graph_body, elapsed = request(graph_url, "text/turtle")

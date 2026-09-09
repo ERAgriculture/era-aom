@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "repository": "ERAgriculture/era-aom",
+  "pilot_approver": {
+    "name": "Pete Steward",
+    "github_login": "peetmate"
+  },
+  "permanent_reviewer_status": "unappointed",
+  "project": {
+    "owner": "ERAgriculture",
+    "title": "AOM proposal review",
+    "visibility": "PUBLIC",
+    "description": "Track structured AOM proposals from triage through human review, cohort implementation, and release.",
+    "readme": "Governance: https://github.com/ERAgriculture/era-aom/blob/main/docs/methods/proposal-review-and-release-governance.md\n\nProject status supports tracking; governed outcome register remains authoritative for decisions.",
+    "url_variable": "PROPOSAL_PROJECT_URL",
+    "token_secret": "ADD_TO_PROJECT_PAT",
+    "stage_field": "Review stage",
+    "stages": [
+      "Proposal",
+      "Completeness / duplicate check",
+      "Domain review",
+      "Decision",
+      "Cohort PR",
+      "Release"
+    ]
+  },
+  "status_labels": [
+    "needs-triage",
+    "in-review",
+    "accepted",
+    "rejected",
+    "implemented",
+    "released"
+  ],
+  "stage_by_status": {
+    "needs-triage": "Completeness / duplicate check",
+    "in-review": "Domain review",
+    "accepted": "Decision",
+    "rejected": "Decision",
+    "implemented": "Cohort PR",
+    "released": "Release"
+  },
+  "domains": {
+    "aom-core": {
+      "labels": ["core"],
+      "reviewers": [],
+      "interim_reviewers": ["peetmate"]
+    },
+    "aom-crop": {
+      "labels": ["crop"],
+      "reviewers": [],
+      "interim_reviewers": ["peetmate"]
+    },
+    "aom-livestock": {
+      "labels": ["livestock"],
+      "reviewers": [],
+      "interim_reviewers": ["peetmate"]
+    },
+    "cross-module": {
+      "labels": ["crop", "livestock"],
+      "reviewers": [],
+      "interim_reviewers": ["peetmate"]
+    },
+    "uncertain": {
+      "labels": [],
+      "reviewers": [],
+      "interim_reviewers": ["peetmate"]
+    }
+  }
+}

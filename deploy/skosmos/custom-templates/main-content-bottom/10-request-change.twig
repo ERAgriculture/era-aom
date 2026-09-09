@@ -1,0 +1,15 @@
+{% if pageType == 'concept' and concept.notation %}
+<div class="main-content-section py-4 concept-change-request">
+  <div class="row">
+    <div class="col-lg-4 ps-0 property-label">
+      <h2><i class="fa-solid fa-pen-to-square"></i> Request a change</h2>
+    </div>
+    <div class="col-lg-8 gx-0 gx-lg-4 property-value">
+      <a id="request-concept-change"
+         href="https://github.com/ERAgriculture/era-aom/issues/new?template=02-correct-concept.yml&amp;title={{ ('[Correction]: ' ~ concept.notation ~ ' ' ~ concept.label)|url_encode }}&amp;concept={{ (concept.notation ~ ' ' ~ concept.label)|url_encode }}">
+        Propose correction for {{ concept.notation }}
+      </a>
+    </div>
+  </div>
+</div>
+{% endif %}

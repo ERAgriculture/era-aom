@@ -19,9 +19,11 @@ Skosmos container. Capture desktop screenshots at normal browser zoom.
 8. Concept with multiple external mappings — each URI wraps on its own line;
    labels/domains do not overlap.
 9. Header — `Contribute` opens governed GitHub issue chooser.
-10. Keyboard — skip link moves focus to main content; search, hierarchy, and
+10. Concept card — `Request a change` opens correction form with displayed AOM
+    ID and label prefilled.
+11. Keyboard — skip link moves focus to main content; search, hierarchy, and
     downloads remain reachable.
-11. Semantic relationships — applicable concept cards show explicit directional
+12. Semantic relationships — applicable concept cards show explicit directional
     predicate labels such as “has biological species”, “has processing method”,
     and “has product role”; unrelated cards do not show feed-material predicates.
 
