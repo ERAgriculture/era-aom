@@ -1,0 +1,12 @@
+constraint_id,cohort,case_count,disposition,implementation_rule,release_effect
+GC-01,disjoint-round duplicate field keys,13,approved-for-profile-consolidation,Create one logical field identity with distinct round profiles and full source lineage.,Required in IW-01.
+GC-02,unresolved field-key cases,8,hold,Represent source rows and hold reason; allocate no merged identity without source review.,May ship only as explicit non-active holds.
+GC-03,unmatched lookup pairs,41,hold,Preserve lookup groups; create no field binding from label or fuzzy match.,May ship only as unbound value-set holds.
+GC-04,unresolved and conflicting unit rows,66,hold,"Preserve raw text and context; create no canonical IRI, quantity kind, or conversion.",All rows remain explicit held unit-mapping records.
+GC-05,product-field documentation dispositions,138,evidence-hold,Author reviewed contract or explicit deferral per product field; candidate text is not authority.,Every released field needs reviewed content or visible deferral.
+GC-06,consumer contract differences,44,evidence-hold,Carry each difference into compatibility report until reviewed migration or retirement.,"No silent addition, removal, rename, reorder, or type change."
+GC-07,stable registry identifiers,0,not-allocated,Use central append-only opaque ledger; IDs never encode mutable names and are never recycled.,Allocation begins only after ADR acceptance and IW-01 tests.
+GC-08,released v2026.1 artifacts,1,immutable,Write new version path and migration report; never rebuild v2026.1 in place.,Candidate and final release use a new version.
+GC-09,shared-core semantic candidates,0,evidence-required,Require equivalent crop and livestock use before core promotion.,Feed-specific resources remain livestock scoped.
+GC-10,canonical workbook source,1,read-only,Registry work consumes hash-pinned source; approved spreadsheet tooling is required for source edits.,No workbook correction is part of ADR 0054 planning or candidate generation.
+GC-11,release and consumer cutover,0,not-authorized,"Candidate publication, consumer migration, latest-pointer change, and issue closure use separate gates.",ADR acceptance alone publishes nothing and migrates no consumer.

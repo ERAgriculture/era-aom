@@ -1,0 +1,160 @@
+{
+  "captured_on": "2026-09-09",
+  "repositories": [
+    {
+      "clean": true,
+      "commit": "4df7f01e3cd3a64e22086b16460dc3bf3825b479",
+      "repository": "ERAgriculture/era-data-pipeline"
+    },
+    {
+      "clean": true,
+      "commit": "799ace4f0322cda103781060004816b346bdca1e",
+      "repository": "ERAgriculture/era-data"
+    },
+    {
+      "clean": true,
+      "commit": "2739057b8a0141e77ce2796f918316b7a0e8ee59",
+      "repository": "ERAgriculture/era-aom"
+    },
+    {
+      "clean": true,
+      "commit": "c6594e1f2769cb6fff6d82a2bf66f6785c70f546",
+      "repository": "ERAgriculture/eragri"
+    },
+    {
+      "clean": true,
+      "commit": "afe9af7a9384871d38619a77bc733b0cb05ee778",
+      "repository": "ERAgriculture/era-docs"
+    },
+    {
+      "clean": true,
+      "commit": "c9cdf56766a18dc9bf9e325ceffe91c5ea1db83d",
+      "repository": "ERAgriculture/era-program"
+    }
+  ],
+  "sources": [
+    {
+      "path": "R/vocab/build_model_schema.R",
+      "repository": "ERAgriculture/era-data-pipeline",
+      "sha256": "495d2a8372dd684e7804d128a915eb57895e13d268fff660c72b4258c32d614c",
+      "supports": "Current direct-workbook schema generator boundary."
+    },
+    {
+      "path": "config/semantic/era-aom-phase2-contract.csv",
+      "repository": "ERAgriculture/era-data-pipeline",
+      "sha256": "03ed5c8a0e01123207efc578b65388c78bace41d6f8e9088ad13d4d3c8444506",
+      "supports": "Current pipeline-to-AOM field binding contract."
+    },
+    {
+      "path": "vocab/version=2026.1/era_data_model.schema.json",
+      "repository": "ERAgriculture/era-data",
+      "sha256": "3235f0cdf8c04c460e2a4416bc8d10fd462a0ffb2028fa0c5cd7a215f1133fe7",
+      "supports": "Current released extraction-model artifact."
+    },
+    {
+      "path": "vocab/version=2026.1/vocab_manifest.json",
+      "repository": "ERAgriculture/era-data",
+      "sha256": "95e2eb9008c59204b948082d3e4a7bd3414e1eb3c66f8e47c05156639accb3fd",
+      "supports": "Current versioned vocabulary manifest."
+    },
+    {
+      "path": "schemas/era_compiled.schema.json",
+      "repository": "ERAgriculture/era-data",
+      "sha256": "a06d2b18da35d5a56004e1abf918df42be1b9d0f0cffe8b4aec53a878794507f",
+      "supports": "Current 138-column agronomy product contract."
+    },
+    {
+      "path": "schemas/era_compiled_ls.schema.json",
+      "repository": "ERAgriculture/era-data",
+      "sha256": "6979df8efd8c673e41a75cf0ab847d28cda1ab81b4b19eba3cd7a0d78e525507",
+      "supports": "Current 138-column livestock product contract."
+    },
+    {
+      "path": "docs/decisions/0052-data-model-registry-and-shared-core-contract.md",
+      "repository": "ERAgriculture/era-aom",
+      "sha256": "86c98d733b35d1e2ed5554380d552780162da69b5028245e185107126bc78bac",
+      "supports": "Accepted registry architecture, ownership, and completion gates."
+    },
+    {
+      "path": "review/data-model-v4/acceptance_summary.json",
+      "repository": "ERAgriculture/era-aom",
+      "sha256": "162af249dad59f04a2ff2d85f83d6003610271da990f164ef5628aeb1a100cfa",
+      "supports": "Accepted field-key and lookup disposition counts."
+    },
+    {
+      "path": "review/data-model-v6/acceptance_summary.json",
+      "repository": "ERAgriculture/era-aom",
+      "sha256": "5098c50ceb31b91efe0d1d9481fe58e69c2bdb2b25996a74319fd5699e1e74c5",
+      "supports": "Accepted unit hold cohort."
+    },
+    {
+      "path": "review/data-model-v8/acceptance_summary.json",
+      "repository": "ERAgriculture/era-aom",
+      "sha256": "65cecef9acd335e74c7093412d1fcebf020ea8fb6a23dc7033884241a3df2442",
+      "supports": "Accepted product-field and consumer-difference cohorts."
+    },
+    {
+      "path": "review/data-model-v8/cohort_approval.json",
+      "repository": "ERAgriculture/era-aom",
+      "sha256": "165f2820a2099817f86e4b975fcdf5beca5f320ea9c5ff7d7bb4494784d8ed07",
+      "supports": "Hash-pinned human approval of product-contract recommendations."
+    },
+    {
+      "path": "data/ERA.Compiled.rda",
+      "repository": "ERAgriculture/eragri",
+      "sha256": "00318de7341cad728e991ab0bf536fe68aeaeff4f732b7fde0b06e5f68e92091",
+      "supports": "Current 137-column package data snapshot."
+    },
+    {
+      "path": "data/ERACompiledFields.rda",
+      "repository": "ERAgriculture/eragri",
+      "sha256": "85ff22c5c595888899b0c3c5cbfaab3fe1b377dfedcb52fdb0dd44d322aaffd9",
+      "supports": "Current 106-row package field dictionary."
+    },
+    {
+      "path": "R/data.R",
+      "repository": "ERAgriculture/eragri",
+      "sha256": "c0c6b0bd656ae2d86286bc6533422bcbbc604662579182c6b6a2a5b77025e6d2",
+      "supports": "Current package data documentation contract."
+    },
+    {
+      "path": "R/data-extra-docs.R",
+      "repository": "ERAgriculture/eragri",
+      "sha256": "37b470c7111d685cc0619b899dd06130ee335dc1abddd56047f7030189132838",
+      "supports": "Current supplemental package dictionary documentation."
+    },
+    {
+      "path": "chapters/06-data-model-vocab.qmd",
+      "repository": "ERAgriculture/era-docs",
+      "sha256": "f012cdf85f523cbedf85164eea9254aa5e8773f2f69672ad9ad1e086b920b819",
+      "supports": "Current public data-model and vocabulary guidance."
+    }
+  ],
+  "status": "read-only-cross-repository-evidence",
+  "tracking_issues": [
+    {
+      "number": 17,
+      "repository": "ERAgriculture/era-program",
+      "state": "OPEN",
+      "title": "Formalise & publish the data model + controlled vocabulary (versioned, managed)",
+      "updated_at": "2026-09-09T05:13:44Z",
+      "url": "https://github.com/ERAgriculture/era-program/issues/17"
+    },
+    {
+      "number": 21,
+      "repository": "ERAgriculture/era-program",
+      "state": "OPEN",
+      "title": "Data dictionary for era_compiled (column schema + code lookups)",
+      "updated_at": "2026-08-28T19:13:20Z",
+      "url": "https://github.com/ERAgriculture/era-program/issues/21"
+    },
+    {
+      "number": 27,
+      "repository": "ERAgriculture/era-program",
+      "state": "OPEN",
+      "title": "Formalise the ERA data model as a documented, machine-readable schema",
+      "updated_at": "2026-09-05T10:35:42Z",
+      "url": "https://github.com/ERAgriculture/era-program/issues/27"
+    }
+  ]
+}
