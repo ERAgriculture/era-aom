@@ -22,6 +22,10 @@ Use GitHub issue forms:
 Contributors unable to use GitHub may contact repository maintainers. Friendly
 web form remains planned; it will create same structured proposal record.
 
+Each form records affected domain. Automation applies domain labels, assigns
+configured reviewers, and adds proposal to review project when project token is
+configured. Browser concept cards provide a prefilled correction link.
+
 ## Review workflow
 
 ```text
@@ -33,8 +37,15 @@ proposal → completeness/duplicate checks → domain review
 
 Proposal does not change published AOM directly. Reviewer verifies identity,
 meaning, scope, evidence, hierarchy, and mapping relation. Cross-module changes
-require relevant crop and livestock review. Permanent reviewer remains TBD;
-pilot/cutover approver is Pete Steward.
+require relevant crop and livestock review. Permanent domain reviewers remain
+unappointed; Pete Steward (`peetmate`) is named interim reviewer and pilot or
+cutover approver.
+
+Final accepted or rejected decisions must be recorded in
+[`data/governance/proposal_outcomes.csv`](data/governance/proposal_outcomes.csv).
+Accepted proposals remain open through cohort implementation and close only
+when register records release tag. Rejected proposals close after governed
+rationale merges. See [proposal review and release governance](docs/methods/proposal-review-and-release-governance.md).
 
 AI may help detect duplicates, normalize syntax, draft text, or suggest
 mappings. AI output must be identified as a proposal and supported by evidence.
@@ -60,3 +71,7 @@ python scripts/validate_bulk_proposals.py path/to/proposals.csv
 
 Submit template through pull request linked to scope issue. Never submit
 restricted source data or copyrighted full text.
+
+Accepted proposals are implemented in complete cohorts using
+[proposal cohort pull-request template](.github/PULL_REQUEST_TEMPLATE/proposal-cohort.md),
+not isolated concept patches.

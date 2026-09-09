@@ -22,8 +22,10 @@ body:
     attributes:
       label: Proposed module
       options:
+        - aom-core
         - aom-crop
         - aom-livestock
+        - cross-module
         - uncertain
     validations:
       required: true
@@ -68,4 +70,3 @@ body:
           required: true
         - label: Submission contains no restricted data or copyrighted full text.
           required: true
-

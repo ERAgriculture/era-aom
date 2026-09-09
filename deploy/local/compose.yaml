@@ -52,6 +52,7 @@ services:
     volumes:
       - "../../config/skosmos/era-aom.ttl:/var/www/html/config.ttl:ro"
       - "../../config/skosmos/era-aom.css:/var/www/html/resource/css/era-aom.css:ro"
+      - "../skosmos/custom-templates/main-content-bottom:/var/www/html/custom-templates/main-content-bottom:ro"
     restart: unless-stopped
   w3id-mock:
     image: httpd:2.4.68-alpine

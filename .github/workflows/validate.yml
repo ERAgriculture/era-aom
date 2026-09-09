@@ -172,6 +172,11 @@ jobs:
           python tests/test_w3id_proposal.py
           python scripts/build_w3id_proposal.py --config=config/publication-targets.json --output=/tmp/era-aom-w3id
           python scripts/validate_w3id_proposal.py /tmp/era-aom-w3id
+      - name: Validate proposal review system
+        run: |
+          python tests/validate_review_request_system.py
+          node tests/test_sync_proposal_project_stage.js
+          python scripts/validate_proposal_outcomes.py data/governance/proposal_outcomes.csv
       - name: Rebuild and validate release candidate
         run: |
           python scripts/build_release_candidate.py --config=config/releases/2026.1-rc.1.json

@@ -18,6 +18,18 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: domain
+    attributes:
+      label: Affected domain
+      options:
+        - aom-core
+        - aom-crop
+        - aom-livestock
+        - cross-module
+        - uncertain
+    validations:
+      required: true
+  - type: dropdown
     id: relation
     attributes:
       label: Proposed mapping relation
@@ -50,4 +62,3 @@ body:
       label: Contributor affiliation
     validations:
       required: true
-
