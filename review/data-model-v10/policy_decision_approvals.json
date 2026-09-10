@@ -1,0 +1,110 @@
+[
+  {
+    "accepted_recommendation": "Keep canonical workbook as authoring authority while generating a separate normalized registry.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No source edit or authority cutover is authorized by this plan.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-01",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Implement AC-01 through AC-14 as separately validated and linked artifacts.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Names and columns are proposed contracts until ADR 0054 acceptance.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-02",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Allocate table, field, value-set, member, profile, and binding IDs from central append-only ledgers.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No ID is allocated in this review; identifiers are never recycled or derived from mutable labels.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-03",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Fail generation when source rows, rounds, lookup groups, unit rows, or accepted holds disappear.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Held records remain present and inactive rather than silently dropped.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-04",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Publish registry work under a new immutable candidate version before any latest-pointer change.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Candidate status, supersession intent, migration draft, and rollback target must be explicit.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-05",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Publish reviewed semantic bindings from era-aom against stable registry IDs and governed predicates.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "No unreviewed value mapping, inferred unit mapping, or unsupported core promotion.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-06",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Make eragri data and dictionary objects declare compatible era-data release IDs and checksums.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Prior package contract remains supported until migration release is explicit.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-07",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Generate public data-model guidance from pinned released registry and product artifacts.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Generated pages must expose release identity, provenance, deferrals, and unresolved holds.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-08",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Separate registry implementation from shared-core semantic promotion.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Each core promotion needs separate crop-and-livestock evidence and semantic review.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-09",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Deliver IW-00 through IW-06 in dependency order with one compatibility checkpoint per boundary.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "A downstream wave starts only from a hash-pinned upstream candidate.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-10",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Rollback by restoring prior release pointers and consumer defaults while retaining failed artifacts and IDs.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Migration tests and rollback target are required before cutover.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-11",
+    "reviewer": "P. Steward"
+  },
+  {
+    "accepted_recommendation": "Close issue 27 after schema release, issue 21 after dictionary parity, then issue 17 after full managed publication and consumer alignment.",
+    "approval_status": "accepted",
+    "conditions_or_holds": "Residual holds remain linked and cannot disappear through issue closure.",
+    "final_decision": "accepted-as-recommended",
+    "review_date": "2026-09-10",
+    "review_id": "RI-12",
+    "reviewer": "P. Steward"
+  }
+]

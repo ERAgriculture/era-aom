@@ -1,0 +1,32 @@
+{
+  "approval_status": "accepted",
+  "artifacts": [
+    {
+      "artifact": "../data-model-v9/guided_decision_recommendations.json",
+      "record_count": 12,
+      "sha256": "bc3433ffa5b9e2aee8e2181016f06b5b56b2eb0a9046bd82dadd8ebe2d226385"
+    },
+    {
+      "artifact": "../data-model-v9/artifact_contracts.csv",
+      "record_count": 14,
+      "sha256": "54f8f0fa5a58d58c5cf94979e3623d03122d673ca977dc1741ee9456e92ae06e"
+    },
+    {
+      "artifact": "../data-model-v9/implementation_waves.csv",
+      "record_count": 7,
+      "sha256": "ddeb165cf38ebad3672acae706d5aa912848a6d2d882435c4ef6e34bb7d44f1c"
+    },
+    {
+      "artifact": "../data-model-v9/governance_constraints.csv",
+      "record_count": 11,
+      "sha256": "0802aaa57b84bd518b13eee53044003e78acb727af7edf1f7323c1fa84e62d57"
+    }
+  ],
+  "cohort_id": "REGISTRY-IMPLEMENTATION-PLAN-COHORT",
+  "conditions_or_holds": "Accept all recommendations as recorded. Preserve every accepted hold and non-action. Create owner-scoped wave issues before IW-01; each wave requires separate implementation and compatibility evidence.",
+  "final_decision": "accepted-as-recommended",
+  "recommendation_commit": "9db1e26a87a23db72328e0b9136a0cdba612abd6",
+  "review_date": "2026-09-10",
+  "reviewer": "P. Steward",
+  "source_snapshot_sha256": "fc4864cd508dc22d7708e2b76e60a83693933125b42d73d28c9a0dd1a1d95b8f"
+}

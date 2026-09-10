@@ -1,13 +1,17 @@
 # ADR 0054: Cross-repository data-model registry implementation plan
 
-- Status: Proposed
+- Status: Accepted
 - Date: 2026-09-09
+- Last reviewed: 2026-09-10
+- Accepted: 2026-09-10 by P. Steward
 - Owners: ERA data-model and AOM semantic governance
 - Tracking:
   [era-program #17](https://github.com/ERAgriculture/era-program/issues/17),
   [era-program #21](https://github.com/ERAgriculture/era-program/issues/21),
   [era-program #27](https://github.com/ERAgriculture/era-program/issues/27)
-- Evidence: [Implementation planning pack](../../review/data-model-v9/README.md)
+- Evidence:
+  [Implementation-plan acceptance](../../review/data-model-v10/README.md),
+  [implementation planning pack](../../review/data-model-v9/README.md)
 - Method: [Cross-repository registry implementation planning](../methods/cross-repository-registry-implementation-planning.md)
 - Depends on:
   [AOM ADR 0052](0052-data-model-registry-and-shared-core-contract.md),
@@ -170,15 +174,17 @@ Full support and limitations are recorded in
 
 ## Human decision
 
-`RI-01` through `RI-12` remain proposed. Human acceptance must record reviewer,
-date, decision, conditions, and exact hashes for decision, artifact, wave, and
-constraint files in a separate acceptance pack.
+P. Steward accepted `RI-01` through `RI-12` as recommended on 2026-09-10.
+Acceptance covers exact hash-pinned artifacts containing 12 guided decisions,
+14 artifact contracts, seven implementation waves, and 11 governance
+constraints. Durable decisions and fingerprints are recorded in the
+[implementation-plan acceptance pack](../../review/data-model-v10/README.md).
 
-Acceptance approves implementation direction and order only. It does not
-allocate stable IDs, edit canonical source, generate or publish registry data,
-change AOM bindings, modify package or documentation consumers, release data,
-migrate users, advance a latest pointer, close an issue, or approve any retained
-hold.
+All conditions and holds remain. Acceptance approves implementation direction,
+repository order, artifact contracts, identifier policy, completeness gates,
+rollback, and issue-closure conditions. No stable identifier was allocated. No
+canonical source, registry data, schema, AOM binding, package, documentation
+consumer, release, migration, latest pointer, or issue state changed.
 
 ## Consequences
 
@@ -220,7 +226,8 @@ documentation, catalog, migration, and cutover would remain incomplete.
 
 ## Implementation gates
 
-1. Human acceptance of `RI-01` through `RI-12` and exact plan artifacts.
+1. **Complete 2026-09-10:** P. Steward accepted `RI-01` through `RI-12` and
+   exact plan artifacts in the hash-pinned data-model-v10 acceptance pack.
 2. Owner-scoped implementation issues linked to IW-01 through IW-06.
 3. Deterministic pipeline candidate with complete source preservation and valid keys.
 4. Immutable non-latest `era-data` candidate with migration and rollback drafts.
@@ -228,3 +235,12 @@ documentation, catalog, migration, and cutover would remain incomplete.
 6. Release-pinned `eragri` compatibility with complete difference dispositions.
 7. Generated `era-docs` guidance with visible release identity and holds.
 8. Final compatibility bundle, tested rollback, cutover observation, and ordered issue closure.
+
+## Approval record
+
+Accepted by P. Steward on 2026-09-10 with conditions and holds recorded in the
+[implementation-plan acceptance pack](../../review/data-model-v10/README.md).
+Acceptance authorizes owner-scoped issue decomposition and the agreed delivery
+sequence. It allocates no identifier and changes no workbook, registry,
+semantic binding, generated distribution, package object, documentation
+consumer, release, migration, latest pointer, or programme issue state.

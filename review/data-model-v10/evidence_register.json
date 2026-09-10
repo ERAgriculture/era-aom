@@ -1,0 +1,56 @@
+[
+  {
+    "claim_boundary": "Acceptance records governance and delivery direction only; it creates no registry or consumer implementation.",
+    "evidence_id": "E-ADR0054-A-POLICY",
+    "evidence_type": "human-governance-decision",
+    "locator": "policy_decision_approvals.json",
+    "supports": "P. Steward accepted RI-01 through RI-12 as recommended.",
+    "title": "Registry implementation policy approvals",
+    "version_or_date": "2026-09-10"
+  },
+  {
+    "claim_boundary": "Approval preserves artifact rows, wave order, constraints, holds, and non-actions without implementing them.",
+    "evidence_id": "E-ADR0054-A-COHORT",
+    "evidence_type": "hash-pinned-human-decision",
+    "locator": "cohort_approval.json",
+    "supports": "Exact 12-decision, 14-artifact, seven-wave, and 11-constraint recommendation artifacts accepted as recorded.",
+    "title": "Registry implementation-plan cohort approval",
+    "version_or_date": "2026-09-10"
+  },
+  {
+    "claim_boundary": "Recommendation evidence defines planned contracts but does not prove implementation success.",
+    "evidence_id": "E-ADR0054-A-REVIEW",
+    "evidence_type": "governance-review",
+    "locator": "../data-model-v9/README.md",
+    "supports": "Complete deterministic planning review across six ERA repositories.",
+    "title": "Cross-repository implementation planning checkpoint",
+    "version_or_date": "2026-09-09"
+  },
+  {
+    "claim_boundary": "Snapshot proves observed files and issue states at capture time, not later repository compatibility or release completion.",
+    "evidence_id": "E-ADR0054-A-SNAPSHOT",
+    "evidence_type": "hash-pinned-source-evidence",
+    "locator": "../data-model-v9/source_snapshot.json",
+    "supports": "Six repository commits, 16 source-file hashes, and three open programme issues used by accepted plan.",
+    "title": "Registry planning source snapshot",
+    "version_or_date": "2026-09-09"
+  },
+  {
+    "claim_boundary": "Authorities support contract forms and provenance but do not supply ERA identities, source corrections, or migration decisions.",
+    "evidence_id": "E-ADR0054-A-AUTHORITY",
+    "evidence_type": "authority-comparison",
+    "locator": "../data-model-v9/authority_comparison.csv",
+    "supports": "ADR 0052, ERA ADR 0007, CSVW, Frictionless, PROV-O, and DCAT 3 roles and limitations.",
+    "title": "Registry implementation authority comparison",
+    "version_or_date": "2026-09-09"
+  },
+  {
+    "claim_boundary": "Stable IDs, source edits, generated artifacts, bindings, consumer changes, release, migration, cutover, and closure remain future gated work.",
+    "evidence_id": "E-ADR0054-A-BOUNDARY",
+    "evidence_type": "implementation-boundary",
+    "locator": "acceptance_summary.json",
+    "supports": "Acceptance leaves producer and consumer artifacts unchanged while authorizing owner-scoped implementation planning.",
+    "title": "Registry plan acceptance implementation boundary",
+    "version_or_date": "2026-09-10"
+  }
+]
