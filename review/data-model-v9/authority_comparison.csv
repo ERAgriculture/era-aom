@@ -1,0 +1,7 @@
+authority,url,supports,limitation
+AOM ADR 0052,../../docs/decisions/0052-data-model-registry-and-shared-core-contract.md,"Eight contract layers, repository ownership, immutable release rule, and completion gates.","Does not define concrete artifacts, PR sequence, stable-ID ledger, or rollback execution."
+ERA ADR 0007,https://github.com/ERAgriculture/era-program/blob/main/project-management/decisions/ADR-0007-canonical-vocab-source.md,Canonical workbook authority before explicit cutover.,Does not make workbook row shape target registry architecture.
+W3C CSV on the Web,https://www.w3.org/TR/tabular-metadata/,"Tabular metadata, datatypes, primary keys, foreign keys, annotations, and validation.","Does not decide ERA field identity, source corrections, or semantic mappings."
+Frictionless Table Schema,https://specs.frictionlessdata.io/table-schema/,"Portable JSON table descriptors, constraints, primary keys, and foreign keys.","Does not govern RDF semantics, release authority, or human disposition evidence."
+W3C PROV-O,https://www.w3.org/TR/prov-o/,"Entity, activity, agent, derivation, and generation provenance.",Does not prescribe ERA release order or compatibility policy.
+W3C DCAT 3,https://www.w3.org/TR/vocab-dcat-3/,"Versioned datasets, distributions, checksums, relationships, and catalog discovery.",Does not define field-level registry content or consumer migration semantics.

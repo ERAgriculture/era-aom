@@ -222,6 +222,8 @@ Full claim support and limitations are recorded in
 - [Hash-pinned product-contract cohort approval](../../review/data-model-v8/cohort_approval.json)
 - [Product-contract acceptance evidence](../../review/data-model-v8/evidence_register.json)
 - [Product-contract acceptance summary](../../review/data-model-v8/acceptance_summary.json)
+- [Cross-repository implementation plan](0054-cross-repository-data-model-registry-implementation-plan.md)
+- [Implementation planning evidence](../../review/data-model-v9/README.md)
 
 ## Human decision
 
@@ -400,6 +402,10 @@ new release.
 9. Crop and livestock evidence for every shared-core promotion.
 10. Deterministic rebuild, source fingerprints, cross-repository compatibility
     report, and green contract tests.
+
+Concrete artifact boundaries, dependency order, rollback, and issue-closure
+gates are proposed in [ADR 0054](0054-cross-repository-data-model-registry-implementation-plan.md).
+ADR 0054 remains recommendation-only until separately accepted.
 
 ## Approval record
 
