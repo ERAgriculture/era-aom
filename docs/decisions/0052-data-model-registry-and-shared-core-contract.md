@@ -404,8 +404,9 @@ new release.
     report, and green contract tests.
 
 Concrete artifact boundaries, dependency order, rollback, and issue-closure
-gates are proposed in [ADR 0054](0054-cross-repository-data-model-registry-implementation-plan.md).
-ADR 0054 remains recommendation-only until separately accepted.
+gates are accepted in [ADR 0054](0054-cross-repository-data-model-registry-implementation-plan.md).
+Acceptance approves plan direction and order only; wave implementation remains
+separately gated.
 
 ## Approval record
 

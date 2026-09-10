@@ -196,7 +196,8 @@ assert guided.count("| `RI-") == 12
 assert guided.count("| `IW-") == 7
 assert "recommendation-only" in readme.lower()
 assert "Never read implementation success" in method
-assert "Status: Proposed" in adr
+assert "Status: Accepted" in adr
+assert "data-model-v10/README.md" in adr
 assert "## Authority comparison" in adr
 assert "## Evidence" in adr
 assert "does not allocate" in adr
