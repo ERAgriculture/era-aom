@@ -19,7 +19,9 @@ services:
   load-release:
     image: curlimages/curl:8.12.1
     depends_on: [fuseki]
-    volumes: ["../../dist/releases/2026.1-rc.1:/release:ro"]
+    volumes:
+      - "../../dist/releases/2026.1-rc.1:/release:ro"
+      - "../../dist/registry-bindings/version=2026.2-rc.1:/registry-bindings:ro"
     command:
       - /bin/sh
       - -ec
@@ -31,6 +33,14 @@ services:
           if [ "$${first}" = true ]; then method=PUT; first=false; fi
           curl --fail --retry 30 --retry-delay 2 --retry-connrefused -X "$${method}" \
             -H 'Content-Type: text/turtle' -T "/release/$${file}" "$${endpoint}"
+        done
+        endpoint='http://fuseki:3030/skosmos/data?graph=https%3A%2F%2Fw3id.org%2Fera-aom%2Fgraph%2Fregistry-bindings-2026.2-rc.1'
+        first=true
+        for file in registry-semantic-binding.schema.ttl semantic_bindings.ttl; do
+          method=POST
+          if [ "$${first}" = true ]; then method=PUT; first=false; fi
+          curl --fail --retry 30 --retry-delay 2 --retry-connrefused -X "$${method}" \
+            -H 'Content-Type: text/turtle' -T "/registry-bindings/$${file}" "$${endpoint}"
         done
     restart: "no"
   skosmos:

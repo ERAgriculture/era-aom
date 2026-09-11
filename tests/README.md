@@ -60,3 +60,6 @@ round-trip tests will be added with normalized pilot data.
   while canonical-reuse/deprecation review remains open.
 - `validate_bran_compound_model.py`: checks Bran material-component
   classification and Maize Bran source/component/process/product-role semantics.
+- `validate_registry_semantic_bindings.py`: checks IW-03 stable binding IDs,
+  complete 311-decision partition, explicit 307-row hold register, candidate
+  manifest, public/private boundary, RDF parity, and governance evidence.

@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "date": "2026-09-11",
+  "empty_store": true,
+  "isolated_compose_project": "era-aom-iw03",
+  "runtime": {
+    "skosmos": "3.3",
+    "apache_jena_fuseki": "5.4.0",
+    "varnish": "7.7.3"
+  },
+  "livestock_graph": {
+    "iri": "https://w3id.org/era-aom/graph/livestock",
+    "concepts": 2814,
+    "hierarchy_relations": 2827,
+    "triples": 38466
+  },
+  "registry_binding_graph": {
+    "iri": "https://w3id.org/era-aom/graph/registry-bindings-2026.2-rc.1",
+    "bindings": 5,
+    "property_assertions": 5,
+    "concept_assertions": 0,
+    "triples": 153
+  },
+  "skosmos": {
+    "api": "pass",
+    "search": "pass",
+    "hierarchy": "pass",
+    "representative_cards": 55,
+    "retired_descriptor_cards": 8,
+    "rdf_downloads": "pass"
+  },
+  "full_local_report_sha256": "3eabd2d4439988db5b08679fd37d423dc2acb779890ef52e793e21c0c5dc1a01",
+  "reproduction": "docker compose -f deploy/local/compose.yaml up --build --detach; python scripts/check_browser_stack.py --attempts=90 --delay=2; python scripts/run_local_acceptance.py --output=acceptance-results"
+}

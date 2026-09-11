@@ -2,16 +2,18 @@
 
 - Status: Accepted
 - Date: 2026-09-09
-- Last reviewed: 2026-09-10
+- Last reviewed: 2026-09-11
 - Accepted: 2026-09-10 by P. Steward
 - Owners: ERA data-model and AOM semantic governance
 - Tracking:
   [era-program #17](https://github.com/ERAgriculture/era-program/issues/17),
   [era-program #21](https://github.com/ERAgriculture/era-program/issues/21),
-  [era-program #27](https://github.com/ERAgriculture/era-program/issues/27)
+  [era-program #27](https://github.com/ERAgriculture/era-program/issues/27),
+  [era-aom #121](https://github.com/ERAgriculture/era-aom/issues/121)
 - Evidence:
   [Implementation-plan acceptance](../../review/data-model-v10/README.md),
-  [implementation planning pack](../../review/data-model-v9/README.md)
+  [implementation planning pack](../../review/data-model-v9/README.md),
+  [IW-03 semantic-binding candidate](../../review/data-model-v11/README.md)
 - Method: [Cross-repository registry implementation planning](../methods/cross-repository-registry-implementation-planning.md)
 - Depends on:
   [AOM ADR 0052](0052-data-model-registry-and-shared-core-contract.md),
@@ -231,7 +233,10 @@ documentation, catalog, migration, and cutover would remain incomplete.
 2. Owner-scoped implementation issues linked to IW-01 through IW-06.
 3. Deterministic pipeline candidate with complete source preservation and valid keys.
 4. Immutable non-latest `era-data` candidate with migration and rollback drafts.
-5. Reviewed AOM bindings against stable registry subjects.
+5. **Candidate implemented 2026-09-11:** reviewed AOM binding source, stable
+   binding IDs, explicit holds, RDF distributions, and clean-store checks exist
+   against pinned IW-02 subjects. Gate remains open until merge and downstream
+   candidate pins are refreshed.
 6. Release-pinned `eragri` compatibility with complete difference dispositions.
 7. Generated `era-docs` guidance with visible release identity and holds.
 8. Final compatibility bundle, tested rollback, cutover observation, and ordered issue closure.

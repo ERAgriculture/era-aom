@@ -1,0 +1,82 @@
+{
+  "binding_release_id": "2026.2-rc.1",
+  "status": "candidate",
+  "latest": false,
+  "created": "2026-09-11",
+  "governing_adr": "docs/decisions/0054-cross-repository-data-model-registry-implementation-plan.md",
+  "registry": {
+    "repository": "ERAgriculture/era-data",
+    "merge_commit": "363c81ee709d939bd58a5f0980b3eb5e5d490fd2",
+    "publisher_content_commit": "961712b6dc2af9a9bd56c3e5e083062cdb220d8d",
+    "release_id": "ERA-REL-000001",
+    "version": "2026.2-rc.1",
+    "publication_manifest_sha256": "dd651980c807a332f86dbf1526ba6d00664784fe63a9b5c2d11787a900f89d4c",
+    "artifacts": {
+      "fields.csv": "68cae9090835c34f898c694496935fedc145d84b3faf78c33a627cac650e6f67",
+      "value_set_members.csv": "ebf6be9de04e8511b9406313d70927ca2da59cce8b0f427982395f5a4002d7df",
+      "value_sets.csv": "55f406c358672e0a39c2dede249a5d2a75fd3fad69854f08270189e5d5468ac0"
+    }
+  },
+  "semantic_governor": {
+    "repository": "ERAgriculture/era-aom",
+    "baseline_commit": "b480b5e3a680e8f3b78b9b09e5fe4f55ad3f203f",
+    "namespace_base": "https://w3id.org/era-aom/",
+    "target_release": "2026.1-rc.1",
+    "target_artifacts": {
+      "aom-schema.ttl": "102b2fdce19bdfd3d6707ae059ec233d1b0e53c3e12d169d4a6ca711697e4974",
+      "aom-livestock.ttl": "8e763197fce93ffacfd5e539a74f9c6aa69629722cc2f488759a50438def9d6c"
+    }
+  },
+  "semantic_sources": {
+    "data/livestock-staging/approved_semantic_bindings.csv": "03ed5c8a0e01123207efc578b65388c78bace41d6f8e9088ad13d4d3c8444506",
+    "data/livestock-staging/approved_semantic_value_bindings.csv": "94c730dad44ed5af96c15cd95ee592e3156a00eae5e33e4002efd380d6ef28e7",
+    "review/data-model-v1/semantic_binding_scope.csv": "69a9cc13d0b167a20381b3262c696c6500c0dcff47adcaa5838dd5efeaf15f05"
+  },
+  "held_registry_subjects": {
+    "AOM_000534": {
+      "registry_subject_type": "field",
+      "registry_subject_id": "ERA-FLD-000088",
+      "registry_source_artifact": "fields.csv",
+      "registry_row_sha256": "5da6f748107444d57522122815bfedc38003096470c92221584f3c0491d54661",
+      "reason_code": "amount-field-not-proportion",
+      "reason": "Candidate field may be absolute amount or proportion; explicit unit and composition basis are required before activation."
+    },
+    "aom:ingredientSource|On-farm": {
+      "registry_subject_type": "value_member",
+      "registry_subject_id": "ERA-VSM-000535",
+      "registry_source_artifact": "value_set_members.csv",
+      "registry_row_sha256": "a818f6565bfe129ca07adb5d75a6a285ab7b6b3c081b31ffb2ff15f3ee06d46a",
+      "reason_code": "registry-subject-held",
+      "reason": "Reviewed target exists, but source value member and its unbound value set remain held in IW-02."
+    },
+    "aom:ingredientSource|Purchased": {
+      "registry_subject_type": "value_member",
+      "registry_subject_id": "ERA-VSM-000536",
+      "registry_source_artifact": "value_set_members.csv",
+      "registry_row_sha256": "dafd375de0d19e3233c770037515588c1b4d67f782ea2349df0a7a3998cb48e7",
+      "reason_code": "registry-subject-held",
+      "reason": "Reviewed target exists, but source value member and its unbound value set remain held in IW-02."
+    },
+    "aom:ingredientSource|Unspecified": {
+      "registry_subject_type": "value_member",
+      "registry_subject_id": "ERA-VSM-000537",
+      "registry_source_artifact": "value_set_members.csv",
+      "registry_row_sha256": "a73c55505451ff3e2799035861f470abec202cf99472d9383f0dbbf21d39ab63",
+      "reason_code": "registry-subject-held-and-target-ambiguous",
+      "reason": "Source value member remains held and absence or unknown source has no approved AOM target."
+    }
+  },
+  "expected_counts": {
+    "structural_source_decisions": 13,
+    "value_source_decisions": 298,
+    "active_binding_rows": 5,
+    "active_source_decisions": 4,
+    "held_source_decisions": 307,
+    "total_source_decisions": 311
+  },
+  "rollback": {
+    "binding_release": null,
+    "registry_release": "2026.1",
+    "latest_pointer_change": false
+  }
+}

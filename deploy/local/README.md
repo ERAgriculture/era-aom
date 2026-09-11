@@ -2,7 +2,9 @@
 
 Reproducible evaluation stack: Skosmos 3.3, Apache Jena/Fuseki 5.4.0, Jena
 Text, and Varnish. Services bind to loopback only. Release loader imports
-`2026.1-rc.1` into named graph `https://w3id.org/era-aom/graph/livestock`.
+`2026.1-rc.1` into named graph `https://w3id.org/era-aom/graph/livestock`
+and registry semantic-binding candidate `2026.2-rc.1` into named graph
+`https://w3id.org/era-aom/graph/registry-bindings-2026.2-rc.1`.
 
 ```sh
 docker compose -f deploy/local/compose.yaml up --build
@@ -23,6 +25,6 @@ institutional domain, or w3id registration. Passing local checks does not
 authorize external deployment or canonical cutover. Pins follow Skosmos 3.3
 upstream Docker configuration; update pins through dependency PRs.
 
-GitHub Actions repeats full container build, graph load, SPARQL count, and
-Skosmos HTTP checks on every pull request. Logs are captured before teardown
-when runtime validation fails.
+GitHub Actions repeats full container build, both named-graph loads, SPARQL
+counts, binding-identifier checks, and Skosmos HTTP checks on every pull
+request. Logs are captured before teardown when runtime validation fails.

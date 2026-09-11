@@ -1,0 +1,39 @@
+@prefix aom: <https://w3id.org/era-aom/schema/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aom:RegistrySemanticBindingShape a sh:NodeShape ;
+  sh:targetClass aom:RegistrySemanticBinding ;
+  sh:closed true ;
+  sh:ignoredProperties ( rdf:type ) ;
+  sh:property [ sh:path aom:semanticBindingIdentifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^ERA-SBN-[0-9]{6}$" ] ;
+  sh:property [ sh:path aom:registryReleaseIdentifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path aom:registrySubject ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:registrySubjectType ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "field" "value_member" ) ] ;
+  sh:property [ sh:path aom:registrySubjectIdentifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^ERA-(FLD|VSM)-[0-9]{6}$" ] ;
+  sh:property [ sh:path aom:registryRowChecksum ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^[0-9a-f]{64}$" ] ;
+  sh:property [ sh:path aom:bindingPredicate ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( aom:mapsToProperty aom:mapsToConcept ) ] ;
+  sh:property [ sh:path aom:bindingTarget ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path aom:evidenceReference ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ] ;
+  sh:property [ sh:path aom:bindingLifecycle ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "active" ] ;
+  sh:property [ sh:path aom:reviewerStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue "approved" ] ;
+  sh:property [ sh:path aom:domainScope ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^livestock-" ] ;
+  sh:property [ sh:path aom:sourceSemanticRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path aom:sourceRegistryArtifact ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path aom:bindingRationale ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path dcterms:contributor ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path dcterms:issued ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+  sh:property [ sh:path dcterms:isPartOf ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:sparql [
+    sh:message "field bindings must use mapsToProperty; value-member bindings must use mapsToConcept" ;
+    sh:select """
+      PREFIX aom: <https://w3id.org/era-aom/schema/>
+      SELECT $this WHERE {
+        $this aom:registrySubjectType ?type ; aom:bindingPredicate ?predicate .
+        FILTER ((?type = "field" && ?predicate != aom:mapsToProperty) ||
+                (?type = "value_member" && ?predicate != aom:mapsToConcept))
+      }
+    """
+  ] .

@@ -16,6 +16,12 @@ Semantic model assets:
 - `shacl/semantic-model.ttl`: SHACL Core constraints for feed materials,
   ingredient components, quantitative observations, QUDT values, and governed
   structural/value semantic bindings.
+- `owl/registry-semantic-binding.ttl`: source OWL vocabulary for stable
+  registry-subject semantic bindings;
+- `shacl/registry-semantic-bindings.ttl`: active-binding identity, predicate,
+  lifecycle, evidence, reviewer, and scope constraints; and
+- `csvw/registry-semantic-bindings-metadata.json`: governed source-table CSVW
+  contract.
 
 `dist/livestock-staging/aom-schema.ttl` is generated from the OWL source; do
 not edit distribution copy directly. Architecture decision:
