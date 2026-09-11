@@ -63,6 +63,43 @@ def main():
     assert count == profile["expected_concepts"], count
     results["concept_count"] = count
 
+    binding_graph_uri = profile["registry_binding_graph"]
+    binding_query = f"""
+      SELECT
+        (COUNT(DISTINCT ?binding) AS ?bindingCount)
+        (COUNT(DISTINCT ?propertyAssertion) AS ?propertyCount)
+        (COUNT(DISTINCT ?conceptAssertion) AS ?conceptCount)
+      WHERE {{
+        GRAPH <{binding_graph_uri}> {{
+          OPTIONAL {{
+            ?binding a <https://w3id.org/era-aom/schema/RegistrySemanticBinding> .
+          }}
+          OPTIONAL {{
+            ?subject <https://w3id.org/era-aom/schema/mapsToProperty> ?propertyTarget .
+            BIND(CONCAT(STR(?subject), STR(?propertyTarget)) AS ?propertyAssertion)
+          }}
+          OPTIONAL {{
+            ?subject <https://w3id.org/era-aom/schema/mapsToConcept> ?conceptTarget .
+            BIND(CONCAT(STR(?subject), STR(?conceptTarget)) AS ?conceptAssertion)
+          }}
+        }}
+      }}
+    """
+    binding_sparql_url = args.fuseki + "/sparql?" + urllib.parse.urlencode({"query": binding_query})
+    binding_result = json_get(binding_sparql_url, timings)["results"]["bindings"][0]
+    binding_count = int(binding_result["bindingCount"]["value"])
+    property_assertion_count = int(binding_result["propertyCount"]["value"])
+    concept_assertion_count = int(binding_result["conceptCount"]["value"])
+    assert binding_count == profile["expected_registry_bindings"], binding_count
+    assert property_assertion_count == profile["expected_registry_property_assertions"], property_assertion_count
+    assert concept_assertion_count == profile["expected_registry_concept_assertions"], concept_assertion_count
+    results["registry_bindings"] = {
+        "graph": binding_graph_uri,
+        "bindings": binding_count,
+        "property_assertions": property_assertion_count,
+        "concept_assertions": concept_assertion_count,
+    }
+
     hierarchy_query = "SELECT (COUNT(?broader) AS ?broaderCount) (COUNT(?narrower) AS ?narrowerCount) WHERE { { ?child <http://www.w3.org/2004/02/skos/core#broader> ?parent . BIND(?parent AS ?broader) } UNION { ?parent <http://www.w3.org/2004/02/skos/core#narrower> ?child . BIND(?child AS ?narrower) } }"
     hierarchy_url = args.fuseki + "/sparql?" + urllib.parse.urlencode({"query": hierarchy_query})
     hierarchy = json_get(hierarchy_url, timings)["results"]["bindings"][0]
@@ -207,6 +244,17 @@ def main():
     assert len(backup) >= profile["minimum_graph_triples"], len(backup)
     results["graph_backup"] = {"triples": len(backup), "parse": "pass"}
 
+    binding_graph_url = args.fuseki + "/get?" + urllib.parse.urlencode({"graph": binding_graph_uri})
+    status, _, binding_graph_body, elapsed = request(binding_graph_url, "text/turtle")
+    timings.append(elapsed)
+    assert status == 200
+    binding_backup = Graph().parse(data=binding_graph_body, format="turtle")
+    binding_identifier = URIRef("https://w3id.org/era-aom/schema/semanticBindingIdentifier")
+    actual_binding_ids = {str(value) for value in binding_backup.objects(None, binding_identifier)}
+    assert actual_binding_ids == set(profile["expected_registry_binding_ids"]), actual_binding_ids
+    results["registry_bindings"]["backup_triples"] = len(binding_backup)
+    results["registry_bindings"]["identifiers"] = sorted(actual_binding_ids)
+
     retired_results = []
     for check in profile["retired_descriptor_checks"]:
         cid = check["concept_id"]
@@ -297,7 +345,7 @@ def main():
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     (output / "acceptance.json").write_text(json.dumps(results, indent=2) + "\n")
-    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Retired descriptor cards: {len(retired_results)}", f"- Feed-material navigation children: {len(expected_navigation)}", f"- Nested navigation checks: {len(nested_navigation)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Skosmos API/search/hierarchy/statistics: pass", "- Feed-material direct and nested navigation: pass", "- Retired descriptor exact search, warnings, history, and hierarchy exclusion: pass", "- Concept HTML + embedded JSON-LD: pass", "- Compound concept source/component/process/role display: pass", "- Process mechanism/objective/benefit display: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
+    lines = ["# ERA-AOM local acceptance", "", "Status: **PASS**", "", f"- Concepts: {count:,}", f"- Registry semantic bindings: {binding_count:,}", f"- Registry binding graph triples: {len(binding_backup):,}", f"- Top concepts: {len(profile['expected_top_concepts'])}", f"- Broader/narrower pairs: {broader_count:,}/{narrower_count:,}", f"- Backup graph triples: {len(backup):,}", f"- Representative concepts: {len(representative_results)}", f"- Retired descriptor cards: {len(retired_results)}", f"- Feed-material navigation children: {len(expected_navigation)}", f"- Nested navigation checks: {len(nested_navigation)}", f"- Requests: {len(timings)}", f"- Maximum response: {max(timings):.4f}s", f"- Median response: {statistics.median(timings):.4f}s", "- Registry binding named graph, identifiers, and direct assertions: pass", "- Skosmos API/search/hierarchy/statistics: pass", "- Feed-material direct and nested navigation: pass", "- Retired descriptor exact search, warnings, history, and hierarchy exclusion: pass", "- Concept HTML + embedded JSON-LD: pass", "- Compound concept source/component/process/role display: pass", "- Process mechanism/objective/benefit display: pass", "- Custom stylesheet linked, served, and wrap rules present: pass", "- Representative semantic/page matrix: pass", "- Concept RDF/XML, Turtle, and JSON-LD downloads parse: pass", "- Turtle/JSON-LD/RDF/XML/HTML redirects: pass", ""]
     (output / "acceptance.md").write_text("\n".join(lines))
     print(json.dumps(results, indent=2))
 

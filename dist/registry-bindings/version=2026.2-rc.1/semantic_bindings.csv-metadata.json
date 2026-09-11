@@ -1,0 +1,27 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "semantic_bindings.csv",
+  "tableSchema": {
+    "columns": [
+      {"name": "semantic_binding_id", "titles": "Semantic binding ID", "required": true},
+      {"name": "registry_release_id", "titles": "Registry release ID", "required": true},
+      {"name": "registry_subject_type", "titles": "Registry subject type", "required": true},
+      {"name": "registry_subject_id", "titles": "Registry subject ID", "required": true},
+      {"name": "registry_row_sha256", "titles": "Registry row SHA-256", "required": true},
+      {"name": "binding_predicate", "titles": "Binding predicate", "datatype": "anyURI", "required": true},
+      {"name": "target_iri", "titles": "Target IRI", "datatype": "anyURI", "required": true},
+      {"name": "target_kind", "titles": "Target kind", "required": true},
+      {"name": "semantic_source_key", "titles": "Semantic source key", "required": true},
+      {"name": "semantic_source_file", "titles": "Semantic source file", "required": true},
+      {"name": "registry_source_artifact", "titles": "Registry source artifact", "required": true},
+      {"name": "evidence", "titles": "Evidence", "required": true},
+      {"name": "lifecycle", "titles": "Lifecycle", "required": true},
+      {"name": "reviewer_status", "titles": "Reviewer status", "required": true},
+      {"name": "reviewer", "titles": "Reviewer", "required": true},
+      {"name": "review_date", "titles": "Review date", "datatype": "date", "required": true},
+      {"name": "domain_scope", "titles": "Domain scope", "required": true},
+      {"name": "rationale", "titles": "Rationale", "required": true}
+    ],
+    "primaryKey": "semantic_binding_id"
+  }
+}

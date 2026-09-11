@@ -1,0 +1,79 @@
+@prefix aom: <https://w3id.org/era-aom/schema/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aom:RegistrySemanticBinding a owl:Class ;
+  rdfs:label "registry semantic binding"@en ;
+  rdfs:comment "Reviewed assertion connecting one stable ERA registry subject to one governed semantic target."@en .
+
+aom:semanticBindingIdentifier a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:registryReleaseIdentifier a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:registrySubject a owl:ObjectProperty ;
+  rdfs:domain aom:RegistrySemanticBinding .
+
+aom:registrySubjectType a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:registrySubjectIdentifier a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:registryRowChecksum a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:bindingPredicate a owl:ObjectProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range rdf:Property .
+
+aom:bindingTarget a owl:ObjectProperty ;
+  rdfs:domain aom:RegistrySemanticBinding .
+
+aom:evidenceReference a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:bindingLifecycle a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:reviewerStatus a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:domainScope a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:sourceSemanticRecord a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:sourceRegistryArtifact a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:bindingRationale a owl:DatatypeProperty ;
+  rdfs:domain aom:RegistrySemanticBinding ;
+  rdfs:range xsd:string .
+
+aom:mapsToProperty a owl:ObjectProperty ;
+  rdfs:label "maps to property"@en ;
+  rdfs:range rdf:Property .
+
+aom:mapsToConcept a owl:ObjectProperty ;
+  rdfs:label "maps to concept"@en ;
+  rdfs:range skos:Concept .
+
+dcterms:isPartOf a rdf:Property .

@@ -27,9 +27,15 @@ def main():
             assert status == 200 and content_type == "application/sparql-results+json"
             count = int(json.loads(body)["results"]["bindings"][0]["count"]["value"])
             assert count == 2814, count
+            binding_query = "SELECT (COUNT(DISTINCT ?binding) AS ?count) WHERE { GRAPH <https://w3id.org/era-aom/graph/registry-bindings-2026.2-rc.1> { ?binding a <https://w3id.org/era-aom/schema/RegistrySemanticBinding> } }"
+            binding_url = args.fuseki + "?" + urllib.parse.urlencode({"query": binding_query})
+            status, content_type, body = get(binding_url, "application/sparql-results+json")
+            assert status == 200 and content_type == "application/sparql-results+json"
+            binding_count = int(json.loads(body)["results"]["bindings"][0]["count"]["value"])
+            assert binding_count == 5, binding_count
             status, content_type, _ = get(args.skosmos + "/en/", "text/html")
             assert status == 200 and content_type == "text/html"
-            print(json.dumps({"concepts": count, "fuseki": "pass", "skosmos": "pass"}, indent=2))
+            print(json.dumps({"concepts": count, "registry_bindings": binding_count, "fuseki": "pass", "skosmos": "pass"}, indent=2))
             return
         except Exception as error:
             last_error = error

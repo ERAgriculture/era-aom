@@ -61,6 +61,12 @@ jobs:
           python tests/validate_adr0054_registry_implementation_plan.py
       - name: Validate ADR 0054 acceptance
         run: python tests/validate_adr0054_acceptance.py
+      - name: Validate IW-03 registry semantic bindings
+        run: |
+          python scripts/build_registry_semantic_bindings.py build
+          git diff --exit-code -- dist/registry-bindings/version=2026.2-rc.1
+          python scripts/build_registry_semantic_bindings.py validate
+          python tests/validate_registry_semantic_bindings.py
       - name: Validate crop-foundation review
         run: python tests/validate_crop_foundation_review.py
       - name: Validate ADR 0053 guided review

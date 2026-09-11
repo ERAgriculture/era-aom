@@ -1,0 +1,199 @@
+{
+  "@graph": [
+    {
+      "@id": "https://w3id.org/era-aom/binding/ERA-SBN-000001",
+      "@type": "https://w3id.org/era-aom/schema/RegistrySemanticBinding",
+      "https://w3id.org/era-aom/schema/semanticBindingIdentifier": "ERA-SBN-000001",
+      "https://w3id.org/era-aom/schema/registryReleaseIdentifier": "ERA-REL-000001",
+      "https://w3id.org/era-aom/schema/registrySubject": {
+        "@id": "urn:era-data:registry:field:ERA-FLD-000092"
+      },
+      "https://w3id.org/era-aom/schema/registrySubjectType": "field",
+      "https://w3id.org/era-aom/schema/registrySubjectIdentifier": "ERA-FLD-000092",
+      "https://w3id.org/era-aom/schema/registryRowChecksum": "a7fb28b6162a002fe9f8f4889479ca635a531ec96b636a35e76dd61db2c8bf7a",
+      "https://w3id.org/era-aom/schema/bindingPredicate": {
+        "@id": "https://w3id.org/era-aom/schema/mapsToProperty"
+      },
+      "https://w3id.org/era-aom/schema/bindingTarget": {
+        "@id": "https://w3id.org/era-aom/schema/ingredientName"
+      },
+      "https://w3id.org/era-aom/schema/evidenceReference": "docs/decisions/0046-ingredient-descriptor-lifecycle-and-browser-deprecation.md;era-data:fields.csv#ERA-FLD-000092",
+      "https://w3id.org/era-aom/schema/bindingLifecycle": "active",
+      "https://w3id.org/era-aom/schema/reviewerStatus": "approved",
+      "https://w3id.org/era-aom/schema/domainScope": "livestock-feed",
+      "https://w3id.org/era-aom/schema/sourceSemanticRecord": "data/livestock-staging/approved_semantic_bindings.csv#AOM_000531",
+      "https://w3id.org/era-aom/schema/sourceRegistryArtifact": "fields.csv",
+      "https://w3id.org/era-aom/schema/bindingRationale": "Reviewed field purpose and prior row-level approval support ingredient-name property semantics.",
+      "http://purl.org/dc/terms/contributor": "Pete Steward",
+      "http://purl.org/dc/terms/issued": {
+        "@value": "2026-08-13",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "http://purl.org/dc/terms/isPartOf": {
+        "@id": "https://w3id.org/era-aom/binding-release/2026.2-rc.1"
+      }
+    },
+    {
+      "@id": "urn:era-data:registry:field:ERA-FLD-000092",
+      "https://w3id.org/era-aom/schema/mapsToProperty": {
+        "@id": "https://w3id.org/era-aom/schema/ingredientName"
+      }
+    },
+    {
+      "@id": "https://w3id.org/era-aom/binding/ERA-SBN-000002",
+      "@type": "https://w3id.org/era-aom/schema/RegistrySemanticBinding",
+      "https://w3id.org/era-aom/schema/semanticBindingIdentifier": "ERA-SBN-000002",
+      "https://w3id.org/era-aom/schema/registryReleaseIdentifier": "ERA-REL-000001",
+      "https://w3id.org/era-aom/schema/registrySubject": {
+        "@id": "urn:era-data:registry:field:ERA-FLD-000093"
+      },
+      "https://w3id.org/era-aom/schema/registrySubjectType": "field",
+      "https://w3id.org/era-aom/schema/registrySubjectIdentifier": "ERA-FLD-000093",
+      "https://w3id.org/era-aom/schema/registryRowChecksum": "00021db25e8f369bdd2d51943aa8baca0c30279254aa0f232f5efce6064bada0",
+      "https://w3id.org/era-aom/schema/bindingPredicate": {
+        "@id": "https://w3id.org/era-aom/schema/mapsToProperty"
+      },
+      "https://w3id.org/era-aom/schema/bindingTarget": {
+        "@id": "https://w3id.org/era-aom/schema/legacyComponentDescriptor"
+      },
+      "https://w3id.org/era-aom/schema/evidenceReference": "docs/decisions/0046-ingredient-descriptor-lifecycle-and-browser-deprecation.md;era-data:fields.csv#ERA-FLD-000093",
+      "https://w3id.org/era-aom/schema/bindingLifecycle": "active",
+      "https://w3id.org/era-aom/schema/reviewerStatus": "approved",
+      "https://w3id.org/era-aom/schema/domainScope": "livestock-feed",
+      "https://w3id.org/era-aom/schema/sourceSemanticRecord": "data/livestock-staging/approved_semantic_bindings.csv#AOM_000532",
+      "https://w3id.org/era-aom/schema/sourceRegistryArtifact": "fields.csv",
+      "https://w3id.org/era-aom/schema/bindingRationale": "Reviewed field purpose and prior row-level approval support legacy component-text preservation pending governed facet decomposition.",
+      "http://purl.org/dc/terms/contributor": "Pete Steward",
+      "http://purl.org/dc/terms/issued": {
+        "@value": "2026-08-13",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "http://purl.org/dc/terms/isPartOf": {
+        "@id": "https://w3id.org/era-aom/binding-release/2026.2-rc.1"
+      }
+    },
+    {
+      "@id": "urn:era-data:registry:field:ERA-FLD-000093",
+      "https://w3id.org/era-aom/schema/mapsToProperty": {
+        "@id": "https://w3id.org/era-aom/schema/legacyComponentDescriptor"
+      }
+    },
+    {
+      "@id": "https://w3id.org/era-aom/binding/ERA-SBN-000003",
+      "@type": "https://w3id.org/era-aom/schema/RegistrySemanticBinding",
+      "https://w3id.org/era-aom/schema/semanticBindingIdentifier": "ERA-SBN-000003",
+      "https://w3id.org/era-aom/schema/registryReleaseIdentifier": "ERA-REL-000001",
+      "https://w3id.org/era-aom/schema/registrySubject": {
+        "@id": "urn:era-data:registry:field:ERA-FLD-000084"
+      },
+      "https://w3id.org/era-aom/schema/registrySubjectType": "field",
+      "https://w3id.org/era-aom/schema/registrySubjectIdentifier": "ERA-FLD-000084",
+      "https://w3id.org/era-aom/schema/registryRowChecksum": "74846cdccdb24fea81696ea1964324eff831037f0825fd2894d7c84a19fb63f4",
+      "https://w3id.org/era-aom/schema/bindingPredicate": {
+        "@id": "https://w3id.org/era-aom/schema/mapsToProperty"
+      },
+      "https://w3id.org/era-aom/schema/bindingTarget": {
+        "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      },
+      "https://w3id.org/era-aom/schema/evidenceReference": "PARENT-007;era-data:fields.csv#ERA-FLD-000084",
+      "https://w3id.org/era-aom/schema/bindingLifecycle": "active",
+      "https://w3id.org/era-aom/schema/reviewerStatus": "approved",
+      "https://w3id.org/era-aom/schema/domainScope": "livestock-feed",
+      "https://w3id.org/era-aom/schema/sourceSemanticRecord": "data/livestock-staging/approved_semantic_bindings.csv#AOM_000533",
+      "https://w3id.org/era-aom/schema/sourceRegistryArtifact": "fields.csv",
+      "https://w3id.org/era-aom/schema/bindingRationale": "Reviewed field purpose and prior row-level approval support source-taxon values through approved value transformations.",
+      "http://purl.org/dc/terms/contributor": "Pete Steward",
+      "http://purl.org/dc/terms/issued": {
+        "@value": "2026-08-04",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "http://purl.org/dc/terms/isPartOf": {
+        "@id": "https://w3id.org/era-aom/binding-release/2026.2-rc.1"
+      }
+    },
+    {
+      "@id": "urn:era-data:registry:field:ERA-FLD-000084",
+      "https://w3id.org/era-aom/schema/mapsToProperty": {
+        "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      }
+    },
+    {
+      "@id": "https://w3id.org/era-aom/binding/ERA-SBN-000004",
+      "@type": "https://w3id.org/era-aom/schema/RegistrySemanticBinding",
+      "https://w3id.org/era-aom/schema/semanticBindingIdentifier": "ERA-SBN-000004",
+      "https://w3id.org/era-aom/schema/registryReleaseIdentifier": "ERA-REL-000001",
+      "https://w3id.org/era-aom/schema/registrySubject": {
+        "@id": "urn:era-data:registry:field:ERA-FLD-000041"
+      },
+      "https://w3id.org/era-aom/schema/registrySubjectType": "field",
+      "https://w3id.org/era-aom/schema/registrySubjectIdentifier": "ERA-FLD-000041",
+      "https://w3id.org/era-aom/schema/registryRowChecksum": "b2dcffebb847c1b933a4faa59073373b0942dd0235ebf2eee094ea55228974aa",
+      "https://w3id.org/era-aom/schema/bindingPredicate": {
+        "@id": "https://w3id.org/era-aom/schema/mapsToProperty"
+      },
+      "https://w3id.org/era-aom/schema/bindingTarget": {
+        "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      },
+      "https://w3id.org/era-aom/schema/evidenceReference": "PARENT-007;era-data:fields.csv#ERA-FLD-000041",
+      "https://w3id.org/era-aom/schema/bindingLifecycle": "active",
+      "https://w3id.org/era-aom/schema/reviewerStatus": "approved",
+      "https://w3id.org/era-aom/schema/domainScope": "livestock-feed",
+      "https://w3id.org/era-aom/schema/sourceSemanticRecord": "data/livestock-staging/approved_semantic_bindings.csv#AOM_000533",
+      "https://w3id.org/era-aom/schema/sourceRegistryArtifact": "fields.csv",
+      "https://w3id.org/era-aom/schema/bindingRationale": "Reviewed field purpose and prior row-level approval support source-taxon values through approved value transformations.",
+      "http://purl.org/dc/terms/contributor": "Pete Steward",
+      "http://purl.org/dc/terms/issued": {
+        "@value": "2026-08-04",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "http://purl.org/dc/terms/isPartOf": {
+        "@id": "https://w3id.org/era-aom/binding-release/2026.2-rc.1"
+      }
+    },
+    {
+      "@id": "urn:era-data:registry:field:ERA-FLD-000041",
+      "https://w3id.org/era-aom/schema/mapsToProperty": {
+        "@id": "https://w3id.org/era-aom/schema/sourceTaxon"
+      }
+    },
+    {
+      "@id": "https://w3id.org/era-aom/binding/ERA-SBN-000005",
+      "@type": "https://w3id.org/era-aom/schema/RegistrySemanticBinding",
+      "https://w3id.org/era-aom/schema/semanticBindingIdentifier": "ERA-SBN-000005",
+      "https://w3id.org/era-aom/schema/registryReleaseIdentifier": "ERA-REL-000001",
+      "https://w3id.org/era-aom/schema/registrySubject": {
+        "@id": "urn:era-data:registry:field:ERA-FLD-000111"
+      },
+      "https://w3id.org/era-aom/schema/registrySubjectType": "field",
+      "https://w3id.org/era-aom/schema/registrySubjectIdentifier": "ERA-FLD-000111",
+      "https://w3id.org/era-aom/schema/registryRowChecksum": "c7cc4f3a82c5de1f9fbd780bd9c7ae69b827877c93384632413bc53407aee62a",
+      "https://w3id.org/era-aom/schema/bindingPredicate": {
+        "@id": "https://w3id.org/era-aom/schema/mapsToProperty"
+      },
+      "https://w3id.org/era-aom/schema/bindingTarget": {
+        "@id": "https://w3id.org/era-aom/schema/ingredientSource"
+      },
+      "https://w3id.org/era-aom/schema/evidenceReference": "docs/decisions/0046-ingredient-descriptor-lifecycle-and-browser-deprecation.md;era-data:fields.csv#ERA-FLD-000111",
+      "https://w3id.org/era-aom/schema/bindingLifecycle": "active",
+      "https://w3id.org/era-aom/schema/reviewerStatus": "approved",
+      "https://w3id.org/era-aom/schema/domainScope": "livestock-feed",
+      "https://w3id.org/era-aom/schema/sourceSemanticRecord": "data/livestock-staging/approved_semantic_bindings.csv#AOM_000535",
+      "https://w3id.org/era-aom/schema/sourceRegistryArtifact": "fields.csv",
+      "https://w3id.org/era-aom/schema/bindingRationale": "Reviewed field purpose and prior row-level approval support ingredient acquisition-source semantics.",
+      "http://purl.org/dc/terms/contributor": "Pete Steward",
+      "http://purl.org/dc/terms/issued": {
+        "@value": "2026-08-13",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "http://purl.org/dc/terms/isPartOf": {
+        "@id": "https://w3id.org/era-aom/binding-release/2026.2-rc.1"
+      }
+    },
+    {
+      "@id": "urn:era-data:registry:field:ERA-FLD-000111",
+      "https://w3id.org/era-aom/schema/mapsToProperty": {
+        "@id": "https://w3id.org/era-aom/schema/ingredientSource"
+      }
+    }
+  ]
+}
